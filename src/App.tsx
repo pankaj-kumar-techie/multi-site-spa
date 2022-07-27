@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState} from 'react';
+import HeroBanner from "./components/hero-banner/HeroBanner";
+import AboutUs from "./components/about-us/AboutUs";
+import Services from "./components/services/Services";
+import Portfolio from "./components/portfolio/Portfolio";
+import Timeline from "./components/timeline/Timeline";
+import ContactUs from "./components/contact-us/ContactUs";
+import Echo from "./components/Echo";
+import JsonData from "./data.json";
+import SecondContactUs from "./components/contact-us/V2/SecondContactUs";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [landingPageData, setLandingPageData] = useState({});
+    useEffect(() => {
+        setLandingPageData(JsonData);
+    }, []);
+    return (
+        <>
+            <HeroBanner></HeroBanner>
+            <AboutUs></AboutUs>
+            <Timeline></Timeline>
+            <Portfolio></Portfolio>
+            <Services></Services>
+            {/*<AboutUs></AboutUs>*/}
+            {/*<CommingSoon></CommingSoon>*/}
+            {/*<Login></Login>*/}
+            <ContactUs></ContactUs>
+            {/*<Keyboard></Keyboard>*/}
+            <Echo data={JsonData.About.paragraph}></Echo>
+        </>
+    );
 }
 
 export default App;

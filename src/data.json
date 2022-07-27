@@ -1,0 +1,183 @@
+{
+  "Header": {
+    "title": "RK Construction Supplier",
+    "paragraph": "RK Construction Supplier offering a qualitative array of Building Construction Work and Material Supplier. Provided services executed using modern technologies.",
+    "contact": "+917018677374"
+  },
+  "About": {
+    "paragraph": "A warm welcome to all those who are in search of quality service from the Construction Company in Himachal Pradesh. Home is the most comfortable and safest place in everyone’s life. Because of that, we focus on each and every point of construction with utmost care. We are proud to associate with you to be a sincere partner in one of the significant events in your lifetime.\n\n",
+    "Why": [
+      "maintenance warranty",
+      "construction is strictly based on quality policy",
+      "100% crack free construction"
+    ],
+    "Why2": [
+      "Attractive architectural designing",
+      "Time-bound completion",
+      "Lorem ipsum dolor"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/house2.jpeg",
+      "smallImage": "img/work/house2.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/Supplier-truck.jpeg",
+      "smallImage": "img/work/Supplier-truck.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/Supplier-truck2.jpeg",
+      "smallImage": "img/work/Supplier-truck2.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/house.jpeg",
+      "smallImage": "img/work/house.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/house1.jpeg",
+      "smallImage": "img/work/house1.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/house-tipper.jpeg",
+      "smallImage": "img/work/house-tipper.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/roof.jpeg",
+      "smallImage": "img/work/roof.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/roof1.jpeg",
+      "smallImage": "img/work/roof1.jpeg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/work/roof2.jpeg",
+      "smallImage": "img/work/roof2.jpeg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-wordpress",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cart-arrow-down",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-cloud-download",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-language",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-plane",
+      "name": "Lorem ipsum dolor",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    },
+    {
+      "icon": "fa fa-pie-chart",
+      "name": "Consectetur adipiscing",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ],
+  "Contact": {
+    "address": "Banuri Chowk, NH-21 Palampur-Baijnath Road, Tehsil-Palampur , Distt-Kangra , Himachal Pradesh ",
+    "phone": "+91 7018677374",
+    "email": "rajeevkapoor88944@gmail.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+    }
+  ]
+}
