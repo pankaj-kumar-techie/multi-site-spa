@@ -7,7 +7,6 @@ import Timeline from "./components/timeline/Timeline";
 import ContactUs from "./components/contact-us/ContactUs";
 import Echo from "./components/Echo";
 import JsonData from "./data.json";
-import SecondContactUs from "./components/contact-us/V2/SecondContactUs";
 
 
 function App() {

@@ -17,7 +17,6 @@ function ContactUs() {
         <>
             <ParentComp childComp={<FirstContactUs></FirstContactUs>}></ParentComp>
             <ParentComp childComp={<SecondContactUs></SecondContactUs>}></ParentComp>
-
         </>
     );
 }
