@@ -6,14 +6,30 @@ import Portfolio from "./components/portfolio/Portfolio";
 import Timeline from "./components/timeline/Timeline";
 import ContactUs from "./components/contact-us/ContactUs";
 import Echo from "./components/Echo";
-import JsonData from "./data.json";
+import {PageService} from "./service/PageService";
+import {Page} from "./modal/Page";
+import {useParams} from "react-router-dom";
 
 
 function App() {
-    const [landingPageData, setLandingPageData] = useState({});
+    const [landingPageData, setLandingPageData] = useState<Page>();
+    const params = useParams<any>();
+
+
     useEffect(() => {
-        setLandingPageData(JsonData);
+        loadPage();
     }, []);
+
+
+    const loadPage = () => {
+        PageService.getPage(params.htmlId ?? 'home').then((res) => {
+            console.log(res);
+            setLandingPageData(res.data.name);
+        }).catch((reson) => {
+            console.log("Error :" + reson)
+        });
+    }
+
     return (
         <>
             <HeroBanner></HeroBanner>
@@ -26,7 +42,7 @@ function App() {
             {/*<Login></Login>*/}
             <ContactUs></ContactUs>
             {/*<Keyboard></Keyboard>*/}
-            <Echo data={JsonData.About.paragraph}></Echo>
+            <Echo data={landingPageData}></Echo>
         </>
     );
 }
