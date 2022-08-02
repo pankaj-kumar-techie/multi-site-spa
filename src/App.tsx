@@ -7,7 +7,6 @@ import Timeline from "./components/timeline/Timeline";
 import ContactUs from "./components/contact-us/ContactUs";
 import Echo from "./components/Echo";
 import {PageService} from "./service/PageService";
-import {Page} from "./modal/Page";
 import {useParams} from "react-router-dom";
 import {Section} from "./modal/Section";
 import PageNotFound from "./components/page-not-found/PageNotFound";
