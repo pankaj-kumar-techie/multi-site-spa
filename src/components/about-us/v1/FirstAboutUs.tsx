@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
-export default function FirstAboutUs() {
+export default function FirstAboutUs(props: { data :any}) {
+    const[aboutData,setAboutData] = useState<any>([])
+    console.log('About Us child :', props.data);
+
+    useEffect(() => {
+        setAboutData(props.data);
+    },[])
     return (
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
@@ -13,7 +19,7 @@ export default function FirstAboutUs() {
                     </div>
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
 
-                        <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar</h2>
+                        {/*<h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar {aboutData.data?.description}</h2>*/}
                         <p className="mt-6 py-4 text-gray-600">Information Technology graduate passionate about
                             software development.
                             {/*Seeking a responsible career in an organisation where*/}

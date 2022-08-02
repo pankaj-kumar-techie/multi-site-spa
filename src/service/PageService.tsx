@@ -3,6 +3,6 @@ import AxiosRestClient from "../config/AxiosRestClient";
 export class PageService {
 
     static getPage(path: string){
-        return AxiosRestClient.get(`/page/${path}`);
+        return AxiosRestClient.get(`/pages/${path}`);
     }
 }

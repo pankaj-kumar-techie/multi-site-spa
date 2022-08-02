@@ -9,12 +9,16 @@ import Echo from "./components/Echo";
 import {PageService} from "./service/PageService";
 import {Page} from "./modal/Page";
 import {useParams} from "react-router-dom";
+import {Section} from "./modal/Section";
+import PageNotFound from "./components/page-not-found/PageNotFound";
 
 
 function App() {
-    const [landingPageData, setLandingPageData] = useState<Page>();
+    const [landingPageData, setLandingPageData] = useState<any>([]);
+    const [sectionData, setSectionData] = useState<Section>();
+    const [loading,setLoading] = useState<boolean>(false);
     const params = useParams<any>();
-
+    const [data, setData] = useState<any>([]);
 
     useEffect(() => {
         loadPage();
@@ -22,27 +26,34 @@ function App() {
 
 
     const loadPage = () => {
+        setLoading(true);
         PageService.getPage(params.htmlId ?? 'home').then((res) => {
             console.log(res);
-            setLandingPageData(res.data.name);
+            setLoading(false)
+            setLandingPageData(res.data);
+            const sectionData_1 = res.data.section[0]
+            setSectionData(sectionData_1);
+            console.log('Section Data ',res.data);
         }).catch((reson) => {
             console.log("Error :" + reson)
         });
     }
 
     return (
-        <>
-            <HeroBanner></HeroBanner>
-            <AboutUs></AboutUs>
-            <Timeline></Timeline>
-            <Portfolio></Portfolio>
-            <Services></Services>
-            {/*<AboutUs></AboutUs>*/}
-            {/*<CommingSoon></CommingSoon>*/}
-            {/*<Login></Login>*/}
-            <ContactUs></ContactUs>
-            {/*<Keyboard></Keyboard>*/}
-            <Echo data={landingPageData}></Echo>
+         <>
+             {!loading ?<div>
+                     <HeroBanner></HeroBanner>
+                     <AboutUs data={sectionData}></AboutUs>
+                     <Timeline></Timeline>
+                     <Portfolio></Portfolio>
+                     <Services></Services>
+                     {/*<AboutUs></AboutUs>*/}
+                     {/*<CommingSoon></CommingSoon>*/}
+                     {/*<Login></Login>*/}
+                     <ContactUs></ContactUs>
+                     {/*<Keyboard></Keyboard>*/}
+                     <Echo data={landingPageData}></Echo>
+                 </div> : <PageNotFound></PageNotFound>}
         </>
     );
 }

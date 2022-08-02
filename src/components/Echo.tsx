@@ -6,7 +6,7 @@ export const Echo = (props: { data: any }) => {
         <>
             <div className="bg-gray-100">
                 <section>
-                    <p>{props.data}</p>
+                    <p>{props.data.name}</p>
                 </section>
             </div>
         </>
