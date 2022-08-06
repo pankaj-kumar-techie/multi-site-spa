@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 
 export default function FirstAboutUs(props: { data :any}) {
+
     const[aboutData,setAboutData] = useState<any>([])
     console.log('About Us child :', props.data);
 
@@ -12,14 +13,9 @@ export default function FirstAboutUs(props: { data :any}) {
             <div className="container px-5 py-24 mx-auto">
                 <div
                     className="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
-                    <div
-                        className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                        <img
-                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939"/>
-                    </div>
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
 
-                        {/*<h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar {aboutData.data?.description}</h2>*/}
+                        <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar {aboutData?.title}</h2>
                         <p className="mt-6 py-4 text-gray-600">Information Technology graduate passionate about
                             software development.
                             {/*Seeking a responsible career in an organisation where*/}
@@ -173,6 +169,11 @@ export default function FirstAboutUs(props: { data :any}) {
                             </div>
                         </div>
 
+                    </div>
+                    <div
+                        className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
+                        <img
+                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939"/>
                     </div>
                 </div>
             </div>

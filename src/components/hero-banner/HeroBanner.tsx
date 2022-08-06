@@ -2,7 +2,6 @@
 
 import FirstHeroBanner from "./v1/FirstHeroBanner";
 import React from "react";
-import SecondHeroBanner from "./v2/SecondHeroBanner";
 
 interface HeroBanner {
     childComp?: React.ReactNode;
@@ -13,11 +12,11 @@ const ParentComp: React.FC<HeroBanner> = (props) => {
     return <div>{childComp}</div>;
 };
 
-export default function HeroBanner() {
+export const HeroBanner = (props: any) =>  {
     return (
         <>
-            <ParentComp childComp={<FirstHeroBanner></FirstHeroBanner>}></ParentComp>
-            <ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp>
+            <ParentComp childComp={<FirstHeroBanner data={props.data}></FirstHeroBanner>}></ParentComp>
+            {/*<ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp>*/}
         </>
                 // <div className="bg-gray-50">
                 //     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
@@ -47,3 +46,4 @@ export default function HeroBanner() {
                 // </div>
     )
 }
+export default HeroBanner;

@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
-export default function FirstHeroBanner() {
+export default function FirstHeroBanner(props: { data :any}) {
+    const[bannerData,setBannerData] = useState<any>([])
+    console.log('Hero Banner  child :', props.data);
+
+    useEffect(() => {
+        setBannerData(props.data);
+    },[])
+
     return (
         <>
             {/*<div className="bg-[#FF6A3D] justify-center items-center px-4 text-xl rounded fixed">*/}
@@ -25,8 +32,8 @@ export default function FirstHeroBanner() {
                         {/*    className="bg-[#FF6A3D] px-4 text-xl rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-200 ">*/}
                         {/*    Software Engineer*/}
                         {/*</div>*/}
-                        <h1 className="text-5xl font-extrabold text-white tracking-widest">Pankaj Kumar</h1>
-                        <h3 className={"py-4 text-xl text-white col rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-200"}>Software Engineer</h3>
+                        <h1 className="text-5xl font-extrabold text-white tracking-widest">{bannerData?.title}</h1>
+                        <h3 className={"py-4 text-xl text-white col rounded transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-200"}>{bannerData?.subTitle}</h3>
                         <div className="flex space-x-2 justify-center py-4">
                             <div>
                                 <button type="button"
