@@ -14,7 +14,7 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route index element={<App/>}/>
-            <Route path="home" element={<Home/>}/>
+            <Route path="website/:slug" element={<Home/>}/>
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     </BrowserRouter>

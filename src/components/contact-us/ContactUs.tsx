@@ -2,22 +2,23 @@ import React from "react";
 import FirstContactUs from "./V1/FirstContactUs";
 import SecondContactUs from "./V2/SecondContactUs";
 
-function ContactUs() {
-    interface ContactUs {
-        childComp?: React.ReactNode;
-    }
+interface ContactUs {
+    childComp?: React.ReactNode;
+}
 
-    const ParentComp: React.FC<ContactUs> = (props) => {
-        const {childComp} = props;
-        return <div>{childComp}</div>;
-    };
+const ParentComp: React.FC<ContactUs> = (props) => {
+    const {childComp} = props;
+    return <div>{childComp}</div>;
+};
 
+export const ContactUs = (props: any) => {
     return (
         <>
-            <ParentComp childComp={<FirstContactUs></FirstContactUs>}></ParentComp>
-            <ParentComp childComp={<SecondContactUs></SecondContactUs>}></ParentComp>
+            {/*<ParentComp childComp={<FirstContactUs data={props.data}></FirstContactUs>}></ParentComp>*/}
+            <ParentComp childComp={<SecondContactUs data={props.data}></SecondContactUs>}></ParentComp>
         </>
     );
 }
+
 
 export default ContactUs;

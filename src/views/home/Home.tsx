@@ -9,16 +9,20 @@ export default function Home() {
     const [landingPageData, setLandingPageData] = useState<any>([]);
     const [sectionData, setSectionData] = useState<any>([]);
         const [loading, setLoading] = useState<boolean>(false);
-    const params = useParams<any>();
+    const params = useParams();
 
     useEffect(() => {
         loadPage();
+
     }, []);
 
 
     const loadPage = () => {
         setLoading(true);
-        PageService.getPage(params.htmlId ?? 'home').then((res) => {
+        let { slug } = params;
+        console.log("parms slug :"+ params.slug);
+
+        PageService.getPage(params.slug ?? 'home').then((res) => {
             console.log(res);
             setLoading(false)
             setLandingPageData(res.data);

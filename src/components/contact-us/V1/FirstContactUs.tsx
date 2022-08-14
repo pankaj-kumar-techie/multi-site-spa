@@ -1,6 +1,13 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
-export default function FirstContactUs(){
+export default function FirstContactUs(props: { data :any}){
+    const[contactUsData,setContactUsData] = useState<any>([])
+    console.log('Contact Us child :', props.data);
+
+    useEffect(() => {
+        setContactUsData(props.data);
+    },[])
+
     return(
         <>
             <div className="flex min-h-screen items-center justify-start bg-white">
