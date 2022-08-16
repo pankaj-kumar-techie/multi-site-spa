@@ -1,5 +1,6 @@
 import FirstAboutUs from "./v1/FirstAboutUs";
 import React from "react";
+import SecondAboutUs from "./v2/SecondAboutUs";
 
 interface AboutUs {
     childComp?: React.ReactNode;
@@ -7,17 +8,26 @@ interface AboutUs {
 
 const ParentComp: React.FC<AboutUs> = (props) => {
     const {childComp} = props;
-    return <div className={"bg-amber-600"}>{childComp}</div>;
+    return <div className={"bg-transparent"}>{childComp}</div>;
 };
 
 
 export const AboutUs = (props: any) => {
-    return (
-        <>
-            <ParentComp childComp={<FirstAboutUs data={props.data}></FirstAboutUs>}></ParentComp>
+    console.log("Version " + props.version);
+    if (props.version == "v1"){
+        return (
+           <>
+               <ParentComp childComp={<FirstAboutUs data={props.data}></FirstAboutUs>}></ParentComp>
+           </>
+        )
+    }else {
 
-            {/*<ParentComp childComp={<SecondAboutUs></SecondAboutUs>}></ParentComp>*/}
-        </>
-    );
+        return (
+            <>
+                <ParentComp childComp={<SecondAboutUs></SecondAboutUs>}></ParentComp>
+            </>
+        );
+
+    }
 }
 export default AboutUs;

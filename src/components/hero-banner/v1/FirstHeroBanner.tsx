@@ -15,7 +15,7 @@ export default function FirstHeroBanner(props: { data :any}) {
             {/*</div>*/}
 
             <section className="h-screen bg-fixed bg-cover w-full flex flex-col justify-center items-center "
-                     style={{backgroundImage: "url('https://intellij-support.jetbrains.com/hc/user_images/7y014lKIwOo3HhB6MrGiUQ.png')"}}>
+                     style={{backgroundImage: `url(${bannerData?.banner})`}}>
 
                 <div
                     className="flex h-full w-full items-center justify-center mx-auto px-8 backdrop-blur-sm hover:backdrop-blur-sm">
@@ -23,7 +23,8 @@ export default function FirstHeroBanner(props: { data :any}) {
                     <div className="max-w-4xl text-center">
                         <div className="mb-4">
                             <img
-                                src={process.env.PUBLIC_URL + 'avatar.png'}
+                                // src={process.env.PUBLIC_URL + 'avatar.png'}
+                                src={bannerData?.banner}
                                 className="rounded-full w-32 mb-4 mx-auto"
                                 alt="Avatar"
                             />

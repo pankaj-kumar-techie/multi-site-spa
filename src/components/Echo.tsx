@@ -8,6 +8,7 @@ export const Echo = (props: { data: any }) => {
                 <section>
                     <p>{props.data.name}</p>
                 </section>
+
             </div>
         </>
 

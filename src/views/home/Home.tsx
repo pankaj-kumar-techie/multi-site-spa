@@ -3,10 +3,9 @@ import {Section} from "../../modal/Section";
 import {useParams} from "react-router-dom";
 import {PageService} from "../../service/PageService";
 import PageNotFound from "../../components/page-not-found/PageNotFound";
-import {ComponentRenderer} from "../../components/ComponentRenderer";
+import {Renderer} from "../../components/Renderer";
 
 export default function Home() {
-    const [landingPageData, setLandingPageData] = useState<any>([]);
     const [sectionData, setSectionData] = useState<any>([]);
         const [loading, setLoading] = useState<boolean>(false);
     const params = useParams();
@@ -20,12 +19,11 @@ export default function Home() {
     const loadPage = () => {
         setLoading(true);
         let { slug } = params;
-        console.log("parms slug :"+ params.slug);
+        console.log("Website Name slug :"+ params.slug);
 
         PageService.getPage(params.slug ?? 'home').then((res) => {
             console.log(res);
             setLoading(false)
-            setLandingPageData(res.data);
             setSectionData(res.data.section);
             console.log('Section Data ', res.data.section);
         }).catch((reson) => {
@@ -34,9 +32,9 @@ export default function Home() {
     }
     return (
         <>
-            {!loading ? <div>
+            {!loading ? <div style={{backgroundImage: `url(http://localhost:8090/files/avatar.png})`}}>
                 {sectionData.map((sectionData: Section) =>
-                    ComponentRenderer.render("a", sectionData)
+                    Renderer.componentRender("a", sectionData)
                 )}
             </div> : <PageNotFound></PageNotFound>}
         </>

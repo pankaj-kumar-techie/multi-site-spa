@@ -13,7 +13,7 @@ export default function FirstAboutUs(props: { data :any}) {
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
                 <div
-                    className="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col">
+                    className="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col bg-transparent">
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
 
                         <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar {aboutData?.title}</h2>
