@@ -2,6 +2,7 @@
 
 import FirstHeroBanner from "./v1/FirstHeroBanner";
 import React from "react";
+import ThirdHeroBanner from "./v3/ThirdHeroBanner";
 
 interface HeroBanner {
     childComp?: React.ReactNode;
@@ -17,6 +18,7 @@ export const HeroBanner = (props: any) =>  {
         <>
             <ParentComp childComp={<FirstHeroBanner data={props.data}></FirstHeroBanner>}></ParentComp>
             {/*<ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp>*/}
+            <ParentComp childComp={<ThirdHeroBanner data={props.data}></ThirdHeroBanner>}></ParentComp>
         </>
     )
 }

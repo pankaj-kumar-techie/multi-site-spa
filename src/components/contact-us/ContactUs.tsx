@@ -1,5 +1,5 @@
 import React from "react";
-import FirstContactUs from "./V1/FirstContactUs";
+import FirstContactUs from "./v1/FirstContactUs";
 import SecondContactUs from "./V2/SecondContactUs";
 
 interface ContactUs {

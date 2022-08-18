@@ -16,7 +16,8 @@ function PageNotFound(){
         ></span>
 
                     <span className="relative block px-8 py-3 bg-[#1A2238] border border-current">
-                        <Link to="/">Go Home</Link>
+
+                        {/*<Link to="/website/portfolio">Go Home</Link>*/}
 
         </span>
                 </a>

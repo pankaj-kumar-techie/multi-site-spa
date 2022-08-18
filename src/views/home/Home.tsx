@@ -22,21 +22,22 @@ export default function Home() {
         console.log("Website Name slug :"+ params.slug);
 
         PageService.getPage(params.slug ?? 'home').then((res) => {
-            console.log(res);
+            console.log("Website Section Data : " + res);
             setLoading(false)
             setSectionData(res.data.section);
-            console.log('Section Data ', res.data.section);
+            console.log('Pass Section Data to Child Component ', res.data.section);
         }).catch((reson) => {
             console.log("Error :" + reson)
         });
     }
     return (
         <>
-            {!loading ? <div style={{backgroundImage: `url(http://localhost:8090/files/avatar.png})`}}>
+            {!loading ? <>
                 {sectionData.map((sectionData: Section) =>
-                    Renderer.componentRender("a", sectionData)
+                    // Renderer.componentRender("a", sectionData),
+                    Renderer.componentRenderV1("a", sectionData)
                 )}
-            </div> : <PageNotFound></PageNotFound>}
+            </> : <PageNotFound></PageNotFound>}
         </>
     )
 }
