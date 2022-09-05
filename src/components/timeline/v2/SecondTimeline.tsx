@@ -1,6 +1,12 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
-export default function SecondTimeline() {
+export default function SecondTimeline(props: { data: any }) {
+    const [bannerData, setBannerData] = useState<any>([])
+    console.log('Hero Banner  child :', props.data);
+
+    useEffect(() => {
+        setBannerData(props.data);
+    }, [])
     return (
         <section>
 

@@ -1,4 +1,13 @@
-export default function FirstService() {
+import {useEffect, useState} from "react";
+
+export default function FirstService(props :{data:any}) {
+    const [bannerData, setBannerData] = useState<any>([])
+    console.log('Hero Banner  child :', props.data);
+
+    useEffect(() => {
+        setBannerData(props.data);
+    }, [])
+
     return (
         <section>
             <div className="container max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white dark:bg-gray-800">

@@ -1,13 +1,13 @@
 import React, {useEffect, useState} from "react";
 
-export default function FirstAboutUs(props: { data :any}) {
+export default function FirstAboutUs(props: { data: any }) {
 
-    const[aboutData,setAboutData] = useState<any>([])
+    const [aboutData, setAboutData] = useState<any>([])
     console.log('About Us child :', props.data);
 
     useEffect(() => {
         setAboutData(props.data);
-    },[])
+    }, [])
 
     return (
         <section className="text-gray-600 body-font">
@@ -16,7 +16,8 @@ export default function FirstAboutUs(props: { data :any}) {
                     className="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col bg-transparent">
                     <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
 
-                        <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj Kumar {aboutData?.title}</h2>
+                        <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">Pankaj
+                            Kumar {aboutData?.title}</h2>
                         <p className="mt-6 py-4 text-gray-600">Information Technology graduate passionate about
                             software development.
                             {/*Seeking a responsible career in an organisation where*/}
@@ -59,7 +60,8 @@ export default function FirstAboutUs(props: { data :any}) {
                                     </svg>
                                     <p className="title-font font-medium">Object-Oriented Programming</p>
                                 </div>
-                            </div> <div className=" inline-block mr-2">
+                            </div>
+                            <div className=" inline-block mr-2">
                                 <div className="flex  pr-2 h-full items-center">
                                     <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
                                          viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
@@ -94,7 +96,8 @@ export default function FirstAboutUs(props: { data :any}) {
                                     </svg>
                                     <p className="title-font font-medium">Microservices</p>
                                 </div>
-                            </div><div className=" inline-block mr-2">
+                            </div>
+                            <div className=" inline-block mr-2">
                                 <div className="flex  pr-2 h-full items-center">
                                     <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
                                          viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"

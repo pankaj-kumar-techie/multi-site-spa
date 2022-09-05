@@ -1,13 +1,12 @@
 import AboutUs from "./about-us/AboutUs";
-import PageNotFound from "./page-not-found/PageNotFound";
 import HeroBanner from "./hero-banner/HeroBanner";
 import ContactUs from "./contact-us/ContactUs";
-import CommingSoon from "./comming-soon/CommingSoon";
 import Portfolio from "./portfolio/Portfolio";
+import Product from "./product/Product";
 import Services from "./services/Services";
 import Timeline from "./timeline/Timeline";
-import Echo from "./Echo";
-import Product from "./product/Product";
+import PageNotFound from "./page-not-found/PageNotFound";
+import CommingSoon from "./comming-soon/CommingSoon";
 
 //Todo: refactor code use good approach instead of switch case
 
@@ -42,23 +41,25 @@ export class Renderer {
     // }
 
 
+    //Todo : Get Section Version and pass version value
 
-
-    static componentRenderV1(siteId:string , section: any): JSX.Element{
+    static componentRenderV1(website:string , section: any): JSX.Element{
         const components: any = {
             AboutUs: <AboutUs data={section['data']} version={'v1'}></AboutUs>,
             HeroBanner: <HeroBanner data={section['data']}></HeroBanner>,
-            ContactUs: <ContactUs data={section['data']}></ContactUs>
+            ContactUs: <ContactUs data={section['data']}></ContactUs>,
+            Portfolio: <Portfolio data={section['data']}></Portfolio>,
+            Product: <Product data={section['data']}></Product>,
+            Timeline: <Timeline data={section['data']}></Timeline>,
+            Service: <Services data={section['data']}></Services>,
+            CommingSoon: <CommingSoon></CommingSoon>,
+            PageNotFound : <PageNotFound></PageNotFound>,
         };
-        // const {role} = section.filter(s=>section['data']['type']);
         console.log("Section type :" + section['data']['type']);
-        // const typeTwo = section.filter((t: { [x: string]: any; }) => t['data']['type']);
         const type: any = section.data.type;
         console.log("Render V2 called :" + type);
 
-        const Component: any = components[type];
-
-        return Component;
+        return components[type];
     }
 }
 

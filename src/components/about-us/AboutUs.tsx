@@ -11,6 +11,7 @@ const ParentComp: React.FC<AboutUs> = (props) => {
     return <div className={"bg-transparent"}>{childComp}</div>;
 };
 
+//ToDo: Refactor if else statement
 
 export const AboutUs = (props: any) => {
     console.log("Version " + props.version);

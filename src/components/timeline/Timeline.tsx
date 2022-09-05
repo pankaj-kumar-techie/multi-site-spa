@@ -10,12 +10,13 @@ const ParentComp: React.FC<TimeLine> = (props) => {
     return <div>{childComp}</div>;
 };
 
-export default function Timeline() {
+export const HeroBanner = (props: any) =>  {
     return (
         <>
             {/*<ParentComp childComp={<FirstTimeline></FirstTimeline>}></ParentComp>*/}
-            <ParentComp childComp={<SecondTimeline></SecondTimeline>}></ParentComp>
+            <ParentComp childComp={<SecondTimeline data={props.data}></SecondTimeline>}></ParentComp>
         </>
 
     )
 }
+export default HeroBanner;

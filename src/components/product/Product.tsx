@@ -11,9 +11,14 @@ const ParentComp: React.FC<Product> = (props) => {
     return <div>{childComp}</div>;
 };
 
-export const Product = (props: any) => {
+export const  Product = (props:any) => {
+    return(
+        <>
+            <ParentComp childComp={<FirstProductList data={props.data}></FirstProductList>}></ParentComp>
+
+        </>
+        )
     // <ParentComp childComp={<FirstProductList data={props.data}></FirstProductList>}></ParentComp>
-    <ParentComp childComp={<FirstProductList data={props.data}></FirstProductList>}></ParentComp>
 
 }
 export default Product;

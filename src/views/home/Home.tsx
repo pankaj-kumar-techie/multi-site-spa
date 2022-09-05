@@ -4,6 +4,7 @@ import {useParams} from "react-router-dom";
 import {PageService} from "../../service/PageService";
 import PageNotFound from "../../components/page-not-found/PageNotFound";
 import {Renderer} from "../../components/Renderer";
+import Echo from "../../components/Echo";
 
 export default function Home() {
     const [sectionData, setSectionData] = useState<any>([]);
@@ -35,9 +36,10 @@ export default function Home() {
             {!loading ? <>
                 {sectionData.map((sectionData: Section) =>
                     // Renderer.componentRender("a", sectionData),
-                    Renderer.componentRenderV1("a", sectionData)
+                    Renderer.componentRenderV1("pahariyatri", sectionData)
                 )}
             </> : <PageNotFound></PageNotFound>}
+            <Echo data={"kdk"}></Echo>
         </>
     )
 }
