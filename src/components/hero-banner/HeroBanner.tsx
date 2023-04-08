@@ -17,8 +17,8 @@ export const HeroBanner = (props: any) =>  {
     return (
         <>
             <ParentComp childComp={<FirstHeroBanner data={props.data}></FirstHeroBanner>}></ParentComp>
-            {/*<ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp>*/}
-            {/*<ParentComp childComp={<ThirdHeroBanner data={props.data}></ThirdHeroBanner>}></ParentComp>*/}
+{/*             <ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp> */}
+            <ParentComp childComp={<ThirdHeroBanner data={props.data}></ThirdHeroBanner>}></ParentComp>
         </>
     )
 }
