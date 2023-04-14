@@ -15,7 +15,7 @@ const ParentComp: React.FC<AboutUs> = (props) => {
 
 export const AboutUs = (props: any) => {
     console.log("Version " + props.version);
-    if (props.version == "v1"){
+    if (props.version === "v1"){
         return (
            <>
                <ParentComp childComp={<FirstAboutUs data={props.data}></FirstAboutUs>}></ParentComp>
