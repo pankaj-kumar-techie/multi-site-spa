@@ -45,8 +45,8 @@ export class Renderer {
 
     static componentRenderV1(website:string , section: any): JSX.Element{
         const components: any = {
-            AboutUs: <AboutUs data={section['data']} version={'v1'}></AboutUs>,
-            HeroBanner: <HeroBanner data={section['data']}></HeroBanner>,
+            AboutUs: <AboutUs data={section['data']} version={'v2'}></AboutUs>,
+            HeroBanner: <HeroBanner data={section['data']} version={'v2'}></HeroBanner>,
             ContactUs: <ContactUs data={section['data']}></ContactUs>,
             Portfolio: <Portfolio data={section['data']}></Portfolio>,
             Product: <Product data={section['data']}></Product>,
