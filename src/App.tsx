@@ -1,12 +1,12 @@
 import React from 'react';
-import PageNotFound from "./components/page-not-found/PageNotFound";
+import CommingSoon from "./components/comming-soon/CommingSoon";
 
 
 export default function App() {
 
     return (
         <>
-            <PageNotFound></PageNotFound>
+            <CommingSoon></CommingSoon>
         </>
     )
 }
