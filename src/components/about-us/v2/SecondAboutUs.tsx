@@ -20,7 +20,7 @@ export default function SecondAboutUs() {
                         </div>
                     </div>
                 </div>
-                <img src="/images/car/1.jpg" className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0"/>
+                <img src="/images/car/1.jpg" alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0"/>
             </div>
         </section>
     )

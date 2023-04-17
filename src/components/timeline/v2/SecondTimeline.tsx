@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from "react";
 
 export default function SecondTimeline(props: { data: any }) {
-    const [bannerData, setBannerData] = useState<any>([])
+    const [timelineData, setTimelineData] = useState<any>([])
     console.log('Hero Banner  child :', props.data);
 
     useEffect(() => {
-        setBannerData(props.data);
-    }, [])
+        setTimelineData(props.data);
+    }, [props.data])
     return (
         <section>
 
@@ -25,7 +25,7 @@ export default function SecondTimeline(props: { data: any }) {
                                                 <h1 className={"text-base text-base-600 font-semibold tracking-wide uppercase"}>EDUCATION</h1>
 
                                             </div>
-                                            <p className="text-gray-700 mb-6">Bachelor of Engineering in Information
+                                            <p className="text-gray-700 mb-6">{timelineData?.title}Bachelor of Engineering in Information
                                                 Technology .</p>
                                             <div className="flex justify-between mb-4">
                                                 <a href="#!"

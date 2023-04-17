@@ -1,21 +1,20 @@
 import React from "react";
 import FirstPortfolio from "./v1/FirstPortfolio";
 
-interface Portfolio {
-    childComp?: React.ReactNode;
+interface PortfolioProps {
+    data: any;
+    version: "v1";
 }
 
-const ParentComp: React.FC<Portfolio> = (props) => {
-    const {childComp} = props;
-    return <div>{childComp}</div>;
+const productComponents = {
+    v1: FirstPortfolio,
 };
 
-export const  Portfolio = () => {
-    return (
-        <>
-            <ParentComp childComp={<FirstPortfolio></FirstPortfolio>}></ParentComp>
-        </>
+const Portfolio: React.FC<PortfolioProps> = ({data, version}) => {
+    const ProductComponent = productComponents[version];
 
-    )
-}
+    // return <ProductComponent data={data}/>;
+    return <ProductComponent />;
+};
+
 export default Portfolio;

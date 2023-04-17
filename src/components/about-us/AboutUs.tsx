@@ -1,34 +1,21 @@
-import FirstAboutUs from "./v1/FirstAboutUs";
 import React from "react";
+import FirstAboutUs from "./v1/FirstAboutUs";
 import SecondAboutUs from "./v2/SecondAboutUs";
 
-interface AboutUs {
-    childComp?: React.ReactNode;
+interface AboutUsProps {
+    data: any;
+    version: "v1" | "v2" ;
 }
 
-const ParentComp: React.FC<AboutUs> = (props) => {
-    const {childComp} = props;
-    return <div className={"bg-transparent"}>{childComp}</div>;
+const bannerComponents = {
+    v1: FirstAboutUs,
+    v2: SecondAboutUs,
 };
 
-//ToDo: Refactor if else statement
+const AboutUs: React.FC<AboutUsProps> = ({data, version}) => {
+    const BannerComponent = bannerComponents[version];
 
-export const AboutUs = (props: any) => {
-    console.log("Version " + props.version);
-    if (props.version === "v1"){
-        return (
-           <>
-               <ParentComp childComp={<FirstAboutUs data={props.data}></FirstAboutUs>}></ParentComp>
-           </>
-        )
-    }else {
+    return <BannerComponent data={data}/>;
+};
 
-        return (
-            <>
-                <ParentComp childComp={<SecondAboutUs></SecondAboutUs>}></ParentComp>
-            </>
-        );
-
-    }
-}
 export default AboutUs;

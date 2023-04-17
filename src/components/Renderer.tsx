@@ -43,17 +43,17 @@ export class Renderer {
 
     //Todo : Get Section Version and pass version value
 
-    static componentRenderV1(website:string , section: any): JSX.Element{
+    static componentRenderV1(website: string, section: any): JSX.Element {
         const components: any = {
-            AboutUs: <AboutUs data={section['data']} version={'v2'}></AboutUs>,
-            HeroBanner: <HeroBanner data={section['data']} version={'v2'}></HeroBanner>,
-            ContactUs: <ContactUs data={section['data']}></ContactUs>,
-            Portfolio: <Portfolio data={section['data']}></Portfolio>,
-            Product: <Product data={section['data']}></Product>,
-            Timeline: <Timeline data={section['data']}></Timeline>,
-            Service: <Services data={section['data']}></Services>,
+            HeroBanner: <HeroBanner data={section['data']} version={section['version']}></HeroBanner>,
+            AboutUs: <AboutUs data={section['data']} version={section['version']}></AboutUs>,
+            ContactUs: <ContactUs data={section['data']} version={section['version']}></ContactUs>,
+            Portfolio: <Portfolio data={section['data']} version={section['version']}></Portfolio>,
+            Product: <Product data={section['data']} version={section['version']}></Product>,
+            Timeline: <Timeline data={section['data']} version={section['version']}></Timeline>,
+            Service: <Services data={section['data']} version={section['version']}></Services>,
             CommingSoon: <CommingSoon></CommingSoon>,
-            PageNotFound : <PageNotFound></PageNotFound>,
+            PageNotFound: <PageNotFound></PageNotFound>,
         };
         console.log("Section type :" + section['data']['type']);
         const type: any = section.data.type;

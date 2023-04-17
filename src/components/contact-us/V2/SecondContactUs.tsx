@@ -7,7 +7,7 @@ export default function SecondContactUs(props: { data :any}) {
 
     useEffect(() => {
         setContactUsData(props.data);
-    }, [])
+    }, [props.data])
     return (
         <>
             <section className="mb-32 text-gray-800">

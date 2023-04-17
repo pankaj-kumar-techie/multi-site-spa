@@ -1,5 +1,3 @@
-import {Link} from "react-router-dom";
-
 function PageNotFound(){
     return(
         <main className="h-screen w-full flex flex-col justify-center items-center bg-[#1A2238]">
@@ -8,7 +6,7 @@ function PageNotFound(){
                 Page Not Found
             </div>
             <button className="mt-5">
-                <a
+                <a href={"/echo"}
                     className="relative inline-block text-sm font-medium text-[#FF6A3D] group active:text-orange-500 focus:outline-none focus:ring"
                 >
         <span

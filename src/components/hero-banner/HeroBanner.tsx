@@ -1,25 +1,23 @@
-/* This example requires Tailwind CSS v2.0+ */
-
-import FirstHeroBanner from "./v1/FirstHeroBanner";
 import React from "react";
+import FirstHeroBanner from "./v1/FirstHeroBanner";
 import ThirdHeroBanner from "./v3/ThirdHeroBanner";
+import SecondHeroBanner from "./v2/SecondHeroBanner";
 
-interface HeroBanner {
-    childComp?: React.ReactNode;
+interface HeroBannerProps {
+    data: any;
+    version: "v1" | "v2"| "v3" ;
 }
 
-const ParentComp: React.FC<HeroBanner> = (props) => {
-    const {childComp} = props;
-    return <div>{childComp}</div>;
+const bannerComponents = {
+    v1: FirstHeroBanner,
+    v2: SecondHeroBanner,
+    v3: ThirdHeroBanner,
 };
 
-export const HeroBanner = (props: any) =>  {
-    return (
-        <>
-            <ParentComp childComp={<FirstHeroBanner data={props.data}></FirstHeroBanner>}></ParentComp>
-{/*             <ParentComp childComp={<SecondHeroBanner></SecondHeroBanner>}></ParentComp> */}
-            <ParentComp childComp={<ThirdHeroBanner data={props.data}></ThirdHeroBanner>}></ParentComp>
-        </>
-    )
-}
+const HeroBanner: React.FC<HeroBannerProps> = ({data, version}) => {
+    const BannerComponent = bannerComponents[version];
+
+    return <BannerComponent data={data}/>;
+};
+
 export default HeroBanner;

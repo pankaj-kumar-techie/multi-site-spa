@@ -1,23 +1,21 @@
 import React from "react";
-import FirstHeroBanner from "../hero-banner/v1/FirstHeroBanner";
 import FirstService from "./v1/FirstService";
+import SecondService from "./v2/SecondService";
 
-interface Services {
-    childComp?: React.ReactNode;
+interface ServicesProps {
+    data: any;
+    version: "v1" | "v2" ;
 }
 
-const ParentComp: React.FC<Services> = (props) => {
-    const {childComp} = props;
-    return <div>{childComp}</div>;
+const bannerComponents = {
+    v1: FirstService,
+    v2: SecondService,
 };
 
-export const Services = (props: any) => {
-    return (
-        <>
-            <ParentComp childComp={<FirstService data={props.data}></FirstService>}></ParentComp>
+const Services: React.FC<ServicesProps> = ({data, version}) => {
+    const BannerComponent = bannerComponents[version];
 
-        </>
+    return <BannerComponent data={data}/>;
+};
 
-    )
-}
 export default Services;

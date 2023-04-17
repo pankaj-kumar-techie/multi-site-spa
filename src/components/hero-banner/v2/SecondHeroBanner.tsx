@@ -3,7 +3,7 @@ export default function SecondHeroBanner(){
     return(
         <section>
             <div className="bg-indigo-900 relative overflow-hidden h-screen">
-                <img src="/images/landscape/5.svg" className="absolute h-full w-full object-cover"/>
+                <img src="/images/landscape/5.svg" alt={"echo"} className="absolute h-full w-full object-cover"/>
                 <div className="inset-0 bg-black opacity-25 absolute">
                 </div>
                 <div className="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
@@ -16,7 +16,7 @@ export default function SecondHeroBanner(){
                             <br/>
                             by nature
                         </h1>
-                        <a href=""
+                        <a href="/echo"
                            className="block bg-white hover:bg-gray-100 py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10">
                             Discover
                         </a>

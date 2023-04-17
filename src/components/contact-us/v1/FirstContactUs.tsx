@@ -1,12 +1,6 @@
-import React, {useEffect, useState} from "react";
 
 export default function FirstContactUs(props: { data :any}){
-    const[contactUsData,setContactUsData] = useState<any>([])
     console.log('Contact Us child :', props.data);
-
-    useEffect(() => {
-        setContactUsData(props.data);
-    },[])
 
     return(
         <>

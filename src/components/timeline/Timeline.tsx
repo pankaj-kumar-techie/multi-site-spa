@@ -1,22 +1,21 @@
 import React from "react";
+import FirstTimeline from "./v1/FirstTimeline";
 import SecondTimeline from "./v2/SecondTimeline";
 
-interface TimeLine {
-    childComp?: React.ReactNode;
+interface HeroBannerProps {
+    data: any;
+    version: "v1" | "v2" ;
 }
 
-const ParentComp: React.FC<TimeLine> = (props) => {
-    const {childComp} = props;
-    return <div>{childComp}</div>;
+const bannerComponents = {
+    v1: FirstTimeline,
+    v2: SecondTimeline,
 };
 
-export const HeroBanner = (props: any) =>  {
-    return (
-        <>
-            {/*<ParentComp childComp={<FirstTimeline></FirstTimeline>}></ParentComp>*/}
-            <ParentComp childComp={<SecondTimeline data={props.data}></SecondTimeline>}></ParentComp>
-        </>
+const Timeline: React.FC<HeroBannerProps> = ({data, version}) => {
+    const BannerComponent = bannerComponents[version];
 
-    )
-}
-export default HeroBanner;
+    return <BannerComponent data={data}/>;
+};
+
+export default Timeline;

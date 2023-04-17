@@ -1,12 +1,12 @@
 import {useEffect, useState} from "react";
 
 export default function FirstService(props :{data:any}) {
-    const [bannerData, setBannerData] = useState<any>([])
+    const [serviceData, setServiceData] = useState<any>([])
     console.log('Hero Banner  child :', props.data);
 
     useEffect(() => {
-        setBannerData(props.data);
-    }, [])
+        setServiceData(props.data);
+    }, [props.data])
 
     return (
         <section>
@@ -15,6 +15,7 @@ export default function FirstService(props :{data:any}) {
                     <div className="w-full lg:w-1/2 px-8">
                         <div className="mb-12 lg:mb-0 pb-12 lg:pb-0 border-b lg:border-b-0">
                             <h2 className="mb-4 text-3xl lg:text-4xl font-bold font-heading dark:text-white">
+                                {serviceData?.title}
                                 Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea
                                 dictumst.
                             </h2>

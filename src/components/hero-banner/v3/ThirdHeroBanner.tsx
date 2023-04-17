@@ -6,7 +6,7 @@ export default function ThirdHeroBanner(props: { data :any}){
 
     useEffect(() => {
         setBannerData(props.data);
-    },[])
+    },[props.data])
     return(
         <section>
             <div className="relative bg-white overflow-hidden">
@@ -90,7 +90,7 @@ export default function ThirdHeroBanner(props: { data :any}){
                                 </div>
 
                                 <a
-                                    href="#"
+                                    href="/echo"
                                     className="inline-block text-center bg-indigo-600 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-indigo-700"
                                 >
                                     Shop Collection

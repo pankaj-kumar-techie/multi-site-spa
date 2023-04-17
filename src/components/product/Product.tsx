@@ -1,24 +1,19 @@
 import React from "react";
 import FirstProductList from "./v1/FirstProductList";
 
-
-interface Product{
-    childComp?: React.ReactNode;
+interface ProductProps {
+    data: any;
+    version: "v1" ;
 }
 
-const ParentComp: React.FC<Product> = (props) => {
-    const {childComp} = props;
-    return <div>{childComp}</div>;
+const productComponents = {
+    v1: FirstProductList,
 };
 
-export const  Product = (props:any) => {
-    return(
-        <>
-            <ParentComp childComp={<FirstProductList data={props.data}></FirstProductList>}></ParentComp>
+const Product: React.FC<ProductProps> = ({data, version}) => {
+    const ProductComponent = productComponents[version];
 
-        </>
-        )
-    // <ParentComp childComp={<FirstProductList data={props.data}></FirstProductList>}></ParentComp>
+    return <ProductComponent data={data}/>;
+};
 
-}
 export default Product;
