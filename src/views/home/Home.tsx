@@ -1,35 +1,50 @@
-import React, { useEffect, useState } from "react";
-import { Section } from "../../modal/Section";
-import { useParams } from "react-router-dom";
-import { PageService } from "../../service/PageService";
-import PageNotFound from "../../components/page-not-found/PageNotFound";
-import { Renderer } from "../../components/Renderer";
+import React, {useEffect, useState} from "react";
+import {Section} from "../../modal/Section";
+import {PageService} from "../../service/PageService";
+import {Renderer} from "../../components/Renderer";
+import Loader from "../../components/comman/loader/Loader";
+import ErrorPage from "../../components/comman/error/ErrorPage";
+import {AxiosError} from "axios";
 
 export default function Home() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
-    const params = useParams<{ slug?: string }>();
+    const clintHostName = window.location.hostname;
+    const [error, setError] = useState("");
 
     useEffect(() => {
-        const loadPage = () => {
+        const loadPage = async () => {
             setLoading(true);
-            const slug = params.slug ?? "home";
-            console.log("Website Name slug :", slug);
+            console.log("Clint Domain Name  :", clintHostName);
 
-            PageService.getPage(slug)
-                .then((res) => {
+            let retryCount = 0;
+            const maxRetries = 2;
+
+            while (retryCount < maxRetries) {
+                try {
+                    const res = await PageService.getPage(clintHostName);
                     setLoading(false);
                     setSectionData(res.data.section);
                     console.log("Pass Section Data to Child Component ", res.data.section);
-                })
-                .catch((error) => {
-                    console.log("Error:", error);
-                    // TODO: Provide feedback to the client and retry the API call
-                });
+                    return;
+                } catch (error) {
+                    console.log("ErrorPage:", error);
+                    retryCount++;
+                }
+            }
+
+            // API call failed after maxRetries attempts
+            setError("Failed to load page data after " + maxRetries + " attempts.");
+            setLoading(false);
         };
 
         loadPage();
-    }, [params.slug]);
+    }, [clintHostName]);
+
+    if (error) {
+        return <ErrorPage message={error} />;
+    }
+
 
     return (
         <>
@@ -40,7 +55,7 @@ export default function Home() {
                     )}
                 </>
             ) : (
-                <PageNotFound />
+                <Loader/>
             )}
         </>
     );

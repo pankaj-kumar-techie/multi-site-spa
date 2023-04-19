@@ -55,10 +55,7 @@ export class Renderer {
             CommingSoon: <CommingSoon></CommingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
-        console.log("Section type :" + section['data']['type']);
         const type: any = section.data.type;
-        console.log("Render V2 called :" + type);
-
         return components[type];
     }
 }
