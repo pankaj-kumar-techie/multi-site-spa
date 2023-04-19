@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Loader = () => {
-    const [loading, setLoading] = useState(true);
+    const [loading] = useState(true);
 
     return (
         <div className="flex justify-center items-center h-screen">

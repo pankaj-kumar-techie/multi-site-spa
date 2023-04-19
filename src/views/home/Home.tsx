@@ -4,7 +4,6 @@ import {PageService} from "../../service/PageService";
 import {Renderer} from "../../components/Renderer";
 import Loader from "../../components/comman/loader/Loader";
 import ErrorPage from "../../components/comman/error/ErrorPage";
-import {AxiosError} from "axios";
 
 export default function Home() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
@@ -42,7 +41,7 @@ export default function Home() {
     }, [clintHostName]);
 
     if (error) {
-        return <ErrorPage message={error} />;
+        return <ErrorPage message={error}/>;
     }
 
 
