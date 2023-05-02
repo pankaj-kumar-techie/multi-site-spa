@@ -3,7 +3,6 @@ import Title from "../../comman/title-cover/Title";
 
 export default function SecondContactUs(props: { data :any}) {
     const [contactUsData, setContactUsData] = useState<any>([])
-    console.log('Contact Us child :', props.data);
 
     useEffect(() => {
         setContactUsData(props.data);

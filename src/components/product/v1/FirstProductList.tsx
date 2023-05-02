@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 const products = [
@@ -40,7 +40,6 @@ const products = [
 
 export default function FirstProductList(props: { data :any}){
     const[productData,setProductData] = useState<any>([])
-    console.log('Product child :', props.data);
 
     useEffect(() => {
         setProductData(props.data);
@@ -48,6 +47,13 @@ export default function FirstProductList(props: { data :any}){
     return(
         <section>
             <div className="bg-white">
+                <div className="text-center">
+                    <h2 className="text-3xl font-bold text-gray-800">Product</h2>
+                    <p className="mt-2 text-xl text-gray-600">
+                        Check out some of our favorite travel Product
+                    </p>
+                </div>
+
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <h2 className="sr-only">Products{productData?.title}</h2>
 

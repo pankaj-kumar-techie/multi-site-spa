@@ -5,19 +5,21 @@ import ThirdService from "./v3/ThirdService";
 
 interface ServicesProps {
     data: any;
-    version: "v1" | "v2"| "v3" ;
+    version: "v1" | "v2" | "v3";
 }
 
-const bannerComponents = {
+const serviceComponents: {
+    [key in ServicesProps["version"]]: React.FC<{ data: any }>;
+} = {
     v1: FirstService,
     v2: SecondService,
     v3: ThirdService,
 };
 
 const Services: React.FC<ServicesProps> = ({data, version}) => {
-    const BannerComponent = bannerComponents[version];
+    const ServiceComponent = serviceComponents[version];
 
-    return <BannerComponent data={data}/>;
+    return <ServiceComponent data={data}/>;
 };
 
 export default Services;

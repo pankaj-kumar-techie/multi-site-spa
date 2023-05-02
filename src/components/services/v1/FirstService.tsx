@@ -1,15 +1,14 @@
 import {useEffect, useState} from "react";
 
-export default function FirstService(props :{data:any}) {
+export default function FirstService(props: { data: any }) {
     const [serviceData, setServiceData] = useState<any>([])
-    console.log('Hero Banner  child :', props.data);
 
     useEffect(() => {
         setServiceData(props.data);
     }, [props.data])
 
     return (
-        <section>
+        <section className="bg-white dark:bg-gray-800">
             <div className="container max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 bg-white dark:bg-gray-800">
                 <div className="flex flex-wrap -mx-8">
                     <div className="w-full lg:w-1/2 px-8">

@@ -2,7 +2,6 @@ import React, {useEffect, useState} from "react";
 
 export default function SecondTimeline(props: { data: any }) {
     const [timelineData, setTimelineData] = useState<any>([])
-    console.log('Hero Banner  child :', props.data);
 
     useEffect(() => {
         setTimelineData(props.data);

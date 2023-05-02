@@ -3,180 +3,28 @@ import React, {useEffect, useState} from "react";
 export default function FirstAboutUs(props: { data: any }) {
 
     const [aboutData, setAboutData] = useState<any>([])
-    console.log('About Us child :', props.data);
 
     useEffect(() => {
         setAboutData(props.data);
     }, [props.data])
 
+
+    let aboutImage = "https://source.unsplash.com/random/1600x900";
     return (
         <section className="text-gray-600 body-font">
-            <div className="container px-5 py-24 mx-auto">
-                <div
-                    className="p-5 bg-white flex items-center mx-auto border-b  mb-10 border-gray-200 rounded-lg sm:flex-row flex-col bg-transparent">
-                    <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-
-                        <h2 className="text-3xl text-gray-900 font-bold md:text-4xl">{aboutData?.title}</h2>
-                        <p className="mt-6 py-4 text-gray-600">Information Technology graduate passionate about
-                            software development.
-                            {/*Seeking a responsible career in an organisation where*/}
-                            {/*I can utilize my skills and knowledge to work at my level best to grow with the organisation*/}
-                            {/*and deliver the best possible services.*/}
-
-                            I am an experienced Software Engineer with a Bachelor of Engineering (B.E.) in
-                            information Technology form Chandigarh University, working as Software Engineer with
-                            good knowledge of front-end and back-end technology, include design, maintain, modify and
-                            debug software. And I also have significant experience creating software architecture,
-                            AWS infrastructure, microservices building and integrating Restful APIs
-
-                            {/*I'm responsible and always punctual to deadlines. My goal is to make every client satisfied. Thank You*/}
-                        </p>
-                        <p className="mt-4 text-gray-600"> I have an exceptional understanding of current web
-                            technologies and have a strong background with popular web-building languages such as
-                            Java,
-                            SpringBoot,, MySQL, NoSql, Typescript,React, Angular, Linux, AWS services etc</p>
-                        <div className="py-4">
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Software Design and Architecture</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Object-Oriented Programming</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Spring Boot</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">REST WebService</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Microservices</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Cloud Services
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">MySql</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-yellow-500 w-6 h-6 mr-1" width="24" height="24"
-                                         viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor"
-                                         fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z"/>
-                                        <circle cx="12" cy="12" r="9"/>
-                                        <path d="M9 12l2 2l4 -4"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Java</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-gray-500 w-6 h-6 mr-1" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" strokeWidth="2"
-                                         strokeLinecap="round" strokeLinejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="15" y1="9" x2="9" y2="15"/>
-                                        <line x1="9" y1="9" x2="15" y2="15"/>
-                                    </svg>
-                                    <p className="title-font font-medium">Swift</p>
-                                </div>
-                            </div>
-
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-gray-500 w-6 h-6 mr-1" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" strokeWidth="2"
-                                         strokeLinecap="round" strokeLinejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="15" y1="9" x2="9" y2="15"/>
-                                        <line x1="9" y1="9" x2="15" y2="15"/>
-                                    </svg>
-                                    <p className="title-font font-medium">kotlin</p>
-                                </div>
-                            </div>
-                            <div className=" inline-block mr-2">
-                                <div className="flex  pr-2 h-full items-center">
-                                    <svg className="text-gray-500 w-6 h-6 mr-1" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" strokeWidth="2"
-                                         strokeLinecap="round" strokeLinejoin="round">
-                                        <circle cx="12" cy="12" r="10"/>
-                                        <line x1="15" y1="9" x2="9" y2="15"/>
-                                        <line x1="9" y1="9" x2="15" y2="15"/>
-                                    </svg>
-                                    <p className="title-font font-medium">CSS</p>
-                                </div>
-                            </div>
-                        </div>
-
+            <div className="bg-white">
+                <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-col-reverse sm:flex-row">
+                    <div className="sm:w-1/2 flex justify-center">
+                        <img src={aboutImage} alt="About Us" className="w-80 h-80 rounded-full object-cover" />
                     </div>
-                    <div
-                        className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center flex-shrink-0">
-                        <img alt={"he"}
-                            src="https://firebasestorage.googleapis.com/v0/b/thecaffeinecode.appspot.com/o/Tcc_img%2Flogo.png?alt=media&token=5e5738c4-8ffd-44f9-b47a-57d07e0b7939"/>
+                    <div className="sm:w-1/2 sm:pl-16">
+                        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-6">{aboutData.title}</h2>
+                        <p className="text-gray-600 text-lg mb-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p className="text-gray-600 text-lg">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -1,15 +1,26 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
+
 
 const Loader = () => {
     const [loading] = useState(true);
 
     return (
-        <div className="flex justify-center items-center h-screen">
+
+        <div className="flex justify-center items-center h-screen bg-gray-800">
             {loading && (
-                <div className="border-4 border-gray-200 border-opacity-50 rounded-full w-12 h-12 animate-spin"></div>
+                <div className="flex justify-center items-center h-screen">
+                    <div className="relative inline-block">
+                        <div
+                            className="animate-ping absolute inline-flex h-10 w-10 rounded-full bg-purple-400 opacity-75"></div>
+                        <div className="relative inline-flex rounded-full h-10 w-10 bg-purple-500"></div>
+                    </div>
+                </div>
+
             )}
         </div>
+
     );
 };
+
 
 export default Loader;

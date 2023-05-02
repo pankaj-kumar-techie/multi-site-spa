@@ -7,51 +7,24 @@ import Services from "./services/Services";
 import Timeline from "./timeline/Timeline";
 import PageNotFound from "./page-not-found/PageNotFound";
 import CommingSoon from "./comming-soon/CommingSoon";
-
-//Todo: refactor code use good approach instead of switch case
+import Testimonials from "./testimonials/Testimonials";
+import Gallery from "./gallery/Gallery";
 
 export class Renderer {
 
-    // static componentRender(siteId:string , section: any): JSX.Element{
-    //     console.log("Render");
-    //     switch (section['data']['type']){
-    //         case 'AboutUs':
-    //             return <AboutUs data={section['data']} version={'v1'}></AboutUs>;
-    //         case 'HeroBanner':
-    //             return <HeroBanner data={section['data']}></HeroBanner>;
-    //         case 'ContactUs':
-    //             return <ContactUs data={section['data']}></ContactUs>;
-    //         case 'Portfolio':
-    //             return <Portfolio></Portfolio>;
-    //         case 'Product':
-    //             return <Product data={section['data']}></Product>;
-    //         case 'Service':
-    //             return <Services></Services>;
-    //         case 'Timeline':
-    //             return <Timeline></Timeline>;
-    //         case 'Default':
-    //             return <Echo data={section['data']}></Echo>;
-    //         case 'CommingSoon':
-    //             return <CommingSoon></CommingSoon>;
-    //         case 'PageNotFound':
-    //             return <PageNotFound></PageNotFound>;
-    //         default:
-    //             return <PageNotFound></PageNotFound>;
-    //     }
-    // }
-
-
-    //Todo : Get Section Version and pass version value
-
     static componentRenderV1(website: string, section: any): JSX.Element {
+        console.log("Section Data With Version ", section['data'].theme, section.version)
         const components: any = {
-            HeroBanner: <HeroBanner data={section['data']} version={section['version']}></HeroBanner>,
-            AboutUs: <AboutUs data={section['data']} version={section['version']}></AboutUs>,
-            ContactUs: <ContactUs data={section['data']} version={section['version']}></ContactUs>,
-            Portfolio: <Portfolio data={section['data']} version={section['version']}></Portfolio>,
-            Product: <Product data={section['data']} version={section['version']}></Product>,
-            Timeline: <Timeline data={section['data']} version={section['version']}></Timeline>,
-            Service: <Services data={section['data']} version={section['version']}></Services>,
+            HeroBanner: <HeroBanner key={section.id} data={section['data']} version={section['version']}></HeroBanner>,
+            AboutUs: <AboutUs key={section.id} data={section['data']} version={section['version']}></AboutUs>,
+            ContactUs: <ContactUs key={section.id} data={section['data']} version={section['version']}></ContactUs>,
+            Portfolio: <Portfolio key={section.id} data={section['data']} version={section['version']}></Portfolio>,
+            Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
+            Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
+            Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
+            Testimonial: <Testimonials key={section.id} data={section['data']}
+                                       version={section['version']}></Testimonials>,
+            Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
             CommingSoon: <CommingSoon></CommingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
