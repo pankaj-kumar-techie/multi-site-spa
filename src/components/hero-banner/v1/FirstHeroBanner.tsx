@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import Weather from "../../comman/Weather";
 
 const styles1 = {
     section: "bg-gray-800 min-h-screen flex flex-col justify-center",
@@ -34,7 +33,6 @@ export default function FirstHeroBanner(props: { data: any }) {
 
     return (
         <section className={styles.section}>
-            <Weather city={"Leh"} country={"India"}></Weather>
             <div className=" py-12 flex flex-col justify-center items-center">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-right">
