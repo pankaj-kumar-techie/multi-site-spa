@@ -1,23 +1,23 @@
 import React, {useEffect, useState} from "react";
 
 const styles1 = {
-    section: "bg-gray-800 min-h-screen flex flex-col justify-center",
-    title: "text-4xl font-bold text-white text-center",
-    subTitle: "mt-3 max-w-md mx-auto text-xl text-gray-300 sm:text-2xl md:mt-5 md:text-3xl md:max-w-3xl text-center",
+    section: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  min-h-screen flex flex-col justify-center",
+    title: "text-[8rem] font-bold text-white text-center",
+    subTitle: "mt-3 max-w-md mx-auto text-xl text-gray-300 sm:text-2xl md:mt-5 md:text-[2.5rem] md:max-w-3xl text-center",
     buttonWrapper: "mt-10 sm:flex justify-center",
-    button: "w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 md:py-3 md:text-lg md:px-8",
-    buttonSecondary: "mt-3 rounded-md shadow sm:mt-0 sm:ml-3",
-    buttonSecondaryLink: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white md:py-4 md:text-lg md:px-10"
+    button: "w-[250p]  flex items-center justify-center px-6  border border-transparent text-base font-medium rounded-md text-white bg-indigo-600  md:text-lg md:px-8",
+    buttonSecondary: "mt-3 rounded-md  shadow sm:mt-0 sm:ml-3",
+    buttonSecondaryLink: "w-[250px] flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-gradient-to-r from-white to-white hover:text-white hover:from-pink-500 hover:to-yellow-500 md:py-4 md:text-lg md:px-10"
 };
 
 const styles2 = {
-    section: "bg-white-800 min-h-screen flex flex-col justify-center",
+    section: "bg-gray-100 min-h-screen flex flex-col justify-center",
     title: "text-4xl font-bold text-gray-800 text-center",
-    subTitle: "mt-3 max-w-md mx-auto text-xl text-gray-500 sm:text-2xl md:mt-5 md:text-3xl md:max-w-3xl text-right",
-    buttonWrapper: "mt-10 sm:flex justify-center",
-    button: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 md:py-4 md:text-lg md:px-10",
+    subTitle: "mt-3 max-w-md mx-auto text-lg text-gray-600 sm:text-xl md:mt-5 md:text-2xl md:max-w-3xl text-center",
+    buttonWrapper: "mt-10 flex justify-center",
+    button: "px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:text-lg md:px-6",
     buttonSecondary: "mt-3 rounded-md shadow sm:mt-0 sm:ml-3",
-    buttonSecondaryLink: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10"
+    buttonSecondaryLink: "px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:bg-indigo-700 md:py-4 md:text-lg md:px-10",
 };
 export default function FirstHeroBanner(props: { data: any }) {
     const [bannerData, setBannerData] = useState<any>([])
@@ -47,7 +47,7 @@ export default function FirstHeroBanner(props: { data: any }) {
                             <div className={styles.button}>
                                 <a
                                     href="/echo"
-                                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+                                    className="w-[200px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
                                 >
                                     Get started
                                 </a>

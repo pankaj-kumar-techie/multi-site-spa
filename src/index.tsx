@@ -8,6 +8,7 @@ import TravelChatBot from "./TravelChatBot";
 import BlogList from "./views/blog/BlogList";
 import BlogDetails from "./views/blog/BlogDetails";
 import App from "./App";
+import LandingPageApp from "./LandingPageApp";
 
 
 const root = ReactDOM.createRoot(
@@ -21,6 +22,7 @@ root.render(
             <Route path="blog" element={<BlogList/>}/>
             <Route path="blog/:id" element={<BlogDetails/>}/>
             <Route path="echo" element={<TravelChatBot/>}/>
+            <Route path="test" element={<LandingPageApp/>}/>
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     </BrowserRouter>
