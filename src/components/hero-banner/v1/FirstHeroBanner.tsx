@@ -2,12 +2,12 @@ import React, {useEffect, useState} from "react";
 
 const styles1 = {
     section: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  min-h-screen flex flex-col justify-center",
-    title: "text-[8rem] font-bold text-white text-center",
+    title: "lg:text-[8rem] md:text-[7rem] text-[2.5rem] font-bold text-white text-center",
     subTitle: "mt-3 max-w-md mx-auto text-xl text-gray-300 sm:text-2xl md:mt-5 md:text-[2.5rem] md:max-w-3xl text-center",
     buttonWrapper: "mt-10 sm:flex justify-center",
-    button: "w-[250p]  flex items-center justify-center px-6  border border-transparent text-base font-medium rounded-md text-white bg-indigo-600  md:text-lg md:px-8",
-    buttonSecondary: "mt-3 rounded-md  shadow sm:mt-0 sm:ml-3",
-    buttonSecondaryLink: "w-[250px] flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-gradient-to-r from-white to-white hover:text-white hover:from-pink-500 hover:to-yellow-500 md:py-4 md:text-lg md:px-10"
+    button: "w-[250px]  flex items-center justify-center px-6  border border-transparent text-base font-medium rounded-md text-white bg-indigo-600  md:text-lg md:px-8",
+    buttonSecondary: "mt-3  sm:w-[250px] rounded-md  shadow sm:mt-0  sm:ml-3",
+    buttonSecondaryLink: "w-[250px]  flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-gradient-to-r from-white to-white hover:text-white hover:from-pink-500 hover:to-yellow-500 md:py-4 md:text-lg md:px-10"
 };
 
 const styles2 = {
