@@ -4,6 +4,8 @@ import {PageService} from "./service/PageService";
 import ErrorPage from "./components/comman/error/ErrorPage";
 import {Renderer} from "./components/Renderer";
 import Loader from "./components/comman/loader/Loader";
+import Header from "./components/layouts/header/Header";
+import Footer from "./components/layouts/footer/Footer";
 
 
 export default function App() {
@@ -44,9 +46,11 @@ export default function App() {
         <>
             {!loading && sectionData.length > 0 ? (
                 <>
+                    <Header></Header>
                     {sectionData.map((sectionData: Section) =>
                         Renderer.componentRenderV1("Home", sectionData)
                     )}
+                    <Footer></Footer>
                 </>
             ) : (
                 <Loader/>

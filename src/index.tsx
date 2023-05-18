@@ -18,7 +18,7 @@ root.render(
     <BrowserRouter>
         <Routes>
             <Route index element={<App/>}/>
-            {/*<Route path="website/:slug" element={<Home/>}/>*/}
+            <Route path="website/:slug" element={<App/>}/>
             <Route path="blog" element={<BlogList/>}/>
             <Route path="blog/:id" element={<BlogDetails/>}/>
             <Route path="echo" element={<TravelChatBot/>}/>
