@@ -1,4 +1,4 @@
-export class Constants {
+export class Config {
     // static API_BASE_URL = "https://dev.pahariyatri.com/blog-service/";
     static SPA_SERVICE_BASE_URL = "http://localhost:8090/";
     static BLOG_SERVICE_BASE_URL = "http://localhost:8091/";
