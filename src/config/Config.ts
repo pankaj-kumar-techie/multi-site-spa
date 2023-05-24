@@ -7,4 +7,5 @@ export class Config {
     static USER_LOCATION = "userLocation";
     static REFRESH_TOKEN = "refreshToken";
     static SESSION_USER = "sessionUser";
+    static CLIENT_ID = "clientId";
 }

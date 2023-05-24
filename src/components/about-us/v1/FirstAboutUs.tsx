@@ -37,9 +37,6 @@ export default function FirstAboutUs(props: { data: any }) {
         setBannerTheme(props.data.theme || "Theme1")
     }, [props.data])
 
-
-    let aboutImage = "	https://stackoverflow.co/img/product/home/bg-header-mobile.png";
-    let aboutImage2 = "	https://stackoverflow.co/img/product/teams/teams-integrations-spot.svg";
     return (
         <section className={styles.section}>
             <div className={styles.backgroundColor}>

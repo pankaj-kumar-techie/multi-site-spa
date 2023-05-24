@@ -1,5 +1,5 @@
 import {Config} from "./Config";
-import axios, {AxiosInstance} from "axios";
+import axios, {AxiosInstance, AxiosRequestConfig} from "axios";
 
 export const axiosClient: AxiosInstance = axios.create({
     baseURL: Config.SPA_SERVICE_BASE_URL,
@@ -7,8 +7,19 @@ export const axiosClient: AxiosInstance = axios.create({
 });
 
 export const blogServiceClient: AxiosInstance = axios.create({
-    baseURL:Config.BLOG_SERVICE_BASE_URL,
+    baseURL: Config.BLOG_SERVICE_BASE_URL,
     adapter: require('axios/lib/adapters/http')
+});
+
+//Todo: client-id make dynamic
+axiosClient.interceptors.request.use((config: AxiosRequestConfig) => {
+    // Ensure that the "headers" object is defined
+    config.headers = config.headers || {};
+
+    // Set the "client-id" header with your desired value
+    // config.headers['client-id'] = '7a1fcf37-c19b-4af0-8b81-992098591a1c';
+    config.headers['client-id'] = `${localStorage.getItem('client-id')}`;
+    return config;
 });
 
 // Add a response interceptor to axiosClient
