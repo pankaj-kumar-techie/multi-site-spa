@@ -11,13 +11,10 @@ export const blogServiceClient: AxiosInstance = axios.create({
     adapter: require('axios/lib/adapters/http')
 });
 
-//Todo: client-id make dynamic
 axiosClient.interceptors.request.use((config: AxiosRequestConfig) => {
-    // Ensure that the "headers" object is defined
     config.headers = config.headers || {};
 
     // Set the "client-id" header with your desired value
-    // config.headers['client-id'] = '7a1fcf37-c19b-4af0-8b81-992098591a1c';
     config.headers['client-id'] = `${localStorage.getItem('client-id')}`;
     return config;
 });

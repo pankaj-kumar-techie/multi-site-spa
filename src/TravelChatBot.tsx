@@ -1,9 +1,13 @@
 import React from "react";
+import FAQAccordion from "./components/faq/FAQAccordion";
+import TermsAndConditions from "./components/terms-and-conditions/TermsAndConditions";
 
 const TravelChatBot = () => {
     
     return (
         <>
+            <FAQAccordion data={""} version={"v1"}></FAQAccordion>
+            <TermsAndConditions data={""} version={"v1"}></TermsAndConditions>
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">
                     {/* Background Image */}

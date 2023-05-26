@@ -9,6 +9,8 @@ import PageNotFound from "./page-not-found/PageNotFound";
 import CommingSoon from "./comming-soon/CommingSoon";
 import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./gallery/Gallery";
+import FAQAccordion from "./faq/FAQAccordion";
+import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
 
 export class Renderer {
 
@@ -25,6 +27,10 @@ export class Renderer {
             Testimonial: <Testimonials key={section.id} data={section['data']}
                                        version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
+            FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
+            TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']}
+                                                    version={section['version']}></TermsAndConditions>,
+
             CommingSoon: <CommingSoon></CommingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
