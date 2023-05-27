@@ -1,14 +1,22 @@
-import {Constants} from "./Constant";
-import axios, {AxiosInstance} from "axios";
+import {Config} from "./Config";
+import axios, {AxiosInstance, AxiosRequestConfig} from "axios";
 
 export const axiosClient: AxiosInstance = axios.create({
-    baseURL: Constants.SPA_SERVICE_BASE_URL,
+    baseURL: Config.SPA_SERVICE_BASE_URL,
     adapter: require('axios/lib/adapters/http')
 });
 
 export const blogServiceClient: AxiosInstance = axios.create({
-    baseURL:Constants.BLOG_SERVICE_BASE_URL,
+    baseURL: Config.BLOG_SERVICE_BASE_URL,
     adapter: require('axios/lib/adapters/http')
+});
+
+axiosClient.interceptors.request.use((config: AxiosRequestConfig) => {
+    config.headers = config.headers || {};
+
+    // Set the "client-id" header with your desired value
+    config.headers['client-id'] = `${localStorage.getItem('client-id')}`;
+    return config;
 });
 
 // Add a response interceptor to axiosClient
