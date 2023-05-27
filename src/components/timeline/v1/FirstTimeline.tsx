@@ -1,7 +1,8 @@
 export default function FirstTimeline() {
     return (
         <section>
-            <h3 className="text-2xl text-gray-700 font-bold mb-6 -ml-3">Latest News</h3>
+            <h3 className="text-2xl text-gray-700 font-bold mb-6 text-center -ml-3">Latest News</h3>
+            <div className="container mx-auto">
             <ol className="border-l-2 border-purple-600">
                 <li>
                     <div className="md:flex flex-center">
@@ -113,6 +114,7 @@ export default function FirstTimeline() {
                     </div>
                 </li>
             </ol>
+            </div>
         </section>
     );
 }

@@ -1,13 +1,26 @@
 import React from "react";
 
 const images = [
-    "https://images.unsplash.com/photo-1533156185246-38b4af71f2c2",
-    "https://images.unsplash.com/photo-1486915309851-74a3c1e8d3b3",
-    "https://images.unsplash.com/photo-1533756103556-1e9b5d94f29c",
-    "https://images.unsplash.com/photo-1529902844348-7ecbfa0e9759",
-    "https://images.unsplash.com/photo-1550547660-6c413ba142cd",
-    "https://images.unsplash.com/photo-1529060150413-3a6aa3cfc983",
+    "https://images.unsplash.com/photo-1684752097893-13785863f9a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
+    "https://images.unsplash.com/photo-1682686580003-22d3d65399a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1031&q=80",
+    "https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1683009427666-340595e57e43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+    "https://images.unsplash.com/photo-1684434799091-5c8cb508db9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1682685797886-79020b7462a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
 ];
+
+const Images=[
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" ,
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp",
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp",
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" 
+
+
+
+
+]
 
 function Gallery(props: { data: any }) {
     return (
@@ -39,6 +52,22 @@ function Gallery(props: { data: any }) {
                         ))}
                     </div>
                 </div>
+                <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+  <div className="-m-1 flex flex-wrap md:-m-2">
+    {Images.map((img,index)=>(
+
+    <div className="flex w-1/3 flex-wrap" key={index}>
+      <div className="w-full p-1 md:p-2">
+        <img
+          alt="gallery"
+          className="block h-full w-full rounded-lg object-cover object-center"
+          src={img}/>
+      </div>
+    </div>
+    ))}
+   
+  </div>
+</div>
             </div>
         </section>
     );

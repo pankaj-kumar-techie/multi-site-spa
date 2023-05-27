@@ -1,9 +1,22 @@
 import React from "react";
+import HeroBanner from "./components/hero-banner/HeroBanner";
+import AboutUs from "./components/about-us/AboutUs";
+import ContactUs from "./components/contact-us/ContactUs";
+import Gallery from "./components/gallery/Gallery";
+import Testimonials from "./components/testimonials/Testimonials";
+import Timeline from "./components/timeline/Timeline";
 
 const TravelChatBot = () => {
     
     return (
         <>
+        <AboutUs key={"1"} data={""} version={"v1"}></AboutUs>
+        <ContactUs key={"1"} data={""} version={"v1"}></ContactUs>
+        <HeroBanner key={"1"} data={""} version={"v1"}></HeroBanner>
+        <Gallery key={"1"} data={""} version={"v1"}></Gallery>
+        <Testimonials  key={"1"} data={""} version={"v1"} ></Testimonials>
+        <Timeline  key={"1"} data={""} version={"v1"} ></Timeline>
+        
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">
                     {/* Background Image */}
