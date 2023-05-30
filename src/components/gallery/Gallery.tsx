@@ -1,19 +1,19 @@
 import React from "react";
 import FirstGallery from "./v1/FirstGallery";
 
-interface Gallery {
+interface GalleryProps {
     data: any;
-    version: "v1"  ;
+    version: "v1";
 }
 
-const bannerComponents = {
+const galleryComponents = {
     v1: FirstGallery,
 };
 
-const Gallery: React.FC<Gallery> = ({data, version}) => {
-    const BannerComponent = bannerComponents[version];
+const Gallery: React.FC<GalleryProps> = ({data, version}) => {
+    const GalleryComponent = galleryComponents[version];
 
-    return <BannerComponent data={data}/>;
+    return <GalleryComponent data={data}/>;
 };
 
 export default Gallery;

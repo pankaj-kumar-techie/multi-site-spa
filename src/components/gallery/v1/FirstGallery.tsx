@@ -9,20 +9,16 @@ const images = [
     "https://images.unsplash.com/photo-1682685797886-79020b7462a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
 ];
 
-const Images=[
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" ,
+const Images = [
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp",
     "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp",
     "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp",
     "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp",
     "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(76).webp",
-    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" 
+    "https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp",
+];
 
-
-
-
-]
-
-function Gallery(props: { data: any }) {
+function FirstGallery(props: { data: any }) {
     return (
         <section className="bg-white py-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,35 +38,36 @@ function Gallery(props: { data: any }) {
                                 <img
                                     className="w-full h-full object-cover"
                                     src={image}
-                                    alt={`Gallery image ${index + 1}`}
+                                    alt={`Gallery ${index + 1}`}
                                 />
                                 <div className="absolute inset-0 bg-gray-900 opacity-75"></div>
                                 <div className="absolute inset-0 flex items-center justify-center">
-                                    <p className="text-white font-bold text-xl">Image {index + 1}</p>
+                                    <p className="text-white font-bold text-xl">
+                                        Image {index + 1}
+                                    </p>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
-  <div className="-m-1 flex flex-wrap md:-m-2">
-    {Images.map((img,index)=>(
-
-    <div className="flex w-1/3 flex-wrap" key={index}>
-      <div className="w-full p-1 md:p-2">
-        <img
-          alt="gallery"
-          className="block h-full w-full rounded-lg object-cover object-center"
-          src={img}/>
-      </div>
-    </div>
-    ))}
-   
-  </div>
-</div>
+                    <div className="-m-1 flex flex-wrap md:-m-2">
+                        {Images.map((img, index) => (
+                            <div className="flex w-1/3 flex-wrap" key={index}>
+                                <div className="w-full p-1 md:p-2">
+                                    <img
+                                        className="block h-full w-full rounded-lg object-cover object-center"
+                                        src={img}
+                                        alt={`mountains ${index + 1}`}
+                                    />
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </section>
     );
 }
 
-export default Gallery;
+export default FirstGallery;
