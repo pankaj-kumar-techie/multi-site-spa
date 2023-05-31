@@ -2,8 +2,9 @@ import React from 'react';
 
 const FirstTermsAndConditions = (props: { data: any }) => {
     return (
-        <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Terms and Conditions</h2>
+        <>
+        <div className="container mx-auto px-4 mb-4">
+            <h2 className="text-2xl font-bold text-center mb-4">Terms and Conditions</h2>
             <div className="prose">
                 <h3>Introduction</h3>
                 <p>
@@ -36,9 +37,10 @@ const FirstTermsAndConditions = (props: { data: any }) => {
                     lectus vitae mauris blandit, ac tincidunt ante bibendum. Sed a risus eu enim lacinia consequat non
                     in sem.
                 </p>
-                {/* Add more sections as needed */}
+               
             </div>
         </div>
+        </>
     );
 };
 
