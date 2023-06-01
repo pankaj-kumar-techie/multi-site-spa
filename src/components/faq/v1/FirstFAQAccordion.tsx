@@ -24,7 +24,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
     };
 
     return (
-        <section>
+        <section className='container mx-auto px-4'>
             <div>
                 <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
             </div>

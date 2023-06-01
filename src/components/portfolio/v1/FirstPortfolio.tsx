@@ -60,13 +60,13 @@ export default function FirstPortfolio() {
                                     </div>
                                     <div className={'mt-4'}>
 
-                                        <h3 className="mt-6 text-sm text-gray-500">
+                                        <h3 className="ml-2 mt-6 text-sm text-gray-500">
                                             <a href={callout.href}>
                                                 <span className="absolute inset-0"/>
                                                 {callout.name}
                                             </a>
                                         </h3>
-                                        <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+                                        <p className="ml-2 text-base font-semibold text-gray-900">{callout.description}</p>
                                     </div>
                                 </div>
                             ))}
