@@ -36,12 +36,6 @@ axiosClient.interceptors.response.use(
     }
 );
 
-// Add a request interceptor to axiosClient
-// axiosClient.interceptors.request.use(config => {
-//     // Set headers, etc.
-//     config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
-//     return config;
-// });
 
 // Add a response interceptor to blogServiceClient
 blogServiceClient.interceptors.response.use(

@@ -6,7 +6,6 @@ import Gallery from "./components/gallery/Gallery";
 import Testimonials from "./components/testimonials/Testimonials";
 import Timeline from "./components/timeline/Timeline";
 import Services from "./components/services/Services";
-import TermsAndConditions from "./components/terms-and-conditions/TermsAndConditions";
 
 const TravelChatBot = () => {
     
@@ -19,7 +18,8 @@ const TravelChatBot = () => {
         <Testimonials  key={"1"} data={""} version={"v1"} ></Testimonials>
         <Timeline  key={"1"} data={""} version={"v1"} ></Timeline>
         <Services key={"1"} data={""} version={"v1"} ></Services>
-        <TermsAndConditions key={"1"} data={""} version={"v1"} ></TermsAndConditions>
+        
+        
         
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">
