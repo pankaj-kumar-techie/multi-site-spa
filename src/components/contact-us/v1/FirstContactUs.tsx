@@ -1,10 +1,44 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 
 function ContactUs(props:{data:any}) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
+
+
+    const styles1 = {
+        section: "bg-white py-16",
+        backgroundColor: "",
+        title: "text-2xl font-bold text-gray-800",
+        subTitle: "text-gray-600",
+        imageWrapper: "hidden",
+        bodyWrapper: "sm:w-1/2 sm:pl-16",
+    };
+    const styles2 = {
+        section: "bg-white py-16",
+        backgroundColor: "bg-orange-200",
+        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
+        subTitle: "text-gray-600 text-lg mb-6",
+        imageWrapper: "hidden",
+        bodyWrapper: "sm:w-1/2 sm:pl-16",
+        aboutImage: "https://stackoverflow.co/img/product/teams/teams-integrations-spot.svg",
+        aboutImageWrapper: "w-80 h-80  object-cover",
+    };
+    const [contactUsTheme, setContactUsTheme] = useState<string>("")
+    const [contactUsData, setContactUsData] = useState<any>([])
+
+
+    const styles = {
+        Theme1: styles1,
+        Theme2: styles2,
+    }[contactUsTheme] || styles1;
+
+    useEffect(() => {
+        setContactUsData(props.data);
+        setContactUsTheme(props.data.theme || "Theme1")
+    }, [props.data])
+
 
     function handleSubmit(event: { preventDefault: () => void; }) {
         event.preventDefault();
@@ -14,14 +48,13 @@ function ContactUs(props:{data:any}) {
     }
 
     return (
-        <section className="bg-white py-16">
+        <section className={styles.section}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold text-gray-800">Contact Us</h2>
-                        <p className="text-gray-600">
-                            Have a question or need help planning your trip? Contact us using the information below or
-                            fill out the form and we'll get back to you as soon as possible.
+                        <h2 className={styles.title}>{contactUsData.title}</h2>
+                        <p className={styles.subTitle}>
+                            {contactUsData.subTitle}
                         </p>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-gray-600 rounded-full"></div>
