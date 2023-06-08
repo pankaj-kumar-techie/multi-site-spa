@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 
 const styles1 = {
     section: "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  min-h-screen flex flex-col justify-center",
-    title: "lg:text-[8rem] md:text-[7rem] text-[2.5rem] font-bold text-white text-center",
+    title: "lg:text-[8rem] md:text-[7rem] text-[2.5rem] font-bold text-purssian-blue text-center",
     subTitle: "mt-3 max-w-md mx-auto text-xl text-gray-300 sm:text-2xl md:mt-5 md:text-[2.5rem] md:max-w-3xl text-center",
     buttonWrapper: "mt-10 sm:flex justify-center",
     button: "w-[250px]  flex items-center justify-center px-6  border border-transparent text-base font-medium rounded-md text-white bg-indigo-600  md:text-lg md:px-8",

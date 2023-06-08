@@ -29,7 +29,7 @@ export default function FirstTestimonial(props: { data: any }) {
 
     return (
         <>
-        <section className="bg-gray-200 py-20">
+        <section className="bg-gray-200 hidden py-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold text-gray-800">Testimonials</h2>
@@ -54,6 +54,65 @@ export default function FirstTestimonial(props: { data: any }) {
                 </div>
             </div>
         </section>
+        <div className="container bg-custom-brown pt-20 pb-1 my-24 mx-auto md:px-6">
+  <section className="mb-32 text-center">
+    <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
+
+    <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+      <div className="mb-12 md:mb-0">
+        <div className="mb-6 flex justify-center">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+            className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
+            transition duration-1000 hover:scale-125" />
+        </div>
+        <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+        <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+          Web Developer
+        </h6>
+        <p className="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+          id officiis hic tenetur quae quaerat ad velit ab hic.
+         
+        </p>
+        
+      </div>
+      <div className="mb-12 md:mb-0">
+        <div className="mb-6 flex justify-center">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+            className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
+            transition duration-1000 hover:scale-125" />
+        </div>
+        <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+        <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+          Graphic Designer
+        </h6>
+        <p className="mb-4">
+          Ut enim ad minima veniam, quis nostrum exercitationem ullam
+          corporis suscipit laboriosam, nisi ut aliquid commodi.
+          
+        </p>
+       
+      </div>
+      <div className="mb-0">
+        <div className="mb-6 flex justify-center">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+            className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
+                                        transition duration-1000 hover:scale-125" />
+        </div>
+        <h5 className="mb-2 text-lg font-bold">John Smith</h5>
+        <h6 className="mb-4 font-medium text-primary dark:text-primary-400">
+          Marketing Specialist
+        </h6>
+        <p className="mb-4">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti.
+         
+        </p>
+        
+      </div>
+    </div>
+  </section>
+</div>
         </>
 
     );
