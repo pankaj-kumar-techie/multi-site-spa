@@ -1,6 +1,49 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 export default function FirstFooter(props: { data: any }) {
+    const [footerData, setFooterData] = useState<any>([])
+    const classic = {
+        section: "text-gray-600 body-font",
+        backgroundColor: "bg-orange-200",
+        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
+        subTitle: "text-gray-600 text-lg mb-6",
+        imageWrapper: "hidden",
+        bodyWrapper: "sm:w-1/2 sm:pl-16",
+        aboutImage: "https://stackoverflow.co/img/product/teams/teams-integrations-spot.svg",
+        aboutImageWrapper: "w-80 h-80  object-cover",
+    };
+    const modern = {
+        section: "text-gray-600 body-font  relative overflow-hidden",
+        backgroundColor: "bg-gray-900",
+        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
+        subTitle: "text-white text-lg mb-6",
+        imageWrapper: "absolute top-[-550px] z-0    left-[50%] h-[1500px] translate-x-[-50%]",
+        bodyWrapper: "sm:w-1/2 z-[9] sm:pl-16",
+        aboutImage: "	https://stackoverflow.co/img/product/home/bg-header-mobile.png",
+        aboutImageWrapper: "w-80 z-50 h-80 rounded-full object-cover",
+
+    };
+    const plain = {
+        section: "text-gray-600 body-font  relative overflow-hidden",
+        backgroundColor: "bg-gray-900",
+        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
+        subTitle: "text-white text-lg mb-6",
+    };
+
+
+    const [footerTheme, setFooterTheme] = useState<string>("")
+
+    const styles = {
+        Theme1: classic,
+        Theme2: modern,
+        Theme3: plain,
+    }[footerTheme] || classic;
+
+    useEffect(() => {
+        setFooterData(props.data);
+        setFooterTheme(props.data.theme || "Theme1")
+    }, [props.data])
+
     return (
         <footer className="bg-neutral-900 text-center text-white">
             <div className="container px-6 pt-6">
