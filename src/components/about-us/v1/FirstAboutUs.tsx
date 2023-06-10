@@ -9,7 +9,7 @@ export default function FirstAboutUs(props: { data: any }) {
       "text-3xl font-extrabold text-center mt-10 text-white sm:text-4xl mb-6",
     subTitle: "text-white text-lg mb-6",
     imageWrapper: "hidden",
-    bodyWrapper: "sm:w-1/2 sm:pl-16",
+    bodyWrapper: "sm:w-1/2  sm:pl-16",
     aboutImage:
       "https://www.gotahoenorth.com/wp-content/uploads/2014/12/mainphoto-640x440.jpg",
     aboutImageWrapper: "w-full h-full rounded-lg shadow-lg object-cover",
@@ -25,7 +25,7 @@ export default function FirstAboutUs(props: { data: any }) {
     bodyWrapper: "sm:w-1/2 z-[9] sm:pl-16",
     aboutImage:
       "	https://stackoverflow.co/img/product/home/bg-header-mobile.png",
-    aboutImageWrapper: "w-80 z-50 h-80 rounded-full object-cover",
+    aboutImageWrapper: "w-80 z-50 h-80   rounded-full object-cover",
   };
   const [bannerTheme, setBannerTheme] = useState<string>("");
 
@@ -49,7 +49,8 @@ export default function FirstAboutUs(props: { data: any }) {
           alt=""
         />
         <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-col-reverse sm:flex-row">
-          <div className="sm:w-1/2 flex justify-center">
+          <div className="sm:w-1/2 flex justify-center transform
+                                        transition duration-1000 hover:scale-110">
             <img
               src={styles.aboutImage}
               alt="About Us"

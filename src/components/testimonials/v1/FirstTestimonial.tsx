@@ -54,12 +54,12 @@ export default function FirstTestimonial(props: { data: any }) {
                 </div>
             </div>
         </section>
-        <div className="container bg-custom-brown pt-20 pb-1 my-24 mx-auto md:px-6">
-  <section className="mb-32 text-center">
+  <section className="mb-32 text-center bg-custom-brown">
+        <div className="container  pb-12 pt-20  my-24 mx-auto md:px-6">
     <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
 
     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-      <div className="mb-12 md:mb-0">
+      <div className="mb-12 px-12 lg:px-2 md:px-0 md:mb-0">
         <div className="mb-6 flex justify-center">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
             className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
@@ -76,7 +76,7 @@ export default function FirstTestimonial(props: { data: any }) {
         </p>
         
       </div>
-      <div className="mb-12 md:mb-0">
+      <div className="mb-12 px-12 lg:px-2 md:px-0 md:mb-0">
         <div className="mb-6 flex justify-center">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
             className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
@@ -93,7 +93,7 @@ export default function FirstTestimonial(props: { data: any }) {
         </p>
        
       </div>
-      <div className="mb-0">
+      <div className="mb-0 lg:px-2 md:px-0 px-12">
         <div className="mb-6 flex justify-center">
           <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
             className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform
@@ -111,8 +111,8 @@ export default function FirstTestimonial(props: { data: any }) {
         
       </div>
     </div>
-  </section>
 </div>
+  </section>
         </>
 
     );

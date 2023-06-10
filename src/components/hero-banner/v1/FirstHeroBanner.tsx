@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const styles1 = {
-  section: "bg-custom-brown  min-h-screen flex flex-col justify-center",
+  section: "bg-hero-v1-img  bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
   title:
-    "lg:text-[8rem] md:text-[7rem] text-[2.5rem] font-bold text-purssian-blue text-center",
+    "lg:text-[6rem] font-raleway md:text-[5rem]  mt-32 text-[2.5rem] font-bold text-white text-center",
   subTitle:
-    "mt-3 max-w-md  mx-auto text-3xl text-custom-black  sm:text-4xl md:mt-5 md:text-[2.5rem] md:max-w-3xl text-center",
+    "mt-3 max-w-md  mx-auto text-3xl text-white lg:text-[1.5rem]  sm:text-4xl md:mt-5 md:text-[1.5rem] md:max-w-3xl text-center",
   buttonWrapper: "mt-10 sm:flex justify-center",
   button:
-    "  flex items-center justify-center   border border-transparent text-base font-medium rounded-md text-white bg-indigo-600  md:text-lg ",
-  buttonSecondary: "mt-3  sm:w-[250px] rounded-md  shadow sm:mt-0  sm:ml-3",
+    "  flex items-center justify-center   border border-transparent text-base font-medium rounded-md text-white   md:text-lg ",
+  buttonSecondary: "mt-3  sm:w-[250px] rounded-md  flex justify-center content-center sm:mt-0  sm:ml-3",
   buttonSecondaryLink:
-    "w-[250px]  flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
+    "w-[250px] flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
 };
 
 const styles2 = {
@@ -41,7 +41,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
   return (
     <section className={styles.section}>
-      <div className="py-12 flex flex-col justify-center items-center">
+      <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-right">
             <h1 className={styles.title}>{bannerData.title}</h1>

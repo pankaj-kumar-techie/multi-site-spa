@@ -110,7 +110,7 @@ export default function FirstService(props: { data: any }) {
           </div>
           <div className=" flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg hover:bg-custom-blue md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white rounded-[20px] bg-white ease-in-out duration-500 p-10 shadow-md hover:shadow-lg hover:bg-custom-blue md:px-7 xl:px-10">
                 <div className="bg-white p-2 mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                  <img src="	https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png" alt="" />
                 </div>
@@ -124,7 +124,7 @@ export default function FirstService(props: { data: any }) {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white rounded-[20px] ease-in-out duration-500 bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
                 <div className="bg-white p-2  mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <img src="https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon01.png"  alt="img"/>
                 </div>
@@ -138,7 +138,7 @@ export default function FirstService(props: { data: any }) {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white rounded-[20px] ease-in-out duration-500 bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
                 <div className="bg-white p-2  mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <img src="https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png"  alt="img"/>
                 </div>
@@ -152,7 +152,7 @@ export default function FirstService(props: { data: any }) {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white  rounded-[20px] bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white  rounded-[20px] ease-in-out duration-500 bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
                 <div className="bg-white p-2  mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <img src="https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png"  alt="img"/>
                 </div>
@@ -166,7 +166,7 @@ export default function FirstService(props: { data: any }) {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 ease-in-out duration-500 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
                 <div className="bg-white p-2  mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <img src="https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png"  alt="img"/>
                 </div>
@@ -180,7 +180,7 @@ export default function FirstService(props: { data: any }) {
               </div>
             </div>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-              <div className="mb-8 hover:text-white rounded-[20px] bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
+              <div className="mb-8 hover:text-white rounded-[20px] ease-in-out duration-500 bg-white p-10 shadow-md hover:bg-custom-blue hover:shadow-lg md:px-7 xl:px-10">
                 <div className="bg-white p-2  mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
                 <img src="	https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon5.png"  alt="img"/>
                 </div>

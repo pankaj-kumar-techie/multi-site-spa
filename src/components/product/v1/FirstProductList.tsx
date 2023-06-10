@@ -4,34 +4,34 @@ import React, {useEffect, useState} from "react";
 const products = [
     {
         id: 1,
-        name: 'Earthen Bottle',
+        name: 'Deluxe Room',
         href: '#',
-        price: '$48',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+        price: '₹4800',
+        imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
     },
     {
         id: 2,
-        name: 'Nomad Tumbler',
+        name: 'Master Room',
         href: '#',
-        price: '$35',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+        price: '₹4000',
+        imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img4.jpg',
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
     },
     {
         id: 3,
-        name: 'Focus Paper Refill',
+        name: 'Super Room',
         href: '#',
-        price: '$89',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+        price: '₹3000',
+        imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img3.jpg',
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
     },
     {
         id: 4,
-        name: 'Machined Mechanical Pencil',
+        name: 'Normal Room',
         href: '#',
-        price: '$35',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
+        price: '₹2500',
+        imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img2.jpg',
         imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
     },
     // More products...
@@ -46,9 +46,9 @@ export default function FirstProductList(props: { data :any}){
     },[props.data])
     return(
         <section>
-            <div className="bg-white">
+            <div className="bg-custom-brown pt-20">
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Product</h2>
+                    <h2 className="text-3xl font-bold text-gray-800">Rooms</h2>
                     <p className="mt-2 text-xl text-gray-600">
                         Check out some of our favorite travel Product
                     </p>
@@ -67,8 +67,8 @@ export default function FirstProductList(props: { data :any}){
                                         className="w-full h-full object-center object-cover group-hover:opacity-75"
                                     />
                                 </div>
-                                <h3 className=" mt-4 text-sm text-gray-700">{product.name}</h3>
-                                <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                                <h3 className=" mt-2  text-[1.2rem] text-center text-cutom-black font-medium ">{product.name}</h3>
+                                <p className="mt-1 text-center text-base font-medium text-gray-900">{product.price}</p>
                             </a>
                         ))}
                     </div>
