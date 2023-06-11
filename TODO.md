@@ -6,7 +6,7 @@ _Dark Mode Toge-ale with functional_
 
 * Manage height/width 
 * Image Operation
-* Manage background color
+* Manage background color/Image
 * font size and font family
 * text alignment like left, right or center
 
