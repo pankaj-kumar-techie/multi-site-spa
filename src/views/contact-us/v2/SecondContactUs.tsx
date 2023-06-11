@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import Title from "../../comman/title-cover/Title";
+import Title from "../../../components/comman/title-cover/Title";
 
 export default function SecondContactUs(props: { data :any}) {
     const [contactUsData, setContactUsData] = useState<any>([])

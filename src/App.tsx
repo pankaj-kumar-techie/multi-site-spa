@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react';
 import { Section } from "./modal/Section";
 import { PageService } from "./service/PageService";
 import ErrorPage from "./components/comman/error/ErrorPage";
-import { Renderer } from "./components/Renderer";
 import Loader from "./components/comman/loader/Loader";
 import Header from "./components/layouts/header/Header";
 import Footer from "./components/layouts/footer/Footer";
 import { ClientService } from "./service/ClientService";
+import {Renderer} from "./views/Renderer";
 
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
