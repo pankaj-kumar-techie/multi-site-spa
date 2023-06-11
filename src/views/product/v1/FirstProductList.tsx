@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
+import ProductCard from "../../../components/cards/ProductCard";
 
-
+//Todo: get products list form props or api
 const products = [
     {
         id: 1,
@@ -59,17 +60,7 @@ export default function FirstProductList(props: { data :any}){
 
                     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                            <a key={product.id} href={product.href} className="group">
-                                <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                                    <img
-                                        src={product.imageSrc}
-                                        alt={product.imageAlt}
-                                        className="w-full h-full object-center object-cover group-hover:opacity-75"
-                                    />
-                                </div>
-                                <h3 className=" mt-2  text-[1.2rem] text-center text-cutom-black font-medium ">{product.name}</h3>
-                                <p className="mt-1 text-center text-base font-medium text-gray-900">{product.price}</p>
-                            </a>
+                            <ProductCard id={product.id} name={product.name} price={product.price} href={product.href} imageSrc={product.imageSrc} imageAlt={product.imageAlt}></ProductCard>
                         ))}
                     </div>
                 </div>
