@@ -51,7 +51,7 @@ export default function FirstPortfolio() {
                                 <div key={callout.name}
                                      className="group relative py-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500">
                                     <div
-                                        className="relative w-full h-80 bg-white  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                                        className="relative w-full  h-80 bg-white  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                                         <img
                                             src={callout.imageSrc}
                                             alt={callout.imageAlt}
