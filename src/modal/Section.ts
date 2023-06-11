@@ -3,3 +3,4 @@ export type Section = {
     path: string,
     htmlId: string,
 }
+
