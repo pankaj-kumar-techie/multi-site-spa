@@ -1,4 +1,5 @@
 import React from "react";
+import PortfolioCard from "../../../components/cards/PortfolioCard";
 
 const callouts = [
     {
@@ -48,27 +49,7 @@ export default function FirstPortfolio() {
 
                         <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
                             {callouts.map((callout) => (
-                                <div key={callout.name}
-                                     className="group relative py-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500">
-                                    <div
-                                        className="relative w-full h-80 bg-white  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
-                                        <img
-                                            src={callout.imageSrc}
-                                            alt={callout.imageAlt}
-                                            className="w-full h-full object-center object-cover"
-                                        />
-                                    </div>
-                                    <div className={'mt-4'}>
-
-                                        <h3 className="ml-2 mt-6 text-sm text-gray-500">
-                                            <a href={callout.href}>
-                                                <span className="absolute inset-0"/>
-                                                {callout.name}
-                                            </a>
-                                        </h3>
-                                        <p className="ml-2 text-base font-semibold text-gray-900">{callout.description}</p>
-                                    </div>
-                                </div>
+                                <PortfolioCard id={callout.name} name={callout.name} description={callout.description} href={callout.href} imageSrc={callout.imageSrc} imageAlt={callout.imageAlt}></PortfolioCard>
                             ))}
                         </div>
                     </div>
