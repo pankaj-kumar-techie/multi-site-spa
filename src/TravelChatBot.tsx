@@ -1,5 +1,8 @@
 import React from "react";
 import HeroBanner from "./views/hero-banner/HeroBanner";
+import AboutUs from "./views/about-us/AboutUs";
+import Product from "./views/product/Product";
+import Testimonials from "./views/testimonials/Testimonials";
 
 const TravelChatBot = () => {
     const data = {
@@ -19,6 +22,9 @@ const TravelChatBot = () => {
     return (
         <>
             <HeroBanner data={data} version={"v1"}></HeroBanner>
+            <AboutUs data={data} version={"v1"}></AboutUs>
+            <Product data={data} version={"v1"}></Product>
+            <Testimonials data={data} version={"v1"}></Testimonials>
 
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">
