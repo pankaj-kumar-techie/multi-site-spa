@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import ProductCard from "../../../components/cards/ProductCard";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 //Todo: get products list form props or api
 const products = [
@@ -38,29 +39,22 @@ const products = [
     // More products...
 ]
 
-
-export default function FirstProductList(props: { data :any}){
-    const[productData,setProductData] = useState<any>([])
+export default function FirstProductList(props: { data: any }) {
+    const [productData, setProductData] = useState<any>([])
 
     useEffect(() => {
         setProductData(props.data);
-    },[props.data])
-    return(
+    }, [props.data])
+    return (
         <section>
             <div className="bg-custom-brown pt-20">
-                <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Rooms</h2>
-                    <p className="mt-2 text-xl text-gray-600">
-                        Check out some of our favorite travel Product
-                    </p>
-                </div>
-
+                <TitleCover title={productData.title} paragraph={productData.subTitle}></TitleCover>
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                    <h2 className="sr-only">Products{productData?.title}</h2>
-
-                    <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+                    <div
+                        className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         {products.map((product) => (
-                            <ProductCard id={product.id} name={product.name} price={product.price} href={product.href} imageSrc={product.imageSrc} imageAlt={product.imageAlt}></ProductCard>
+                            <ProductCard id={product.id} name={product.name} price={product.price} href={product.href}
+                                         imageSrc={product.imageSrc} imageAlt={product.imageAlt}></ProductCard>
                         ))}
                     </div>
                 </div>

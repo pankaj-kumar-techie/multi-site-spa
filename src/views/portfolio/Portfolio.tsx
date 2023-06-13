@@ -14,7 +14,7 @@ const Portfolio: React.FC<PortfolioProps> = ({data, version}) => {
     const ProductComponent = productComponents[version];
 
     // return <ProductComponent data={data}/>;
-    return <ProductComponent />;
+    return <ProductComponent data={data}/>;
 };
 
 export default Portfolio;

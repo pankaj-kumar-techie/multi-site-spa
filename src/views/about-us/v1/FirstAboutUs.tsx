@@ -60,6 +60,8 @@ export default function FirstAboutUs(props: { data: any }) {
                         />
                     </div>
                     <div className={styles.bodyWrapper}>
+
+
                         <h2 className={styles.title}>{aboutData.title}</h2>
                         <p className={styles.subTitle}>
                             {aboutData.subTitle}

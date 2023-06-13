@@ -1,7 +1,6 @@
 import {useEffect, useState} from "react";
-import Title from "../../../components/comman/title-cover/Title";
 
-export default function SecondContactUs(props: { data :any}) {
+export default function SecondContactUs(props: { data: any }) {
     const [contactUsData, setContactUsData] = useState<any>([])
 
     useEffect(() => {
@@ -13,7 +12,6 @@ export default function SecondContactUs(props: { data :any}) {
                 <div className="flex justify-center">
                     <div className="text-center lg:max-w-3xl md:max-w-xl">
                         <h2 className="text-3xl font-bold mb-12 px-6">{contactUsData?.subTitle}</h2>
-                        <Title></Title>
                     </div>
                 </div>
 

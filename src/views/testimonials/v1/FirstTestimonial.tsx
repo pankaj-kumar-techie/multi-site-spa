@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import TestimonialCard from "../../../components/cards/TestimonialCard";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 export default function FirstTestimonial(props: { data: any }) {
     const [serviceData, setServiceData] = useState<any>([])
@@ -41,8 +42,7 @@ export default function FirstTestimonial(props: { data: any }) {
         <>
             <section className="mb-32 text-center bg-custom-brown">
                 <div className="container  pb-12 pt-20  my-24 mx-auto md:px-6">
-                    <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
-
+                    <TitleCover title={"Testimonials"} subtitle={""} paragraph={""}></TitleCover>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
                         {testimonials.map((testimonial) => (
                             <TestimonialCard id={testimonial.id} name={testimonial.name}

@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import ServiceCard from "../../../components/cards/ServiceCard";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 export default function FirstService(props: { data: any }) {
 
@@ -60,18 +61,9 @@ export default function FirstService(props: { data: any }) {
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full px-4">
-                        <div className="mx-auto mb-12 text-center lg:mb-20">
-                            <span className="text-primary mb-2 block text-lg font-semibold">
-                                Our Services
-                            </span>
-                            <h2 className="text-dark mb-4 text-3xl font-bold sm:text-4xl md:text-[40px]">
-                                What We Offer
-                            </h2>
-                            <p className="text-body-color text-base">
-                                There are many variations of passages of Lorem Ipsum available
-                                but the majority have suffered alteration in some form.
-                            </p>
-                        </div>
+                        <TitleCover title={"Our Services"} subtitle={""} paragraph={"There are many " +
+                            "variations of passages of Lorem Ipsum available but the majority have suffered alteration " +
+                            "in some form."}></TitleCover>
                     </div>
                 </div>
                 <div className="flex flex-wrap">
