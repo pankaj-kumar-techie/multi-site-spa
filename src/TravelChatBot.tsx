@@ -2,10 +2,23 @@ import React from "react";
 import HeroBanner from "./views/hero-banner/HeroBanner";
 
 const TravelChatBot = () => {
+    const data = {
+        "type": "HeroBanner",
+        "id": null,
+        "title": "Gayatri Lodge!",
+        "subTitle": "Have a question or need help planning your trip? Contact us using the information below or fill out the form and we'll get back to you as soon as the form and we'll get back to you as soon as possiblethe",
+        "description": "Inspirational designs illustrations",
+        "version": "v1",
+        "style": null,
+        "tagline": "",
+        "banner": null,
+        "slides": null,
+        "delay": 0
+    }
 
     return (
         <>
-            <HeroBanner data={""} version={"v1"}></HeroBanner>
+            <HeroBanner data={data} version={"v1"}></HeroBanner>
 
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">
