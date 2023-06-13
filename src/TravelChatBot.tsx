@@ -1,9 +1,11 @@
 import React from "react";
+import HeroBanner from "./views/hero-banner/HeroBanner";
 
 const TravelChatBot = () => {
 
     return (
         <>
+            <HeroBanner data={""} version={"v1"}></HeroBanner>
 
             <div className="bg-gray-900">
                 <div className="relative h-screen w-full overflow-hidden">

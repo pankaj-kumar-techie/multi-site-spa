@@ -5,9 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import BlogDetails from "./views/blog/BlogDetails";
 import App from "./App";
-import LandingPageApp from "./LandingPageApp";
 import PageNotFound from "./views/page-not-found/PageNotFound";
 import FirstBlog from "./views/blog/v1/FirstBlog";
+import TravelChatBot from "./TravelChatBot";
 
 
 const root = ReactDOM.createRoot(
@@ -20,7 +20,8 @@ root.render(
             <Route path=":slug" element={<App/>}/>
             <Route path="blog" element={<FirstBlog/>}/>
             <Route path="blog/:id" element={<BlogDetails/>}/>
-            <Route path="test" element={<LandingPageApp/>}/>
+            {/*<Route path="test" element={<LandingPageApp/>}/>*/}
+            <Route path="test" element={<TravelChatBot/>}/>
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
     </BrowserRouter>
