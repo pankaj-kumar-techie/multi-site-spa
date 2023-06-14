@@ -1,10 +1,11 @@
 import React from 'react';
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 const FirstTermsAndConditions = (props: { data: any }) => {
     return (
         <>
         <div className="container mx-auto px-4 mb-4">
-            <h2 className="text-2xl font-bold text-center mb-4">Terms and Conditions</h2>
+            <TitleCover title={"Terms and Conditions"} fontFamily={"font-bold"}></TitleCover>
             <div className="prose">
                 <h3>Introduction</h3>
                 <p>

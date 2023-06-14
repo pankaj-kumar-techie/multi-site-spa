@@ -48,7 +48,7 @@ export default function FirstProductList(props: { data: any }) {
     return (
         <section>
             <div className="bg-custom-brown pt-20">
-                <TitleCover   title={productData.title} paragraph={productData.subTitle}></TitleCover>
+                <TitleCover title={productData.title} paragraph={productData.subTitle}></TitleCover>
                 <div className="max-w-2xl  mx-auto py-16 px-4 lg:py-16 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
                     <div
                         className="grid  grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">

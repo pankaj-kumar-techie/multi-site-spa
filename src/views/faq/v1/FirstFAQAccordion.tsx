@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 const FirstFAQAccordion = (props: { data: any }) => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
@@ -40,7 +41,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
             <div className='container mx-auto  px-64'>
 
             <div>
-                <h2 className="text-2xl text-white text-center leading-[1.6] text-[3rem]  font-bold mb-12">Frequently Asked Questions</h2>
+                <TitleCover title={"Frequently Asked Questions"} titleColor={"text-white"} titleSize={"text-[3rem]"} fontFamily={"font-bold"}></TitleCover>
             </div>
             <div className="w-full  ">
                 {faqs.map((faq, index) => (
