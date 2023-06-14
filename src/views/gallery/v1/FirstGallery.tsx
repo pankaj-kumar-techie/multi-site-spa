@@ -37,7 +37,7 @@ function FirstGallery(props: { data: any }) {
                     title={galleryData.title}
                     subtitle=""
                     paragraph={galleryData.paragraph}
-                    fontSize="text-4xl"
+                    titleSize={"text-4xl"}
                     textAlign="center"
                 />
                 <div className="mt-20">

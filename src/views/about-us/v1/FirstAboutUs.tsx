@@ -32,13 +32,13 @@ export default function FirstAboutUs(props: { data: any }) {
 
     const styles =
         {
-            Theme1: styles1,
-            Theme2: styles2,
+            CLASSIC: styles1,
+            MODERN: styles2,
         }[bannerTheme] || styles1;
 
     useEffect(() => {
         setAboutData(props.data);
-        setBannerTheme(props.data.theme || "Theme1");
+        setBannerTheme(props.data.theme || "CLASSIC");
     }, [props.data]);
 
     return (

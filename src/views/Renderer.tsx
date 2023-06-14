@@ -6,7 +6,7 @@ import Product from "./product/Product";
 import Services from "./services/Services";
 import Timeline from "./timeline/Timeline";
 import PageNotFound from "./page-not-found/PageNotFound";
-import CommingSoon from "./comming-soon/CommingSoon";
+import ComingSoon from "./coming-soon/ComingSoon";
 import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./gallery/Gallery";
 import FAQAccordion from "./faq/FAQAccordion";
@@ -31,7 +31,7 @@ export class Renderer {
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']}
                                                     version={section['version']}></TermsAndConditions>,
 
-            CommingSoon: <CommingSoon></CommingSoon>,
+            ComingSoon: <ComingSoon></ComingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
         const type: any = section.data.type;

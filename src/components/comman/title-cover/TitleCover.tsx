@@ -4,21 +4,33 @@ interface TitleCoverProps {
     title: string;
     subtitle?: string;
     paragraph?: string;
-    fontSize?: string;
+    titleSize?: string;
+    subtitleSize?: string;
+    paragraphSize?: string;
     fontFamily?: string;
     textAlign?: "left" | "center" | "right";
+    titleColor?: string;
+    subtitleColor?: string;
+    paragraphColor?: string;
 }
 
 const TitleCover: React.FC<TitleCoverProps> = ({
                                                    title,
-                                                   subtitle = "",
-                                                   paragraph = "",
-                                                   fontSize = "text-4xl",
-                                                   fontFamily = "font-medium",
-                                                   textAlign = "center",
+                                                   subtitle = '',
+                                                   paragraph = '',
+                                                   titleSize = 'text-4xl',
+                                                   subtitleSize = 'text-xl',
+                                                   paragraphSize = 'text-lg',
+                                                   fontFamily = 'font-medium',
+                                                   textAlign = 'center',
+                                                   titleColor = 'text-gray-800',
+                                                   subtitleColor = 'text-gray-800',
+                                                   paragraphColor = 'text-gray-600',
                                                }) => {
-    const containerClasses = "text-center";
-    const textClasses = `${fontSize} text-gray-800 pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const containerClasses = 'text-center';
+    const titleClasses = `${titleSize} ${titleColor} pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const subtitleClasses = `${subtitleSize} ${subtitleColor} pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const paragraphClasses = `${paragraphSize} ${paragraphColor} ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
 
     function getTextAlignmentClass(textAlign: "left" | "center" | "right"): string {
         return `text-${textAlign}`;
@@ -26,10 +38,9 @@ const TitleCover: React.FC<TitleCoverProps> = ({
 
     return (
         <div className={containerClasses}>
-            <h2 className={textClasses}>{title}</h2>
-            {subtitle && <h4 className={textClasses}>{subtitle}</h4>}
-            {paragraph &&
-                <p className={`mt-6   text-xl px-16  text-gray-600 ${fontFamily} ${getTextAlignmentClass(textAlign)}`}>{paragraph}</p>}
+            <h2 className={titleClasses}>{title}</h2>
+            {subtitle && <h4 className={subtitleClasses}>{subtitle}</h4>}
+            {paragraph && <p className={paragraphClasses}>{paragraph}</p>}
         </div>
     );
 };

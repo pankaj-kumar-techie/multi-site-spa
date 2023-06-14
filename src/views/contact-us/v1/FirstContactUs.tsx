@@ -30,13 +30,13 @@ function ContactUs(props:{data:any}) {
 
 
     const styles = {
-        Theme1: styles1,
-        Theme2: styles2,
+        CLASSIC: styles1,
+        MODERN: styles2,
     }[contactUsTheme] || styles1;
 
     useEffect(() => {
         setContactUsData(props.data);
-        setContactUsTheme(props.data.theme || "Theme1")
+        setContactUsTheme(props.data.theme || "CLASSIC")
     }, [props.data])
 
 
