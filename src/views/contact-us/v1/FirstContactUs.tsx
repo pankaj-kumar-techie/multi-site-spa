@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 
-function ContactUs(props:{data:any}) {
+function ContactUs(props: { data: any }) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -64,10 +64,12 @@ function ContactUs(props:{data:any}) {
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
                             <p className="text-white">+1 (123) 456-7890</p>
                         </div>
-                       
+
                         <div className="aspect-w-10  aspect-h-9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.559228068603!2d76.97553947481546!3d30.898989177580027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f8960d33fe8a3%3A0xdd505cd5ef7d9c!2sGayatri%20Lodge%20Hotel%20in%20Kasauli!5e0!3m2!1sen!2sin!4v1686425200960!5m2!1sen!2sin" className='w-full mt-10 rounded-md h-full' ></iframe>
-  </div>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3423.559228068603!2d76.97553947481546!3d30.898989177580027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f8960d33fe8a3%3A0xdd505cd5ef7d9c!2sGayatri%20Lodge%20Hotel%20in%20Kasauli!5e0!3m2!1sen!2sin!4v1686425200960!5m2!1sen!2sin"
+                                className='w-full mt-10 rounded-md h-full'></iframe>
+                        </div>
 
                     </div>
                     {status === 'success' ? (
