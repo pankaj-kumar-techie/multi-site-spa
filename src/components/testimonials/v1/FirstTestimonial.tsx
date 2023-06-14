@@ -54,7 +54,7 @@ export default function FirstTestimonial(props: { data: any }) {
                 </div>
             </div>
         </section>
-  <section className=" text-center  bg-gradient-to-r from-custom-brown to-white">
+  <section className=" text-center  bg-common-img">
         <div className="container  pb-12 pt-20 mx-auto md:px-6">
     <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
 
