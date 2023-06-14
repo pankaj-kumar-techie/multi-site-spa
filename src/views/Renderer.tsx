@@ -31,7 +31,7 @@ export class Renderer {
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']}
                                                     version={section['version']}></TermsAndConditions>,
 
-            ComingSoon: <ComingSoon></ComingSoon>,
+            ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
         const type: any = section.data.type;
