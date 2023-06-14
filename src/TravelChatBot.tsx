@@ -3,6 +3,9 @@ import HeroBanner from "./views/hero-banner/HeroBanner";
 import AboutUs from "./views/about-us/AboutUs";
 import Product from "./views/product/Product";
 import Testimonials from "./views/testimonials/Testimonials";
+import FAQAccordion from "./views/faq/FAQAccordion";
+import ContactUs from "./views/contact-us/ContactUs";
+import Footer from "./components/layouts/footer/Footer";
 
 const TravelChatBot = () => {
     const data = {
@@ -24,9 +27,12 @@ const TravelChatBot = () => {
             <HeroBanner data={data} version={"v1"}></HeroBanner>
             <AboutUs data={data} version={"v1"}></AboutUs>
             <Product data={data} version={"v1"}></Product>
+            <ContactUs data={data} version={"v1"}></ContactUs>
             <Testimonials data={data} version={"v1"}></Testimonials>
+            <FAQAccordion data={data} version={"v1"}></FAQAccordion>
+            <Footer data={data} version={"v1"}></Footer>
 
-            <div className="bg-gray-900">
+            <div className="bg-gray-900 hidden">
                 <div className="relative h-screen w-full overflow-hidden">
                     {/* Background Image */}
                     <div className="absolute inset-0 bg-cover bg-center"

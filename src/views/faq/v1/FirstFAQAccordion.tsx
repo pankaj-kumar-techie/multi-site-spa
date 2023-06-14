@@ -36,7 +36,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
     };
 
     return (
-        <section className=' pt-10 pb-10 bg-gradient-to-r from-purssian-blue to-custom-blue  '>
+        <section className=' pt-10 pb-10 bg-purssian-blue  '>
             <div className='container mx-auto  px-64'>
 
             <div>
