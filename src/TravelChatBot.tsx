@@ -6,6 +6,8 @@ import Testimonials from "./views/testimonials/Testimonials";
 import FAQAccordion from "./views/faq/FAQAccordion";
 import ContactUs from "./views/contact-us/ContactUs";
 import Footer from "./components/layouts/footer/Footer";
+import Header from "./components/layouts/header/Header";
+import Gallery from "./views/gallery/Gallery";
 
 const TravelChatBot = () => {
     const data = {
@@ -15,7 +17,20 @@ const TravelChatBot = () => {
         "subTitle": "Have a question or need help planning your trip? Contact us using the information below or fill out the form and we'll get back to you as soon as the form and we'll get back to you as soon as possiblethe",
         "description": "Inspirational designs illustrations",
         "version": "v1",
-        "style": null,
+        "style": "CLASSIC",
+        "tagline": "",
+        "banner": null,
+        "slides": null,
+        "delay": 0
+    }
+    const data2 = {
+        "type": "HeroBanner",
+        "id": null,
+        "title": "Gayatri Lodge!",
+        "subTitle": "Have a question or need help planning your trip? Contact us using the information below or fill out the form and we'll get back to you as soon as the form and we'll get back to you as soon as possiblethe",
+        "description": "Inspirational designs illustrations",
+        "version": "v1",
+        "style": "MODERN",
         "tagline": "",
         "banner": null,
         "slides": null,
@@ -24,38 +39,15 @@ const TravelChatBot = () => {
 
     return (
         <>
-            <HeroBanner data={data} version={"v1"}></HeroBanner>
-            <AboutUs data={data} version={"v1"}></AboutUs>
-            <Product data={data} version={"v1"}></Product>
-            <ContactUs data={data} version={"v1"}></ContactUs>
-            <Testimonials data={data} version={"v1"}></Testimonials>
-            <FAQAccordion data={data} version={"v1"}></FAQAccordion>
-            <Footer data={data} version={"v1"}></Footer>
-
-            <div className="bg-gray-900 hidden">
-                <div className="relative h-screen w-full overflow-hidden">
-                    {/* Background Image */}
-                    <div className="absolute inset-0 bg-cover bg-center"
-                         style={{backgroundImage: "url('/images/robotic-hero-bg.jpg')"}}></div>
-
-                    {/* Overlay */}
-                    <div className="absolute inset-0 bg-black opacity-60"></div>
-
-                    {/* Content */}
-                    <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-                        <h1 className="text-4xl font-bold text-white leading-tight mb-4">Discover the world with our
-                            Robotic Travel Agents</h1>
-                        <p className="text-lg text-white leading-tight mb-8">Experience the future of travel with our
-                            cutting-edge robotic technology.</p>
-                        <button
-                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
+            <Header key={"kdk"} data={""} version={"v1"}></Header>
+            <HeroBanner key={"1"} data={data} version={"v1"}></HeroBanner>
+            <AboutUs key={"11"} data={data} version={"v1"}></AboutUs>
+            <Product key={"111"} data={data} version={"v1"}></Product>
+            <ContactUs key={"1111"} data={data} version={"v1"}></ContactUs>
+            <Testimonials key={"11111"} data={data} version={"v1"}></Testimonials>
+            <Gallery key={"2323"} data={data} version={"v1"}></Gallery>
+            <FAQAccordion key={"111111"} data={data} version={"v1"}></FAQAccordion>
+            <Footer key={"1111111"} data={data} version={"v1"}></Footer>
         </>
     );
 };

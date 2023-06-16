@@ -3,3 +3,4 @@ export type Page = {
     path: string,
     htmlId: string,
 }
+

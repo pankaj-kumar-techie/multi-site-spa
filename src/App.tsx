@@ -1,30 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { Section } from "./modal/Section";
-import { PageService } from "./service/PageService";
+import React, {useEffect, useState} from 'react';
+import {Section} from "./modal/Section";
+import {PageService} from "./service/PageService";
 import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
-import Header from "./components/layouts/header/Header";
-import Footer from "./components/layouts/footer/Footer";
-import { ClientService } from "./service/ClientService";
+import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
 
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
-    const [error, setError] = useState("");
+    const [error, setError] = useState<string>('');
 
     useEffect(() => {
         const loadPage = async () => {
             setLoading(true);
-            console.log("Client Domain Name:", clientDomainName);
+            console.log('Client Domain Name:', clientDomainName);
 
             let path = window.location.pathname.substring(1); // Remove leading '/';
 
-            console.log("Path:", path);
+            console.log('Path:', path);
 
             if (!path) {
-                path = "index";
+                path = 'index';
             }
 
             try {
@@ -37,12 +35,12 @@ export default function App() {
 
                 const res = await PageService.getPage(path);
                 setLoading(false);
+
                 setSectionData(res.data.section);
-                console.log("Pass Section Data to Child Component", res.data.section);
+                console.log('Pass Section Data to Child Component', res.data.section);
             } catch (error) {
-                console.log("Error:", error);
-                // API call failed after maxRetries attempts
-                setError("Failed to fetch data. Please try again later.");
+                console.log('Error:', error);
+                setError('Failed to fetch data. Please try again later.');
                 setLoading(false);
             }
         };
@@ -51,21 +49,19 @@ export default function App() {
     }, [clientDomainName]);
 
     if (error) {
-        return <ErrorPage message={error} />;
+        return <ErrorPage message={error}/>;
     }
 
     return (
         <>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <Header data={""} version={"v1"} />
                     {sectionData.map((sectionData: Section) =>
-                        Renderer.componentRenderV1("Home", sectionData)
+                        Renderer.componentRenderV1('Home', sectionData)
                     )}
-                    <Footer data={""} version={"v1"} />
                 </>
             ) : (
-                <Loader />
+                <Loader/>
             )}
         </>
     );

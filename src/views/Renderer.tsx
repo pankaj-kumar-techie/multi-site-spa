@@ -11,12 +11,16 @@ import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./gallery/Gallery";
 import FAQAccordion from "./faq/FAQAccordion";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
+import Header from "../components/layouts/header/Header";
+import Footer from "../components/layouts/footer/Footer";
 
 export class Renderer {
 
     static componentRenderV1(website: string, section: any): JSX.Element {
         console.log("Section Data With Version ", section['data'].theme, section.version)
         const components: any = {
+            Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
+            Footer: <Footer key={section.id} data={section['data']} version={section['version']}></Footer>,
             HeroBanner: <HeroBanner key={section.id} data={section['data']} version={section['version']}></HeroBanner>,
             AboutUs: <AboutUs key={section.id} data={section['data']} version={section['version']}></AboutUs>,
             ContactUs: <ContactUs key={section.id} data={section['data']} version={section['version']}></ContactUs>,
