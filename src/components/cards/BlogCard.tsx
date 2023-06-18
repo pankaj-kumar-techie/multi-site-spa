@@ -1,6 +1,7 @@
 import React from "react";
 import {Blog} from "../../modal/Blog";
 
+
 export default function BlogCard(blog:Blog){
     return(
         <article key={blog.id} className="flex max-w-xl flex-col items-start justify-between">

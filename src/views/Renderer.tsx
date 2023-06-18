@@ -13,6 +13,7 @@ import FAQAccordion from "./faq/FAQAccordion";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
 import Header from "../components/layouts/header/Header";
 import Footer from "../components/layouts/footer/Footer";
+import OurTeam from "./our-team/OurTeam";
 
 export class Renderer {
 
@@ -25,6 +26,7 @@ export class Renderer {
             AboutUs: <AboutUs key={section.id} data={section['data']} version={section['version']}></AboutUs>,
             ContactUs: <ContactUs key={section.id} data={section['data']} version={section['version']}></ContactUs>,
             Portfolio: <Portfolio key={section.id} data={section['data']} version={section['version']}></Portfolio>,
+            OurTeam: <OurTeam key={section.id} data={section['data']} version={section['version']}></OurTeam>,
             Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
             Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,

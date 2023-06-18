@@ -1,21 +1,19 @@
 # Todo 
 
-_Dark Mode Toge-ale with functional_
+All Business Domain We Cover:
+1. [x] E-commerce
+2. [x] Portfolio, Blog, contact
+3. [x] Service Industry
+4. [x] Business, Corporate
+5. [x] Cafe, Food, Restaurant, Hotels & Homestays
+6. [x] Nail, Beauty & Salon
 
 #### UI/UX Dynamic Change on Given Section
 
 * Manage height/width 
-* Image Operation
-* Manage background color/Image
-* font size, color and family
+* Manage Media Operation (Image, Video, Animations)
+* Manage background color
+* Typography font size, color and family
 * text alignment like left, right or center
 
-## Need multiple components with versioning
 
-* **Planning Tool Section**:
-  The planning tool section can demonstrate the AI-based travel agent's planning tool and how it works. It can include screenshots or videos of the planning tool in action, along with a description of its features, benefits, and testimonials from satisfied customers.
-  ***Gallery Section:**
-  The gallery section can display a selection of high-quality images of popular travel destinations around the world, showcasing the beauty and diversity of different cultures and landscapes.
-* **Blog Section:**
-  The blog section can feature a list of informative and engaging blog posts related to travel, such as destination guides, travel tips, cultural insights, and more. Each post can have a featured image, a headline, and a brief summary.
-* Added SEO
