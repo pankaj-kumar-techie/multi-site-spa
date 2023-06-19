@@ -1,5 +1,5 @@
-import FirstAboutUs from "../about-us/v1/FirstAboutUs";
 import React from "react";
+import FirstBlog from "./v1/FirstBlog";
 
 interface BlogUsProps {
     data: any;
@@ -7,7 +7,7 @@ interface BlogUsProps {
 }
 
 const blogComponents = {
-    v1: FirstAboutUs,
+    v1: FirstBlog,
 };
 
 const Blog: React.FC<BlogUsProps> = ({data, version}) => {

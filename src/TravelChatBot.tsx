@@ -8,6 +8,7 @@ import ContactUs from "./views/contact-us/ContactUs";
 import Footer from "./components/layouts/footer/Footer";
 import Header from "./components/layouts/header/Header";
 import Gallery from "./views/gallery/Gallery";
+import Blog from "./views/blog/Blog";
 
 const TravelChatBot = () => {
     const data = {
@@ -41,10 +42,11 @@ const TravelChatBot = () => {
         <>
             <Header key={"kdk"} data={""} version={"v1"}></Header>
             <HeroBanner key={"1"} data={data} version={"v1"}></HeroBanner>
-            <AboutUs key={"11"} data={data} version={"v1"}></AboutUs>
-            <Product key={"111"} data={data} version={"v1"}></Product>
+            <AboutUs key={"1d1"} data={data} version={"v1"}></AboutUs>
             <Gallery key={"2323"} data={data} version={"v1"}></Gallery>
-            <Testimonials key={"11111"} data={data} version={"v1"}></Testimonials>
+            <Product key={"111"} data={data} version={"v1"}></Product>
+            <Blog key={"11d111"} data={data} version={"v1"}></Blog>
+            <Testimonials key={"11d111"} data={data} version={"v1"}></Testimonials>
             <ContactUs key={"1111"} data={data} version={"v1"}></ContactUs>
             <FAQAccordion key={"111111"} data={data} version={"v1"}></FAQAccordion>
             <Footer key={"1111111"} data={data} version={"v1"}></Footer>

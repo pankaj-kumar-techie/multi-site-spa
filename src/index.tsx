@@ -18,7 +18,6 @@ root.render(
         <Routes>
             <Route index element={<App/>}/>
             <Route path=":slug" element={<App/>}/>
-            <Route path="blog" element={<FirstBlog/>}/>
             <Route path="blog/:id" element={<BlogDetails/>}/>
             {/*<Route path="test" element={<LandingPageApp/>}/>*/}
             <Route path="test" element={<TravelChatBot/>}/>

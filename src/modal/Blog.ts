@@ -3,4 +3,6 @@ export type Blog = {
     title: string,
     description: string,
     descriptionContext: string,
+    imageSrc:string,
+    imageAlt:string,
 }
