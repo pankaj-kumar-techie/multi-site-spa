@@ -38,10 +38,10 @@ const FirstFAQAccordion = (props: { data: any }) => {
 
     return (
         <section className=' pt-10 pb-10 bg-purssian-blue  '>
-            <div className='container mx-auto  px-64'>
+            <div className='container mx-auto px-3 lg:px-64'>
 
             <div>
-                <TitleCover title={"Frequently Asked Questions"} titleColor={"text-white"} titleSize={"text-[3rem]"} fontFamily={"font-bold"}></TitleCover>
+                <TitleCover title={"Frequently Asked Questions"} titleColor={"text-white"} titleSize={"lg:text-[3rem] text-[2rem]"} fontFamily={"font-bold"}></TitleCover>
             </div>
             <div className="w-full  ">
                 {faqs.map((faq, index) => (

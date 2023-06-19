@@ -1,7 +1,31 @@
 import React, {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
 export default function FirstHeader(props: { data: any }) {
     const [headerData, setHeaderData] = useState<any>([])
+    const [nav, setNav] =useState(false)
+    const [color,setColor]=useState('transparent')
+    const [textColor,setTextColor]=useState('white')
+
+    const handleNav=()=>{
+        setNav(!nav)
+    }
+
+    useEffect(()=> {
+        const changeColor=()=>{
+            if(window.scrollY >= 90){
+                setColor('white');
+                setTextColor('black');
+            }else{
+                setColor('transparent');
+                setTextColor('#ffffff');
+            }
+        };
+        window.addEventListener('scroll',changeColor);
+
+    }, []);
+
+
     const classic = {
         section: "text-gray-600 body-font",
         backgroundColor: "bg-orange-200",
@@ -81,69 +105,52 @@ export default function FirstHeader(props: { data: any }) {
     }, [props.data])
 
     return (
-        <header className={styles.section}>
-            <nav
-                className="relative flex w-full items-center justify-between bg-white py-2 text-neutral-600 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 dark:text-neutral-200 md:flex-wrap md:justify-start"
-                data-te-navbar-ref="">
-                <div className="flex w-full flex-wrap items-center justify-between px-3">
-                    <div className="flex items-center">
-                        <button
-                            className="border-0 bg-transparent px-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
-                            type="button"
-                            data-te-collapse-init=""
-                            data-te-target="#navbarSupportedContentY"
-                            aria-controls="navbarSupportedContentY"
-                            aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span className="[&>svg]:w-5">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-7 w-7">
-              <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-            </svg>
-          </span>
-                        </button>
-                    </div>
+        <>
+      
+        <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
+    <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
+        < Link to='/'>
+        <h1 style={{color:`${textColor}`}} className='font-bold text-2xl lg:text-3xl '>Gayatri Lodge</h1>
+        </Link>
+        <ul style={{color:`${textColor}`}} className='hidden sm:flex'>
+            <li className='p-4'>
+                < Link to='/'>Home</Link>
+            </li>
+            <li className='p-4'>
+                < Link to='/#gallery'>Gallery</Link>
+            </li>
+            <li className='p-4'>
+                < Link to='/work'>Work</Link>
+            </li>
+            <li className='p-4'>
+                < Link to='/contact'>Contact</Link>
+            </li>
+        </ul>
 
-                    <div
-                        className="!visible hidden grow basis-[100%] items-center lg:!flex lg:basis-auto"
-                        id="navbarSupportedContentY"
-                        data-te-collapse-item="">
-                        <ul
-                            className="mr-auto flex flex-col lg:flex-row"
-                            data-te-navbar-nav-ref="">
-                            <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
-                                <a
-                                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                                    href="/"
-                                    data-te-nav-link-ref=""
-                                    data-te-ripple-init=""
-                                    data-te-ripple-color="light"
-                                >Home</a
-                                >
-                            </li>
-                            <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
-                                <a
-                                    className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
-                                    href="/"
-                                    data-te-nav-link-ref=""
-                                    data-te-ripple-init=""
-                                    data-te-ripple-color="light"
-                                >Features</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+        {/* Mobile Button*/}
+        <div onClick={handleNav} className='block sm:hidden z-10'>
+            {nav ? <svg stroke="currentColor" style={{color:`${textColor}`}} fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path></svg> :<svg  style={{color:`${textColor}`}} stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg> }
+        </div>
+        {/* Mobile Menu */}
+        <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300':'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
+        <ul>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                < Link to='/'>Home</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                < Link to='/#gallery'>Gallery</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                < Link to='/work'>Work</Link>
+            </li>
+            <li onClick={handleNav} className='p-4 text-4xl hover:text-gray-500'>
+                < Link to='/contact'>Contact</Link>
+            </li>
+        </ul>
+        </div>
+    </div>
+    </div>
 
-        </header>
+        </>
     )
 }
