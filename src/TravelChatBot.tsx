@@ -43,9 +43,9 @@ const TravelChatBot = () => {
             <HeroBanner key={"1"} data={data} version={"v1"}></HeroBanner>
             <AboutUs key={"11"} data={data} version={"v1"}></AboutUs>
             <Product key={"111"} data={data} version={"v1"}></Product>
-            <ContactUs key={"1111"} data={data} version={"v1"}></ContactUs>
-            <Testimonials key={"11111"} data={data} version={"v1"}></Testimonials>
             <Gallery key={"2323"} data={data} version={"v1"}></Gallery>
+            <Testimonials key={"11111"} data={data} version={"v1"}></Testimonials>
+            <ContactUs key={"1111"} data={data} version={"v1"}></ContactUs>
             <FAQAccordion key={"111111"} data={data} version={"v1"}></FAQAccordion>
             <Footer key={"1111111"} data={data} version={"v1"}></Footer>
         </>

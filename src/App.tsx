@@ -6,6 +6,8 @@ import Loader from "./components/comman/loader/Loader";
 import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
 
+
+//Todo : Pass static data form @loacl_db/website to setSectionData
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
