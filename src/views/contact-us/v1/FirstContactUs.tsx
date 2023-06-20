@@ -26,7 +26,11 @@ function ContactUs(props: { data: any }) {
         aboutImageWrapper: "w-80 h-80  object-cover",
     };
     const [contactUsTheme, setContactUsTheme] = useState<string>("")
-    const [contactUsData, setContactUsData] = useState<any>([])
+    const [contactUsData, setContactUsData] = useState<any>({
+        title: "",
+        description: "",
+        contactUs: ContactUs,
+      })
 
 
     const styles = {
