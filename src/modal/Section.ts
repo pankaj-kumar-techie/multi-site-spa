@@ -1,12 +1,21 @@
-export type Section = {
-    type: string | null;
-    id: string | null;
-    title: string;
-    subTitle: string;
-    description: string;
-    version: string;
-    style: string;
-    services: any;
-    imageDtos: any[] | null;
-    bgColor: string | null;
-};
+export interface Section {
+    id: string;
+    name: string;
+    version: string; // Add version property
+    style: string; // Add style property
+    data: {
+      type: string;
+      id: string;
+      title: string;
+      subTitle: string;
+      description: string;
+      version: string;
+      style: string;
+      services: null;
+      imageDtos: null;
+      bgColor: null;
+    };
+    path: string;
+    htmlId: string | null;
+  }
+  

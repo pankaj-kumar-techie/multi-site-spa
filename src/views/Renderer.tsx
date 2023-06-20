@@ -11,6 +11,7 @@ import Testimonials from "./testimonials/Testimonials";
 import Gallery from "./gallery/Gallery";
 import FAQAccordion from "./faq/FAQAccordion";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
+import Blog from "./blog/Blog";
 import Header from "../components/layouts/header/Header";
 import Footer from "../components/layouts/footer/Footer";
 import OurTeam from "./our-team/OurTeam";
@@ -33,6 +34,7 @@ export class Renderer {
             Testimonial: <Testimonials key={section.id} data={section['data']}
                                        version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
+            Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']}
                                                     version={section['version']}></TermsAndConditions>,
