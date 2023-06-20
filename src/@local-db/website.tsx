@@ -20,7 +20,8 @@ export const websites: Section[] = [
           images: null,
           blogs : null,
           testimonials: null,
-          bgColor: null,
+          faqs: null,
+          contactUs:null,
         },
       },
   {
@@ -42,7 +43,8 @@ export const websites: Section[] = [
       images: null,
       blogs : null,
       testimonials: null,
-      bgColor: null,
+      faqs: null,
+      contactUs:null,
     },
   },
   {
@@ -64,7 +66,8 @@ export const websites: Section[] = [
       images: null,
       blogs : null,
       testimonials: null,
-      bgColor: null,
+      faqs: null,
+      contactUs:null,
     },
   },
   {
@@ -83,6 +86,7 @@ export const websites: Section[] = [
       style: "CLASSIC",
       services: null,
       products: null,
+      faqs: null,
       images: [
         {
             id: '1',
@@ -107,7 +111,7 @@ export const websites: Section[] = [
     ],
     blogs : null,
     testimonials: null,
-      bgColor: null,
+    contactUs:null,
     },
   },
   {
@@ -162,8 +166,9 @@ export const websites: Section[] = [
         // More products...
     ],
       images: null,
+      faqs: null,
       testimonials: null,
-      bgColor: null,
+      contactUs:null,
     },
   },
   {
@@ -181,6 +186,8 @@ export const websites: Section[] = [
       version: "v1",
       style: "CLASSIC",
       blogs : null,
+      faqs: null,
+      contactUs:null,
       services: [
         {
             id: 1,
@@ -228,7 +235,6 @@ export const websites: Section[] = [
       products: null,
       images: null,
       testimonials: null,
-      bgColor: null,
     },
   },
   {
@@ -247,6 +253,8 @@ export const websites: Section[] = [
       style: "CLASSIC",
       services: null,
       products: null,
+      faqs: null,
+      contactUs:null,
       blogs : [
         {
           id: "1",
@@ -283,7 +291,6 @@ export const websites: Section[] = [
       ],
       images: null,
       testimonials: null,
-      bgColor: null,
     },
   },
   {
@@ -304,6 +311,8 @@ export const websites: Section[] = [
       products: null,
       images: null,
       blogs : null,
+      faqs: null,
+      contactUs:null,
       testimonials: [
         {
           id: "1",
@@ -333,19 +342,18 @@ export const websites: Section[] = [
               "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
       },
       ],
-      bgColor: null,
     },
   },
   {
     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-    name: "Service",
+    name: "ContactUs",
     version: "v1",
     style: "CLASSIC",
     path: "index",
     data: {
       type: "ContactUs",
       id: "k",
-      title: "Hero Banner!",
+      title: "Get in Touch",
       subTitle: "Hero Banner Sub Title is here",
       description: "Hero Banner Paragraph is here",
       version: "v1",
@@ -354,8 +362,13 @@ export const websites: Section[] = [
       products: null,
       images: null,
       testimonials: null,
+      faqs: null,
       blogs : null,
-      bgColor: null,
+      contactUs: {
+        address : "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
+        email: "gayatrilodgekasauli@gmail.com",
+        phone: "+91-9857315551",
+      },
     },
   },
   {
@@ -377,7 +390,35 @@ export const websites: Section[] = [
       images: null,
       blogs : null,
       testimonials: null,
-      bgColor: null,
+      contactUs:null,
+      faqs: [
+        {
+          id:1,
+          question: 'Q.What are the check-in and check-out timings at Gayatri Lodge?',
+          answer: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+        },
+        {
+          id:2,
+          question: 'Q.What amenities are provided at Gayatri Lodge?',
+          answer: 'Ans:Gayatri Lodge offers a range of amenities to make your stay comfortable. Some of the amenities include clean and well-furnished rooms, air conditioning, television, attached bathroom with hot water facility, room service, Wi-Fi access, and complimentary toiletries.',
+        },
+        {
+          id:3,
+          question: 'Q.Is there parking available at Gayatri Lodge?',
+          answer: 'Ans:Yes, Gayatri Lodge provides parking facilities for guests. You can safely park your vehicle during your stay at the lodge. However, parking availability may be limited, so its advisable to inform the lodge in advance if you require parking.',
+        },
+        {
+          id:4,
+          question: 'Q.Are meals included in the room rates at Gayatri Lodge?',
+          answer: 'Ans:"Yes, Gayatri Lodge provides meals as part of the room rates. Guests can enjoy delicious meals at the in-house restaurant or avail themselves of the dining options available in close proximity to the lodge. The meals offered cater to various preferences and cuisines, ensuring a satisfying dining experience for guests."',
+        },
+        {
+          id:5,
+          question: 'Q.Does Gayatri Lodge have a cancellation policy?',
+          answer: 'Ans:Yes, Gayatri Lodge has a cancellation policy in place. The specific details may vary depending on the booking channel and the type of reservation made. Its advisable to review the cancellation policy at the time of booking or contact the lodge directly for more information.',
+        },
+        // Add more FAQs as needed
+    ],
     },
   },
   {
@@ -398,8 +439,9 @@ export const websites: Section[] = [
       products: null,
       blogs : null,
       images: null,
+      faqs: null,
+      contactUs:null,
       testimonials: null,
-      bgColor: null,
     },
   },
 ];

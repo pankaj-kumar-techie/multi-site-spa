@@ -58,11 +58,15 @@ function ContactUs(props: { data: any }) {
                         </p>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
-                            <p className="text-white">123 Main Street, Anytown, USA</p>
+                            <p className="text-white">{contactUsData.contactUs.address}</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
-                            <p className="text-white">+1 (123) 456-7890</p>
+                            <p className="text-white">{contactUsData.contactUs.email}</p>
+                        </div>
+                        <div className="flex items-center space-x-2">
+                            <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
+                            <p className="text-white">{contactUsData.contactUs.phone}</p>
                         </div>
 
                         <div className="aspect-w-10  aspect-h-9">

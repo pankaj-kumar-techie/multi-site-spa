@@ -17,7 +17,8 @@ export interface Section {
       images: Image[] | null;
       testimonials: Testimonial[] | null;
       blogs: Blog[] | null;
-      bgColor: null;
+      faqs: FAQ[] | null;
+      contactUs: ContactUs | null;
     };
     path: string;
   }
@@ -63,6 +64,19 @@ export type Blog = {
   descriptionContext: string,
   imageSrc:string,
   imageAlt:string,
+}
+
+export type FAQ = {
+  id: number,
+  question: string,
+  answer: string,
+}
+
+export type ContactUs = {
+  address : string,
+  email: string,
+  phone: string,
+
 }
 
   
