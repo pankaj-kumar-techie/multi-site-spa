@@ -1,5 +1,5 @@
 import React from "react";
-import {Blog} from "../../modal/Blog";
+import { Blog } from "../../modal/Section";
 
 
 export default function BlogCard(blog:Blog){

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BlogService } from "../../service/BlogService";
 import { useParams } from "react-router-dom";
-import {Blog} from "../../modal/Blog";
+import { Blog } from "../../modal/Section";
 
 const BlogDetails = () => {
     const { id } = useParams<{ id: string }>();

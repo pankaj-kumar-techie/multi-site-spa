@@ -77,7 +77,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                     </div>
                     <div className={selectedStyle.bodyWrapper}>
                         <h2 className={selectedStyle.title}>{aboutData.title}</h2>
-                        <p className={selectedStyle.subTitle}>{aboutData.subTitle}</p>
+                        <p className={selectedStyle.subTitle}>{aboutData.description}</p>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ import {Renderer} from "./views/Renderer";
 import { websites } from './@local-db/website';
 
 
-//Todo : Pass static data form @loacl_db/website to setSectionData
+//Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [loading, setLoading] = useState<boolean>(false);
