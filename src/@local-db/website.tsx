@@ -1,4 +1,10 @@
 import { Section } from "../modal/Section";
+import roomImage1 from "../assets/room-img1.jpg";
+import roomImage2 from "../assets/room-img2.jpg";
+import roomImage3 from "../assets/room-img3.jpg";
+import roomImage4 from "../assets/room-img4.jpg";
+
+
 
 export const websites: Section[] = [
     {
@@ -136,7 +142,7 @@ export const websites: Section[] = [
             name: 'Deluxe Room',
             href: '#',
             description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
-            imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
+            imageSrc: roomImage1,
             imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
         {
@@ -144,7 +150,7 @@ export const websites: Section[] = [
             name: 'Master Room',
             href: '#',
             description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-            imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img4.jpg',
+            imageSrc: roomImage2,
             imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
         },
         {
@@ -152,7 +158,7 @@ export const websites: Section[] = [
             name: 'Super Room',
             href: '#',
             description: ' Upgraded, luxurious, and lavish accommodation for a remarkable stay.',
-            imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img3.jpg',
+            imageSrc: roomImage3,
             imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
         },
         {
@@ -160,7 +166,7 @@ export const websites: Section[] = [
             name: 'Normal Room',
             href: '#',
             description: 'Comfortable, affordable, and practical choice for a pleasant stay.',
-            imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img2.jpg',
+            imageSrc: roomImage4,
             imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
         },
         // More products...
@@ -261,7 +267,7 @@ export const websites: Section[] = [
           title: "Blog Post 1",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-          imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
+          imageSrc: roomImage1,
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
         {
@@ -269,7 +275,7 @@ export const websites: Section[] = [
           title: "Blog Post 2",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-          imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
+          imageSrc: roomImage1,
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
         {
@@ -277,7 +283,7 @@ export const websites: Section[] = [
           title: "Blog Post 3",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-          imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
+          imageSrc: roomImage1,
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
         {
@@ -285,7 +291,7 @@ export const websites: Section[] = [
           title: "Blog Post 3",
           description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-          imageSrc: 'http://wahabali.com/work/pearl-demo/imgs/room-img1.jpg',
+          imageSrc: roomImage1,
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
         },
       ],

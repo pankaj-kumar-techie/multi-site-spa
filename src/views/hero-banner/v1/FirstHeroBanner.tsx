@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import heroBannerBg from "../../../assets/sub-banner-hotel.jpg";
 
 const styles1 = {
-  section: "bg-hero-v1-img  bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
+  section: "bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
   title:
     "lg:text-[6rem] font-raleway md:text-[5rem]  mt-32 text-[2.5rem] font-bold text-white text-center",
   subTitle:
@@ -27,7 +28,11 @@ const styles2 = {
     "px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:bg-indigo-700 md:py-4 md:text-lg md:px-10",
 };
 export default function FirstHeroBanner(props: { data: any }) {
-  const [bannerData, setBannerData] = useState<any>([]);
+  const [bannerData, setBannerData] = useState<any>({
+    title: "",
+    description: "",
+    images: [],
+  });
   const [bannerTheme, setBannerTheme] = useState<string>("");
   const styles =
     {
@@ -38,9 +43,12 @@ export default function FirstHeroBanner(props: { data: any }) {
     setBannerData(props.data);
     setBannerTheme(props.data.theme || "CLASSIC");
   }, [props.data]);
+  
 
   return (
-    <section className={styles.section}>
+        <section className={styles.section} 
+        style={{ backgroundImage: `url(${heroBannerBg})` }}
+        >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-right">
