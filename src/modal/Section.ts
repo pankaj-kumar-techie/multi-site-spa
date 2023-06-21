@@ -14,6 +14,7 @@ export interface Section {
       style: string;
       services: Service[] | null;
       products: Product[] | null;
+      portfolios: Portfolio[] | null;
       images: Image[] | null;
       testimonials: Testimonial[] | null;
       blogs: Blog[] | null;
@@ -42,6 +43,15 @@ export type Service = {
 }
 
 export type Product = {
+  id:number,
+  name: string,
+  href: string,
+  description: string,
+  imageSrc: string,
+  imageAlt: string,
+}
+
+export type Portfolio = {
   id:number,
   name: string,
   href: string,

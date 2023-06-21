@@ -1,50 +1,18 @@
-    import React, {useEffect, useState} from "react";
-    import PortfolioCard from "../../../components/cards/PortfolioCard";
-    import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import React, {useEffect, useState} from "react";
+import PortfolioCard from "../../../components/cards/PortfolioCard";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import { Portfolio } from "../../../modal/Section";
 
-    const callouts = [
-        {
-            name: 'Desk and Office',
-            description: 'Work from home accessories',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-            imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-            href: '#',
-        },
-        {
-            name: 'Self-Improvement',
-            description: 'Journals and note-taking',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-            imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-            href: '#',
-        },
-        {
-            name: 'Self-Improvement',
-            description: 'Journals and note-taking',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-            imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-            href: '#',
-        },
-        {
-            name: 'Self-Improvement',
-            description: 'Journals and note-taking',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-            imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-            href: '#',
-        },
-        {
-            name: 'Travel',
-            description: 'Daily commute essentials',
-            imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-            imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-            href: '#',
-        },
-    ]
 
-    export default function FirstPortfolio(props: { data: any }) {
-        const [portfolioData, setPortfolioData] = useState<any>([]);
-        useEffect(() => {
-            setPortfolioData(props.data);
-        }, [props.data]);
+export default function FirstPortfolio(props: { data: any }) {
+    const [portfolioData, setPortfolioData] = useState<any>({
+        title: "",
+        description: "",
+        portfolios: [],
+    });
+useEffect(() => {
+    setPortfolioData(props.data);
+    }, [props.data]);
 
         return (
             <section>
@@ -54,7 +22,7 @@
                             <TitleCover title={portfolioData.title}></TitleCover>
 
                             <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
-                                {callouts.map((callout) => (
+                                {portfolioData.portfolios.map((callout:Portfolio) => (
                                     <PortfolioCard id={callout.name} name={callout.name} description={callout.description}
                                                    href={callout.href} imageSrc={callout.imageSrc}
                                                    imageAlt={callout.imageAlt}></PortfolioCard>

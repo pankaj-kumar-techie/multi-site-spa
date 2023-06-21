@@ -5,7 +5,7 @@ import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
 import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
-import { websites } from './@local-db/website';
+import { website1, websites } from './@local-db/website';
 
 
 //Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
@@ -39,7 +39,19 @@ export default function App() {
                 // const res = await PageService.getPage(path);
                 setLoading(false);
 
-                setSectionData(websites);
+                if(clientDomainName == "spa-app-loonds.vercel.app"){
+                    setSectionData(website1);
+
+                }else if(clientDomainName == "spa-app-git-main-loonds.vercel.app"){
+                    setSectionData(website2);
+
+                }else if(clientDomainName == "spa-app-alpha.vercel.app"){
+                    setSectionData(website3);
+
+                }else{
+                    setSectionData(websites);
+                }
+
 
                 // setSectionData(res.data.section);
                 // console.log('Pass Section Data to Child Component', res.data.section);
