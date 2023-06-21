@@ -492,16 +492,16 @@ export const website1: Section[] = [
   id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
   name: "Herobanner",
   version: "v1", // Add version property
-  style: "CLASSIC", // Add style property
+  style: "MODERN", // Add style property
   path: "index",
   data: {
     type: "HeroBanner",
     id: "002",
-    title: "Hero Banner!",
-    subTitle: "Hero Banner Sub Title is here",
+    title: "Welcome to !",
+    subTitle: "Loonds Spa App Alpha Vercel",
     description: "Hero Banner Paragraph is here",
     version: "v1",
-    style: "CLASSIC",
+    style: "MODERN",
     services: null,
     portfolios: null,
     products: null,
@@ -516,16 +516,16 @@ export const website1: Section[] = [
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
   name: "Service",
   version: "v1",
-  style: "CLASSIC",
+  style: "MODERN",
   path: "index",
   data: {
     type: "AboutUs",
     id: "003",
-    title: "About us!",
+    title: "About us is here!",
     subTitle: "Hero Banner Sub Title is here",
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
     version: "v1",
-    style: "CLASSIC",
+    style: "MODERN",
     services: null,
     products: null,
     images: null,
@@ -588,9 +588,9 @@ export const website1: Section[] = [
   style: "CLASSIC",
   path: "index",
   data: {
-    type: "Product",
+    type: "Portfolio",
     id: "k",
-    title: "Our Rooms!",
+    title: "Our Upcoming Projects!",
     subTitle: "Hero Banner Sub Title is here",
     description: "Hero Banner Paragraph is here",
     version: "v1",
@@ -601,7 +601,7 @@ export const website1: Section[] = [
     products: [
       {
           id: 1,
-          name: 'Deluxe Room',
+          name: 'Loonds Spa Web App',
           href: '#',
           description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
           imageSrc: roomImage1,
@@ -609,7 +609,7 @@ export const website1: Section[] = [
       },
       {
           id: 2,
-          name: 'Master Room',
+          name: 'Blog App',
           href: '#',
           description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
           imageSrc: roomImage2,
@@ -617,7 +617,7 @@ export const website1: Section[] = [
       },
       {
           id: 3,
-          name: 'Super Room',
+          name: 'Media Service',
           href: '#',
           description: ' Upgraded, luxurious, and lavish accommodation for a remarkable stay.',
           imageSrc: roomImage3,
@@ -625,7 +625,7 @@ export const website1: Section[] = [
       },
       {
           id: 4,
-          name: 'Normal Room',
+          name: 'Travel Portal For travel world',
           href: '#',
           description: 'Comfortable, affordable, and practical choice for a pleasant stay.',
           imageSrc: roomImage4,
@@ -660,14 +660,14 @@ export const website1: Section[] = [
     services: [
       {
           id: 1,
-          title: 'Parking Space',
+          title: 'Hosting Space',
           body: 'We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.',
           imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
           imageAlt: 'parking icon',
       },
       {
           id: 2,
-          title: 'Room Service',
+          title: '27/7 Service',
           body: 'We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.',
           imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon01.png',
           imageAlt: 'parking icon',
@@ -679,27 +679,7 @@ export const website1: Section[] = [
           imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png',
           imageAlt: 'parking icon',
       },
-      {
-          id: 4,
-          title: 'Special Offers',
-          body: 'We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png',
-          imageAlt: 'parking icon',
-      },
-      {
-          id: 5,
-          title: 'Best Accommodation',
-          body: 'We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-          imageAlt: 'parking icon',
-      },
-      {
-          id: 6,
-          title: 'Breakfast',
-          body: 'We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-          imageAlt: 'parking icon',
-      },
+      
     ],
     products: null,
     images: null,
@@ -818,7 +798,7 @@ export const website1: Section[] = [
 {
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
   name: "ContactUs",
-  version: "v1",
+  version: "v2",
   style: "CLASSIC",
   path: "index",
   data: {
@@ -827,7 +807,7 @@ export const website1: Section[] = [
     title: "Get in Touch",
     subTitle: "Hero Banner Sub Title is here",
     description: "Hero Banner Paragraph is here",
-    version: "v1",
+    version: "v2",
     style: "CLASSIC",
     services: null,
     products: null,
@@ -867,30 +847,19 @@ export const website1: Section[] = [
     faqs: [
       {
         id:1,
-        question: 'Q.What are the check-in and check-out timings at Gayatri Lodge?',
+        question: 'Q.What is bla bla ?',
         answer: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
       },
       {
         id:2,
-        question: 'Q.What amenities are provided at Gayatri Lodge?',
+        question: 'Q.What Service are provided at Loonds spa?',
         answer: 'Ans:Gayatri Lodge offers a range of amenities to make your stay comfortable. Some of the amenities include clean and well-furnished rooms, air conditioning, television, attached bathroom with hot water facility, room service, Wi-Fi access, and complimentary toiletries.',
       },
       {
         id:3,
-        question: 'Q.Is there parking available at Gayatri Lodge?',
+        question: 'Q.Is there Domain parking provide loonds?',
         answer: 'Ans:Yes, Gayatri Lodge provides parking facilities for guests. You can safely park your vehicle during your stay at the lodge. However, parking availability may be limited, so its advisable to inform the lodge in advance if you require parking.',
       },
-      {
-        id:4,
-        question: 'Q.Are meals included in the room rates at Gayatri Lodge?',
-        answer: 'Ans:"Yes, Gayatri Lodge provides meals as part of the room rates. Guests can enjoy delicious meals at the in-house restaurant or avail themselves of the dining options available in close proximity to the lodge. The meals offered cater to various preferences and cuisines, ensuring a satisfying dining experience for guests."',
-      },
-      {
-        id:5,
-        question: 'Q.Does Gayatri Lodge have a cancellation policy?',
-        answer: 'Ans:Yes, Gayatri Lodge has a cancellation policy in place. The specific details may vary depending on the booking channel and the type of reservation made. Its advisable to review the cancellation policy at the time of booking or contact the lodge directly for more information.',
-      },
-      // Add more FAQs as needed
   ],
   },
 },
