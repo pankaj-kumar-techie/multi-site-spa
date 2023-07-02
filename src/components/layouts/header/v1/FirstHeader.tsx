@@ -110,7 +110,7 @@ export default function FirstHeader(props: { data: any }) {
         <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
     <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
         < Link to='/'>
-        <h1 style={{color:`${textColor}`}} className='font-bold text-2xl lg:text-3xl '>Gayatri Lodge</h1>
+        <h1 style={{color:`${textColor}`}} className='font-bold text-2xl lg:text-3xl '>{headerData.title??"Site Name"}</h1>
         </Link>
         <ul style={{color:`${textColor}`}} className='hidden sm:flex'>
             <li className='p-4'>

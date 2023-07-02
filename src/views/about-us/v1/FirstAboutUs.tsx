@@ -31,20 +31,20 @@ const styles: { [key: string]: AboutStyles } = {
     MODERN: {
         section: "text-gray-600 body-font relative overflow-hidden",
         backgroundColor: "bg-white-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
+        title: "text-3xl font-extrabold text-black sm:text-4xl mb-6",
+        subTitle: "text-black text-lg mb-6",
         imageWrapper: "absolute top-[10%] z-0 left-[-30%] h-[1500px] translate-x-[-50%]",
         bodyWrapper: "sm:w-1/2 z-[9] sm:pl-16",
         aboutImage:
-            "https://stackoverflow.co/img/product/home/bg-header-mobile.png",
+            "https://beeready.in/wp-content/uploads/2022/05/Diwali-Hamper-1-scaled.jpg",
         aboutImageWrapper: "w-80 z-50 h-80 rounded-full object-cover",
     },
     PLAIN: {
         section: "text-gray-600 body-font",
         backgroundColor: "bg-red-500",
         title:
-            "text-3xl font-extrabold text-center mt-10 text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
+            "text-3xl font-extrabold text-center mt-10 text-black sm:text-4xl mb-6",
+        subTitle: "text-black text-lg mb-6",
         imageWrapper: "hidden",
         bodyWrapper: "sm:w-1/2 sm:pl-16",
         aboutImage: "https://example.com/image.jpg",
@@ -59,7 +59,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
 
     useEffect(() => {
         setAboutData(data);
-        setBannerTheme(data.theme || "CLASSIC");
+        setBannerTheme(data.style || "CLASSIC");
     }, [data]);
 
     const selectedStyle: AboutStyles = styles[bannerTheme] || styles.CLASSIC;
