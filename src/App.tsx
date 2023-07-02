@@ -40,12 +40,12 @@ export default function App() {
                 setLoading(false);
 
                 if(clientDomainName == "spa-app-loonds.vercel.app"){
-                    setSectionData(website1);
+                    setSectionData(websites);
 
                 }else if(clientDomainName == "spa-app-git-main-loonds.vercel.app"){
                     setSectionData(website2);
 
-                }else if (clientDomainName == "spa-app-git-main-loonds.vercel.app"){
+                }else if (clientDomainName == "spa-app-alpha.vercel.app"){
                     setSectionData(website3)
                 }else {
                     setSectionData(websites);
