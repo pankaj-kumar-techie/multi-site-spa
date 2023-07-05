@@ -5,7 +5,7 @@ import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
 import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
-import { website1, website2, website3, websites } from './@local-db/website';
+import { dev, gayatrilodge, techie, website1, website2, website3, websites } from './@local-db/website';
 
 
 //Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
@@ -14,6 +14,8 @@ export default function App() {
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
+
+    
 
     useEffect(() => {
         const loadPage = async () => {
@@ -39,20 +41,30 @@ export default function App() {
                 // const res = await PageService.getPage(path);
                 setLoading(false);
 
-                if(clientDomainName == "spa-app-loonds.vercel.app"){
-                    setSectionData(websites);
-
-                }else if (clientDomainName == "techie.pahariyatri.com"){
-                    setSectionData(website1);
-                }else if(clientDomainName == "spa-app-git-main-loonds.vercel.app"){
-                    setSectionData(website2);
-
-                }else if (clientDomainName == "spa-app-alpha.vercel.app"){
-                    setSectionData(website3)
-                }else {
-                    setSectionData(websites);
-                }
-
+                switch (clientDomainName) {
+                    case "spa-app-loonds.vercel.app":
+                      setSectionData(website1);
+                      break;
+                    case "spa-app-git-main-loonds.vercel.app":
+                      setSectionData(website2);
+                      break;
+                    case "spa-app-alpha.vercel.app":
+                      setSectionData(website3);
+                      break;
+                    case "techie.pahariyatri.com":
+                      setSectionData(techie);
+                      break;
+                    case "gayatrilodge.com":
+                      setSectionData(gayatrilodge);
+                      break;
+                    case "dev.pahariyatri.com":
+                      setSectionData(dev);
+                      break;
+                    default:
+                      setSectionData(websites);
+                      break;
+                  }
+                  
 
                 // setSectionData(res.data.section);
                 // console.log('Pass Section Data to Child Component', res.data.section);
