@@ -42,7 +42,13 @@ export const website1: Section[] = [
     services: null,
     portfolios: null,
     products: null,
-    images: null,
+    images: [
+      {
+          id: '1',
+          imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+          imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+      },
+    ],
     blogs : null,
     testimonials: null,
     faqs: null,
@@ -1298,7 +1304,13 @@ export const pahariyatri: Section[] = [
     style: "CLASSIC",
     services: null,
     products: null,
-    images: null,
+    images: [
+      {
+          id: '1',
+          imageSrc: 'https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
+          imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+      },
+    ],
     blogs : null,
     testimonials: null,
     portfolios: null,

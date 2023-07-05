@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import heroBannerBg from "../../../assets/sub-banner-hotel.jpg";
 
 const styles1 = {
   section: "bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
@@ -7,7 +6,7 @@ const styles1 = {
     "lg:text-[6rem] font-raleway md:text-[5rem]  mt-32 text-[2.5rem] font-bold text-white text-center",
   subTitle:
     "mt-3 max-w-md  mx-auto text-3xl text-white lg:text-[1.5rem]  sm:text-4xl md:mt-5 md:text-[1.5rem] md:max-w-3xl text-center",
-  imageBg:"https://thumbs.dreamstime.com/b/hotel-room-4780421.jpg",
+  imageBg:"https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
   buttonWrapper: "mt-10 sm:flex justify-center",
   button:
     "  flex items-center justify-center   border border-transparent text-base font-medium rounded-md text-white   md:text-lg ",
@@ -22,7 +21,7 @@ const styles2 = {
     "lg:text-[6rem] font-raleway md:text-[5rem]  mt-32 text-[2.5rem] font-bold text-white text-center",
   subTitle:
     "mt-3 max-w-md  mx-auto text-3xl text-white lg:text-[1.5rem]  sm:text-4xl md:mt-5 md:text-[1.5rem] md:max-w-3xl text-center",
-    imageBg:"https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+    imageBg:"https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
 
     buttonWrapper: "mt-10 sm:flex justify-center",
     button:
@@ -51,7 +50,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
   return (
         <section className={styles.section} 
-        style={{ backgroundImage: `url(${styles.imageBg})` }}
+        style={{ backgroundImage: `url(${bannerData.images[0].imageSrc || styles.imageBg})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
