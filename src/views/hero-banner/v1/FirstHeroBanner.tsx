@@ -50,7 +50,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
   return (
         <section className={styles.section} 
-        style={{ backgroundImage: `url(${bannerData.images[0]?.imageSrc || styles.imageBg})` }}
+        style={{ backgroundImage: `url(${bannerData.images?.[0]?.imageSrc || styles.imageBg})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
