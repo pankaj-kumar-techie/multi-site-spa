@@ -1,9 +1,4 @@
 import { Section } from "../modal/Section";
-import roomImage1 from "../assets/room-img1.jpg";
-import roomImage2 from "../assets/room-img2.jpg";
-import roomImage3 from "../assets/room-img3.jpg";
-import roomImage4 from "../assets/room-img4.jpg";
-
 
 export const website1: Section[] = [
   {
@@ -195,7 +190,7 @@ export const website1: Section[] = [
         title: "Blog Post 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://images.unsplash.com/photo-1605181063694-e64a8e7a267f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -203,7 +198,7 @@ export const website1: Section[] = [
         title: "Blog Post 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -211,7 +206,7 @@ export const website1: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -219,7 +214,7 @@ export const website1: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
     ],
@@ -514,7 +509,7 @@ export const website2: Section[] = [
           name: 'Deluxe Room',
           href: '#',
           description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
-          imageSrc: roomImage1,
+          imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -522,7 +517,7 @@ export const website2: Section[] = [
           name: 'Master Room',
           href: '#',
           description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-          imageSrc: roomImage2,
+          imageSrc: "https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
           imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
@@ -530,7 +525,7 @@ export const website2: Section[] = [
           name: 'Super Room',
           href: '#',
           description: ' Upgraded, luxurious, and lavish accommodation for a remarkable stay.',
-          imageSrc: roomImage3,
+          imageSrc: "https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
           imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },
       {
@@ -538,7 +533,7 @@ export const website2: Section[] = [
           name: 'Normal Room',
           href: '#',
           description: 'Comfortable, affordable, and practical choice for a pleasant stay.',
-          imageSrc: roomImage4,
+          imageSrc: "https://images.unsplash.com/photo-1568495248636-6432b97bd949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
           imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
       },
       // More products...
@@ -682,7 +677,7 @@ export const website2: Section[] = [
         title: "Blog Post 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -690,7 +685,7 @@ export const website2: Section[] = [
         title: "Blog Post 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -698,7 +693,7 @@ export const website2: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -706,7 +701,7 @@ export const website2: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
     ],
@@ -1272,7 +1267,7 @@ export const pahariyatri: Section[] = [
       data: {
         type: "Header",
         id: "001",
-        title: "PYatri",
+        title: "Pahari-Yatri",
         subTitle: "Hero Banner Sub Title is here",
         description: "Hero Banner Paragraph is here",
         version: "v1",
@@ -1296,7 +1291,7 @@ export const pahariyatri: Section[] = [
   data: {
     type: "HeroBanner",
     id: "002",
-    title: "Pahari Yatr",
+    title: "Pahari Yatri",
     subTitle: "Pahari Yatri - A Guide to Traveling on a Budget",
     description: "Hero Banner Paragraph is here",
     version: "v2",
@@ -1331,59 +1326,73 @@ export const pahariyatri: Section[] = [
     products: [
       {
           id: 1,
-          name: 'Handcrafted Candles',
+          name: 'Roopkund Trek',
           href: '#',
-          description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
+          description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
           imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
           id: 2,
-          name: 'Artisanal Soaps and Bath Products',
+          name: 'Valley of Flowers Trek',
           href: '#',
-          description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
+          description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
           imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
           imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
-        id: 11,
-        name: 'Handcrafted Candles',
+        id: 3,
+        name: 'Har Ki Dun Trek',
         href: '#',
-        description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
+        description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
         imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-    },
-    {
-        id: 21,
-        name: 'Artisanal Soaps and Bath Products',
+      },
+      {
+          id: 4,
+          name: 'Chadar Trek',
+          href: '#',
+          description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
+          imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+          imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+      },
+      {
+        id: 5,
+        name: 'Markha Valley Trek',
+        href: '#',
+        description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
+        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+      },
+      {
+        id: 6,
+        name: 'Hampta Pass Trek',
         href: '#',
         description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
         imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
-    {
-      id: 122,
-      name: 'Handmade Home Decor',
-      href: '#',
-      description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
-      imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-  },
-  {
-      id: 222,
-      name: 'Artisanal Soaps and Bath Products',
-      href: '#',
-      description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-      imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
-      imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-  },
+      },
       {
-          id: 3,
-          name: 'Gourmet Food and Treats',
-          href: '#',
-          description: ' Upgraded, luxurious, and lavish accommodation for a remarkable stay.',
-          imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
-          imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+        id: 7,
+        name: 'Goecha La Trek',
+        href: '#',
+        description: '',
+        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+      },{
+        id: 8,
+        name: 'Sandakphu Trek',
+        href: '#',
+        description: 'Trek to the highest point in West Bengal, Sandakphu, and witness panoramic views of the Himalayas, including the majestic Kanchenjunga.',
+        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+      },{
+        id: 9,
+        name: 'Great Lakes Trek',
+        href: '#',
+        description: 'Explore the pristine alpine lakes of the Kashmir region, including Vishansar Lake, Gadsar Lake, and Nundkol Lake.',
+        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },
       // More products...
   ],
@@ -1415,58 +1424,6 @@ export const pahariyatri: Section[] = [
     portfolios: null,
     faqs: null,
     contactUs:null,
-  },
-},
-{
-  id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-  name: "Service",
-  version: "v1",
-  style: "CLASSIC",
-  path: "index",
-  data: {
-    type: "Testimonial",
-    id: "k",
-    title: "Hero Banner!",
-    subTitle: "Hero Banner Sub Title is here",
-    description: "Hero Banner Paragraph is here",
-    version: "v1",
-    style: "CLASSIC",
-    services: null,
-    products: null,
-    images: null,
-    blogs : null,
-    faqs: null,
-    contactUs:null,
-    portfolios: null,
-    testimonials: [
-      {
-        id: "1",
-        name: "John Doe",
-        designation: "Graphic Designer",
-        imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
-        imageAlt: "Graphic Designer",
-        testimonial:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.",
-    },
-    {
-        id: "2",
-        name: "John Doe",
-        designation: "John Doe",
-        imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
-        imageAlt: "John Doe",
-        testimonial:
-            "Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla.",
-    },
-    {
-        id: "3",
-        name: "John Doe",
-        designation: "John Doe",
-        imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
-        imageAlt: "John Doe",
-        testimonial:
-            "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
-    },
-    ],
   },
 },
 {
@@ -1767,7 +1724,7 @@ export const gayatrilodge: Section[] = [
           name: 'Deluxe Room',
           href: '#',
           description: 'Spacious, elegant, and luxurious accommodation for ultimate comfort.',
-          imageSrc: roomImage1,
+          imageSrc: "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1775,7 +1732,7 @@ export const gayatrilodge: Section[] = [
           name: 'Master Room',
           href: '#',
           description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-          imageSrc: roomImage2,
+          imageSrc: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
           imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
@@ -1783,7 +1740,7 @@ export const gayatrilodge: Section[] = [
           name: 'Super Room',
           href: '#',
           description: ' Upgraded, luxurious, and lavish accommodation for a remarkable stay.',
-          imageSrc: roomImage3,
+          imageSrc: "https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
           imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },
       {
@@ -1791,7 +1748,7 @@ export const gayatrilodge: Section[] = [
           name: 'Normal Room',
           href: '#',
           description: 'Comfortable, affordable, and practical choice for a pleasant stay.',
-          imageSrc: roomImage4,
+          imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
           imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
       },
       // More products...
@@ -1894,7 +1851,7 @@ export const gayatrilodge: Section[] = [
         title: "Blog Post 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1902,7 +1859,7 @@ export const gayatrilodge: Section[] = [
         title: "Blog Post 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1910,7 +1867,7 @@ export const gayatrilodge: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1918,7 +1875,7 @@ export const gayatrilodge: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: roomImage1,
+        imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
     ],
