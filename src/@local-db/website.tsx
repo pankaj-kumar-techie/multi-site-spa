@@ -521,7 +521,7 @@ export const website1: Section[] = [
   data: {
     type: "HeroBanner",
     id: "002",
-    title: "Welcome to !",
+    title: "Software Engineer !",
     subTitle: "Loonds Spa App Alpha Vercel",
     description: "Hero Banner Paragraph is here",
     version: "v1",

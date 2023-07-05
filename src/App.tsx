@@ -42,6 +42,8 @@ export default function App() {
                 if(clientDomainName == "spa-app-loonds.vercel.app"){
                     setSectionData(websites);
 
+                }else if (clientDomainName == "techie.pahariyatri.com"){
+                    setSectionData(website1);
                 }else if(clientDomainName == "spa-app-git-main-loonds.vercel.app"){
                     setSectionData(website2);
 
