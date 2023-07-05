@@ -1730,7 +1730,7 @@ export const gayatrilodge: Section[] = [
         type: "Header",
         id: "001",
         title: "Gayatri Lodge",
-        subTitle: "Hero Banner Sub Title is here",
+        subTitle: "Hero Banner Sub Title is",
         description: "Hero Banner Paragraph is here",
         version: "v1",
         style: "CLASSIC",
@@ -1754,33 +1754,9 @@ export const gayatrilodge: Section[] = [
     type: "HeroBanner",
     id: "002",
     title: "Hero Banner!",
-    subTitle: "Hero Banner Sub Title is here",
+    subTitle: "Welcome to Gayatri Lodge, Your Tranquil Haven in Kasauli",
     description: "Hero Banner Paragraph is here",
     version: "v1",
-    style: "CLASSIC",
-    services: null,
-    products: null,
-    images: null,
-    portfolios: null,
-    blogs : null,
-    testimonials: null,
-    faqs: null,
-    contactUs:null,
-  },
-},
-{
-  id: "69e7ed7e-889d-1c0-a1d9-62bd150401e2",
-  name: "Herobanner",
-  version: "v1", // Add version property
-  style: "CLASSIC", // Add style property
-  path: "index",
-  data: {
-    type: "HeroBanner",
-    id: "002",
-    title: "Hero Banner v2!",
-    subTitle: "Hero Banner Sub Title is here",
-    description: "Hero Banner Paragraph is here",
-    version: "v2",
     style: "CLASSIC",
     services: null,
     products: null,
@@ -1803,7 +1779,7 @@ export const gayatrilodge: Section[] = [
     id: "003",
     title: "About us!",
     subTitle: "Hero Banner Sub Title is here",
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    description: "At Gayatri Lodge, we believe in creating unforgettable memories for our guests. As a family-owned homestay, we take pride in our personalized approach and attention to detail. With years of experience in hospitality, we have curated a haven where every guest is treated like a part of our extended family. Our warm and friendly staff is dedicated to ensuring your stay is nothing short of exceptional.",
     version: "v1",
     style: "CLASSIC",
     services: null,
@@ -2201,143 +2177,43 @@ export const gayatrilodge: Section[] = [
 ];
 
 export const techie: Section[] = [
-  {
-      id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-      name: "Header",
-      version: "v1", // Add version property
-      style: "CLASSIC", // Add style property
-      path: "index",
-      data: {
-        type: "Header",
-        id: "001",
-        title: "Gayatri Lodge",
-        subTitle: "Hero Banner Sub Title is here",
-        description: "Hero Banner Paragraph is here",
-        version: "v1",
-        style: "CLASSIC",
-        services: null,
-        products: null,
-        portfolios: null,
-        images: null,
-        blogs : null,
-        testimonials: null,
-        faqs: null,
-        contactUs:null,
-      },
-    },
-  
-    {
-      id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-      name: "Header",
-      version: "v1", // Add version property
-      style: "CLASSIC", // Add style property
-      path: "index",
-      data: {
-        type: "ComingSoon",
-        id: "001",
-        title: "Comming Soon",
-        subTitle: "Hero Banner Sub Title is here",
-        description: "Hero Banner Paragraph is here",
-        version: "v1",
-        style: "CLASSIC",
-        services: null,
-        products: null,
-        portfolios: null,
-        images: null,
-        blogs : null,
-        testimonials: null,
-        faqs: null,
-        contactUs:null,
-      },
-    },
-
 {
-  id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-  name: "Footer",
-  version: "v1",
-  style: "CLASSIC",
+  id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+  name: "Header",
+  version: "v1", // Add version property
+  style: "CLASSIC", // Add style property
   path: "index",
   data: {
-    type: "Footer",
-    id: "k",
-    title: "Hero Banner!",
-    subTitle: "Hero Banner Sub Title is here",
+    type: "ComingSoon",
+    id: "001",
+    title: "Comming Soon",
+    subTitle: "Techie Blog App",
     description: "Hero Banner Paragraph is here",
     version: "v1",
     style: "CLASSIC",
     services: null,
     products: null,
     portfolios: null,
-    blogs : null,
     images: null,
+    blogs : null,
+    testimonials: null,
     faqs: null,
     contactUs:null,
-    testimonials: null,
   },
 },
 ];
 
-export const dev: Section[] = [
-  {
-      id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-      name: "Header",
-      version: "v1", // Add version property
-      style: "CLASSIC", // Add style property
-      path: "index",
-      data: {
-        type: "Header",
-        id: "001",
-        title: "Gayatri Lodge",
-        subTitle: "Hero Banner Sub Title is here",
-        description: "Hero Banner Paragraph is here",
-        version: "v1",
-        style: "CLASSIC",
-        services: null,
-        products: null,
-        portfolios: null,
-        images: null,
-        blogs : null,
-        testimonials: null,
-        faqs: null,
-        contactUs:null,
-      },
-    },
-  
-    {
-      id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-      name: "Header",
-      version: "v1", // Add version property
-      style: "CLASSIC", // Add style property
-      path: "index",
-      data: {
-        type: "ComingSoon",
-        id: "001",
-        title: "Comming Soon",
-        subTitle: "Hero Banner Sub Title is here",
-        description: "Hero Banner Paragraph is here",
-        version: "v1",
-        style: "CLASSIC",
-        services: null,
-        products: null,
-        portfolios: null,
-        images: null,
-        blogs : null,
-        testimonials: null,
-        faqs: null,
-        contactUs:null,
-      },
-    },
-
+export const dev: Section[] = [  
 {
-  id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-  name: "Footer",
-  version: "v1",
-  style: "CLASSIC",
+  id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+  name: "Header",
+  version: "v1", // Add version property
+  style: "CLASSIC", // Add style property
   path: "index",
   data: {
-    type: "Footer",
-    id: "k",
-    title: "Hero Banner!",
+    type: "ComingSoon",
+    id: "001",
+    title: "Comming Soon Dev",
     subTitle: "Hero Banner Sub Title is here",
     description: "Hero Banner Paragraph is here",
     version: "v1",
@@ -2345,11 +2221,11 @@ export const dev: Section[] = [
     services: null,
     products: null,
     portfolios: null,
-    blogs : null,
     images: null,
+    blogs : null,
+    testimonials: null,
     faqs: null,
     contactUs:null,
-    testimonials: null,
   },
 },
 ];
