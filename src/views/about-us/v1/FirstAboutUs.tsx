@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import SectionStyle from "../../../modal/SectionStyle";
 
 interface FirstAboutUsProps {
     data: any;
@@ -18,6 +19,10 @@ const styles: { [key: string]: SectionStyle } = {
         aboutImage:
             "https://www.gotahoenorth.com/wp-content/uploads/2014/12/mainphoto-640x440.jpg",
         aboutImageWrapper: "w-full h-full rounded-lg shadow-lg object-cover",
+        buttonWrapper: "mt-10 sm:flex justify-center",
+        button: "flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg",
+        buttonSecondary: "mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3",
+        buttonSecondaryLink: "w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
     },
     MODERN: {
         section: "text-gray-600 body-font relative overflow-hidden",
