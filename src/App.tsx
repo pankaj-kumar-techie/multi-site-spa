@@ -5,7 +5,7 @@ import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
 import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
-import { dev, gayatrilodge, techie, website1, website2, website3, websites } from './@local-db/website';
+import { basic, dev, gayatrilodge, pahariyatri, techie, website1, website2, website3 } from './@local-db/website';
 
 
 //Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
@@ -51,6 +51,9 @@ export default function App() {
                     case "spa-app-alpha.vercel.app":
                       setSectionData(website3);
                       break;
+                    case "pahariyatri.com":
+                        setSectionData(pahariyatri);
+                        break;
                     case "techie.pahariyatri.com":
                       setSectionData(techie);
                       break;
@@ -61,7 +64,7 @@ export default function App() {
                       setSectionData(dev);
                       break;
                     default:
-                      setSectionData(websites);
+                      setSectionData(basic);
                       break;
                   }
                   
