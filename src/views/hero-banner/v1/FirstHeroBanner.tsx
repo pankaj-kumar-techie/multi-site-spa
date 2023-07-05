@@ -6,7 +6,7 @@ const styles1 = {
     "lg:text-[6rem] font-raleway md:text-[5rem]  mt-32 text-[2.5rem] font-bold text-white text-center",
   subTitle:
     "mt-3 max-w-md  mx-auto text-3xl text-white lg:text-[1.5rem]  sm:text-4xl md:mt-5 md:text-[1.5rem] md:max-w-3xl text-center",
-  imageBg:"https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
+  imageBg:" https://images.unsplash.com/photo-1688413708929-8b2d281803df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
   buttonWrapper: "mt-10 sm:flex justify-center",
   button:
     "  flex items-center justify-center   border border-transparent text-base font-medium rounded-md text-white   md:text-lg ",
@@ -31,6 +31,8 @@ const styles2 = {
       "w-[250px] flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
 };
 export default function FirstHeroBanner(props: { data: any }) {
+  console.log("Code" + props.data.images[0].imageSrc);
+
   const [bannerData, setBannerData] = useState<any>({
     title: "",
     description: "",
@@ -50,7 +52,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
   return (
         <section className={styles.section} 
-        style={{ backgroundImage: `url(${bannerData.images?.[0]?.imageSrc || styles.imageBg})` }}
+        style={{ backgroundImage: `url(${props.data?.images[0]?.imageSrc || styles.imageBg})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
