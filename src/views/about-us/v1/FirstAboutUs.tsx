@@ -4,18 +4,9 @@ interface FirstAboutUsProps {
     data: any;
 }
 
-interface AboutStyles {
-    section: string;
-    backgroundColor: string;
-    title: string;
-    subTitle: string;
-    imageWrapper: string;
-    bodyWrapper: string;
-    aboutImage: string;
-    aboutImageWrapper: string;
-}
 
-const styles: { [key: string]: AboutStyles } = {
+
+const styles: { [key: string]: SectionStyle } = {
     CLASSIC: {
         section: "text-gray-600 body-font",
         backgroundColor: "bg-purssian-blue",
@@ -62,7 +53,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
         setBannerTheme(data.style || "CLASSIC");
     }, [data]);
 
-    const selectedStyle: AboutStyles = styles[bannerTheme] || styles.CLASSIC;
+    const selectedStyle: SectionStyle = styles[bannerTheme] || styles.CLASSIC;
 
     return (
         <section className={selectedStyle.section}>

@@ -1416,7 +1416,7 @@ export const pahariyatri: Section[] = [
 },
 {
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-  name: "Service",
+  name: "About-Us",
   version: "v1",
   style: "CLASSIC",
   path: "index",
@@ -1430,7 +1430,13 @@ export const pahariyatri: Section[] = [
     style: "CLASSIC",
     services: null,
     products: null,
-    images: null,
+    images: [
+      {
+          id: '1',
+          imageSrc: 'https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
+          imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+      },
+    ],
     blogs : null,
     testimonials: null,
     portfolios: null,
@@ -1629,7 +1635,7 @@ export const gayatrilodge: Section[] = [
   data: {
     type: "HeroBanner",
     id: "002",
-    title: "Hero Banner!",
+    title: "Gayatri Lodge!",
     subTitle: "Welcome to Gayatri Lodge, Your Tranquil Haven in Kasauli",
     description: "Hero Banner Paragraph is here",
     version: "v1",
@@ -1677,7 +1683,7 @@ export const gayatrilodge: Section[] = [
   data: {
     type: "Gallery",
     id: "004",
-    title: "Gallery !",
+    title: "Our Gallery !",
     subTitle: "Hero Banner Sub Title is here",
     description: "Hero Banner Paragraph is here",
     version: "v1",
