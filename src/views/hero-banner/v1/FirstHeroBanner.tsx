@@ -31,7 +31,6 @@ const styles2 = {
       "w-[250px] flex  items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
 };
 export default function FirstHeroBanner(props: { data: any }) {
-  console.log("Code" + props.data.images[0].imageSrc);
 
   const [bannerData, setBannerData] = useState<any>({
     title: "",
@@ -52,7 +51,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
   return (
         <section className={styles.section} 
-        style={{ backgroundImage: `url(${props.data?.images?.[0]?.imageSrc|| styles.imageBg})` }}
+        style={{ backgroundImage: `url(${props?.data?.images?.[0]?.imageSrc|| styles.imageBg})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
