@@ -66,7 +66,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-col-reverse sm:flex-row">
                     <div className="sm:w-1/2 flex justify-center transform transition duration-1000 hover:scale-110">
                         <img
-                            src={selectedStyle.aboutImage}
+                            src={aboutData?.images?.[0]?.imageSrc||selectedStyle.aboutImage}
                             alt="About Us"
                             className={selectedStyle.aboutImageWrapper}
                         />

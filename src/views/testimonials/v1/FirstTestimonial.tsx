@@ -16,7 +16,7 @@ export default function FirstTestimonial(props: { data: any }) {
 
     return (
         <>
-            <section className=" text-center bg-custom-brown">
+            <section className=" text-center">
                 <div className="container  pb-12 pt-16  mx-auto md:px-6">
                     <TitleCover title={"Testimonials"} subtitle={""} paragraph={""}></TitleCover>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
