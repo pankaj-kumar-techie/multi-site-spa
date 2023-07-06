@@ -27,7 +27,7 @@ export const classicTheme: Theme = {
       fontSize: 'text-base',
     },
     section: {
-      backgroundColor: 'bg-gray-900',
+      backgroundColor: 'bg-white',
     },
   };
   

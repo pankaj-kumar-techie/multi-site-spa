@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+import Button from "../../../components/comman/button/Button";
 
 export default function SecondContactUs(props: { data: any }) {
     const [contactUsData, setContactUsData] = useState<any>([])
@@ -76,25 +77,8 @@ export default function SecondContactUs(props: { data: any }) {
                                        className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
                                        id="exampleCheck87" checked/>
                             </div>
-                            <button type="submit" className="
-          w-full
-          px-6
-          py-2.5
-          bg-blue-600
-          text-white
-          font-medium
-          text-xs
-          leading-tight
-          uppercase
-          rounded
-          shadow-md
-          hover:bg-blue-700 hover:shadow-lg
-          focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-          active:bg-blue-800 active:shadow-lg
-          transition
-          duration-150
-          ease-in-out">Send
-                            </button>
+                            <Button label="Send" color="blue" action={() => console.log('Button clicked')} height="40px" width="580px" />
+
                         </form>
                     </div>
                     <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
