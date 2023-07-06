@@ -6,11 +6,14 @@ import Loader from "./components/comman/loader/Loader";
 import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
 import { basic, dev, gayatrilodge, pahariyatri, techie, website1, website2, website3 } from './@local-db/website';
+import ThemeProvider from './themes/ThemeProvider';
+import { classicTheme, modernTheme } from './themes/Theme';
 
 
 //Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+    const selectedTheme = modernTheme;
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
@@ -64,7 +67,7 @@ export default function App() {
                       setSectionData(dev);
                       break;
                     default:
-                      setSectionData(basic);
+                      setSectionData(pahariyatri);
                       break;
                   }
                   
@@ -89,9 +92,11 @@ export default function App() {
         <>
             {!loading && sectionData.length > 0 ? (
                 <>
+                <ThemeProvider theme="classic">
                     {sectionData.map((sectionData: Section) =>
                         Renderer.componentRenderV1('Home', sectionData)
                     )}
+                </ThemeProvider>
                 </>
             ) : (
                 <Loader/>
