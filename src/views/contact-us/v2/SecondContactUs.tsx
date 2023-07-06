@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import Button from "../../../components/comman/button/Button";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 export default function SecondContactUs(props: { data: any }) {
     const [contactUsData, setContactUsData] = useState<any>([])
@@ -11,9 +12,7 @@ export default function SecondContactUs(props: { data: any }) {
         <>
             <section className="mb-32 text-gray-800">
                 <div className="flex justify-center">
-                    <div className="text-center lg:max-w-3xl md:max-w-xl">
-                        <h2 className="text-3xl font-bold mb-12 px-6">{contactUsData?.subTitle}</h2>
-                    </div>
+                    <TitleCover title={contactUsData?.title}></TitleCover>
                 </div>
 
                 <div className="flex flex-wrap">
@@ -71,11 +70,6 @@ export default function SecondContactUs(props: { data: any }) {
             m-0
             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
           " id="exampleFormControlTextarea13" placeholder="Message"></textarea>
-                            </div>
-                            <div className="form-group form-check text-center mb-6">
-                                <input type="checkbox"
-                                       className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
-                                       id="exampleCheck87" checked/>
                             </div>
                             <Button label="Send" color="blue" action={() => console.log('Button clicked')} height="40px" width="580px" />
 

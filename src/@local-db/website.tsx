@@ -1307,7 +1307,7 @@ export const pahariyatri: Section[] = [
     images: [
       {
           id: '1',
-          imageSrc: 'https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
+          imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       },
     ],
@@ -1327,8 +1327,8 @@ export const pahariyatri: Section[] = [
   data: {
     type: "Product",
     id: "k",
-    title: "Our Upcoming Package!",
-    subTitle: "Hero Banner Sub Title is here",
+    title: "Our Upcoming Destination!",
+    subTitle: "Join Us for a Trip to the Himalayas",
     description: "Hero Banner Paragraph is here",
     version: "v1",
     style: "CLASSIC",
@@ -1341,7 +1341,7 @@ export const pahariyatri: Section[] = [
           name: 'Roopkund Trek',
           href: '#',
           description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
-          imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+          imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
           imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1349,7 +1349,7 @@ export const pahariyatri: Section[] = [
           name: 'Valley of Flowers Trek',
           href: '#',
           description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-          imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+          imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
           imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
@@ -1357,7 +1357,7 @@ export const pahariyatri: Section[] = [
         name: 'Har Ki Dun Trek',
         href: '#',
         description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1365,7 +1365,7 @@ export const pahariyatri: Section[] = [
           name: 'Chadar Trek',
           href: '#',
           description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-          imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+          imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
           imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
@@ -1373,7 +1373,7 @@ export const pahariyatri: Section[] = [
         name: 'Markha Valley Trek',
         href: '#',
         description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1381,29 +1381,29 @@ export const pahariyatri: Section[] = [
         name: 'Hampta Pass Trek',
         href: '#',
         description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
       },
       {
         id: 7,
         name: 'Goecha La Trek',
         href: '#',
-        description: '',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        description: 'Person using a pen to cross a task off a productivity paper card.',
+        imageSrc: "https://images.unsplash.com/photo-1666545381458-c9688d2d10e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },{
         id: 8,
         name: 'Sandakphu Trek',
         href: '#',
         description: 'Trek to the highest point in West Bengal, Sandakphu, and witness panoramic views of the Himalayas, including the majestic Kanchenjunga.',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1520597191538-5c333fd1c980?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1249&q=80",
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },{
         id: 9,
         name: 'Great Lakes Trek',
         href: '#',
         description: 'Explore the pristine alpine lakes of the Kashmir region, including Vishansar Lake, Gadsar Lake, and Nundkol Lake.',
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1666545378647-e7eeb3ca61a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
       },
       // More products...
@@ -1433,7 +1433,7 @@ export const pahariyatri: Section[] = [
     images: [
       {
           id: '1',
-          imageSrc: 'https://plus.unsplash.com/premium_photo-1674086970773-726e445f5802?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80',
+          imageSrc: 'https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
       },
     ],
@@ -1515,7 +1515,7 @@ export const pahariyatri: Section[] = [
         title: "Blog Post 1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1523,7 +1523,7 @@ export const pahariyatri: Section[] = [
         title: "Blog Post 2",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1531,7 +1531,7 @@ export const pahariyatri: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
       {
@@ -1539,7 +1539,7 @@ export const pahariyatri: Section[] = [
         title: "Blog Post 3",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-        imageSrc: "https://www.moneymagpie.com/wp-content/uploads/2023/03/MoneyMagpie_Riverford-Christmas-Gift-Hamper.jpg.webp",
+        imageSrc: "https://images.unsplash.com/photo-1520982184827-6950930eaf2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
       },
     ],
@@ -1558,7 +1558,7 @@ export const pahariyatri: Section[] = [
     type: "ContactUs",
     id: "k",
     title: "Get in Touch",
-    subTitle: "Hero Banner Sub Title is here",
+    subTitle: "Contact Us Sub Title is here",
     description: "Hero Banner Paragraph is here",
     version: "v2",
     style: "CLASSIC",
