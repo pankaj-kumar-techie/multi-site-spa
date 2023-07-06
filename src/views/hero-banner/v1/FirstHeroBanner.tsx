@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SectionStyle from "../../../modal/SectionStyle";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
 const styles: { [key: string]: SectionStyle } = {
   CLASSIC: {
@@ -52,8 +53,9 @@ export default function FirstHeroBanner(props: { data: any }) {
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-right">
-            <h1 className={selectedStyle.title}>{bannerData.title}</h1>
-            <p className={selectedStyle.subTitle}>{bannerData.subTitle}</p>
+            <TitleCover title={bannerData.title} subtitle={bannerData.subTitle} titleColor="text-white" 
+            subtitleColor="text-white" titleSize="lg:text-6xl font-raleway md:text-5xl mt-32" 
+            subtitleSize="mt-3 max-w-md mx-auto text-3xl md:max-w-3xl"></TitleCover>
 
             <div className={selectedStyle.buttonWrapper}>
               <div className={selectedStyle.button}>

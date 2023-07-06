@@ -31,7 +31,6 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, children }) => {
   return (
     <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange }}>
       <div className={currentTheme.section.backgroundColor}>
-        <h1>Theme Provider Component</h1>
         {children}
       </div>
     </ThemeContext.Provider>
