@@ -27,12 +27,14 @@ const Button: React.FC<ButtonProps> = ({ label, color = 'blue', action, height, 
     width,
   };
 
-  const buttonClasses = `py-2 px-4 rounded-md ${getButtonColorClass(color)}`;
+  const buttonClasses = `py-2  lg:w-[32rem] md:w-[46.5rem] w-[22rem] rounded-md ${getButtonColorClass(color)}`;
 
   return (
-    <button className={buttonClasses} style={buttonStyle} onClick={action}>
+    <div className=' flex justify-center items-center'>
+    <button className={buttonClasses}  onClick={action}>
       {label}
     </button>
+    </div>
   );
 };
 
