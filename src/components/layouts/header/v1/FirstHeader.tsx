@@ -54,43 +54,6 @@ export default function FirstHeader(props: { data: any }) {
         title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
         subTitle: "text-white text-lg mb-6",
     };
-    const stack_left = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-    const stack_center = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-    const stack_right = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-    const fixed = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-    const transparent = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-    const split = {
-        section: "text-gray-600 body-font  relative overflow-hidden",
-        backgroundColor: "bg-gray-900",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-white text-lg mb-6",
-    };
-
 
     const [headerTheme, setHeaderTheme] = useState<string>("")
 

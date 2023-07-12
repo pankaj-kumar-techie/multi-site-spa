@@ -10,7 +10,7 @@ interface FirstAboutUsProps {
 const styles: { [key: string]: SectionStyle } = {
     CLASSIC: {
         section: "text-gray-600 body-font",
-        backgroundColor: "bg-purssian-blue",
+        backgroundColor: "",
         title:
             "text-3xl font-extrabold text-center mt-10 text-white sm:text-4xl mb-6",
         subTitle: "text-white text-lg mb-6",

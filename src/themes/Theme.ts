@@ -1,49 +1,114 @@
 export interface Theme {
     name: string;
     colors: {
-      primary: string;
-      secondary: string;
-      // Add more color properties as needed
+        primary: string;
+        secondary: string;
     };
     typography: {
-      fontFamily: string;
-      fontSize: string;
-      // Add more typography properties as needed
+        fontFamily: string;
+        fontSize: string;
     };
-    section: {
-      backgroundColor: string;
-      // Add more section properties as needed
+    background: {
+        backgroundColor?: string;
+        backgroundImage?: string;
+        backgroundAttachment?: string;
+        backgroundPosition?: string;
+        backgroundRepeat?: string;
+        backgroundClip?: string;
+        backgroundSize?: string;
     };
-  }
-  
-export const classicTheme: Theme = {
-    name: 'Classic',
-    colors: {
-      primary: 'bg-white',
-      secondary: 'text-black',
+}
+
+export const themes: { [key: string]: Theme } = {
+    default: {
+        name: 'Default',
+        colors: {
+            primary: 'bg-gray-200',
+            secondary: 'text-black',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {},
     },
-    typography: {
-      fontFamily: 'font-arial',
-      fontSize: 'text-base',
+    classic: {
+        name: 'Classic',
+        colors: {
+            primary: 'bg-purssian-blue',
+            secondary: 'text-white',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {
+            backgroundColor: 'bg-gray-200',
+        },
     },
-    section: {
-      backgroundColor: 'bg-white',
+    modern: {
+        name: 'Modern',
+        colors: {
+            primary: 'bg-custom-brown',
+            secondary: 'text-black',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {
+            backgroundImage: 'url("your-image-url")',
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+        },
     },
-  };
-  
-  export const modernTheme: Theme = {
-    name: 'Modern',
-    colors: {
-      primary: 'bg-black',
-      secondary: 'text-white',
+    transparent: {
+        name: 'Transparent',
+        colors: {
+            primary: 'bg-',
+            secondary: 'text-black',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {
+            backgroundImage: 'url("your-image-url")',
+            backgroundAttachment: 'fixed',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+        },
     },
-    typography: {
-      fontFamily: 'font-roboto',
-      fontSize: 'text-sm',
+    vibrant: {
+        name: 'Vibrant',
+        colors: {
+            primary: 'bg-red-500',
+            secondary: 'text-white',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {
+            backgroundColor: 'bg-yellow-200',
+        },
     },
-    section: {
-      backgroundColor: 'bg-gray-200',
+    minimalist: {
+        name: 'Minimalist',
+        colors: {
+            primary: 'bg-white',
+            secondary: 'text-black',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        background: {
+            backgroundColor: 'bg-gray-50',
+        },
     },
-  };
-  // Add more theme definitions as needed
-  
+};
+
