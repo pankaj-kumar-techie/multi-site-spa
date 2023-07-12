@@ -1,5 +1,5 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
+import {Helmet} from 'react-helmet';
 
 interface HelmetManagerProps {
     title: string;
@@ -11,20 +11,20 @@ interface HelmetManagerProps {
 }
 
 export const HelmetManager: React.FC<HelmetManagerProps> = ({
-    title,
-    description,
-    keywords,
-    author,
-    imageUrl,
-    siteUrl,
+                                                                title,
+                                                                description,
+                                                                keywords,
+                                                                author,
+                                                                imageUrl,
+                                                                siteUrl,
 
-}) => {
+                                                            }) => {
     return (
         <Helmet>
-            <link rel="icon" href="/path-to-favicon.ico" />
+            <link rel="icon" href="/path-to-favicon.ico"/>
             <title>{title}</title>
-            <meta name="description" content={description} />
-            <meta name="keywords" content={keywords} />
+            <meta name="description" content={description}/>
+            <meta name="keywords" content={keywords}/>
             {/* Add more metadata tags as needed */}
 
             {/* SEO Schema */}

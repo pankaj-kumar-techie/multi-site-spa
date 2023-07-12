@@ -3,7 +3,7 @@ import {Section} from "./modal/Section";
 import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
 import {Renderer} from "./views/Renderer";
-import {dev, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+import {basic, dev, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import {modernTheme} from './themes/Theme';
 import {HelmetManager} from "./utiils/HelmetManager";
@@ -65,7 +65,7 @@ export default function App() {
                         setSectionData(dev);
                         break;
                     default:
-                        setSectionData(pahariyatri);
+                        setSectionData(gayatrilodge);
                         break;
                 }
 
