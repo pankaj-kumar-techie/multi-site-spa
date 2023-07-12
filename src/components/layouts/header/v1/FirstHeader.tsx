@@ -13,6 +13,7 @@ export default function FirstHeader(props: { data: any }) {
 
     useEffect(()=> {
         const changeColor=()=>{
+            
             if(window.scrollY >= 90){
                 setColor('white');
                 setTextColor('black');

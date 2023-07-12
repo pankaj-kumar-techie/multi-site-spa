@@ -4,29 +4,30 @@ import { Blog } from "../../modal/Section";
 
 export default function BlogCard(blog:Blog){
     return(
-        <article key={blog.id} className="flex max-w-xl flex-col items-start justify-between">
-        <div className="flex items-center gap-x-4 text-xs">
-          <time dateTime={"2020-03-16"} className="text-gray-500">
+        <article key={blog.id} className="flex max-w-xl  flex-col items-start justify-between">
+        <div className="flex items-center gap-x-4 rounded-2xl bg-slate-200 mb-2 pl-2 p-1 pr-2  text-xs">
+          <time dateTime={"2020-03-16"} className="text-gray-500 pl-1">
             Mar 16, 2020
           </time>
         </div>
         <div className="group relative">
-          <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+         
+          <img
+            src={blog.imageSrc}
+            alt={blog.imageAlt}
+            className="w-full h-[12rem] rounded-xl"
+          />
+           <h3 className="mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
             <a href={`blog/` + blog.id}>
               <span className="absolute inset-0" />
               {blog.title}
             </a>
           </h3>
-          <img
-            src={blog.imageSrc}
-            alt={blog.imageAlt}
-            className=""
-          />
-          <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+          <p className="mt-2 pl-1 line-clamp-3 text-sm leading-6 text-gray-600">
             {blog.description}
           </p>
         </div>
-        <div className="relative mt-8 flex items-center gap-x-4">
+        <div className="relative mt-6 flex items-center gap-x-4">
           <img
             src={blog.imageSrc}
             alt={blog.imageAlt}
