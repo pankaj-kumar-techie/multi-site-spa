@@ -92,7 +92,7 @@ export default function App() {
         <>
             {!loading && sectionData.length > 0 ? (
                 <>
-                <ThemeProvider theme="classic">
+                <ThemeProvider theme="modern">
                     {sectionData.map((sectionData: Section) =>
                         Renderer.componentRenderV1('Home', sectionData)
                     )}
