@@ -47,8 +47,8 @@ export default function FirstHeroBanner(props: { data: any }) {
   
 
   return (
-        <section className={selectedStyle.section} 
-        style={{ backgroundImage: `url(${props?.data?.images?.[0]?.imageSrc|| "https://images.unsplash.com/photo-1688413708929-8b2d281803df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"})` }}
+        <section className={`${selectedStyle.section} w-full h-full  bg-center bg-cover`} 
+        style={{ backgroundImage: `url(${props?.data?.images?.[0]?.imageSrc|| "https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80"})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
