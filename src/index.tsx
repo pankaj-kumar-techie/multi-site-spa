@@ -7,6 +7,7 @@ import BlogDetails from "./views/blog/BlogDetails";
 import App from "./App";
 import PageNotFound from "./views/page-not-found/PageNotFound";
 import FirstBlog from "./views/blog/v1/FirstBlog";
+import DetailsPage from "./views/details-page/DetailsPage";
 
 
 const root = ReactDOM.createRoot(
@@ -18,6 +19,7 @@ root.render(
             <Route index element={<App/>}/>
             <Route path=":slug" element={<App/>}/>
             <Route path="blog/:id" element={<BlogDetails/>}/>
+            <Route path="echo/:id" element={<DetailsPage/>}/>
             {/*<Route path="test" element={<LandingPageApp/>}/>*/}
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>

@@ -1,16 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {Section} from "./modal/Section";
-import {PageService} from "./service/PageService";
 import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
-import {ClientService} from "./service/ClientService";
 import {Renderer} from "./views/Renderer";
-import { basic, dev, gayatrilodge, pahariyatri, techie, website1, website2, website3 } from './@local-db/website';
+import {dev, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import { classicTheme, modernTheme } from './themes/Theme';
+import {modernTheme} from './themes/Theme';
+import {HelmetManager} from "./utiils/HelmetManager";
 
 
-//Todo : Pass dynamice data form Api response to rendererr insted of @loacl_db/website 
+//Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const selectedTheme = modernTheme;
@@ -18,7 +17,6 @@ export default function App() {
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
 
-    
 
     useEffect(() => {
         const loadPage = async () => {
@@ -46,31 +44,31 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "spa-app-loonds.vercel.app":
-                      setSectionData(website1);
-                      break;
+                        setSectionData(website1);
+                        break;
                     case "spa-app-git-main-loonds.vercel.app":
-                      setSectionData(website2);
-                      break;
+                        setSectionData(website2);
+                        break;
                     case "spa-app-alpha.vercel.app":
-                      setSectionData(website3);
-                      break;
+                        setSectionData(website3);
+                        break;
                     case "pahariyatri.com":
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
-                      setSectionData(techie);
-                      break;
+                        setSectionData(techie);
+                        break;
                     case "gayatrilodge.com":
-                      setSectionData(gayatrilodge);
-                      break;
+                        setSectionData(gayatrilodge);
+                        break;
                     case "dev.pahariyatri.com":
-                      setSectionData(dev);
-                      break;
+                        setSectionData(dev);
+                        break;
                     default:
-                      setSectionData(pahariyatri);
-                      break;
-                  }
-                  
+                        setSectionData(pahariyatri);
+                        break;
+                }
+
 
                 // setSectionData(res.data.section);
                 // console.log('Pass Section Data to Child Component', res.data.section);
@@ -87,16 +85,20 @@ export default function App() {
     if (error) {
         return <ErrorPage message={error}/>;
     }
+    if (loading || sectionData.length === 0) {
+        return <Loader />;
+    }
 
     return (
         <>
+           <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                <ThemeProvider theme="classic">
-                    {sectionData.map((sectionData: Section) =>
-                        Renderer.componentRenderV1('Home', sectionData)
-                    )}
-                </ThemeProvider>
+                    <ThemeProvider theme="modern">
+                        {sectionData.map((sectionData: Section) =>
+                            Renderer.componentRenderV1('Home', sectionData)
+                        )}
+                    </ThemeProvider>
                 </>
             ) : (
                 <Loader/>
