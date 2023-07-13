@@ -59,11 +59,11 @@ export default function App() {
                     case "gayatrilodge.com":
                         setSectionData(gayatrilodge);
                         break;
-                    case "dev.pahariyatri.com":
-                        setSectionData(dev);
+                    case "blog.pahariyatri.com":
+                        setSectionData(blog);
                         break;
                     default:
-                        setSectionData(gayatrilodge);
+                        setSectionData(basic);
                         break;
                 }
 
