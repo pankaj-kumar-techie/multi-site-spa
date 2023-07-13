@@ -2096,7 +2096,7 @@ export const techie: Section[] = [
 },
 ];
 
-export const dev: Section[] = [  
+export const blog: Section[] = [  
 {
   id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
   name: "Header",
