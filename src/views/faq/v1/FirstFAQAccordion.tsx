@@ -1,8 +1,10 @@
-import React, {useEffect, useState } from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import TitleCover from "../../../components/comman/title-cover/TitleCover";
 import { FAQ } from '../../../modal/Section';
+import {ThemeContext} from "../../../themes/ThemeProvider";
 
 const FirstFAQAccordion = (props: { data: any }) => {
+    const { theme } = useContext(ThemeContext);
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const [faqData, setFaqData] = useState<any>({
@@ -24,11 +26,11 @@ const FirstFAQAccordion = (props: { data: any }) => {
     };
 
     return (
-        <section className=' pt-10 pb-10 bg-purssian-blue  '>
+        <section className={`${theme.colors.primary} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
 
             <div>
-                <TitleCover title={"Frequently Asked Questions"} titleColor={"text-white"} titleSize={"lg:text-[3rem] text-[2rem]"} fontFamily={"font-bold"}></TitleCover>
+                <TitleCover title={"Frequently Asked Questions"} titleColor={theme.typography.secondFontColor} titleSize={"lg:text-[3rem] text-[2rem]"} fontFamily={"font-bold"}></TitleCover>
             </div>
             <div className="w-full  ">
                 {faqData.faqs.map((faq:FAQ) => (
