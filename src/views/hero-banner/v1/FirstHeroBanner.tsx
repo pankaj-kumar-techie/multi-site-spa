@@ -1,35 +1,6 @@
 import React, { useEffect, useState } from "react";
-import SectionStyle from "../../../modal/SectionStyle";
 import TitleCover from "../../../components/comman/title-cover/TitleCover";
 
-const styles: { [key: string]: SectionStyle } = {
-  CLASSIC: {
-    imageWrapper: "",
-    bodyWrapper: "",
-    aboutImage: "",
-    aboutImageWrapper: "",
-    section: "bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
-    title: "",
-    subTitle: "",
-    buttonWrapper: "mt-10 sm:flex justify-center",
-    button: "flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg",
-    buttonSecondary: "mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3",
-    buttonSecondaryLink: "w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
-  },
-  MODERN: {
-    imageWrapper: "",
-    bodyWrapper: "",
-    aboutImage: "",
-    aboutImageWrapper: "",
-    section: "bg-cover bg-no-repeat min-h-screen flex flex-col justify-center",
-    title: "",
-    subTitle: "",
-    buttonWrapper: "mt-10 sm:flex justify-center",
-    button: "flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg",
-    buttonSecondary: "mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3",
-    buttonSecondaryLink: "w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10",
-  },
-};
 export default function FirstHeroBanner(props: { data: any }) {
 
   const [bannerData, setBannerData] = useState<any>({
@@ -38,8 +9,7 @@ export default function FirstHeroBanner(props: { data: any }) {
     images: [],
   });
   const [bannerTheme, setBannerTheme] = useState<string>("CLASSIC");
-  const selectedStyle: SectionStyle = styles[bannerTheme] || styles.CLASSIC;
-   
+
   useEffect(() => {
     setBannerData(props.data);
     setBannerTheme(props.data.style || "CLASSIC");
@@ -47,7 +17,7 @@ export default function FirstHeroBanner(props: { data: any }) {
   
 
   return (
-        <section className={`${selectedStyle.section} w-full h-full  bg-center bg-cover`} 
+        <section className={"bg-cover bg-no-repeat min-h-screen flex flex-col justify-center"}
         style={{ backgroundImage: `url(${props?.data?.images?.[0]?.imageSrc|| "https://images.unsplash.com/photo-1688413708929-8b2d281803df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"})` }}
         >
       <div className="py-12 flex flex-col  justify-center items-center">
@@ -57,8 +27,8 @@ export default function FirstHeroBanner(props: { data: any }) {
             subtitleColor="text-white" titleSize="lg:text-6xl font-raleway md:text-5xl mt-32" 
             subtitleSize="mt-3 max-w-md mx-auto text-3xl md:max-w-3xl"></TitleCover>
 
-            <div className={selectedStyle.buttonWrapper}>
-              <div className={selectedStyle.button}>
+            <div className={"mt-10 sm:flex justify-center"}>
+              <div className={"flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg"}>
                 <a
                   href="/echo"
                   className="w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purssian-blue hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
@@ -66,8 +36,8 @@ export default function FirstHeroBanner(props: { data: any }) {
                   Get started
                 </a>
               </div>
-              <div className={selectedStyle.buttonSecondary}>
-                <a href="/echo" className={selectedStyle.buttonSecondaryLink}>
+              <div className={"mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3"}>
+                <a href="/echo" className={"w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10"}>
                   Learn more
                 </a>
               </div>

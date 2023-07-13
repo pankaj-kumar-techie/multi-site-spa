@@ -13,7 +13,7 @@ interface TitleCoverProps {
     subtitleColor?: string;
     paragraphColor?: string;
 }
-
+//Todo: Make different text align title, subtitle, paragraph
 const TitleCover: React.FC<TitleCoverProps> = ({
                                                    title,
                                                    subtitle = '',
