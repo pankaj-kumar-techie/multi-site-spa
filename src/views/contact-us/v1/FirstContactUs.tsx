@@ -1,31 +1,14 @@
-import {useEffect, useState} from 'react';
+import {useContext, useEffect, useState} from 'react';
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import {ThemeContext} from "../../../themes/ThemeProvider";
 
 function ContactUs(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
 
-
-    const styles1 = {
-        section: "bg-purssian-blue py-16",
-        backgroundColor: "",
-        title: " text-2xl text-white font-bold text-gray-800",
-        subTitle: "text-white",
-        imageWrapper: "hidden",
-        bodyWrapper: "sm:w-1/2 sm:pl-16",
-    };
-    const styles2 = {
-        section: "bg-white py-16",
-        backgroundColor: "bg-orange-200",
-        title: "text-3xl font-extrabold text-white sm:text-4xl mb-6",
-        subTitle: "text-gray-600 text-lg mb-6",
-        imageWrapper: "hidden",
-        bodyWrapper: "sm:w-1/2 sm:pl-16",
-        aboutImage: "https://stackoverflow.co/img/product/teams/teams-integrations-spot.svg",
-        aboutImageWrapper: "w-80 h-80  object-cover",
-    };
-    const [contactUsTheme, setContactUsTheme] = useState<string>("")
     const [contactUsData, setContactUsData] = useState<any>({
         title: "",
         description: "",
@@ -33,14 +16,9 @@ function ContactUs(props: { data: any }) {
       })
 
 
-    const styles = {
-        CLASSIC: styles1,
-        MODERN: styles2,
-    }[contactUsTheme] || styles1;
 
     useEffect(() => {
         setContactUsData(props.data);
-        setContactUsTheme(props.data.theme || "CLASSIC")
     }, [props.data])
 
 
@@ -52,25 +30,23 @@ function ContactUs(props: { data: any }) {
     }
 
     return (
-        <section className={styles.section}>
+        <section className={`${theme.background.backgroundColor} py-16` }>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <h2 className={styles.title}>{contactUsData.title}</h2>
-                        <p className={styles.subTitle}>
-                            {contactUsData.subTitle}
-                        </p>
+                        <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${theme.typography.firstFontColor}`}
+                                    subtitle={contactUsData.subTitle} subtitleColor={"text-black"} paragraphColor={theme.typography.firstFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
-                            <p className="text-white">{contactUsData.contactUs.address}</p>
+                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.address}</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
-                            <p className="text-white">{contactUsData.contactUs.email}</p>
+                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.email}</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
-                            <p className="text-white">{contactUsData.contactUs.phone}</p>
+                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.phone}</p>
                         </div>
 
                         <div className="aspect-w-10  aspect-h-9">
@@ -87,7 +63,7 @@ function ContactUs(props: { data: any }) {
                     ) : (
                         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
                             <label className="block text-sm">
-                                <span className="text-white font-bold">Name</span>
+                                <span className={`${theme.typography.firstFontColor} font-bold`}>Name</span>
                                 <input
                                     type="text"
                                     name="name"
@@ -99,7 +75,7 @@ function ContactUs(props: { data: any }) {
                                 />
                             </label>
                             <label className="block text-sm">
-                                <span className="text-white font-bold">Email</span>
+                                <span className={`${theme.typography.firstFontColor} font-bold`}>Email</span>
                                 <input
                                     type="email"
                                     name="email"
@@ -111,7 +87,7 @@ function ContactUs(props: { data: any }) {
                                 />
                             </label>
                             <label className="block text-sm">
-                                <span className="text-white font-bold">Message</span>
+                                <span className={`${theme.typography.firstFontColor} font-bold`}>Message</span>
                                 <textarea
                                     name="message"
                                     id="message"
@@ -123,7 +99,7 @@ function ContactUs(props: { data: any }) {
                             </label>
                             <button
                                 type="submit"
-                                className="mt-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-custom-blue hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                className={`mt-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium ${theme.typography.secondFontColor} ${theme.colors.primary} hover:${theme.colors.secondary} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500`}
                             >
                                 Send Message
                             </button>

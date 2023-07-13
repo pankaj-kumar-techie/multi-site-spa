@@ -5,14 +5,12 @@ import Loader from "./components/comman/loader/Loader";
 import {Renderer} from "./views/Renderer";
 import {basic, dev, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import {modernTheme} from './themes/Theme';
 import {HelmetManager} from "./utiils/HelmetManager";
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
-    const selectedTheme = modernTheme;
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
@@ -94,7 +92,7 @@ export default function App() {
            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme="modern">
+                    <ThemeProvider theme="classic">
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1('Home', sectionData)
                         )}
