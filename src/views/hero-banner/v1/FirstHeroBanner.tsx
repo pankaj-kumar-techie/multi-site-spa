@@ -8,11 +8,9 @@ export default function FirstHeroBanner(props: { data: any }) {
     description: "",
     images: [],
   });
-  const [bannerTheme, setBannerTheme] = useState<string>("CLASSIC");
 
   useEffect(() => {
     setBannerData(props.data);
-    setBannerTheme(props.data.style || "CLASSIC");
   }, [props.data]);
   
 

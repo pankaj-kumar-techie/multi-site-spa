@@ -7,6 +7,8 @@ export interface Theme {
     typography: {
         fontFamily: string;
         fontSize: string;
+        firstFontColor?: string;
+        secondFontColor?: string;
     };
     background: {
         backgroundColor?: string;
@@ -23,7 +25,7 @@ export const themes: { [key: string]: Theme } = {
     default: {
         name: 'Default',
         colors: {
-            primary: 'bg-gray-200',
+            primary: 'text-black-200',
             secondary: 'text-black',
         },
         typography: {
@@ -35,12 +37,14 @@ export const themes: { [key: string]: Theme } = {
     classic: {
         name: 'Classic',
         colors: {
-            primary: 'bg-purssian-blue',
-            secondary: 'text-white',
+            primary: 'bg-custom-blue',
+            secondary: 'bg-indigo-700',
         },
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
+            firstFontColor: 'text-black-200',
+            secondFontColor: 'text-white',
         },
         background: {
             backgroundColor: 'bg-gray-200',
