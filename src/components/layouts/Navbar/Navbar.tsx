@@ -1,4 +1,5 @@
 import React from "react";
+import FirstNavbar from "./v1/FirstNavbar";
 
 interface HeaderProps {
     data: any;
@@ -6,7 +7,7 @@ interface HeaderProps {
 }
 
 const navComponents = {
-    v1: ,
+    v1: FirstNavbar,
 };
 
 const Navbar: React.FC<HeaderProps> = ({data, version}) => {
