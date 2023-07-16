@@ -5,24 +5,28 @@ import { Blog } from "../../modal/Section";
 export default function BlogCard(blog:Blog){
     return(
         <article key={blog.id} className="flex max-w-xl  flex-col items-start justify-between">
-        <div className="flex items-center gap-x-4 rounded-2xl bg-slate-200 mb-2 pl-2 p-1 pr-2  text-xs">
-          <time dateTime={"2020-03-16"} className="text-gray-500 pl-1">
-            Mar 16, 2020
-          </time>
-        </div>
+        
         <div className="group relative">
          
           <img
             src={blog.imageSrc}
             alt={blog.imageAlt}
-            className="w-full h-[12rem] rounded-xl"
+            className="w-full h-[13rem] rounded-xl"
           />
+          <div className="inline-flex justify-between items-center">
+
            <h3 className="mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
             <a href={`blog/` + blog.id}>
               <span className="absolute inset-0" />
               {blog.title}
             </a>
           </h3>
+          <div className="flex items-center  gap-x-4 rounded-2xl bg-slate-200  pl-2 p-1 pr-2  text-xs">
+          <time dateTime={"2020-03-16"} className="text-gray-500 bg-white p-1 rounded-full   pl-2 pr-2">
+            Mar 16, 2020
+          </time>
+        </div>
+          </div>
           <p className="mt-2 pl-1 line-clamp-3 text-sm leading-6 text-gray-600">
             {blog.description}
           </p>
