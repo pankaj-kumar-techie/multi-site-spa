@@ -22,7 +22,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                         <img
                             src={aboutData?.images?.[0]?.imageSrc || ""}
                             alt="About Us"
-                            className=""
+                            className="rounded-xl"
                         />
                     </div>
                     <div className="sm:w-1/2 sm:pl-16">
