@@ -21,11 +21,11 @@ export default function BlogCard(blog:Blog){
               {blog.title}
             </a>
           </h3>
-          <div className="flex items-center  gap-x-4 rounded-2xl bg-slate-200  pl-2 p-1 pr-2  text-xs">
+          {/* <div className="flex items-center  gap-x-4 rounded-2xl bg-slate-200  pl-2 p-1 pr-2  text-xs">
           <time dateTime={"2020-03-16"} className="text-gray-500 bg-white p-1 rounded-full   pl-2 pr-2">
             Mar 16, 2020
           </time>
-        </div>
+        </div> */}
           </div>
           <p className="mt-2 pl-1 line-clamp-3 text-sm leading-6 text-gray-600">
             {blog.description}
