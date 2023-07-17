@@ -1,7 +1,5 @@
 # Loonds - Professional, Efficient, and User-Friendly Website Building Solution
 
-![Loonds Logo](loonds-logo.png)
-
 ## Table of Contents
 
 - [Introduction](#introduction)
