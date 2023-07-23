@@ -2080,7 +2080,7 @@ export const techie: Section[] = [
     data: {
       type: "Header",
       id: "001",
-      title: "Portfolio",
+      title: "Blog",
       subTitle: "Hero Banner Sub Title is",
       description: "Hero Banner Paragraph is here",
       version: "v1",
@@ -2114,7 +2114,7 @@ export const techie: Section[] = [
       images: [
         {
             id: '1',
-            imageSrc: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
             imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],

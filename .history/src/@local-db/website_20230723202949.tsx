@@ -2071,84 +2071,30 @@ export const gayatrilodge: Section[] = [
 ];
 
 export const techie: Section[] = [
-  {
-    id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-    name: "Header",
-    version: "v1", // Add version property
-    style: "CLASSIC", // Add style property
-    path: "index",
-    data: {
-      type: "Header",
-      id: "001",
-      title: "Portfolio",
-      subTitle: "Hero Banner Sub Title is",
-      description: "Hero Banner Paragraph is here",
-      version: "v1",
-      style: "CLASSIC",
-      services: null,
-      products: null,
-      portfolios: null,
-      images: null,
-      blogs : null,
-      testimonials: null,
-      faqs: null,
-      contactUs:null,
-    },
-  },
-  {
-    id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-    name: "Herobanner",
-    version: "v1", // Add version property
-    style: "CLASSIC", // Add style property
-    path: "index",
-    data: {
-      type: "HeroBanner",
-      id: "002",
-      title: "Pahari Yatri",
-      subTitle: "Pahari Yatri - A Guide to Traveling on a Budget",
-      description: "Hero Banner Paragraph is here",
-      version: "v2",
-      style: "CLASSIC",
-      services: null,
-      products: null,
-      images: [
-        {
-            id: '1',
-            imageSrc: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-            imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-        },
-      ],
-      blogs : null,
-      testimonials: null,
-      portfolios: null,
-      faqs: null,
-      contactUs:null,
-    },
-  },
-  {
-    id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-    name: "Footer",
+{
+  id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+  name: "Header",
+  version: "v1", // Add version property
+  style: "CLASSIC", // Add style property
+  path: "index",
+  data: {
+    type: "Header",
+    id: "001",
+    title: "Comming Soon",
+    subTitle: "Techie Blog App",
+    description: "Hero Banner Paragraph is here",
     version: "v1",
     style: "CLASSIC",
-    path: "index",
-    data: {
-      type: "Footer",
-      id: "k",
-      title: "Hero Banner!",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "Hero Banner Paragraph is here",
-      version: "v1",
-      style: "CLASSIC",
-      services: null,
-      products: null,
-      portfolios: null,
-      blogs : null,
-      images: null,
-      faqs: null,
-      contactUs:null,
-      testimonials: null,
-    },
+    services: null,
+    products: null,
+    portfolios: null,
+    images: null,
+    blogs : null,
+    testimonials: null,
+    faqs: null,
+    contactUs:null,
   },
+},
 ];
 
 export const blogpahariyatri: Section[] = [

@@ -42,7 +42,7 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "spa-app-loonds.vercel.app":
-                        setSectionData(techie);
+                        setSectionData(website1);
                         break;
                     case "spa-app-git-main-loonds.vercel.app":
                         setSectionData(website2);
