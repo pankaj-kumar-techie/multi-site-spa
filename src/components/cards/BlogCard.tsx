@@ -44,7 +44,7 @@ export default function BlogCard(blog:Blog){
               {/*    {post.author.name}*/}
               {/*</a>*/}
             </p>
-            <p className="text-gray-600">{"Co-Founder / CTO"}</p>
+            {/* <p className="text-gray-600">{"Co-Founder / CTO"}</p> */}
           </div>
         </div>
       </article>
