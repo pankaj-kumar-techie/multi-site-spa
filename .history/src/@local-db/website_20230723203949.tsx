@@ -2080,7 +2080,7 @@ export const techie: Section[] = [
     data: {
       type: "Header",
       id: "001",
-      title: "Portfolio",
+      title: "Blog",
       subTitle: "Hero Banner Sub Title is",
       description: "Hero Banner Paragraph is here",
       version: "v1",
