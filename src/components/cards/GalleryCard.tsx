@@ -17,11 +17,6 @@ export default function GalleryCard(image: {
                 alt={`Gallery ${image.imageAlt}`}
             />
             <div className="absolute inset-0 bg-gray-700 opacity-75"></div>
-            <div className="absolute inset-0 flex items-end justify-center mb-10">
-                <p className="text-white font-bold text-xl">
-                    Image {image.id}
-                </p>
-            </div>
         </div>
     )
 }

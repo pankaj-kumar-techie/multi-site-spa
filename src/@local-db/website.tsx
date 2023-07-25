@@ -1810,7 +1810,7 @@ export const gayatrilodge: Section[] = [
     type: "Product",
     id: "k",
     title: "Our Rooms!",
-    subTitle: "Hero Banner Sub Title is here",
+    subTitle: "Luxury Rooms at Gayatri Lodge, Kasauli",
     description: "Hero Banner Paragraph is here",
     version: "v1",
     style: "CLASSIC",
