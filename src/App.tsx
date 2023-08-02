@@ -63,7 +63,7 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(techie);
+                        setSectionData(website2);
                         break;
                 }
 
