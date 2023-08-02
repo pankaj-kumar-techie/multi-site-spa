@@ -11,6 +11,7 @@ import {HelmetManager} from "./utiils/HelmetManager";
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+    const [themeData, setThemeData] = useState<any>();
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
@@ -63,7 +64,8 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(techie);
+                        setSectionData(gayatrilodge);
+                        setThemeData("classic");
                         break;
                 }
 
@@ -92,7 +94,7 @@ export default function App() {
            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme="classic">
+                    <ThemeProvider theme={themeData}>
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1('Home', sectionData)
                         )}

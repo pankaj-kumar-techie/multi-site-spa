@@ -2116,7 +2116,7 @@ export const gayatrilodge: Section[] = [
 {
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
   name: "Footer",
-  version: "v1",
+  version: "v2",
   style: "CLASSIC",
   path: "index",
   data: {
@@ -2125,7 +2125,7 @@ export const gayatrilodge: Section[] = [
     title: "Hero Banner!",
     subTitle: "Hero Banner Sub Title is here",
     description: "Hero Banner Paragraph is here",
-    version: "v1",
+    version: "v2",
     style: "CLASSIC",
     services: null,
     products: null,
