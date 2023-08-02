@@ -3,15 +3,17 @@ import {Section} from "./modal/Section";
 import ErrorPage from "./components/comman/error/ErrorPage";
 import Loader from "./components/comman/loader/Loader";
 import {Renderer} from "./views/Renderer";
-import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+// import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import {HelmetManager} from "./utiils/HelmetManager";
+import { PageService } from './service/PageService';
+import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
-    const [themeData, setThemeData] = useState<any>();
+    const [theme, setTheme] = useState<any>();
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
@@ -26,52 +28,25 @@ export default function App() {
 
             console.log('Path:', path);
 
-            // if (!path) {
-            //     path = 'index';
-            // }
+            if (!path) {
+                path = 'index';
+            }
 
             try {
-                // if (!localStorage.getItem('client-id')) {
-                //     const clientResponse = await ClientService.getClientDetail(clientDomainName);
-                //     const clientId = clientResponse.data.id;
-                //     // Store client ID in local storage
-                //     localStorage.setItem('client-id', clientId);
-                // }
-
-                // const res = await PageService.getPage(path);
-                setLoading(false);
-
-                switch (clientDomainName) {
-                    case "spa-app-loonds.vercel.app":
-                        setSectionData(techie);
-                        break;
-                    case "spa-app-git-main-loonds.vercel.app":
-                        setSectionData(website2);
-                        break;
-                    case "spa-app-alpha.vercel.app":
-                        setSectionData(website3);
-                        break;
-                    case "pahariyatri.com":
-                        setSectionData(pahariyatri);
-                        break;
-                    case "techie.pahariyatri.com":
-                        setSectionData(techie);
-                        break;
-                    case "gayatrilodge.com":
-                        setSectionData(gayatrilodge);
-                        break;
-                    case "blog.pahariyatri.com":
-                        setSectionData(blogpahariyatri);
-                        break;
-                    default:
-                        setSectionData(gayatrilodge);
-                        setThemeData("classic");
-                        break;
+                if (!localStorage.getItem('client-id')) {
+                    const clientResponse = await ClientService.getClientDetail(clientDomainName);
+                    const clientId = clientResponse.data.id;
+                    // Store client ID in local storage
+                    localStorage.setItem('client-id', clientId);
                 }
 
+                const res = await PageService.getPage(path);
+                setLoading(false);
+                console.log('Page Section Data:', res.data.theme);
+                setSectionData(res.data.section);
+                setTheme(res.data.theme);
 
-                // setSectionData(res.data.section);
-                // console.log('Pass Section Data to Child Component', res.data.section);
+                console.log('Pass Section Data to Child Component', res.data.section);
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
@@ -94,9 +69,9 @@ export default function App() {
            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme={themeData}>
+                    <ThemeProvider theme={theme}>
                         {sectionData.map((sectionData: Section) =>
-                            Renderer.componentRenderV1('Home', sectionData)
+                            Renderer.componentRenderV1(theme, sectionData)
                         )}
                     </ThemeProvider>
                 </>

@@ -20,7 +20,7 @@ import Navbar from "../components/layouts/Navbar/Navbar";
 export class Renderer {
 
     static componentRenderV1(theme: string, section: any): JSX.Element {
-        console.log("Section Data With Version ", section['data'].theme, section.version)
+        console.log("Section Data With Version ", theme, section.version)
         //Todo: Add Theme Versioning
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
