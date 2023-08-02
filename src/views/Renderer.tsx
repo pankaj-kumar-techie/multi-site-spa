@@ -16,11 +16,13 @@ import Header from "../components/layouts/header/Header";
 import Footer from "../components/layouts/footer/Footer";
 import OurTeam from "./our-team/OurTeam";
 import Navbar from "../components/layouts/Navbar/Navbar";
+import { Theme } from "../modal/Theme";
 
 export class Renderer {
 
-    static componentRenderV1(theme: string, section: any): JSX.Element {
+    static componentRenderV1(theme: Theme, section: any): JSX.Element {
         console.log("Section Data With Version ", theme, section.version)
+        
         //Todo: Add Theme Versioning
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
@@ -34,13 +36,11 @@ export class Renderer {
             Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
             Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
-            Testimonial: <Testimonials key={section.id} data={section['data']}
-                                       version={section['version']}></Testimonials>,
+            Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
-            TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']}
-                                                    version={section['version']}></TermsAndConditions>,
+            TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
 
             ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,

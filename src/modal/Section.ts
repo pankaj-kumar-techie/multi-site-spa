@@ -12,14 +12,14 @@ export interface Section {
       description: string;
       version: string;
       style: string;
-      // services: Service[] | null;
-      // products: Product[] | null;
-      // portfolios: Portfolio[] | null;
-      // images: Image[] | null;
-      // testimonials: Testimonial[] | null;
-      // blogs: Blog[] | null;
-      // faqs: FAQ[] | null;
-      // contactUs: ContactUs | null;
+      services?: Service[] | null;
+      products?: Product[] | null;
+      portfolios?: Portfolio[] | null;
+      images?: Image[] | null;
+      testimonials?: Testimonial[] | null;
+      blogs?: Blog[] | null;
+      faqs?: FAQ[] | null;
+      contactUs?: ContactUs | null;
     };
     path: string;
   }

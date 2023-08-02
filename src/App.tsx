@@ -14,6 +14,7 @@ import { ClientService } from './service/ClientService';
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [theme, setTheme] = useState<any>();
+    // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');

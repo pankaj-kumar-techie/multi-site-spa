@@ -7,15 +7,15 @@ interface AboutUsProps {
     version: "v1" | "v2" ;
 }
 
-const bannerComponents = {
+const aboutComponents = {
     v1: FirstAboutUs,
     v2: SecondAboutUs,
 };
 
 const AboutUs: React.FC<AboutUsProps> = ({data, version}) => {
-    const BannerComponent = bannerComponents[version];
+    const AboutComponent = aboutComponents[version];
 
-    return <BannerComponent data={data}/>;
+    return <AboutComponent data={data}/>;
 };
 
 export default AboutUs;
