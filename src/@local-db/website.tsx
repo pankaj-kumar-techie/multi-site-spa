@@ -27,7 +27,7 @@ export const website1: Section[] = [
     },
 {
   id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-  name: "Herobanner",
+  name: "Headbanger",
   version: "v1", // Add version property
   style: "MODERN", // Add style property
   path: "index",
@@ -898,7 +898,6 @@ export const website2: Section[] = [
   },
 },
 ];
-
 export const website3: Section[] = [
   {
       id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
@@ -1263,7 +1262,6 @@ export const website3: Section[] = [
   },
 },
 ];
-
 export const basic: Section[] = [
   {
     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
@@ -2166,7 +2164,6 @@ export const gayatrilodge: Section[] = [
   },
 },
 ];
-
 export const techie: Section[] = [
   {
     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
@@ -2247,7 +2244,6 @@ export const techie: Section[] = [
     },
   },
 ];
-
 export const blogpahariyatri: Section[] = [
   {
     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",

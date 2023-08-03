@@ -31,7 +31,7 @@ export default function BlogCard(blog:Blog){
             {blog.description}
           </p>
         </div>
-        <div className="relative mt-6 flex items-center gap-x-4">
+        {/* <div className="relative mt-6 flex items-center gap-x-4">
           <img
             src={blog.imageSrc}
             alt={blog.imageAlt}
@@ -46,7 +46,7 @@ export default function BlogCard(blog:Blog){
             </p>
             {/* <p className="text-gray-600">{"Co-Founder / CTO"}</p> */}
           </div>
-        </div>
+        </div> */}
       </article>
       
     )
