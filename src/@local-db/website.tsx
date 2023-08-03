@@ -374,10 +374,10 @@ export const website1: Section[] = [
 },
 ];
 export const website2: Section[] = [
-  {
+    {
       id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
       name: "Header",
-      version: "v1", // Add version property
+      version: "v2", // Add version property
       style: "CLASSIC", // Add style property
       path: "index",
       data: {
