@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react';
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { FAQ } from '../../../modal/Section';
 import {ThemeContext} from "../../../themes/ThemeProvider";
 

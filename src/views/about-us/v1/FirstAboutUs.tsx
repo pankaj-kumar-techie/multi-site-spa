@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 
 interface FirstAboutUsProps {
@@ -12,6 +12,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
 
     useEffect(() => {
         setAboutData(data);
+        console.log("About Data", data);
     }, [data]);
 
     return (

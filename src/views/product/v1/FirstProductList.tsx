@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
 import ProductCard from "../../../components/cards/ProductCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Product } from "../../../modal/Section";
 import {ThemeContext} from "../../../themes/ThemeProvider";
 

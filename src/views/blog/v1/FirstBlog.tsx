@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BlogService } from "../../../service/BlogService";
 import BlogCard from "../../../components/cards/BlogCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Blog } from "../../../modal/Section";
 
 export default function FirstBlog(props: { data: any }) {

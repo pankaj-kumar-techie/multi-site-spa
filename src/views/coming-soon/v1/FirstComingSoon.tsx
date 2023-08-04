@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
-import Button from "../../../components/comman/button/Button";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
+import Button from "../../../components/common/button/Button";
 
 export default function FirstComingSoon(props: { data: any }) {
     // const [contactUsTheme, setComingSoonTheme] = useState<string>("")
@@ -32,7 +32,7 @@ export default function FirstComingSoon(props: { data: any }) {
                                className="rounded-md border border-transparent bg-white/20 px-4 py-2 text-white placeholder-white backdrop-blur-sm focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-2"
                                placeholder="Email Address"/>
 
-                        <Button label="Notify Me" color="green" action={() => console.log('Button clicked')} height="40px" width="200px" />
+                        <Button label="Notify Me" color="green" action={() => console.log('Button clicked')} height="40px" width="70px" />
 
                     </div>
                 </div>
