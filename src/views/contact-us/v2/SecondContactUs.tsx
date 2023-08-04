@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
-import Button from "../../../components/comman/button/Button";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import Button from "../../../components/common/button/Button";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 
 export default function SecondContactUs(props: { data: any }) {
     const [contactUsData, setContactUsData] = useState<any>([])

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import PortfolioCard from "../../../components/cards/PortfolioCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Portfolio } from "../../../modal/Section";
 
 

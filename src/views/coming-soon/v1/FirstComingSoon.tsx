@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
-import Button from "../../../components/comman/button/Button";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
+import Button from "../../../components/common/button/Button";
 
 export default function FirstComingSoon(props: { data: any }) {
     // const [contactUsTheme, setComingSoonTheme] = useState<string>("")

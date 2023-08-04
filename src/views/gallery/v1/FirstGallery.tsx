@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import GalleryCard from "../../../components/cards/GalleryCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
 
 

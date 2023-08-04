@@ -1,6 +1,6 @@
 import {useEffect, useState} from "react";
 import ServiceCard from "../../../components/cards/ServiceCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Service } from "../../../modal/Section";
 
 export default function FirstService(props: { data: any }) {

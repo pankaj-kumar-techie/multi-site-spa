@@ -1,5 +1,5 @@
 import {useContext, useEffect, useState} from 'react';
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import {ThemeContext} from "../../../themes/ThemeProvider";
 
 function ContactUs(props: { data: any }) {
