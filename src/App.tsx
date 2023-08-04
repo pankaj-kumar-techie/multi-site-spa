@@ -3,11 +3,11 @@ import {Section} from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
 import {Renderer} from "./views/Renderer";
-// import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+ import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import {HelmetManager} from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
-import { ClientService } from './service/ClientService';
+// import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
@@ -71,11 +71,11 @@ export default function App() {
                         break;
                 }
 
-                const res = await PageService.getPage(path);
-                setLoading(false);
-                console.log('Page Section Data:', res.data.theme);
-                setSectionData(res.data.section);
-                setTheme(res.data.theme);
+                // const res = await PageService.getPage(path);
+                // setLoading(false);
+                // console.log('Page Section Data:', res.data.theme);
+                // setSectionData(res.data.section);
+                // setTheme(res.data.theme);
 
                 console.log('Pass Section Data to Child Component', res.data.section);
             } catch (error) {
@@ -100,7 +100,7 @@ export default function App() {
            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme={theme}>
+                    <ThemeProvider theme={"classic"}>
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                         )}
