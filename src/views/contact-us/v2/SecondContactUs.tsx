@@ -1,13 +1,26 @@
 import {useEffect, useState} from "react";
+<<<<<<< HEAD
 import Button from "../../../components/common/button/Button";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
+=======
+import Button from "../../../components/comman/button/Button";
+import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import ContactUs from "../ContactUs";
+>>>>>>> 55b78772b0cee18ce6de8b6d91ec11c5bf74fa6b
 
 export default function SecondContactUs(props: { data: any }) {
-    const [contactUsData, setContactUsData] = useState<any>([])
+    const [contactUsData, setContactUsData] = useState<any>({
+        title: "",
+        description: "",
+        contactUs: ContactUs,
+      })
+
+
 
     useEffect(() => {
         setContactUsData(props.data);
     }, [props.data])
+
     return (
         <>
             <section className="mb-32 text-gray-800">
@@ -94,7 +107,7 @@ export default function SecondContactUs(props: { data: any }) {
                                     <div className="grow ml-6">
                                         <p className="font-bold mb-1">Technical support</p>
                                         <p className="text-gray-500">support@example.com</p>
-                                        <p className="text-gray-500">+1 234-567-89</p>
+                                        <p className="text-gray-500">{contactUsData.contactUs.phone}</p>
                                     </div>
                                 </div>
                             </div>

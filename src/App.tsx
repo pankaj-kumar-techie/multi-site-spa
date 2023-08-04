@@ -34,11 +34,41 @@ export default function App() {
             }
 
             try {
-                if (!localStorage.getItem('client-id')) {
-                    const clientResponse = await ClientService.getClientDetail(clientDomainName);
-                    const clientId = clientResponse.data.id;
-                    // Store client ID in local storage
-                    localStorage.setItem('client-id', clientId);
+                // if (!localStorage.getItem('client-id')) {
+                //     const clientResponse = await ClientService.getClientDetail(clientDomainName);
+                //     const clientId = clientResponse.data.id;
+                //     // Store client ID in local storage
+                //     localStorage.setItem('client-id', clientId);
+                // }
+
+                // const res = await PageService.getPage(path);
+                setLoading(false);
+
+                switch (clientDomainName) {
+                    case "spa-app-loonds.vercel.app":
+                        setSectionData(techie);
+                        break;
+                    case "spa-app-git-main-loonds.vercel.app":
+                        setSectionData(website2);
+                        break;
+                    case "spa-app-alpha.vercel.app":
+                        setSectionData(website3);
+                        break;
+                    case "pahariyatri.com":
+                        setSectionData(pahariyatri);
+                        break;
+                    case "techie.pahariyatri.com":
+                        setSectionData(techie);
+                        break;
+                    case "gayatrilodge.com":
+                        setSectionData(gayatrilodge);
+                        break;
+                    case "blog.pahariyatri.com":
+                        setSectionData(blogpahariyatri);
+                        break;
+                    default:
+                        setSectionData(website2);
+                        break;
                 }
 
                 const res = await PageService.getPage(path);
