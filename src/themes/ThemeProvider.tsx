@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
-import {Theme, themes} from "./Theme";
+import { themes} from "./ThemeData";
+import { Theme } from '../modal/Theme';
 
 interface ThemeContextProps {
   theme: Theme;

@@ -1,7 +1,12 @@
 import {useEffect, useState} from "react";
+<<<<<<< HEAD
+import Button from "../../../components/common/button/Button";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
+=======
 import Button from "../../../components/comman/button/Button";
 import TitleCover from "../../../components/comman/title-cover/TitleCover";
 import ContactUs from "../ContactUs";
+>>>>>>> 55b78772b0cee18ce6de8b6d91ec11c5bf74fa6b
 
 export default function SecondContactUs(props: { data: any }) {
     const [contactUsData, setContactUsData] = useState<any>({

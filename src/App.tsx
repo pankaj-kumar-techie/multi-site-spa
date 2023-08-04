@@ -1,16 +1,20 @@
 import React, {useEffect, useState} from 'react';
 import {Section} from "./modal/Section";
-import ErrorPage from "./components/comman/error/ErrorPage";
-import Loader from "./components/comman/loader/Loader";
+import ErrorPage from "./components/common/error/ErrorPage";
+import Loader from "./components/common/loader/Loader";
 import {Renderer} from "./views/Renderer";
-import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+// import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import {HelmetManager} from "./utiils/HelmetManager";
+import {HelmetManager} from "./utils/HelmetManager";
+import { PageService } from './service/PageService';
+import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+    const [theme, setTheme] = useState<any>();
+    // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
     const [error, setError] = useState<string>('');
@@ -25,9 +29,9 @@ export default function App() {
 
             console.log('Path:', path);
 
-            // if (!path) {
-            //     path = 'index';
-            // }
+            if (!path) {
+                path = 'index';
+            }
 
             try {
                 // if (!localStorage.getItem('client-id')) {
@@ -67,9 +71,13 @@ export default function App() {
                         break;
                 }
 
+                const res = await PageService.getPage(path);
+                setLoading(false);
+                console.log('Page Section Data:', res.data.theme);
+                setSectionData(res.data.section);
+                setTheme(res.data.theme);
 
-                // setSectionData(res.data.section);
-                // console.log('Pass Section Data to Child Component', res.data.section);
+                console.log('Pass Section Data to Child Component', res.data.section);
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
@@ -92,9 +100,9 @@ export default function App() {
            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme="classic">
+                    <ThemeProvider theme={theme}>
                         {sectionData.map((sectionData: Section) =>
-                            Renderer.componentRenderV1('Home', sectionData)
+                            Renderer.componentRenderV1(theme, sectionData)
                         )}
                     </ThemeProvider>
                 </>

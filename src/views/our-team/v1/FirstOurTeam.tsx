@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import OurTeamMemberCard from "../../../components/cards/OurTeamMemberCard";
 
 const callouts = [

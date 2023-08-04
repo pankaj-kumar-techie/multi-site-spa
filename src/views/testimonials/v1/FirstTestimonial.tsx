@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import TestimonialCard from "../../../components/cards/TestimonialCard";
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Testimonial } from "../../../modal/Section";
 
 export default function FirstTestimonial(props: { data: any }) {

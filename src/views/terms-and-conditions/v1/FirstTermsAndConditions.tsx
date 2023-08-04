@@ -1,5 +1,5 @@
 import React from 'react';
-import TitleCover from "../../../components/comman/title-cover/TitleCover";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 
 const FirstTermsAndConditions = (props: { data: any }) => {
     return (
