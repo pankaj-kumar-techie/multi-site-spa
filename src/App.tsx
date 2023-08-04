@@ -5,7 +5,7 @@ import Loader from "./components/comman/loader/Loader";
 import {Renderer} from "./views/Renderer";
 // import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import {HelmetManager} from "./utiils/HelmetManager";
+import {HelmetManager} from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
 import { ClientService } from './service/ClientService';
 
