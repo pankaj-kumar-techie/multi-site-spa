@@ -67,7 +67,7 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(website2);
+                        setSectionData(techie);
                         break;
                 }
 
@@ -77,7 +77,7 @@ export default function App() {
                 // setSectionData(res.data.section);
                 // setTheme(res.data.theme);
 
-                console.log('Pass Section Data to Child Component', res.data.section);
+                // console.log('Pass Section Data to Child Component', res.data.section);
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
