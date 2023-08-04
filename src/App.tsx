@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Section} from "./modal/Section";
-import ErrorPage from "./components/comman/error/ErrorPage";
-import Loader from "./components/comman/loader/Loader";
+import ErrorPage from "./components/common/error/ErrorPage";
+import Loader from "./components/common/loader/Loader";
 import {Renderer} from "./views/Renderer";
 // import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
