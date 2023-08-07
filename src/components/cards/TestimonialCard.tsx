@@ -9,7 +9,7 @@ export default function TestimonialCard(props: {
     imageAlt: any
 }) {
     return (
-        <div className="mb-12 px-12 lg:px-2 md:px-0 md:mb-0">
+        <div className="lg:mb-12 px-12 lg:px-2 md:px-0 mb-0 md:mb-0">
             <div className="mb-6 flex justify-center">
                 <img src={props.imageSrc} alt={props.imageAlt}
                      className="w-32 rounded-full shadow-lg dark:shadow-black/20  transform

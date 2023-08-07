@@ -30,7 +30,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
             <div className='container mx-auto px-3 lg:px-64'>
 
             <div>
-                <TitleCover title={"Frequently Asked Questions"} titleColor={theme.typography.secondFontColor} titleSize={"lg:text-[3rem] text-[2rem]"} fontFamily={"font-bold"}></TitleCover>
+                <TitleCover title={"Frequently Asked Questions"} titleColor={theme.typography.secondFontColor} titleSize={"lg:text-[3rem] text-[1.5rem]"} fontFamily={"font-bold"}></TitleCover>
             </div>
             <div className="w-full  ">
                 {faqData.faqs.map((faq:FAQ) => (

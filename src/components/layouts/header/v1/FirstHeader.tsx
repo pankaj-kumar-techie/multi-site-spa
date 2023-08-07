@@ -1,6 +1,8 @@
 import React, {useContext, useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import {ThemeContext} from "../../../../themes/ThemeProvider";
+import {BsFillTelephoneFill} from "react-icons/bs";
+import {GrMail} from "react-icons/gr";
 
 export default function FirstHeader(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -44,18 +46,13 @@ export default function FirstHeader(props: { data: any }) {
                             className='font-bold text-2xl lg:text-3xl '>{headerData.title ?? "Site Name"}</h1>
                     </Link>
                     <ul style={{color: `${textColor}`}} className='hidden sm:flex'>
-                        <li className='p-4'>
-                            < Link to='/'>Home</Link>
+                        <li className='pr-5   '>
+                            <Link  className="flex items-center " to='/'><BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-16 w-full" /> 6230496968</Link>
                         </li>
-                        <li className='p-4'>
-                            < Link to='/#gallery'>Gallery</Link>
+                        <li className='p-0'>
+                            <Link className="flex items-center" to='/#gallery'> <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16 " /> bhanusham122@gmail.com</Link>
                         </li>
-                        <li className='p-4'>
-                            < Link to='/work'>Work</Link>
-                        </li>
-                        <li className='p-4'>
-                            < Link to='/contact'>Contact</Link>
-                        </li>
+                      
                     </ul>
 
                     {/* Mobile Button*/}

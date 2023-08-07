@@ -28,9 +28,9 @@ const TitleCover: React.FC<TitleCoverProps> = ({
                                                    paragraphColor = 'text-gray-600',
                                                }) => {
     const containerClasses = 'text-center';
-    const titleClasses = `${titleSize} ${titleColor} pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
-    const subtitleClasses = `${subtitleSize} ${subtitleColor} pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
-    const paragraphClasses = `${paragraphSize} ${paragraphColor} ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const titleClasses = `${titleSize} ${titleColor} text-center pb-5 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const subtitleClasses = `${subtitleSize} ${subtitleColor} text-center pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
+    const paragraphClasses = `${paragraphSize} pb-5 md:pb-0 ${paragraphColor} ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
 
     function getTextAlignmentClass(textAlign: "left" | "center" | "right"): string {
         return `text-${textAlign}`;
