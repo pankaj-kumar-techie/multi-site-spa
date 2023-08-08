@@ -39,11 +39,24 @@ export default function FirstHeader(props: { data: any }) {
         style={{ backgroundColor: `${color}` }}
         className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
       >
-        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+        
           {isMobile ? (
             <>
-            <h1>mobile header</h1>
-             <Link to="/">
+            <div className="max-w-[767px] m-auto text-center  p-4 text-white">
+            
+              <div className="flex justify-between items-center">
+              <Link className="flex items-center text-xs mr-2 " to="/">
+                    <BsFillTelephoneFill className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
+                    6230496968
+                  </Link>
+                  <Link className="flex items-center" to="/#gallery">
+                    {" "}
+                    <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8 " />{" "}
+                    bhanusham122@gmail.com
+                  </Link>
+
+              </div>
+              <Link to="/">
                 <h1
                   style={{ color: `${textColor}` }}
                   className="font-bold text-2xl lg:text-3xl "
@@ -51,9 +64,11 @@ export default function FirstHeader(props: { data: any }) {
                   {headerData.title ?? "Site Name"}
                 </h1>
               </Link>
+              </div>
               </>
           ) : (
             <>
+            <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
               <Link to="/">
                 <h1
                   style={{ color: `${textColor}` }}
@@ -77,6 +92,7 @@ export default function FirstHeader(props: { data: any }) {
                   </Link>
                 </li>
               </ul>
+              </div>
             </>
           )}
 
@@ -146,7 +162,7 @@ export default function FirstHeader(props: { data: any }) {
             </ul>
           </div> */}
         </div>
-      </div>
+      
     </>
   );
 }
