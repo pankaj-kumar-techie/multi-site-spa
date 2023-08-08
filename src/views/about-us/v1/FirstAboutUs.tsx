@@ -16,7 +16,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
     }, [data]);
 
     return (
-        <section className={`${theme.colors.primary} font-bold`}>
+        <section className={`${theme.background.backgroundColor} font-bold`}>
             <div className={""}>
                 <div className="max-w-7xl mx-auto py-10 px-4 sm:py-20 sm:px-6  lg:px-8 flex flex-col-reverse sm:flex-row">
                     <div className="sm:w-1/2 flex justify-center transform transition duration-1000 hover:scale-110">

@@ -1700,7 +1700,7 @@ export const gayatrilodge: Section[] = [
   {
       id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
       name: "Header",
-      version: "v1", // Add version property
+      version: "v2", // Add version property
       style: "CLASSIC", // Add style property
       path: "index",
       data: {
@@ -1709,7 +1709,7 @@ export const gayatrilodge: Section[] = [
         title: "Gayatri Lodge",
         subTitle: "Hero Banner Sub Title is",
         description: "Hero Banner Paragraph is here",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         services: null,
         products: null,
