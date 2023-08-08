@@ -20,7 +20,7 @@ export default function FirstService(props: { data: any }) {
         <section className="md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]">
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
-                    <div className="w-full px-4">
+                    <div className="w-full pb-10 px-4">
                         <TitleCover title={serviceData.title} subtitle={""} paragraph={serviceData.description}></TitleCover>
                     </div>
                 </div>
