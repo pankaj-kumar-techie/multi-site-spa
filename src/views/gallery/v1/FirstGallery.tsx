@@ -15,7 +15,7 @@ function FirstGallery(props: { data: any }) {
     }, [props.data]);
 
     return (
-        <section className="py-16">
+        <section className="md:py-16 py-10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}
@@ -24,7 +24,7 @@ function FirstGallery(props: { data: any }) {
                     titleSize={"text-4xl"}
                     textAlign="center"
                 />
-                <div className="mt-20">
+                <div className="md:mt-20 mt-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {galleryData.images.map((image: Image) => (
                             <GalleryCard id={image.id} imageSrc={image.imageSrc}

@@ -67,7 +67,7 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(techie);
+                        setSectionData(gayatrilodge);
                         break;
                 }
 

@@ -17,7 +17,7 @@ export default function FirstService(props: { data: any }) {
     }, [props.data]);
 
     return (
-        <section className="pt-20  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <section className="md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]">
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full px-4">

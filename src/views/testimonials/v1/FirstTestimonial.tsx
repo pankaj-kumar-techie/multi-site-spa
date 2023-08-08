@@ -17,7 +17,7 @@ export default function FirstTestimonial(props: { data: any }) {
     return (
         <>
             <section className=" text-center">
-                <div className="container  pb-12 pt-16  mx-auto md:px-6">
+                <div className="container  pb-12 md:pt-16  pt-5 mx-auto md:px-6">
                     <TitleCover title={"Testimonials"} subtitle={""} paragraph={""}></TitleCover>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
                         {testimonialData.testimonials.map((testimonial:Testimonial) => (
