@@ -15,18 +15,16 @@ const FirstTermsAndConditions = (props: { data: any }) => {
     }, [props.data]);
     return (
         <section className={`${theme.background.backgroundColor} container mx-auto px-4 mb-4`}>
-        <div className={''}>
             <TitleCover title={"Terms and Conditions"} fontFamily={"font-bold"}></TitleCover>
             <div className="prose">
-            {tacData.faqs.map((tac:TermAndCondition) => (
+            {/* {tacData.faqs.map((tac:TermAndCondition) => (
                 <div key={tac.id}>
                     <h3>{tac.title}</h3>
                     <p>{tac.description}</p>
                     <p>{tac.descriptionContext}</p>
                 </div>
-            ))}
+            ))} */}
             </div>
-        </div>
         </section>
     );
 };

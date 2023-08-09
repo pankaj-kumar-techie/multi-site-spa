@@ -1,12 +1,17 @@
-import React, {useEffect, useState} from 'react';
-import {Section} from "./modal/Section";
+import React, { useEffect, useState } from 'react';
+import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
-import {Renderer} from "./views/Renderer";
- import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+import { Renderer } from "./views/Renderer";
+import { basic, website1, website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import {HelmetManager} from "./utils/HelmetManager";
+import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
+import { pahariyatri } from './@local-db/pahariyatri';
+import { gayatrilodge } from './@local-db/gayatrilodge';
+import { blogpahariyatri } from './@local-db/blog';
+import { techie } from './@local-db/techie';
+import axios from 'axios';
 // import { ClientService } from './service/ClientService';
 
 
@@ -26,7 +31,7 @@ export default function App() {
             console.log('Client Domain Name:', clientDomainName);
 
             let path = window.location.pathname.substring(1); // Remove leading '/';
-
+            let dataUrl = '';
             console.log('Path:', path);
 
             if (!path) {
@@ -67,7 +72,8 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(gayatrilodge);
+                        dataUrl = 'https://raw.githubusercontent.com/loonds/spa-local-db/main/echo.json';
+                        // setSectionData(gayatrilodge);
                         break;
                 }
 
@@ -78,6 +84,10 @@ export default function App() {
                 // setTheme(res.data.theme);
 
                 // console.log('Pass Section Data to Child Component', res.data.section);
+
+                const response = await axios.get('https://raw.githubusercontent.com/loonds/spa-local-db/main/echo.json');
+                // const data = await response.json();
+                setSectionData(response.data);
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
@@ -89,7 +99,7 @@ export default function App() {
     }, [clientDomainName]);
 
     if (error) {
-        return <ErrorPage message={error}/>;
+        return <ErrorPage message={error} />;
     }
     if (loading || sectionData.length === 0) {
         return <Loader />;
@@ -97,7 +107,7 @@ export default function App() {
 
     return (
         <>
-           <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
+            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>
@@ -107,7 +117,7 @@ export default function App() {
                     </ThemeProvider>
                 </>
             ) : (
-                <Loader/>
+                <Loader />
             )}
         </>
     );
