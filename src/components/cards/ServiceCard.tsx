@@ -6,7 +6,7 @@ export default function ServiceCard(props: { icon: any, iconAlt: any, title: any
                     <img src={props.icon} alt={props.iconAlt}/>
                 </div>
                 <h4 className="text-dark mb-3 text-xl font-semibold">{props.title}</h4>
-                <p className="text-body-color">{props.body}</p>
+                <p className="text-body-color ">{props.body}</p>
             </div>
         </div>
     )
