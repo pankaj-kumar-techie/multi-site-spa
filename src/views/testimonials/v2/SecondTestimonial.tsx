@@ -1,6 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function SecondTestimonial(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [serviceData, setServiceData] = useState<any>([])
 
     useEffect(() => {
@@ -28,7 +30,7 @@ export default function SecondTestimonial(props: { data: any }) {
     ];
 
     return (
-        <section className="bg-gray-200 py-20">
+        <section className={`${theme.background.backgroundColor} py-20`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-bold text-gray-800">Testimonials</h2>

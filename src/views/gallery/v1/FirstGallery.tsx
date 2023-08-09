@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import GalleryCard from "../../../components/cards/GalleryCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 
 function FirstGallery(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [galleryData, setGalleryData] = useState<any>({
         title: "",
         description: "",
@@ -15,7 +17,7 @@ function FirstGallery(props: { data: any }) {
     }, [props.data]);
 
     return (
-        <section className="md:py-16 py-10">
+        <section className={`${theme.background.backgroundColor} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}

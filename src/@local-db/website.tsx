@@ -2139,6 +2139,28 @@ export const gayatrilodge: Section[] = [
       // Add more FAQs as needed
   ],
   },
+},{
+  id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+  name: "Terms And Conditions",
+  version: "v1",
+  style: "CLASSIC",
+  path: "index",
+  data: {
+    type: "TermsAndConditions",
+    id: "k",
+    title: "Hero Banner!",
+    subTitle: "Hero Banner Sub Title is here",
+    description: "Hero Banner Paragraph is here",
+    version: "v1",
+    style: "CLASSIC",
+    services: null,
+    products: null,
+    images: null,
+    blogs : null,
+    testimonials: null,
+    portfolios: null,
+    contactUs:null,
+  },
 },
 {
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",

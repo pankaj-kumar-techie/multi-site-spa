@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import OurTeamMemberCard from "../../../components/cards/OurTeamMemberCard";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 const callouts = [
     {
@@ -41,17 +42,18 @@ const callouts = [
 ]
 
 export default function FirstOurTeam(props: { data: any }) {
-    const [temData, setTeamData] = useState<any>([]);
+    const { theme } = useContext(ThemeContext);
+    const [teemData, setTeemData] = useState<any>([]);
     useEffect(() => {
-        setTeamData(props.data);
+        setTeemData(props.data);
     }, [props.data]);
 
     return (
-        <section>
+        <section className={`${theme.background.backgroundColor}`}>
             <div className="bg-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-                        <TitleCover title={temData.title}></TitleCover>
+                        <TitleCover title={teemData.title}></TitleCover>
 
                         <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
                             {callouts.map((callout) => (

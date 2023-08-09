@@ -16,7 +16,7 @@ const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
     }, [data]);
 
     return (
-        <section>
+        <section className={`${theme.background.backgroundColor} font-bold`}>
         <div className="bg-white overflow-hidden relative">
             <img src={aboutData?.images?.[0]?.imageSrc || ""} alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full"/>
             <div className="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">

@@ -1,4 +1,3 @@
-
 export interface Section {
     id: string;
     name: string;
@@ -19,11 +18,11 @@ export interface Section {
       testimonials?: Testimonial[] | null;
       blogs?: Blog[] | null;
       faqs?: FAQ[] | null;
+      termAndCondition?: TermAndCondition[] | null;
       contactUs?: ContactUs | null;
     };
     path: string;
   }
-
 
   export type Testimonial = {
     id: string,
@@ -46,6 +45,7 @@ export type Product = {
   id:number,
   name: string,
   href: string,
+  price?:string,
   description: string,
   imageSrc: string,
   imageAlt: string,
@@ -89,4 +89,9 @@ export type ContactUs = {
 
 }
 
-  
+export type TermAndCondition = {
+  id: string,
+  title: string,
+  description: string,
+  descriptionContext?: string,
+}

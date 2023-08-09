@@ -1,16 +1,17 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function SecondTimeline(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [timelineData, setTimelineData] = useState<any>([])
 
     useEffect(() => {
         setTimelineData(props.data);
     }, [props.data])
     return (
-        <section>
-
+        <section className={`${theme.background.backgroundColor} py-20`}>
             <div
-                className="min-h-screen bg-blue-500 bg-fixed bg-blend-screen py-6 flex flex-col justify-center sm:py-12">
+                className="min-h-screen bg-fixed bg-blend-screen py-6 flex flex-col justify-center ">
                 <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0 backdrop-blur-md-">
                     <div className="relative text-gray-700 antialiased text-sm font-semibold">
                         <div
@@ -95,8 +96,6 @@ export default function SecondTimeline(props: { data: any }) {
                                 </div>
                             </div>
                         </div>
-
-
                         <div className="mt-6 sm:mt-0 sm:mb-12">
                             <div className="flex flex-col sm:flex-row items-center">
                                 <div className="flex justify-start w-full mx-auto items-center">

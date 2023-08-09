@@ -1,9 +1,11 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import TestimonialCard from "../../../components/cards/TestimonialCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Testimonial } from "../../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function FirstTestimonial(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [testimonialData, setTestimonialData] = useState<any>({
         title: "",
         description: "",
@@ -16,7 +18,7 @@ export default function FirstTestimonial(props: { data: any }) {
 
     return (
         <>
-            <section className=" text-center">
+            <section className={`${theme.background.backgroundColor} text-center`}>
                 <div className="container  pb-12 md:pt-16  pt-5 mx-auto md:px-6">
                     <TitleCover title={"Testimonials"} subtitle={""} paragraph={""}></TitleCover>
                     <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">

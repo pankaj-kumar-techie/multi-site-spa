@@ -1,10 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import PortfolioCard from "../../../components/cards/PortfolioCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Portfolio } from "../../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 
 export default function FirstPortfolio(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [portfolioData, setPortfolioData] = useState<any>({
         title: "",
         description: "",
@@ -15,8 +17,8 @@ useEffect(() => {
     }, [props.data]);
 
         return (
-            <section>
-                <div className="bg-gray-100">
+            <section className={`${theme.background.backgroundColor}`}>
+                <div className="">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
                             <TitleCover title={portfolioData.title}></TitleCover>

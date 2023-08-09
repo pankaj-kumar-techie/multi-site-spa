@@ -1,9 +1,11 @@
-import {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import Button from "../../../components/common/button/Button";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import ContactUs from "../ContactUs";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function SecondContactUs(props: { data: any }) {
+    const { theme } = useContext(ThemeContext);
     const [contactUsData, setContactUsData] = useState<any>({
         title: "",
         description: "",
@@ -18,7 +20,7 @@ export default function SecondContactUs(props: { data: any }) {
 
     return (
         <>
-            <section className="mb-32 text-gray-800">
+            <section className={`${theme.background.backgroundColor} "mb-32 text-gray-800` }>
                 <div className="flex justify-center">
                     <TitleCover title={contactUsData?.title}></TitleCover>
                 </div>

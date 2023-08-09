@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function SecondService(){
+    const { theme } = useContext(ThemeContext);
     return(
-        <>
+        <section className={`${theme.background.backgroundColor}`}>
             <div id="services" className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
                 <div className="container xl:max-w-6xl mx-auto px-4">
                     <div className="flex flex-wrap flex-row -mx-4 text-center">
@@ -140,6 +142,6 @@ export default function SecondService(){
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }

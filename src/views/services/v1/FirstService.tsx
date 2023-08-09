@@ -1,10 +1,11 @@
-import {useEffect, useState} from "react";
+import {useContext, useEffect, useState} from "react";
 import ServiceCard from "../../../components/cards/ServiceCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Service } from "../../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function FirstService(props: { data: any }) {
-
+    const { theme } = useContext(ThemeContext);
     const [serviceData, setServiceData] = useState<any>({
         title: "",
         description: "",
@@ -17,7 +18,7 @@ export default function FirstService(props: { data: any }) {
     }, [props.data]);
 
     return (
-        <section className="md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <section className={`${theme.background.backgroundColor} md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]`} >
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full px-4">
