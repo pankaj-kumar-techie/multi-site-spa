@@ -294,16 +294,17 @@ export const pahariyatri: Section[] = [
             images: null,
             testimonials: null,
         },
-    }, {
+    },
+     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
         version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Service",
+            type: "OurTeam",
             id: "k",
-            title: "Our Services",
+            title: "Our Team",
             subTitle: "Hero Banner Sub Title is here",
             description: "We are provided following services to our customers",
             version: "v1",
