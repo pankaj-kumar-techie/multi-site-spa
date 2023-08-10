@@ -50,24 +50,31 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "spa-app-loonds.vercel.app":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(techie);
                         break;
                     case "spa-app-git-main-loonds.vercel.app":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(website2);
                         break;
                     case "spa-app-alpha.vercel.app":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(website3);
                         break;
                     case "pahariyatri.com":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(techie);
                         break;
                     case "gayatrilodge.com":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(gayatrilodge);
                         break;
                     case "blog.pahariyatri.com":
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(blogpahariyatri);
                         break;
                     default:
