@@ -1,14 +1,5 @@
 import { Section } from "../modal/Section";
 
-interface Seo {
-    title: string;
-    description: string;
-    keywords: string;
-    author?: string;
-    imageUrl?: string;
-    siteUrl?: string;
-}
-
 export const gayatrilodge: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
@@ -531,7 +522,7 @@ export const gayatrilodge: Section[] = [
     },
 ];
 
-export const gayatrilodgeSeo: Seo = {
+export const gayatrilodgeSeo: any = {
     title: "Gayatri Lodge - Your Tranquil Haven in Kasauli | Homestay",
     description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",
     keywords: "Gayatri Lodge, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",

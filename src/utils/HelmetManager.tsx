@@ -1,23 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { SeoData } from '../modal/SeoData';
 
-interface HelmetManagerProps {
-  title: string;
-  description: string;
-  keywords: string;
-  author?: string;
-  imageUrl?: string;
-  siteUrl?: string;
-}
-
-export const HelmetManager: React.FC<HelmetManagerProps> = ({
+export const HelmetManager: React.FC<SeoData> = ({
   title,
   description,
   keywords,
+  tags,
   author,
   imageUrl,
   siteUrl,
-
 }) => {
   return (
     <Helmet>
@@ -25,6 +17,7 @@ export const HelmetManager: React.FC<HelmetManagerProps> = ({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
+      <meta name="tags" content={tags} />
       {/* Add more metadata tags as needed */}
 
       {/* SEO Schema */}
@@ -42,15 +35,13 @@ export const HelmetManager: React.FC<HelmetManagerProps> = ({
                   "@type": "Person",
                   "name": "${author}"
                 },`
-            : ''
-          }
+            : ''}
             ${imageUrl
             ? `"image": {
                   "@type": "ImageObject",
                   "url": "${imageUrl}"
                 },`
-            : ''
-          }
+            : ''}
             "potentialAction": {
               "@type": "SearchAction",
               "target": "${siteUrl || 'https://yourwebsite.com'}/search?q={search_term_string}",

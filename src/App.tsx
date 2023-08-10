@@ -88,6 +88,8 @@ export default function App() {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
                 setLoading(false);
+            } finally {
+                setLoading(false); // Set loading to false after completion (whether success or error)
             }
         };
 
