@@ -3,21 +3,21 @@ import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
 import { Renderer } from "./views/Renderer";
-import { website1, website2, website3 } from './@local-db/website';
+import { website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
 import { pahariyatri } from './@local-db/pahariyatri';
-import { gayatrilodge } from './@local-db/gayatrilodge';
+import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
 import { blogpahariyatri } from './@local-db/blog';
 import { techie } from './@local-db/techie';
-import axios from 'axios';
 // import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+    const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
     // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
@@ -72,6 +72,7 @@ export default function App() {
                         break;
                     default:
                         setSectionData(gayatrilodge);
+                        setSeo(gayatrilodgeSeo);
                         break;
                 }
 
@@ -102,7 +103,7 @@ export default function App() {
 
     return (
         <>
-            <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
+            <HelmetManager title={seo.title} description={seo.description} keywords={seo.keywords}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>

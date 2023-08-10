@@ -13,7 +13,7 @@ export default function SecondTestimonial(props: { data: any }) {
     }, [props.data])
 
 
-    if (!testimonialData.termAndCondition) {
+    if (!testimonialData.testimonials) {
         return <SectionShimmer title={testimonialData.title}></SectionShimmer>;
     }
 

@@ -20,7 +20,7 @@ export default function FirstTestimonial(props: { data: any }) {
         setTestimonialData(props.data);
     }, [props.data])
 
-    if (!testimonialData.termAndCondition) {
+    if (!testimonialData.testimonials) {
         return <SectionShimmer title={testimonialData.title}></SectionShimmer>;
     }
 
