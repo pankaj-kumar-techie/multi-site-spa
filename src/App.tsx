@@ -7,10 +7,10 @@ import { website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
-import { pahariyatri } from './@local-db/pahariyatri';
-import { gayatrilodge } from './@local-db/gayatrilodge';
-import { blogpahariyatri } from './@local-db/blog';
-import { techie } from './@local-db/techie';
+import { pahariyatri, pahariyatriseo } from './@local-db/pahariyatri';
+import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
+import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
+import { techie, techiepahariyatriseo } from './@local-db/techie';
 // import { ClientService } from './service/ClientService';
 
 
@@ -50,36 +50,36 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "spa-app-loonds.vercel.app":
-                        setSeo(seo);
+                        setSeo(techiepahariyatriseo);
                         setSectionData(techie);
                         break;
                     case "spa-app-git-main-loonds.vercel.app":
-                        setSeo(seo);
+                        setSeo(techiepahariyatriseo);
                         setSectionData(website2);
                         break;
                     case "spa-app-alpha.vercel.app":
-                        setSeo(seo);
+                        setSeo(techiepahariyatriseo);
                         setSectionData(website3);
                         break;
                     case "pahariyatri.com":
-                        setSeo(seo);
+                        setSeo(pahariyatriseo);
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
-                        setSeo(seo);
+                        setSeo(techiepahariyatriseo);
                         setSectionData(techie);
                         break;
                     case "gayatrilodge.com":
-                        setSeo(seo);
+                        setSeo(gayatrilodgeSeo);
                         setSectionData(gayatrilodge);
                         break;
                     case "blog.pahariyatri.com":
-                        setSeo(seo);
+                        setSeo(blogpahariyatriseo);
                         setSectionData(blogpahariyatri);
                         break;
                     default:
                         setSectionData(gayatrilodge);
-                        setSeo(seo);
+                        setSeo(gayatrilodgeSeo);
                         break;
                 }
 
@@ -112,7 +112,7 @@ export default function App() {
 
     return (
         <>
-            <HelmetManager title={seo.title|| ""} description={seo.description|| ""} keywords={seo.keywords|| ""}></HelmetManager>
+            <HelmetManager title={seo.title ?? "Loonds"} description={seo.description ?? ""} keywords={seo.keywords ?? ""} tags={seo.tags ?? ""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>
