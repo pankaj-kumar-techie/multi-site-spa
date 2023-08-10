@@ -21,6 +21,7 @@ export const gayatrilodge: Section[] = [
             images: null,
             blogs: null,
             testimonials: null,
+            termAndCondition: null,
             faqs: null,
             contactUs: null,
         },
@@ -52,6 +53,7 @@ export const gayatrilodge: Section[] = [
             blogs: null,
             testimonials: null,
             faqs: null,
+            termAndCondition: null,
             contactUs: null,
         },
     },
@@ -82,6 +84,7 @@ export const gayatrilodge: Section[] = [
             blogs: null,
             testimonials: null,
             faqs: null,
+            termAndCondition: null,
             contactUs: null,
         },
     },
@@ -127,6 +130,7 @@ export const gayatrilodge: Section[] = [
             ],
             blogs: null,
             testimonials: null,
+            termAndCondition: null,
             contactUs: null,
         },
     },
@@ -186,6 +190,7 @@ export const gayatrilodge: Section[] = [
             faqs: null,
             testimonials: null,
             contactUs: null,
+            termAndCondition: null,
         },
     },
     {
@@ -251,6 +256,7 @@ export const gayatrilodge: Section[] = [
                 },
             ],
             products: null,
+            termAndCondition: null,
             images: null,
             testimonials: null,
         },
@@ -309,6 +315,7 @@ export const gayatrilodge: Section[] = [
                 },
             ],
             images: null,
+            termAndCondition: null,
             testimonials: null,
         },
     },
@@ -333,6 +340,7 @@ export const gayatrilodge: Section[] = [
             portfolios: null,
             faqs: null,
             contactUs: null,
+            termAndCondition: null,
             testimonials: [
                 {
                     id: "1",
@@ -385,6 +393,7 @@ export const gayatrilodge: Section[] = [
             faqs: null,
             blogs: null,
             portfolios: null,
+            termAndCondition: null,
             contactUs: {
                 address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
                 email: "gayatrilodgekasauli@gmail.com",
@@ -413,6 +422,7 @@ export const gayatrilodge: Section[] = [
             testimonials: null,
             portfolios: null,
             contactUs: null,
+            termAndCondition: null,
             faqs: [
                 {
                     id: 1,
@@ -452,7 +462,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "TermsAndConditions",
             id: "k",
-            title: "Hero Banner!",
+            title: "Terms and Conditions",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -464,7 +474,7 @@ export const gayatrilodge: Section[] = [
             testimonials: null,
             portfolios: null,
             contactUs: null,
-            termAndCondition: null
+            termAndCondition:  null
         },
     },
     {
@@ -489,6 +499,7 @@ export const gayatrilodge: Section[] = [
             faqs: null,
             contactUs: null,
             testimonials: null,
+            termAndCondition: null,
         },
     },
 ];
