@@ -22,7 +22,11 @@ export const pahariyatri: Section[] = [
             blogs: null,
             testimonials: null,
             faqs: null,
-            contactUs: null,
+            contactUs: {
+                address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
+                email: "pahariyatri@gmail.com",
+                phone: "+91-9569576707",
+            },
         },
     },
     {

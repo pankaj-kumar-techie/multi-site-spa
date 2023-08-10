@@ -34,135 +34,57 @@ export default function FirstHeader(props: { data: any }) {
   }, [props.data]);
 
   return (
-    <>
-      <div
-        style={{ backgroundColor: `${color}` }}
-        className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
-      >
-        
-          {isMobile ? (
-            <>
-            <div className="max-w-[767px] m-auto text-center  p-4 text-white">
-            
-              <div className="flex justify-between items-center">
-              <Link className="flex items-center text-xs mr-2 " to="/">
-                    <BsFillTelephoneFill className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
-                    6230496968
-                  </Link>
-                  <Link className="flex items-center" to="/#gallery">
-                    {" "}
-                    <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8 " />{" "}
-                    bhanusham122@gmail.com
-                  </Link>
-
-              </div>
-              <Link to="/">
-                <h1
-                  style={{ color: `${textColor}` }}
-                  className="font-bold text-2xl lg:text-3xl "
-                >
-                  {headerData.title ?? "Site Name"}
-                </h1>
-              </Link>
-              </div>
-              </>
-          ) : (
-            <>
-            <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-              <Link to="/">
-                <h1
-                  style={{ color: `${textColor}` }}
-                  className="font-bold text-2xl lg:text-3xl "
-                >
-                  {headerData.title ?? "Site Name"}
-                </h1>
-              </Link>
-              <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-                <li className="pr-5   ">
-                  <Link className="flex items-center " to="/">
-                    <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-16 w-full" />{" "}
-                    6230496968
-                  </Link>
-                </li>
-                <li className="p-0">
-                  <Link className="flex items-center" to="/#gallery">
-                    {" "}
-                    <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16 " />{" "}
-                    bhanusham122@gmail.com
-                  </Link>
-                </li>
-              </ul>
-              </div>
-            </>
-          )}
-
-          {/* Mobile Button*/}
-          {/* <div onClick={handleNav} className="block sm:hidden z-10">
-            {nav ? (
-              <svg
-                stroke="currentColor"
-                style={{ color: `${textColor}` }}
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 1024 1024"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M563.8 512l262.5-312.9c4.4-5.2.7-13.1-6.1-13.1h-79.8c-4.7 0-9.2 2.1-12.3 5.7L511.6 449.8 295.1 191.7c-3-3.6-7.5-5.7-12.3-5.7H203c-6.8 0-10.5 7.9-6.1 13.1L459.4 512 196.9 824.9A7.95 7.95 0 0 0 203 838h79.8c4.7 0 9.2-2.1 12.3-5.7l216.5-258.1 216.5 258.1c3 3.6 7.5 5.7 12.3 5.7h79.8c6.8 0 10.5-7.9 6.1-13.1L563.8 512z"></path>
-              </svg>
-            ) : (
-              <svg
-                style={{ color: `${textColor}` }}
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 1024 1024"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
-              </svg>
-            )}
-          </div> */}
-          {/* Mobile Menu */}
-          {/* <div
-            className={
-              nav
-                ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-            }
-          >
-            <ul>
-              <li
-                onClick={handleNav}
-                className="p-4 text-4xl hover:text-gray-500"
-              >
-                <Link to="/">Home</Link>
-              </li>
-              <li
-                onClick={handleNav}
-                className="p-4 text-4xl hover:text-gray-500"
-              >
-                <Link to="/#gallery">Gallery</Link>
-              </li>
-              <li
-                onClick={handleNav}
-                className="p-4 text-4xl hover:text-gray-500"
-              >
-                <Link to="/work">Work</Link>
-              </li>
-              <li
-                onClick={handleNav}
-                className="p-4 text-4xl hover:text-gray-500"
-              >
-                <Link to="/contact">Contact</Link>
-              </li>
-            </ul>
-          </div> */}
+    <div
+      style={{ backgroundColor: color }}
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+    >
+      {isMobile ? (
+        <div className="max-w-[767px] m-auto text-center p-4 text-white">
+          <div className="flex justify-between items-center">
+            <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
+              <BsFillTelephoneFill className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
+              {headerData.contactUs.phone ?? "1234567890"}
+            </Link>
+            <Link className="flex items-center" to="/#gallery">
+              <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
+              {headerData.contactUs.email ?? "XXXXXXXXXXXXXXXX"}
+            </Link>
+          </div>
+          <Link to="/">
+            <h1
+              style={{ color: textColor }}
+              className="font-bold text-2xl lg:text-3xl"
+            >
+              {headerData.title ?? "Site Name"}
+            </h1>
+          </Link>
         </div>
-      
-    </>
+      ) : (
+        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
+          <Link to="/">
+            <h1
+              style={{ color: textColor }}
+              className="font-bold text-2xl lg:text-3xl"
+            >
+              {headerData.title ?? "Site Name"}
+            </h1>
+          </Link>
+          <ul style={{ color: textColor }} className="hidden sm:flex">
+            <li className="pr-5">
+              <Link className="flex items-center" to={`tel:${headerData.contactUs.phone}`}>
+                <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-16 w-full" />{" "}
+                {headerData.contactUs.phone ?? "1234567890"}
+              </Link>
+            </li>
+            <li className="p-0">
+              <Link className="flex items-center" to="/#gallery">
+                <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16" />{" "}
+                {headerData.contactUs.email ?? "XXXXXXXXXXXXXXXX"}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
   );
 }
