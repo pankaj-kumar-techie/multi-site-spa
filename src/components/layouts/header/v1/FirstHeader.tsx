@@ -7,7 +7,9 @@ import { GrMail } from "react-icons/gr";
 export default function FirstHeader(props: { data: any }) {
   const isMobile = window.innerWidth <= 767;
   const { theme } = useContext(ThemeContext);
-  const [headerData, setHeaderData] = useState<any>([]);
+  const [headerData, setHeaderData] = useState<any>({
+    contactUs: { phone: "1234567890", email: "XXXXXXXXXXXXXXXX" }, // Default values
+  });
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
@@ -27,10 +29,15 @@ export default function FirstHeader(props: { data: any }) {
       }
     };
     window.addEventListener("scroll", changeColor);
+    return () => {
+      window.removeEventListener("scroll", changeColor);
+    };
   }, []);
 
   useEffect(() => {
-    setHeaderData(props.data);
+    if (props.data) {
+      setHeaderData(props.data);
+    }
   }, [props.data]);
 
   return (
@@ -43,11 +50,11 @@ export default function FirstHeader(props: { data: any }) {
           <div className="flex justify-between items-center">
             <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
               <BsFillTelephoneFill className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
-              {headerData.contactUs.phone ?? "1234567890"}
+              {headerData.contactUs.phone}
             </Link>
             <Link className="flex items-center" to="/#gallery">
               <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
-              {headerData.contactUs.email ?? "XXXXXXXXXXXXXXXX"}
+              {headerData.contactUs.email}
             </Link>
           </div>
           <Link to="/">
@@ -73,13 +80,13 @@ export default function FirstHeader(props: { data: any }) {
             <li className="pr-5">
               <Link className="flex items-center" to={`tel:${headerData.contactUs.phone}`}>
                 <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-16 w-full" />{" "}
-                {headerData.contactUs.phone ?? "1234567890"}
+                {headerData.contactUs.phone}
               </Link>
             </li>
             <li className="p-0">
               <Link className="flex items-center" to="/#gallery">
                 <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16" />{" "}
-                {headerData.contactUs.email ?? "XXXXXXXXXXXXXXXX"}
+                {headerData.contactUs.email}
               </Link>
             </li>
           </ul>

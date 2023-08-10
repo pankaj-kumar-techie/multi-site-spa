@@ -78,8 +78,8 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        setSectionData(gayatrilodge);
-                        setSeo(gayatrilodgeSeo);
+                        setSectionData(pahariyatri);
+                        setSeo(pahariyatriseo);
                         break;
                 }
 
