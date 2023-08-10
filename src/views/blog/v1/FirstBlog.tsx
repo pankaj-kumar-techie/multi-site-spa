@@ -28,7 +28,7 @@ export default function FirstBlog(props: { data: any }) {
     setBlogList(props.data);
   }, [props.data]);
 
-  if (!blogList.termAndCondition) {
+  if (!blogList.blogs) {
     return <SectionShimmer title={blogList.title}></SectionShimmer>;
   }
   return (

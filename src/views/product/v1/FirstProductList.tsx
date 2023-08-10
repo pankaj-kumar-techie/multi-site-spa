@@ -20,7 +20,7 @@ export default function FirstProductList(props: { data: any }) {
         setProductData(props.data);
     }, [props.data])
 
-    if (!productData.termAndCondition) {
+    if (!productData.products) {
         return <SectionShimmer title={productData.title}></SectionShimmer>;
     }
     return (

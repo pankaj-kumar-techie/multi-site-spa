@@ -16,7 +16,7 @@ export default function FirstPortfolio(props: { data: any }) {
     useEffect(() => {
         setPortfolioData(props.data);
     }, [props.data]);
-    if (!portfolioData.termAndCondition) {
+    if (!portfolioData.portfolios) {
         return <SectionShimmer title={portfolioData.title}></SectionShimmer>;
     }
 

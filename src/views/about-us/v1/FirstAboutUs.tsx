@@ -16,8 +16,8 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
         console.log("About Data", data);
     }, [data]);
 
-    if (!aboutData.termAndCondition) {
-        return <SectionShimmer title={aboutData.title}></SectionShimmer>;
+    if (!aboutData.title) {
+        return <SectionShimmer title={"About Us"}></SectionShimmer>;
     }
 
     return (

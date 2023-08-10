@@ -22,8 +22,8 @@ function ContactUs(props: { data: any }) {
         setContactUsData(props.data);
     }, [props.data])
 
-    if (!contactUsData.termAndCondition) {
-        return <SectionShimmer title={contactUsData.title}></SectionShimmer>;
+    if (!contactUsData.title) {
+        return <SectionShimmer title={"About Us"}></SectionShimmer>;
     }
 
 

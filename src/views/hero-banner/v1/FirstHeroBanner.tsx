@@ -16,8 +16,8 @@ export default function FirstHeroBanner(props: { data: any }) {
     setBannerData(props.data);
   }, [props.data]);
 
-  if (!bannerData.termAndCondition) {
-    return <SectionShimmer title={bannerData.title}></SectionShimmer>;
+  if (!bannerData.title) {
+    return <SectionShimmer title={"Hero Banner"}></SectionShimmer>;
   }
 
   return (

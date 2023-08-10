@@ -26,7 +26,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
         }
     };
 
-    if (!faqData.termAndCondition) {
+    if (!faqData.faqs) {
         return <SectionShimmer title={faqData.title}></SectionShimmer>;
     }
 

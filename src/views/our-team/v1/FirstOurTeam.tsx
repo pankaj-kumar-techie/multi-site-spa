@@ -13,7 +13,7 @@ export default function FirstOurTeam(props: { data: any }) {
         setTeemData(props.data);
     }, [props.data]);
 
-    if (!teemData.termAndCondition) {
+    if (!teemData.ourTeam) {
         return <SectionShimmer title={teemData.title}></SectionShimmer>;
     }
 

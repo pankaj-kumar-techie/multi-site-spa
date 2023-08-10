@@ -18,7 +18,7 @@ export default function FirstService(props: { data: any }) {
         setServiceData(props.data);
     }, [props.data]);
 
-    if (!serviceData.termAndCondition) {
+    if (!serviceData.services) {
         return <SectionShimmer title={serviceData.title}></SectionShimmer>;
     }
 

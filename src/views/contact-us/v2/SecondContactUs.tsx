@@ -20,7 +20,7 @@ export default function SecondContactUs(props: { data: any }) {
     }, [props.data])
 
     if (!contactUsData.termAndCondition) {
-        return <SectionShimmer title={contactUsData.title}></SectionShimmer>;
+        return <SectionShimmer title={"About Us"}></SectionShimmer>;
     }
 
     return (

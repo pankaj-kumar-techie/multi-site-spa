@@ -17,7 +17,7 @@ function FirstGallery(props: { data: any }) {
         setGalleryData(props.data);
     }, [props.data]);
 
-    if (!galleryData.termAndCondition) {
+    if (!galleryData.images) {
         return <SectionShimmer title={galleryData.title}></SectionShimmer>;
     }
 

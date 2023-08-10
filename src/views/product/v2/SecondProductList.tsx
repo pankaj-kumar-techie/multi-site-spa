@@ -1,34 +1,30 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import { Product } from "../../../modal/Section";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 
-
-
-export default function SecondProductList(props: { data :any}){
+export default function SecondProductList(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
     const [productData, setProductData] = useState<any>({
         title: "",
         description: "",
         products: [],
-      })
+    })
 
     useEffect(() => {
         setProductData(props.data);
-    },[props.data])
-    return(
+    }, [props.data])
+    if (!productData.products) {
+        return <SectionShimmer title={productData.title}></SectionShimmer>;
+    }
+    return (
         <section>
             <div className={`${theme.background.backgroundColor}`}>
-                <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Product</h2>
-                    <p className="mt-2 text-xl text-gray-600">
-                        Check out some of our favorite travel Product
-                    </p>
-                </div>
 
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                    <h2 className="sr-only">Products{productData?.title}</h2>
-
+                <TitleCover title={productData.title}></TitleCover>
                     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         {productData.products.map((product: Product) => (
                             <a key={product.id} href={product.href} className="group">
