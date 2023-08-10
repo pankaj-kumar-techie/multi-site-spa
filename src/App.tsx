@@ -105,7 +105,7 @@ export default function App() {
 
     return (
         <>
-            <HelmetManager title={seo.title} description={seo.description} keywords={seo.keywords}></HelmetManager>
+            <HelmetManager title={seo.title|| ""} description={seo.description|| ""} keywords={seo.keywords|| ""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>

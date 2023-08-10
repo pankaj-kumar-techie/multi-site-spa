@@ -472,3 +472,12 @@ export const pahariyatri: Section[] = [
         },
     },
 ];
+
+export const gayatrilodgeSeo: any = {
+    title: "Gayatri Lodge - Your Tranquil Haven in Kasauli | Homestay",
+    description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",
+    keywords: "Gayatri Lodge, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",
+    author: "Your Name",
+    imageUrl: "https://example.com/og-image.jpg",
+    siteUrl: "https://www.gayatrilodgekasauli.com",
+};
