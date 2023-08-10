@@ -4,6 +4,7 @@ import BlogCard from "../../../components/cards/BlogCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Blog } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 export default function FirstBlog(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
@@ -25,26 +26,29 @@ export default function FirstBlog(props: { data: any }) {
 
 
     setBlogList(props.data);
-  }, []);
+  }, [props.data]);
 
+  if (!blogList.termAndCondition) {
+    return <SectionShimmer title={blogList.title}></SectionShimmer>;
+  }
   return (
     <section className={theme.background.backgroundColor}>
       <div className="container mx-auto px-4 py-12">
         <TitleCover title="Latest Blog Posts" />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          {blogList.blogs.map((blog:Blog) => (
+          {blogList.blogs.map((blog: Blog) => (
             <BlogCard
-            key={blog.id}
-            id={blog.id}
-            title={blog.title}
-            description={blog.description}
-            descriptionContext={blog.descriptionContext}
-            imageSrc={blog.imageSrc} // Update to imageSrc
-            imageAlt={blog.imageAlt}
+              key={blog.id}
+              id={blog.id}
+              title={blog.title}
+              description={blog.description}
+              descriptionContext={blog.descriptionContext}
+              imageSrc={blog.imageSrc} // Update to imageSrc
+              imageAlt={blog.imageAlt}
             ></BlogCard>
-            ))}
+          ))}
         </div>
       </div>
-            </section>
+    </section>
   );
 }

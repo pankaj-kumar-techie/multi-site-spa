@@ -1,6 +1,7 @@
 import {useContext, useEffect, useState} from 'react';
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import {ThemeContext} from "../../../themes/ThemeProvider";
+import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 
 function ContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -20,6 +21,11 @@ function ContactUs(props: { data: any }) {
     useEffect(() => {
         setContactUsData(props.data);
     }, [props.data])
+
+    if (!contactUsData.termAndCondition) {
+        return <SectionShimmer title={contactUsData.title}></SectionShimmer>;
+    }
+
 
 
     function handleSubmit(event: { preventDefault: () => void; }) {

@@ -1,46 +1,29 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import { Testimonial } from "../../../modal/Section";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 
 export default function SecondTestimonial(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
-    const [serviceData, setServiceData] = useState<any>([])
+    const [testimonialData, setTestimonialData] = useState<any>([])
 
     useEffect(() => {
-        setServiceData(props.data);
+        setTestimonialData(props.data);
     }, [props.data])
-    const testimonials = [
-        {
-            id: 1,
-            name: "John Doe",
-            testimonial:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.",
-        },
-        {
-            id: 2,
-            name: "Jane Smith",
-            testimonial:
-                "Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla.",
-        },
-        {
-            id: 3,
-            name: "Bob Johnson",
-            testimonial:
-                "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
-        },
-    ];
+
+
+    if (!testimonialData.termAndCondition) {
+        return <SectionShimmer title={testimonialData.title}></SectionShimmer>;
+    }
 
     return (
         <section className={`${theme.background.backgroundColor} py-20`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Testimonials</h2>
-                    <p className="mt-2 text-xl text-gray-600">
-                        See what our customers are saying about us {serviceData.title}
-                    </p>
-                </div>
+                <TitleCover title={testimonialData.title} subtitle={testimonialData.subTitle}></TitleCover>
                 <div className="mt-20">
                     <div className="max-w-md mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-                        {testimonials.map((testimonial) => (
+                        {testimonialData.testimonials.map((testimonial: Testimonial) => (
                             <div key={testimonial.id} className="rounded-lg shadow-lg overflow-hidden">
                                 <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                                     <div className="flex items-center mb-4">

@@ -3,6 +3,7 @@ import GalleryCard from "../../../components/cards/GalleryCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 
 function FirstGallery(props: { data: any }) {
@@ -15,6 +16,10 @@ function FirstGallery(props: { data: any }) {
     useEffect(() => {
         setGalleryData(props.data);
     }, [props.data]);
+
+    if (!galleryData.termAndCondition) {
+        return <SectionShimmer title={galleryData.title}></SectionShimmer>;
+    }
 
     return (
         <section className={`${theme.background.backgroundColor} md:py-16 py-10`}>

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 interface FirstAboutUsProps {
     data: any;
@@ -14,6 +15,10 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
         setAboutData(data);
         console.log("About Data", data);
     }, [data]);
+
+    if (!aboutData.termAndCondition) {
+        return <SectionShimmer title={aboutData.title}></SectionShimmer>;
+    }
 
     return (
         <section className={`${theme.background.backgroundColor} font-bold`}>

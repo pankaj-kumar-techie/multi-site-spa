@@ -3,6 +3,7 @@ import Button from "../../../components/common/button/Button";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import ContactUs from "../ContactUs";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 export default function SecondContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -17,6 +18,10 @@ export default function SecondContactUs(props: { data: any }) {
     useEffect(() => {
         setContactUsData(props.data);
     }, [props.data])
+
+    if (!contactUsData.termAndCondition) {
+        return <SectionShimmer title={contactUsData.title}></SectionShimmer>;
+    }
 
     return (
         <>

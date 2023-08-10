@@ -6,6 +6,7 @@ import { ThemeContext } from "../../../themes/ThemeProvider";
 import { error } from "console";
 import ErrorPage from "../../../components/common/error/ErrorPage";
 import Loader from "../../../components/common/loader/Loader";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 export default function FirstTestimonial(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -19,7 +20,9 @@ export default function FirstTestimonial(props: { data: any }) {
         setTestimonialData(props.data);
     }, [props.data])
 
-
+    if (!testimonialData.termAndCondition) {
+        return <SectionShimmer title={testimonialData.title}></SectionShimmer>;
+    }
 
     return (
         <section className={`${theme.background.backgroundColor} text-center`}>
