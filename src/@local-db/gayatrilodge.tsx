@@ -132,7 +132,7 @@ export const gayatrilodge: Section[] = [
                     imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717679.jpg?k=0e58ba5f9e70ce15dcac0a290ef5d995d388e9227086a352e347547caaea7da5&o=&hp=1',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
-                 {
+                {
                     id: '6',
                     imageSrc: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/444363181.jpg?k=b7d5360a0b7cf06a971d9dfcb4e420936bc734c4b352ec3f4ede9149f91d3482&o=',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
@@ -492,7 +492,7 @@ export const gayatrilodge: Section[] = [
             testimonials: null,
             portfolios: null,
             contactUs: null,
-            termAndCondition:  null
+            termAndCondition: null
         },
     },
     {
