@@ -24,7 +24,7 @@ export default function FirstTestimonial(props: { data: any }) {
     return (
         <section className={`${theme.background.backgroundColor} text-center`}>
             <div className="container  pb-12 md:pt-16  pt-5 mx-auto md:px-6">
-                <TitleCover title={"Testimonials"} subtitle={""} paragraph={""}></TitleCover>
+                <TitleCover title={testimonialData.title} subtitle={""} paragraph={""}></TitleCover>
                 <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
                     {testimonialData.testimonials.map((testimonial: Testimonial) => (
                         <TestimonialCard id={testimonial.id} name={testimonial.name}

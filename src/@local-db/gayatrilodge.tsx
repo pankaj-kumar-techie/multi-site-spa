@@ -109,22 +109,40 @@ export const gayatrilodge: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
+                    imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717943.jpg?k=c04575b70bbec6f0aaa5ffeae79e5535d0186ce48a3aabf17a93b8a96d8debed&o=&hp=1',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '2',
-                    imageSrc: 'https://images.unsplash.com/photo-1684752097893-13785863f9a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80',
+                    imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '3',
-                    imageSrc: 'https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+                    imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/444363217.jpg?k=6969ac3214ea38d143abf0f926a92925442a0298f2a2c7de56bcd3d3e930afc8&o=&hp=1',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '4',
-                    imageSrc: 'https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
+                    imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/419192458.jpg?k=d81a58a439acb3db08b438c41ee60dd359f417c8804ec7408b31fcf95d37e13a&o=&hp=1',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '5',
+                    imageSrc: 'https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717679.jpg?k=0e58ba5f9e70ce15dcac0a290ef5d995d388e9227086a352e347547caaea7da5&o=&hp=1',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                 {
+                    id: '6',
+                    imageSrc: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/444363181.jpg?k=b7d5360a0b7cf06a971d9dfcb4e420936bc734c4b352ec3f4ede9149f91d3482&o=',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '7',
+                    imageSrc: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/444363201.jpg?k=0be692cb5df7d3cef26f2028fae0e45265dceac24587d56d6e771596355e8987&o=',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '6',
+                    imageSrc: 'https://q-xx.bstatic.com/xdata/images/hotel/max1024x768/419192458.jpg?k=5c67fe5346e6c7d870a33417a6752af05f962dc9fed9871c6fe3b10e388a9486&o=',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
@@ -328,7 +346,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "Testimonial",
             id: "k",
-            title: "Hero Banner!",
+            title: "Testimonials",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
