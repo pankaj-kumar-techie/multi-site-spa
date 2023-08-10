@@ -1,58 +1,68 @@
-
 export interface Section {
+  id: string;
+  name: string;
+  version: string; // Add version property
+  style: string; // Add style property
+  data: {
+    type: string;
     id: string;
-    name: string;
-    version: string; // Add version property
-    style: string; // Add style property
-    data: {
-      type: string;
-      id: string;
-      title: string;
-      subTitle: string;
-      description: string;
-      version: string;
-      style: string;
-      services?: Service[] | null;
-      products?: Product[] | null;
-      portfolios?: Portfolio[] | null;
-      images?: Image[] | null;
-      testimonials?: Testimonial[] | null;
-      blogs?: Blog[] | null;
-      faqs?: FAQ[] | null;
-      contactUs?: ContactUs | null;
-    };
-    path: string;
-  }
+    title: string;
+    subTitle: string;
+    description: string;
+    version: string;
+    style: string;
+    services?: Service[] | null;
+    products?: Product[] | null;
+    portfolios?: Portfolio[] | null;
+    images?: Image[] | null;
+    testimonials?: Testimonial[] | null;
+    blogs?: Blog[] | null;
+    faqs?: FAQ[] | null;
+    ourTeam?: OurTeam[] | null;
+    termAndCondition?: TermAndCondition[] | null;
+    contactUs?: ContactUs | null;
+  };
+  path: string;
+}
 
-
-  export type Testimonial = {
-    id: string,
-    name: string,
-    designation: string,
-    imageSrc: string,
-    imageAlt: string,
-    testimonial: string,
+export type Testimonial = {
+  id: string,
+  name: string,
+  designation: string,
+  imageSrc: string,
+  imageAlt: string,
+  testimonial: string,
 }
 
 export type Service = {
-  id:number,
+  id: number,
   title: string,
   body: string,
   imageSrc: string,
   imageAlt: string,
 }
 
+export type OurTeam = {
+  id: number,
+  name: string,
+  description: string,
+  imageSrc: string,
+  imageAlt: string,
+  href?: string,
+}
+
 export type Product = {
-  id:number,
+  id: number,
   name: string,
   href: string,
+  price?: string,
   description: string,
   imageSrc: string,
   imageAlt: string,
 }
 
 export type Portfolio = {
-  id:number,
+  id: number,
   name: string,
   href: string,
   description: string,
@@ -62,9 +72,9 @@ export type Portfolio = {
 
 
 export type Image = {
-  id:string,
-  imageSrc:string,
-  imageAlt:string,
+  id: string,
+  imageSrc: string,
+  imageAlt: string,
 }
 
 export type Blog = {
@@ -72,8 +82,8 @@ export type Blog = {
   title: string,
   description: string,
   descriptionContext: string,
-  imageSrc:string,
-  imageAlt:string,
+  imageSrc: string,
+  imageAlt: string,
 }
 
 export type FAQ = {
@@ -83,10 +93,15 @@ export type FAQ = {
 }
 
 export type ContactUs = {
-  address : string,
+  address: string,
   email: string,
   phone: string,
 
 }
 
-  
+export type TermAndCondition = {
+  id: string,
+  title: string,
+  description: string,
+  descriptionContext?: string,
+}

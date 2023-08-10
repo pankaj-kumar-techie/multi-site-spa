@@ -1,18 +1,23 @@
-import React, {useEffect, useState} from 'react';
-import {Section} from "./modal/Section";
+import React, { useEffect, useState } from 'react';
+import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
-import {Renderer} from "./views/Renderer";
- import {basic, blogpahariyatri, gayatrilodge, pahariyatri, techie, website1, website2, website3} from './@local-db/website';
+import { Renderer } from "./views/Renderer";
+import { website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
-import {HelmetManager} from "./utils/HelmetManager";
+import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
+import { pahariyatri } from './@local-db/pahariyatri';
+import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
+import { blogpahariyatri } from './@local-db/blog';
+import { techie } from './@local-db/techie';
 // import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+    const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
     // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
@@ -26,8 +31,7 @@ export default function App() {
             console.log('Client Domain Name:', clientDomainName);
 
             let path = window.location.pathname.substring(1); // Remove leading '/';
-
-            console.log('Path:', path);
+            console.log('Page Path:', path);
 
             if (!path) {
                 path = 'index';
@@ -68,6 +72,7 @@ export default function App() {
                         break;
                     default:
                         setSectionData(gayatrilodge);
+                        setSeo(gayatrilodgeSeo);
                         break;
                 }
 
@@ -78,10 +83,13 @@ export default function App() {
                 // setTheme(res.data.theme);
 
                 // console.log('Pass Section Data to Child Component', res.data.section);
+
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
                 setLoading(false);
+            } finally {
+                setLoading(false); // Set loading to false after completion (whether success or error)
             }
         };
 
@@ -89,7 +97,7 @@ export default function App() {
     }, [clientDomainName]);
 
     if (error) {
-        return <ErrorPage message={error}/>;
+        return <ErrorPage message={error} />;
     }
     if (loading || sectionData.length === 0) {
         return <Loader />;
@@ -97,7 +105,7 @@ export default function App() {
 
     return (
         <>
-           <HelmetManager title={clientDomainName} description={clientDomainName} keywords={""}></HelmetManager>
+            <HelmetManager title={seo.title} description={seo.description} keywords={seo.keywords}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>
@@ -107,7 +115,7 @@ export default function App() {
                     </ThemeProvider>
                 </>
             ) : (
-                <Loader/>
+                <Loader />
             )}
         </>
     );

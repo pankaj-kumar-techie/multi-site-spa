@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../themes/ThemeProvider';
 
 const DetailsPage = () => {
+    const { theme } = useContext(ThemeContext);
     return (
-        <div className="container mx-auto px-4 py-8">
+        <div className={`${theme.background.backgroundColor} container mx-auto px-4 py-8` }>
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
                 <div className="px-6 py-4">
                     <h1 className="text-2xl font-bold mb-4">Page Title</h1>

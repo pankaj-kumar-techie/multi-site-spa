@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
 
 interface SecondAboutUsProps {
@@ -15,8 +16,12 @@ const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
         console.log("About Data", data);
     }, [data]);
 
+    if (!aboutData.title) {
+        return <SectionShimmer title={"About Us"}></SectionShimmer>;
+    }
+
     return (
-        <section>
+        <section className={`${theme.background.backgroundColor} font-bold`}>
         <div className="bg-white overflow-hidden relative">
             <img src={aboutData?.images?.[0]?.imageSrc || ""} alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full"/>
             <div className="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
