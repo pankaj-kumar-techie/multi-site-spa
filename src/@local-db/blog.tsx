@@ -172,3 +172,13 @@ export const blogpahariyatri: Section[] = [
         },
     },
 ];
+
+export const blogpahariyatriseo: any = {
+    title: "Exploring the Uncharted: Trekking and Mountaineering with Pahari Yatri",
+    description: "Embark on a journey of a lifetime with Pahari Yatri as we delve into the world of trekking and mountaineering, offering thrilling experiences in breathtaking landscapes.",
+    keywords: "trekking, mountaineering, adventure travel, Pahari Yatri, outdoor exploration, nature adventures",
+    tags: "trekking, mountaineering, adventure travel, Pahari Yatri, outdoor exploration, nature adventures",
+    author: "Pankaj Kumar",
+    imageUrl: "https://example.com/blog-og-image.jpg",
+    siteUrl: "https://www.blog.pahariyatri.com",
+};

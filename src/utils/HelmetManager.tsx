@@ -29,6 +29,7 @@ export const HelmetManager: React.FC<SeoData> = ({
             "name": "${title}",
             "description": "${description}",
             "keywords": "${keywords}",
+            "tags": "${tags}",
             "url": "${siteUrl || 'https://yourwebsite.com'}",
             ${author
             ? `"author": {

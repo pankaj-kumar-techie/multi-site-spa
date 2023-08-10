@@ -1,12 +1,13 @@
 import { Section } from "../modal/Section";
 
-export const gayatrilodgeSeo: any = {
-    title: "Gayatri Lodge - Your Tranquil Haven in Kasauli | Homestay",
-    description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",
-    keywords: "Gayatri Lodge, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",
-    author: "Your Name",
-    imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.gayatrilodgekasauli.com",
+export const techiepahariyatriseo: any = {
+    title: "Pankaj Kumar - Experienced Software Engineer Portfolio",
+    description: "Explore the portfolio of Pankaj Kumar, an experienced Software Engineer specializing in full-stack development, front-end and back-end techniques, and delivering high-quality software solutions.",
+    keywords: "Pankaj Kumar, software engineer, portfolio, full-stack development, front-end, back-end, AWS, Java, React, Flutter, DevOps",
+    tags: "Pankaj Kumar, software engineer, portfolio, full-stack development, front-end, back-end, AWS, Java, React, Flutter, DevOps",
+    author: "Pankaj Kumar",
+    imageUrl: "https://example.com/portfolio-og-image.jpg",
+    siteUrl: "https://techie.pahariyatri.com",
 };
 
 export const techie: Section[] = [

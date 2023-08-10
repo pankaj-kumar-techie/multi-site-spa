@@ -8,7 +8,7 @@ import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
 import { pahariyatri } from './@local-db/pahariyatri';
-import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
+import { gayatrilodge } from './@local-db/gayatrilodge';
 import { blogpahariyatri } from './@local-db/blog';
 import { techie } from './@local-db/techie';
 // import { ClientService } from './service/ClientService';
@@ -50,36 +50,36 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "spa-app-loonds.vercel.app":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(techie);
                         break;
                     case "spa-app-git-main-loonds.vercel.app":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(website2);
                         break;
                     case "spa-app-alpha.vercel.app":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(website3);
                         break;
                     case "pahariyatri.com":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(techie);
                         break;
                     case "gayatrilodge.com":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(gayatrilodge);
                         break;
                     case "blog.pahariyatri.com":
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         setSectionData(blogpahariyatri);
                         break;
                     default:
                         setSectionData(gayatrilodge);
-                        setSeo(gayatrilodgeSeo);
+                        setSeo(seo);
                         break;
                 }
 

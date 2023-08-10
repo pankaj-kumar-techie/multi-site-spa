@@ -473,11 +473,12 @@ export const pahariyatri: Section[] = [
     },
 ];
 
-export const gayatrilodgeSeo: any = {
-    title: "Gayatri Lodge - Your Tranquil Haven in Kasauli | Homestay",
-    description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",
-    keywords: "Gayatri Lodge, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",
-    author: "Your Name",
+export const pahariyatriseo: any = {
+    title: "Pahari Yatri - Adventure Trekking and Mountaineering Experiences",
+    description: "Pahari Yatri offers exceptional trekking and mountaineering experiences, connecting adventure seekers with nature, culture, and their adventurous spirit.",
+    keywords: "adventure travel, trekking experiences, mountaineering expeditions, camping, adventure tours, wildlife safaris, cultural immersion, sustainable travel",
+    tags: "adventure travel, trekking, mountaineering, camping, adventure tours, wildlife safaris, photography expeditions, cultural immersion, sustainable travel",
+    author: "Pankaj Kumar",
     imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.gayatrilodgekasauli.com",
+    siteUrl: "https://www.pahariyatri.com",
 };
