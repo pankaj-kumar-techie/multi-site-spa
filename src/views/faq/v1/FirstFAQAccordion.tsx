@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { FAQ } from '../../../modal/Section';
 import {ThemeContext} from "../../../themes/ThemeProvider";
+import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 
 const FirstFAQAccordion = (props: { data: any }) => {
     const { theme } = useContext(ThemeContext);
@@ -25,8 +26,12 @@ const FirstFAQAccordion = (props: { data: any }) => {
         }
     };
 
+    if (!faqData.faqs) {
+        return <SectionShimmer title={faqData.title}></SectionShimmer>;
+    }
+
     return (
-        <section className={`${theme.colors.primary} pt-10 pb-10`}>
+        <section className={`${theme.background.backgroundColor} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
 
             <div>

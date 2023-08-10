@@ -1,47 +1,39 @@
-import React from 'react';
-import TitleCover from "../../../components/common/title-cover/TitleCover";
+import React, { useContext, useEffect, useState } from 'react';
+import TitleCover from '../../../components/common/title-cover/TitleCover';
+import { ThemeContext } from '../../../themes/ThemeProvider';
+import { TermAndCondition } from '../../../modal/Section';
+import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 
 const FirstTermsAndConditions = (props: { data: any }) => {
+    const { theme } = useContext(ThemeContext);
+    const [tacData, setTacData] = useState<any>({
+        title: '',
+        description: '',
+        termAndCondition: [],
+    });
+
+    useEffect(() => {
+        setTacData(props.data);
+    }, [props.data]);
+
+    if (!tacData.termAndCondition) {
+        return <SectionShimmer title={tacData.title}></SectionShimmer>;
+    }
+
+
     return (
-        <>
-        <div className="container mx-auto px-4 mb-4">
-            <TitleCover title={"Terms and Conditions"} fontFamily={"font-bold"}></TitleCover>
+        <section className={`${theme.background.backgroundColor} container mx-auto px-4 mb-4`}>
+            <TitleCover title={tacData.title} fontFamily="font-bold" />
             <div className="prose">
-                <h3>Introduction</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum est non nunc accumsan
-                    efficitur.
-                    Aliquam erat volutpat. Sed sollicitudin, tortor in efficitur euismod, justo sapien ultrices ante, id
-                    varius
-                    purus arcu in nunc. In hac habitasse platea dictumst.
-                </p>
-                <h3>General Terms</h3>
-                <p>
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Vivamus eu
-                    ligula eget mi finibus congue at eu lacus. Etiam hendrerit sapien vel odio lobortis malesuada.
-                    Integer non
-                    vulputate urna, id fringilla ipsum. Phasellus ut lectus a massa molestie viverra at et odio.
-                </p>
-                <h3>Payment</h3>
-                <p>
-                    Aliquam vel tincidunt risus, non blandit nunc. Integer blandit nunc ut nunc ultricies, vitae
-                    eleifend tortor
-                    ultrices. In nec arcu nulla. Fusce nec elementum turpis. Nam eu libero sollicitudin, interdum purus
-                    id,
-                    fermentum dolor. Morbi et mi dignissim, interdum nunc at, euismod arcu.
-                </p>
-                <h3>Disclaimer</h3>
-                <p>
-                    Curabitur eget tristique tellus. Fusce sed est neque. Morbi semper eleifend nunc eget rutrum. Donec
-                    auctor
-                    lectus vitae mauris blandit, ac tincidunt ante bibendum. Sed a risus eu enim lacinia consequat non
-                    in sem.
-                </p>
-               
+                {tacData.termAndCondition.map((tac: TermAndCondition) => (
+                    <div key={tac.id}>
+                        <h3>{tac.title}</h3>
+                        <p>{tac.description}</p>
+                        <p>{tac.descriptionContext}</p>
+                    </div>
+                ))}
             </div>
-        </div>
-        </>
+        </section>
     );
 };
 

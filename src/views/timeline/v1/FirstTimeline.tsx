@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { ThemeContext } from "../../../themes/ThemeProvider";
+
 export default function FirstTimeline() {
+    const { theme } = useContext(ThemeContext);
     return (
-        <section>
+        <section className={`${theme.background.backgroundColor} py-20`}>
             <h3 className="text-2xl text-gray-700 font-bold mb-6 text-center -ml-3">Latest News</h3>
             <div className="container mx-auto">
             <ol className="border-l-2 border-purple-600">
