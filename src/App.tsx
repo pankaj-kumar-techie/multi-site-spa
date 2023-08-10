@@ -3,7 +3,7 @@ import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
 import { Renderer } from "./views/Renderer";
-import { basic, website1, website2, website3 } from './@local-db/website';
+import { website1, website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
@@ -31,8 +31,7 @@ export default function App() {
             console.log('Client Domain Name:', clientDomainName);
 
             let path = window.location.pathname.substring(1); // Remove leading '/';
-            let dataUrl = '';
-            console.log('Path:', path);
+            console.log('Page Path:', path);
 
             if (!path) {
                 path = 'index';
@@ -72,8 +71,7 @@ export default function App() {
                         setSectionData(blogpahariyatri);
                         break;
                     default:
-                        dataUrl = 'https://raw.githubusercontent.com/loonds/spa-local-db/main/echo.json';
-                        // setSectionData(gayatrilodge);
+                        setSectionData(gayatrilodge);
                         break;
                 }
 
@@ -85,9 +83,6 @@ export default function App() {
 
                 // console.log('Pass Section Data to Child Component', res.data.section);
 
-                const response = await axios.get('https://raw.githubusercontent.com/loonds/spa-local-db/main/echo.json');
-                // const data = await response.json();
-                setSectionData(response.data);
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
