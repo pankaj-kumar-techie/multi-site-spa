@@ -13,7 +13,6 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
 
     useEffect(() => {
         setAboutData(data);
-        console.log("About Data", data);
     }, [data]);
 
     if (!aboutData.title) {
