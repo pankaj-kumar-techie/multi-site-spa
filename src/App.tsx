@@ -11,6 +11,7 @@ import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
 import { techie, techiepahariyatriseo } from './@local-db/techie';
 import { northVibeDesign, northVibeDesignSeo} from './@local-db/nvd';
+import FloatingButton from './components/common/button/FloatingButton';
 // import { ClientService } from './service/ClientService';
 
 
@@ -70,8 +71,8 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         break;
                     default:
-                        setSectionData(northVibeDesign);
-                        setSeo(northVibeDesignSeo);
+                        setSectionData(pahariyatri);
+                        setSeo(techiepahariyatriseo);
                         break;
                 }
 

@@ -22,7 +22,7 @@ export class Renderer {
 
     static componentRenderV1(theme: Theme, section: any): JSX.Element {
         console.log("Section Data With Version ", theme, section.version)
-        
+
         //Todo: Add Theme Versioning
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,

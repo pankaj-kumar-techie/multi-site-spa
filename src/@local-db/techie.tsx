@@ -1,6 +1,7 @@
 import { Section } from "../modal/Section";
+import { SeoData } from "../modal/SeoData";
 
-export const techiepahariyatriseo: any = {
+export const techiepahariyatriseo: SeoData = {
     title: "Pankaj Kumar - Experienced Software Engineer Portfolio",
     description: "Explore the portfolio of Pankaj Kumar, an experienced Software Engineer specializing in full-stack development, front-end and back-end techniques, and delivering high-quality software solutions.",
     keywords: "Pankaj Kumar, software engineer, portfolio, full-stack development, front-end, back-end, AWS, Java, React, Flutter, DevOps",
@@ -9,6 +10,10 @@ export const techiepahariyatriseo: any = {
     imageUrl: "https://example.com/portfolio-og-image.jpg",
     siteUrl: "https://techie.pahariyatri.com",
 };
+
+export const techieTheme: any = {
+    name: "classic"
+}
 
 export const techie: Section[] = [
     {

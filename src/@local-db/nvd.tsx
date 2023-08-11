@@ -23,9 +23,9 @@ export const northVibeDesign: Section[] = [
       testimonials: null,
       faqs: null,
       contactUs: {
-        address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
+        address: "Village",
         email: "northvibedesings@gmail.com",
-        phone: "+91-9569576707",
+        phone: "+91-9805058367",
       },
     },
   },
@@ -145,11 +145,11 @@ export const northVibeDesign: Section[] = [
           imageSrc: 'https://images.unsplash.com/photo-1508167290553-87a67eca5bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvb2Z8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         }, {
-          id: '10',
+          id: '9',
           imageSrc: 'https://i.pinimg.com/564x/c7/04/22/c70422c750792eba0785fae493d5ea68.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         }, {
-          id: '11',
+          id: '10',
           imageSrc: 'https://images.unsplash.com/photo-1574598762239-6b6f96eab341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
@@ -251,13 +251,13 @@ export const northVibeDesign: Section[] = [
 {
   id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
   name: "Footer",
-  version: "v1",
+  version: "v2",
   style: "CLASSIC",
   path: "index",
   data: {
       type: "Timeline",
       id: "k",
-      title: "Hero Banner!",
+      title: "Time!",
       subTitle: "Hero Banner Sub Title is here",
       description: "Hero Banner Paragraph is here",
       version: "v2",
