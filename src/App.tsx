@@ -11,7 +11,6 @@ import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
 import { techie, techiepahariyatriseo } from './@local-db/techie';
 import { northVibeDesign, northVibeDesignSeo} from './@local-db/nvd';
-import GoogleReviews from './components/GoogleReviews';
 // import { ClientService } from './service/ClientService';
 
 
@@ -112,7 +111,6 @@ export default function App() {
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                             )}
-                            <GoogleReviews></GoogleReviews>
                     </ThemeProvider>
                 </>
             ) : (
