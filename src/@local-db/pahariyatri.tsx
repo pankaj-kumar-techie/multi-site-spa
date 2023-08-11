@@ -22,7 +22,11 @@ export const pahariyatri: Section[] = [
             blogs: null,
             testimonials: null,
             faqs: null,
-            contactUs: null,
+            contactUs: {
+                address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
+                email: "pahariyatri@gmail.com",
+                phone: "+91-9569576707",
+            },
         },
     },
     {
@@ -227,7 +231,6 @@ export const pahariyatri: Section[] = [
             contactUs: null,
         },
     },
-
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
@@ -294,16 +297,17 @@ export const pahariyatri: Section[] = [
             images: null,
             testimonials: null,
         },
-    }, {
+    },
+    {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
         version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Service",
+            type: "OurTeam",
             id: "k",
-            title: "Our Services",
+            title: "Our Team",
             subTitle: "Hero Banner Sub Title is here",
             description: "We are provided following services to our customers",
             version: "v1",
@@ -472,3 +476,13 @@ export const pahariyatri: Section[] = [
         },
     },
 ];
+
+export const pahariyatriseo: any = {
+    title: "Pahari Yatri - Adventure Trekking and Mountaineering Experiences",
+    description: "Pahari Yatri offers exceptional trekking and mountaineering experiences, connecting adventure seekers with nature, culture, and their adventurous spirit.",
+    keywords: "adventure travel, trekking experiences, mountaineering expeditions, camping, adventure tours, wildlife safaris, cultural immersion, sustainable travel",
+    tags: "adventure travel, trekking, mountaineering, camping, adventure tours, wildlife safaris, photography expeditions, cultural immersion, sustainable travel",
+    author: "Pankaj Kumar",
+    imageUrl: "https://example.com/og-image.jpg",
+    siteUrl: "https://www.pahariyatri.com",
+};

@@ -3,14 +3,14 @@ import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
 import { Renderer } from "./views/Renderer";
-import { website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
-import { pahariyatri } from './@local-db/pahariyatri';
+import { pahariyatri, pahariyatriseo } from './@local-db/pahariyatri';
 import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
-import { blogpahariyatri } from './@local-db/blog';
-import { techie } from './@local-db/techie';
+import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
+import { techie, techiepahariyatriseo } from './@local-db/techie';
+import { northVibeDesign, northVibeDesignSeo} from './@local-db/nvd';
 // import { ClientService } from './service/ClientService';
 
 
@@ -49,30 +49,29 @@ export default function App() {
                 setLoading(false);
 
                 switch (clientDomainName) {
-                    case "spa-app-loonds.vercel.app":
-                        setSectionData(techie);
-                        break;
-                    case "spa-app-git-main-loonds.vercel.app":
-                        setSectionData(website2);
-                        break;
-                    case "spa-app-alpha.vercel.app":
-                        setSectionData(website3);
-                        break;
                     case "pahariyatri.com":
+                        setSeo(pahariyatriseo);
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
+                        setSeo(techiepahariyatriseo);
                         setSectionData(techie);
                         break;
-                    case "gayatrilodge.com":
-                        setSectionData(gayatrilodge);
-                        break;
                     case "blog.pahariyatri.com":
+                        setSeo(blogpahariyatriseo);
                         setSectionData(blogpahariyatri);
                         break;
-                    default:
-                        setSectionData(gayatrilodge);
+                    case "dev.pahariyatri.com":
+                        setSeo(northVibeDesignSeo);
+                        setSectionData(northVibeDesign);
+                        break;
+                    case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
+                        setSectionData(gayatrilodge);
+                        break;
+                    default:
+                        setSectionData(northVibeDesign);
+                        setSeo(northVibeDesignSeo);
                         break;
                 }
 
@@ -105,7 +104,7 @@ export default function App() {
 
     return (
         <>
-            <HelmetManager title={seo.title} description={seo.description} keywords={seo.keywords}></HelmetManager>
+            <HelmetManager title={seo.title ?? "Loonds"} description={seo.description ?? ""} keywords={seo.keywords ?? ""} tags={seo.tags ?? ""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={"classic"}>

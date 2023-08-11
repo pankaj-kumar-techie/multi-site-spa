@@ -6,5 +6,4 @@ export interface SeoData {
     author?: string;
     imageUrl?: string;
     siteUrl?: string;
-  }
-  
+}

@@ -22,22 +22,22 @@ const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
 
     return (
         <section className={`${theme.background.backgroundColor} font-bold`}>
-        <div className="bg-white overflow-hidden relative">
-            <img src={aboutData?.images?.[0]?.imageSrc || ""} alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full"/>
-            <div className="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
-                <TitleCover
-                    title={aboutData.title}
-                    titleSize="text-6xl"
-                    paragraph={aboutData.description}
-                    textAlign="left"
-                    titleColor={theme.typography.firstFontColor}
-                    paragraphColor={theme.typography.firstFontColor}
-                />
+            <div className="bg-white overflow-hidden relative">
+                <img src={aboutData?.images?.[0]?.imageSrc || ""} alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full" />
+                <div className="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
+                    <TitleCover
+                        title={aboutData.title}
+                        titleSize="text-6xl"
+                        paragraph={aboutData.description}
+                        textAlign="left"
+                        titleColor={theme.typography.firstFontColor}
+                        paragraphColor={theme.typography.firstFontColor}
+                    />
+                </div>
             </div>
-        </div>
-    </section>
-    
-    
+        </section>
+
+
     )
 }
 export default SecondAboutUs;

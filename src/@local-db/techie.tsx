@@ -1,5 +1,15 @@
 import { Section } from "../modal/Section";
 
+export const techiepahariyatriseo: any = {
+    title: "Pankaj Kumar - Experienced Software Engineer Portfolio",
+    description: "Explore the portfolio of Pankaj Kumar, an experienced Software Engineer specializing in full-stack development, front-end and back-end techniques, and delivering high-quality software solutions.",
+    keywords: "Pankaj Kumar, software engineer, portfolio, full-stack development, front-end, back-end, AWS, Java, React, Flutter, DevOps",
+    tags: "Pankaj Kumar, software engineer, portfolio, full-stack development, front-end, back-end, AWS, Java, React, Flutter, DevOps",
+    author: "Pankaj Kumar",
+    imageUrl: "https://example.com/portfolio-og-image.jpg",
+    siteUrl: "https://techie.pahariyatri.com",
+};
+
 export const techie: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
