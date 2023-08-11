@@ -3,7 +3,6 @@ import { Section } from "./modal/Section";
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
 import { Renderer } from "./views/Renderer";
-import { website2, website3 } from './@local-db/website';
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
@@ -11,6 +10,7 @@ import { pahariyatri, pahariyatriseo } from './@local-db/pahariyatri';
 import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
 import { techie, techiepahariyatriseo } from './@local-db/techie';
+import { northVibeDesign, northVibeDesignSeo} from './@local-db/nvd';
 // import { ClientService } from './service/ClientService';
 
 
@@ -49,18 +49,6 @@ export default function App() {
                 setLoading(false);
 
                 switch (clientDomainName) {
-                    case "spa-app-loonds.vercel.app":
-                        setSeo(techiepahariyatriseo);
-                        setSectionData(techie);
-                        break;
-                    case "spa-app-git-main-loonds.vercel.app":
-                        setSeo(techiepahariyatriseo);
-                        setSectionData(website2);
-                        break;
-                    case "spa-app-alpha.vercel.app":
-                        setSeo(techiepahariyatriseo);
-                        setSectionData(website3);
-                        break;
                     case "pahariyatri.com":
                         setSeo(pahariyatriseo);
                         setSectionData(pahariyatri);
@@ -69,17 +57,21 @@ export default function App() {
                         setSeo(techiepahariyatriseo);
                         setSectionData(techie);
                         break;
-                    case "gayatrilodge.com":
-                        setSeo(gayatrilodgeSeo);
-                        setSectionData(gayatrilodge);
-                        break;
                     case "blog.pahariyatri.com":
                         setSeo(blogpahariyatriseo);
                         setSectionData(blogpahariyatri);
                         break;
+                    case "dev.pahariyatri.com":
+                        setSeo(northVibeDesignSeo);
+                        setSectionData(northVibeDesign);
+                        break;
+                    case "gayatrilodge.com":
+                        setSeo(gayatrilodgeSeo);
+                        setSectionData(gayatrilodge);
+                        break;
                     default:
-                        setSectionData(pahariyatri);
-                        setSeo(pahariyatriseo);
+                        setSectionData(northVibeDesign);
+                        setSeo(northVibeDesignSeo);
                         break;
                 }
 

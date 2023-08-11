@@ -231,7 +231,6 @@ export const pahariyatri: Section[] = [
             contactUs: null,
         },
     },
-
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
@@ -299,7 +298,7 @@ export const pahariyatri: Section[] = [
             testimonials: null,
         },
     },
-     {
+    {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
         version: "v1",

@@ -5,119 +5,128 @@ export default function FirstTimeline() {
     const { theme } = useContext(ThemeContext);
     return (
         <section className={`${theme.background.backgroundColor} py-20`}>
-            <h3 className="text-2xl text-gray-700 font-bold mb-6 text-center -ml-3">Latest News</h3>
             <div className="container mx-auto">
-            <ol className="border-l-2 border-purple-600">
-                <li>
-                    <div className="md:flex flex-center">
-                        <div className="bg-purple-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 className="text-white w-3 h-3"
-                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                      d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
-                            </svg>
+                <div className="mb-8">
+                    <h2 className="text-3xl font-semibold text-center mb-4">
+                        Process: Interior Design from Start to Finish
+                    </h2>
+                    <p className="text-gray-600 text-center">
+                        Discover our comprehensive interior design process that ensures a seamless journey from initial consultation to final installation.
+                    </p>
+                </div>
+
+                <div className="flex flex-wrap items-center justify-center gap-6">
+                    {/* Initial Consultation */}
+                    <div className="flex items-center">
+                        <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
+                            1
                         </div>
-                        <div className="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10">
-                            <div className="flex justify-between mb-4">
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">New
-                                    Web Design</a>
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">04
-                                    / 02 / 2022</a>
-                            </div>
-                            <p className="text-gray-700 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.
-                                Quisque
-                                scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat
-                                facilisis
-                                mollis.
-                                Duis sagittis ligula in sodales vehicula.</p>
-                            <button type="button"
-                                    className="inline-block px-4 py-1.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">Preview
-                            </button>
-                            <button type="button"
-                                    className="inline-block px-3.5 py-1 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">See demo
-                            </button>
+                        <div className="ml-3">
+                            <h3 className="text-lg font-semibold mb-1">Initial Consultation</h3>
+                            <p className="text-gray-600">
+                                We begin with a detailed discussion to understand your vision, needs, and goals for the project.
+                            </p>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div className="md:flex flex-start">
-                        <div className="bg-purple-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 className="text-white w-3 h-3"
-                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                      d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
-                            </svg>
+
+                    {/* Design Concept Development */}
+                    <div className="flex items-center">
+                        <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold">
+                            2
                         </div>
-                        <div className="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10">
-                            <div className="flex justify-between mb-4">
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">21
-                                    000 Job Seekers</a>
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">12
-                                    / 01 / 2022</a>
-                            </div>
-                            <p className="text-gray-700 mb-6">Libero expedita explicabo eius fugiat quia aspernatur
-                                autem
-                                laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur
-                                porro
-                                molestiae
-                                ipsam an deleniti.</p>
-                            <button type="button"
-                                    className="inline-block px-4 py-1.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">Preview
-                            </button>
-                            <button type="button"
-                                    className="inline-block px-3.5 py-1 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">See demo
-                            </button>
+                        <div className="ml-3">
+                            <h3 className="text-lg font-semibold mb-1">Design Concept Development</h3>
+                            <p className="text-gray-600">
+                                Our experts create design concepts and mood boards that bring your ideas to life visually.
+                            </p>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div className="md:flex flex-start">
-                        <div className="bg-purple-600 w-6 h-6 flex items-center justify-center rounded-full -ml-3">
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas"
-                                 className="text-white w-3 h-3"
-                                 role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor"
-                                      d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path>
-                            </svg>
+
+                    {/* Project Planning */}
+                    <div className="flex items-center">
+                        <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white font-semibold">
+                            3
                         </div>
-                        <div className="block p-6 rounded-lg shadow-lg bg-gray-100 max-w-md ml-6 mb-10">
-                            <div className="flex justify-between mb-4">
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">Awesome
-                                    Employers</a>
-                                <a href="#!"
-                                   className="font-medium text-purple-600 hover:text-purple-700 focus:text-purple-800 duration-300 transition ease-in-out text-sm">21
-                                    / 12 / 2021</a>
-                            </div>
-                            <p className="text-gray-700 mb-6">Voluptatibus temporibus esse illum eum aspernatur,
-                                fugiat
-                                suscipit
-                                natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit
-                                doloremque,
-                                laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
-                            <button type="button"
-                                    className="inline-block px-4 py-1.5 bg-purple-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-purple-700 hover:shadow-lg focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-purple-800 active:shadow-lg transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">Preview
-                            </button>
-                            <button type="button"
-                                    className="inline-block px-3.5 py-1 border-2 border-purple-600 text-purple-600 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
-                                    data-mdb-ripple="true">See demo
-                            </button>
+                        <div className="ml-3">
+                            <h3 className="text-lg font-semibold mb-1">Project Planning</h3>
+                            <p className="text-gray-600">
+                                Detailed planning and budgeting are carried out, ensuring a smooth execution of the project.
+                            </p>
                         </div>
                     </div>
-                </li>
-            </ol>
+
+                    {/* Construction */}
+                    <div className="flex items-center">
+                        <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-semibold">
+                            4
+                        </div>
+                        <div className="ml-3">
+                            <h3 className="text-lg font-semibold mb-1">Construction</h3>
+                            <p className="text-gray-600">
+                                Skilled craftsmen and contractors bring the design to life, handling every aspect of construction.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Final Installation */}
+                    <div className="flex items-center">
+                        <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold">
+                            5
+                        </div>
+                        <div className="ml-3">
+                            <h3 className="text-lg font-semibold mb-1">Final Installation</h3>
+                            <p className="text-gray-600">
+                                The last step involves carefully placing and arranging all elements to achieve the desired look and feel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="mt-12">
+                    <h2 className="text-3xl font-semibold text-center mb-4">
+                        Design Styles: From Modern to Traditional
+                    </h2>
+                    <p className="text-gray-600 text-center">
+                        Explore a variety of interior design styles that cater to different preferences and aesthetics.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                    {/* Modern Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <h3 className="text-lg font-semibold mb-2">Modern Design</h3>
+                        <p className="text-gray-600">
+                            Clean lines, minimalism, and functionality define this design style, creating sleek and sophisticated interiors.
+                        </p>
+                    </div>
+
+                    {/* Traditional Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <h3 className="text-lg font-semibold mb-2">Traditional Design</h3>
+                        <p className="text-gray-600">
+                            Rich colors, ornate details, and classic furnishings characterize this timeless and elegant design approach.
+                        </p>
+                    </div>
+
+                    {/* Scandinavian Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <h3 className="text-lg font-semibold mb-2">Scandinavian Design</h3>
+                        <p className="text-gray-600">
+                            Embrace simplicity, functionality, and natural elements in this style that focuses on comfort and coziness.
+                        </p>
+                    </div>
+
+                    {/* Industrial Design */}
+                    <div className="bg-white p-6 rounded-lg shadow-md">
+                        <h3 className="text-lg font-semibold mb-2">Industrial Design</h3>
+                        <p className="text-gray-600">
+                            Exposed materials, raw textures, and utilitarian aesthetics create an urban and edgy design look.
+                        </p>
+                    </div>
+
+                    {/* More Design Styles */}
+                    {/* Add more design styles as needed */}
+                </div>
             </div>
         </section>
     );
