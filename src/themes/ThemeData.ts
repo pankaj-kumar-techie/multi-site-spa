@@ -48,6 +48,7 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'text-black',
         },
         typography: {
+            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
         },
@@ -71,6 +72,7 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'text-black',
         },
         typography: {
+            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
         },

@@ -1,10 +1,10 @@
 import { Section } from "../modal/Section";
 
-export const pahariyatriTheme: any = {
+export const loondsTheme: any = {
     name: "classic"
 }
 
-export const pahariyatri: Section[] = [
+export const loonds: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
@@ -481,7 +481,7 @@ export const pahariyatri: Section[] = [
     },
 ];
 
-export const pahariyatriseo: any = {
+export const loondsSeo: any = {
     title: "Pahari Yatri - Adventure Trekking and Mountaineering Experiences",
     description: "Pahari Yatri offers exceptional trekking and mountaineering experiences, connecting adventure seekers with nature, culture, and their adventurous spirit.",
     keywords: "adventure travel, trekking experiences, mountaineering expeditions, camping, adventure tours, wildlife safaris, cultural immersion, sustainable travel",

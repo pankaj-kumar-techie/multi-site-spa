@@ -10,7 +10,7 @@ import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahar
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo, blogTheme } from './@local-db/blog';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
-import { northVibeDesign, northVibeDesignSeo, northVibeDesignTheme} from './@local-db/nvd';
+import { northVibeDesign, northVibeDesignSeo, northVibeDesignTheme} from './@local-db/northVibeDesign';
 import FloatingButton from './components/common/button/FloatingButton';
 // import { ClientService } from './service/ClientService';
 
