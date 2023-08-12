@@ -27,18 +27,13 @@ export default function FirstService(props: { data: any }) {
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full pb-10 px-4">
-                        <TitleCover title={serviceData.title} subtitle={serviceData.subTitle} paragraph={serviceData.description}></TitleCover>
+                        <TitleCover title={serviceData.title} titleColor={theme.typography.firstFontColor} subtitle={serviceData.subTitle}
+                        subtitleColor={theme.typography.firstFontColor} paragraph={serviceData.description}></TitleCover>
                     </div>
                 </div>
                 <div className="flex flex-wrap">
                     {serviceData.services.map((s: Service) => (
-                        <ServiceCard
-                            key={s.id}
-                            icon={s.imageSrc}
-                            iconAlt={s.imageAlt}
-                            title={s.title}
-                            body={s.body}
-                        />
+                        <ServiceCard key={s.id} icon={s.imageSrc} iconAlt={s.imageAlt} title={s.title} body={s.body} />
                     ))}
                 </div>
             </div>

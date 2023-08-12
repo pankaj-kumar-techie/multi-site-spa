@@ -27,8 +27,8 @@ export default function FirstHeroBanner(props: { data: any }) {
       <div className="py-12 flex flex-col  justify-center items-center">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-right">
-            <TitleCover title={bannerData.title} subtitle={bannerData.subTitle} titleColor="text-white"
-              subtitleColor="text-white" titleSize="lg:text-6xl text-4xl font-bold font-raleway md:text-5xl mt-32"
+            <TitleCover title={bannerData.title} subtitle={bannerData.subTitle} titleColor={theme.typography.firstFontColor}
+              subtitleColor={theme.typography.firstFontColor} titleSize="lg:text-6xl text-4xl font-bold font-raleway md:text-5xl mt-32"
               subtitleSize="mt-3 max-w-md mx-auto text-2xl md:text-3xl md:max-w-3xl"></TitleCover>
 
             <div className={"mt-10 sm:flex justify-center"}>

@@ -1,18 +1,18 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import GalleryCard from "../../../components/cards/GalleryCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 
-
+//Todo : Added LightBox make gallery more flexible
 function FirstGallery(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
     const [galleryData, setGalleryData] = useState<any>({
         title: "",
         description: "",
         images: [],
-      });
+    });
     useEffect(() => {
         setGalleryData(props.data);
     }, [props.data]);
@@ -27,15 +27,16 @@ function FirstGallery(props: { data: any }) {
                 <TitleCover
                     title={galleryData.title}
                     subtitle=""
+                    titleColor={theme.typography.firstFontColor}
                     paragraph={galleryData.paragraph}
+                    paragraphColor={theme.typography.firstFontColor}
                     titleSize={"text-4xl"}
                     textAlign="center"
                 />
                 <div className="md:mt-20 mt-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                         {galleryData.images.map((image: Image) => (
-                            <GalleryCard id={image.id} imageSrc={image.imageSrc}
-                                         imageAlt={image.imageAlt}></GalleryCard>
+                            <GalleryCard id={image.id} imageSrc={image.imageSrc} imageAlt={image.imageAlt}></GalleryCard>
                         ))}
                     </div>
                 </div>

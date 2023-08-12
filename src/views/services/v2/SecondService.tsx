@@ -16,25 +16,17 @@ export default function SecondService(props: { data: any }) {
     useEffect(() => {
         setServiceData(props.data);
     }, [props.data]);
-
     if (!serviceData.services) {
         return <SectionShimmer title={serviceData.title}></SectionShimmer>;
     }
-
     return (
-        <section className={`${theme.background.backgroundColor}`}>
-            <div id="services" className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
-                <TitleCover title={serviceData.title}></TitleCover>
+        <section id="services" className={`${theme.background.backgroundColor}`}>
+            <div className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
+                <TitleCover title={serviceData.title} titleColor={theme.typography.firstFontColor}></TitleCover>
                 <div className="container xl:max-w-6xl mx-auto px-4">
                     <div className="flex flex-wrap flex-row -mx-4 text-center">
                         {serviceData.services.map((s: Service) => (
-                            <ServiceCard2
-                                key={s.id}
-                                icon={s.imageSrc}
-                                iconAlt={s.imageAlt}
-                                title={s.title}
-                                body={s.body}
-                            />
+                            <ServiceCard2 key={s.id} icon={s.imageSrc} iconAlt={s.imageAlt} title={s.title} body={s.body} />
                         ))}
                     </div>
                 </div>
