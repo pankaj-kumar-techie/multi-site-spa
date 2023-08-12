@@ -15,7 +15,7 @@ import Blog from "./blog/Blog";
 import Header from "../components/layouts/header/Header";
 import Footer from "../components/layouts/footer/Footer";
 import OurTeam from "./our-team/OurTeam";
-import Navbar from "../components/layouts/Navbar/Navbar";
+import Navbar from "../components/layouts/navbar/Navbar";
 import { Theme } from "../modal/Theme";
 
 export class Renderer {

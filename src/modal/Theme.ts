@@ -19,4 +19,8 @@ export interface Theme {
         backgroundClip?: string;
         backgroundSize?: string;
     };
+    buttons : {
+        primary?: string;
+        secondary?: string;
+    }
 }
