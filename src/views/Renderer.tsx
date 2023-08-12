@@ -15,7 +15,6 @@ import Blog from "./blog/Blog";
 import Header from "../components/layouts/header/Header";
 import Footer from "../components/layouts/footer/Footer";
 import OurTeam from "./our-team/OurTeam";
-import Navbar from "../components/layouts/navbar/Navbar";
 import { Theme } from "../modal/Theme";
 
 export class Renderer {
@@ -27,7 +26,6 @@ export class Renderer {
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
             Footer: <Footer key={section.id} data={section['data']} version={section['version']}></Footer>,
-            Navbar: <Navbar key={section.id} data={section['data']} version={section['version']}></Navbar>,
             HeroBanner: <HeroBanner key={section.id} data={section['data']} version={section['version']}></HeroBanner>,
             AboutUs: <AboutUs key={section.id} data={section['data']} version={section['version']}></AboutUs>,
             ContactUs: <ContactUs key={section.id} data={section['data']} version={section['version']}></ContactUs>,
