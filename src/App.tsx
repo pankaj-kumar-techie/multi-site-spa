@@ -6,11 +6,11 @@ import { Renderer } from "./views/Renderer";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
-import { pahariyatri, pahariyatriseo } from './@local-db/pahariyatri';
-import { gayatrilodge, gayatrilodgeSeo } from './@local-db/gayatrilodge';
-import { blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
-import { techie, techiepahariyatriseo } from './@local-db/techie';
-import { northVibeDesign, northVibeDesignSeo} from './@local-db/nvd';
+import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahariyatri';
+import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme } from './@local-db/gayatrilodge';
+import { blogpahariyatri, blogpahariyatriseo, blogTheme } from './@local-db/blog';
+import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
+import { northVibeDesign, northVibeDesignSeo, northVibeDesignTheme} from './@local-db/nvd';
 import FloatingButton from './components/common/button/FloatingButton';
 // import { ClientService } from './service/ClientService';
 
@@ -52,26 +52,32 @@ export default function App() {
                 switch (clientDomainName) {
                     case "pahariyatri.com":
                         setSeo(pahariyatriseo);
+                        setTheme(pahariyatriTheme);
                         setSectionData(pahariyatri);
                         break;
                     case "techie.pahariyatri.com":
                         setSeo(techiepahariyatriseo);
+                        setTheme(techieTheme);
                         setSectionData(techie);
                         break;
                     case "blog.pahariyatri.com":
                         setSeo(blogpahariyatriseo);
+                        setTheme(blogTheme);
                         setSectionData(blogpahariyatri);
                         break;
                     case "dev.pahariyatri.com":
                         setSeo(northVibeDesignSeo);
+                        setTheme(northVibeDesignTheme);
                         setSectionData(northVibeDesign);
                         break;
                     case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
+                        setTheme(gayatrilodgeTheme);
                         setSectionData(gayatrilodge);
                         break;
                     default:
                         setSectionData(pahariyatri);
+                        setTheme(pahariyatriTheme);
                         setSeo(techiepahariyatriseo);
                         break;
                 }
