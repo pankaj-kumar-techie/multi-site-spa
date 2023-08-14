@@ -34,7 +34,8 @@ export default function FirstBlog(props: { data: any }) {
   return (
     <section className={theme.background.backgroundColor}>
       <div className="container mx-auto px-4 py-12">
-        <TitleCover title="Latest Blog Posts" />
+        <TitleCover title={blogList.title} subtitle={blogList.subTitle} titleColor={theme.typography.firstFontColor}
+          subtitleColor={theme.typography.firstFontColor} />
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {blogList.blogs.map((blog: Blog) => (
             <BlogCard

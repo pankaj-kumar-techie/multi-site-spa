@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import Button from "../../../components/common/button/Button";
 import { ThemeContext } from "../../../themes/ThemeProvider";
@@ -20,19 +20,19 @@ export default function FirstComingSoon(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.backgroundColor} h-screen bg-cover` }
-                 style={{backgroundImage: "url('https://images.unsplash.com/photo-1619364726002-dfd4fdaee5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')"}}>
+        <section className={`${theme.background.backgroundColor} h-screen bg-cover`}
+            style={{ backgroundImage: "url('https://images.unsplash.com/photo-1619364726002-dfd4fdaee5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')" }}>
             <div className="flex h-full w-full items-center justify-center container mx-auto px-8">
                 <div className="max-w-2xl text-center">
                     <TitleCover title={comingSoonUsData.title}
-                                paragraph={comingSoonUsData.description} titleSize={"sm:text-5xl"}
-                                titleColor={"text-white"} paragraphColor={"text-white"}></TitleCover>
+                        paragraph={comingSoonUsData.description} titleSize={"sm:text-5xl"}
+                        titleColor={theme.typography.firstFontColor} paragraphColor={theme.typography.firstFontColor}></TitleCover>
 
                     <div
                         className="mt-8 flex flex-col space-y-3 sm:-mx-2 sm:flex-row sm:justify-center sm:space-y-0">
                         <input id="email" type="text"
-                               className="rounded-md border border-transparent bg-white/20 px-4 py-2 text-white placeholder-white backdrop-blur-sm focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-2"
-                               placeholder="Email Address"/>
+                            className="rounded-md border border-transparent bg-white/20 px-4 py-2 text-white placeholder-white backdrop-blur-sm focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-2"
+                            placeholder="Email Address" />
 
                         <Button label="Notify Me" color="green" action={() => console.log('Button clicked')} height="40px" width="70px" />
 

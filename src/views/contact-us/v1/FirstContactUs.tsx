@@ -1,6 +1,6 @@
-import {useContext, useEffect, useState} from 'react';
+import { useContext, useEffect, useState } from 'react';
 import TitleCover from "../../../components/common/title-cover/TitleCover";
-import {ThemeContext} from "../../../themes/ThemeProvider";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 
 function ContactUs(props: { data: any }) {
@@ -14,7 +14,7 @@ function ContactUs(props: { data: any }) {
         title: "",
         description: "",
         contactUs: ContactUs,
-      })
+    })
 
 
 
@@ -36,12 +36,12 @@ function ContactUs(props: { data: any }) {
     }
 
     return (
-        <section className={`${theme.background.backgroundColor} md:py-16 py-8` }>
+        <section className={`${theme.background.backgroundColor} md:py-16 py-8`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
                         <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${theme.typography.firstFontColor}`}
-                                    subtitle={contactUsData.subTitle} subtitleColor={"text-black"} paragraphColor={theme.typography.firstFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
+                            subtitle={contactUsData.subTitle} subtitleColor={theme.typography.firstFontColor} paragraphColor={theme.typography.firstFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
                         <div className="flex items-center space-x-2">
                             <div className="w-6 h-6 bg-custom-brown rounded-full"></div>
                             <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.address}</p>
@@ -56,7 +56,7 @@ function ContactUs(props: { data: any }) {
                         </div>
 
                         <div className="aspect-w-10  aspect-h-9">
-                           
+
                         </div>
 
                     </div>

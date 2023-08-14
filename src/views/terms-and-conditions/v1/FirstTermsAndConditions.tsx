@@ -19,11 +19,9 @@ const FirstTermsAndConditions = (props: { data: any }) => {
     if (!tacData.termAndCondition) {
         return <SectionShimmer title={tacData.title}></SectionShimmer>;
     }
-
-
     return (
         <section className={`${theme.background.backgroundColor} container mx-auto px-4 mb-4`}>
-            <TitleCover title={tacData.title} fontFamily="font-bold" />
+            <TitleCover title={tacData.title} titleColor={theme.typography.firstFontColor} fontFamily="font-bold" />
             <div className="prose">
                 {tacData.termAndCondition.map((tac: TermAndCondition) => (
                     <div key={tac.id}>

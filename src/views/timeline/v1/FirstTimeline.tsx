@@ -14,7 +14,6 @@ export default function FirstTimeline() {
                         Discover our comprehensive interior design process that ensures a seamless journey from initial consultation to final installation.
                     </p>
                 </div>
-
                 <div className="flex flex-wrap items-center justify-center gap-6">
                     {/* Initial Consultation */}
                     <div className="flex items-center">

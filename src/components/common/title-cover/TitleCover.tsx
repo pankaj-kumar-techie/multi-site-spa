@@ -13,20 +13,19 @@ interface TitleCoverProps {
     subtitleColor?: string;
     paragraphColor?: string;
 }
-//Todo: Make different text align title, subtitle, paragraph
 const TitleCover: React.FC<TitleCoverProps> = ({
-                                                   title,
-                                                   subtitle = '',
-                                                   paragraph = '',
-                                                   titleSize = 'text-4xl',
-                                                   subtitleSize = 'text-xl',
-                                                   paragraphSize = 'text-lg',
-                                                   fontFamily = 'font-medium',
-                                                   textAlign = 'center',
-                                                   titleColor = 'text-gray-800',
-                                                   subtitleColor = 'text-gray-800',
-                                                   paragraphColor = 'text-gray-600',
-                                               }) => {
+    title,
+    subtitle = '',
+    paragraph = '',
+    titleSize = 'text-4xl',
+    subtitleSize = 'text-xl',
+    paragraphSize = 'text-lg',
+    fontFamily = 'font-medium',
+    textAlign = 'center',
+    titleColor = 'text-gray-800',
+    subtitleColor = 'text-gray-800',
+    paragraphColor = 'text-gray-600',
+}) => {
     const containerClasses = 'text-center';
     const titleClasses = `${titleSize} ${titleColor} text-center md:pb-10 pb-5 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;
     const subtitleClasses = `${subtitleSize} ${subtitleColor} text-center pb-10 ${fontFamily} ${getTextAlignmentClass(textAlign)}`;

@@ -1,5 +1,8 @@
 import { Section } from "../modal/Section";
 
+export const gayatrilodgeTheme: any = {
+    name: "classic"
+}
 export const gayatrilodge: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
