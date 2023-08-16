@@ -114,7 +114,7 @@ export default function App() {
             <HelmetManager title={seo.title ?? "Loonds"} description={seo.description ?? ""} keywords={seo.keywords ?? ""} tags={seo.tags ?? ""}></HelmetManager>
             {!loading && sectionData.length > 0 ? (
                 <>
-                    <ThemeProvider theme={"classic"}>
+                    <ThemeProvider theme={theme.name ?? "default"}>
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                             )}

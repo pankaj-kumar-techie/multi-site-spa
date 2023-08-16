@@ -30,6 +30,7 @@ export const themes: { [key: string]: Theme } = {
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
+            // hoverColor: 'text-white',
             firstFontColor: 'text-black-200',
             secondFontColor: 'text-white',
         },
@@ -100,7 +101,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-cyan-300',
+            backgroundColor: 'bg-black-300',
         },
         buttons: {
             primary: 'bg-indigo-700 text-white hover:bg-indigo-800',

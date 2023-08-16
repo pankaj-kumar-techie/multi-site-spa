@@ -18,7 +18,6 @@ export const HelmetManager: React.FC<SeoData> = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="tags" content={tags} />
-      {/* Add more metadata tags as needed */}
 
       {/* SEO Schema */}
       <script type="application/ld+json">
