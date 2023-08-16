@@ -3,8 +3,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 const FloatingButton: React.FC = () => {
     const openWhatsApp = () => {
-        // Replace '1234567890' with the actual phone number you want to send a message to
-        const phoneNumber = '1234567890';
+        const phoneNumber = '9569576707';
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
         window.open(whatsappUrl, '_blank');
     };

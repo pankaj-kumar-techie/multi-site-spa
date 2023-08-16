@@ -118,6 +118,7 @@ export default function App() {
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                             )}
+                            <FloatingButton></FloatingButton>
                     </ThemeProvider>
                 </>
             ) : (
