@@ -76,7 +76,7 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         break;
                     default:
-                        setSectionData(pahariyatri);
+                        setSectionData(northVibeDesign);
                         setTheme(pahariyatriTheme);
                         setSeo(techiepahariyatriseo);
                         break;
@@ -118,7 +118,7 @@ export default function App() {
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                             )}
-                            <FloatingButton></FloatingButton>
+                            
                     </ThemeProvider>
                 </>
             ) : (
