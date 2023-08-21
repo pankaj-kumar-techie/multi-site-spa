@@ -20,7 +20,7 @@ export default function SecondService(props: { data: any }) {
         return <SectionShimmer title={serviceData.title}></SectionShimmer>;
     }
     return (
-        <section id="services" className={`${theme.background.backgroundColor}`}>
+        <section id="services" className={`${theme.background.backgroundColorSecondary}`}>
             <div className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
                 <TitleCover title={serviceData.title} titleColor={theme.typography.firstFontColor}></TitleCover>
                 <div className="container xl:max-w-6xl mx-auto px-4">

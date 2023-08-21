@@ -30,20 +30,14 @@ const DetailsPage = () => {
     ];
 
     return (
-        <div className={`bg-${theme.background.backgroundColor} min-h-screen flex items-center justify-center`}>
-            <div className="w-full max-w-xl p-6">
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img
-                        className="w-full h-48 object-cover"
-                        src={article.imageUrl}
-                        alt="Article"
-                    />
-                    <div className="px-6 py-4">
-                        <h1 className="text-3xl font-semibold mb-2">{article.title}</h1>
-                        <p className="text-gray-600 mb-4">Posted on {article.date} by {article.author.name}</p>
-                        <p className="text-gray-700 leading-relaxed">{article.content}</p>
-                    </div>
-                    <div className="bg-gray-100 px-6 py-4">
+        <div className={`${theme.background.backgroundColorSecondary} container mx-auto px-4 py-8` }>
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="px-6 py-4">
+                    <h1 className="text-2xl font-bold mb-4">Page Title</h1>
+                    <p className="text-gray-700 leading-relaxed mb-6">
+                        Page content goes here.
+                    </p>
+                    <div className="flex items-center justify-between">
                         <div className="flex items-center">
                             <img
                                 className="w-12 h-12 rounded-full mr-4"

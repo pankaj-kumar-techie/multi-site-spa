@@ -11,7 +11,9 @@ export interface Theme {
         secondFontColor?: string;
     };
     background: {
-        backgroundColor?: string;
+        backgroundColorPrimary?: string;
+        backgroundColorSecondary?: string;
+        backgroundColorDark?: string;
         backgroundImage?: string;
         backgroundAttachment?: string;
         backgroundPosition?: string;
