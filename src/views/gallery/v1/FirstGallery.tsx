@@ -4,8 +4,9 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
-//Todo : Added LightBox make gallery more flexible
 function FirstGallery(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
     const [galleryData, setGalleryData] = useState<any>({
@@ -13,6 +14,9 @@ function FirstGallery(props: { data: any }) {
         description: "",
         images: [],
     });
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
     useEffect(() => {
         setGalleryData(props.data);
     }, [props.data]);
@@ -35,12 +39,49 @@ function FirstGallery(props: { data: any }) {
                 />
                 <div className="md:mt-20 mt-5">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                        {galleryData.images.map((image: Image) => (
-                            <GalleryCard id={image.id} imageSrc={image.imageSrc} imageAlt={image.imageAlt}></GalleryCard>
+                        {galleryData.images.map((image: Image, index: number) => (
+                            <div
+                                key={image.id}
+                                onClick={() => {
+                                    setCurrentImageIndex(index);
+                                    setLightboxOpen(true);
+                                }}
+                            >
+                                <GalleryCard
+                                    id={image.id}
+                                    imageSrc={image.imageSrc}
+                                    imageAlt={image.imageAlt}
+                                />
+                            </div>
                         ))}
                     </div>
                 </div>
             </div>
+            {lightboxOpen && (
+                <Lightbox
+                    mainSrc={galleryData.images[currentImageIndex].imageSrc}
+                    onCloseRequest={() => setLightboxOpen(false)}
+                    prevSrc={
+                        galleryData.images[
+                            (currentImageIndex + galleryData.images.length - 1) % galleryData.images.length
+                        ].imageSrc
+                    }
+                    nextSrc={
+                        galleryData.images[(currentImageIndex + 1) % galleryData.images.length].imageSrc
+                    }
+                    onMovePrevRequest={() =>
+                        setCurrentImageIndex(
+                            (currentImageIndex + galleryData.images.length - 1) %
+                                galleryData.images.length
+                        )
+                    }
+                    onMoveNextRequest={() =>
+                        setCurrentImageIndex(
+                            (currentImageIndex + 1) % galleryData.images.length
+                        )
+                    }
+                />
+            )}
         </section>
     );
 }

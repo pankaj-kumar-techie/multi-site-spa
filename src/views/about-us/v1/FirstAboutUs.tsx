@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import FloatingButton from "../../../components/common/button/FloatingButton";
 
 interface FirstAboutUsProps {
     data: any;
@@ -30,6 +31,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                             className="rounded-xl"
                         />
                     </div>
+                    <FloatingButton></FloatingButton>
                     <div className="sm:w-1/2 sm:pl-16">
                         <TitleCover
                             title={aboutData.title}
