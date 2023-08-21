@@ -18,7 +18,7 @@ export default function SecondTestimonial(props: { data: any }) {
     }
 
     return (
-        <section className={`${theme.background.backgroundColor} py-20`}>
+        <section className={`${theme.background.backgroundColorSecondary} py-20`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover title={testimonialData.title} titleColor={theme.typography.firstFontColor} subtitle={testimonialData.subTitle}></TitleCover>
                 <div className="mt-20">

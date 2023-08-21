@@ -22,7 +22,7 @@ function FirstGallery(props: { data: any }) {
     }
 
     return (
-        <section className={`${theme.background.backgroundColor} md:py-16 py-10`}>
+        <section className={`${theme.background.backgroundColorPrimary} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}

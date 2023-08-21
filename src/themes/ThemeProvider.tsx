@@ -42,7 +42,9 @@ const getTypographyClasses = (theme: Theme) => {
 const getBackgroundClasses = (theme: Theme) => {
   const { background } = theme;
   const {
-    backgroundColor,
+    backgroundColorPrimary,
+    backgroundColorSecondary,
+    backgroundColorDark,
     backgroundImage,
     backgroundAttachment,
     backgroundPosition,
@@ -50,7 +52,7 @@ const getBackgroundClasses = (theme: Theme) => {
     backgroundClip,
     backgroundSize,
   } = background;
-  return `${backgroundColor || ''} ${backgroundImage || ''} ${backgroundAttachment || ''} ${backgroundPosition || ''} ${backgroundRepeat || ''} ${backgroundClip || ''} ${backgroundSize || ''}`;
+  return `${backgroundColorSecondary || backgroundColorPrimary || backgroundColorDark }   ${backgroundImage || ''} ${backgroundAttachment || ''} ${backgroundPosition || ''} ${backgroundRepeat || ''} ${backgroundClip || ''} ${backgroundSize || ''}`;
 };
 
 export default ThemeProvider;

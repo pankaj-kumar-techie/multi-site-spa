@@ -14,7 +14,7 @@ export default function FirstFooter(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.backgroundColor}`}>
+        <section className={`${theme.background.backgroundColorDark}`}>
             <div className={`theme.typography.firstFontColor`  }>
                 <div
                     className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4 ">

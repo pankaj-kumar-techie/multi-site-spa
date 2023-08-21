@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ThemeContext } from "../../../../themes/ThemeProvider";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { GrMail } from "react-icons/gr";
+import { FaPhone } from "react-icons/fa";
 
 export default function FirstHeader(props: { data: any }) {
   const isMobile = window.innerWidth <= 767;
@@ -49,7 +50,7 @@ export default function FirstHeader(props: { data: any }) {
         <div className="max-w-[767px] m-auto text-center p-4 text-white">
           <div className="flex justify-between items-center">
             <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
-              <BsFillTelephoneFill className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
+              <FaPhone className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
               {headerData.contactUs.phone}
             </Link>
             <Link className="flex items-center" to="/#gallery">

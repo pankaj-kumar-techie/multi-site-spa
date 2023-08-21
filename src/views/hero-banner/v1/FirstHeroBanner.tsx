@@ -21,7 +21,7 @@ export default function FirstHeroBanner(props: { data: any }) {
   }
 
   return (
-    <section className={`${theme.background.backgroundColor} bg-cover bg-no-repeat min-h-screen flex flex-col justify-center`}
+    <section className={`${theme.background.backgroundColorPrimary} bg-cover bg-no-repeat min-h-screen flex flex-col justify-center`}
       style={{ backgroundImage: `url(${props?.data?.images?.[0]?.imageSrc || "https://images.unsplash.com/photo-1688413708929-8b2d281803df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"})` }}
     >
       <div className="py-12 flex flex-col  justify-center items-center">
