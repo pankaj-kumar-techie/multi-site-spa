@@ -14,7 +14,8 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-slate-800'
+            backgroundColorPrimary: 'bg-slate-800',
+            backgroundColorSecondary: 'bg-slate-800'
         },
         buttons: {
             primary: 'bg-primary text-white hover:bg-primary-dark',
@@ -25,7 +26,7 @@ export const themes: { [key: string]: Theme } = {
         name: 'Classic',
         colors: {
             primary: 'bg-custom-blue',
-            secondary: 'bg-indigo-700',
+            secondary: 'custom-beige',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -34,8 +35,10 @@ export const themes: { [key: string]: Theme } = {
             firstFontColor: 'text-black-200',
             secondFontColor: 'text-white',
         },
-        background: {
-            backgroundColor: 'bg-gray-200',
+        background: {   
+            backgroundColorPrimary: 'bg-custom-blue',
+            backgroundColorSecondary: 'custom-beige',
+            backgroundColorDark: 'custom-black',
         },
         buttons: {
             primary: 'bg-red-500 text-white hover:bg-red-600',
@@ -54,7 +57,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-amber-300',
+            backgroundColorPrimary: 'bg-amber-300',
             backgroundImage: 'url("your-image-url")',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
@@ -78,7 +81,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-teal-200',
+            backgroundColorPrimary: 'bg-teal-200',
             backgroundImage: 'url("your-image-url")',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
@@ -101,7 +104,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-black-300',
+            backgroundColorPrimary: 'bg-black-300',
         },
         buttons: {
             primary: 'bg-indigo-700 text-white hover:bg-indigo-800',
@@ -119,7 +122,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColor: 'bg-stone-200',
+            backgroundColorPrimary: 'bg-stone-200',
         },
         buttons: {
             primary: 'bg-gray-400 text-black hover:bg-gray-500',

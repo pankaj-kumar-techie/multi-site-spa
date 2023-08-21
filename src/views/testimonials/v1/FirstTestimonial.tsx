@@ -25,7 +25,7 @@ export default function FirstTestimonial(props: { data: any }) {
     }
 
     return (
-        <section className={`${theme.background.backgroundColor} text-center`}>
+        <section className={`${theme.background.backgroundColorSecondary} text-center`}>
             <div className="container  pb-12 md:pt-16  pt-5 mx-auto md:px-6">
                 <TitleCover title={testimonialData.title} titleColor={theme.typography.firstFontColor} subtitle={""} paragraph={""}></TitleCover>
                 <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
