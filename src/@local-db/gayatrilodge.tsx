@@ -291,7 +291,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "Blog",
             id: "k",
-            title: "Hero Banner!",
+            title: "Our Blog Posts!",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -431,7 +431,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "FAQ",
             id: "k",
-            title: "Hero Banner!",
+            title: "FAQ",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
