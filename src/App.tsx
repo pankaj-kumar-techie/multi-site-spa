@@ -76,8 +76,8 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         break;
                     default:
-                        setSectionData(pahariyatri);
-                        setTheme(pahariyatriTheme);
+                        setSectionData(northVibeDesign);
+                        setTheme(northVibeDesignTheme);
                         setSeo(techiepahariyatriseo);
                         break;
                 }
