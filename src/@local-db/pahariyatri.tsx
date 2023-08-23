@@ -311,9 +311,9 @@ export const pahariyatri: Section[] = [
         data: {
             type: "OurTeam",
             id: "k",
-            title: "Our Team",
+            title: "Meet our leadership",
             subTitle: "Hero Banner Sub Title is here",
-            description: "We are provided following services to our customers",
+            description: "Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.",
             version: "v1",
             style: "CLASSIC",
             blogs: null,
@@ -324,7 +324,8 @@ export const pahariyatri: Section[] = [
             ourTeam: [
                 {
                     id: 1,
-                    name: 'Desk and Office',
+                    name: 'Leslie Alexander',
+                    role: 'Co-Founder / CEO',
                     description: 'Work from home accessories',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
@@ -332,7 +333,8 @@ export const pahariyatri: Section[] = [
                 },
                 {
                     id: 2,
-                    name: 'Self-Improvement',
+                    name: 'Alex',
+                    role: 'Co-Founder / CEO',
                     description: 'Journals and note-taking',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
                     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -341,6 +343,7 @@ export const pahariyatri: Section[] = [
                 {
                     id: 3,
                     name: 'Self-Improvement',
+                    role: 'Co-Founder / CEO',
                     description: 'Journals and note-taking',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
                     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -349,6 +352,7 @@ export const pahariyatri: Section[] = [
                 {
                     id: 4,
                     name: 'Self-Improvement',
+                    role: 'HR',
                     description: 'Journals and note-taking',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
                     imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
@@ -357,6 +361,7 @@ export const pahariyatri: Section[] = [
                 {
                     id: 5,
                     name: 'Travel',
+                    role: 'BA',
                     description: 'Daily commute essentials',
                     imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
                     imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',

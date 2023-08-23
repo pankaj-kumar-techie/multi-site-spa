@@ -45,6 +45,7 @@ export type Service = {
 export type OurTeam = {
   id: number,
   name: string,
+  role?: string,
   description: string,
   imageSrc: string,
   imageAlt: string,
