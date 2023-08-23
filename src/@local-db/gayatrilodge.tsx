@@ -291,7 +291,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "Blog",
             id: "k",
-            title: "Hero Banner!",
+            title: "Our Blog Posts!",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -431,7 +431,7 @@ export const gayatrilodge: Section[] = [
         data: {
             type: "FAQ",
             id: "k",
-            title: "Hero Banner!",
+            title: "FAQ",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -526,9 +526,9 @@ export const gayatrilodge: Section[] = [
 ];
 
 export const gayatrilodgeSeo: any = {
-    title: "Gayatri Lodge - Your Tranquil Haven in Kasauli | Homestay",
+    title: "Gayatri Lodge Hotel - Your Tranquil Haven in Kasauli | Homestay",
     description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",
-    keywords: "Gayatri Lodge, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",
+    keywords: "Gayatri Lodge, Gayatri Lodge Hotel, Hotel, Kasauli, homestay, luxurious rooms, stunning views, personalized hospitality, tranquil stay",
     author: "Your Name",
     imageUrl: "https://example.com/og-image.jpg",
     siteUrl: "https://www.gayatrilodgekasauli.com",
