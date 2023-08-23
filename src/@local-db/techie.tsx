@@ -256,7 +256,7 @@ export const techie: Section[] = [
             contactUs: {
                 address: "Village Khurahal, Tehsil Sundar Nagar, Himachal Pradesh 174403",
                 email: "pankajkumar.techie@gmail.com",
-                phone: "+91-9569576707",
+                phone: "9569576707",
             },
         },
     },
