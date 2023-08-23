@@ -400,7 +400,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "Village",
         email: "northvibedesings@gmail.com",
-        phone: "9805058367",
+        phone: "+91 9805058367",
       },
       testimonials: null,
     },
