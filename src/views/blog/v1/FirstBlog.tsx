@@ -32,7 +32,7 @@ export default function FirstBlog(props: { data: any }) {
     return <SectionShimmer title={blogList.title}></SectionShimmer>;
   }
   return (
-    <section className={theme.background.backgroundColorSecondary}>
+    <section className={theme.background.backgroundColorPrimary}>
       <div className="container mx-auto px-4 py-12">
         <TitleCover title={blogList.title} subtitle={blogList.subTitle} titleColor={theme.typography.firstFontColor}
           subtitleColor={theme.typography.firstFontColor} />
