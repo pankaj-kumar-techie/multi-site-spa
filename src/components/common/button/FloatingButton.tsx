@@ -1,7 +1,13 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 
-const FloatingButton: React.FC = (phoneNumber) => {
+// Define the type for the props
+interface FloatingButtonProps {
+    phoneNumber: string;
+}
+
+// Use the defined props type
+const FloatingButton: React.FC<FloatingButtonProps> = ({ phoneNumber }) => {
     const openWhatsApp = () => {
         const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
         window.open(whatsappUrl, '_blank');
