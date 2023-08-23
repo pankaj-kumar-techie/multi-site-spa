@@ -418,7 +418,7 @@ export const gayatrilodge: Section[] = [
             contactUs: {
                 address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
                 email: "gayatrilodgekasauli@gmail.com",
-                phone: "+91-9857315551",
+                phone: "9857315551",
             },
         },
     },
