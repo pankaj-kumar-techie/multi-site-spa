@@ -1,7 +1,7 @@
 import { Section } from "../modal/Section";
 
 export const gayatrilodgeTheme: any = {
-    name: "classic"
+    name: "vibrant"
 }
 export const gayatrilodge: Section[] = [
     {
@@ -224,8 +224,8 @@ export const gayatrilodge: Section[] = [
             type: "Service",
             id: "k",
             title: "Our Services",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
+            subTitle: "",
+            description: "",
             version: "v1",
             style: "CLASSIC",
             blogs: null,
@@ -304,34 +304,48 @@ export const gayatrilodge: Section[] = [
             blogs: [
                 {
                     id: "1",
-                    title: "Blog Post 1",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Tranquil Stays: Gayatri Lodge, Kasauli",
+                    description: "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
                     descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-                    imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageSrc: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: "2",
-                    title: "Blog Post 2",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Luxury Unveiled: Gayatri Lodge Hotel",
+                    description: "Experience unparalleled luxury at Gayatri Lodge Hotel, where opulence meets elegance. Indulge in lavish accommodations, impeccable services, and breathtaking views.",
                     descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
                     imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: "3",
-                    title: "Blog Post 3",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Heartfelt Welcome: Gayatri Lodge Homestay",
+                    description: "At Gayatri Lodge, we extend heartfelt welcomes and make you feel like family. Discover the warmth of personalized hospitality that turns your stay into cherished memories.",
                     descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
                     imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: "4",
-                    title: "Blog Post 3",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    title: "Embrace Warmth: Personalized Hospitality at Gayatri Lodge",
+                    description: "At Gayatri Lodge, we extend heartfelt welcomes and make you feel like family. Discover the warmth of personalized hospitality that turns your stay into cherished memories.",
                     descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
                     imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                }, {
+                    id: "5",
+                    title: "Stunning Views: Gayatri Lodge's Vistas",
+                    description: "Immerse yourself in breathtaking vistas that surround Gayatri Lodge, offering nature's beauty at its finest.",
+                    descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
+                    imageSrc: "https://images.unsplash.com/photo-1591088398332-8a7791972843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                }, {
+                    id: "6",
+                    title: "A Culinary Journey: Flavors of Kasauli at Gayatri Lodge",
+                    description: " Delight your taste buds with a gastronomic experience like no other at Gayatri Lodge. Savor local delicacies and international cuisines that tantalize the palate.",
+                    descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
+                    imageSrc: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
             ],
@@ -383,6 +397,14 @@ export const gayatrilodge: Section[] = [
                 },
                 {
                     id: "3",
+                    name: "John Doe",
+                    designation: "John Doe",
+                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+                    imageAlt: "John Doe",
+                    testimonial:
+                        "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
+                },{
+                    id: "4",
                     name: "John Doe",
                     designation: "John Doe",
                     imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
@@ -472,30 +494,6 @@ export const gayatrilodge: Section[] = [
                 },
                 // Add more FAQs as needed
             ],
-        },
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Terms And Conditions",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "TermsAndConditions",
-            id: "k",
-            title: "Terms and Conditions",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v1",
-            style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            contactUs: null,
-            termAndCondition: null
         },
     },
     {

@@ -1,7 +1,7 @@
 import { Section } from "../modal/Section";
 
 export const northVibeDesignTheme: any = {
-  name: "classic"
+  name: "minimalist"
 }
 
 export const northVibeDesign: Section[] = [
