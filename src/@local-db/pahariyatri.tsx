@@ -383,7 +383,7 @@ export const pahariyatri: Section[] = [
         data: {
             type: "Blog",
             id: "k",
-            title: "Hero Banner!",
+            title: "Our Recent Blogs",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
