@@ -403,7 +403,7 @@ export const gayatrilodge: Section[] = [
                     imageAlt: "John Doe",
                     testimonial:
                         "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
-                },{
+                }, {
                     id: "4",
                     name: "John Doe",
                     designation: "John Doe",
@@ -418,7 +418,7 @@ export const gayatrilodge: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "ContactUs",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -441,6 +441,12 @@ export const gayatrilodge: Section[] = [
                 address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
                 email: "gayatrilodgekasauli@gmail.com",
                 phone: "9857315551",
+                formFields: [
+                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                    { name: 'email', label: 'Email', type: 'text', required: true },
+                    { name: 'message', label: 'Masssege', type: 'text', required: false },
+                ]
             },
         },
     },

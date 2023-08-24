@@ -1,3 +1,5 @@
+import { FieldConfig } from "./FieldConfig";
+
 export interface Section {
   id: string;
   name: string;
@@ -97,6 +99,7 @@ export type ContactUs = {
   address: string,
   email: string,
   phone: string,
+  formFields?: FieldConfig[];
 
 }
 
