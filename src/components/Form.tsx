@@ -92,7 +92,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                     )}
                 </label>
             ))}
-            <button className='bg-blue-500 text-white p-4 rounded-full shadow-md hover:bg-blue-600' type="submit">Call me Back</button>
+            <button className='bg-blue-500 text-white p-4 rounded-full shadow-md hover:bg-blue-600' type="submit">Request A Call Back</button>
         </form>
     );
 }

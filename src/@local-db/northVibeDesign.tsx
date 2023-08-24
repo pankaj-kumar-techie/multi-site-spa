@@ -103,8 +103,8 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "Portfolio",
       id: "k",
-      title: "Our Recent Work",
-      subTitle: "Hero Banner Sub Title is here",
+      title: "Projects Delivered",
+      subTitle: "Our Recent Work is here",
       description: "Hero Banner Paragraph is here",
       version: "v1",
       style: "CLASSIC",
@@ -393,7 +393,7 @@ export const northVibeDesign: Section[] = [
       images: null,
       faqs: null,
       contactUs: {
-        address: "Village",
+        address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
         phone: "+91 9805058367",
         formFields: [
@@ -405,10 +405,10 @@ export const northVibeDesign: Section[] = [
             type: 'select',
             required: true,
             options: [
-              { label: '200sqft to 1000sqft', value: '1000' },
-              { label: '1000sqft to 3000sqft', value: '2000' },
-              { label: '3000sqft to 5000sqft', value: '4000' },
-              { label: '5000sqft plus', value: '5000' },
+              { label: '200 - 1000 square feet', value: '1000' },
+              { label: '1000 - 3000 square feet', value: '2000' },
+              { label: '3000 - 5000 square feet', value: '4000' },
+              { label: '5000 - 5000+ square feet', value: '5000' },
             ],
           },
           {
@@ -419,6 +419,10 @@ export const northVibeDesign: Section[] = [
             options: [
               { label: 'ACP & HPL Installation', value: 'acp_installation' },
               { label: 'Wooden Flooring', value: 'wooden_flooring' },
+              { label: 'Glass Solutions', value: 'glass_solutions' },
+              { label: 'Ceiling Designs', value: 'ceiling_design' },
+              { label: 'Roof Solutions', value: 'roof_solution' },
+              { label: 'Others', value: 'others' },
               // Add more options as needed
             ],
           },
