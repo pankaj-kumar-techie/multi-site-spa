@@ -423,7 +423,6 @@ export const northVibeDesign: Section[] = [
               { label: 'Ceiling Designs', value: 'ceiling_design' },
               { label: 'Roof Solutions', value: 'roof_solution' },
               { label: 'Others', value: 'others' },
-              // Add more options as needed
             ],
           },
         ]

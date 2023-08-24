@@ -5,8 +5,7 @@ import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 import FloatingButton from '../../../components/common/button/FloatingButton';
 import ContactUs from '../ContactUs';
 import Form from '../../../components/Form';
-import { FieldConfig } from '../../../modal/FieldConfig';
-import { FaAddressCard, FaMobile, FaVoicemail } from 'react-icons/fa';
+import { FaMobile } from 'react-icons/fa';
 import { GrLocation, GrMail } from 'react-icons/gr';
 
 function FirstContactUs(props: { data: any }) {
@@ -30,33 +29,6 @@ function FirstContactUs(props: { data: any }) {
         setStatus('success');
     };
 
-    const formFields: FieldConfig[] = [
-        { name: 'name', label: 'Name', type: 'text', required: true },
-        { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
-        { name: 'email', label: 'Email', type: 'text', required: true },
-        {
-            name: 'contactMethod',
-            label: 'Preferred Contact Method',
-            type: 'radio',
-            required: true,
-            options: [
-                { label: 'Phone', value: 'phone' },
-                { label: 'Email', value: 'email' },
-            ],
-        },
-        {
-            name: 'servicesInterested',
-            label: 'Services Interested In',
-            type: 'select',
-            required: true,
-            options: [
-                { label: 'ACP & HPL Installation', value: 'acp_installation' },
-                { label: 'Wooden Flooring', value: 'wooden_flooring' },
-                // Add more options as needed
-            ],
-        },
-        // Define more fields as needed
-    ];
     return (
         <section className={`${theme.background.backgroundColorSecondary} md:py-16 py-8`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

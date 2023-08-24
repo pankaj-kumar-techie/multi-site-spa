@@ -361,6 +361,38 @@ export const pahariyatri: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "ContactUs",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "ContactUs",
+            id: "k",
+            title: "Get In Touch",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v2",
+            style: "CLASSIC",
+            services: null,
+            products: null,
+            portfolios: null,
+            blogs: null,
+            images: null,
+            faqs: null,
+            contactUs: {
+                address: "Himachal Pradesh",
+                email: "pahariyatri@gmail.com",
+                phone: "+91 9569576707",
+                formFields: [
+                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                ]
+            },
+            testimonials: null,
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
         version: "v1",
         style: "CLASSIC",
