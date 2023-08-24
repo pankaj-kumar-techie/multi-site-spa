@@ -78,7 +78,7 @@ export default function App() {
                     default:
                         setSectionData(northVibeDesign);
                         setTheme(northVibeDesignTheme);
-                        setSeo(techiepahariyatriseo);
+                        setSeo(northVibeDesignSeo);
                         break;
                 }
 
