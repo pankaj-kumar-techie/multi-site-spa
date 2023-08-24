@@ -1,6 +1,6 @@
-import React, { useContext, useEffect, useState } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, } from "react-icons/fa";
-import { TiSocialPinterest } from "react-icons/ti"
+import { useContext, useEffect, useState } from "react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { TiSocialPinterest } from "react-icons/ti";
 import { ThemeContext } from "../../../../themes/ThemeProvider";
 
 export default function FirstFooter(props: { data: any }) {
@@ -95,7 +95,7 @@ export default function FirstFooter(props: { data: any }) {
                         <FaLinkedin className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
                         <TiSocialPinterest className="cursor-pointer  hover:text-white hover:ease-in-out duration-300"
                             size={30} />
-                        <FaWhatsapp></FaWhatsapp>
+                        
                     </div>
                 </div>
             </div>
