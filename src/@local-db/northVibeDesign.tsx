@@ -154,7 +154,7 @@ export const northVibeDesign: Section[] = [
         },
         // Add more portfolio items here
       ],
-      
+
       services: null,
       products: null,
       images: null,
@@ -417,22 +417,11 @@ export const northVibeDesign: Section[] = [
             type: 'select',
             required: true,
             options: [
-                { label: 'ACP & HPL Installation', value: 'acp_installation' },
-                { label: 'Wooden Flooring', value: 'wooden_flooring' },
-                // Add more options as needed
+              { label: 'ACP & HPL Installation', value: 'acp_installation' },
+              { label: 'Wooden Flooring', value: 'wooden_flooring' },
+              // Add more options as needed
             ],
-        },
-        {
-            name: 'locations',
-            label: 'Locations',
-            type: 'select',
-            required: true,
-            options: [
-                { label: 'Himachal Pradesh', value: 'acp_installation' },
-                { label: 'Ladakh', value: 'wooden_flooring' },
-                // Add more options as needed
-            ],
-        },
+          },
         ]
       },
       testimonials: null,
