@@ -396,6 +396,44 @@ export const northVibeDesign: Section[] = [
         address: "Village",
         email: "northvibedesings@gmail.com",
         phone: "+91 9805058367",
+        formFields: [
+          { name: 'name', label: 'Name', type: 'text', required: true },
+          { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+          {
+            name: 'area',
+            label: 'Area in sqft',
+            type: 'select',
+            required: true,
+            options: [
+              { label: '200sqft to 1000sqft', value: '1000' },
+              { label: '1000sqft to 3000sqft', value: '2000' },
+              { label: '3000sqft to 5000sqft', value: '4000' },
+              { label: '5000sqft plus', value: '5000' },
+            ],
+          },
+          {
+            name: 'servicesInterested',
+            label: 'Services Interested In',
+            type: 'select',
+            required: true,
+            options: [
+                { label: 'ACP & HPL Installation', value: 'acp_installation' },
+                { label: 'Wooden Flooring', value: 'wooden_flooring' },
+                // Add more options as needed
+            ],
+        },
+        {
+            name: 'locations',
+            label: 'Locations',
+            type: 'select',
+            required: true,
+            options: [
+                { label: 'Himachal Pradesh', value: 'acp_installation' },
+                { label: 'Ladakh', value: 'wooden_flooring' },
+                // Add more options as needed
+            ],
+        },
+        ]
       },
       testimonials: null,
     },
