@@ -56,7 +56,7 @@ export class Renderer {
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,
         };
 
-        // const type: any = section.data.type;
+        const type: any = "FloatingButton";
         return pluginComponents[type] || null;
     }
 }
