@@ -82,10 +82,10 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         break;
                     default:
-                        setSectionData(gayatrilodge);
+                        setSectionData(northVibeDesign);
                         setPlugin(northVibeDesignPlugin)
-                        setTheme(pahariyatriTheme);
-                        setSeo(pahariyatriseo);
+                        setTheme(northVibeDesignTheme);
+                        setSeo(northVibeDesignSeo);
                         break;
                 }
 
