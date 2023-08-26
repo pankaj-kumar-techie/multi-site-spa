@@ -1,12 +1,11 @@
 import { useContext, useEffect, useState } from 'react';
-import TitleCover from "../../../components/common/title-cover/TitleCover";
-import { ThemeContext } from "../../../themes/ThemeProvider";
-import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
-import FloatingButton from '../../../components/common/button/FloatingButton';
-import ContactUs from '../ContactUs';
-import Form from '../../../components/Form';
 import { FaMobile } from 'react-icons/fa';
 import { GrLocation, GrMail } from 'react-icons/gr';
+import Form from '../../../components/Form';
+import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
+import TitleCover from "../../../components/common/title-cover/TitleCover";
+import { ThemeContext } from "../../../themes/ThemeProvider";
+import ContactUs from '../ContactUs';
 
 function FirstContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -60,7 +59,6 @@ function FirstContactUs(props: { data: any }) {
                     )}
                 </div>
             </div>
-            <FloatingButton phoneNumber={contactUsData.contactUs.phone}></FloatingButton>
         </section>
     );
 }

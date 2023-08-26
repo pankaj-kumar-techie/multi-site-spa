@@ -35,7 +35,7 @@ export const pahariyatri: Section[] = [
     },
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-        name: "Herobanner",
+        name: "Hero banner",
         version: "v1", // Add version property
         style: "CLASSIC", // Add style property
         path: "index",
@@ -53,6 +53,11 @@ export const pahariyatri: Section[] = [
                 {
                     id: '1',
                     imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '2',
+                    imageSrc: 'https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],

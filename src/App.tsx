@@ -10,8 +10,8 @@ import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahar
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo, blogTheme } from './@local-db/blog';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
-import { northVibeDesign, northVibeDesignSeo, northVibeDesignTheme} from './@local-db/northVibeDesign';
-import FloatingButton from './components/common/button/FloatingButton';
+import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
+import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
 // import { ClientService } from './service/ClientService';
 
 
@@ -20,6 +20,7 @@ export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
+    const [plugin, setPlugin] = useState<any>();
     // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
@@ -65,10 +66,15 @@ export default function App() {
                         setTheme(blogTheme);
                         setSectionData(blogpahariyatri);
                         break;
-                    case "dev.pahariyatri.com":
+                    case "northvibedesign.com":
                         setSeo(northVibeDesignSeo);
                         setTheme(northVibeDesignTheme);
                         setSectionData(northVibeDesign);
+                        break;
+                    case "loonds.pahariyatri.com":
+                        setSeo(loondsSeo);
+                        setTheme(loondsTheme);
+                        setSectionData(loonds);
                         break;
                     case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
@@ -76,7 +82,8 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         break;
                     default:
-                        setSectionData(pahariyatri);
+                        setSectionData(gayatrilodge);
+                        setPlugin(northVibeDesignPlugin)
                         setTheme(pahariyatriTheme);
                         setSeo(pahariyatriseo);
                         break;
@@ -117,8 +124,9 @@ export default function App() {
                     <ThemeProvider theme={theme.name ?? "default"}>
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
-                            )}
-                            
+                        )}
+                            Renderer.renderPlugin(theme, plugin);
+
                     </ThemeProvider>
                 </>
             ) : (
