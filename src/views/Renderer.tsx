@@ -50,13 +50,13 @@ export class Renderer {
 
     static renderPlugin(theme: Theme, plugin: any): JSX.Element | null {
         const pluginComponents: any = {
-            FloatingButton: <FloatingButton  />,
+            FloatingButton: <FloatingButton phoneNumber="9569576797" />,
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
             // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,
         };
 
-        const type: any = section.data.type;
+        // const type: any = section.data.type;
         return pluginComponents[type] || null;
     }
 }
