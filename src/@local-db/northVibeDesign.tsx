@@ -465,3 +465,7 @@ export const northVibeDesignSeo: any = {
   imageUrl: "https://example.com/og-image.jpg",
   siteUrl: "https://www.pahariyatri.com",
 };
+
+export const northVibeDesignPlugin: any = {
+  whatsApp : true
+}
