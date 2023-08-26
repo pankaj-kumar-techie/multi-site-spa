@@ -1,3 +1,4 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const northVibeDesignTheme: any = {
@@ -29,7 +30,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "",
         email: "northvibedesings@gmail.com",
-        phone: "9805058367",
+        phone: "9569576707",
       },
     },
   },
@@ -403,7 +404,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
-        phone: "+91 9805058367",
+        phone: "+91 9569576707",
         formFields: [
           { name: 'name', label: 'Name', type: 'text', required: true },
           { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
@@ -474,6 +475,10 @@ export const northVibeDesignSeo: any = {
   siteUrl: "https://www.pahariyatri.com",
 };
 
-export const northVibeDesignPlugin: any = {
-  whatsApp : true
-}
+export const northVibeDesignPlugin: PluginConfig[] = [
+  {
+    name: "whats app",
+    isActive: true,
+    data: "9569576707",
+  }
+]

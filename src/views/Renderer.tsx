@@ -1,6 +1,7 @@
 import FloatingButton from "../components/common/button/FloatingButton";
 import Footer from "../components/layouts/footer/Footer";
 import Header from "../components/layouts/header/Header";
+import { PluginConfig } from "../modal/PluginConfig";
 import { Theme } from "../modal/Theme";
 import AboutUs from "./about-us/AboutUs";
 import Blog from "./blog/Blog";
@@ -48,9 +49,10 @@ export class Renderer {
     }
 
 
-    static renderPlugin(theme: Theme, plugin: any): JSX.Element | null {
+    static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
+        console.log("Enter", plugin.data);
         const pluginComponents: any = {
-            FloatingButton: <FloatingButton phoneNumber="9569576797" />,
+            FloatingButton: <FloatingButton phoneNumber={plugin.data}/>,
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
             // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,

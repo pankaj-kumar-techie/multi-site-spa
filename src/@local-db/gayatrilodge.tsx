@@ -1,3 +1,4 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const gayatrilodgeTheme: any = {
@@ -537,3 +538,11 @@ export const gayatrilodgeSeo: any = {
     imageUrl: "https://example.com/og-image.jpg",
     siteUrl: "https://www.gayatrilodgekasauli.com",
 };
+
+export const gaytriLodgePlugin: PluginConfig[] = [
+    {
+        name: "whats app",
+        isActive: true,
+        data: "9857315551",
+    }
+]
