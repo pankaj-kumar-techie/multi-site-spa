@@ -7,11 +7,12 @@ import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { PageService } from './service/PageService';
 import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahariyatri';
-import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme } from './@local-db/gayatrilodge';
+import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { blogpahariyatri, blogpahariyatriseo, blogTheme } from './@local-db/blog';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
 import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
+import { PluginConfig } from './modal/PluginConfig';
 // import { ClientService } from './service/ClientService';
 
 
@@ -20,7 +21,7 @@ export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
-    const [plugin, setPlugin] = useState<any>();
+    const [plugins, setPlugins] = useState<any>();
     // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
@@ -70,6 +71,7 @@ export default function App() {
                         setSeo(northVibeDesignSeo);
                         setTheme(northVibeDesignTheme);
                         setSectionData(northVibeDesign);
+                        setPlugins(northVibeDesignPlugin)
                         break;
                     case "loonds.pahariyatri.com":
                         setSeo(loondsSeo);
@@ -80,10 +82,11 @@ export default function App() {
                         setSeo(gayatrilodgeSeo);
                         setTheme(gayatrilodgeTheme);
                         setSectionData(gayatrilodge);
+                        setPlugins(gaytriLodgePlugin)
                         break;
                     default:
                         setSectionData(northVibeDesign);
-                        setPlugin(northVibeDesignPlugin)
+                        setPlugins(northVibeDesignPlugin)
                         setTheme(northVibeDesignTheme);
                         setSeo(northVibeDesignSeo);
                         break;
@@ -122,10 +125,13 @@ export default function App() {
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={theme.name ?? "default"}>
+                        {plugins.map((plugin: PluginConfig) =>
+                            Renderer.renderPlugin(theme, plugin)
+                        )}
+
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                         )}
-                            Renderer.renderPlugin(theme, plugin);
 
                     </ThemeProvider>
                 </>

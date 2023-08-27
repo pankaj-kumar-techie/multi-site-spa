@@ -1,3 +1,4 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const northVibeDesignTheme: any = {
@@ -14,7 +15,7 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "Header",
       id: "001",
-      title: "North Vibe Design",
+      title: "NV Design",
       subTitle: "",
       description: "",
       version: "v1",
@@ -29,7 +30,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "",
         email: "northvibedesings@gmail.com",
-        phone: "9805058367",
+        phone: "9569576707",
       },
     },
   },
@@ -52,7 +53,7 @@ export const northVibeDesign: Section[] = [
       images: [
         {
           id: '1',
-          imageSrc: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          imageSrc: 'https://plus.unsplash.com/premium_photo-1663956108056-66e355e5de96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],
@@ -403,7 +404,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
-        phone: "+91 9805058367",
+        phone: "+91 9569576707",
         formFields: [
           { name: 'name', label: 'Name', type: 'text', required: true },
           { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
@@ -474,6 +475,10 @@ export const northVibeDesignSeo: any = {
   siteUrl: "https://www.pahariyatri.com",
 };
 
-export const northVibeDesignPlugin: any = {
-  whatsApp : true
-}
+export const northVibeDesignPlugin: PluginConfig[] = [
+  {
+    name: "whats app",
+    isActive: true,
+    data: "9569576707",
+  }
+]
