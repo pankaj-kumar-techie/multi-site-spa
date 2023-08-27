@@ -50,7 +50,6 @@ export class Renderer {
 
 
     static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
-        console.log("Enter", plugin.data);
         const pluginComponents: any = {
             FloatingButton: <FloatingButton phoneNumber={plugin.data}/>,
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
@@ -58,7 +57,7 @@ export class Renderer {
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,
         };
 
-        const type: any = "FloatingButton";
+        const type: any = plugin.name;
         return pluginComponents[type] || null;
     }
 }

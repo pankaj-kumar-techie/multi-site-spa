@@ -477,7 +477,7 @@ export const northVibeDesignSeo: any = {
 
 export const northVibeDesignPlugin: PluginConfig[] = [
   {
-    name: "whats app",
+    name: "FloatingButton",
     isActive: true,
     data: "9569576707",
   }

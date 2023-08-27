@@ -541,7 +541,7 @@ export const gayatrilodgeSeo: any = {
 
 export const gaytriLodgePlugin: PluginConfig[] = [
     {
-        name: "whats app",
+        name: "FloatingButton",
         isActive: true,
         data: "9857315551",
     }
