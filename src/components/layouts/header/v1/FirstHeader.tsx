@@ -1,23 +1,32 @@
 import React, { useContext, useEffect, useState } from "react";
+import { BsFillTelephoneFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../../../themes/ThemeProvider";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { GrMail } from "react-icons/gr";
-import { FaPhone } from "react-icons/fa";
 
-export default function FirstHeader(props: { data: any }) {
+interface HeaderImage {
+  imageSrc: string;
+  imageAlt: string;
+}
+
+interface HeaderData {
+  title: string;
+  images: HeaderImage[];
+  contactUs: {
+    phone: string;
+    email: string;
+  };
+}
+
+export default function FirstHeader(props: { data: HeaderData }) {
   const isMobile = window.innerWidth <= 767;
   const { theme } = useContext(ThemeContext);
-  const [headerData, setHeaderData] = useState<any>({
-    contactUs: { phone: "1234567890", email: "XXXXXXXXXXXXXXXX" }, // Default values
+  const [headerData, setHeaderData] = useState<HeaderData>({
+    title: "",
+    images: [],
+    contactUs: { phone: "1234567890", email: "XXXXXXXXXXXXXXXX" },
   });
-  const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
-
-  const handleNav = () => {
-    setNav(!nav);
-  };
 
   useEffect(() => {
     const changeColor = () => {
@@ -26,7 +35,7 @@ export default function FirstHeader(props: { data: any }) {
         setTextColor("black");
       } else {
         setColor("transparent");
-        setTextColor("#000000");
+        setTextColor("white"); // Change this to white for better contrast
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -46,54 +55,36 @@ export default function FirstHeader(props: { data: any }) {
       style={{ backgroundColor: color }}
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
-      {isMobile ? (
-        <div className="max-w-[767px] m-auto text-center p-4 text-black">
-          <div className="flex justify-between items-center">
-            <Link to="/">
-              <h1
-                style={{ color: textColor }}
-                className="font-bold text-2xl lg:text-3xl"
-              >
-                {headerData.title ?? "Site Name"}
-              </h1>
-            </Link>
-            <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
-              <BsFillTelephoneFill className="mr-2 text-[20px] rounded-full bg-sky-300 p-3 h-9 w-full" />
-              <span className="whitespace-nowrap font-semibold">Call Now</span>
-            </Link>
-            {/* <Link className="flex items-center" to="/#gallery">
-              <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
-              {headerData.contactUs.email}
-            </Link> */}
+      <div
+        className={`max-w-${isMobile ? "767" : "1240"
+          } m-auto ${isMobile ? "flex justify-between items-center" : "text-center"
+          } p-4 text-${isMobile ? "black" : "black"}`}
+      >
+        {/* Logo */}
+        <Link to="/" className="flex items-center">
+          {headerData.images && headerData.images.length > 0 ? (
+            <img
+              className={`w-${isMobile ? "14" : "20"} h-${isMobile ? "14" : "20"} object-contain rounded-full mr-2`}
+              src={headerData.images[0].imageSrc}
+              alt={headerData.images[0].imageAlt}
+            />
+          ) : (
+            <span style={{ color: textColor }} className="font-bold text-2xl lg:text-3xl">
+              {headerData.title || "Site Name"}
+            </span>
+          )}
+        </Link>
 
-          </div>
-        </div>
-      ) : (
-        <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-          <Link to="/">
-            <h1
-              style={{ color: textColor }}
-              className="font-bold text-2xl lg:text-3xl"
-            >
-              {headerData.title ?? "Site Name"}
-            </h1>
-          </Link>
-          <ul style={{ color: textColor }} className="hidden sm:flex">
-            <li className="pr-5 flex items-center">
-              <Link className="flex items-center" to={`tel:${headerData.contactUs.phone}`}>
-                <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-12 w-full" />
-                <span className="whitespace-nowrap font-semibold">Call Now</span>
-              </Link>
-            </li>
-            {/* <li className="p-0">
-              <Link className="flex items-center" to="/#gallery">
-                <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16" />{" "}
-                {headerData.contactUs.email}
-              </Link>
-            </li> */}
-          </ul>
-        </div>
-      )}
+        {/* Call Now Button */}
+        <Link
+          className={`flex items-center text-xs ml-${isMobile ? "auto" : "2"} ${isMobile ? "" : "hidden sm:flex"
+            }`}
+          to={`tel:${headerData.contactUs.phone}`}
+        >
+          <BsFillTelephoneFill className="ml-2 text-[20px] rounded-full bg-sky-300 p-3 h-9 w-10" />
+          <span className="whitespace-nowrap font-semibold">Call Now</span>
+        </Link>
+      </div>
     </div>
   );
 }
