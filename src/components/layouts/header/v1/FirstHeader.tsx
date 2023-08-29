@@ -49,23 +49,24 @@ export default function FirstHeader(props: { data: any }) {
       {isMobile ? (
         <div className="max-w-[767px] m-auto text-center p-4 text-black">
           <div className="flex justify-between items-center">
+            <Link to="/">
+              <h1
+                style={{ color: textColor }}
+                className="font-bold text-2xl lg:text-3xl"
+              >
+                {headerData.title ?? "Site Name"}
+              </h1>
+            </Link>
             <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
-            <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-12 w-full" />
-                <span className="whitespace-nowrap font-semibold">Call Now</span>
+              <BsFillTelephoneFill className="mr-2 text-[20px] rounded-full bg-sky-300 p-3 h-9 w-full" />
+              <span className="whitespace-nowrap font-semibold">Call Now</span>
             </Link>
             {/* <Link className="flex items-center" to="/#gallery">
               <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
               {headerData.contactUs.email}
             </Link> */}
+
           </div>
-          <Link to="/">
-            <h1
-              style={{ color: textColor }}
-              className="font-bold text-2xl lg:text-3xl"
-            >
-              {headerData.title ?? "Site Name"}
-            </h1>
-          </Link>
         </div>
       ) : (
         <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
