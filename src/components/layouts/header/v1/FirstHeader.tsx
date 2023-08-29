@@ -47,16 +47,16 @@ export default function FirstHeader(props: { data: any }) {
       className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       {isMobile ? (
-        <div className="max-w-[767px] m-auto text-center p-4 text-white">
+        <div className="max-w-[767px] m-auto text-center p-4 text-black">
           <div className="flex justify-between items-center">
             <Link className="flex items-center text-xs mr-2 " to={`tel:${headerData.contactUs.phone}`}>
-              <FaPhone className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
-              {headerData.contactUs.phone}
+            <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-12 w-full" />
+                <span className="whitespace-nowrap font-semibold">Call Now</span>
             </Link>
-            <Link className="flex items-center" to="/#gallery">
+            {/* <Link className="flex items-center" to="/#gallery">
               <GrMail className="mr-1 rounded-full bg-sky-300 p-2 h-8 w-8" />{" "}
               {headerData.contactUs.email}
-            </Link>
+            </Link> */}
           </div>
           <Link to="/">
             <h1
@@ -78,18 +78,18 @@ export default function FirstHeader(props: { data: any }) {
             </h1>
           </Link>
           <ul style={{ color: textColor }} className="hidden sm:flex">
-            <li className="pr-5">
+            <li className="pr-5 flex items-center">
               <Link className="flex items-center" to={`tel:${headerData.contactUs.phone}`}>
-                <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-16 w-full" />{" "}
-                {headerData.contactUs.phone}
+                <BsFillTelephoneFill className="mr-5 text-[20px] rounded-full bg-sky-300 p-4 h-12 w-full" />
+                <span className="whitespace-nowrap font-semibold">Call Now</span>
               </Link>
             </li>
-            <li className="p-0">
+            {/* <li className="p-0">
               <Link className="flex items-center" to="/#gallery">
                 <GrMail className="mr-5 rounded-full bg-sky-300 p-4 h-16 w-16" />{" "}
                 {headerData.contactUs.email}
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
       )}

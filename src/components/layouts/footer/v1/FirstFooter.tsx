@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TiSocialPinterest } from "react-icons/ti";
 import { ThemeContext } from "../../../../themes/ThemeProvider";
+import { Link } from "react-router-dom";
 
 export default function FirstFooter(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -15,7 +16,7 @@ export default function FirstFooter(props: { data: any }) {
 
     return (
         <section className={`${theme.background.backgroundColorDark}`}>
-            <div className={`theme.typography.firstFontColor`  }>
+            <div className={`theme.typography.firstFontColor`}>
                 <div
                     className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4 ">
                     <div>
@@ -90,12 +91,16 @@ export default function FirstFooter(props: { data: any }) {
                     <p className={`${theme.typography.firstFontColor} py-4 font-medium  hover:${theme.typography.firstFontColor} hover:ease-in-out font-jakarta duration-200 cursor-pointer`} >Made
                         With ❤️ by Loonds</p>
                     <div className="flex  justify-between sm:w-[300px] pt-4 text-2xl">
-                        <FaFacebook className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
-                        <FaInstagram className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
+                        <Link to={"https://www.instagram.com"}>
+                            <FaFacebook className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
+                        </Link>
+                        <Link to={"https://www.instagram.com/northvibedesign"}>
+                            <FaInstagram className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
+                        </Link>
                         <FaLinkedin className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
                         <TiSocialPinterest className="cursor-pointer  hover:text-white hover:ease-in-out duration-300"
                             size={30} />
-                        
+
                     </div>
                 </div>
             </div>
