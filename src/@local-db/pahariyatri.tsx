@@ -35,7 +35,7 @@ export const pahariyatri: Section[] = [
     },
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-        name: "Herobanner",
+        name: "Hero banner",
         version: "v1", // Add version property
         style: "CLASSIC", // Add style property
         path: "index",
@@ -53,6 +53,11 @@ export const pahariyatri: Section[] = [
                 {
                     id: '1',
                     imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '2',
+                    imageSrc: 'https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
@@ -304,73 +309,6 @@ export const pahariyatri: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Service",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "OurTeam",
-            id: "k",
-            title: "Our Team",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "We are provided following services to our customers",
-            version: "v1",
-            style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
-            services: null,
-            ourTeam: [
-                {
-                    id: 1,
-                    name: 'Desk and Office',
-                    description: 'Work from home accessories',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    href: '#',
-                },
-                {
-                    id: 2,
-                    name: 'Self-Improvement',
-                    description: 'Journals and note-taking',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-                    href: '#',
-                },
-                {
-                    id: 3,
-                    name: 'Self-Improvement',
-                    description: 'Journals and note-taking',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-                    href: '#',
-                },
-                {
-                    id: 4,
-                    name: 'Self-Improvement',
-                    description: 'Journals and note-taking',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
-                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
-                    href: '#',
-                },
-                {
-                    id: 5,
-                    name: 'Travel',
-                    description: 'Daily commute essentials',
-                    imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
-                    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-                    href: '#',
-                },
-            ],
-            products: null,
-            images: null,
-            testimonials: null,
-        },
-    },
-
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Blog",
         version: "v1",
         style: "CLASSIC",
@@ -378,7 +316,7 @@ export const pahariyatri: Section[] = [
         data: {
             type: "Blog",
             id: "k",
-            title: "Hero Banner!",
+            title: "Our Recent Blogs",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -426,7 +364,6 @@ export const pahariyatri: Section[] = [
             testimonials: null,
         },
     },
-
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "ContactUs",
@@ -436,23 +373,27 @@ export const pahariyatri: Section[] = [
         data: {
             type: "ContactUs",
             id: "k",
-            title: "Get in Touch",
-            subTitle: "Contact Us Sub Title is here",
+            title: "Get In Touch",
+            subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
             services: null,
             products: null,
-            images: null,
-            testimonials: null,
-            faqs: null,
             portfolios: null,
             blogs: null,
+            images: null,
+            faqs: null,
             contactUs: {
-                address: " Himachal Pradesh",
+                address: "Himachal Pradesh",
                 email: "pahariyatri@gmail.com",
-                phone: "9569576707",
+                phone: "+91 9569576707",
+                formFields: [
+                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                ]
             },
+            testimonials: null,
         },
     },
     {

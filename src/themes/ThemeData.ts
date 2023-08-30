@@ -120,6 +120,7 @@ export const themes: { [key: string]: Theme } = {
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
+            firstFontColor: 'text-black-200',
         },
         background: {
             backgroundColorPrimary: 'bg-stone-200',

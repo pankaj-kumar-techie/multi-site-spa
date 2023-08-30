@@ -1,17 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import { Section } from "./modal/Section";
+import { useEffect, useState } from 'react';
+import { blogTheme, blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
+import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
+import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
+import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
+import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahariyatri';
+import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
-import { Renderer } from "./views/Renderer";
+import { PluginConfig } from './modal/PluginConfig';
+import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
-import { PageService } from './service/PageService';
-import { pahariyatri, pahariyatriTheme, pahariyatriseo } from './@local-db/pahariyatri';
-import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme } from './@local-db/gayatrilodge';
-import { blogpahariyatri, blogpahariyatriseo, blogTheme } from './@local-db/blog';
-import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
-import { northVibeDesign, northVibeDesignSeo, northVibeDesignTheme} from './@local-db/northVibeDesign';
-import FloatingButton from './components/common/button/FloatingButton';
+import { Renderer } from "./views/Renderer";
 // import { ClientService } from './service/ClientService';
 
 
@@ -20,6 +20,7 @@ export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
     const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
+    const [plugins, setPlugins] = useState<any>();
     // const { theme } = useContext(ThemeContext);
     const [loading, setLoading] = useState<boolean>(false);
     const clientDomainName = window.location.hostname;
@@ -65,20 +66,28 @@ export default function App() {
                         setTheme(blogTheme);
                         setSectionData(blogpahariyatri);
                         break;
-                    case "dev.pahariyatri.com":
+                    case "northvibedesign.com":
                         setSeo(northVibeDesignSeo);
                         setTheme(northVibeDesignTheme);
                         setSectionData(northVibeDesign);
+                        setPlugins(northVibeDesignPlugin)
+                        break;
+                    case "loonds.pahariyatri.com":
+                        setSeo(loondsSeo);
+                        setTheme(loondsTheme);
+                        setSectionData(loonds);
                         break;
                     case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
                         setTheme(gayatrilodgeTheme);
                         setSectionData(gayatrilodge);
+                        setPlugins(gaytriLodgePlugin)
                         break;
                     default:
                         setSectionData(northVibeDesign);
-                        setTheme(pahariyatriTheme);
-                        setSeo(techiepahariyatriseo);
+                        setPlugins(northVibeDesignPlugin)
+                        setTheme(northVibeDesignTheme);
+                        setSeo(northVibeDesignSeo);
                         break;
                 }
 
@@ -115,10 +124,16 @@ export default function App() {
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={theme.name ?? "default"}>
+                        {plugins && plugins.length > 0 &&
+                            plugins.filter((plugin: PluginConfig) => plugin.isActive)
+                                .map((plugin: PluginConfig) =>
+                                    Renderer.renderPlugin(theme, plugin)
+                                )}
+
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
-                            )}
-                            
+                        )}
+
                     </ThemeProvider>
                 </>
             ) : (

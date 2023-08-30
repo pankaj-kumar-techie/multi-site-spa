@@ -1,28 +1,29 @@
+import FloatingButton from "../components/common/button/FloatingButton";
+import Footer from "../components/layouts/footer/Footer";
+import Header from "../components/layouts/header/Header";
+import { PluginConfig } from "../modal/PluginConfig";
+import { Theme } from "../modal/Theme";
 import AboutUs from "./about-us/AboutUs";
-import HeroBanner from "./hero-banner/HeroBanner";
+import Blog from "./blog/Blog";
+import ComingSoon from "./coming-soon/ComingSoon";
 import ContactUs from "./contact-us/ContactUs";
+import FAQAccordion from "./faq/FAQAccordion";
+import Gallery from "./gallery/Gallery";
+import HeroBanner from "./hero-banner/HeroBanner";
+import OurTeam from "./our-team/OurTeam";
+import PageNotFound from "./page-not-found/PageNotFound";
 import Portfolio from "./portfolio/Portfolio";
 import Product from "./product/Product";
 import Services from "./services/Services";
-import Timeline from "./timeline/Timeline";
-import PageNotFound from "./page-not-found/PageNotFound";
-import ComingSoon from "./coming-soon/ComingSoon";
-import Testimonials from "./testimonials/Testimonials";
-import Gallery from "./gallery/Gallery";
-import FAQAccordion from "./faq/FAQAccordion";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
-import Blog from "./blog/Blog";
-import Header from "../components/layouts/header/Header";
-import Footer from "../components/layouts/footer/Footer";
-import OurTeam from "./our-team/OurTeam";
-import { Theme } from "../modal/Theme";
+import Testimonials from "./testimonials/Testimonials";
+import Timeline from "./timeline/Timeline";
 
 export class Renderer {
 
     static componentRenderV1(theme: Theme, section: any): JSX.Element {
         console.log("Section Data With Version ", theme, section.version)
 
-        //Todo: Add Theme Versioning
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
             Footer: <Footer key={section.id} data={section['data']} version={section['version']}></Footer>,
@@ -45,6 +46,19 @@ export class Renderer {
         };
         const type: any = section.data.type;
         return components[type];
+    }
+
+
+    static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
+        const pluginComponents: any = {
+            FloatingButton: <FloatingButton phoneNumber={plugin.data}/>,
+            // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
+            // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
+            // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,
+        };
+
+        const type: any = plugin.name;
+        return pluginComponents[type] || null;
     }
 }
 

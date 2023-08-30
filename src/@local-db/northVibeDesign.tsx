@@ -1,7 +1,8 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const northVibeDesignTheme: any = {
-  name: "classic"
+  name: "minimalist"
 }
 
 export const northVibeDesign: Section[] = [
@@ -14,22 +15,28 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "Header",
       id: "001",
-      title: "North Vibe Design",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "To be the leading interior and exterior contracting company known for exceptional craftsmanship, creative designs, and customer satisfaction.",
+      title: "NV Design",
+      subTitle: "",
+      description: "",
       version: "v1",
       style: "MODERN",
       services: null,
       products: null,
       portfolios: null,
-      images: null,
+      images:  [
+        {
+          id: '1',
+          imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
+          imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+        },
+      ],
       blogs: null,
       testimonials: null,
       faqs: null,
       contactUs: {
-        address: "Village",
+        address: "",
         email: "northvibedesings@gmail.com",
-        phone: "9805058367",
+        phone: "9569576707",
       },
     },
   },
@@ -42,9 +49,9 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "HeroBanner",
       id: "002",
-      title: "North Vibe Design",
-      subTitle: "Contact us today, and let us make your dream space a reality",
-      description: "Contact us today, and let us make your dream space a reality",
+      title: "Transforming Spaces with North Vibe Design",
+      subTitle: "Your Dreams, Our Expertise",
+      description: "Contact us today to make your dream space a reality. Elevate your surroundings with innovative designs that harmonize aesthetics and functionality.",
       version: "v2",
       style: "CLASSIC",
       services: null,
@@ -52,7 +59,7 @@ export const northVibeDesign: Section[] = [
       images: [
         {
           id: '1',
-          imageSrc: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+          imageSrc: 'https://images.unsplash.com/photo-1509592149237-bc44977d96d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],
@@ -73,8 +80,8 @@ export const northVibeDesign: Section[] = [
       type: "AboutUs",
       id: "003",
       title: "About North Vibe Design",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "At North Vibe Design, we are dedicated to providing specialized expertise in ACP (Aluminium Composite Panel) installation, glass solutions, premium wooden flooring, and captivating ceiling designs. Our services cater to storefronts, outdoor patios, pools, gardens, office buildings, apartments, hotels, shops, supermarkets, and more. ",
+      subTitle: "Blending Culture with Elegance",
+      description: "At North Vibe Design, we are dedicated to providing specialized expertise in ACP (Aluminium Composite Panel) & HPL (High-Pressure Laminate) installation, glass solutions, premium wooden flooring, and captivating ceiling designs. Our services cater to storefronts, outdoor patios, pools, gardens, office buildings, apartments, hotels, shops, supermarkets, and more. ",
       version: "v1",
       style: "CLASSIC",
       services: null,
@@ -103,9 +110,9 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "Portfolio",
       id: "k",
-      title: "Our Recent Work",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "Hero Banner Paragraph is here",
+      title: "Projects Delivered",
+      subTitle: "Showcasing Our Work",
+      description: "Explore our portfolio of diverse projects, from hotel buildings to office spaces. Our designs prioritize comfort, aesthetics, and functionality, ensuring spaces that captivate.",
       version: "v1",
       style: "CLASSIC",
       blogs: null,
@@ -114,45 +121,55 @@ export const northVibeDesign: Section[] = [
       portfolios: [
         {
           id: 1,
-          name: 'Hotel Building. 4000/sqt',
+          name: 'Hotel Building in Manali, Himachal Pradesh (4000 sqft)',
           description: 'Our hotel building designs focus on guest comfort and satisfaction.',
-          imageSrc: 'https://images.unsplash.com/photo-1617836330596-d8c050a4cfd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1207&q=80',
+          imageSrc: 'https://i.pinimg.com/564x/db/e5/13/dbe5130fd9f7863ef1501448a7173d03.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
           href: '#',
         },
         {
           id: 2,
-          name: 'Shop Building',
-          description: ' Tailored retail space designs for various shop types.',
-          imageSrc: 'https://images.unsplash.com/photo-1617836330596-d8c050a4cfd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1207&q=80',
+          name: 'House Building in 34 Sector,Chandigarh (3200 sqft)',
+          description: 'Tailored retail space designs for various shop types.',
+          imageSrc: 'https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
           imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
           href: '#',
         },
         {
           id: 3,
-          name: 'Clothing Store',
-          description: 'Journals and note-taking',
-          imageSrc: 'https://images.unsplash.com/photo-1617836330596-d8c050a4cfd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1207&q=80',
+          name: 'Office Building in Hamirpur, Himachal Pradesh (2000 sqft)',
+          description: 'Functional office space designs for improved productivity.',
+          imageSrc: 'https://i.pinimg.com/564x/d3/09/8f/d3098f59685b9eeddc5368c91bf494b2.jpg',
           imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
           href: '#',
         },
         {
           id: 4,
-          name: 'Self-Improvement',
-          description: 'Journals and note-taking',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-02.jpg',
+          name: 'Hotel Building in Chandigarh (5000 + sqft)',
+          description: 'Creating comfortable and stylish homes with hotel-like amenities.',
+          imageSrc: 'https://i.pinimg.com/564x/2b/9f/ff/2b9fff540ba0762a5013ee3aa7183438.jpg',
           imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
           href: '#',
         },
         {
           id: 5,
-          name: 'Travel',
-          description: 'Daily commute essentials',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-03.jpg',
+          name: 'Shops Building in Shimla, Himachal Pradesh (2400 sqft)',
+          description: 'Designing spacious shops buildings.',
+          imageSrc: 'https://i.pinimg.com/564x/48/40/bb/4840bbfbe51c8b15b88ae0a58fc8afa4.jpg',
           imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
           href: '#',
         },
+        {
+          id: 6,
+          name: 'House Building in Ladakh (2000 sqft)',
+          description: 'Designing spacious and luxurious hotel buildings.',
+          imageSrc: 'https://i.pinimg.com/564x/2d/f7/67/2df767192da6ab8635569b6c1916e1ef.jpg',
+          imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+          href: '#',
+        },
+        // Add more portfolio items here
       ],
+
       services: null,
       products: null,
       images: null,
@@ -168,9 +185,9 @@ export const northVibeDesign: Section[] = [
     data: {
       type: "Gallery",
       id: "004",
-      title: "Our Gallery!",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "Hero Banner Paragraph is here",
+      title: "Our Gallery",
+      subTitle: "A Glimpse of Our Work",
+      description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
       version: "v1",
       style: "MODERN",
       services: null,
@@ -180,17 +197,17 @@ export const northVibeDesign: Section[] = [
       images: [
         {
           id: '1',
-          imageSrc: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+          imageSrc: 'https://i.pinimg.com/564x/0a/ab/48/0aab4885d7503dd87d3e0e1206ba5e15.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
         {
           id: '2',
-          imageSrc: 'https://images.unsplash.com/photo-1604014238170-4def1e4e6fcf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+          imageSrc: 'https://i.pinimg.com/564x/b8/f2/f4/b8f2f4cbfd7e93c7a41b693ced7c853e.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
         {
           id: '3',
-          imageSrc: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60',
+          imageSrc: 'https://i.pinimg.com/736x/46/8d/e7/468de704f9b10cbd1b6f8a61d3997086.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
         {
@@ -200,15 +217,15 @@ export const northVibeDesign: Section[] = [
         },
         {
           id: '6',
-          imageSrc: 'https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+          imageSrc: 'https://i.pinimg.com/564x/2f/93/ea/2f93eabc4dd56713aeeb622c2a610c41.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         }, {
           id: '7',
-          imageSrc: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80',
+          imageSrc: 'https://i.pinimg.com/564x/37/a2/ff/37a2ffc28a2a91fcf976b6fc7f61dcbb.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         }, {
           id: '8',
-          imageSrc: 'https://images.unsplash.com/photo-1508167290553-87a67eca5bf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJvb2Z8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60',
+          imageSrc: 'https://i.pinimg.com/564x/b2/57/05/b25705d40142307cd68a4928a8862e2f.jpg',
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         }, {
           id: '9',
@@ -231,8 +248,8 @@ export const northVibeDesign: Section[] = [
       type: "Service",
       id: "k",
       title: "Our Services",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "We are provided following services to our customers",
+      subTitle: "Elevate Your Spaces",
+      description: " Explore our comprehensive services that include ACP & HPL installation, wooden and ceramic flooring, glass solutions, ceiling designs, and roof solutions. Elevate your spaces with our innovative designs.",
       version: "v2",
       style: "CLASSIC",
       blogs: null,
@@ -242,45 +259,38 @@ export const northVibeDesign: Section[] = [
       services: [
         {
           id: 1,
-          title: 'ACP Installation',
-          body: 'Transform interiors and exteriors with durable and stylish Aluminum Composite Panels, adding a contemporary flair to buildings.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
-          imageAlt: 'parking icon',
+          title: '🏢 ACP & HPL Installation',
+          body: 'Modern Aluminum Composite Panel installations for interiors and exteriors. Combining style, durability, and weather resistance. High-Pressure Laminate installations, offering versatility and durability.',
+          imageSrc: '',
+          imageAlt: 'ACP & HPL icon',
         },
         {
           id: 2,
-          title: 'Wooden Flooring',
+          title: '🪵 Wooden and Ceramic Flooring',
           body: 'Add warmth and elegance with our premium wooden flooring options, tailored to your style and space.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon01.png',
-          imageAlt: 'parking icon',
+          imageSrc: '',
+          imageAlt: 'Wooden icon',
         },
         {
           id: 3,
-          title: 'Glass Solutions',
+          title: '🪟 Glass Solutions',
           body: 'Enhance natural light and aesthetics with professional glass installations for windows, doors, partitions, and facades.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png',
-          imageAlt: 'parking icon',
+          imageSrc: '',
+          imageAlt: 'Glass icon',
         },
         {
           id: 4,
-          title: 'Wooden Flooring',
-          body: 'Add warmth and elegance with our premium wooden flooring options, tailored to your style and space.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png',
-          imageAlt: 'parking icon',
+          title: '🛋️ Ceiling Designs',
+          body: 'Turn plain ceilings into captivating focal points with unique and visually striking designs.',
+          imageSrc: '',
+          imageAlt: 'Roof icon',
         },
         {
           id: 5,
-          title: 'Ceiling Designing',
-          body: 'Turn plain ceilings into captivating focal points with unique and visually striking designs.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-          imageAlt: 'parking icon',
-        },
-        {
-          id: 6,
-          title: 'Roof Solutions',
+          title: ' 🏠 Roof Solutions',
           body: 'Comprehensive roofing services, from installation to maintenance, ensuring durability and weather resistance.',
-          imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-          imageAlt: 'parking icon',
+          imageSrc: '',
+          imageAlt: 'Roof icon',
         },
       ],
       products: null,
@@ -298,8 +308,8 @@ export const northVibeDesign: Section[] = [
       type: "Blog",
       id: "k",
       title: "Our Blogs!",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "Hero Banner Paragraph is here",
+      subTitle: "Exploring Design Stories",
+      description: "Dive into our blog stories, where we share insights on design trends, space transformations, and the fusion of culture and elegance. Experience the journey of design inspiration.",
       version: "v1",
       style: "CLASSIC",
       services: null,
@@ -310,8 +320,8 @@ export const northVibeDesign: Section[] = [
       blogs: [
         {
           id: "1",
-          title: "Storefront Window Display: Captivating Passersby",
-          description: "Discover creative ideas to design compelling storefront window displays that attract and engage potential customers.",
+          title: "North Vibe Design: Where Local Aesthetics Meet Modern Elegance",
+          description: "Experience the fusion of cultural aesthetics and contemporary elegance in our interior and exterior designs, harmonizing with North India's vibrant culture and natural beauty.",
           descriptionContext: "Enhance your retail space with eye-catching window displays that tell your brand's story and entice visitors to step inside.",
           imageSrc: "https://images.unsplash.com/photo-1617836330596-d8c050a4cfd9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1207&q=80",
           imageAlt: "Tall slender porcelain bottle with natural clay textured body and cork stopper.",
@@ -387,8 +397,8 @@ export const northVibeDesign: Section[] = [
       type: "ContactUs",
       id: "k",
       title: "Get In Touch",
-      subTitle: "Hero Banner Sub Title is here",
-      description: "Hero Banner Paragraph is here",
+      subTitle: "Let's Create Together",
+      description: " Reach out to us for inquiries and collaboration. Experience personalized design solutions that elevate your spaces. Let's make your vision a reality.",
       version: "v2",
       style: "CLASSIC",
       services: null,
@@ -398,9 +408,39 @@ export const northVibeDesign: Section[] = [
       images: null,
       faqs: null,
       contactUs: {
-        address: "Village",
+        address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
-        phone: "9805058367",
+        phone: "+91 9569576707",
+        formFields: [
+          { name: 'name', label: 'Name', type: 'text', required: true },
+          { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+          {
+            name: 'area',
+            label: 'Area in sqft',
+            type: 'select',
+            required: true,
+            options: [
+              { label: '200 - 1000 square feet', value: '1000' },
+              { label: '1000 - 3000 square feet', value: '2000' },
+              { label: '3000 - 5000 square feet', value: '4000' },
+              { label: '5000 - 5000+ square feet', value: '5000' },
+            ],
+          },
+          {
+            name: 'servicesInterested',
+            label: 'Services Interested In',
+            type: 'select',
+            required: true,
+            options: [
+              { label: 'ACP & HPL Installation', value: 'acp_installation' },
+              { label: 'Wooden Flooring', value: 'wooden_flooring' },
+              { label: 'Glass Solutions', value: 'glass_solutions' },
+              { label: 'Ceiling Designs', value: 'ceiling_design' },
+              { label: 'Roof Solutions', value: 'roof_solution' },
+              { label: 'Others', value: 'others' },
+            ],
+          },
+        ]
       },
       testimonials: null,
     },
@@ -432,7 +472,7 @@ export const northVibeDesign: Section[] = [
 ];
 
 export const northVibeDesignSeo: any = {
-  title: "Top Interior and Exterior Design Services in North India | North Vibe Design",
+  title: "Exterior Design Services in North India | North Vibe Design",
   description: "Elevate your spaces with exceptional craftsmanship and creative designs. We specialize in ACP installation, glass solutions, wooden flooring, and ceiling designs. Catering to residential and commercial clients in Himachal Pradesh and North India.",
   keywords: "Interior design, exterior design, ACP installation, glass solutions, wooden flooring, ceiling designs, residential services, commercial services, remodeling, real estate, architecture, hospitality, landscape architects, Himachal Pradesh, North India.",
   tags: "Interior Design, Exterior Design, ACP Installation, Glass Solutions, Wooden Flooring, Ceiling Designs, Residential Services, Commercial Services, Remodeling, Real Estate, Architecture, Hospitality, Landscape Architects, Himachal Pradesh, North India.",
@@ -440,3 +480,11 @@ export const northVibeDesignSeo: any = {
   imageUrl: "https://example.com/og-image.jpg",
   siteUrl: "https://www.pahariyatri.com",
 };
+
+export const northVibeDesignPlugin: PluginConfig[] = [
+  {
+    name: "FloatingButton",
+    isActive: true,
+    data: "9569576707",
+  }
+]

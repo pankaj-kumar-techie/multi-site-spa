@@ -4,6 +4,7 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import ContactUs from "../ContactUs";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import Form from "../../../components/Form";
 
 export default function SecondContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -22,6 +23,10 @@ export default function SecondContactUs(props: { data: any }) {
     if (!contactUsData.title) {
         return <SectionShimmer title={"Contact Us"}></SectionShimmer>;
     }
+    const handleFormSubmit = (formData: Record<string, any>) => {
+        // Handle form submission logic here
+        // You can replace setStatus('success') with actual submission code
+    };
 
     return (
         <section className={`${theme.background.backgroundColorSecondary} "mb-32 text-gray-800`}>
@@ -31,33 +36,7 @@ export default function SecondContactUs(props: { data: any }) {
 
             <div className="flex flex-wrap">
                 <div className="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
-                    <form>
-                        <div className="form-group mb-6">
-                            <input type="text" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded  transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7" placeholder="Name" />
-                        </div>
-                        <div className="form-group mb-6">
-                            <input type="email" className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
-                                placeholder="Email address" />
-                        </div>
-                        <div className="form-group mb-6">
-                            <textarea className="
-            form-control
-            block
-            w-full
-            px-3
-            py-1.5
-            text-base
-            font-normal
-            text-gray-700
-            bg-white bg-clip-padding
-            border border-solid border-gray-300 rounded transition
-            ease-in-out
-            m-0
-            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none " id="exampleFormControlTextarea13" placeholder="Message"></textarea>
-                        </div>
-                        <Button label="Send" color="blue" action={() => console.log('Button clicked')} height="40px" width="580px" />
-
-                    </form>
+                    <Form fields={contactUsData.contactUs.formFields} theme={theme} onSubmit={handleFormSubmit}></Form>
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                     <div className="flex flex-wrap">
@@ -152,6 +131,8 @@ export default function SecondContactUs(props: { data: any }) {
                     </div>
                 </div>
             </div>
+
+
         </section>
     )
 }

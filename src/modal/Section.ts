@@ -1,3 +1,5 @@
+import { FieldConfig } from "./FieldConfig";
+
 export interface Section {
   id: string;
   name: string;
@@ -45,6 +47,7 @@ export type Service = {
 export type OurTeam = {
   id: number,
   name: string,
+  role?: string,
   description: string,
   imageSrc: string,
   imageAlt: string,
@@ -96,6 +99,7 @@ export type ContactUs = {
   address: string,
   email: string,
   phone: string,
+  formFields?: FieldConfig[];
 
 }
 
