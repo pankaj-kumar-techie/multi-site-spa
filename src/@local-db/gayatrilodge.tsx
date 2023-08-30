@@ -8,8 +8,8 @@ export const gayatrilodge: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2", // Add version property
-        style: "CLASSIC", // Add style property
+        version: "v2",
+        style: "CLASSIC",
         path: "index",
         data: {
             type: "Header",
@@ -33,15 +33,15 @@ export const gayatrilodge: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Herobanner",
-        version: "v1", // Add version property
-        style: "CLASSIC", // Add style property
+        version: "v1",
+        style: "CLASSIC",
         path: "index",
         data: {
             type: "HeroBanner",
             id: "002",
             title: "Gayatri Lodge!",
             subTitle: "Welcome to Gayatri Lodge, Your Tranquil Haven in Kasauli",
-            description: "Hero Banner Paragraph is here",
+            description: "Experience the serenity of Himachal Pradesh at Gayatri Lodge. Nestled in the charming town of Kasauli, our lodge offers an idyllic escape surrounded by nature's beauty.",
             version: "v1",
             style: "CLASSIC",
             services: null,

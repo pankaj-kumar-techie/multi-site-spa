@@ -18,29 +18,22 @@ interface HeaderData {
 }
 
 export default function FirstHeader(props: { data: HeaderData }) {
-  const isMobile = window.innerWidth <= 767;
   const { theme } = useContext(ThemeContext);
   const [headerData, setHeaderData] = useState<HeaderData>({
     title: "",
     images: [],
     contactUs: { phone: "1234567890", email: "XXXXXXXXXXXXXXXX" },
   });
-  const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("white");
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    setIsScrolled(window.scrollY >= 90);
+  };
 
   useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("white");
-        setTextColor("black");
-      } else {
-        setColor("transparent");
-        setTextColor("white"); // Change this to white for better contrast
-      }
-    };
-    window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -52,37 +45,29 @@ export default function FirstHeader(props: { data: HeaderData }) {
 
   return (
     <div
-      style={{ backgroundColor: color }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className={`fixed top-0 left-0 w-full bg-${isScrolled ? "white" : "transparent"} transition-all duration-300 z-10`}
     >
-      <div
-        className={`max-w-${isMobile ? "767" : "1240"
-          } m-auto ${isMobile ? "flex justify-between items-center" : "text-center"
-          } p-4 text-${isMobile ? "black" : "black"}`}
-      >
-        {/* Logo */}
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           {headerData.images && headerData.images.length > 0 ? (
             <img
-              className={`w-${isMobile ? "14" : "20"} h-${isMobile ? "14" : "20"} object-contain rounded-full mr-2`}
+              className="w-12 h-12 object-contain rounded-full mr-2"
               src={headerData.images[0].imageSrc}
               alt={headerData.images[0].imageAlt}
             />
           ) : (
-            <span style={{ color: textColor }} className="font-bold text-2xl lg:text-3xl">
+            <span className={`font-bold text-2xl ${isScrolled ? "text-black" : "text-white"}`}>
               {headerData.title || "Site Name"}
             </span>
           )}
         </Link>
-
-        {/* Call Now Button */}
         <Link
-          className={`flex items-center text-xs ml-${isMobile ? "auto" : "2"} ${isMobile ? "" : "hidden sm:flex"
+          className={`flex items-center text-xs ${isScrolled ? "text-black" : "text-white"
             }`}
           to={`tel:${headerData.contactUs.phone}`}
         >
-          <BsFillTelephoneFill className="ml-2 text-[20px] rounded-full bg-sky-300 p-3 h-9 w-10" />
-          <span className="whitespace-nowrap font-semibold">Call Now</span>
+          <BsFillTelephoneFill className="ml-2 text-[20px] rounded-full bg-sky-300 p-2 h-9 w-9" />
+          <span className="ml-1 font-semibold">Call Now</span>
         </Link>
       </div>
     </div>
