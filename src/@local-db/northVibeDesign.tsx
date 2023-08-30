@@ -23,7 +23,7 @@ export const northVibeDesign: Section[] = [
       services: null,
       products: null,
       portfolios: null,
-      images:  [
+      images: [
         {
           id: '1',
           imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
@@ -472,7 +472,7 @@ export const northVibeDesign: Section[] = [
 ];
 
 export const northVibeDesignSeo: any = {
-  title: "Exterior Design Services in North India | North Vibe Design",
+  title: "Top Quality Interior & Exterior Design Services in North India | North Vibe Design",
   description: "Elevate your spaces with exceptional craftsmanship and creative designs. We specialize in ACP installation, glass solutions, wooden flooring, and ceiling designs. Catering to residential and commercial clients in Himachal Pradesh and North India.",
   keywords: "Interior design, exterior design, ACP installation, glass solutions, wooden flooring, ceiling designs, residential services, commercial services, remodeling, real estate, architecture, hospitality, landscape architects, Himachal Pradesh, North India.",
   tags: "Interior Design, Exterior Design, ACP Installation, Glass Solutions, Wooden Flooring, Ceiling Designs, Residential Services, Commercial Services, Remodeling, Real Estate, Architecture, Hospitality, Landscape Architects, Himachal Pradesh, North India.",
