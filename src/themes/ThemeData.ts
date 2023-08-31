@@ -14,8 +14,8 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColorPrimary: 'bg-slate-800',
-            backgroundColorSecondary: 'bg-slate-800'
+            primary: 'bg-slate-800',
+            secondary: 'bg-slate-800'
         },
         buttons: {
             primary: 'bg-primary text-white hover:bg-primary-dark',
@@ -35,9 +35,9 @@ export const themes: { [key: string]: Theme } = {
             firstFontColor: 'text-black-200',
             secondFontColor: 'text-white',
         },
-        background: {   
-            backgroundColorPrimary: 'bg-custom-blue',
-            backgroundColorSecondary: 'custom-beige',
+        background: {
+            primary: 'bg-custom-blue',
+            secondary: 'custom-beige',
             backgroundColorDark: 'custom-black',
         },
         buttons: {
@@ -57,7 +57,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColorPrimary: 'bg-amber-300',
+            primary: 'bg-amber-300',
             backgroundImage: 'url("your-image-url")',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
@@ -81,7 +81,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColorPrimary: 'bg-teal-200',
+            primary: 'bg-teal-200',
             backgroundImage: 'url("your-image-url")',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
@@ -104,7 +104,7 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         background: {
-            backgroundColorPrimary: 'bg-black-300',
+            primary: 'bg-black-300',
         },
         buttons: {
             primary: 'bg-indigo-700 text-white hover:bg-indigo-800',
@@ -125,8 +125,8 @@ export const themes: { [key: string]: Theme } = {
             thirdFontColor: 'text-white',
         },
         background: {
-            backgroundColorPrimary: 'bg-stone-200',
-            backgroundColorSecondary: 'bg-custom-dark',
+            primary: "bg-stone-200",
+            secondary: "bg-custom-dark"
         },
         buttons: {
             primary: 'bg-gray-400 text-black hover:bg-gray-500',

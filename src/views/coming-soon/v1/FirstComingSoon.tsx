@@ -20,7 +20,7 @@ export default function FirstComingSoon(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.backgroundColorSecondary} h-screen bg-cover`}
+        <section className={`${theme.background.primary} h-screen bg-cover`}
             style={{ backgroundImage: "url('https://images.unsplash.com/photo-1619364726002-dfd4fdaee5f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80')" }}>
             <div className="flex h-full w-full items-center justify-center container mx-auto px-8">
                 <div className="max-w-2xl text-center">

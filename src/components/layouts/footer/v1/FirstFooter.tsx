@@ -15,7 +15,7 @@ export default function FirstFooter(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.backgroundColorSecondary}`}>
+        <section className={`${theme.background.secondary}`}>
             <div className={`${theme.typography.thirdFontColor}`}>
                 <div
                     className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4 ">

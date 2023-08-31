@@ -31,7 +31,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
     }
 
     return (
-        <section className={`${theme.background.backgroundColorPrimary} pt-10 pb-10`}>
+        <section className={`${theme.background.primary} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
 
                 <div>

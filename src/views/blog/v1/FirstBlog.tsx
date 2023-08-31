@@ -32,7 +32,7 @@ export default function FirstBlog(props: { data: any }) {
   const shouldRenderSingleSlide = window.innerWidth < 768; // Check for mobile view
 
   return (
-    <section className={theme.background.backgroundColorPrimary}>
+    <section className={theme.background.primary}>
       <div className="container mx-auto px-4 py-12">
         <TitleCover
           title={blogList.title}
