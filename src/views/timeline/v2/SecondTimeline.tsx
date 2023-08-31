@@ -22,9 +22,8 @@ export default function SecondTimeline(props: { data: any }) {
             {timelineData.timelineData.map((item: any, index: number) => (
               <div
                 key={index}
-                className={`mt-6 sm:mt-0 sm:mb-12 ${
-                  index % 2 === 0 ? "flex-row-reverse" : ""
-                }`}
+                className={`mt-6 sm:mt-0 sm:mb-12 ${index % 2 === 0 ? "flex-row-reverse" : ""
+                  }`}
               >
                 <div className="flex justify-end w-full mx-auto items-center">
                   <div className={`w-full sm:w-1/2 sm:${index % 2 === 0 ? "pl" : "pr"}-8`}>
@@ -49,9 +48,8 @@ export default function SecondTimeline(props: { data: any }) {
                     </div>
                   </div>
                   <div
-                    className={`rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center ${
-                      index % 2 === 0 ? "right-1/2" : "left-1/2"
-                    }`}
+                    className={`rounded-full bg-blue-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center ${index % 2 === 0 ? "right-1/2" : "left-1/2"
+                      }`}
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />

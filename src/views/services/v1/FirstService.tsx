@@ -28,7 +28,7 @@ export default function FirstService(props: { data: any }) {
                 <div className="flex flex-wrap">
                     <div className="w-full pb-10 px-4">
                         <TitleCover title={serviceData.title} titleColor={theme.typography.secondFontColor} subtitle={serviceData.subTitle}
-                        subtitleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.thirdFontColor} paragraph={serviceData.description}></TitleCover>
+                        subtitleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.secondFontColor} paragraph={serviceData.description}></TitleCover>
                     </div>
                 </div>
                 <div className="flex flex-wrap">

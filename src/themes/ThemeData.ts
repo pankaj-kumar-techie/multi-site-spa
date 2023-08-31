@@ -121,7 +121,7 @@ export const themes: { [key: string]: Theme } = {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
             firstFontColor: 'text-custom-dark',
-            secondFontColor: 'text-custom-orange',
+            secondFontColor: 'text-custom-dark',
             thirdFontColor: 'text-white',
         },
         background: {
