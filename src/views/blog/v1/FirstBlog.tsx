@@ -37,8 +37,8 @@ export default function FirstBlog(props: { data: any }) {
         <TitleCover
           title={blogList.title}
           subtitle={blogList.subTitle}
-          titleColor={theme.typography.firstFontColor}
-          subtitleColor={theme.typography.firstFontColor}
+          titleColor={theme.typography.secondFontColor}
+          subtitleColor={theme.typography.secondFontColor}
         />
         {isLoading ? (
           <SectionShimmer title={blogList.title}></SectionShimmer>

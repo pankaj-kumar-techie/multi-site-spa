@@ -66,7 +66,7 @@ export default function FirstHeader(props: { data: HeaderData }) {
             }`}
           to={`tel:${headerData.contactUs.phone}`}
         >
-          <BsFillTelephoneFill className="ml-2 text-[20px] rounded-full bg-sky-300 p-2 h-9 w-9" />
+          <BsFillTelephoneFill className="ml-2 text-[20px] text-white rounded-full bg-custom-dark p-2 h-9 w-9" />
           <span className="ml-1 font-semibold">Call Now</span>
         </Link>
       </div>

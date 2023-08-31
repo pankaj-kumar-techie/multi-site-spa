@@ -66,9 +66,9 @@ export default function FirstHeroBanner(props: { data: any }) {
           title={bannerData.title}
           subtitle={bannerData.subTitle}
           paragraph={bannerData.description}
-          titleColor={theme.typography.firstFontColor}
-          subtitleColor={theme.typography.firstFontColor}
-          paragraphColor={theme.typography.firstFontColor}
+          titleColor={theme.typography.thirdFontColor}
+          subtitleColor={theme.typography.thirdFontColor}
+          paragraphColor={theme.typography.thirdFontColor}
           titleSize="lg:text-6xl text-4xl font-bold font-raleway md:text-5xl mt-32"
           subtitleSize="mt-3 max-w-md mx-auto text-2xl md:text-3xl md:max-w-3xl"
         />

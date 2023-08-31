@@ -13,14 +13,14 @@ const NavigationButtons: React.FC<NavigationButtonsProps> = ({ onPrev, onNext, i
             <button
                 onClick={onPrev}
                 disabled={isPrevDisabled}
-                className="mr-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300"
+                className="mr-4 bg-custom-orange hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300"
             >
                 Previous
             </button>
             <button
                 onClick={onNext}
                 disabled={isNextDisabled}
-                className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300"
+                className="bg-custom-orange hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300"
             >
                 Next
             </button>
