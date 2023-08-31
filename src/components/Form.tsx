@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FieldConfig } from '../modal/FieldConfig';
 import { Theme } from '../modal/Theme';
+import { ThemeContext } from '../themes/ThemeProvider';
 
 
 interface ContactFormProps {
@@ -10,6 +11,7 @@ interface ContactFormProps {
 }
 
 function Form({ fields, onSubmit }: ContactFormProps) {
+    const { theme } = useContext(ThemeContext);
     const [formData, setFormData] = useState<Record<string, any>>({});
 
     const handleInputChange = (field: string, value: any) => {
@@ -92,7 +94,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                     )}
                 </label>
             ))}
-            <button className='bg-custom-orange text-white p-4 rounded-full shadow-md hover:bg-blue-600' type="submit">Request A Call Back</button>
+            <button className={`${theme.background.secondary} text-white p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit" >Request A Call Back</button>
         </form>
     );
 }
