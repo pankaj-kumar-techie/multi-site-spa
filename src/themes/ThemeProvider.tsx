@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { themes} from "./ThemeData";
+import { themes } from "./ThemeData";
 import { Theme } from '../modal/Theme';
 
 interface ThemeContextProps {
@@ -9,7 +9,7 @@ interface ThemeContextProps {
 
 export const ThemeContext = createContext<ThemeContextProps>({
   theme: themes.default,
-  setTheme: () => {},
+  setTheme: () => { },
 });
 
 interface ThemeProviderProps {
@@ -25,11 +25,11 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, children }) => {
   };
 
   return (
-      <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange }}>
-        <div className={getBackgroundClasses(currentTheme)}>
-          <div className={getTypographyClasses(currentTheme)}>{children}</div>
-        </div>
-      </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange }}>
+      <div className={getBackgroundClasses(currentTheme)}>
+        <div className={getTypographyClasses(currentTheme)}>{children}</div>
+      </div>
+    </ThemeContext.Provider>
   );
 };
 
@@ -42,8 +42,8 @@ const getTypographyClasses = (theme: Theme) => {
 const getBackgroundClasses = (theme: Theme) => {
   const { background } = theme;
   const {
-    backgroundColorPrimary,
-    backgroundColorSecondary,
+    primary,
+    secondary,
     backgroundColorDark,
     backgroundImage,
     backgroundAttachment,
@@ -52,7 +52,7 @@ const getBackgroundClasses = (theme: Theme) => {
     backgroundClip,
     backgroundSize,
   } = background;
-  return `${backgroundColorSecondary || backgroundColorPrimary || backgroundColorDark }   ${backgroundImage || ''} ${backgroundAttachment || ''} ${backgroundPosition || ''} ${backgroundRepeat || ''} ${backgroundClip || ''} ${backgroundSize || ''}`;
+  return `${secondary || primary || backgroundColorDark}   ${backgroundImage || ''} ${backgroundAttachment || ''} ${backgroundPosition || ''} ${backgroundRepeat || ''} ${backgroundClip || ''} ${backgroundSize || ''}`;
 };
 
 export default ThemeProvider;

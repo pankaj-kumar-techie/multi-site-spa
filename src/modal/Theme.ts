@@ -12,8 +12,8 @@ export interface Theme {
         thirdFontColor?: string;
     };
     background: {
-        backgroundColorPrimary?: string;
-        backgroundColorSecondary?: string;
+        primary?: string;
+        secondary?: string;
         backgroundColorDark?: string;
         backgroundImage?: string;
         backgroundAttachment?: string;
@@ -22,7 +22,7 @@ export interface Theme {
         backgroundClip?: string;
         backgroundSize?: string;
     };
-    buttons : {
+    buttons: {
         primary?: string;
         secondary?: string;
     }
