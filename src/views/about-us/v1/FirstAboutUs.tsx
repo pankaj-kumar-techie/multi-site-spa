@@ -34,7 +34,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                         <TitleCover
                             title={aboutData.title}
                             paragraph={aboutData.description}
-                            textAlign="left" titleColor={theme.typography.firstFontColor} paragraphColor={theme.typography.firstFontColor}
+                            textAlign="center" titleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.firstFontColor}
                         />
                     </div>
                 </div>

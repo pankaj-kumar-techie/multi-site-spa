@@ -120,14 +120,17 @@ export const themes: { [key: string]: Theme } = {
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-            firstFontColor: 'text-black-200',
+            firstFontColor: 'text-custom-dark',
+            secondFontColor: 'text-custom-orange',
+            thirdFontColor: 'text-white',
         },
         background: {
             backgroundColorPrimary: 'bg-stone-200',
+            backgroundColorSecondary: 'bg-custom-dark',
         },
         buttons: {
             primary: 'bg-gray-400 text-black hover:bg-gray-500',
-            secondary: 'bg-white text-gray-500 hover:text-black hover:bg-gray-100',
+            secondary: 'bg-custom-orange text-gray-500 hover:text-black hover:bg-gray-100',
         },
     },
 };

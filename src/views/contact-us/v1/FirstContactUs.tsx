@@ -29,12 +29,12 @@ function FirstContactUs(props: { data: any }) {
     };
 
     return (
-        <section className={`${theme.background.backgroundColorSecondary} md:py-16 py-8`}>
+        <section className={`${theme.background.backgroundColorPrimary} md:py-16 py-8`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${theme.typography.firstFontColor}`}
-                            subtitle={contactUsData.subTitle} subtitleColor={theme.typography.firstFontColor} paragraphColor={theme.typography.firstFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
+                        <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${theme.typography.secondFontColor}`}
+                            subtitle={contactUsData.subTitle} subtitleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.secondFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
                         <div className="flex items-center space-x-2">
                             <GrLocation></GrLocation>
                             <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.address}</p>

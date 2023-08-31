@@ -9,6 +9,7 @@ export interface Theme {
         fontSize?: string;
         firstFontColor?: string;
         secondFontColor?: string;
+        thirdFontColor?: string;
     };
     background: {
         backgroundColorPrimary?: string;

@@ -15,8 +15,8 @@ export default function FirstFooter(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.backgroundColorDark}`}>
-            <div className={`theme.typography.firstFontColor`}>
+        <section className={`${theme.background.backgroundColorSecondary}`}>
+            <div className={`${theme.typography.thirdFontColor}`}>
                 <div
                     className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4 ">
                     <div>
@@ -82,13 +82,13 @@ export default function FirstFooter(props: { data: any }) {
                                 type="text"
                                 placeholder="Enter Email"
                             />
-                            <button className="p-2 mb-4 font-jakarta rounded-md">Subscribe</button>
+                            <button className="p-2 mb-4 font-jakarta bg-custom-orange rounded-md">Subscribe</button>
                         </form>
                     </div>
                 </div>
                 <div
                     className="flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500 ">
-                    <p className={`${theme.typography.firstFontColor} py-4 font-medium  hover:${theme.typography.firstFontColor} hover:ease-in-out font-jakarta duration-200 cursor-pointer`} >Made
+                    <p className={`${theme.typography.thirdFontColor} py-4 font-medium  hover:${theme.typography.thirdFontColor} hover:ease-in-out font-jakarta duration-200 cursor-pointer`} >Made
                         With ❤️ by Loonds</p>
                     <div className="flex  justify-between sm:w-[300px] pt-4 text-2xl">
                         <Link to={"https://www.instagram.com"}>
