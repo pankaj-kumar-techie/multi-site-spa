@@ -12,6 +12,7 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
+import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
 // import { ClientService } from './service/ClientService';
 
 
@@ -84,10 +85,10 @@ export default function App() {
                         setPlugins(gaytriLodgePlugin)
                         break;
                     default:
-                        setSectionData(northVibeDesign);
-                        setPlugins(northVibeDesignPlugin)
-                        setTheme(northVibeDesignTheme);
-                        setSeo(northVibeDesignSeo);
+                        setSectionData(drayWorldLogistic);
+                        setPlugins(drayWorldLogisticPlugin)
+                        setTheme(drayWorldLogisticTheme);
+                        setSeo(drayWorldLogisticSeo);
                         break;
                 }
 
