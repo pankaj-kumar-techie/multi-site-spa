@@ -16,7 +16,7 @@ export default function BlogCard(blog: Blog) {
           className="w-full h-[13rem] rounded-xl"
         />
         <div className="pl-2 pr-2 pb-2">
-          <h3 className={`mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-custom-dark group-hover:${theme.typography.firstFontColor}`}>
+          <h3 className={`mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-custom-dark group-hover:text-${theme.colors.primary}`}>
             <a href={`blog/` + blog.id}>
               <span className="absolute inset-0" />
               {blog.title}

@@ -31,11 +31,11 @@ const FirstFAQAccordion = (props: { data: any }) => {
     }
 
     return (
-        <section className={`${theme.background.primary} pt-10 pb-10`}>
+        <section className={`bg-${theme.colors.primary} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
 
                 <div>
-                    <TitleCover title={faqData.title} titleColor={theme.typography.firstFontColor} titleSize={"lg:text-[3rem] text-[1.5rem]"} fontFamily={theme.typography.fontFamily}></TitleCover>
+                    <TitleCover title={faqData.title} titleColor={`text-${theme.colors.secondary}`} titleSize={"lg:text-[3rem] text-[1.5rem]"} fontFamily={theme.typography.fontFamily}></TitleCover>
                 </div>
                 <div className="w-full  ">
                     {faqData.faqs.map((faq: FAQ) => (

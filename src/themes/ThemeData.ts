@@ -5,17 +5,12 @@ export const themes: { [key: string]: Theme } = {
     default: {
         name: 'Default',
         colors: {
-            primary: 'text-black-200',
-            secondary: 'text-black',
+            primary: 'slate-200',
+            secondary: 'slate-500',
         },
         typography: {
-            firstFontColor: 'text-white',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-slate-800',
-            secondary: 'bg-slate-800'
         },
         buttons: {
             primary: 'bg-primary text-white hover:bg-primary-dark',
@@ -25,20 +20,12 @@ export const themes: { [key: string]: Theme } = {
     classic: {
         name: 'Classic',
         colors: {
-            primary: 'bg-custom-blue',
+            primary: 'custom-blue',
             secondary: 'custom-beige',
         },
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-            // hoverColor: 'text-white',
-            firstFontColor: 'text-black-200',
-            secondFontColor: 'text-white',
-        },
-        background: {
-            primary: 'bg-custom-blue',
-            secondary: 'custom-beige',
-            backgroundColorDark: 'custom-black',
         },
         buttons: {
             primary: 'bg-red-500 text-white hover:bg-red-600',
@@ -48,21 +35,12 @@ export const themes: { [key: string]: Theme } = {
     modern: {
         name: 'Modern',
         colors: {
-            primary: 'bg-custom-brown',
-            secondary: 'text-black',
+            primary: 'custom-brown',
+            secondary: 'black',
         },
         typography: {
-            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-amber-300',
-            backgroundImage: 'url("your-image-url")',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
         },
         buttons: {
             primary: 'bg-purple-600 text-white hover:bg-purple-700',
@@ -72,21 +50,12 @@ export const themes: { [key: string]: Theme } = {
     transparent: {
         name: 'Transparent',
         colors: {
-            primary: 'bg-',
-            secondary: 'text-black',
+            primary: 'slate-500',
+            secondary: 'black',
         },
         typography: {
-            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-teal-200',
-            backgroundImage: 'url("your-image-url")',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
         },
         buttons: {
             primary: 'bg-teal-400 text-white hover:bg-teal-500',
@@ -96,15 +65,12 @@ export const themes: { [key: string]: Theme } = {
     vibrant: {
         name: 'Vibrant',
         colors: {
-            primary: 'bg-red-500',
-            secondary: 'text-white',
+            primary: 'red-500',
+            secondary: 'white',
         },
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-black-300',
         },
         buttons: {
             primary: 'bg-indigo-700 text-white hover:bg-indigo-800',
@@ -114,19 +80,12 @@ export const themes: { [key: string]: Theme } = {
     minimalist: {
         name: 'Minimalist',
         colors: {
-            primary: 'bg-white',
-            secondary: 'text-black',
+            primary: 'white',
+            secondary: 'slate-500',
         },
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-            firstFontColor: 'text-custom-dark',
-            secondFontColor: 'text-custom-dark',
-            thirdFontColor: 'text-white',
-        },
-        background: {
-            primary: "bg-stone-200",
-            secondary: "bg-custom-dark"
         },
         buttons: {
             primary: 'bg-gray-400 text-black hover:bg-gray-500',

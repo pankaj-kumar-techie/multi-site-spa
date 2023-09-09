@@ -59,16 +59,16 @@ export default function FirstHeroBanner(props: { data: any }) {
   };
 
   return (
-    <section className={`${theme.background.primary} min-h-screen flex flex-col justify-center relative`}>
+    <section className={`bg-${theme.colors.primary} min-h-screen flex flex-col justify-center relative`}>
       {renderBackgroundContent()}
       <div className="py-12 flex flex-col justify-center items-center text-center relative z-1">
         <TitleCover
           title={bannerData.title}
           subtitle={bannerData.subTitle}
           paragraph={bannerData.description}
-          titleColor={theme.typography.thirdFontColor}
-          subtitleColor={theme.typography.thirdFontColor}
-          paragraphColor={theme.typography.thirdFontColor}
+          titleColor={`text-${theme.colors.secondary}`}
+          subtitleColor={`text-${theme.colors.secondary}`}
+          paragraphColor={`text-${theme.colors.secondary}`}
           titleSize="lg:text-6xl text-4xl font-bold font-raleway md:text-5xl mt-32"
           subtitleSize="mt-3 max-w-md mx-auto text-2xl md:text-3xl md:max-w-3xl"
         />

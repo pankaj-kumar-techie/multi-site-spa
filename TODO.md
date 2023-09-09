@@ -7,13 +7,6 @@ All Business Domain We Cover:
 3. [x] Gayatri Lodge Kasauli : Cafe, Food, Restaurant, Hotels & Homestays
 4. [x] HCreations : Business, Corporate
 
-#### Create Multiple theme support : To manage section bg, typography (font size, color and family)
-
-* Default
-* Classic
-* Modern
-* Plain
-
 #### UI/UX Dynamic Change on Given Section
 
 * Manage section height/width

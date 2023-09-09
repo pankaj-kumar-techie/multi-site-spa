@@ -15,8 +15,8 @@ export default function FirstFooter(props: { data: any }) {
     }, [props.data])
 
     return (
-        <section className={`${theme.background.secondary}`}>
-            <div className={`${theme.typography.thirdFontColor}`}>
+        <section className={`bg-${theme.colors.primary}`}>
+            <div className={`text-${theme.colors.secondary}`}>
                 <div
                     className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-6 border-b-2 border-gray-600 py-8 px-4 ">
                     <div>
@@ -88,7 +88,7 @@ export default function FirstFooter(props: { data: any }) {
                 </div>
                 <div
                     className="flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500 ">
-                    <p className={`${theme.typography.thirdFontColor} py-4 font-medium  hover:${theme.typography.thirdFontColor} hover:ease-in-out font-jakarta duration-200 cursor-pointer`} >Made
+                    <p className={`text-${theme.colors.primary} py-4 font-medium  hover:${theme.colors.primary} hover:ease-in-out font-jakarta duration-200 cursor-pointer`} >Made
                         With ❤️ by Loonds</p>
                     <div className="flex  justify-between sm:w-[300px] pt-4 text-2xl">
                         <Link to={"https://www.instagram.com"}>
