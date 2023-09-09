@@ -5,8 +5,8 @@ export const themes: { [key: string]: Theme } = {
     default: {
         name: 'Default',
         colors: {
-            primary: 'text-black-200',
-            secondary: 'text-black',
+            primary: 'slate-200',
+            secondary: 'slate-500',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -20,7 +20,7 @@ export const themes: { [key: string]: Theme } = {
     classic: {
         name: 'Classic',
         colors: {
-            primary: 'bg-custom-blue',
+            primary: 'custom-blue',
             secondary: 'custom-beige',
         },
         typography: {
@@ -35,8 +35,8 @@ export const themes: { [key: string]: Theme } = {
     modern: {
         name: 'Modern',
         colors: {
-            primary: 'bg-custom-brown',
-            secondary: 'text-black',
+            primary: 'custom-brown',
+            secondary: 'black',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -50,8 +50,8 @@ export const themes: { [key: string]: Theme } = {
     transparent: {
         name: 'Transparent',
         colors: {
-            primary: 'bg-',
-            secondary: 'text-black',
+            primary: 'slate-500',
+            secondary: 'black',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -65,8 +65,8 @@ export const themes: { [key: string]: Theme } = {
     vibrant: {
         name: 'Vibrant',
         colors: {
-            primary: 'bg-red-500',
-            secondary: 'text-white',
+            primary: 'red-500',
+            secondary: 'white',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -80,8 +80,8 @@ export const themes: { [key: string]: Theme } = {
     minimalist: {
         name: 'Minimalist',
         colors: {
-            primary: 'bg-white',
-            secondary: 'text-black',
+            primary: 'white',
+            secondary: 'slate-500',
         },
         typography: {
             fontFamily: 'font-arial',
