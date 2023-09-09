@@ -12,6 +12,8 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
+import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
+import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
 // import { ClientService } from './service/ClientService';
 
 
@@ -83,11 +85,17 @@ export default function App() {
                         setSectionData(gayatrilodge);
                         setPlugins(gaytriLodgePlugin)
                         break;
+                    case "archdy.com":
+                        setSectionData(archdy);
+                        setPlugins(archdyPlugin)
+                        setTheme(archdyTheme);
+                        setSeo(archdySeo);
+                        break;
                     default:
-                        setSectionData(northVibeDesign);
-                        setPlugins(northVibeDesignPlugin)
-                        setTheme(northVibeDesignTheme);
-                        setSeo(northVibeDesignSeo);
+                        setSectionData(archdy);
+                        setPlugins(archdyPlugin)
+                        setTheme(archdyTheme);
+                        setSeo(archdySeo);
                         break;
                 }
 
