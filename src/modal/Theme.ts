@@ -3,6 +3,7 @@ export interface Theme {
     colors: {
         primary?: string;
         secondary?: string;
+        tertiary?:string;
     };
     typography: {
         fontFamily?: string;
