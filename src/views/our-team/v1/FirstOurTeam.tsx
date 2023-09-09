@@ -18,10 +18,10 @@ export default function FirstOurTeam(props: { data: any }) {
   }
 
   return (
-    <section className={`${theme.background.primary}`}>
+    <section className={`bg-${theme.colors.primary}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto py-16 sm:py-24 lg:py-32 lg:max-w-none">
-          <TitleCover title={teemData.title} titleColor={theme.typography.firstFontColor}></TitleCover>
+          <TitleCover title={teemData.title} titleColor={`text-${theme.colors.secondary}`}></TitleCover>
 
           <div className="mt-6 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-x-6">
             {teemData.ourTeam.map((callout: OurTeam) => (

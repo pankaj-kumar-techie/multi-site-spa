@@ -26,14 +26,14 @@ function FirstGallery(props: { data: any }) {
     }
 
     return (
-        <section className={`${theme.background.primary} md:py-16 py-10`}>
+        <section className={`bg-${theme.colors.primary} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}
                     subtitle=""
-                    titleColor={theme.typography.secondFontColor}
+                    titleColor={`text-${theme.colors.secondary}`}
                     paragraph={galleryData.paragraph}
-                    paragraphColor={theme.typography.thirdFontColor}
+                    paragraphColor={`text-${theme.colors.secondary}`}
                     titleSize={"text-4xl"}
                     textAlign="center"
                 />

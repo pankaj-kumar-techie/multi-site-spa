@@ -4,7 +4,7 @@ import { ThemeContext } from "../../../themes/ThemeProvider";
 export default function FirstTimeline() {
     const { theme } = useContext(ThemeContext);
     return (
-        <section className={`${theme.background.secondary} py-20`}>
+        <section className={`bg-${theme.colors.primary} py-20`}>
             <div className="container mx-auto">
                 <div className="mb-8">
                     <h2 className="text-3xl font-semibold text-center mb-4">

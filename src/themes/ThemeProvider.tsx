@@ -40,19 +40,13 @@ const getTypographyClasses = (theme: Theme) => {
 };
 
 const getBackgroundClasses = (theme: Theme) => {
-  const { background } = theme;
+  const { colors } = theme;
   const {
     primary,
     secondary,
-    backgroundColorDark,
-    backgroundImage,
-    backgroundAttachment,
-    backgroundPosition,
-    backgroundRepeat,
-    backgroundClip,
-    backgroundSize,
-  } = background;
-  return `${secondary || primary || backgroundColorDark}   ${backgroundImage || ''} ${backgroundAttachment || ''} ${backgroundPosition || ''} ${backgroundRepeat || ''} ${backgroundClip || ''} ${backgroundSize || ''}`;
+
+  } = colors;
+  return `${secondary || primary }`;
 };
 
 export default ThemeProvider;

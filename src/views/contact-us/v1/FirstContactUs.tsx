@@ -29,23 +29,23 @@ function FirstContactUs(props: { data: any }) {
     };
 
     return (
-        <section className={`${theme.background.primary} md:py-16 py-8`}>
+        <section className={`bg-${theme.colors.primary} md:py-16 py-8`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
-                        <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${theme.typography.secondFontColor}`}
-                            subtitle={contactUsData.subTitle} subtitleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.secondFontColor} fontFamily={theme.typography.fontFamily}></TitleCover>
+                        <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`text-${theme.colors.secondary}`}
+                            subtitle={contactUsData.subTitle} subtitleColor={`text-${theme.colors.secondary}`} paragraphColor={`text-${theme.colors.secondary}`} fontFamily={theme.typography.fontFamily}></TitleCover>
                         <div className="flex items-center space-x-2">
                             <GrLocation></GrLocation>
-                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.address}</p>
+                            <p className={`text-${theme.colors.secondary}`}>{contactUsData.contactUs.address}</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <GrMail></GrMail>
-                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.email}</p>
+                            <p className={`text-${theme.colors.primary}`}>{contactUsData.contactUs.email}</p>
                         </div>
                         <div className="flex items-center space-x-2">
                             <FaMobile></FaMobile>
-                            <p className={theme.typography.firstFontColor}>{contactUsData.contactUs.phone}</p>
+                            <p className={`text-${theme.colors.primary}`}>{contactUsData.contactUs.phone}</p>
                         </div>
                         <div className="aspect-w-10  aspect-h-9">
                         </div>

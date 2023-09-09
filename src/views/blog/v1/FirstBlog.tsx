@@ -32,13 +32,13 @@ export default function FirstBlog(props: { data: any }) {
   const shouldRenderSingleSlide = window.innerWidth < 768; // Check for mobile view
 
   return (
-    <section className={theme.background.primary}>
+    <section className={`${theme.colors.primary}}`}>
       <div className="container mx-auto px-4 py-12">
         <TitleCover
           title={blogList.title}
           subtitle={blogList.subTitle}
-          titleColor={theme.typography.secondFontColor}
-          subtitleColor={theme.typography.secondFontColor}
+          titleColor={`text-${theme.colors.primary}`}
+          subtitleColor={`text-${theme.colors.primary}`}
         />
         {isLoading ? (
           <SectionShimmer title={blogList.title}></SectionShimmer>

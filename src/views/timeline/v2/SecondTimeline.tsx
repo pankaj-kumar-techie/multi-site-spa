@@ -15,7 +15,7 @@ export default function SecondTimeline(props: { data: any }) {
   }
 
   return (
-    <section className={`${theme.background.secondary} py-20`}>
+    <section className={`bg-${theme.colors.primary} py-20`}>
       <div className="min-h-screen bg-fixed bg-blend-screen py-6 flex flex-col justify-center ">
         <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0 backdrop-blur-md-">
           <div className="relative text-gray-700 antialiased text-sm font-semibold">

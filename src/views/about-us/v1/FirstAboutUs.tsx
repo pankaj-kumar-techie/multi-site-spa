@@ -20,7 +20,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
     }
 
     return (
-        <section className={`${theme.background.primary} font-bold`}>
+        <section className={`bg-${theme.colors.primary} font-bold`}>
             <div className={""}>
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 flex flex-col-reverse sm:flex-row">
                     <div className="sm:w-1/2 flex justify-center transform transition duration-1000 hover:scale-110">
@@ -34,7 +34,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                         <TitleCover
                             title={aboutData.title}
                             paragraph={aboutData.description}
-                            textAlign="center" titleColor={theme.typography.secondFontColor} paragraphColor={theme.typography.firstFontColor}
+                            textAlign="center" titleColor={`text-${theme.colors.primary}-500`} paragraphColor={`text-${theme.colors.primary}-500`}
                         />
                     </div>
                 </div>

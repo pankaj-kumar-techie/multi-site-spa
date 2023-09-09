@@ -21,9 +21,9 @@ export default function SecondProductList(props: { data: any }) {
     }
     return (
         <section>
-            <div className={`${theme.background.secondary}`}>
+            <div className={`bg-${theme.colors.secondary}`}>
                 <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-                <TitleCover title={productData.title} titleColor={theme.typography.firstFontColor}></TitleCover>
+                <TitleCover title={productData.title} titleColor={`text-${theme.colors.secondary}`}></TitleCover>
                     <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                         {productData.products.map((product: Product) => (
                             <a key={product.id} href={product.href} className="group">

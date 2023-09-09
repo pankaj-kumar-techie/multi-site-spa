@@ -9,13 +9,8 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'text-black',
         },
         typography: {
-            firstFontColor: 'text-white',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-slate-800',
-            secondary: 'bg-slate-800'
         },
         buttons: {
             primary: 'bg-primary text-white hover:bg-primary-dark',
@@ -31,14 +26,6 @@ export const themes: { [key: string]: Theme } = {
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-            // hoverColor: 'text-white',
-            firstFontColor: 'text-black-200',
-            secondFontColor: 'text-white',
-        },
-        background: {
-            primary: 'bg-custom-blue',
-            secondary: 'custom-beige',
-            backgroundColorDark: 'custom-black',
         },
         buttons: {
             primary: 'bg-red-500 text-white hover:bg-red-600',
@@ -52,17 +39,8 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'text-black',
         },
         typography: {
-            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-amber-300',
-            backgroundImage: 'url("your-image-url")',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
         },
         buttons: {
             primary: 'bg-purple-600 text-white hover:bg-purple-700',
@@ -76,17 +54,8 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'text-black',
         },
         typography: {
-            firstFontColor: 'text-black-200',
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-        },
-        background: {
-            primary: 'bg-teal-200',
-            backgroundImage: 'url("your-image-url")',
-            backgroundAttachment: 'fixed',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: 'cover',
         },
         buttons: {
             primary: 'bg-teal-400 text-white hover:bg-teal-500',
@@ -103,9 +72,6 @@ export const themes: { [key: string]: Theme } = {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
         },
-        background: {
-            primary: 'bg-black-300',
-        },
         buttons: {
             primary: 'bg-indigo-700 text-white hover:bg-indigo-800',
             secondary: 'bg-orange-500 text-white hover:bg-orange-600',
@@ -120,13 +86,6 @@ export const themes: { [key: string]: Theme } = {
         typography: {
             fontFamily: 'font-arial',
             fontSize: 'text-base',
-            firstFontColor: 'text-custom-dark',
-            secondFontColor: 'text-custom-dark',
-            thirdFontColor: 'text-white',
-        },
-        background: {
-            primary: "bg-stone-200",
-            secondary: "bg-custom-dark"
         },
         buttons: {
             primary: 'bg-gray-400 text-black hover:bg-gray-500',
