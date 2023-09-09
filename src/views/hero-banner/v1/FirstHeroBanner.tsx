@@ -73,7 +73,6 @@ export default function FirstHeroBanner(props: { data: any }) {
           subtitleSize="mt-3 max-w-md mx-auto text-2xl md:text-3xl md:max-w-3xl"
         />
         <div className={"mt-10 sm:flex justify-center"}>
-          {/* Your action buttons */}
           <div className={"flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg"}>
             <a
               href="/echo"

@@ -8,6 +8,9 @@ export default function FirstHeader(props: { data: any }) {
     const [nav, setNav] = useState(false)
     const [color, setColor] = useState('transparent')
     const [textColor, setTextColor] = useState('white')
+    const [isScrolled, setIsScrolled] = useState(false);
+
+
 
     const handleNav = () => {
         setNav(!nav)
@@ -40,8 +43,17 @@ export default function FirstHeader(props: { data: any }) {
             <div style={{ backgroundColor: `${color}` }} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
                 <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
                     < Link to='/'>
-                        <h1 style={{ color: `${textColor}` }}
-                            className='font-bold text-2xl lg:text-3xl '>{headerData.title ?? "Site Name"}</h1>
+                        {headerData.images && headerData.images.length > 0 ? (
+                            <img
+                                className="w-12 h-12 object-contain rounded-full mr-2"
+                                src={headerData.images[0].imageSrc}
+                                alt={headerData.images[0].imageAlt}
+                            />
+                        ) : (
+                            <span className={`font-bold text-2xl ${isScrolled ? "text-black" : "text-white"}`}>
+                                {headerData.title || "Site Name"}
+                            </span>
+                        )}
                     </Link>
                     <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
                         <li className='p-4'>
