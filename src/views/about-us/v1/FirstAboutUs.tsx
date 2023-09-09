@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 interface FirstAboutUsProps {
     data: any;
@@ -9,6 +10,8 @@ interface FirstAboutUsProps {
 
 const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
+
     const [aboutData, setAboutData] = useState<any>({});
 
     useEffect(() => {
@@ -34,7 +37,7 @@ const FirstAboutUs: React.FC<FirstAboutUsProps> = ({ data }) => {
                         <TitleCover
                             title={aboutData.title}
                             paragraph={aboutData.description}
-                            textAlign="center" titleColor={`text-${theme.colors.primary}-500`} paragraphColor={`text-${theme.colors.primary}-500`}
+                            textAlign="center" titleColor={`${textColor}`} paragraphColor={`${textColor}`}
                         />
                     </div>
                 </div>
