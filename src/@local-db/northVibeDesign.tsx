@@ -485,6 +485,10 @@ export const northVibeDesignPlugin: PluginConfig[] = [
   {
     name: "FloatingButton",
     isActive: true,
-    data: "9569576707",
+    data: {
+      "mobile": "9569576707",
+      "text": ""
+    },
+
   }
 ]

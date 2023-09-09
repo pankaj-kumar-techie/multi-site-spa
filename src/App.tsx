@@ -98,15 +98,12 @@ export default function App() {
                         setSeo(archdySeo);
                         break;
                 }
-
                 // const res = await PageService.getPage(path);
                 // setLoading(false);
                 // console.log('Page Section Data:', res.data.theme);
                 // setSectionData(res.data.section);
                 // setTheme(res.data.theme);
-
                 // console.log('Pass Section Data to Child Component', res.data.section);
-
             } catch (error) {
                 console.log('Error:', error);
                 setError('Failed to fetch data. Please try again later.');
@@ -115,17 +112,14 @@ export default function App() {
                 setLoading(false); // Set loading to false after completion (whether success or error)
             }
         };
-
         loadPage();
     }, [clientDomainName]);
-
     if (error) {
         return <ErrorPage message={error} />;
     }
     if (loading || sectionData.length === 0) {
         return <Loader />;
     }
-
     return (
         <>
             <HelmetManager title={seo.title ?? "Loonds"} description={seo.description ?? ""} keywords={seo.keywords ?? ""} tags={seo.tags ?? ""}></HelmetManager>

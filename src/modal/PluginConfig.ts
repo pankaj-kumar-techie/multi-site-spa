@@ -1,6 +1,11 @@
 export type PluginConfig = {
     name: string;
     isActive: boolean;
-    data ?: any;
+    data?: Whatsapp;
+}
+
+export type Whatsapp = {
+    mobile: string;
+    text?: string;
 }
 

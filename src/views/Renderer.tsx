@@ -51,7 +51,7 @@ export class Renderer {
 
     static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
         const pluginComponents: any = {
-            FloatingButton: <FloatingButton phoneNumber={plugin.data}/>,
+            FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text}/>,
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
             // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,

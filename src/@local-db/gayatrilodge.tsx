@@ -543,6 +543,9 @@ export const gaytriLodgePlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
         isActive: true,
-        data: "9857315551",
+        data: {
+            "mobile": "9857315551",
+            "text": ""
+        },
     }
 ]

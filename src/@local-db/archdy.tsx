@@ -26,7 +26,7 @@ export const archdy: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
+                    imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
                     imageAlt: 'Architectural design concepts.',
                 },
             ],
@@ -49,9 +49,9 @@ export const archdy: Section[] = [
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "Transforming Spaces with Archdy",
-            subTitle: "Your Vision, Our Expertise",
-            description: "Contact Archdy today to turn your dream spaces into reality. Elevate aesthetics and functionality with our architectural, interior, and landscape designs.",
+            title: "Archdy - Your Trusted Architecture Firm",
+            subTitle: "Designing Dreams into Reality",
+            description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
             version: "v2",
             style: "CLASSIC",
             services: null,
@@ -59,7 +59,7 @@ export const archdy: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageSrc: 'https://images.unsplash.com/photo-1644057501622-dfa7dd26dbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80',
                     imageAlt: 'Architectural design concepts.',
                 },
             ],
@@ -89,7 +89,7 @@ export const archdy: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1600585154363-67eb9e2e2099?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60',
+                    imageSrc: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
                     imageAlt: 'Architectural designs.',
                 },
             ],
@@ -98,6 +98,79 @@ export const archdy: Section[] = [
             portfolios: null,
             faqs: null,
             contactUs: null,
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Portfolio",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Portfolio",
+            id: "k",
+            title: "Our Portfolio",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            blogs: null,
+            faqs: null,
+            contactUs: null,
+            portfolios: [
+                {
+                    id: 1,
+                    name: '3D Desk and Office',
+                    description: 'Work from home accessories',
+                    imageSrc: 'https://images.unsplash.com/photo-1661867011861-671e1cd85cc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    href: '#',
+                },
+                {
+                    id: 2,
+                    name: 'Kitchen',
+                    description: 'Journals and note-taking',
+                    imageSrc: 'https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+                    href: '#',
+                },
+                {
+                    id: 3,
+                    name: 'Bedroom',
+                    description: 'Journals and note-taking',
+                    imageSrc: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+                    href: '#',
+                },
+                {
+                    id: 4,
+                    name: 'Self-Improvement',
+                    description: 'Journals and note-taking',
+                    imageSrc: 'https://images.unsplash.com/photo-1565183928294-7063f23ce0f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageAlt: 'Wood table with porcelain mug, leather journal, brass pen, leather key ring, and a houseplant.',
+                    href: '#',
+                },
+                {
+                    id: 5,
+                    name: 'Travel',
+                    description: 'Daily commute essentials',
+                    imageSrc: 'https://plus.unsplash.com/premium_photo-1670168995865-3a515cf74ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+                    href: '#',
+                },
+                {
+                    id: 5,
+                    name: 'Office and conference hall',
+                    description: 'Daily commute essentials',
+                    imageSrc: 'https://images.unsplash.com/photo-1643199121319-b3b5695e4acb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+                    href: '#',
+                },
+            ],
+            services: null,
+            products: null,
+            images: null,
+            testimonials: null,
         },
     },
     {
@@ -112,7 +185,7 @@ export const archdy: Section[] = [
             title: "Our Services - Architectural Excellence",
             subTitle: "Turning Ideas into Structures",
             description: "Explore our comprehensive architectural, interior, and landscape design services. Transform your spaces with Archdy's expertise in residential and commercial projects.",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             blogs: null,
             faqs: null,
@@ -181,31 +254,31 @@ export const archdy: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/ab/48/0aab4885d7503dd87d3e0e1206ba5e15.jpg',
+                    imageSrc: 'https://images.unsplash.com/photo-1639628739781-98290977fa82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '2',
-                    imageSrc: 'https://i.pinimg.com/564x/b8/f2/f4/b8f2f4cbfd7e93c7a41b693ced7c853e.jpg',
+                    imageSrc: 'https://images.unsplash.com/photo-1503174971373-b1f69850bded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1826&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '3',
-                    imageSrc: 'https://i.pinimg.com/736x/46/8d/e7/468de704f9b10cbd1b6f8a61d3997086.jpg',
+                    imageSrc: 'https://images.unsplash.com/photo-1615874694520-474822394e73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '4',
-                    imageSrc: 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60',
+                    imageSrc: 'https://images.unsplash.com/photo-1643526399974-7de62b65a6f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2042&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
                 {
                     id: '6',
-                    imageSrc: 'https://i.pinimg.com/564x/2f/93/ea/2f93eabc4dd56713aeeb622c2a610c41.jpg',
+                    imageSrc: 'https://plus.unsplash.com/premium_photo-1661963965286-45dc339e23fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1882&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 }, {
                     id: '7',
-                    imageSrc: 'https://i.pinimg.com/564x/37/a2/ff/37a2ffc28a2a91fcf976b6fc7f61dcbb.jpg',
+                    imageSrc: 'https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 }, {
                     id: '8',
@@ -213,7 +286,7 @@ export const archdy: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 }, {
                     id: '9',
-                    imageSrc: 'https://images.unsplash.com/photo-1574598762239-6b6f96eab341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+                    imageSrc: 'https://images.unsplash.com/photo-1591204154525-f7ae12d8572f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
@@ -224,8 +297,99 @@ export const archdy: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Service",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Testimonial",
+            id: "k",
+            title: "Testimonials",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            services: null,
+            products: null,
+            images: null,
+            blogs: null,
+            portfolios: null,
+            faqs: null,
+            contactUs: null,
+            termAndCondition: null,
+            testimonials: [
+                {
+                    id: "1",
+                    name: "John Doe",
+                    designation: "Graphic Designer",
+                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
+                    imageAlt: "Graphic Designer",
+                    testimonial:
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.",
+                },
+                {
+                    id: "2",
+                    name: "John Doe",
+                    designation: "John Doe",
+                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
+                    imageAlt: "John Doe",
+                    testimonial:
+                        "Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla.",
+                },
+                {
+                    id: "3",
+                    name: "John Doe",
+                    designation: "John Doe",
+                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+                    imageAlt: "John Doe",
+                    testimonial:
+                        "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
+                }, {
+                    id: "4",
+                    name: "John Doe",
+                    designation: "John Doe",
+                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+                    imageAlt: "John Doe",
+                    testimonial:
+                        "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
+                },
+            ],
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "3D design",
+            subTitle: "",
+            description: "",
+            version: "v2",
+            style: "CLASSIC",
+            services: null,
+            products: null,
+            images: [
+                {
+                    id: '1',
+                    imageSrc: 'https://images.unsplash.com/photo-1662092560486-ff770cb64ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
+                    imageAlt: 'Architectural design concepts.',
+                },
+            ],
+            blogs: null,
+            testimonials: null,
+            portfolios: null,
+            faqs: null,
+            contactUs: null,
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Contact Us",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -234,7 +398,7 @@ export const archdy: Section[] = [
             title: "Get In Touch",
             subTitle: "Let's Create Together",
             description: " Reach out to us for inquiries and collaboration. Experience personalized design solutions that elevate your spaces. Let's make your vision a reality.",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             services: null,
             products: null,
@@ -272,7 +436,7 @@ export const archdy: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -281,7 +445,7 @@ export const archdy: Section[] = [
             title: "Hero Banner!",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             services: null,
             products: null,
@@ -310,6 +474,9 @@ export const archdyPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
         isActive: true,
-        data: "8580676232",
+        data: {
+            "mobile": "8580676232",
+            "text": "Hello, I'm interested in your architectural, interior, and landscape design services. Can you provide more information?"
+        },
     }
 ]

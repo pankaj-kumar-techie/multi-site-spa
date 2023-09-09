@@ -126,7 +126,7 @@ export const techie: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Service",
+        name: "Portfolio",
         version: "v1",
         style: "CLASSIC",
         path: "index",
