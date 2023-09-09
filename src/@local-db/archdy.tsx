@@ -474,6 +474,9 @@ export const archdyPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
         isActive: true,
-        data: "8580676232",
+        data: {
+            "mobile": "8580676232",
+            "text": "Hello, I'm interested in your architectural, interior, and landscape design services. Can you provide more information?"
+        },
     }
 ]

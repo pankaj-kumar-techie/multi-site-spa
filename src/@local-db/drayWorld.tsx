@@ -378,6 +378,9 @@ export const drayWorldLogisticPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
         isActive: true,
-        data: "123-456-7890",
+        data: {
+            "mobile": "123",
+            "text": ""
+        },
     }
 ]

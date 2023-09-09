@@ -3,13 +3,17 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { ThemeContext } from '../../../themes/ThemeProvider';
 
 interface FloatingButtonProps {
-    phoneNumber: string;
+    phoneNumber?: string;
+    whatsappText?: string;
 }
 
-const FloatingButton: React.FC<FloatingButtonProps> = ({ phoneNumber }) => {
+const FloatingButton: React.FC<FloatingButtonProps> = ({ phoneNumber, whatsappText }) => {
     const { theme } = useContext(ThemeContext);
     const openWhatsApp = () => {
-        const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+        const baseWhatsAppUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
+        const whatsappUrl = whatsappText
+            ? `${baseWhatsAppUrl}&text=${encodeURIComponent(whatsappText)}`
+            : baseWhatsAppUrl;
         window.open(whatsappUrl, '_blank');
     };
 
