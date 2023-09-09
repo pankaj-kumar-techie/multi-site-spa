@@ -6,15 +6,10 @@ import { ThemeContext } from "../../../../themes/ThemeProvider";
 export default function SecondFooter(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
     const [footerData, setFooterData] = useState<any>([])
-
-
     const [footerTheme, setFooterTheme] = useState<string>("")
-
-
     useEffect(() => {
         setFooterData(props.data);
     }, [props.data])
-
     return (
         <section className={theme.background.backgroundColorDark}>
             <div className="w-full text-gray-300 py-2 px-2">
