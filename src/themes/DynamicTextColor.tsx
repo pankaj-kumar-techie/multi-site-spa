@@ -1,24 +1,42 @@
-import { useEffect, useState } from 'react';
+    import { useEffect, useState } from 'react';
 
-function calculateTextColor(bgColor: string): string {
-    // Calculate relative luminance (perceived brightness)
-    const r = parseInt(bgColor.slice(1, 3), 16) / 255;
-    const g = parseInt(bgColor.slice(3, 5), 16) / 255;
-    const b = parseInt(bgColor.slice(5, 7), 16) / 255;
+    function calculateTextColor(bgColorClass: string): string {
+        // Mapping of specific background color classes to corresponding text color classes
+        const colorMappings: { [bgClass: string]: string } = {
+            'black': 'text-white',
+            'white': 'text-black',
+            'custom-blue': 'text-white',
+            'blue-500': 'text-white',
+            'teal-500': 'text-white',
+            'orange-500': 'text-white',
+            'red-500': 'text-white',
+            // Add more mappings as needed
+        };
 
-    const luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+        // Check if a specific mapping exists for the provided background color class
+        if (colorMappings[bgColorClass]) {
+            return colorMappings[bgColorClass];
+        }
 
-    // Choose white or black text based on luminance
-    return luminance > 0.5 ? 'black' : 'white';
-}
+        // Calculate relative luminance (perceived brightness) for other background colors
+        const bgColor = getComputedStyle(document.documentElement).getPropertyValue(`--${bgColorClass.replace('bg-', '')}`);
+        const r = parseInt(bgColor.slice(1, 3), 16) / 255;
+        const g = parseInt(bgColor.slice(3, 5), 16) / 255;
+        const b = parseInt(bgColor.slice(5, 7), 16) / 255;
 
-export function useDynamicTextColor(bgColor: string): string {
-    const [textColor, setTextColor] = useState<string>('');
+        const luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
 
-    useEffect(() => {
-        const calculatedTextColor = calculateTextColor(bgColor);
-        setTextColor(calculatedTextColor);
-    }, [bgColor]);
+        return luminance > 0.5 ? 'text-black' : 'text-white';
+    }
 
-    return textColor;
-}
+
+    export function useDynamicTextColor(bgColorClass: string): string {
+        const [textColor, setTextColor] = useState<string>('');
+
+        useEffect(() => {
+            const calculatedTextColor = calculateTextColor(bgColorClass);
+            setTextColor(calculatedTextColor);
+        }, [bgColorClass]);
+
+        return textColor;
+    }

@@ -1,14 +1,17 @@
-import { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
-
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Import the hook
 
 interface SecondAboutUsProps {
     data: any;
 }
+
 const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || ""); // Use the hook for text color
+
     const [aboutData, setAboutData] = useState<any>({});
 
     useEffect(() => {
@@ -23,21 +26,24 @@ const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
     return (
         <section className={`bg-${theme.colors.primary} font-bold`}>
             <div className="bg-white overflow-hidden relative">
-                <img src={aboutData?.images?.[0]?.imageSrc || ""} alt={"h"} className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full" />
+                <img
+                    src={aboutData?.images?.[0]?.imageSrc || ""}
+                    alt={"h"}
+                    className="absolute h-full max-w-1/2 hidden lg:block right-0 top-0 rounded-full"
+                />
                 <div className="text-start w-1/2 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 z-20">
                     <TitleCover
                         title={aboutData.title}
                         titleSize="text-6xl"
                         paragraph={aboutData.description}
                         textAlign="left"
-                        titleColor={`text-${theme.colors.primary}-500`}
-                        paragraphColor={`text-${theme.colors.primary}-500`}
+                        titleColor={`${textColor}`} // Use dynamic text color here
+                        paragraphColor={`${textColor}`} // Use dynamic text color here
                     />
                 </div>
             </div>
         </section>
+    );
+};
 
-
-    )
-}
 export default SecondAboutUs;

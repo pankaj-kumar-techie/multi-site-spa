@@ -25,15 +25,17 @@ function FirstGallery(props: { data: any }) {
         return <SectionShimmer title={galleryData.title}></SectionShimmer>;
     }
 
+    const textColor = `text-${theme.colors.primary}`; // Use dynamic text color
+
     return (
         <section className={`bg-${theme.colors.primary} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}
                     subtitle=""
-                    titleColor={`text-${theme.colors.secondary}`}
+                    titleColor={textColor}
                     paragraph={galleryData.paragraph}
-                    paragraphColor={`text-${theme.colors.secondary}`}
+                    paragraphColor={textColor}
                     titleSize={"text-4xl"}
                     textAlign="center"
                 />
@@ -72,7 +74,7 @@ function FirstGallery(props: { data: any }) {
                     onMovePrevRequest={() =>
                         setCurrentImageIndex(
                             (currentImageIndex + galleryData.images.length - 1) %
-                                galleryData.images.length
+                            galleryData.images.length
                         )
                     }
                     onMoveNextRequest={() =>

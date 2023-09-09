@@ -2,17 +2,18 @@ import React, { useContext, useState } from 'react';
 import { FieldConfig } from '../modal/FieldConfig';
 import { Theme } from '../modal/Theme';
 import { ThemeContext } from '../themes/ThemeProvider';
-
+import { useDynamicTextColor } from '../themes/DynamicTextColor'; // Import the dynamic text color hook
 
 interface ContactFormProps {
     fields: FieldConfig[];
-    theme : Theme;
+    theme: Theme;
     onSubmit: (data: Record<string, any>) => void;
 }
 
 function Form({ fields, onSubmit }: ContactFormProps) {
     const { theme } = useContext(ThemeContext);
     const [formData, setFormData] = useState<Record<string, any>>({});
+    const textColor = useDynamicTextColor(theme.colors.primary || ''); // Dynamic text color
 
     const handleInputChange = (field: string, value: any) => {
         setFormData((prevData) => ({
@@ -29,13 +30,13 @@ function Form({ fields, onSubmit }: ContactFormProps) {
     return (
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
             {fields.map((field) => (
-                <label key={field.name} className="block text-sm">
-                    <span className={` font-bold`}>{field.label}</span>
+                <label key={field.name} className={`block text-sm ${textColor}`}>
+                    <span className="font-bold">{field.label}</span>
                     {field.type === 'select' ? (
                         <select
                             value={formData[field.name] || ''}
                             onChange={(event) => handleInputChange(field.name, event.target.value)}
-                            className="mt-1 block w-full rounded-md border-none bg-gray-100 h-12 px-3 shadow-sm focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                            className={`mt-1 block w-full rounded-md border-none bg-gray-100 h-12 px-3 shadow-sm focus:ring focus:ring-indigo-500 focus:ring-opacity-50 ${textColor}`}
                             required={field.required}
                         >
                             <option value="">Select {field.label}</option>
@@ -56,7 +57,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                                         checked={formData[field.name] === option.value}
                                         onChange={(event) => handleInputChange(field.name, event.target.value)}
                                     />
-                                    <span className="ml-2">{option.label}</span>
+                                    <span className={`ml-2 ${textColor}`}>{option.label}</span>
                                 </label>
                             ))}
                         </div>
@@ -77,7 +78,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                                             handleInputChange(field.name, updatedValues);
                                         }}
                                     />
-                                    <span className="ml-2">{option.label}</span>
+                                    <span className={`ml-2 ${textColor}`}>{option.label}</span>
                                 </label>
                             ))}
                         </div>
@@ -86,7 +87,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                             type={field.type}
                             name={field.name}
                             id={field.name}
-                            className="mt-1 block w-full rounded-md border-none bg-gray-100 h-12 px-3 shadow-sm focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                            className={`mt-1 block w-full rounded-md border-none bg-gray-100 h-12 px-3 shadow-sm focus:ring focus:ring-indigo-500 focus:ring-opacity-50 ${textColor}`}
                             required={field.required}
                             value={formData[field.name] || ''}
                             onChange={(event) => handleInputChange(field.name, event.target.value)}
@@ -94,7 +95,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                     )}
                 </label>
             ))}
-            <button className={`bg-${theme.colors.primary} text-white p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit" >Request A Call Back</button>
+            <button className={`bg-${theme.colors.secondary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">Request A Call Back</button>
         </form>
     );
 }

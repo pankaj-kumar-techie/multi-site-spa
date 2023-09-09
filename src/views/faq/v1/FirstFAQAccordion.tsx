@@ -30,6 +30,8 @@ const FirstFAQAccordion = (props: { data: any }) => {
         return <SectionShimmer title={faqData.title}></SectionShimmer>;
     }
 
+    const textColor = `text-${theme.colors.primary}`; // Use dynamic text color
+
     return (
         <section className={`bg-${theme.colors.primary} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
@@ -44,10 +46,10 @@ const FirstFAQAccordion = (props: { data: any }) => {
                             className="border rounded bg-white shadow mb-4"
                         >
                             <button
-                                className="w-full flex items-center justify-between px-4 py-3 focus:outline-none"
+                                className={`w-full flex items-center justify-between px-4 py-3 focus:outline-none ${textColor}`} // Use dynamic text color
                                 onClick={() => toggleAccordion(faq.id)}
                             >
-                                <h3 className="text-lg font-medium">{faq.question}</h3>
+                                <h3 className={`text-lg font-medium ${textColor}`}>{faq.question}</h3> {/* Use dynamic text color */}
                                 <svg
                                     className={`w-5 h-5 transition-transform ${activeIndex === faq.id ? 'transform rotate-180' : ''
                                         }`}
@@ -60,7 +62,7 @@ const FirstFAQAccordion = (props: { data: any }) => {
                                 </svg>
                             </button>
                             {activeIndex === faq.id && (
-                                <div className="px-4 py-3">
+                                <div className={`px-4 py-3 ${textColor}`}> {/* Use dynamic text color */}
                                     <p>{faq.answer}</p>
                                 </div>
                             )}
