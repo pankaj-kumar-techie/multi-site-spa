@@ -461,14 +461,15 @@ export const archdy: Section[] = [
 ];
 
 export const archdySeo: any = {
-    title: "Top Quality Interior & Exterior Design Services in North India | North Vibe Design",
-    description: "Elevate your spaces with exceptional craftsmanship and creative designs. We specialize in ACP installation, glass solutions, wooden flooring, and ceiling designs. Catering to residential and commercial clients in Himachal Pradesh and North India.",
-    keywords: "Interior design, exterior design, ACP installation, glass solutions, wooden flooring, ceiling designs, residential services, commercial services, remodeling, real estate, architecture, hospitality, landscape architects, Himachal Pradesh, North India.",
-    tags: "Interior Design, Exterior Design, ACP Installation, Glass Solutions, Wooden Flooring, Ceiling Designs, Residential Services, Commercial Services, Remodeling, Real Estate, Architecture, Hospitality, Landscape Architects, Himachal Pradesh, North India.",
+    title: "Archdy Studio - Top Interior, Exterior, and Landscape Design Services in North India",
+    description: "Archdy Studio offers turnkey design solutions, 3D design, architecture consultancy, and more. Elevate your spaces with our creative designs in North India.",
+    keywords: "Archdy Studio, Interior Design, Exterior Design, Landscape Design, Turnkey Design, 3D Design, Architecture Consultancy, North India.",
+    tags: "Archdy Studio, Interior Design, Exterior Design, Landscape Design, Turnkey Design, 3D Design, Architecture Consultancy, India.",
     author: "Pankaj Kumar",
     imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.pahariyatri.com",
+    siteUrl: "https://www.northvibedesign.com",
 };
+
 
 export const archdyPlugin: PluginConfig[] = [
     {
