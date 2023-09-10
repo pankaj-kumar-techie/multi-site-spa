@@ -22,13 +22,13 @@ const FirstTermsAndConditions = (props: { data: any }) => {
         return <SectionShimmer title={tacData.title}></SectionShimmer>;
     }
     return (
-        <section className={`bg-${theme.colors.primary} container mx-auto px-4 mb-4`}>
+        <section className={`bg-${theme.colors.primary} container mx-auto px-4`}>
             <TitleCover title={tacData.title} titleColor={`${textColor}`} fontFamily="font-bold" />
-            <div className="prose">
+            <div className="prose text-center">
                 {tacData.termAndCondition.map((tac: TermAndCondition) => (
                     <div key={tac.id}>
-                        <h3>{tac.title}</h3>
-                        <p>{tac.description}</p>
+                        <h3 className={textColor}>{tac.title}</h3>
+                        <p className={textColor}>{tac.description}</p>
                         <p>{tac.descriptionContext}</p>
                     </div>
                 ))}
