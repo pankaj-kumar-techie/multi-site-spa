@@ -39,8 +39,8 @@ export default function FirstBlog(props: { data: any }) {
         <TitleCover
           title={blogList.title}
           subtitle={blogList.subTitle}
-          titleColor={`${textColor}`} // Use dynamic text color here
-          subtitleColor={`${textColor}`} // Use dynamic text color here
+          titleColor={`${textColor}`}
+          subtitleColor={`${textColor}`}
         />
         {isLoading ? (
           <SectionShimmer title={blogList.title}></SectionShimmer>

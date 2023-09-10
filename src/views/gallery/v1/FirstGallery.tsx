@@ -6,9 +6,11 @@ import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 function FirstGallery(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [galleryData, setGalleryData] = useState<any>({
         title: "",
         description: "",
@@ -25,7 +27,6 @@ function FirstGallery(props: { data: any }) {
         return <SectionShimmer title={galleryData.title}></SectionShimmer>;
     }
 
-    const textColor = `text-${theme.colors.primary}`; // Use dynamic text color
 
     return (
         <section className={`bg-${theme.colors.primary} md:py-16 py-10`}>

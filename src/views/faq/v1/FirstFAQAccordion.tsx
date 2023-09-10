@@ -3,9 +3,11 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { FAQ } from '../../../modal/Section';
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
+import { useDynamicTextColor } from '../../../themes/DynamicTextColor';
 
 const FirstFAQAccordion = (props: { data: any }) => {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const [faqData, setFaqData] = useState<any>({
@@ -30,20 +32,18 @@ const FirstFAQAccordion = (props: { data: any }) => {
         return <SectionShimmer title={faqData.title}></SectionShimmer>;
     }
 
-    const textColor = `text-${theme.colors.primary}`; // Use dynamic text color
-
     return (
         <section className={`bg-${theme.colors.primary} pt-10 pb-10`}>
             <div className='container mx-auto px-3 lg:px-64'>
 
                 <div>
-                    <TitleCover title={faqData.title} titleColor={`text-${theme.colors.secondary}`} titleSize={"lg:text-[3rem] text-[1.5rem]"} fontFamily={theme.typography.fontFamily}></TitleCover>
+                    <TitleCover title={faqData.title} titleColor={`${textColor}`} titleSize={"lg:text-[3rem] text-[1.5rem]"} fontFamily={theme.typography.fontFamily}></TitleCover>
                 </div>
                 <div className="w-full  ">
                     {faqData.faqs.map((faq: FAQ) => (
                         <div
                             key={faq.id}
-                            className="border rounded bg-white shadow mb-4"
+                            className="border rounded shadow mb-4"
                         >
                             <button
                                 className={`w-full flex items-center justify-between px-4 py-3 focus:outline-none ${textColor}`} // Use dynamic text color

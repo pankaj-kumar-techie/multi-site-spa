@@ -4,10 +4,12 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Service } from "../../../modal/Section";
 import ServiceCard2 from "../../../components/cards/ServiceCard2";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 
 export default function SecondService(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [serviceData, setServiceData] = useState<any>({
         title: "",
         description: "",
@@ -20,9 +22,9 @@ export default function SecondService(props: { data: any }) {
         return <SectionShimmer title={serviceData.title}></SectionShimmer>;
     }
     return (
-        <section id="services" className={`bg-${theme.colors.secondary}`}>
-            <div className="section relative pt-20 pb-8 md:pt-16 md:pb-0 bg-white">
-                <TitleCover title={serviceData.title} titleColor={`text-${theme.colors.secondary}`}></TitleCover>
+        <section id="services" className={`bg-${theme.colors.primary}`}>
+            <div className="section relative pt-20 pb-8 md:pt-16 md:pb-0">
+                <TitleCover title={serviceData.title} titleColor={`${textColor}`}></TitleCover>
                 <div className="container xl:max-w-6xl mx-auto px-4">
                     <div className="flex flex-wrap flex-row -mx-4 text-center">
                         {serviceData.services.map((s: Service) => (
