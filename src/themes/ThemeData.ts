@@ -19,7 +19,7 @@ export const themes: { [key: string]: Theme } = {
     classic: {
         name: 'Classic Theme',
         colors: {
-            primary: 'custom-blue',
+            primary: 'orange-500',
             secondary: 'custom-beige',
         },
         typography: {
@@ -34,7 +34,7 @@ export const themes: { [key: string]: Theme } = {
     modern: {
         name: 'Modern Theme',
         colors: {
-            primary: 'custom-brown',
+            primary: 'blue-500',
             secondary: 'black',
         },
         typography: {

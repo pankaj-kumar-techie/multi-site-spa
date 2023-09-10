@@ -1,7 +1,7 @@
 import { Section } from "../modal/Section";
 
 export const basicTheme: any = {
-    name: "classic"
+    name: "modern"
 }
 
 export const basic: Section[] = [
