@@ -15,7 +15,7 @@ const aboutComponents = {
 const AboutUs: React.FC<AboutUsProps> = ({data, version}) => {
     const AboutComponent = aboutComponents[version];
 
-    return <AboutComponent data={data}/>;
+    return <AboutComponent data={data} textColor=""/>;
 };
 
 export default AboutUs;

@@ -5,11 +5,15 @@ import { Theme } from '../modal/Theme';
 interface ThemeContextProps {
   theme: Theme;
   setTheme: (theme: Theme) => void;
+  backgroundClasses: string;
+  typographyClasses: string;
 }
 
 export const ThemeContext = createContext<ThemeContextProps>({
   theme: themes.default,
   setTheme: () => { },
+  backgroundClasses: '',
+  typographyClasses: '',
 });
 
 interface ThemeProviderProps {
@@ -24,10 +28,13 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, children }) => {
     setCurrentTheme(newTheme);
   };
 
+  const backgroundClasses = getBackgroundClasses(currentTheme);
+  const typographyClasses = getTypographyClasses(currentTheme);
+
   return (
-    <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange }}>
-      <div className={getBackgroundClasses(currentTheme)}>
-        <div className={getTypographyClasses(currentTheme)}>{children}</div>
+    <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange, backgroundClasses, typographyClasses }}>
+      <div className={`${backgroundClasses} ${typographyClasses}`}>
+        {children}
       </div>
     </ThemeContext.Provider>
   );
@@ -44,9 +51,8 @@ const getBackgroundClasses = (theme: Theme) => {
   const {
     primary,
     secondary,
-
   } = colors;
-  return `${secondary || primary }`;
+  return `${secondary || primary}`;
 };
 
 export default ThemeProvider;

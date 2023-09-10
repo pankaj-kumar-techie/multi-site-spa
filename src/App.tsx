@@ -14,6 +14,7 @@ import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
 import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
 import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
+import { basic, basicTheme } from './@local-db/basic';
 // import { ClientService } from './service/ClientService';
 
 
@@ -92,9 +93,9 @@ export default function App() {
                         setSeo(archdySeo);
                         break;
                     default:
-                        setSectionData(archdy);
+                        setSectionData(basic);
                         setPlugins(archdyPlugin)
-                        setTheme(archdyTheme);
+                        setTheme(basicTheme);
                         setSeo(archdySeo);
                         break;
                 }
