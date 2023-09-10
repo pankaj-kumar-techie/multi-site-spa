@@ -6,10 +6,12 @@
             'black': 'text-white',
             'white': 'text-black',
             'custom-blue': 'text-white',
+            'custom-brown': 'text-black',
             'blue-500': 'text-white',
             'teal-500': 'text-white',
             'orange-500': 'text-white',
             'red-500': 'text-white',
+            'slate-500': 'text-black',
             // Add more mappings as needed
         };
 

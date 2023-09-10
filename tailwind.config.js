@@ -14,10 +14,6 @@ module.exports = {
         "purssian-blue":"#0B3C5D",
         "custom-black":"#1D2731",
       },
-      backgroundImage: {
-        'faq-img': "url('https://androthemes.com/themes/html/miranda/assets/img/room-cta-gallery/bg.jpg')",
-        'footer-dark':"url('https://htmldemo.zcubethemes.com/riorelax/img/bg/footer-bg.png')"
-      },
       fontFamily:{
         'font-raleway':['Raleway', 'sans-serif']
       }
