@@ -29,7 +29,6 @@ const FirstTermsAndConditions = (props: { data: any }) => {
                     <div key={tac.id}>
                         <h3 className={textColor}>{tac.title}</h3>
                         <p className={textColor}>{tac.description}</p>
-                        <p>{tac.descriptionContext}</p>
                     </div>
                 ))}
             </div>
