@@ -70,6 +70,51 @@ export const basic: Section[] = [
         },
     },
     {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Videos",
+            id: "002",
+            title: "Archdy - Your Trusted Architecture Firm",
+            subTitle: "Designing Dreams into Reality",
+            description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+            version: "v2",
+            style: "CLASSIC",
+            services: null,
+            products: null,
+            videos: [
+                {
+                    id: '1',
+                    title: 'Ab',
+                    url:'https://www.youtube.com/embed/mgiIFuT9T7s?autoplay=1'
+                },
+                {
+                    id: '1',
+                    title: 'Ab',
+                    url:'https://youtube.com/embed/wyCw9KT5GKQ'
+                },
+                {
+                    id: '1',
+                    title: 'Ab',
+                    url:'https://youtube.com/embed/3H_ve1dkNG8'
+                },
+                {
+                    id: '1',
+                    title: 'Ab',
+                    url:'https://www.youtube.com/embed/mgiIFuT9T7s?autoplay=1'
+                },
+            ],
+            blogs: null,
+            testimonials: null,
+            portfolios: null,
+            faqs: null,
+            contactUs: null,
+        },
+    },
+    {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "About-Us",
         version: "v1",
