@@ -2,7 +2,7 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const archdyTheme: any = {
-    name: "minimalist"
+    name: "default"
 }
 
 export const archdy: Section[] = [

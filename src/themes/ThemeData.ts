@@ -5,7 +5,7 @@ export const themes: { [key: string]: Theme } = {
         name: 'Default Theme',
         colors: {
             primary: 'black',
-            secondary: 'slate',
+            secondary: 'white',
         },
         typography: {
             fontFamily: 'font-arial',
