@@ -95,7 +95,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                     )}
                 </label>
             ))}
-            <button className={`bg-${theme.colors.secondary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">Request A Call Back</button>
+            <button className={`${theme.buttons.primary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">Request A Call Back</button>
         </form>
     );
 }
