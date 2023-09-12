@@ -1,19 +1,15 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import TitleCover from "../../../components/common/title-cover/TitleCover";
 
 export default function FirstTimeline() {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     return (
         <section className={`bg-${theme.colors.primary} py-20`}>
             <div className="container mx-auto">
-                <div className="mb-8">
-                    <h2 className="text-3xl font-semibold text-center mb-4">
-                        Process: Interior Design from Start to Finish
-                    </h2>
-                    <p className="text-gray-600 text-center">
-                        Discover our comprehensive interior design process that ensures a seamless journey from initial consultation to final installation.
-                    </p>
-                </div>
+                <TitleCover title={"Process: Interior Design from Start to Finish"} titleColor={`${textColor}`} subtitle={""} paragraph={""}></TitleCover>
                 <div className="flex flex-wrap items-center justify-center gap-6">
                     {/* Initial Consultation */}
                     <div className="flex items-center">

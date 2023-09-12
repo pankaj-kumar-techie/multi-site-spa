@@ -18,6 +18,7 @@ import Services from "./services/Services";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
 import Testimonials from "./testimonials/Testimonials";
 import Timeline from "./timeline/Timeline";
+import Video from "./video/Video";
 
 export class Renderer {
 
@@ -37,6 +38,7 @@ export class Renderer {
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
             Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
+            Videos: <Video key={section.id} data={section['data']} version={section['version']}></Video>,
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,

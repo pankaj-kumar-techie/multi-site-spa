@@ -1,5 +1,7 @@
 # Todo
 
+Added Component for Video showcasing
+
 All Business Domain We Cover:
 
 1. [x] Pahari Yatri, Himshikhar-trekking : Travel, trek , package website
@@ -13,3 +15,6 @@ All Business Domain We Cover:
 * Manage Media Operation (Image, Video, Animations)
 * Manage Context like Title, subtitle, description
 * text alignment like left, right or center
+
+#### Icon Refrences ; 
+https://www.iconfinder.com/icons

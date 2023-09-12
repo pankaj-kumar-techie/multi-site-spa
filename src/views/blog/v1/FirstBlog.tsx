@@ -5,6 +5,7 @@ import { Blog } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import NavigationButtons from "../../../components/common/button/NavigationButtons";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Import the hook
 
 export default function FirstBlog(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
@@ -15,6 +16,7 @@ export default function FirstBlog(props: { data: any }) {
   });
   const [startIndex, setStartIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const textColor = useDynamicTextColor(theme.colors.primary || ""); // Use the hook for text color
 
   useEffect(() => {
     setBlogList(props.data);
@@ -32,13 +34,13 @@ export default function FirstBlog(props: { data: any }) {
   const shouldRenderSingleSlide = window.innerWidth < 768; // Check for mobile view
 
   return (
-    <section className={`${theme.colors.primary}}`}>
+    <section className={`bg-${theme.colors.primary} font-bold`}>
       <div className="container mx-auto px-4 py-12">
         <TitleCover
           title={blogList.title}
           subtitle={blogList.subTitle}
-          titleColor={`text-${theme.colors.primary}`}
-          subtitleColor={`text-${theme.colors.primary}`}
+          titleColor={`${textColor}`}
+          subtitleColor={`${textColor}`}
         />
         {isLoading ? (
           <SectionShimmer title={blogList.title}></SectionShimmer>

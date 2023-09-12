@@ -3,9 +3,11 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import ImageCarousel from "../../../components/ImageCarousel"; // Adjust the import path
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 export default function FirstHeroBanner(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
+  const textColor = useDynamicTextColor(theme.colors.primary || "");
 
   const [bannerData, setBannerData] = useState<any>({
     title: "",
@@ -66,9 +68,9 @@ export default function FirstHeroBanner(props: { data: any }) {
           title={bannerData.title}
           subtitle={bannerData.subTitle}
           paragraph={bannerData.description}
-          titleColor={`text-${theme.colors.secondary}`}
-          subtitleColor={`text-${theme.colors.secondary}`}
-          paragraphColor={`text-${theme.colors.secondary}`}
+          titleColor={`${textColor}`}
+          subtitleColor={`${textColor}`}
+          paragraphColor={`${textColor}`}
           titleSize="lg:text-6xl text-4xl font-bold font-raleway md:text-5xl mt-32"
           subtitleSize="mt-3 max-w-md mx-auto text-2xl md:text-3xl md:max-w-3xl"
         />

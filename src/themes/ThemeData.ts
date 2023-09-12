@@ -1,12 +1,11 @@
 import { Theme } from "../modal/Theme";
 
-
 export const themes: { [key: string]: Theme } = {
     default: {
-        name: 'Default',
+        name: 'Default Theme',
         colors: {
-            primary: 'slate-200',
-            secondary: 'slate-500',
+            primary: 'black',
+            secondary: 'slate',
         },
         typography: {
             fontFamily: 'font-arial',
@@ -18,9 +17,9 @@ export const themes: { [key: string]: Theme } = {
         },
     },
     classic: {
-        name: 'Classic',
+        name: 'Classic Theme',
         colors: {
-            primary: 'custom-blue',
+            primary: 'orange-500',
             secondary: 'custom-beige',
         },
         typography: {
@@ -33,9 +32,9 @@ export const themes: { [key: string]: Theme } = {
         },
     },
     modern: {
-        name: 'Modern',
+        name: 'Modern Theme',
         colors: {
-            primary: 'custom-brown',
+            primary: 'blue-500',
             secondary: 'black',
         },
         typography: {
@@ -48,7 +47,7 @@ export const themes: { [key: string]: Theme } = {
         },
     },
     transparent: {
-        name: 'Transparent',
+        name: 'Transparent Theme',
         colors: {
             primary: 'slate-500',
             secondary: 'black',
@@ -63,7 +62,7 @@ export const themes: { [key: string]: Theme } = {
         },
     },
     vibrant: {
-        name: 'Vibrant',
+        name: 'Vibrant Theme',
         colors: {
             primary: 'red-500',
             secondary: 'white',
@@ -78,7 +77,7 @@ export const themes: { [key: string]: Theme } = {
         },
     },
     minimalist: {
-        name: 'Minimalist',
+        name: 'Minimalist Theme',
         colors: {
             primary: 'white',
             secondary: 'slate-500',
@@ -92,5 +91,34 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'bg-custom-orange text-gray-500 hover:text-black hover:bg-gray-100',
         },
     },
+    ocean: {
+        name: 'Ocean Theme',
+        colors: {
+            primary: 'blue-500',
+            secondary: 'teal-500',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        buttons: {
+            primary: 'bg-blue-600 text-white hover:bg-blue-700',
+            secondary: 'bg-teal-400 text-white hover:bg-teal-500',
+        },
+    },
+    sunset: {
+        name: 'Sunset Theme',
+        colors: {
+            primary: 'orange-500',
+            secondary: 'red-500',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        buttons: {
+            primary: 'bg-orange-600 text-white hover:bg-orange-700',
+            secondary: 'bg-red-400 text-white hover:bg-red-500',
+        },
+    },
 };
-

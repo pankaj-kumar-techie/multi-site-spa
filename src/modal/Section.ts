@@ -17,6 +17,7 @@ export interface Section {
     products?: Product[] | null;
     portfolios?: Portfolio[] | null;
     images?: Image[] | null;
+    videos?: VideoModel[] ;
     testimonials?: Testimonial[] | null;
     blogs?: Blog[] | null;
     faqs?: FAQ[] | null;
@@ -108,4 +109,10 @@ export type TermAndCondition = {
   title: string,
   description: string,
   descriptionContext?: string,
+}
+
+export type VideoModel = {
+  id: string,
+  title: string,
+  url: string,
 }

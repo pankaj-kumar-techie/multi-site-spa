@@ -6,9 +6,11 @@ import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import Lightbox from "react-image-lightbox";
 import "react-image-lightbox/style.css";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 function FirstGallery(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [galleryData, setGalleryData] = useState<any>({
         title: "",
         description: "",
@@ -25,15 +27,16 @@ function FirstGallery(props: { data: any }) {
         return <SectionShimmer title={galleryData.title}></SectionShimmer>;
     }
 
+
     return (
         <section className={`bg-${theme.colors.primary} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}
                     subtitle=""
-                    titleColor={`text-${theme.colors.secondary}`}
+                    titleColor={textColor}
                     paragraph={galleryData.paragraph}
-                    paragraphColor={`text-${theme.colors.secondary}`}
+                    paragraphColor={textColor}
                     titleSize={"text-4xl"}
                     textAlign="center"
                 />
@@ -72,7 +75,7 @@ function FirstGallery(props: { data: any }) {
                     onMovePrevRequest={() =>
                         setCurrentImageIndex(
                             (currentImageIndex + galleryData.images.length - 1) %
-                                galleryData.images.length
+                            galleryData.images.length
                         )
                     }
                     onMoveNextRequest={() =>

@@ -5,9 +5,11 @@ import { Testimonial } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import NavigationButtons from "../../../components/common/button/NavigationButtons";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 export default function FirstTestimonial(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [testimonialData, setTestimonialData] = useState<any>({
         title: "",
         description: "",
@@ -35,7 +37,7 @@ export default function FirstTestimonial(props: { data: any }) {
     return (
         <section className={`bg-${theme.colors.primary} text-center`}>
             <div className="container pb-12 md:pt-16 pt-5 mx-auto md:px-6">
-                <TitleCover title={testimonialData.title} titleColor={`text-${theme.colors.secondary}`} subtitle={""} paragraph={""}></TitleCover>
+                <TitleCover title={testimonialData.title} titleColor={`${textColor}`} subtitle={""} paragraph={""}></TitleCover>
                 <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
                     {testimonialsToShow.map((testimonial: Testimonial) => (
                         <TestimonialCard
