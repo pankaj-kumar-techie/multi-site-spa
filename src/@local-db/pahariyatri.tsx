@@ -19,13 +19,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "MODERN",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            faqs: null,
             contactUs: {
                 address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
                 email: "pahariyatri@gmail.com",
@@ -47,8 +40,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -61,11 +52,6 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -82,9 +68,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            blogs: null,
-            portfolios: null,
             products: [
                 {
                     id: 1,
@@ -159,10 +142,6 @@ export const pahariyatri: Section[] = [
                 },
                 // More products...
             ],
-            images: null,
-            faqs: null,
-            testimonials: null,
-            contactUs: null,
         },
     },
     {
@@ -179,8 +158,6 @@ export const pahariyatri: Section[] = [
             description: "At Pahari Yatri, we are passionate about providing exhilarating trekking and mountaineering experiences that connect individuals with nature's breathtaking beauty. As a leading adventure travel company, we specialize in curating personalized adventures, ensuring the highest safety standards, and promoting sustainable tourism practices. Our team of experienced professionals is committed to creating unforgettable memories for every adventurer who embarks on a journey with us.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -188,11 +165,6 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -209,10 +181,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "MODERN",
-            services: null,
-            products: null,
-            portfolios: null,
-            faqs: null,
             images: [
                 {
                     id: '1',
@@ -235,9 +203,6 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            contactUs: null,
         },
     },
     {
@@ -254,10 +219,6 @@ export const pahariyatri: Section[] = [
             description: "We are provided following services to our customers",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             services: [
                 {
                     id: 1,
@@ -302,9 +263,6 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'parking icon',
                 },
             ],
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -321,11 +279,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             blogs: [
                 {
                     id: "1",
@@ -360,8 +313,6 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
             ],
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -378,12 +329,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
             contactUs: {
                 address: "Himachal Pradesh",
                 email: "pahariyatri@gmail.com",
@@ -393,7 +338,6 @@ export const pahariyatri: Section[] = [
                     { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
                 ]
             },
-            testimonials: null,
         },
     },
     {
@@ -410,14 +354,6 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            blogs: null,
-            portfolios: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
         },
     },
 ];

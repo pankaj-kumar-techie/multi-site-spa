@@ -20,19 +20,13 @@ export const drayWorldLogistic: Section[] = [
             description: "We Deliver Excellence",
             version: "v2",
             style: "MODERN",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-            ],
-            blogs: null,
-            testimonials: null,
-            faqs: null,
+            logo:
+            {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
+                imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+            },
+
             contactUs: {
                 address: "",
                 email: "info@drayworldlogistics.com",
@@ -54,8 +48,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Efficient, Secure, and Reliable",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -63,11 +55,6 @@ export const drayWorldLogistic: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -84,8 +71,6 @@ export const drayWorldLogistic: Section[] = [
             description: "At Dray World Logistics, we are dedicated to providing specialized logistics services that ensure the secure and efficient transportation of your cargo. With years of experience and a commitment to excellence, we are your reliable logistics partner.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -93,11 +78,6 @@ export const drayWorldLogistic: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -114,10 +94,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Explore our comprehensive logistics services that ensure the secure and timely transportation of your cargo. Your logistics needs, our expertise.",
             version: "v2",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             services: [
                 {
                     id: 1,
@@ -148,9 +124,6 @@ export const drayWorldLogistic: Section[] = [
                     imageAlt: 'Last-Mile Delivery Icon',
                 },
             ],
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -167,8 +140,6 @@ export const drayWorldLogistic: Section[] = [
             description: "",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -176,11 +147,6 @@ export const drayWorldLogistic: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
 
@@ -198,14 +164,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Read what our satisfied clients have to say about our logistics services.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            blogs: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
-            termAndCondition: null,
             testimonials: [
                 {
                     id: "1",
@@ -260,11 +218,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Discover insightful articles and stay updated with the latest trends and news in the logistics industry.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             blogs: [
                 {
                     id: "1",
@@ -299,9 +252,6 @@ export const drayWorldLogistic: Section[] = [
                     imageAlt: 'Warm Hospitality',
                 },
             ],
-            images: null,
-            termAndCondition: null,
-            testimonials: null,
         },
     },
     {
@@ -318,12 +268,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Reach out to us for inquiries and collaboration. Experience reliable logistics services that ensure your cargo reaches its destination safely and on time. Let's make your logistics journey hassle-free.",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
             contactUs: {
                 address: "9 Nom Crescent Unit 2 \n Markham, Om L3S 2B3, CA",
                 email: "info@drayworldlogistics.com",
@@ -334,7 +278,6 @@ export const drayWorldLogistic: Section[] = [
                     { name: 'message', label: 'Message', type: 'textarea', required: true },
                 ]
             },
-            testimonials: null,
         },
     },
     {
@@ -351,15 +294,6 @@ export const drayWorldLogistic: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
-            termAndCondition: null,
         },
     },
 ];

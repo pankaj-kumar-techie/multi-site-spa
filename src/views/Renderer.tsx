@@ -1,4 +1,5 @@
 import FloatingButton from "../components/common/button/FloatingButton";
+import LocationButton from "../components/common/button/LocationButton";
 import Footer from "../components/layouts/footer/Footer";
 import Header from "../components/layouts/header/Header";
 import { PluginConfig } from "../modal/PluginConfig";
@@ -18,6 +19,7 @@ import Services from "./services/Services";
 import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
 import Testimonials from "./testimonials/Testimonials";
 import Timeline from "./timeline/Timeline";
+import Video from "./video/Video";
 
 export class Renderer {
 
@@ -37,6 +39,7 @@ export class Renderer {
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
             Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
+            Videos: <Video key={section.id} data={section['data']} version={section['version']}></Video>,
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
@@ -51,7 +54,9 @@ export class Renderer {
 
     static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
         const pluginComponents: any = {
-            FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text}/>,
+            FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text} />,
+            LocationButton: <LocationButton locationName={plugin.location?.locationName} latitude={plugin.location?.latitude}
+                longitude={plugin.location?.longitude}></LocationButton>
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
             // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,

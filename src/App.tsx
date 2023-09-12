@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
+import { basic, basicPlugin, basicTheme } from './@local-db/basic';
 import { blogTheme, blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
@@ -12,9 +14,6 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
-import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
-import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
-import { basic, basicTheme } from './@local-db/basic';
 // import { ClientService } from './service/ClientService';
 
 

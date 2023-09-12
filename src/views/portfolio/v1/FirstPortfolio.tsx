@@ -1,10 +1,10 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import PortfolioCard from "../../../components/cards/PortfolioCard";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Portfolio } from "../../../modal/Section";
-import { ThemeContext } from "../../../themes/ThemeProvider";
-import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 
 export default function FirstPortfolio(props: { data: any }) {

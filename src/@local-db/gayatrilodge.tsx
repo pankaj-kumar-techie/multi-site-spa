@@ -2,7 +2,7 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const gayatrilodgeTheme: any = {
-    name: "vibrant"
+    name: "minimalist"
 }
 export const gayatrilodge: Section[] = [
     {
@@ -19,15 +19,25 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            termAndCondition: null,
-            faqs: null,
-            contactUs: null,
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-4",
+                    label: "Gallery",
+                    url: "/gallery",
+                }, {
+                    id: "menu-3",
+                    label: "Contact us",
+                    url: "/contact-us",
+                },
+            ],
         },
     },
     {
@@ -44,8 +54,6 @@ export const gayatrilodge: Section[] = [
             description: "Experience the serenity of Himachal Pradesh at Gayatri Lodge. Nestled in the charming town of Kasauli, our lodge offers an idyllic escape surrounded by nature's beauty.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -53,12 +61,6 @@ export const gayatrilodge: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            portfolios: null,
-            blogs: null,
-            testimonials: null,
-            faqs: null,
-            termAndCondition: null,
-            contactUs: null,
         },
     },
     {
@@ -75,9 +77,6 @@ export const gayatrilodge: Section[] = [
             description: "At Gayatri Lodge, we believe in creating unforgettable memories for our guests. As a family-owned homestay, we take pride in our personalized approach and attention to detail. With years of experience in hospitality, we have curated a haven where every guest is treated like a part of our extended family. Our warm and friendly staff is dedicated to ensuring your stay is nothing short of exceptional.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
             images: [
                 {
                     id: '1',
@@ -85,11 +84,6 @@ export const gayatrilodge: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            faqs: null,
-            termAndCondition: null,
-            contactUs: null,
         },
     },
     {
@@ -106,10 +100,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            faqs: null,
             images: [
                 {
                     id: '1',
@@ -150,10 +140,6 @@ export const gayatrilodge: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            termAndCondition: null,
-            contactUs: null,
         },
     },
     {
@@ -170,9 +156,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            blogs: null,
-            portfolios: null,
             products: [
                 {
                     id: 1,
@@ -208,11 +191,6 @@ export const gayatrilodge: Section[] = [
                 },
                 // More products...
             ],
-            images: null,
-            faqs: null,
-            testimonials: null,
-            contactUs: null,
-            termAndCondition: null,
         },
     },
     {
@@ -229,10 +207,6 @@ export const gayatrilodge: Section[] = [
             description: "",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             services: [
                 {
                     id: 1,
@@ -277,10 +251,6 @@ export const gayatrilodge: Section[] = [
                     imageAlt: 'parking icon',
                 },
             ],
-            products: null,
-            termAndCondition: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -297,11 +267,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             blogs: [
                 {
                     id: "1",
@@ -350,9 +315,6 @@ export const gayatrilodge: Section[] = [
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
             ],
-            images: null,
-            termAndCondition: null,
-            testimonials: null,
         },
     },
     {
@@ -369,14 +331,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            blogs: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
-            termAndCondition: null,
             testimonials: [
                 {
                     id: "1",
@@ -430,14 +384,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            testimonials: null,
-            faqs: null,
-            blogs: null,
-            portfolios: null,
-            termAndCondition: null,
             contactUs: {
                 address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
                 email: "gayatrilodgekasauli@gmail.com",
@@ -465,14 +411,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            contactUs: null,
-            termAndCondition: null,
             faqs: [
                 {
                     id: 1,
@@ -517,15 +455,6 @@ export const gayatrilodge: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
-            termAndCondition: null,
         },
     },
 ];
@@ -541,11 +470,13 @@ export const gayatrilodgeSeo: any = {
 
 export const gaytriLodgePlugin: PluginConfig[] = [
     {
-        name: "FloatingButton",
+        name: "LocationButton",
         isActive: true,
-        data: {
-            "mobile": "9857315551",
-            "text": ""
+        location: {
+            locationName: "Gayatri Lodge Hotel in Kasauli",
+            latitude: 30.89901139661188,
+            longitude: 76.97811964534783,
+
         },
     }
 ]

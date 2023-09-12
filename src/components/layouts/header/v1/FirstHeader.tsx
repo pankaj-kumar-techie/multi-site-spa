@@ -3,25 +3,11 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../../../../themes/ThemeProvider";
 
-interface HeaderImage {
-  imageSrc: string;
-  imageAlt: string;
-}
 
-interface HeaderData {
-  title: string;
-  images: HeaderImage[];
-  contactUs: {
-    phone: string;
-    email: string;
-  };
-}
-
-export default function FirstHeader(props: { data: HeaderData }) {
+export default function FirstHeader(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
-  const [headerData, setHeaderData] = useState<HeaderData>({
+  const [headerData, setHeaderData] = useState<any>({
     title: "",
-    images: [],
     contactUs: { phone: "1234567890", email: "XXXXXXXXXXXXXXXX" },
   });
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,11 +35,11 @@ export default function FirstHeader(props: { data: HeaderData }) {
     >
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <Link to="/" className="flex items-center">
-          {headerData.images && headerData.images.length > 0 ? (
+          {headerData.logo ? (
             <img
               className="w-12 h-12 object-contain rounded-full mr-2"
-              src={headerData.images[0].imageSrc}
-              alt={headerData.images[0].imageAlt}
+              src={headerData.logo.imageSrc}
+              alt={headerData.logo.imageAlt}
             />
           ) : (
             <span className={`font-bold text-2xl ${isScrolled ? "text-black" : "text-white"}`}>
