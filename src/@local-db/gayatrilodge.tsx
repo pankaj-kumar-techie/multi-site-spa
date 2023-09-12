@@ -2,7 +2,7 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const gayatrilodgeTheme: any = {
-    name: "vibrant"
+    name: "minimalist"
 }
 export const gayatrilodge: Section[] = [
     {
