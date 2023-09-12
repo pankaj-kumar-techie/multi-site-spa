@@ -9,7 +9,7 @@ export const basic: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2",
+        version: "v1",
         style: "MODERN",
         path: "index",
         data: {
@@ -18,7 +18,7 @@ export const basic: Section[] = [
             title: "Archdy - Your Trusted Architecture Firm",
             subTitle: "Designing Dreams into Reality",
             description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
-            version: "v2",
+            version: "v1",
             style: "MODERN",
             logo: {
                 id: '1',
