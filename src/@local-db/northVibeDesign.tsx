@@ -20,19 +20,13 @@ export const northVibeDesign: Section[] = [
       description: "",
       version: "v1",
       style: "MODERN",
-      services: null,
-      products: null,
-      portfolios: null,
-      images: [
-        {
-          id: '1',
-          imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
-          imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-        },
-      ],
-      blogs: null,
-      testimonials: null,
-      faqs: null,
+      logo:
+      {
+        id: '1',
+        imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
+        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+      },
+
       contactUs: {
         address: "",
         email: "northvibedesings@gmail.com",
@@ -54,8 +48,6 @@ export const northVibeDesign: Section[] = [
       description: "Contact us today to make your dream space a reality. Elevate your surroundings with innovative designs that harmonize aesthetics and functionality.",
       version: "v2",
       style: "CLASSIC",
-      services: null,
-      products: null,
       images: [
         {
           id: '1',
@@ -63,11 +55,6 @@ export const northVibeDesign: Section[] = [
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],
-      blogs: null,
-      testimonials: null,
-      portfolios: null,
-      faqs: null,
-      contactUs: null,
     },
   },
   {
@@ -84,8 +71,6 @@ export const northVibeDesign: Section[] = [
       description: "At North Vibe Design, we are dedicated to providing specialized expertise in ACP (Aluminium Composite Panel) & HPL (High-Pressure Laminate) installation, glass solutions, premium wooden flooring, and captivating ceiling designs. Our services cater to storefronts, outdoor patios, pools, gardens, office buildings, apartments, hotels, shops, supermarkets, and more. ",
       version: "v1",
       style: "CLASSIC",
-      services: null,
-      products: null,
       images: [
         {
           id: '1',
@@ -93,11 +78,6 @@ export const northVibeDesign: Section[] = [
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],
-      blogs: null,
-      testimonials: null,
-      portfolios: null,
-      faqs: null,
-      contactUs: null,
     },
   },
 
@@ -115,9 +95,6 @@ export const northVibeDesign: Section[] = [
       description: "Explore our portfolio of diverse projects, from hotel buildings to office spaces. Our designs prioritize comfort, aesthetics, and functionality, ensuring spaces that captivate.",
       version: "v1",
       style: "CLASSIC",
-      blogs: null,
-      faqs: null,
-      contactUs: null,
       portfolios: [
         {
           id: 1,
@@ -169,11 +146,6 @@ export const northVibeDesign: Section[] = [
         },
         // Add more portfolio items here
       ],
-
-      services: null,
-      products: null,
-      images: null,
-      testimonials: null,
     },
   },
   {
@@ -190,10 +162,6 @@ export const northVibeDesign: Section[] = [
       description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
       version: "v1",
       style: "MODERN",
-      services: null,
-      products: null,
-      portfolios: null,
-      faqs: null,
       images: [
         {
           id: '1',
@@ -233,9 +201,6 @@ export const northVibeDesign: Section[] = [
           imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
         },
       ],
-      blogs: null,
-      testimonials: null,
-      contactUs: null,
     },
   },
   {
@@ -252,10 +217,6 @@ export const northVibeDesign: Section[] = [
       description: " Explore our comprehensive services that include ACP & HPL installation, wooden and ceramic flooring, glass solutions, ceiling designs, and roof solutions. Elevate your spaces with our innovative designs.",
       version: "v2",
       style: "CLASSIC",
-      blogs: null,
-      faqs: null,
-      contactUs: null,
-      portfolios: null,
       services: [
         {
           id: 1,
@@ -293,9 +254,6 @@ export const northVibeDesign: Section[] = [
           imageAlt: 'Roof icon',
         },
       ],
-      products: null,
-      images: null,
-      testimonials: null,
     },
   },
   {
@@ -312,11 +270,6 @@ export const northVibeDesign: Section[] = [
       description: "Dive into our blog stories, where we share insights on design trends, space transformations, and the fusion of culture and elegance. Experience the journey of design inspiration.",
       version: "v1",
       style: "CLASSIC",
-      services: null,
-      products: null,
-      faqs: null,
-      contactUs: null,
-      portfolios: null,
       blogs: [
         {
           id: "1",
@@ -383,8 +336,6 @@ export const northVibeDesign: Section[] = [
           imageAlt: "Modern retail store interior with attractive displays and welcoming ambiance.",
         },
       ],
-      images: null,
-      testimonials: null,
     },
   },
   {
@@ -401,12 +352,6 @@ export const northVibeDesign: Section[] = [
       description: " Reach out to us for inquiries and collaboration. Experience personalized design solutions that elevate your spaces. Let's make your vision a reality.",
       version: "v2",
       style: "CLASSIC",
-      services: null,
-      products: null,
-      portfolios: null,
-      blogs: null,
-      images: null,
-      faqs: null,
       contactUs: {
         address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
@@ -442,7 +387,6 @@ export const northVibeDesign: Section[] = [
           },
         ]
       },
-      testimonials: null,
     },
   },
   {
@@ -459,14 +403,6 @@ export const northVibeDesign: Section[] = [
       description: "Hero Banner Paragraph is here",
       version: "v1",
       style: "CLASSIC",
-      services: null,
-      products: null,
-      blogs: null,
-      portfolios: null,
-      images: null,
-      faqs: null,
-      contactUs: null,
-      testimonials: null,
     },
   },
 ];

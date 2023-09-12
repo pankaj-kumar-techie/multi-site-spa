@@ -20,19 +20,12 @@ export const archdy: Section[] = [
             description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
             version: "v2",
             style: "MODERN",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
-                    imageAlt: 'Architectural design concepts.',
-                },
-            ],
-            blogs: null,
-            testimonials: null,
-            faqs: null,
+            logo:
+            {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
+                imageAlt: 'Architectural design concepts.',
+            },
             contactUs: {
                 address: "",
                 email: "contact@archdy.com",
@@ -54,8 +47,6 @@ export const archdy: Section[] = [
             description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -63,11 +54,6 @@ export const archdy: Section[] = [
                     imageAlt: 'Architectural design concepts.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -84,8 +70,6 @@ export const archdy: Section[] = [
             description: "Archdy is dedicated to providing specialized expertise in architectural, interior, and landscape design. Serving residential and commercial clients in Himachal Pradesh and beyond.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -93,11 +77,6 @@ export const archdy: Section[] = [
                     imageAlt: 'Architectural designs.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -114,9 +93,6 @@ export const archdy: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
             portfolios: [
                 {
                     id: 1,
@@ -167,10 +143,6 @@ export const archdy: Section[] = [
                     href: '#',
                 },
             ],
-            services: null,
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -187,10 +159,6 @@ export const archdy: Section[] = [
             description: "Explore our comprehensive architectural, interior, and landscape design services. Transform your spaces with Archdy's expertise in residential and commercial projects.",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             services: [
                 {
                     id: 1,
@@ -228,9 +196,6 @@ export const archdy: Section[] = [
                     imageAlt: '3D design icon',
                 },
             ],
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -247,10 +212,6 @@ export const archdy: Section[] = [
             description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
             version: "v1",
             style: "MODERN",
-            services: null,
-            products: null,
-            portfolios: null,
-            faqs: null,
             images: [
                 {
                     id: '1',
@@ -290,9 +251,6 @@ export const archdy: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            contactUs: null,
         },
     },
     {
@@ -309,14 +267,6 @@ export const archdy: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            blogs: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
-            termAndCondition: null,
             testimonials: [
                 {
                     id: "1",
@@ -370,8 +320,6 @@ export const archdy: Section[] = [
             description: "",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -379,11 +327,6 @@ export const archdy: Section[] = [
                     imageAlt: 'Architectural design concepts.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -400,12 +343,6 @@ export const archdy: Section[] = [
             description: " Reach out to us for inquiries and collaboration. Experience personalized design solutions that elevate your spaces. Let's make your vision a reality.",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
             contactUs: {
                 address: "Hamirpur, Himachal Pradesh, India",
                 email: "ar.avineshsharma@gmail.com",
@@ -430,7 +367,6 @@ export const archdy: Section[] = [
                     { name: 'text', label: 'Massage', type: 'textarea', required: false },
                 ]
             },
-            testimonials: null,
         },
     },
     {
@@ -447,15 +383,6 @@ export const archdy: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
-            termAndCondition: null,
         },
     },
 ];

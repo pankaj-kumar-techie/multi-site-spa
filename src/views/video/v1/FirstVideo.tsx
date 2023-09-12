@@ -27,7 +27,8 @@ function FirstVideo(props: { data: any }) {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={videoData.title}
-                    subtitle=""
+                    subtitle={videoData.subTitle}
+                    subtitleColor={textColor}
                     titleColor={textColor}
                     paragraph={videoData.paragraph}
                     paragraphColor={textColor}
