@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 interface NavigationButtonsProps {
     onPrev: () => void;
@@ -10,18 +11,19 @@ interface NavigationButtonsProps {
 
 const NavigationButtons: React.FC<NavigationButtonsProps> = ({ onPrev, onNext, isPrevDisabled, isNextDisabled }) => {
     const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.secondary || "");
     return (
         <div className="flex justify-center mt-6">
             <button
                 onClick={onPrev}
                 disabled={isPrevDisabled}
-                className={`mr-4 bg-${theme.colors.secondary} hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300`}>
+                className={`mr-4 bg-${theme.colors.secondary} hover:bg-blue-600 ${textColor} py-2 px-4 rounded transition-colors duration-300`}>
                 Previous
             </button>
             <button
                 onClick={onNext}
                 disabled={isNextDisabled}
-                className={`bg-${theme.colors.secondary} hover:bg-blue-600 text-white py-2 px-4 rounded transition-colors duration-300`}
+                className={`bg-${theme.colors.secondary} hover:bg-blue-600 ${textColor} py-2 px-4 rounded transition-colors duration-300`}
             >
                 Next
             </button>

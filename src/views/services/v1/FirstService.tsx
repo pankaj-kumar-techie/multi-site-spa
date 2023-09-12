@@ -23,7 +23,7 @@ export default function FirstService(props: { data: any }) {
     if (!serviceData.services) {
         return <SectionShimmer title={serviceData.title}></SectionShimmer>;
     }
-
+   
     return (
         <section className={`bg-${theme.colors.primary} md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]`} >
             <div className="container mx-auto">

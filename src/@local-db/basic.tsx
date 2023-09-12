@@ -2,7 +2,7 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const basicTheme: any = {
-    name: "modern"
+    name: "default"
 }
 
 export const basic: Section[] = [
