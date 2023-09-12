@@ -1,3 +1,4 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const basicTheme: any = {
@@ -894,3 +895,16 @@ export const basic: Section[] = [
         },
     },
 ];
+
+export const basicPlugin: PluginConfig[] = [
+    {
+        name: "LocationButton",
+        isActive: true,
+        location: {
+            locationName: "Gayatri Lodge Hotel in Kasauli",
+            latitude: 30.89901139661188,
+            longitude: 76.97811964534783,
+
+        },
+    }
+]

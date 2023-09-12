@@ -1,4 +1,5 @@
 import FloatingButton from "../components/common/button/FloatingButton";
+import LocationButton from "../components/common/button/LocationButton";
 import Footer from "../components/layouts/footer/Footer";
 import Header from "../components/layouts/header/Header";
 import { PluginConfig } from "../modal/PluginConfig";
@@ -53,7 +54,9 @@ export class Renderer {
 
     static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
         const pluginComponents: any = {
-            FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text}/>,
+            FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text} />,
+            LocationButton: <LocationButton locationName={plugin.location?.locationName} latitude={plugin.location?.latitude}
+                longitude={plugin.location?.longitude}></LocationButton>
             // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
             // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
             // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,

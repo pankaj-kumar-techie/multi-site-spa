@@ -470,11 +470,13 @@ export const gayatrilodgeSeo: any = {
 
 export const gaytriLodgePlugin: PluginConfig[] = [
     {
-        name: "FloatingButton",
+        name: "LocationButton",
         isActive: true,
-        data: {
-            "mobile": "9857315551",
-            "text": ""
+        location: {
+            locationName: "Gayatri Lodge Hotel in Kasauli",
+            latitude: 30.89901139661188,
+            longitude: 76.97811964534783,
+
         },
     }
 ]

@@ -26,6 +26,25 @@ export const archdy: Section[] = [
                 imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
                 imageAlt: 'Architectural design concepts.',
             },
+            menu:[
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },{
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },{
+                    id: "menu-3",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },{
+                    id: "menu-4",
+                    label: "Contact us",
+                    url: "/contact-us",
+                },
+            ],
             contactUs: {
                 address: "",
                 email: "contact@archdy.com",
@@ -345,7 +364,7 @@ export const archdy: Section[] = [
             style: "CLASSIC",
             contactUs: {
                 address: "Hamirpur, Himachal Pradesh, India",
-                email: "ar.avineshsharma@gmail.com",
+                email: "archdyarchitects@gmail.com",
                 phone: "+91 8580676232",
                 formFields: [
                     { name: 'name', label: 'Name', type: 'text', required: true },
