@@ -5,6 +5,7 @@
         const colorMappings: { [bgClass: string]: string } = {
             'black': 'text-white',
             'white': 'text-black',
+            'purple-500':'text-white',
             'blue-500': 'text-white',
             'teal-500': 'text-white',
             'orange-500': 'text-white',

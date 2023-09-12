@@ -93,9 +93,9 @@ export default function App() {
                         setSeo(archdySeo);
                         break;
                     default:
-                        setSectionData(basic);
+                        setSectionData(archdy);
                         setPlugins(archdyPlugin)
-                        setTheme(basicTheme);
+                        setTheme(archdyTheme);
                         setSeo(archdySeo);
                         break;
                 }

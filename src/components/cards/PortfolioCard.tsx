@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useDynamicTextColor } from "../../themes/DynamicTextColor";
+import { ThemeContext } from "../../themes/ThemeProvider";
 
 export default function PortfolioCard(portfolio: {
     id: any,
@@ -8,11 +10,13 @@ export default function PortfolioCard(portfolio: {
     imageSrc: any,
     imageAlt: any
 }){
+    const { theme } = useContext(ThemeContext);
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     return(
-        <div key={portfolio.name}
-             className="group relative py-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500">
+        <div key={portfolio.id}
+             className={`group relative bg-${theme.colors.secondary} my-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500`}>
             <div
-                className="relative w-full h-80 bg-white  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                className="relative w-full h-80  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                 <img
                     src={portfolio.imageSrc}
                     alt={portfolio.imageAlt}
@@ -27,7 +31,7 @@ export default function PortfolioCard(portfolio: {
                         {portfolio.name}
                     </a>
                 </h3>
-                <p className="ml-2 text-base font-semibold text-gray-900">{portfolio.description}</p>
+                <p className="ml-2 text-base pb-5 font-semibold text-gray-900">{portfolio.description}</p>
             </div>
         </div>
     )
