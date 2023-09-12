@@ -1,3 +1,4 @@
+import { type } from "os";
 import { FieldConfig } from "./FieldConfig";
 
 export interface Section {
@@ -13,20 +14,35 @@ export interface Section {
     description: string;
     version: string;
     style: string;
-    services?: Service[] | null;
-    products?: Product[] | null;
-    portfolios?: Portfolio[] | null;
-    images?: Image[] | null;
+    menu?:MenuItem[];
+    logo?:Image;
+    services?: Service[];
+    products?: Product[];
+    portfolios?: Portfolio[];
+    images?: Image[];
     videos?: VideoModel[] ;
-    testimonials?: Testimonial[] | null;
-    blogs?: Blog[] | null;
-    faqs?: FAQ[] | null;
-    ourTeam?: OurTeam[] | null;
-    termAndCondition?: TermAndCondition[] | null;
-    contactUs?: ContactUs | null;
+    testimonials?: Testimonial[];
+    blogs?: Blog[];
+    faqs?: FAQ[];
+    ourTeam?: OurTeam[];
+    termAndCondition?: TermAndCondition[];
+    contactUs?: ContactUs ;
   };
   path: string;
 }
+
+export type MenuItem = {
+  id: string,
+  label: string,
+  url:string,
+}
+
+export type SocialLink = {
+  id:string;
+  iconClass:string;
+  link:string;
+}
+
 
 export type Testimonial = {
   id: string,

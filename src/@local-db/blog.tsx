@@ -19,14 +19,6 @@ export const blogpahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -43,8 +35,6 @@ export const blogpahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -52,11 +42,6 @@ export const blogpahariyatri: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -73,11 +58,6 @@ export const blogpahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
             blogs: [
                 {
                     id: "1",
@@ -147,8 +127,6 @@ export const blogpahariyatri: Section[] = [
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
             ],
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -165,14 +143,6 @@ export const blogpahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
         },
     },
 ];

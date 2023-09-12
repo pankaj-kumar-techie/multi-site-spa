@@ -30,14 +30,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            images: null,
-            blogs: null,
-            testimonials: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -54,8 +46,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
             images: [
                 {
                     id: '1',
@@ -63,11 +53,6 @@ export const techie: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -84,8 +69,6 @@ export const techie: Section[] = [
             description: "Experienced Software Engineer specializing in backend development with expertise in Java andbuilding robust applications using Spring Boot. Proficient in integrating frontend technologies likeJavaScript and TypeScript. Skilled in containerization with Docker and deployment using CI/CDpipelines like Jenkins. Familiar with Flutter for cross-platform mobile app development",
             version: "v1",
             style: "MODERN",
-            services: null,
-            products: null,
             images: [
                 {
                     "id": "1",
@@ -93,11 +76,6 @@ export const techie: Section[] = [
                     "imageSrc": "https://pbs.twimg.com/profile_images/1267037032867598338/WuIcKTuF_400x400.jpg"
                 }
             ],
-            blogs: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            contactUs: null,
         },
     },
     {
@@ -114,14 +92,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
         },
     },
     {
@@ -138,9 +108,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
             portfolios: [
                 {
                     id: 1,
@@ -227,9 +194,6 @@ export const techie: Section[] = [
                     imageAlt: 'parking icon',
                 },
             ],
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -246,11 +210,6 @@ export const techie: Section[] = [
             description: "Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae elementum enim vitae ullamcorper suspendisse.",
             version: "v1",
             style: "CLASSIC",
-            blogs: null,
-            faqs: null,
-            contactUs: null,
-            portfolios: null,
-            services: null,
             ourTeam: [
                 {
                     id: 1,
@@ -298,9 +257,6 @@ export const techie: Section[] = [
                     href: '#',
                 },
             ],
-            products: null,
-            images: null,
-            testimonials: null,
         },
     },
     {
@@ -317,13 +273,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            images: null,
-            testimonials: null,
-            portfolios: null,
-            faqs: null,
-            blogs: null,
             contactUs: {
                 address: "Village Khurahal, Tehsil Sundar Nagar, Himachal Pradesh 174403",
                 email: "pankajkumar.techie@gmail.com",
@@ -345,14 +294,6 @@ export const techie: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            services: null,
-            products: null,
-            portfolios: null,
-            blogs: null,
-            images: null,
-            faqs: null,
-            contactUs: null,
-            testimonials: null,
         },
     },
 ];
