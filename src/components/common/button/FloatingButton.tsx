@@ -21,7 +21,7 @@ const FloatingButton: React.FC<FloatingButtonProps> = ({ phoneNumber, whatsappTe
 
     return (
         <button
-            className={`fixed bottom-4 right-4 ${theme.buttons.primary} ${textColor} p-4 rounded-full shadow-md hover:bg-${theme.buttons.secondary} z-10`}
+            className={`fixed bottom-4 right-4 ${theme.buttons.secondary} ${textColor} p-4 rounded-full shadow-md hover:bg-${theme.buttons.secondary} z-10`}
             onClick={openWhatsApp}
         >
             <FaWhatsapp size={24} />

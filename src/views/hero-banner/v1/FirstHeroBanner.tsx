@@ -78,13 +78,13 @@ export default function FirstHeroBanner(props: { data: any }) {
           <div className={"flex items-center justify-center border border-transparent text-base font-medium rounded-md text-white md:text-lg"}>
             <a
               href="/echo"
-              className="w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purssian-blue hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
+              className={`w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white ${theme.buttons.primary} md:py-4 md:text-lg md:px-10`}
             >
               Get started
             </a>
           </div>
           <div className={"mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3"}>
-            <a href="/echo" className={"w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:text-white hover:from-pink-500 hover:bg-custom-blue md:py-4 md:text-lg md:px-10"}>
+            <a href="/echo" className={`${theme.buttons.secondary} w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white hover:text-white  md:py-4 md:text-lg md:px-10`}>
               Learn more
             </a>
           </div>
