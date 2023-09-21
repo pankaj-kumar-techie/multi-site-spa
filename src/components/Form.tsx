@@ -13,7 +13,7 @@ interface ContactFormProps {
 function Form({ fields, onSubmit }: ContactFormProps) {
     const { theme } = useContext(ThemeContext);
     const [formData, setFormData] = useState<Record<string, any>>({});
-    const textColor = useDynamicTextColor(theme.colors.secondary || ''); // Dynamic text color
+    const textColor = useDynamicTextColor(theme.colors.primary || ''); // Dynamic text color
 
     const handleInputChange = (field: string, value: any) => {
         setFormData((prevData) => ({
@@ -95,7 +95,7 @@ function Form({ fields, onSubmit }: ContactFormProps) {
                     )}
                 </label>
             ))}
-            <button className={`${theme.buttons.primary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">Request A Call Back</button>
+            <button className={`${theme.buttons.secondary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">Request A Call Back</button>
         </form>
     );
 }

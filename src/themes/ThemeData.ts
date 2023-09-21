@@ -12,8 +12,8 @@ export const themes: { [key: string]: Theme } = {
             fontSize: 'text-base',
         },
         buttons: {
-            primary: 'bg-primary text-white hover:bg-primary-dark',
-            secondary: 'bg-secondary text-white hover:bg-secondary-dark',
+            primary: 'bg-black hover:bg-slate-800',
+            secondary: 'bg-[#008080] hover:bg-[#009999]',
         },
     },
     classic: {

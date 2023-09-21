@@ -7,7 +7,7 @@ import { useDynamicTextColor } from "../../../../themes/DynamicTextColor";
 
 export default function FirstFooter(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.secondary || "");
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [footerData, setFooterData] = useState<any>([])
     const [footerTheme, setFooterTheme] = useState<string>("")
 
@@ -84,7 +84,7 @@ export default function FirstFooter(props: { data: any }) {
                                 type="text"
                                 placeholder="Enter Email"
                             />
-                            <button className={`p-2 mb-4 ${textColor} font-jakarta bg-${theme.colors.secondary} rounded-md`}>Subscribe</button>
+                            <button className={`p-2 mb-4 ${textColor} font-jakarta ${theme.buttons.secondary} rounded-md`}>Subscribe</button>
                         </form>
                     </div>
                 </div>
