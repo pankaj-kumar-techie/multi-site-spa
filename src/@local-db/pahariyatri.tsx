@@ -1,7 +1,7 @@
 import { Section } from "../modal/Section";
 
 export const pahariyatriTheme: any = {
-    name: "classic"
+    name: "minimalist"
 }
 
 export const pahariyatri: Section[] = [
