@@ -168,29 +168,6 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "About-Us",
-        version: "v2",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "AboutUs",
-            id: "003",
-            title: "About Pahari Yatri",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "At Pahari Yatri, we are passionate about providing exhilarating trekking and mountaineering experiences that connect individuals with nature's breathtaking beauty. As a leading adventure travel company, we specialize in curating personalized adventures, ensuring the highest safety standards, and promoting sustainable tourism practices. Our team of experienced professionals is committed to creating unforgettable memories for every adventurer who embarks on a journey with us.",
-            version: "v1",
-            style: "CLASSIC",
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-            ],
-        },
-    },
-    {
         id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
         name: " ",
         version: "v1",

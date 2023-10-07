@@ -57,6 +57,29 @@ export const techie: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About-Us",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About Pankaj Kumar",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Experienced Software Engineer specializing in backend development with expertise in Java andbuilding robust applications using Spring Boot. Proficient in integrating frontend technologies likeJavaScript and TypeScript. Skilled in containerization with Docker and deployment using CI/CDpipelines like Jenkins. Familiar with Flutter for cross-platform mobile app development",
+            version: "v1",
+            style: "CLASSIC",
+            images: [
+                {
+                    id: '1',
+                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
         version: "v1",
         style: "CLASSIC",
