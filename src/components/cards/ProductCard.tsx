@@ -16,7 +16,7 @@ export default function ProductCard(product: {
 
     return (
         <>
-            <div className={`bg-${theme.colors.secondary}`}>
+            <div className={`bg-${theme.colors.primary}`}>
                 <a key={product.id} href={product.href}
                    className="group hover:shadow-2xl hover:scale-105 transition-all transform duration-500 shadow-xl rounded-xl">
                     <div

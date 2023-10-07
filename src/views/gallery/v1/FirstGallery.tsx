@@ -10,7 +10,7 @@ import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 function FirstGallery(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.secondary || "");
+    const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [galleryData, setGalleryData] = useState<any>({
         title: "",
         description: "",
@@ -29,12 +29,12 @@ function FirstGallery(props: { data: any }) {
 
 
     return (
-        <section className={`bg-${theme.colors.secondary} md:py-16 py-10`}>
+        <section className={`bg-${theme.colors.primary} md:py-16 py-10`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <TitleCover
                     title={galleryData.title}
                     subtitle=""
-                    titleColor={textColor}
+                    titleColor={`${textColor}`}
                     paragraph={galleryData.paragraph}
                     paragraphColor={textColor}
                     titleSize={"text-4xl"}
