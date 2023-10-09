@@ -35,7 +35,7 @@ export const pahariyatri: Section[] = [
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "Your Journey Begins",
+            title: "The World is Waiting For You",
             subTitle: "Where will you go next?",
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
@@ -43,12 +43,7 @@ export const pahariyatri: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-                {
-                    id: '2',
-                    imageSrc: 'https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+                    imageSrc: 'https://gotrip-appdir.vercel.app/img/masthead/6/bg.png',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
@@ -96,6 +91,7 @@ export const pahariyatri: Section[] = [
                     id: 1,
                     name: 'Roopkund Trek',
                     href: '#',
+                    price: '9000',
                     description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
                     imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
