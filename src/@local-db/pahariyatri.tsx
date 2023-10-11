@@ -231,20 +231,75 @@ export const pahariyatri: Section[] = [
         },
     },
     {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Gallery",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Gallery",
+            id: "004",
+            title: "Our Gallery",
+            subTitle: "A Glimpse of Our Work",
+            description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: '1',
+                    imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '2',
+                    imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '3',
+                    imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '4',
+                    imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '6',
+                    imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '7',
+                    imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '8',
+                    imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '9',
+                    imageSrc: 'https://images.unsplash.com/photo-1574598762239-6b6f96eab341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+            ],
+        },
+    },
+    {
         id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
         name: " ",
         version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Product",
+            type: "Portfolio",
             id: "k",
             title: "Untouched Treks!",
             subTitle: "Join Us for a Trip to the Himalayas",
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            products: [
+            portfolios: [
                 {
                     id: 1,
                     name: 'Roopkund Trek',
