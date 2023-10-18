@@ -423,7 +423,7 @@ export const northVibeDesignPlugin: PluginConfig[] = [
     isActive: true,
     data: {
       "mobile": "6280888188",
-      "text": ""
+      "text": "Hello! Thank you for connecting with us. We're here to help transform your spaces with expertise. Feel free to ask any questions or discuss your interior and exterior design needs. Your vision, our expertise!"
     },
 
   }
