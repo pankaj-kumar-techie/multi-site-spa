@@ -14,6 +14,7 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
+import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
 // import { ClientService } from './service/ClientService';
 
 
@@ -91,6 +92,12 @@ export default function App() {
                         setTheme(archdyTheme);
                         setSeo(archdySeo);
                         break;
+                    case "dray-world.com":
+                        setSectionData(drayWorldLogistic);
+                        setPlugins(drayWorldLogisticPlugin)
+                        setTheme(drayWorldLogisticTheme);
+                        setSeo(drayWorldLogisticSeo);
+                        break;
                     default:
                         setSectionData(pahariyatri);
                         setPlugins(archdyPlugin)
@@ -131,11 +138,9 @@ export default function App() {
                                 .map((plugin: PluginConfig) =>
                                     Renderer.renderPlugin(theme, plugin)
                                 )}
-
                         {sectionData.map((sectionData: Section) =>
                             Renderer.componentRenderV1(theme, sectionData)
                         )}
-
                     </ThemeProvider>
                 </>
             ) : (

@@ -30,7 +30,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "",
         email: "northvibedesings@gmail.com",
-        phone: "9569576707",
+        phone: "6280888188",
       },
     },
   },
@@ -355,7 +355,7 @@ export const northVibeDesign: Section[] = [
       contactUs: {
         address: "Himachal Pradesh",
         email: "northvibedesings@gmail.com",
-        phone: "+91 9569576707",
+        phone: "+91 6280 888 188",
         formFields: [
           { name: 'name', label: 'Name', type: 'text', required: true },
           { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
@@ -422,7 +422,7 @@ export const northVibeDesignPlugin: PluginConfig[] = [
     name: "FloatingButton",
     isActive: true,
     data: {
-      "mobile": "9569576707",
+      "mobile": "6280888188",
       "text": ""
     },
 
