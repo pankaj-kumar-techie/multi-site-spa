@@ -1,8 +1,21 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const pahariyatriTheme: any = {
     name: "default"
 }
+
+export const pahariyatriPlugin: PluginConfig[] = [
+    {
+        name: "FloatingButton",
+        isActive: true,
+        data: {
+            "mobile": "9569576707",
+            "text": "Hello from Pahari Yatri! 🏔️ We're passionate about adventure and nature. How can we assist you today?"
+        },
+
+    }
+]
 
 export const pahariyatri: Section[] = [
     {
@@ -136,29 +149,6 @@ export const pahariyatri: Section[] = [
                     imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
-                {
-                    id: 7,
-                    name: 'Goecha La Trek',
-                    href: '#',
-                    description: 'Person using a pen to cross a task off a productivity paper card.',
-                    imageSrc: "https://images.unsplash.com/photo-1666545381458-c9688d2d10e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-                }, {
-                    id: 8,
-                    name: 'Sandakphu Trek',
-                    href: '#',
-                    description: 'Trek to the highest point in West Bengal, Sandakphu, and witness panoramic views of the Himalayas, including the majestic Kanchenjunga.',
-                    imageSrc: "https://images.unsplash.com/photo-1520597191538-5c333fd1c980?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1249&q=80",
-                    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-                }, {
-                    id: 9,
-                    name: 'Vellay of flowers ',
-                    href: '#',
-                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-
-                    imageSrc: "https://images.unsplash.com/photo-1666545378647-e7eeb3ca61a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-                },
                 // More products...
             ],
         },
@@ -170,50 +160,65 @@ export const pahariyatri: Section[] = [
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Product",
+            type: "Package",
             id: "k",
-            title: "Test Your Limits!",
+            title: "Winter is Coming!",
             subTitle: "Join Us for a Trip to the Himalayas",
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
-            products: [
+            packages: [
                 {
                     id: 1,
-                    name: 'Roopkund Trek',
+                    name: 'The Parvati Valley Adventure',
                     href: '#',
+                    price: "16000 INR Per Person",
+                    duration: "7 Days/6 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
                     imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: 2,
-                    name: 'Valley of Flowers Trek',
+                    name: 'Manali Snow Adventure',
                     href: '#',
+                    price: "19000 INR Per Person",
+                    duration: "7 Days/6 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
                     imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
                 {
                     id: 3,
-                    name: 'Har Ki Dun Trek',
+                    name: 'Kasol and Tosh Winter Chill',
                     href: '#',
+                    price: "16000 INR Per Person",
+                    duration: "5 Days/4 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
                     imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: 4,
-                    name: 'Chadar Trek',
+                    name: 'Spiti Valley Winter Expedition',
                     href: '#',
+                    price: "26000 INR Per Person",
+                    duration: "10 Days/9 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
                     imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
                 {
                     id: 5,
-                    name: 'Markha Valley Trek',
+                    name: 'Kasauli and Chail Weekend Gateway',
                     href: '#',
+                    price: "16000 INR Per Person",
+                    duration: "7 Days/6 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
                     imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -222,6 +227,9 @@ export const pahariyatri: Section[] = [
                     id: 6,
                     name: 'Hampta Pass Trek',
                     href: '#',
+                    price: "16000 INR Per Person",
+                    duration: "7 Days/6 Nights",
+                    destination: "Kullu, Himachal Pradesh",
                     description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
                     imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
@@ -279,7 +287,7 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 }, {
                     id: '9',
-                    imageSrc: 'https://images.unsplash.com/photo-1574598762239-6b6f96eab341?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80',
+                    imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],

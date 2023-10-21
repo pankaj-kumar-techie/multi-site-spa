@@ -12,6 +12,7 @@ import FAQAccordion from "./faq/FAQAccordion";
 import Gallery from "./gallery/Gallery";
 import HeroBanner from "./hero-banner/HeroBanner";
 import OurTeam from "./our-team/OurTeam";
+import Package from "./package/Package";
 import PageNotFound from "./page-not-found/PageNotFound";
 import Portfolio from "./portfolio/Portfolio";
 import Product from "./product/Product";
@@ -35,6 +36,7 @@ export class Renderer {
             Portfolio: <Portfolio key={section.id} data={section['data']} version={section['version']}></Portfolio>,
             OurTeam: <OurTeam key={section.id} data={section['data']} version={section['version']}></OurTeam>,
             Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
+            Package: <Package key={section.id} data={section['data']} version={section['version']}></Package>,
             Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
             Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,

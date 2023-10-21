@@ -18,6 +18,7 @@ export interface Section {
     logo?:Image;
     services?: Service[];
     products?: Product[];
+    packages?: Package[];
     portfolios?: Portfolio[];
     images?: Image[];
     videos?: VideoModel[] ;
@@ -76,6 +77,18 @@ export type Product = {
   name: string,
   href: string,
   price?: string,
+  description: string,
+  imageSrc: string,
+  imageAlt: string,
+}
+
+export type Package = {
+  id: number,
+  name: string,
+  href: string,
+  price?: string,
+  duration?:string,
+  destination?:string,
   description: string,
   imageSrc: string,
   imageAlt: string,
