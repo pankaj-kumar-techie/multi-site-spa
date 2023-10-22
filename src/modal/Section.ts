@@ -1,11 +1,10 @@
-import { type } from "os";
 import { FieldConfig } from "./FieldConfig";
 
 export interface Section {
   id: string;
   name: string;
-  version: string; // Add version property
-  style: string; // Add style property
+  version: string;
+  style: string;
   data: {
     type: string;
     id: string;
@@ -14,20 +13,20 @@ export interface Section {
     description: string;
     version: string;
     style: string;
-    menu?:MenuItem[];
-    logo?:Image;
+    menu?: MenuItem[];
+    logo?: Image;
     services?: Service[];
     products?: Product[];
     packages?: Package[];
     portfolios?: Portfolio[];
     images?: Image[];
-    videos?: VideoModel[] ;
+    videos?: VideoModel[];
     testimonials?: Testimonial[];
     blogs?: Blog[];
     faqs?: FAQ[];
     ourTeam?: OurTeam[];
     termAndCondition?: TermAndCondition[];
-    contactUs?: ContactUs ;
+    contactUs?: ContactUs;
   };
   path: string;
 }
@@ -35,13 +34,13 @@ export interface Section {
 export type MenuItem = {
   id: string,
   label: string,
-  url:string,
+  url: string,
 }
 
 export type SocialLink = {
-  id:string;
-  iconClass:string;
-  link:string;
+  id: string;
+  iconClass: string;
+  link: string;
 }
 
 
@@ -87,8 +86,8 @@ export type Package = {
   name: string,
   href: string,
   price?: string,
-  duration?:string,
-  destination?:string,
+  duration?: string,
+  destination?: string,
   description: string,
   imageSrc: string,
   imageAlt: string,
@@ -144,4 +143,32 @@ export type VideoModel = {
   id: string,
   title: string,
   url: string,
+}
+
+export interface DetailSection {
+  id: string;
+  name: string;
+  version: string;
+  data: {
+    type: string;
+    blogDetails?: BlogDetail;
+    packageDetails?: PackageDetail;
+  };
+}
+
+export type BlogDetail = {
+  blogs: Blog;
+  comments: Comment[];
+
+}
+
+export type Comment = {
+  id: string,
+  author: string,
+  text: string,
+
+}
+
+export type PackageDetail = {
+  packages : Package;
 }

@@ -5,7 +5,8 @@ import { Blog } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import NavigationButtons from "../../../components/common/button/NavigationButtons";
-import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Import the hook
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import { useClientAppDataContext } from "../../../ClientAppDataContext";
 
 export default function FirstBlog(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
@@ -16,23 +17,30 @@ export default function FirstBlog(props: { data: any }) {
   });
   const [startIndex, setStartIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const textColor = useDynamicTextColor(theme.colors.primary || ""); // Use the hook for text color
+  const textColor = useDynamicTextColor(theme.colors.primary || "");
+  const dataContext = useClientAppDataContext();
+  const { state, dispatch } = dataContext || {};
 
   useEffect(() => {
     setBlogList(props.data);
+    if (dispatch) {
+      dispatch({ type: 'SET_BLOGS', payload: props.data.blogs });
+    } else {
+      console.log("Handle the case where `dispatch` is undefined, e.g., by not calling it.")
+    }
     setIsLoading(false);
-  }, [props.data]);
+  }, [props.data, dispatch]);
 
   const handlePrev = () => {
     setStartIndex(Math.max(0, startIndex - 1));
   };
 
   const handleNext = () => {
-    setStartIndex(Math.min(blogList.blogs.length - 1, startIndex + 1));
-  };
+    setStartIndex(Math.min(blogList?.blogs.length - 1, startIndex + 1));
+  }
 
-  const shouldRenderSingleSlide = window.innerWidth < 768; // Check for mobile view
-
+  const shouldRenderSingleSlide = window.innerWidth < 768;
+  console.log('Blogs is here :', state?.blogs);
   return (
     <section className={`bg-${theme.colors.primary} font-bold`}>
       <div className="container mx-auto px-4 py-12">
@@ -47,7 +55,7 @@ export default function FirstBlog(props: { data: any }) {
         ) : (
           <div className="mt-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              {blogList.blogs
+              {state?.blogs
                 .slice(startIndex, startIndex + (shouldRenderSingleSlide ? 1 : 4))
                 .map((blog: Blog) => (
                   <BlogCard
@@ -65,7 +73,7 @@ export default function FirstBlog(props: { data: any }) {
               onPrev={handlePrev}
               onNext={handleNext}
               isPrevDisabled={startIndex === 0}
-              isNextDisabled={startIndex + (shouldRenderSingleSlide ? 1 : 4) >= blogList.blogs.length}
+              isNextDisabled={startIndex + (shouldRenderSingleSlide ? 1 : 4) >= (state?.blogs.length || 0)}
             />
           </div>
         )}

@@ -3,26 +3,30 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import BlogDetails from "./views/blog/BlogDetails";
 import App from "./App";
 import PageNotFound from "./views/page-not-found/PageNotFound";
 import DetailsPage from "./views/details-page/DetailsPage";
+import { ClientAppProvider } from './ClientAppDataContext';
 
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
-    <BrowserRouter>
-        <Routes>
-            <Route index element={<App />} />
-            <Route path=":slug" element={<App />} />
-            {/* <Route path="blog/:id" element={<BlogDetails />} /> */}
-            <Route path="blog/:id" element={<DetailsPage />} />
-            {/*<Route path="test" element={<LandingPageApp/>}/>*/}
-            <Route path="*" element={<PageNotFound />} />
-        </Routes>
-    </BrowserRouter>
+    <ClientAppProvider>
+        <BrowserRouter>
+            <Routes>
+                <Route index element={<App />} />
+                <Route path=":slug" element={<App />} />
+                <Route path="/:slug/:id" element={<DetailsPage />} />
+                {/* <Route path="blogs/:id" element={<DetailsPage />} />
+            <Route path="packages/:id" element={<DetailsPage />} /> */}
+                {/*<Route path="test" element={<LandingPageApp/>}/>*/}
+                <Route path="*" element={<PageNotFound />} />
+            </Routes>
+        </BrowserRouter>
+    </ClientAppProvider>
+
 );
 
 reportWebVitals();

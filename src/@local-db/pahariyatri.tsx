@@ -559,7 +559,7 @@ export const pahariyatri: Section[] = [
     },
 ];
 
-export const pahariyatriseo: any = {
+export const pahariyatriSeo: any = {
     title: "Pahari Yatri - Adventure Trekking and Mountaineering Experiences",
     description: "Pahari Yatri offers exceptional trekking and mountaineering experiences, connecting adventure seekers with nature, culture, and their adventurous spirit.",
     keywords: "adventure travel, trekking experiences, mountaineering expeditions, camping, adventure tours, wildlife safaris, cultural immersion, sustainable travel",

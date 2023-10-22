@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
-import { basic, basicPlugin, basicTheme } from './@local-db/basic';
 import { blogTheme, blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
+import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
 import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
-import { pahariyatri, pahariyatriPlugin, pahariyatriTheme, pahariyatriseo } from './@local-db/pahariyatri';
+import { pahariyatri, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
@@ -14,13 +14,13 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
-import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
 // import { ClientService } from './service/ClientService';
 
 
 //Todo : Pass dynamics data form Api response to renderer instead of @loacl_db/website
 export default function App() {
     const [sectionData, setSectionData] = useState<Section[]>([]);
+
     const [seo, setSeo] = useState<any>();
     const [theme, setTheme] = useState<any>();
     const [plugins, setPlugins] = useState<any>();
@@ -55,7 +55,7 @@ export default function App() {
 
                 switch (clientDomainName) {
                     case "pahariyatri.com":
-                        setSeo(pahariyatriseo);
+                        setSeo(pahariyatriSeo);
                         setTheme(pahariyatriTheme);
                         setSectionData(pahariyatri);
                         setPlugins(pahariyatriPlugin);
@@ -100,7 +100,7 @@ export default function App() {
                         setSeo(drayWorldLogisticSeo);
                         break;
                     default:
-                        setSeo(pahariyatriseo);
+                        setSeo(pahariyatriSeo);
                         setTheme(pahariyatriTheme);
                         setSectionData(pahariyatri);
                         setPlugins(pahariyatriPlugin);
@@ -117,7 +117,7 @@ export default function App() {
                 setError('Failed to fetch data. Please try again later.');
                 setLoading(false);
             } finally {
-                setLoading(false); // Set loading to false after completion (whether success or error)
+                setLoading(false);
             }
         };
         loadPage();
