@@ -1,16 +1,35 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../themes/ThemeProvider";
 import { useDynamicTextColor } from "../../themes/DynamicTextColor";
 import { Package } from "../../modal/Section";
+import DetailsModalCard from "./DetailsModalCard";
 
 export default function PackageCard(packageDetail: Package) {
     const { theme } = useContext(ThemeContext);
     const textColor = useDynamicTextColor(theme.colors.primary || "");
+    const [isPackageModalOpen, setIsPackageModalOpen] = useState(false);
+    const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
+
+    // Function to open the modal
+    const openModal = () => {
+        setIsPackageModalOpen(true);
+    };
+
+    // Function to close the modal
+    const closeModal = () => {
+        setIsPackageModalOpen(false);
+      };
+
+    useEffect(() => {
+        setSelectedPackage(packageDetail);
+
+    },);
+    console.log("is open", closeModal)
 
     return (
-        <div className={`bg-${theme.colors.primary}`}>
-            <a key={packageDetail.id} href={packageDetail.href}
-                className="group hover:shadow-2xl hover:scale-105 transition-all transform duration-500 shadow-xl rounded-xl">
+        <div className={`bg-${theme.colors.primary}`} onClick={openModal}>
+            {/* <a key={packageDetail.id} href={packageDetail.href} */}
+                {/* className="group hover:shadow-2xl hover:scale-105 transition-all transform duration-500 shadow-xl rounded-xl"> */}
                 <div className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-t-lg rounded-b-none overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
                     <img
                         src={packageDetail.imageSrc}
@@ -25,7 +44,8 @@ export default function PackageCard(packageDetail: Package) {
                 </div>
                 <p className={`pb-3 pr-2 pl-3 text-[.9rem] font-normal text-gray-900 ${textColor}`}> {packageDetail.duration}</p>
                 <p className={`mt-1 pb-1 pr-2 text-left pl-3 text-[1rem] font-medium text-gray-900 ${textColor}`}>{packageDetail.description}</p>
-            </a>
+            {/* </a> */}
+            <DetailsModalCard isOpen={isPackageModalOpen} onClose={closeModal} packages={selectedPackage} children={undefined}></DetailsModalCard>
         </div>
     )
 }

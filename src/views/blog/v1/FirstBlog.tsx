@@ -40,7 +40,7 @@ export default function FirstBlog(props: { data: any }) {
   }
 
   const shouldRenderSingleSlide = window.innerWidth < 768;
-  console.log('Blogs is here :', state?.blogs);
+  console.log('State Data is here :', state?.blogs);
   return (
     <section className={`bg-${theme.colors.primary} font-bold`}>
       <div className="container mx-auto px-4 py-12">
