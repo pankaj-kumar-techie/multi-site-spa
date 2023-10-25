@@ -292,8 +292,19 @@ export const drayWorldLogistic: Section[] = [
             style: "CLASSIC",
             contactUs: {
                 address: "9 Nom Crescent Unit 2 \n Markham, Om L3S 2B3, CA",
-                email: "info@drayworldlogistics.com",
-                phone: "123-456-7890",
+                email: "Ops@dray-world.com",
+                phone: " 548-488-1984",
+
+                email2: "Paul@dray-world.com",
+                phone2: "+1 825-824-0911",
+
+                email3: "Eddie@dray-world.com",
+                phone3: "+1 902-263-0009",
+                email4: "rexmartin@dray-world.com",
+                phone4: "+1 778-907-1984",
+
+                email5: "david@dray-world.com",
+                phone5: "+1 506-306-0926",
                 formFields: [
                     { name: 'name', label: 'Name', type: 'text', required: true },
                     { name: 'email', label: 'Email', type: 'email', required: true },

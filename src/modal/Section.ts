@@ -123,11 +123,19 @@ export type FAQ = {
   question: string,
   answer: string,
 }
-
+//Todo : Clean this code
 export type ContactUs = {
   address: string,
   email: string,
   phone: string,
+  email2?: string,
+  phone2?: string,
+  email3?: string,
+  phone3?: string,
+  email4?: string,
+  phone4?: string,
+  email5?: string,
+  phone5?: string,
   formFields?: FieldConfig[];
 
 }
