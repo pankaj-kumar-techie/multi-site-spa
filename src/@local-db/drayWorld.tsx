@@ -2,14 +2,14 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const drayWorldLogisticTheme: any = {
-    name: "vibrant"
+    name: "default"
 }
 
 export const drayWorldLogistic: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2",
+        version: "v1",
         style: "MODERN",
         path: "index",
         data: {
