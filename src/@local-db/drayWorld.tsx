@@ -292,17 +292,19 @@ export const drayWorldLogistic: Section[] = [
             style: "CLASSIC",
             contactUs: {
                 address: "9 Nom Crescent Unit 2 \n Markham, Om L3S 2B3, CA",
+                name: "Technical support",
                 email: "Ops@dray-world.com",
-                phone: " 548-488-1984",
-
+                phone: "+1 548-488-1984",
+                name2: "Sales questions",
                 email2: "Paul@dray-world.com",
                 phone2: "+1 825-824-0911",
-
+                name3:"Logistics Sales Specialist",
                 email3: "Eddie@dray-world.com",
                 phone3: "+1 902-263-0009",
+                name4:"Logistics Solutions Expert",
                 email4: "rexmartin@dray-world.com",
                 phone4: "+1 778-907-1984",
-
+                name5:"Sales Consultant",
                 email5: "david@dray-world.com",
                 phone5: "+1 506-306-0926",
                 formFields: [
@@ -338,7 +340,7 @@ export const drayWorldLogisticSeo: any = {
     tags: "Logistics Services, Freight Forwarding, Warehousing Solutions, Customs Clearance, Last-Mile Delivery, Cargo Transportation, Reliable Logistics",
     author: "Your Name",
     imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.drayworldlogistics.com",
+    siteUrl: "https://dray-world.com",
 };
 
 export const drayWorldLogisticPlugin: PluginConfig[] = [
@@ -346,7 +348,7 @@ export const drayWorldLogisticPlugin: PluginConfig[] = [
         name: "FloatingButton",
         isActive: true,
         data: {
-            "mobile": "123",
+            "mobile": "5484881984",
             "text": ""
         },
     }
