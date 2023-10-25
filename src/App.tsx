@@ -102,7 +102,7 @@ export default function App() {
                     default:
                         setSeo(pahariyatriSeo);
                         setTheme(pahariyatriTheme);
-                        setSectionData(pahariyatri);
+                        setSectionData(drayWorldLogistic);
                         setPlugins(pahariyatriPlugin);
                         break;
                 }

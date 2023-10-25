@@ -23,9 +23,31 @@ export const drayWorldLogistic: Section[] = [
             logo:
             {
                 id: '1',
-                imageSrc: 'https://i.pinimg.com/564x/8e/e4/24/8ee424ad844db2c4a48673616f42302f.jpg',
+                imageSrc: 'http://65.2.34.22/images/logo.jpg',
                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
             },
+            menu:[
+                {
+                    id: "string",
+                    label: "Home",
+                    url: '/',
+                },
+                {
+                    id: "2",
+                    label: "About Us",
+                    url: '/#about-us',
+                },
+                {
+                    id: "3",
+                    label: "Service",
+                    url: '/#service',
+                },
+                {
+                    id: "4",
+                    label: "Contact Us",
+                    url: '/#contact-us',
+                }
+            ],
 
             contactUs: {
                 address: "",
@@ -51,7 +73,7 @@ export const drayWorldLogistic: Section[] = [
             images: [
                 {
                     id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1513932961238-391bf5dff447?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+                    imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
@@ -257,7 +279,7 @@ export const drayWorldLogistic: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Contact Us",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {
