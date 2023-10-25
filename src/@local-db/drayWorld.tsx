@@ -9,7 +9,7 @@ export const drayWorldLogistic: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v1",
+        version: "v2",
         style: "MODERN",
         path: "index",
         data: {
@@ -283,7 +283,7 @@ export const drayWorldLogistic: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
