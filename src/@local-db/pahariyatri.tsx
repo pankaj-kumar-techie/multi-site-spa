@@ -52,12 +52,24 @@ export const pahariyatri: Section[] = [
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://gotrip-appdir.vercel.app/img/masthead/6/bg.png',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
+                    title: "The World is Waiting For You",
+                    subTitle: "Where will you go next?",
+                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    videoSrc: "string",
+                    modalProps: {
+                        isOpen: true,
+                        // onClose: () => void,
+                        title: 'string',
+                    }
+                }
             ],
         },
     },

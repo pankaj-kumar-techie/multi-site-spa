@@ -1,3 +1,4 @@
+import React from "react";
 import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
@@ -26,7 +27,7 @@ export const drayWorldLogistic: Section[] = [
                 imageSrc: 'http://65.2.34.22/images/logo.jpg',
                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
             },
-            menu:[
+            menu: [
                 {
                     id: "string",
                     label: "Home",
@@ -70,12 +71,24 @@ export const drayWorldLogistic: Section[] = [
             description: "Efficient, Secure, and Reliable",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
+                    title: "Logistics Solutions",
+                    subTitle: "Your Cargo, Our Priority",
+                    description: "Efficient, Secure, and Reliable",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    videoSrc: "string",
+                    modalProps: {
+                        isOpen: true,
+                        // onClose: () => void,
+                        title: 'string',
+                    }
+                }
             ],
         },
     },
@@ -298,13 +311,13 @@ export const drayWorldLogistic: Section[] = [
                 name2: "Sales questions",
                 email2: "Paul@dray-world.com",
                 phone2: "+1 825-824-0911",
-                name3:"Logistics Sales Specialist",
+                name3: "Logistics Sales Specialist",
                 email3: "Eddie@dray-world.com",
                 phone3: "+1 902-263-0009",
-                name4:"Logistics Solutions Expert",
+                name4: "Logistics Solutions Expert",
                 email4: "rexmartin@dray-world.com",
                 phone4: "+1 778-907-1984",
-                name5:"Sales Consultant",
+                name5: "Sales Consultant",
                 email5: "david@dray-world.com",
                 phone5: "+1 506-306-0926",
                 formFields: [
@@ -318,7 +331,7 @@ export const drayWorldLogistic: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {

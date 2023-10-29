@@ -1,3 +1,4 @@
+import { type } from "os";
 import { FieldConfig } from "./FieldConfig";
 
 export interface Section {
@@ -15,6 +16,7 @@ export interface Section {
     style: string;
     menu?: MenuItem[];
     logo?: Image;
+    bannerData?: HeroBannerProps[];
     services?: Service[];
     products?: Product[];
     packages?: Package[];
@@ -29,6 +31,15 @@ export interface Section {
     contactUs?: ContactUs;
   };
   path: string;
+}
+
+export type HeroBannerProps = {
+  title: string
+  subTitle: string
+  description: string,
+  image?: Image,
+  videoSrc?: string,
+  modalProps?: ModalProps
 }
 
 export type MenuItem = {
@@ -184,4 +195,11 @@ export type Comment = {
 
 export type PackageDetail = {
   packages : Package;
+}
+
+export type ModalProps = {
+  isOpen: boolean;
+  onClose?: () => void;
+  title: string;
+  children?: React.ReactNode;
 }

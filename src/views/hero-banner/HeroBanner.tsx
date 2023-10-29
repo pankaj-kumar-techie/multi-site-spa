@@ -1,5 +1,6 @@
 import React from "react";
 import FirstHeroBanner from "./v1/FirstHeroBanner";
+import SecondHeroBanner from "./v2/SecondHeroBanner";
 interface HeroBannerProps {
     data: any;
     version: "v1" ;
@@ -7,6 +8,7 @@ interface HeroBannerProps {
 
 const bannerComponents = {
     v1: FirstHeroBanner,
+    v2: SecondHeroBanner
 };
 
 const HeroBanner: React.FC<HeroBannerProps> = ({data, version}) => {
