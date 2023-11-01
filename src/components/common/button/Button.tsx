@@ -16,11 +16,14 @@ const Button: React.FC<ButtonProps> = ({ label, color, action, height, width }) 
 
 
   return (
-    <div className=' flex justify-center items-center'>
-      <button className={`${theme.buttons.secondary} ${textColor} hover:bg-${theme.buttons.primary} h-${height} w-${width}`} onClick={action}>
-        {label}
-      </button>
-    </div>
+    <div className='flex justify-center items-center'>
+    <button
+      className={`bg-${color || theme.buttons.secondary} hover:bg-${theme.buttons.primary} ${textColor} font-semibold py-${height || '3'} px-${width || '10'} rounded focus:outline-none transition-all duration-300 ease-in-out`}
+      onClick={action}
+    >
+      {label}
+    </button>
+  </div>
   );
 };
 
