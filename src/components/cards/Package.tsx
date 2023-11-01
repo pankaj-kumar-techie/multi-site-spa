@@ -21,7 +21,7 @@ export default function PackageCard(packageDetail: Package) {
                 <h3 className={`mt-3 pr-2 text-[1.1rem] pl-3 text-left font-medium ${textColor}`}>{packageDetail.name}</h3>
                 <div className="flex justify-between items-center  text-[.9rem] font-normal text-gray-900">
                     <p className={`pl-3 text-[1rem] font-medium  ${textColor}`}> {packageDetail.price}</p>
-                    <p className={`mt-1 pb-1 pr-2 text-left pl-3 text-[1rem] font-medium text-gray-900 ${textColor}`}>{packageDetail.duration}</p>
+                    <p className={`mt-1 pb-1 pr-2 text-left pl-3 text-[1rem] font-medium text-gray-900 ${textColor}`}>{packageDetail.destination}</p>
                 </div>
                 <p className={`pb-3 pr-2 pl-3 text-[.9rem] font-normal text-gray-900 ${textColor}`}> {packageDetail.duration}</p>
                 <p className={`mt-1 pb-1 pr-2 text-left pl-3 text-[1rem] font-medium text-gray-900 ${textColor}`}>{packageDetail.description}</p>
