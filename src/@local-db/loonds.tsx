@@ -40,11 +40,23 @@ export const loonds: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    title: "Pahari Yatri",
+                    subTitle: "Pahari Yatri - A Guide to Traveling on a Budget",
+                    description: "Contact us today to make your dream space a reality. Elevate your surroundings with innovative designs that harmonize aesthetics and functionality.",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1216&q=80',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    videoSrc: "string",
+                    modalProps: {
+                        isOpen: true,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
         },

@@ -26,20 +26,20 @@ export const archdy: Section[] = [
                 imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
                 imageAlt: 'Architectural design concepts.',
             },
-            menu:[
+            menu: [
                 {
                     id: "menu-1",
                     label: "Home",
                     url: "/home",
-                },{
+                }, {
                     id: "menu-2",
                     label: "About Us",
                     url: "/about-us",
-                },{
+                }, {
                     id: "menu-3",
                     label: "Our Portfolio",
                     url: "/portfolio",
-                },{
+                }, {
                     id: "menu-4",
                     label: "Contact us",
                     url: "/contact-us",
@@ -66,11 +66,23 @@ export const archdy: Section[] = [
             description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1644057501622-dfa7dd26dbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80',
-                    imageAlt: 'Architectural design concepts.',
+                    title: "Archdy - Your Trusted Architecture Firm",
+                    subTitle: "Designing Dreams into Reality",
+                    description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1644057501622-dfa7dd26dbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80',
+                        imageAlt: 'Architectural design concepts.',
+                    },
+                    videoSrc: "string",
+                    modalProps: {
+                        isOpen: true,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
         },
