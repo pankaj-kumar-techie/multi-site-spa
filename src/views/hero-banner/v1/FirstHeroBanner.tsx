@@ -13,13 +13,15 @@ export default function FirstHeroBanner(props: { data: any }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const bannerData = props.data.bannerData?.[0];
 
+  console.log("Banner Data : ", bannerData.image.imageSrc);
+
 
   useEffect(() => {
     // No need to set bannerData again, it's already initialized with props.data
   }, [props.data]);
 
   if (!bannerData.title) {
-    return <SectionShimmer title="Hero Banner" />;
+    return <SectionShimmer title="Hero Banner v1" />;
   }
 
   const openModal = () => {

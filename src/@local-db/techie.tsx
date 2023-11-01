@@ -82,7 +82,7 @@ export const techie: Section[] = [
                     },
                     videoSrc: "string",
                     modalProps: {
-                        isOpen: true,
+                        isOpen: false,
                         // onClose: () => void,
                         title: 'Title is here ',
                     }

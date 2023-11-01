@@ -41,8 +41,8 @@ export const pahariyatri: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v1", // Add version property
-        style: "CLASSIC", // Add style property
+        version: "v1",
+        style: "CLASSIC",
         path: "index",
         data: {
             type: "HeroBanner",
@@ -63,7 +63,6 @@ export const pahariyatri: Section[] = [
                         imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
-                    videoSrc: "string",
                     modalProps: {
                         isOpen: true,
                         // onClose: () => void,

@@ -82,9 +82,8 @@ export const drayWorldLogistic: Section[] = [
                         imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
-                    videoSrc: "string",
                     modalProps: {
-                        isOpen: true,
+                        isOpen: false,
                         // onClose: () => void,
                         title: 'string',
                     }
@@ -175,12 +174,23 @@ export const drayWorldLogistic: Section[] = [
             description: "",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1614124760016-5fe39bdf27db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
+                    title: "Logistics Solutions",
+                    subTitle: "Your Cargo, Our Priority",
+                    description: "Efficient, Secure, and Reliable",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1614124760016-5fe39bdf27db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'string',
+                    }
+                }
             ],
         },
     },
