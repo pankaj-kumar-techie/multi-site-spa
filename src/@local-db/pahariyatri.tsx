@@ -60,13 +60,39 @@ export const pahariyatri: Section[] = [
                     image:
                     {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1473445730015-841f29a9490b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
                     modalProps: {
                         isOpen: true,
                         // onClose: () => void,
-                        title: 'string',
+                        title: 'Plan Your Dream Vacation Package',
+                        formFields: [
+                            { name: 'name', label: 'Full Name', type: 'text', required: true },
+                            { name: 'mobile', label: 'Phone Number', type: 'tel', required: true },
+                            {
+                                name: 'mobile', label: 'Preferred Destination', type: 'select', required: true,
+                                options: [
+                                    { label: 'The Parvati Valley Adventure', value: '3' },
+                                    { label: 'Manali Snow Adventure', value: '5' },
+                                    { label: 'Kasol and Tosh Winter Chill', value: '7' },
+                                    { label: 'Narkanda Snowy Paradise', value: '21' },
+                                ],
+                            },
+                            {
+                                name: 'mobile', label: 'Number of Travelers', type: 'number', required: true,
+                            },
+                            {
+                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
+                                options: [
+                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
+                                    { label: 'Adventure Tours', value: 'adventure_tours' },
+                                    { label: 'Cruise Packages', value: 'adventure_package' },
+                                ],
+                            },
+                            { name: 'text', label: 'Special Requests ', type: 'textarea', required: false },
+
+                        ]
                     }
                 },
             ],
@@ -181,124 +207,35 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
-        name: " ",
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
         version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Product",
-            id: "k",
-            title: "Our Upcoming Destination!",
-            subTitle: "Join Us for a Trip to the Himalayas",
-            description: "Hero Banner Paragraph is here",
-            version: "v1",
+            type: "HeroBanner",
+            id: "002",
+            title: "The World is Waiting For You",
+            subTitle: "Where will you go next?",
+            description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+            version: "v2",
             style: "CLASSIC",
-            products: [
+            bannerData: [
                 {
-                    id: 1,
-                    name: 'Roopkund Trek',
-                    href: '/products/1',
-                    price: '9000',
-                    description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
-                    imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: 2,
-                    name: 'Valley of Flowers Trek',
-                    href: '#',
-                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-                    imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                {
-                    id: 3,
-                    name: 'Har Ki Dun Trek',
-                    href: '#',
-                    description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-                    imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: 4,
-                    name: 'Chadar Trek',
-                    href: '#',
-                    description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-                    imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                {
-                    id: 5,
-                    name: 'Markha Valley Trek',
-                    href: '#',
-                    description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                    imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: 6,
-                    name: 'Hampta Pass Trek',
-                    href: '#',
-                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-                    imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                // More products...
-            ],
-        },
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Gallery",
-        version: "v1",
-        style: "MODERN",
-        path: "index",
-        data: {
-            type: "Gallery",
-            id: "004",
-            title: "Our Gallery",
-            subTitle: "A Glimpse of Our Work",
-            description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
-            version: "v1",
-            style: "MODERN",
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-                {
-                    id: '2',
-                    imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-                {
-                    id: '3',
-                    imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-                {
-                    id: '4',
-                    imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-                {
-                    id: '6',
-                    imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                }, {
-                    id: '7',
-                    imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                }, {
-                    id: '8',
-                    imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                }, {
-                    id: '9',
-                    imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    title: "The World is Waiting For You",
+                    subTitle: "Where will you go next?",
+                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'string',
+                    }
                 },
             ],
         },
@@ -370,7 +307,129 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Gallery",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Gallery",
+            id: "004",
+            title: "Our Gallery",
+            subTitle: "A Glimpse of Our Work",
+            description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: '1',
+                    imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '2',
+                    imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '3',
+                    imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '4',
+                    imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '6',
+                    imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '7',
+                    imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '8',
+                    imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '9',
+                    imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
+        name: " ",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Product",
+            id: "k",
+            title: "Popular Destination!",
+            subTitle: "Join Us for a Trip to the Himalayas",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            products: [
+                {
+                    id: 1,
+                    name: 'Roopkund Trek',
+                    href: '/products/1',
+                    price: '9000',
+                    description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
+                    imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                },
+                {
+                    id: 2,
+                    name: 'Valley of Flowers Trek',
+                    href: '#',
+                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
+                    imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
+                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+                },
+                {
+                    id: 3,
+                    name: 'Har Ki Dun Trek',
+                    href: '#',
+                    description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
+                    imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                },
+                {
+                    id: 4,
+                    name: 'Chadar Trek',
+                    href: '#',
+                    description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
+                    imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
+                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+                },
+                {
+                    id: 5,
+                    name: 'Markha Valley Trek',
+                    href: '#',
+                    description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
+                    imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                },
+                {
+                    id: 6,
+                    name: 'Hampta Pass Trek',
+                    href: '#',
+                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
+                    imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+                },
+                // More products...
+            ],
+        },
+    },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",

@@ -96,10 +96,11 @@ export default function FirstHeroBanner(props: { data: any }) {
         )}
 
         <Modal isOpen={isModalOpen} onClose={closeModal} title={bannerData.modalProps ? bannerData.modalProps.title : ""}>
-          <Form fields={[{ name: 'name', label: 'Name', type: 'text', required: true },
-          { name: 'mobile', label: 'Mobile', type: 'tel', required: true },]} theme={theme} onSubmit={(data: Record<string, any>) => {
-            throw new Error("Function not implemented.");
-          }} />
+          {bannerData.modalProps.formFields && bannerData.modalProps.formFields.length > 0 ? (
+            <Form fields={bannerData.modalProps.formFields} theme={theme} onSubmit={(data: Record<string, any>) => {
+              throw new Error("Function not implemented.");
+            }} />
+          ) : null}
         </Modal>
       </div>
     </section>

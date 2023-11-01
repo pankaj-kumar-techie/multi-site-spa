@@ -202,4 +202,5 @@ export type ModalProps = {
   onClose?: () => void;
   title: string;
   children?: React.ReactNode;
+  formFields?: FieldConfig[];
 }
