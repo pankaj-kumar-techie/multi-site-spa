@@ -69,7 +69,7 @@ export const pahariyatri: Section[] = [
                         // onClose: () => void,
                         title: 'string',
                     }
-                }
+                },
             ],
         },
     },

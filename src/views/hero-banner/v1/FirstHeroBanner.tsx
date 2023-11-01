@@ -14,7 +14,6 @@ export default function FirstHeroBanner(props: { data: any }) {
   const bannerData = props.data.bannerData?.[0];
 
 
-  console.log('banner data :', bannerData)
   useEffect(() => {
     // No need to set bannerData again, it's already initialized with props.data
   }, [props.data]);
