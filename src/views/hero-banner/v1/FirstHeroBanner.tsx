@@ -13,8 +13,6 @@ export default function FirstHeroBanner(props: { data: any }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const bannerData = props.data.bannerData?.[0];
 
-  console.log("Banner Data : ", bannerData.image.imageSrc);
-
 
   useEffect(() => {
     // No need to set bannerData again, it's already initialized with props.data
@@ -86,13 +84,20 @@ export default function FirstHeroBanner(props: { data: any }) {
               />
             </div>
             <div className="mt-3 sm:w-[250px] rounded-md flex justify-center content-center sm:mt-0 sm:ml-3">
-              <Button label="Learn more" color={`${theme.buttons.secondary}`} width="50" height="100" action={openModal} />
+              <Button
+                label="Learn More"
+                color={`w-[250px] flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white ${theme.buttons.secondary} md:py-4 md:text-lg md:px-10`}
+                width="150"
+
+              />
             </div>
+
           </div>
         )}
 
         <Modal isOpen={isModalOpen} onClose={closeModal} title={bannerData.modalProps ? bannerData.modalProps.title : ""}>
-          <Form fields={[]} theme={theme} onSubmit={(data: Record<string, any>) => {
+          <Form fields={[{ name: 'name', label: 'Name', type: 'text', required: true },
+          { name: 'mobile', label: 'Mobile', type: 'tel', required: true },]} theme={theme} onSubmit={(data: Record<string, any>) => {
             throw new Error("Function not implemented.");
           }} />
         </Modal>
