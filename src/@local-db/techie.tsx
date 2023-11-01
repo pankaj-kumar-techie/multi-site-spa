@@ -69,13 +69,26 @@ export const techie: Section[] = [
             description: "Experienced Software Engineer specializing in backend development with expertise in Java andbuilding robust applications using Spring Boot. Proficient in integrating frontend technologies likeJavaScript and TypeScript. Skilled in containerization with Docker and deployment using CI/CDpipelines like Jenkins. Familiar with Flutter for cross-platform mobile app development",
             version: "v1",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    title: "About Pankaj Kumar",
+                    subTitle: "Hero Banner Sub Title is here",
+                    description: "Experienced Software Engineer specializing in backend development with expertise in Java andbuilding robust applications using Spring Boot. Proficient in integrating frontend technologies likeJavaScript and TypeScript. Skilled in containerization with Docker and deployment using CI/CDpipelines like Jenkins. Familiar with Flutter for cross-platform mobile app development",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    videoSrc: "string",
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
+
         },
     },
     {

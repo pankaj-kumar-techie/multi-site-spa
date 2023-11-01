@@ -61,16 +61,27 @@ export const archdy: Section[] = [
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "Archdy - Your Trusted Architecture Firm",
-            subTitle: "Designing Dreams into Reality",
-            description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+            title: "3D design",
+            subTitle: "",
+            description: "",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1644057501622-dfa7dd26dbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80',
-                    imageAlt: 'Architectural design concepts.',
+                    title: "Archdy - Your Trusted Architecture Firm",
+                    subTitle: "Designing Dreams into Reality",
+                    description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1644057501622-dfa7dd26dbfb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1981&q=80',
+                        imageAlt: 'Architectural design concepts.',
+                    },
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
         },
@@ -339,11 +350,22 @@ export const archdy: Section[] = [
             description: "",
             version: "v2",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1662092560486-ff770cb64ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
-                    imageAlt: 'Architectural design concepts.',
+                    title: "Archdy - Your Trusted Architecture Firm",
+                    subTitle: "Designing Dreams into Reality",
+                    description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1662092560486-ff770cb64ba7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80',
+                        imageAlt: 'Architectural design concepts.',
+                    },
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
         },

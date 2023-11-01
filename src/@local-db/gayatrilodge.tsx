@@ -54,11 +54,22 @@ export const gayatrilodge: Section[] = [
             description: "Experience the serenity of Himachal Pradesh at Gayatri Lodge. Nestled in the charming town of Kasauli, our lodge offers an idyllic escape surrounded by nature's beauty.",
             version: "v1",
             style: "CLASSIC",
-            images: [
+            bannerData: [
                 {
-                    id: '1',
-                    imageSrc: 'https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    title: "Gayatri Lodge!",
+                    subTitle: "Welcome to Gayatri Lodge, Your Tranquil Haven in Kasauli",
+                    description: "Experience the serenity of Himachal Pradesh at Gayatri Lodge. Nestled in the charming town of Kasauli, our lodge offers an idyllic escape surrounded by nature's beauty.",
+                    image:
+                    {
+                        id: '1',
+                        imageSrc: 'https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    modalProps: {
+                        isOpen: false,
+                        // onClose: () => void,
+                        title: 'Title is here ',
+                    }
                 },
             ],
         },
