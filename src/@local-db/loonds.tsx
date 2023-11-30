@@ -206,7 +206,7 @@ export const loonds: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Service",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {
