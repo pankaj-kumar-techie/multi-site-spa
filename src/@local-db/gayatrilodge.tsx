@@ -66,9 +66,33 @@ export const gayatrilodge: Section[] = [
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
                     modalProps: {
-                        isOpen: false,
+                        isOpen: true,
                         // onClose: () => void,
-                        title: 'Title is here ',
+                        title: 'Plan Your Dream Vacation Package',
+                        formFields: [
+                            { name: 'name', label: 'Your Good Name', type: 'text', required: true },
+                            { name: 'mobile', label: 'Your Phone Number', type: 'tel', required: true },
+                            // {
+                            //     name: 'mobile', label: 'Preferred Destination', type: 'select', required: true,
+                            //     options: [
+                            //         { label: 'The Parvati Valley Adventure', value: '3' },
+                            //         { label: 'Manali Snow Adventure', value: '5' },
+                            //         { label: 'Kasol and Tosh Winter Chill', value: '7' },
+                            //         { label: 'Narkanda Snowy Paradise', value: '21' },
+                            //     ],
+                            // },
+                            {
+                                name: 'mobile', label: 'Number of Guest', type: 'number', required: true,
+                            },
+                            {
+                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
+                                options: [
+                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
+                                    { label: 'Stay Only', value: 'adventure_tours' },
+                                ],
+                            },
+                            { name: 'text', label: 'Special Requests ', type: 'textarea', required: false },
+                        ]
                     }
                 },
             ],
