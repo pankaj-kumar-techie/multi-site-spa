@@ -23,7 +23,7 @@ const SecondAboutUs: React.FC<SecondAboutUsProps> = ({ data }) => {
     }
 
     return (
-        <section className={`bg-${theme.colors.primary} font-bold`}>
+        <section id={'about-us'} className={`bg-${theme.colors.primary} font-bold`}>
             <div className="overflow-hidden relative">
                 <img
                     src={aboutData?.images?.[0]?.imageSrc || ""}
