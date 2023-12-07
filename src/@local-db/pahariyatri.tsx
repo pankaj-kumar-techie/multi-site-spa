@@ -247,6 +247,59 @@ export const pahariyatri: Section[] = [
         style: "CLASSIC",
         path: "index",
         data: {
+            type: "Package",
+            id: "k",
+            title: "Sacred Himalayan Pilgrimage: Kailash Yatra with Pahari Yatri",
+            subTitle: "Embark on a Spiritual Journey to Shrikand, Manimahesh, and Kinner Kailas",            
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            packages: [
+                {
+                    id: 2,
+                    name: 'Shrikand Pilgrimage',
+                    href: '/packages/2',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Himalayas",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://your-image-url.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 3,
+                    name: 'Manimahesh Yatra',
+                    href: '/packages/3',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Himalayas",
+                    description: 'Experience the divine aura of Manimahesh Yatra as you trek through scenic landscapes to reach the sacred Manimahesh Lake. A pilgrimage filled with spiritual significance.',
+                    imageSrc: "https://your-image-url.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Manimahesh Lake surrounded by snow-capped peaks.',
+                },
+                {
+                    id: 4,
+                    name: 'Kinner Kailas Yatra',
+                    href: '/packages/4',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Himalayas",
+                    description: 'Explore the enchanting Kinner Kailas region, known for its sacred sites and breathtaking landscapes. Join us on this spiritual journey to connect with the divine.',
+                    imageSrc: "https://your-image-url.jpg", // Update with the appropriate image URL
+                    imageAlt: 'View of Kinner Kailas peaks against a clear blue sky.',
+                },
+                // More packages...
+            ],
+            
+        },
+    },
+    {
+        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
+        name: " ",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
             type: "Portfolio",
             id: "k",
             title: "Explore Our Unexplored Treks!",
