@@ -102,7 +102,7 @@ export default function App() {
                     default:
                         setSeo(loondsSeo);
                         setTheme(loondsTheme);
-                        setSectionData(loonds);
+                        setSectionData(pahariyatri);
                         setPlugins(pahariyatriPlugin);
                         break;
                 }
