@@ -16,6 +16,21 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'bg-[#008080] hover:bg-[#009999]',
         },
     },
+    trek: {
+        name: 'Trek Theme',
+        colors: {
+            primary: 'gray-100',
+            secondary: 'black',
+        },
+        typography: {
+            fontFamily: 'font-arial',
+            fontSize: 'text-base',
+        },
+        buttons: {
+            primary: 'bg-black hover:bg-slate-800',
+            secondary: 'bg-[#008080] hover:bg-[#009999]',
+        },
+    },
     classic: {
         name: 'Classic Theme',
         colors: {

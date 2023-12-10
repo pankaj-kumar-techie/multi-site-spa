@@ -1,7 +1,7 @@
 import { Section } from "../modal/Section";
 
 export const loondsTheme: any = {
-    name: "default"
+    name: "trek"
 }
 
 export const loonds: Section[] = [
