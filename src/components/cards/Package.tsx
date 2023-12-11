@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../themes/ThemeProvider";
 import { useDynamicTextColor } from "../../themes/DynamicTextColor";
 import { Package } from "../../modal/Section";
@@ -7,10 +7,17 @@ import { FaChevronCircleRight } from "react-icons/fa";
 export default function PackageCard(packageDetail: Package) {
   const { theme } = useContext(ThemeContext);
   const textColor = useDynamicTextColor(theme.colors.secondary || "");
+  const [offset, setOffset] = useState(0);
+  const percentage = 75;
+
+  useEffect(() => {
+    const progressOffset = 251.2 - (251.2 * percentage) / 100;
+    setOffset(progressOffset);
+  }, [percentage]);
 
   return (
     <div
-      className={`bg-${theme.colors.primary} relative border bg-stone-200 border-gray-300 rounded-lg`}
+      className={`bg-${theme.colors.primary} relative bg-stone-200 rounded-lg`}
     >
       <a
         key={packageDetail.id}
@@ -41,7 +48,9 @@ export default function PackageCard(packageDetail: Package) {
           >
             {packageDetail.description}
           </p>
-          <div className=" mt-5">
+          <div className="flex flex-row items-center">
+
+          <div className=" mt-5 basis-2/4">
             <h6 className="text-slate-600 text-sm font-medium">Activities:</h6>
             <div className="inline-grid">
               <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
@@ -55,25 +64,64 @@ export default function PackageCard(packageDetail: Package) {
               </button>
             </div>
           </div>
-          <div className="mt-3">
+          <div className="w-20 h-20 relative basis-2/4">
+            <p className="text-center  text-slate-600 text-sm font-medium mb-1">Difficulty :</p>
+            <svg className="w-full h-full" viewBox="0 0 100 100">
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#d2d6dc"
+                strokeWidth="10"
+              />
+              <circle
+                cx="50"
+                cy="50"
+                r="45"
+                fill="none"
+                stroke="#6ee7b7"
+                strokeWidth="10"
+                strokeDasharray="251.2"
+                strokeDashoffset={offset}
+                strokeLinecap="round"
+                transform="rotate(-90 50 50)"
+              />
+              <text
+                x="50%"
+                y="50%"
+                dominantBaseline="middle"
+                textAnchor="middle"
+                className="text-lg font-bold"
+              >
+                {percentage}%
+              </text>
+            </svg>
+          </div>
+          </div>
+          <div className="flex flex-row mt-4">
+
+          <div className=" basis-2/4">
             <h6 className="text-gray-500 text-sm font-medium">From:</h6>
-            <p className="text-lg font-semibold text-stone-700">
+            <p className="text-base font-semibold text-stone-700">
               {" "}
               {packageDetail.price}
             </p>
           </div>
-          <div className=" mb-3 mt-2">
-            <h6 className="text-gray-500 text-sm font-medium">Duration:</h6>
-            <p className="text-lg font-semibold text-stone-700">
+          <div className=" mb-3  basis-2/4">
+            <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
+            <p className="text-right text-base font-semibold text-stone-700">
               {" "}
               {packageDetail.duration}
             </p>
+          </div>
+          
           </div>
           <button className="bg-lime-500 mb-4  flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
             <span className="mr-2">View Trek</span> <FaChevronCircleRight />
           </button>
         </div>
-        <div className="flex bg-stone-500 rounded-b-lg justify-center p-2">
+        <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
           <div className="flex items-center">
             <svg
               className="w-6 h-6 text-yellow-300 ms-1"
