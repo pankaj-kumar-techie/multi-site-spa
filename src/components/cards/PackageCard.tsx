@@ -51,12 +51,11 @@ export default function PackageCard(packageDetail: Package) {
 
             <div className=" mt-5 basis-2/4">
               <div className="inline-grid">
-                {/* <h6 className="text-gray-500 text-sm font-medium">From:</h6> */}
+                <h6 className="text-gray-500 text-sm font-medium">Starting From:</h6>
                 <p className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs">
-                  {" "}
                   {packageDetail.price}
                 </p>
-                {/* <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6> */}
+                <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
                 <p className="text-right text-base font-semibold text-stone-700">
                   {" "}
                   {packageDetail.duration}
