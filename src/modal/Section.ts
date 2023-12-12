@@ -102,6 +102,9 @@ export type Package = {
   description: string,
   imageSrc: string,
   imageAlt: string,
+  altitude?: string,
+  difficulty?: string,
+  season?: string
 }
 
 export type Portfolio = {

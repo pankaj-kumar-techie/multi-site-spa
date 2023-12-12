@@ -30,7 +30,6 @@ export default function PackageCard(packageDetail: Package) {
             alt={packageDetail.imageAlt}
             className="w-full h-[18rem] rounded-t-lg rounded-b-none object-center object-cover group-hover:opacity-75"
           />
-
           <p
             className={` pr-2 bottom-0  text-white bg-yellow-600 rounded-tr-lg p-2 truncate absolute  text-left pl-3 text-[1rem] font-semibold  text-${textColor}`}
           >
@@ -51,9 +50,18 @@ export default function PackageCard(packageDetail: Package) {
           <div className="flex flex-row items-center">
 
             <div className=" mt-5 basis-2/4">
-              <h6 className="text-slate-600 text-sm font-medium">Activities:</h6>
               <div className="inline-grid">
-                <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
+                {/* <h6 className="text-gray-500 text-sm font-medium">From:</h6> */}
+                <p className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs">
+                  {" "}
+                  {packageDetail.price}
+                </p>
+                {/* <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6> */}
+                <p className="text-right text-base font-semibold text-stone-700">
+                  {" "}
+                  {packageDetail.duration}
+                </p>
+                {/* <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
                   Treking and walking
                 </button>
                 <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
@@ -61,7 +69,7 @@ export default function PackageCard(packageDetail: Package) {
                 </button>
                 <button className="bg-lime-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
                   In comfort adventures
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="w-20 h-20 relative basis-2/4">
@@ -99,24 +107,7 @@ export default function PackageCard(packageDetail: Package) {
               </svg>
             </div>
           </div>
-          <div className="flex flex-row mt-4">
 
-            <div className=" basis-2/4">
-              <h6 className="text-gray-500 text-sm font-medium">From:</h6>
-              <p className="text-base font-semibold text-stone-700">
-                {" "}
-                {packageDetail.price}
-              </p>
-            </div>
-            <div className=" mb-3  basis-2/4">
-              <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
-              <p className="text-right text-base font-semibold text-stone-700">
-                {" "}
-                {packageDetail.duration}
-              </p>
-            </div>
-
-          </div>
           {/* <button className="bg-lime-500 mb-5  flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
             <span className="mr-2">View Trek</span> <FaChevronCircleRight />
           </button> */}
@@ -124,7 +115,7 @@ export default function PackageCard(packageDetail: Package) {
         <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
           <div className="flex items-center">
             <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
-              <span className="mr-2">View Trek</span> <FaChevronCircleRight />
+              <span className="mr-2">Book Now</span> <FaChevronCircleRight />
             </button>
           </div>
         </div>

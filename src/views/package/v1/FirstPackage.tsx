@@ -4,7 +4,7 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Package } from "../../../modal/Section";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import { ThemeContext } from "../../../themes/ThemeProvider";
-import PackageCard from "../../../components/cards/Package";
+import PackageCard from "../../../components/cards/PackageCard";
 
 
 export default function FirstPackage(props: { data: any }) {
