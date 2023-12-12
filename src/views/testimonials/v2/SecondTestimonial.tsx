@@ -1,17 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
-import TestimonialCard from "../../../components/cards/TestimonialCard";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Testimonial } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
-import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
-import NavigationButtons from "../../../components/common/button/NavigationButtons";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import TestimonialCard2 from "../../../components/cards/TestimonialCard2";
 import AliceCarousel from "react-alice-carousel";
 import 'react-alice-carousel/lib/alice-carousel.css';
 
 export default function SecondTestimonial(props: { data: any }) {
-    const { theme} = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
     const textColor = useDynamicTextColor(theme.colors.primary || "");
     const [testimonialData, setTestimonialData] = useState<any>({
         title: "",
@@ -29,13 +26,6 @@ export default function SecondTestimonial(props: { data: any }) {
         ? testimonialData.testimonials.slice(startIndex, startIndex + 1)
         : testimonialData.testimonials.slice(startIndex, startIndex + 3);
 
-    const handlePrev = () => {
-        setStartIndex(Math.max(0, startIndex - (shouldRenderSingleTestimonial ? 1 : 3)));
-    };
-
-    const handleNext = () => {
-        setStartIndex(Math.min(testimonialData.testimonials.length - (shouldRenderSingleTestimonial ? 1 : 3), startIndex + (shouldRenderSingleTestimonial ? 1 : 3)));
-    };
 
     return (
         <section className={`bg-${theme.colors.primary} text-center`}>
@@ -53,10 +43,11 @@ export default function SecondTestimonial(props: { data: any }) {
                             imageAlt={testimonial.imageAlt}
                         />
                     ))} responsive={{
-                        0: {items: 1},
-                        568: {items: 1},
-                        1024: {items: 3},}} disableButtonsControls={true} disableDotsControls={false} autoPlayInterval={1500}
-                                   animationDuration={1000} autoPlay={true} infinite={true} mouseTracking={true} />
+                        0: { items: 1 },
+                        568: { items: 1 },
+                        1024: { items: 3 },
+                    }} disableButtonsControls={true} disableDotsControls={false} autoPlayInterval={1500}
+                        animationDuration={1000} autoPlay={true} infinite={true} mouseTracking={true} />
                 </div>
             </div>
         </section>

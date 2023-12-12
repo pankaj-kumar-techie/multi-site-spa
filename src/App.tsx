@@ -5,7 +5,7 @@ import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayW
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
 import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
-import { pahariyatri, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
+import { pahariyatri, pahariyatriAboutUs, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
@@ -101,8 +101,12 @@ export default function App() {
                         break;
                     default:
                         setSeo(loondsSeo);
-                        setTheme(loondsTheme);
-                        setSectionData(pahariyatri);
+                        setTheme(pahariyatriTheme);
+                        if (path === 'about-us') {
+                            setSectionData(pahariyatriAboutUs)
+                        } else {
+                            setSectionData(pahariyatri);
+                        }
                         setPlugins(pahariyatriPlugin);
                         break;
                 }
