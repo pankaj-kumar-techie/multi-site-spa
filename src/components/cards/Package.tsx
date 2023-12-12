@@ -50,126 +50,84 @@ export default function PackageCard(packageDetail: Package) {
           </p>
           <div className="flex flex-row items-center">
 
-          <div className=" mt-5 basis-2/4">
-            <h6 className="text-slate-600 text-sm font-medium">Activities:</h6>
-            <div className="inline-grid">
-              <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                Treking and walking
-              </button>
-              <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                Guided treks and walks
-              </button>
-              <button className="bg-lime-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                In comfort adventures
-              </button>
+            <div className=" mt-5 basis-2/4">
+              <h6 className="text-slate-600 text-sm font-medium">Activities:</h6>
+              <div className="inline-grid">
+                <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
+                  Treking and walking
+                </button>
+                <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
+                  Guided treks and walks
+                </button>
+                <button className="bg-lime-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
+                  In comfort adventures
+                </button>
+              </div>
             </div>
-          </div>
-          <div className="w-20 h-20 relative basis-2/4">
-            <p className="text-center  text-slate-600 text-sm font-medium mb-1">Difficulty :</p>
-            <svg className="w-full h-full" viewBox="0 0 100 100">
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                fill="none"
-                stroke="#d2d6dc"
-                strokeWidth="10"
-              />
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                fill="none"
-                stroke="#6ee7b7"
-                strokeWidth="10"
-                strokeDasharray="251.2"
-                strokeDashoffset={offset}
-                strokeLinecap="round"
-                transform="rotate(-90 50 50)"
-              />
-              <text
-                x="50%"
-                y="50%"
-                dominantBaseline="middle"
-                textAnchor="middle"
-                className="text-lg font-bold"
-              >
-                {percentage}%
-              </text>
-            </svg>
-          </div>
+            <div className="w-20 h-20 relative basis-2/4">
+              <p className="text-center  text-slate-600 text-sm font-medium mb-1">Difficulty :</p>
+              <svg className="w-full h-full" viewBox="0 0 100 100">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="#d2d6dc"
+                  strokeWidth="10"
+                />
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  fill="none"
+                  stroke="#6ee7b7"
+                  strokeWidth="10"
+                  strokeDasharray="251.2"
+                  strokeDashoffset={offset}
+                  strokeLinecap="round"
+                  transform="rotate(-90 50 50)"
+                />
+                <text
+                  x="50%"
+                  y="50%"
+                  dominantBaseline="middle"
+                  textAnchor="middle"
+                  className="text-lg font-bold"
+                >
+                  {percentage}%
+                </text>
+              </svg>
+            </div>
           </div>
           <div className="flex flex-row mt-4">
 
-          <div className=" basis-2/4">
-            <h6 className="text-gray-500 text-sm font-medium">From:</h6>
-            <p className="text-base font-semibold text-stone-700">
-              {" "}
-              {packageDetail.price}
-            </p>
+            <div className=" basis-2/4">
+              <h6 className="text-gray-500 text-sm font-medium">From:</h6>
+              <p className="text-base font-semibold text-stone-700">
+                {" "}
+                {packageDetail.price}
+              </p>
+            </div>
+            <div className=" mb-3  basis-2/4">
+              <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
+              <p className="text-right text-base font-semibold text-stone-700">
+                {" "}
+                {packageDetail.duration}
+              </p>
+            </div>
+
           </div>
-          <div className=" mb-3  basis-2/4">
-            <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
-            <p className="text-right text-base font-semibold text-stone-700">
-              {" "}
-              {packageDetail.duration}
-            </p>
-          </div>
-          
-          </div>
-          <button className="bg-lime-500 mb-5  flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
+          {/* <button className="bg-lime-500 mb-5  flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
             <span className="mr-2">View Trek</span> <FaChevronCircleRight />
-          </button>
+          </button> */}
         </div>
-        {/* <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
+        <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
           <div className="flex items-center">
-            <svg
-              className="w-6 h-6 text-yellow-300 ms-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-6 h-6 text-yellow-300 ms-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-6 h-6 text-yellow-300 ms-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-6 h-6 text-yellow-300 ms-1"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
-            <svg
-              className="w-6 h-6 ms-1 text-gray-300 dark:text-gray-500"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 22 20"
-            >
-              <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
-            </svg>
+            <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
+              <span className="mr-2">View Trek</span> <FaChevronCircleRight />
+            </button>
           </div>
-        </div> */}
+        </div>
       </a>
     </div>
   );
