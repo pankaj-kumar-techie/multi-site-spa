@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../themes/ThemeProvider";
-import { useDynamicTextColor } from "../../themes/DynamicTextColor";
-import { Package } from "../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import { Package } from "../../../modal/Section";
 import { FaChevronCircleRight } from "react-icons/fa";
 
 export default function PackageCard(packageDetail: Package) {
@@ -114,7 +114,7 @@ export default function PackageCard(packageDetail: Package) {
         <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
           <div className="flex items-center">
             <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
-              <span className="mr-2">Book Now</span> <FaChevronCircleRight />
+              <span className="mr-2">View Details</span> <FaChevronCircleRight />
             </button>
           </div>
         </div>

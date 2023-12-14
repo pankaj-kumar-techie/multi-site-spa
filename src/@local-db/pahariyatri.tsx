@@ -499,61 +499,6 @@ export const pahariyatri: Section[] = [
     //         ],
     //     },
     // },
-    // {
-    //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-    //     name: "Gallery",
-    //     version: "v1",
-    //     style: "MODERN",
-    //     path: "index",
-    //     data: {
-    //         type: "Gallery",
-    //         id: "004",
-    //         title: "Our Gallery",
-    //         subTitle: "A Glimpse of Our Work",
-    //         description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
-    //         version: "v1",
-    //         style: "MODERN",
-    //         images: [
-    //             {
-    //                 id: '1',
-    //                 imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //             {
-    //                 id: '2',
-    //                 imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //             {
-    //                 id: '3',
-    //                 imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //             {
-    //                 id: '4',
-    //                 imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //             {
-    //                 id: '6',
-    //                 imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             }, {
-    //                 id: '7',
-    //                 imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             }, {
-    //                 id: '8',
-    //                 imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             }, {
-    //                 id: '9',
-    //                 imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //         ],
-    //     },
-    // },
 
     {
         "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
@@ -801,7 +746,7 @@ export const pahariyatri: Section[] = [
         },
     },
 ];
-export const pahariyatriAboutUs: Section[] = [
+export const pahariyatriDynamicDetails: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
@@ -830,238 +775,70 @@ export const pahariyatriAboutUs: Section[] = [
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "HeroBanner",
+            type: "DetailPage",
             id: "002",
             title: "The World is Waiting For You",
             subTitle: "Where will you go next?",
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
-            bannerData: [
-                {
-                    title: "The World is Waiting For You",
-                    subTitle: "Where will you go next?",
-                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
-                    image:
+        },
+    },
+    {
+            id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+            name: "Gallery",
+            version: "v1",
+            style: "MODERN",
+            path: "index",
+            data: {
+                type: "Gallery",
+                id: "004",
+                title: "Our Gallery",
+                subTitle: "A Glimpse of Our Work",
+                description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
+                version: "v1",
+                style: "MODERN",
+                images: [
                     {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
-                    modalProps: {
-                        isOpen: true,
-                        // onClose: () => void,
-                        title: 'Plan Your Dream Vacation Package',
-                        formFields: [
-                            { name: 'name', label: 'Full Name', type: 'text', required: true },
-                            { name: 'mobile', label: 'Phone Number', type: 'tel', required: true },
-                            {
-                                name: 'mobile', label: 'Preferred Destination', type: 'select', required: true,
-                                options: [
-                                    { label: 'The Parvati Valley Adventure', value: '3' },
-                                    { label: 'Manali Snow Adventure', value: '5' },
-                                    { label: 'Kasol and Tosh Winter Chill', value: '7' },
-                                    { label: 'Narkanda Snowy Paradise', value: '21' },
-                                ],
-                            },
-                            {
-                                name: 'mobile', label: 'Number of Travelers', type: 'number', required: true,
-                            },
-                            {
-                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
-                                options: [
-                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
-                                    { label: 'Adventure Tours', value: 'adventure_tours' },
-                                    { label: 'Cruise Packages', value: 'adventure_package' },
-                                ],
-                            },
-                            { name: 'text', label: 'Special Requests ', type: 'textarea', required: false },
-
-                        ]
-                    }
-                },
-            ],
-        },
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "About-Us",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "AboutUs",
-            id: "003",
-            title: "About Pahari Yatri",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "At Pahari Yatri, we are passionate about providing exhilarating trekking and mountaineering experiences that connect individuals with nature's breathtaking beauty. As a leading adventure travel company, we specialize in curating personalized adventures, ensuring the highest safety standards, and promoting sustainable tourism practices. Our team of experienced professionals is committed to creating unforgettable memories for every adventurer who embarks on a journey with us.",
-            version: "v1",
-            style: "CLASSIC",
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-            ],
-        },
-    },
-
-    {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-        name: "Hero banner",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "HeroBanner",
-            id: "002",
-            title: "The World is Waiting For You",
-            subTitle: "Where will you go next?",
-            description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
-            version: "v2",
-            style: "CLASSIC",
-            bannerData: [
-                {
-                    title: "The World is Waiting For You",
-                    subTitle: "Where will you go next?",
-                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
-                    image:
                     {
-                        id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        id: '2',
+                        imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
-                    modalProps: {
-                        isOpen: false,
-                        // onClose: () => void,
-                        title: 'string',
-                    }
-                },
-            ],
+                    {
+                        id: '3',
+                        imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    {
+                        id: '4',
+                        imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                    {
+                        id: '6',
+                        imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    }, {
+                        id: '7',
+                        imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    }, {
+                        id: '8',
+                        imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    }, {
+                        id: '9',
+                        imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
+                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                    },
+                ],
+            },
         },
-    },
-
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Blog",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Blog",
-            id: "k",
-            title: "Our Recent Blogs",
-            subTitle: "Stay Inspired and Informed",
-            description: "Explore our latest travel articles, tips, and stories to fuel your wanderlust.",
-            version: "v1",
-            style: "CLASSIC",
-            blogs: [
-                {
-                    id: "2",
-                    title: "Great Lakes Trek",
-                    description: 'Explore the pristine alpine lakes of the Kashmir region, including Vishansar Lake, Gadsar Lake, and Nundkol Lake.',
-                    descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-                    imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: "3",
-                    title: "Sandakphu Trek",
-                    description: 'Trek to the highest point in West Bengal, Sandakphu, and witness panoramic views of the Himalayas, including the majestic Kanchenjunga.',
-                    descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: "4",
-                    title: "Hampta Pass Trek",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    descriptionContext: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonummy tincidunt ut lacreet dolore magna aliguam erat volutpat.",
-                    imageSrc: "https://images.unsplash.com/photo-1520982184827-6950930eaf2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: "5",
-                    title: "Winter Wonderland in Shimla, Kasol, and Tosh",
-                    description: 'Embrace the magic of winter in the serene Himalayan landscapes of Shimla, Kasol, and Tosh. These charming destinations come alive with snowfall, creating a picturesque winter wonderland.',
-                    descriptionContext: "Explore our blog to plan your winter adventure in these enchanting destinations.",
-                    imageSrc: "https://images.unsplash.com/photo-1575370378730-4e9d0acd572a?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    imageAlt: 'Image Alt Text Here',
-                },
-                {
-                    id: "6",
-                    title: "Kasauli Winter Chill",
-                    description: 'Kasauli, a tranquil hill station in Himachal Pradesh, beckons winter enthusiasts with its crisp mountain air and peaceful ambiance. Escape the urban hustle and experience a serene winter retreat in Kasauli.',
-                    descriptionContext: "Read our blog for a peaceful winter getaway in Kasauli.",
-                    imageSrc: "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    imageAlt: 'Image Alt Text Here',
-                },
-                {
-                    id: "7",
-                    title: "Chail Winter Forest Retreat",
-                    description: 'Escape to Chail for an enchanting winter forest retreat. Nestled amidst pine and deodar forests, Chail offers a tranquil and snowy escape that s perfect for nature lovers.',
-                    descriptionContext: "Discover the beauty of a winter forest retreat in Chail through our blog.",
-                    imageSrc: "https://images.unsplash.com/photo-1676712754009-e62b85811f01?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    imageAlt: 'Image Alt Text Here',
-                },
-                {
-                    id: "8",
-                    title: "Manali Snow Adventure",
-                    description: 'Manali, a perennial favorite, becomes a hub for winter adventurers during the snowy season. Embark on a thrilling winter journey in the heart of Himachal Pradesh.',
-                    descriptionContext: "Plan your adventure in Manali's snow-covered paradise with our blog.",
-                    imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    imageAlt: 'Image Alt Text Here',
-                },
-            ],
-
-        },
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Faq",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "FAQ",
-            id: "k",
-            title: "FAQ",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v1",
-            style: "CLASSIC",
-            "faqs": [
-                {
-                    "id": 1,
-                    "question": "Q. What is Pahari Yatri's mission?",
-                    "answer": "A. Our mission at Pahari Yatri is to provide exhilarating trekking and mountaineering experiences that connect individuals with the breathtaking beauty of North India and beyond. We are passionate about promoting sustainable tourism practices and curating personalized adventures for our clients."
-                },
-                {
-                    "id": 2,
-                    "question": "Q. What types of travel experiences does Pahari Yatri offer?",
-                    "answer": "A. Pahari Yatri specializes in adventure travel. Our offerings include thrilling adventure expeditions, camping in picturesque landscapes, adventure tours that combine activities and cultural immersions, and opportunities for cultural immersion in local traditions."
-                },
-                {
-                    "id": 3,
-                    "question": "Q. How can I book a trip with Pahari Yatri?",
-                    "answer": "A. Booking a trip with Pahari Yatri is easy. You can explore our travel packages on our website, select the one that suits your preferences, and follow the booking instructions. Our team is also available to assist you if you have any questions or need personalized recommendations."
-                },
-                {
-                    "id": 4,
-                    "question": "Q. Is safety a priority at Pahari Yatri?",
-                    "answer": "A. Absolutely! Your safety is our top priority. We adhere to rigorous safety protocols and provide expert guidance to ensure secure and enriching experiences for all our travelers. Our experienced guides and staff are trained to handle various situations and prioritize your well-being."
-                },
-                {
-                    "id": 5,
-                    "question": "Q. What sets Pahari Yatri apart from other travel companies?",
-                    "answer": "A. Pahari Yatri stands out for its unique blend of cutting-edge technology and a deep love for adventure. We offer personalized adventures that cater to your preferences, and our commitment to sustainability ensures that your travel has a positive impact on the environment and local communities."
-                },
-                // Add more FAQs as needed
-            ]
-
-        },
-    },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "ContactUs",
