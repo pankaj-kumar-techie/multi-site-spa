@@ -8,6 +8,7 @@ import AboutUs from "./about-us/AboutUs";
 import Blog from "./blog/Blog";
 import ComingSoon from "./coming-soon/ComingSoon";
 import ContactUs from "./contact-us/ContactUs";
+import DetailsPage from "./details-page/DetailsPage";
 import FAQAccordion from "./faq/FAQAccordion";
 import Gallery from "./gallery/Gallery";
 import HeroBanner from "./hero-banner/HeroBanner";
@@ -38,6 +39,7 @@ export class Renderer {
             Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
             Package: <Package key={section.id} data={section['data']} version={section['version']}></Package>,
             Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
+            DetailPage: <DetailsPage></DetailsPage>,
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
             Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,

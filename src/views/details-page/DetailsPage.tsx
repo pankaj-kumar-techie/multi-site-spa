@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import PackageDetailCard from '../../components/cards/PackageCardDetail';
+import PackageDetailCard from '../package/components/PackageCardDetail';
 import BlogDetailCard from '../../components/cards/BlogCardDetail';
 import Loader from '../../components/common/loader/Loader';
 import { Link, useParams } from 'react-router-dom';
 import PageNotFound from '../page-not-found/PageNotFound';
 import Header from '../../components/layouts/header/Header';
-import { useClientAppDataContext } from '../../ClientAppDataContext';
 import { Blog, Package } from '../../modal/Section';
+import { useClientAppDataContext } from '../../ClientAppDataContext';
 
 const isValidSlug = (slug: string) => {
     const validSlugs = ['blogs', 'packages', 'products'];
@@ -237,22 +237,9 @@ const DetailsPage = () => {
 
     return (
         <>
-            <Header data={undefined} version={'v1'} />
-            <div className="container mx-auto px-4 py-8">
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="px-6 py-4">
-                        <div className="flex items-center justify-between">
-                            <h1 className="text-3xl font-bold text-gray-800 mb-4">
-                                {"Title"}
-                            </h1>
-                            <Link to="/" className="text-gray-600 hover:underline">
-                                Back
-                            </Link>
-                        </div>
-                    </div>
+                {/* <div className="bg-white shadow-lg rounded-lg overflow-hidden"> */}
                     {getDetailCardComponent(slug)}
-                </div>
-            </div>
+                {/* </div> */}
         </>
     );
 };

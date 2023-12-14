@@ -5,7 +5,6 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import App from "./App";
 import PageNotFound from "./views/page-not-found/PageNotFound";
-import DetailsPage from "./views/details-page/DetailsPage";
 import { ClientAppProvider } from './ClientAppDataContext';
 
 
@@ -17,10 +16,9 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route index element={<App />} />
-                <Route path=":slug" element={<App />} />
-                <Route path="/:slug/:id" element={<DetailsPage />} />
+                <Route path=":slug/:id" element={<App />} />
+                {/* <Route path="/:slug/:id" element={<DetailsPage />} /> */}
                 {/* <Route path="blogs/:id" element={<DetailsPage />} />
-            <Route path="packages/:id" element={<DetailsPage />} /> */}
                 {/*<Route path="test" element={<LandingPageApp/>}/>*/}
                 <Route path="*" element={<PageNotFound />} />
             </Routes>

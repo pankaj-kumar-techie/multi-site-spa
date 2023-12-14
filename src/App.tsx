@@ -5,7 +5,7 @@ import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayW
 import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
 import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
-import { pahariyatri, pahariyatriAboutUs, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
+import { pahariyatri, pahariyatriDynamicDetails, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
 import { techie, techieTheme, techiepahariyatriseo } from './@local-db/techie';
 import ErrorPage from "./components/common/error/ErrorPage";
 import Loader from "./components/common/loader/Loader";
@@ -38,6 +38,13 @@ export default function App() {
             let path = window.location.pathname.substring(1); // Remove leading '/';
             console.log('Page Path:', path);
 
+            // Extract values from the URL
+            const urlParts = path.split('/');
+            const page = urlParts[0];
+            const id = urlParts[1];
+            console.log('Page is here : ', page);
+            console.log('id is here : ', id);
+
             if (!path) {
                 path = 'index';
             }
@@ -57,7 +64,13 @@ export default function App() {
                     case "pahariyatri.com":
                         setSeo(pahariyatriSeo);
                         setTheme(pahariyatriTheme);
-                        setSectionData(pahariyatri);
+                        if (page === 'packages') {
+                            setSectionData(pahariyatriDynamicDetails)
+                        } else if (page === 'blogs'){
+                            setSectionData(pahariyatriDynamicDetails);
+                        } else {
+                            setSectionData(pahariyatri);
+                        }
                         setPlugins(pahariyatriPlugin);
                         break;
                     case "techie.pahariyatri.com":
@@ -102,8 +115,10 @@ export default function App() {
                     default:
                         setSeo(loondsSeo);
                         setTheme(pahariyatriTheme);
-                        if (path === 'about-us') {
-                            setSectionData(pahariyatriAboutUs)
+                        if (page === 'packages') {
+                            setSectionData(pahariyatriDynamicDetails)
+                        } else if (page === 'blogs'){
+                            setSectionData(pahariyatriDynamicDetails);
                         } else {
                             setSectionData(pahariyatri);
                         }
