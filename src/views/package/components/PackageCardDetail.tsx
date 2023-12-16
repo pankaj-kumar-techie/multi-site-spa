@@ -17,9 +17,46 @@ const PackageDetailCard = (packageDetailProps: Package) => {
         { id: 5, title: "Day 5: Departure", description: "Bid farewell to an unforgettable journey." },
     ];
 
+    const createQuotationRequestMessage = (formData: Record<string, any>) => {
+        const {
+            name,
+            mobile,
+            participants,
+            additionalInclusions,
+            /* ...other fields */
+        } = formData;
+        const { id, name: packageName } = packageDetailProps;
+        const message = `
+🌟 *Travel Quotation Request* 🌟
+
+Hi there! 🚀 My name is ${name}, and I'm interested in a thrilling adventure with Pahari Yatri? Here are my details:
+
+🌄 Package: [Explore the package](https://pahariyatri.com/packages/${id})
+👤 Name: ${name}
+📱 Mobile: ${mobile}
+👥 Participants: ${participants}
+🛍️ Additional Inclusions: ${additionalInclusions}
+
+Excited to get a travel quotation for "${packageName}" package! 🌈 Could you please share the trip details and cost estimation?
+
+🙏 Thank you!
+    `.trim();
+        return message;
+    };
+
+
     const handleFormSubmit = (formData: Record<string, any>) => {
         // Handle form submission logic here
         // You can replace setStatus('success') with actual submission code
+        const quotationRequestMessage = createQuotationRequestMessage(formData);
+        openWhatsApp(quotationRequestMessage);
+    };
+    const openWhatsApp = (quotationRequestMessage: string) => {
+        const baseWhatsAppUrl = `https://api.whatsapp.com/send?phone=${'9569576707'}`;
+        const whatsappUrl = quotationRequestMessage
+            ? `${baseWhatsAppUrl}&text=${encodeURIComponent(quotationRequestMessage)}`
+            : baseWhatsAppUrl;
+        window.open(whatsappUrl, '_blank');
     };
 
     const [offset, setOffset] = useState(0);
@@ -153,7 +190,7 @@ const PackageDetailCard = (packageDetailProps: Package) => {
 
                             { name: 'comments', label: 'Additional Comments', type: 'textarea' },
                         ]}
-                        level="Get Travel Quotation"
+                        level="Travel Quotation Request"
                         onSubmit={handleFormSubmit}
                     />
 

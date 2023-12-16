@@ -1,6 +1,5 @@
 import React, { useContext, useState } from 'react';
 import { FieldConfig, FieldProps } from '../../../modal/FieldConfig';
-import { Theme } from '../../../modal/Theme';
 import InputField from './components/InputField';
 import RadioCheckboxField from './components/RadioCheckboxField';
 import SelectField from './components/SelectField';
@@ -40,6 +39,7 @@ const DynamicForm: React.FC<DynamicFormProps> = ({ fields, level, onSubmit }) =>
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        console.log("Form Data ", event, formData)
         onSubmit(formData);
     };
 
