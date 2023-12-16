@@ -18,10 +18,10 @@ export const pahariyatriPlugin: PluginConfig[] = [
 
 export const pahariyatri: Section[] = [
     {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        id: "889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v1", // Add version property
-        style: "MODERN", // Add style property
+        version: "v1",
+        style: "MODERN",
         path: "index",
         data: {
             type: "Header",
@@ -122,7 +122,7 @@ export const pahariyatri: Section[] = [
     //     },
     // },
     {
-        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
+        id: "143d8df3-49c7-0c5ef7a46f6b",
         name: " ",
         version: "v1",
         style: "CLASSIC",
@@ -215,7 +215,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
+        id: "143d8df3-c7-43709e0e-0c5ef7a46f6b",
         name: " ",
         version: "v1",
         style: "CLASSIC",
@@ -283,7 +283,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        id: "69e7ed7e-889d-41c0-a1150401e2",
         name: "Hero banner",
         version: "v1",
         style: "CLASSIC",
@@ -317,7 +317,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
+        id: "49c7-43709e0e-0c5ef7a46f6b",
         name: " ",
         version: "v1",
         style: "CLASSIC",
@@ -328,13 +328,13 @@ export const pahariyatri: Section[] = [
             title: "Sacred Himalayan Pilgrimage: Kailash Yatra with Pahari Yatri",
             subTitle: "Embark on a Spiritual Journey to Shrikhand, Manimahesh, and Kinnaur Kailash",
             description: "Hero Banner Paragraph is here",
-            version: "v1",
+            version: "v2",
             style: "CLASSIC",
             packages: [
                 {
-                    id: 1,
+                    id: 101,
                     name: 'Shrikhand Mahadev Kailash Yatra',
-                    href: '/packages/2',
+                    href: '/packages/101',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Kullu, Himachal Pradesh",
@@ -345,9 +345,9 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
                 {
-                    id: 2,
+                    id: 102,
                     name: 'Manimahesh Kailash Yatra',
-                    href: '/packages/3',
+                    href: '/packages/102',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Chamba, Himachal Pradesh",
@@ -358,9 +358,9 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Manimahesh Lake surrounded by snow-capped peaks.',
                 },
                 {
-                    id: 3,
+                    id: 103,
                     name: 'Kinnaur Kailash Yatra',
-                    href: '/packages/4',
+                    href: '/packages/103',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Kinnaur, Himachal Pradesh",
@@ -373,7 +373,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "143d8df3-49c7-4370-0c5ef7a46f6b",
         name: "Service",
         version: "v1",
         style: "CLASSIC",
@@ -432,6 +432,7 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
+
     // {
     //     id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
     //     name: " ",
@@ -500,58 +501,58 @@ export const pahariyatri: Section[] = [
     //     },
     // },
 
+    // {
+    //     "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+    //     "name": "Service",
+    //     "version": "v2",
+    //     "style": "MODERN",
+    //     "path": "index",
+    //     "data": {
+    //         "type": "Testimonial",
+    //         "id": "k",
+    //         "title": "Client Testimonials",
+    //         "subTitle": "Our Clients Speak",
+    //         "description": "See what our clients have to say about their experiences working with us.",
+    //         "version": "v2",
+    //         "style": "MODERN",
+    //         "testimonials": [
+    //             {
+    //                 "id": "1",
+    //                 "name": "Alexandra Rodriguez",
+    //                 "designation": "CEO, Tech Innovators",
+    //                 "imageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //                 "imageAlt": "Alexandra Rodriguez, CEO",
+    //                 "testimonial": "Working with this software development team was a game-changer for our business. Their innovative solutions and dedication to excellence truly exceeded our expectations. We look forward to future collaborations."
+    //             },
+    //             {
+    //                 "id": "2",
+    //                 "name": "Michael Chen",
+    //                 "designation": "CTO, Data Dynamics",
+    //                 "imageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //                 "imageAlt": "Michael Chen, CTO",
+    //                 "testimonial": "I've been consistently impressed with the professionalism and technical expertise of this team. They delivered a complex project ahead of schedule and ensured that every aspect met our high standards. Highly recommend their services."
+    //             },
+    //             {
+    //                 "id": "3",
+    //                 "name": "Emily Thompson",
+    //                 "designation": "COO, E-Commerce Solutions",
+    //                 "imageSrc": "https://images.unsplash.com/photo-1555168945-6c11dbe1bb67?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //                 "imageAlt": "Emily Thompson, COO",
+    //                 "testimonial": "The collaboration with this software company has been exceptional. Their communication, attention to detail, and ability to adapt to changing requirements make them stand out. A reliable partner for any software development needs."
+    //             },
+    //             {
+    //                 "id": "4",
+    //                 "name": "Christopher Davis",
+    //                 "designation": "Founder, StartTech Ventures",
+    //                 "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    //                 "imageAlt": "Christopher Davis, Founder",
+    //                 "testimonial": "Choosing this software development team was one of the best decisions for our startup. They brought our vision to life with a scalable and efficient solution. Their commitment to client success is evident in every interaction."
+    //             }
+    //         ]
+    //     }
+    // },
     {
-        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        "name": "Service",
-        "version": "v2",
-        "style": "MODERN",
-        "path": "index",
-        "data": {
-            "type": "Testimonial",
-            "id": "k",
-            "title": "Client Testimonials",
-            "subTitle": "Our Clients Speak",
-            "description": "See what our clients have to say about their experiences working with us.",
-            "version": "v2",
-            "style": "MODERN",
-            "testimonials": [
-                {
-                    "id": "1",
-                    "name": "Alexandra Rodriguez",
-                    "designation": "CEO, Tech Innovators",
-                    "imageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Alexandra Rodriguez, CEO",
-                    "testimonial": "Working with this software development team was a game-changer for our business. Their innovative solutions and dedication to excellence truly exceeded our expectations. We look forward to future collaborations."
-                },
-                {
-                    "id": "2",
-                    "name": "Michael Chen",
-                    "designation": "CTO, Data Dynamics",
-                    "imageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Michael Chen, CTO",
-                    "testimonial": "I've been consistently impressed with the professionalism and technical expertise of this team. They delivered a complex project ahead of schedule and ensured that every aspect met our high standards. Highly recommend their services."
-                },
-                {
-                    "id": "3",
-                    "name": "Emily Thompson",
-                    "designation": "COO, E-Commerce Solutions",
-                    "imageSrc": "https://images.unsplash.com/photo-1555168945-6c11dbe1bb67?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Emily Thompson, COO",
-                    "testimonial": "The collaboration with this software company has been exceptional. Their communication, attention to detail, and ability to adapt to changing requirements make them stand out. A reliable partner for any software development needs."
-                },
-                {
-                    "id": "4",
-                    "name": "Christopher Davis",
-                    "designation": "Founder, StartTech Ventures",
-                    "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Christopher Davis, Founder",
-                    "testimonial": "Choosing this software development team was one of the best decisions for our startup. They brought our vision to life with a scalable and efficient solution. Their commitment to client success is evident in every interaction."
-                }
-            ]
-        }
-    },
-    {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        id: "69e7ed7e-889d-41c0-a1d9-62bd15040rr1e2",
         name: "Hero banner",
         version: "v1",
         style: "CLASSIC",
@@ -585,7 +586,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "143d8df3-49c7-4370-9e08",
         name: "Blog",
         version: "v1",
         style: "CLASSIC",
@@ -660,7 +661,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "-49c7-437kk0-9e0e-0c5ef7a46f6b",
         name: "Faq",
         version: "v1",
         style: "CLASSIC",
@@ -704,33 +705,33 @@ export const pahariyatri: Section[] = [
 
         },
     },
+    // {
+    //     id: "143d8-0c5ef7a46f6b",
+    //     name: "ContactUs",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "ContactUs",
+    //         id: "k",
+    //         title: "Get In Touch",
+    //         subTitle: "Plan Your Dream Vacation Package",
+    //         description: "Hero Banner Paragraph is here",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         contactUs: {
+    //             address: "Himachal Pradesh",
+    //             email: "pahariyatri@gmail.com",
+    //             phone: "+91 9569576707",
+    //             formFields: [
+    //                 { name: 'name', label: 'Name', type: 'text', required: true },
+    //                 { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+    //             ]
+    //         },
+    //     },
+    // },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "ContactUs",
-        version: "v2",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "ContactUs",
-            id: "k",
-            title: "Get In Touch",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v2",
-            style: "CLASSIC",
-            contactUs: {
-                address: "Himachal Pradesh",
-                email: "pahariyatri@gmail.com",
-                phone: "+91 9569576707",
-                formFields: [
-                    { name: 'name', label: 'Name', type: 'text', required: true },
-                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
-                ]
-            },
-        },
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "143d8d",
         name: "Footer",
         version: "v1",
         style: "CLASSIC",
@@ -748,7 +749,7 @@ export const pahariyatri: Section[] = [
 ];
 export const pahariyatriDynamicDetails: Section[] = [
     {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        id: "69e7ed7e-41c0-a1d9-62bd150401e2",
         name: "Header",
         version: "v1", // Add version property
         style: "MODERN", // Add style property
@@ -769,7 +770,7 @@ export const pahariyatriDynamicDetails: Section[] = [
         },
     },
     {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        id: "69e7ed7e-889d-41c0-a1",
         name: "Hero banner",
         version: "v1",
         style: "CLASSIC",
@@ -785,62 +786,62 @@ export const pahariyatriDynamicDetails: Section[] = [
         },
     },
     {
-            id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-            name: "Gallery",
+        id: "143-4370-9e0e-07a46f6b",
+        name: "Gallery",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Gallery",
+            id: "004",
+            title: "Our Gallery",
+            subTitle: "A Glimpse of Our Work",
+            description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
             version: "v1",
             style: "MODERN",
-            path: "index",
-            data: {
-                type: "Gallery",
-                id: "004",
-                title: "Our Gallery",
-                subTitle: "A Glimpse of Our Work",
-                description: "Immerse yourself in the visuals of our projects. Browse through our gallery showcasing our exceptional designs that transform spaces into captivating works of art.",
-                version: "v1",
-                style: "MODERN",
-                images: [
-                    {
-                        id: '1',
-                        imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                    {
-                        id: '2',
-                        imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                    {
-                        id: '3',
-                        imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                    {
-                        id: '4',
-                        imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                    {
-                        id: '6',
-                        imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    }, {
-                        id: '7',
-                        imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    }, {
-                        id: '8',
-                        imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    }, {
-                        id: '9',
-                        imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                ],
-            },
+            images: [
+                {
+                    id: '1',
+                    imageSrc: 'https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '2',
+                    imageSrc: 'https://i.pinimg.com/564x/65/fe/54/65fe548a8409fbfeb8cd08239c8a063e.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '3',
+                    imageSrc: 'https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '4',
+                    imageSrc: 'https://i.pinimg.com/564x/81/77/75/81777504a7fdddce6ae58e12d8c6afdc.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+                {
+                    id: '6',
+                    imageSrc: 'https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '7',
+                    imageSrc: 'https://i.pinimg.com/564x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '8',
+                    imageSrc: 'https://i.pinimg.com/564x/41/e0/82/41e082bb39b3968ff21091e1b37baa57.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                }, {
+                    id: '9',
+                    imageSrc: 'https://i.pinimg.com/564x/55/3b/b6/553bb6677b835497b4178ab98a9f5330.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+                },
+            ],
         },
+    },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "143d8df3-49c7-43787a46f6b",
         name: "Footer",
         version: "v1",
         style: "CLASSIC",

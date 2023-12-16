@@ -3,7 +3,7 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import Button from "../../../components/common/button/Button";
-import Form from "../../../components/Form";
+import Form from "../../../components/common/dynamic-form/DynamicForm";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import Modal from "../../../components/common/model/Modal";
 
@@ -97,7 +97,7 @@ export default function FirstHeroBanner(props: { data: any }) {
 
         <Modal isOpen={isModalOpen} onClose={closeModal} title={bannerData.modalProps ? bannerData.modalProps.title : ""}>
           {bannerData.modalProps.formFields && bannerData.modalProps.formFields.length > 0 ? (
-            <Form fields={bannerData.modalProps.formFields} theme={theme} onSubmit={(data: Record<string, any>) => {
+            <Form fields={bannerData.modalProps.formFields} onSubmit={(data: Record<string, any>) => {
               throw new Error("Function not implemented.");
             }} />
           ) : null}

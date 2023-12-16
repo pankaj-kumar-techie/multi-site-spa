@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Package } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
-import Form from "../../../components/Form";
+import Form from "../../../components/common/dynamic-form/DynamicForm";
 import ItineraryCard from "./ItineraryCard";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
@@ -10,16 +10,53 @@ const PackageDetailCard = (packageDetailProps: Package) => {
     const { theme } = useContext(ThemeContext);
     const textColor = useDynamicTextColor(theme.colors.primary || "");
     const itinerary = [
-        { title: "Day 1: Arrival in Destination", description: "Explore the local surroundings and get settled." },
-        { title: "Day 2: Outdoor Adventure", description: "Embark on an exciting outdoor expedition." },
-        { title: "Day 3: Explore Local Attractions", description: "Discover the beauty of the area's attractions." },
-        { title: "Day 4: Cultural Experience", description: "Immerse yourself in the local culture and traditions." },
-        { title: "Day 5: Departure", description: "Bid farewell to an unforgettable journey." },
+        { id: 1, title: "Day 1: Arrival in Destination", description: "Explore the local surroundings and get settled." },
+        { id: 2, title: "Day 2: Outdoor Adventure", description: "Embark on an exciting outdoor expedition." },
+        { id: 3, title: "Day 3: Explore Local Attractions", description: "Discover the beauty of the area's attractions." },
+        { id: 4, title: "Day 4: Cultural Experience", description: "Immerse yourself in the local culture and traditions." },
+        { id: 5, title: "Day 5: Departure", description: "Bid farewell to an unforgettable journey." },
     ];
+
+    const createQuotationRequestMessage = (formData: Record<string, any>) => {
+        const {
+            name,
+            mobile,
+            participants,
+            additionalInclusions,
+            /* ...other fields */
+        } = formData;
+        const { id, name: packageName } = packageDetailProps;
+        const message = `
+🌟 *Travel Quotation Request* 🌟
+
+Hi there! 🚀 My name is ${name}, and I'm interested in a thrilling adventure with Pahari Yatri? Here are my details:
+
+🌄 Package: [Explore the package](https://pahariyatri.com/packages/${id})
+👤 Name: ${name}
+📱 Mobile: ${mobile}
+👥 Participants: ${participants}
+🛍️ Additional Inclusions: ${additionalInclusions}
+
+Excited to get a travel quotation for "${packageName}" package! 🌈 Could you please share the trip details and cost estimation?
+
+🙏 Thank you!
+    `.trim();
+        return message;
+    };
+
 
     const handleFormSubmit = (formData: Record<string, any>) => {
         // Handle form submission logic here
         // You can replace setStatus('success') with actual submission code
+        const quotationRequestMessage = createQuotationRequestMessage(formData);
+        openWhatsApp(quotationRequestMessage);
+    };
+    const openWhatsApp = (quotationRequestMessage: string) => {
+        const baseWhatsAppUrl = `https://api.whatsapp.com/send?phone=${'9569576707'}`;
+        const whatsappUrl = quotationRequestMessage
+            ? `${baseWhatsAppUrl}&text=${encodeURIComponent(quotationRequestMessage)}`
+            : baseWhatsAppUrl;
+        window.open(whatsappUrl, '_blank');
     };
 
     const [offset, setOffset] = useState(0);
@@ -104,7 +141,7 @@ const PackageDetailCard = (packageDetailProps: Package) => {
                         <span className={`${textColor} font-semibold`}>Itinerary:</span>
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                             {itinerary.map((item, index) => (
-                                <ItineraryCard key={index} title={item.title} description={item.description} />
+                                <ItineraryCard key={index} id={index} title={item.title} description={item.description} />
                             ))}
                         </div>
                     </div>
@@ -120,24 +157,43 @@ const PackageDetailCard = (packageDetailProps: Package) => {
                     ></TitleCover>
                     <Form
                         fields={[
-                            { name: 'name', label: 'Name', type: 'text', required: true },
-                            { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                            { name: 'name', label: 'Full Name', type: 'text', required: true },
+                            { name: 'mobile', label: 'Phone Number', type: 'tel', required: true },
                             {
-                                name: 'mobile', label: 'Number of Travelers', type: 'number', required: true,
+                                name: 'participants', label: 'Number of Participants', type: 'number', required: true,
                             },
                             {
-                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
+                                name: 'additionalInclusions', label: 'Additional Inclusions', type: 'checkbox',
                                 options: [
-                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
-                                    { label: 'Adventure Tours', value: 'adventure_tours' },
-                                    { label: 'Cruise Packages', value: 'adventure_package' },
+                                    { label: 'Guided Tours or Excursions', value: 'guidedTours' },
+                                    { label: 'Equipment Rental', value: 'equipmentRental' },
+                                    { label: 'Photography Services', value: 'photographyServices' },
+                                    { label: 'Cultural Experiences', value: 'culturalExperiences' },
                                 ],
                             },
+                            {
+                                name: 'level', label: 'Level of Trekking Experience', type: 'radio', required: true,
+                                options: [
+                                    { label: 'Beginner', value: 'beginner' },
+                                    { label: 'Intermediate', value: 'intermediate' },
+                                    { label: 'Advanced', value: 'advanced' },
+                                ],
+                            },
+                            {
+                                name: 'accommodation', label: 'Accommodation Type', type: 'radio', required: true,
+                                options: [
+                                    { label: 'Teahouse', value: 'teahouse' },
+                                    { label: 'Camping', value: 'camping' },
+                                    { label: 'Lodge', value: 'lodge' },
+                                ],
+                            },
+
                             { name: 'comments', label: 'Additional Comments', type: 'textarea' },
                         ]}
-                        theme={theme}
+                        level="Travel Quotation Request"
                         onSubmit={handleFormSubmit}
                     />
+
                 </div>
             </div>
         </section>

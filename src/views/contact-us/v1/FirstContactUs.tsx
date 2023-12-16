@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { FaMobile } from 'react-icons/fa';
 import { GrLocation, GrMail } from 'react-icons/gr';
-import Form from '../../../components/Form';
+import Form from '../../../components/common/dynamic-form/DynamicForm';
 import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
@@ -10,7 +10,7 @@ import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Impor
 
 function FirstContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.secondary || ""); // Use the hook for text color
+    const textColor = useDynamicTextColor(theme.colors.primary || ""); // Use the hook for text color
     const [status, setStatus] = useState('');
     const [contactUsData, setContactUsData] = useState<any>({
         title: "",
@@ -33,7 +33,7 @@ function FirstContactUs(props: { data: any }) {
     };
 
     return (
-        <section className={`bg-${theme.colors.secondary} md:py-16 py-8`}>
+        <section className={`bg-${theme.colors.primary} md:py-16 py-8`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
@@ -59,7 +59,7 @@ function FirstContactUs(props: { data: any }) {
                             Thank you for contacting us!
                         </p>
                     ) : (
-                        <Form fields={contactUsData.contactUs.formFields} theme={theme} onSubmit={handleFormSubmit}></Form>
+                        <Form fields={contactUsData.contactUs.formFields} onSubmit={handleFormSubmit}></Form>
                     )}
                 </div>
             </div>
