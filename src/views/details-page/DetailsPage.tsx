@@ -2,9 +2,8 @@ import React, { useEffect, useState } from 'react';
 import PackageDetailCard from '../package/components/PackageCardDetail';
 import BlogDetailCard from '../../components/cards/BlogCardDetail';
 import Loader from '../../components/common/loader/Loader';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import PageNotFound from '../page-not-found/PageNotFound';
-import Header from '../../components/layouts/header/Header';
 import { Blog, Package } from '../../modal/Section';
 import { useClientAppDataContext } from '../../ClientAppDataContext';
 
@@ -237,9 +236,7 @@ const DetailsPage = () => {
 
     return (
         <>
-                {/* <div className="bg-white shadow-lg rounded-lg overflow-hidden"> */}
-                    {getDetailCardComponent(slug)}
-                {/* </div> */}
+            {getDetailCardComponent(slug)}
         </>
     );
 };
