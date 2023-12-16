@@ -705,31 +705,31 @@ export const pahariyatri: Section[] = [
 
         },
     },
-    {
-        id: "143d8-0c5ef7a46f6b",
-        name: "ContactUs",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "ContactUs",
-            id: "k",
-            title: "Get In Touch",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v2",
-            style: "CLASSIC",
-            contactUs: {
-                address: "Himachal Pradesh",
-                email: "pahariyatri@gmail.com",
-                phone: "+91 9569576707",
-                formFields: [
-                    { name: 'name', label: 'Name', type: 'text', required: true },
-                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
-                ]
-            },
-        },
-    },
+    // {
+    //     id: "143d8-0c5ef7a46f6b",
+    //     name: "ContactUs",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "ContactUs",
+    //         id: "k",
+    //         title: "Get In Touch",
+    //         subTitle: "Plan Your Dream Vacation Package",
+    //         description: "Hero Banner Paragraph is here",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         contactUs: {
+    //             address: "Himachal Pradesh",
+    //             email: "pahariyatri@gmail.com",
+    //             phone: "+91 9569576707",
+    //             formFields: [
+    //                 { name: 'name', label: 'Name', type: 'text', required: true },
+    //                 { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+    //             ]
+    //         },
+    //     },
+    // },
     {
         id: "143d8d",
         name: "Footer",

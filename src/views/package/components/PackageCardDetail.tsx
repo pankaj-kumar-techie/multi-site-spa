@@ -10,11 +10,11 @@ const PackageDetailCard = (packageDetailProps: Package) => {
     const { theme } = useContext(ThemeContext);
     const textColor = useDynamicTextColor(theme.colors.primary || "");
     const itinerary = [
-        { title: "Day 1: Arrival in Destination", description: "Explore the local surroundings and get settled." },
-        { title: "Day 2: Outdoor Adventure", description: "Embark on an exciting outdoor expedition." },
-        { title: "Day 3: Explore Local Attractions", description: "Discover the beauty of the area's attractions." },
-        { title: "Day 4: Cultural Experience", description: "Immerse yourself in the local culture and traditions." },
-        { title: "Day 5: Departure", description: "Bid farewell to an unforgettable journey." },
+        { id: 1, title: "Day 1: Arrival in Destination", description: "Explore the local surroundings and get settled." },
+        { id: 2, title: "Day 2: Outdoor Adventure", description: "Embark on an exciting outdoor expedition." },
+        { id: 3, title: "Day 3: Explore Local Attractions", description: "Discover the beauty of the area's attractions." },
+        { id: 4, title: "Day 4: Cultural Experience", description: "Immerse yourself in the local culture and traditions." },
+        { id: 5, title: "Day 5: Departure", description: "Bid farewell to an unforgettable journey." },
     ];
 
     const handleFormSubmit = (formData: Record<string, any>) => {
@@ -104,7 +104,7 @@ const PackageDetailCard = (packageDetailProps: Package) => {
                         <span className={`${textColor} font-semibold`}>Itinerary:</span>
                         <div className="grid grid-cols-1 md:grid-cols-1 gap-4">
                             {itinerary.map((item, index) => (
-                                <ItineraryCard key={index} title={item.title} description={item.description} />
+                                <ItineraryCard key={index} id={index} title={item.title} description={item.description} />
                             ))}
                         </div>
                     </div>
