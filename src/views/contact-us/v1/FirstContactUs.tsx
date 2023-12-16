@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { FaMobile } from 'react-icons/fa';
 import { GrLocation, GrMail } from 'react-icons/gr';
-import Form from '../../../components/Form';
+import Form from '../../../components/common/dynamic-form/DynamicForm';
 import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
 import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
@@ -59,7 +59,7 @@ function FirstContactUs(props: { data: any }) {
                             Thank you for contacting us!
                         </p>
                     ) : (
-                        <Form fields={contactUsData.contactUs.formFields} theme={theme} onSubmit={handleFormSubmit}></Form>
+                        <Form fields={contactUsData.contactUs.formFields} onSubmit={handleFormSubmit}></Form>
                     )}
                 </div>
             </div>

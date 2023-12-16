@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Package } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
-import Form from "../../../components/Form";
+import Form from "../../../components/common/dynamic-form/DynamicForm";
 import ItineraryCard from "./ItineraryCard";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
@@ -120,24 +120,43 @@ const PackageDetailCard = (packageDetailProps: Package) => {
                     ></TitleCover>
                     <Form
                         fields={[
-                            { name: 'name', label: 'Name', type: 'text', required: true },
-                            { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                            { name: 'name', label: 'Full Name', type: 'text', required: true },
+                            { name: 'mobile', label: 'Phone Number', type: 'tel', required: true },
                             {
-                                name: 'mobile', label: 'Number of Travelers', type: 'number', required: true,
+                                name: 'participants', label: 'Number of Participants', type: 'number', required: true,
                             },
                             {
-                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
+                                name: 'additionalInclusions', label: 'Additional Inclusions', type: 'checkbox',
                                 options: [
-                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
-                                    { label: 'Adventure Tours', value: 'adventure_tours' },
-                                    { label: 'Cruise Packages', value: 'adventure_package' },
+                                    { label: 'Guided Tours or Excursions', value: 'guidedTours' },
+                                    { label: 'Equipment Rental', value: 'equipmentRental' },
+                                    { label: 'Photography Services', value: 'photographyServices' },
+                                    { label: 'Cultural Experiences', value: 'culturalExperiences' },
                                 ],
                             },
+                            {
+                                name: 'level', label: 'Level of Trekking Experience', type: 'radio', required: true,
+                                options: [
+                                    { label: 'Beginner', value: 'beginner' },
+                                    { label: 'Intermediate', value: 'intermediate' },
+                                    { label: 'Advanced', value: 'advanced' },
+                                ],
+                            },
+                            {
+                                name: 'accommodation', label: 'Accommodation Type', type: 'radio', required: true,
+                                options: [
+                                    { label: 'Teahouse', value: 'teahouse' },
+                                    { label: 'Camping', value: 'camping' },
+                                    { label: 'Lodge', value: 'lodge' },
+                                ],
+                            },
+
                             { name: 'comments', label: 'Additional Comments', type: 'textarea' },
                         ]}
-                        theme={theme}
+                        level="Get Travel Quotation"
                         onSubmit={handleFormSubmit}
                     />
+
                 </div>
             </div>
         </section>

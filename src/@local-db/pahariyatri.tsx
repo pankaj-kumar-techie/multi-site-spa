@@ -786,7 +786,7 @@ export const pahariyatriDynamicDetails: Section[] = [
         },
     },
     {
-        id: "143-4370-9e0e-0c5ef7a46f6b",
+        id: "143-4370-9e0e-07a46f6b",
         name: "Gallery",
         version: "v1",
         style: "MODERN",
@@ -841,7 +841,7 @@ export const pahariyatriDynamicDetails: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-43789-0c5ef7a46f6b",
+        id: "143d8df3-49c7-43787a46f6b",
         name: "Footer",
         version: "v1",
         style: "CLASSIC",
