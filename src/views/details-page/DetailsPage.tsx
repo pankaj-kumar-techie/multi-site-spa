@@ -161,6 +161,43 @@ const DetailsPage = () => {
                         imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                     },
+                    {
+                        id: 101,
+                        name: 'Shrikhand Mahadev Kailash Yatra',
+                        href: '/packages/101',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Kullu, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "",
+                        description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                        imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
+                        imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                    },
+                    {
+                        id: 102,
+                        name: 'Manimahesh Kailash Yatra',
+                        href: '/packages/102',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Chamba, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "",
+                        description: 'Experience the divine aura of Manimahesh Yatra as you trek through scenic landscapes to reach the sacred Manimahesh Lake. A pilgrimage filled with spiritual significance.',
+                        imageSrc: "https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg", // Update with the appropriate image URL
+                        imageAlt: 'Manimahesh Lake surrounded by snow-capped peaks.',
+                    },
+                    {
+                        id: 103,
+                        name: 'Kinnaur Kailash Yatra',
+                        href: '/packages/103',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Kinnaur, Himachal Pradesh",
+                        description: 'Explore the enchanting Kinner Kailas region, known for its sacred sites and breathtaking landscapes. Join us on this spiritual journey to connect with the divine.',
+                        imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/621093acf041d8b3e6369db5b1fbccd0cfb049bf88628.jpg", // Update with the appropriate image URL
+                        imageAlt: 'View of Kinner Kailas peaks against a clear blue sky.',
+                    },
                     // Add more package data...
                 ],
             });
@@ -168,8 +205,6 @@ const DetailsPage = () => {
             console.log("Handle the case where `dispatch` is undefined, e.g., by not calling it.")
         }
     }, [dispatch]);
-
-    // Load the blog data when blogIdFromUrl changes
     useEffect(() => {
         if (getBlogById && getPackageById) {
             if (slug === 'blogs') {

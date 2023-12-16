@@ -332,9 +332,9 @@ export const pahariyatri: Section[] = [
             style: "CLASSIC",
             packages: [
                 {
-                    id: 1,
+                    id: 101,
                     name: 'Shrikhand Mahadev Kailash Yatra',
-                    href: '/packages/2',
+                    href: '/packages/101',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Kullu, Himachal Pradesh",
@@ -345,9 +345,9 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
                 {
-                    id: 2,
+                    id: 102,
                     name: 'Manimahesh Kailash Yatra',
-                    href: '/packages/3',
+                    href: '/packages/102',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Chamba, Himachal Pradesh",
@@ -358,9 +358,9 @@ export const pahariyatri: Section[] = [
                     imageAlt: 'Manimahesh Lake surrounded by snow-capped peaks.',
                 },
                 {
-                    id: 3,
+                    id: 103,
                     name: 'Kinnaur Kailash Yatra',
-                    href: '/packages/4',
+                    href: '/packages/103',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Kinnaur, Himachal Pradesh",
