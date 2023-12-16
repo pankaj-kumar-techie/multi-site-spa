@@ -1,4 +1,3 @@
-import { type } from "os";
 import { FieldConfig } from "./FieldConfig";
 
 export interface Section {
@@ -29,6 +28,7 @@ export interface Section {
     ourTeam?: OurTeam[];
     termAndCondition?: TermAndCondition[];
     contactUs?: ContactUs;
+    formFields?: FieldConfig[];
   };
   path: string;
 }

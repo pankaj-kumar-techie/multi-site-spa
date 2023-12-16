@@ -26,7 +26,7 @@ import Video from "./video/Video";
 export class Renderer {
 
     static componentRenderV1(theme: Theme, section: any): JSX.Element {
-        console.log("Section Data With Version ", theme, section.version)
+        console.log("Section Data With Version ", section['data'], section.version)
 
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
