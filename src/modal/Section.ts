@@ -140,19 +140,19 @@ export type FAQ = {
 //Todo : Clean this code
 export type ContactUs = {
   address: string,
-  name?:string,
+  name?: string,
   email: string,
   phone: string,
-  name2?:string,
+  name2?: string,
   email2?: string,
   phone2?: string,
-  name3?:string,
+  name3?: string,
   email3?: string,
   phone3?: string,
-  name4?:string,
+  name4?: string,
   email4?: string,
   phone4?: string,
-  name5?:string,
+  name5?: string,
   email5?: string,
   phone5?: string,
   formFields?: FieldConfig[];
@@ -183,6 +183,12 @@ export interface DetailSection {
   };
 }
 
+export interface PackageDetail extends Package {
+  itinerary?: Itinerary[];
+  gallery?: Image[];
+  blogs?: Blog[];
+}
+
 export type BlogDetail = {
   blogs: Blog;
   comments: Comment[];
@@ -196,8 +202,10 @@ export type Comment = {
 
 }
 
-export type PackageDetail = {
-  packages : Package;
+export type Itinerary = {
+  id: number,
+  title: string,
+  description: string
 }
 
 export type ModalProps = {

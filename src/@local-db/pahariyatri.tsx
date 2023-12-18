@@ -661,7 +661,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "-49c7-437kk0-9e0e-0c5ef7a46f6b",
+        id: "437kk0-9e0e-0c5ef7a46f6b",
         name: "Faq",
         version: "v1",
         style: "CLASSIC",
@@ -783,6 +783,7 @@ export const pahariyatriDynamicDetails: Section[] = [
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
+            
         },
     },
     {
