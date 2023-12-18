@@ -39,7 +39,6 @@ const DynamicForm: React.FC<DynamicFormProps> = ({ fields, level, onSubmit }) =>
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log("Form Data ", event, formData)
         onSubmit(formData);
     };
 
