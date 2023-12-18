@@ -62,7 +62,7 @@
             setOffset(progressOffset);
         }, [percentage]);
         return (
-            <section className={`bg-${theme.colors.primary} mx-auto mt-8`}>
+            <section className={`bg-${theme.colors.primary} mx-auto `}>
                 <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* Left side - Package Details */}
                     <div className="col-span-2">
