@@ -55,8 +55,8 @@ export default function PackageCard(packageDetail: Package) {
                 <p className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs">
                   {packageDetail.price}
                 </p>
-                <h6 className="text-center pl-3 text-gray-500 text-sm font-medium">Duration:</h6>
-                <p className="text-right text-base font-semibold text-stone-700">
+                <h6 className="text-left mt-4 text-gray-500 text-sm font-medium">Duration:</h6>
+                <p className="text-left text-sm font-semibold text-stone-700">
                   {" "}
                   {packageDetail.duration}
                 </p>
@@ -111,10 +111,10 @@ export default function PackageCard(packageDetail: Package) {
             <span className="mr-2">View Trek</span> <FaChevronCircleRight />
           </button> */}
         </div>
-        <div className="flex bg-zinc-400 rounded-b-lg justify-center p-2">
+        <div className="flex bg-gray-300 rounded-b-lg mt-4 justify-center p-2">
           <div className="flex items-center">
             <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
-              <span className="mr-2">View Details</span> <FaChevronCircleRight />
+              <span className="mr-2 w-[100%]">View Details</span> <FaChevronCircleRight />
             </button>
           </div>
         </div>
