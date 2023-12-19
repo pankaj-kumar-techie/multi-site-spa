@@ -1,7 +1,5 @@
 import FloatingButton from "../components/common/button/FloatingButton";
 import LocationButton from "../components/common/button/LocationButton";
-import Footer from "../components/layouts/footer/Footer";
-import Header from "../components/layouts/header/Header";
 import { PluginConfig } from "../modal/PluginConfig";
 import { Theme } from "../modal/Theme";
 import AboutUs from "./about-us/AboutUs";
@@ -10,7 +8,9 @@ import ComingSoon from "./coming-soon/ComingSoon";
 import ContactUs from "./contact-us/ContactUs";
 import DetailsPage from "./details-page/DetailsPage";
 import FAQAccordion from "./faq/FAQAccordion";
+import Footer from "./footer/Footer";
 import Gallery from "./gallery/Gallery";
+import Header from "./header/Header";
 import HeroBanner from "./hero-banner/HeroBanner";
 import OurTeam from "./our-team/OurTeam";
 import Package from "./package/Package";
@@ -47,7 +47,6 @@ export class Renderer {
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
-
             ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };

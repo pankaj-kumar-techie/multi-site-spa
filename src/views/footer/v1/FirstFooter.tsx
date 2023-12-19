@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { TiSocialPinterest } from "react-icons/ti";
-import { ThemeContext } from "../../../../themes/ThemeProvider";
 import { Link } from "react-router-dom";
-import { useDynamicTextColor } from "../../../../themes/DynamicTextColor";
+import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function FirstFooter(props: { data: any }) {
     const { theme } = useContext(ThemeContext);

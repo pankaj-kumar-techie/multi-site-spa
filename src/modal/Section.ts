@@ -29,6 +29,7 @@ export interface Section {
     termAndCondition?: TermAndCondition[];
     contactUs?: ContactUs;
     formFields?: FieldConfig[];
+    footer?: Footer;
   };
   path: string;
 }
@@ -214,4 +215,15 @@ export type ModalProps = {
   title: string;
   children?: React.ReactNode;
   formFields?: FieldConfig[];
+}
+
+export interface Header {
+  logo?:Image;
+  menu?: MenuItem[];
+}
+
+export interface Footer {
+  logo?: Image;
+  socialLink?: SocialLink[];
+  copyright?: string;
 }

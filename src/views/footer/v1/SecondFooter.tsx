@@ -1,33 +1,33 @@
 import React, { useContext, useEffect, useState } from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, } from "react-icons/fa";
 import { TiSocialPinterest } from "react-icons/ti"
-import { ThemeContext } from "../../../../themes/ThemeProvider";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function SecondFooter(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
-    const [footerData, setFooterData] = useState<any>([])
-    const [footerTheme, setFooterTheme] = useState<string>("")
+    const [footerData, setFooterData] = useState<any>({
+        title: "",
+        description: "",
+    })
     useEffect(() => {
-        setFooterData(props.data);
+        setFooterData(props.data.footer);
     }, [props.data])
     return (
         <section className={`bg-${theme.colors.primary}`}>
             <div className="w-full text-gray-300 py-2 px-2">
                 <div
                     className="flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500 ">
-                    <p className={`${theme.colors.primary} py-4 font-medium  hover:${theme.colors.primary} hover:ease-in-out font-jakarta duration-200 cursor-pointer`}>Made
-                        With ❤️ by Loonds</p>
+                    <p className={`${theme.colors.secondary} py-4 font-medium  hover:${theme.colors.secondary} hover:ease-in-out font-jakarta duration-200 cursor-pointer`}>
+                         { footerData.copyright || "Made With ❤️ by Loonds"}</p>
                     <div className="flex  justify-between sm:w-[300px] pt-4 text-2xl">
                         <FaFacebook className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
                         <FaInstagram className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
                         <FaLinkedin className="cursor-pointer hover:text-white hover:ease-in-out duration-300" />
-                        <TiSocialPinterest className="cursor-pointer  hover:text-white hover:ease-in-out duration-300"
-                            size={30} />
+                        <TiSocialPinterest className="cursor-pointer  hover:text-white hover:ease-in-out duration-300" size={30} />
                     </div>
                 </div>
             </div>
         </section>
-
 
     )
 }
