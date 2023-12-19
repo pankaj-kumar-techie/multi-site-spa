@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../../../themes/ThemeProvider";
-import { MenuItem } from "../../../../modal/Section";
+import { MenuItem } from "../../../modal/Section";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 export default function FirstHeader(props: { data: any }) {
     const { theme } = useContext(ThemeContext);

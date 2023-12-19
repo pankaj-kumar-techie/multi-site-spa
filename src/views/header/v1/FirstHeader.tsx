@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../../../themes/ThemeProvider";
+import { ThemeContext } from "../../../themes/ThemeProvider";
 
 
 export default function FirstHeader(props: { data: any }) {

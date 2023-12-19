@@ -24,7 +24,7 @@ export const drayWorldLogistic: Section[] = [
             logo:
             {
                 id: '1',
-                imageSrc: 'http://65.2.34.22/images/logo.jpg',
+                imageSrc: 'http://43.205.215.118/images/logo.jpg',
                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
             },
             menu: [
@@ -266,32 +266,32 @@ export const drayWorldLogistic: Section[] = [
             blogs: [
                 {
                     id: "1",
-                    title: "Tranquil Stays: Gayatri Lodge, Kasauli",
-                    description: "Explore Tranquil Stays at Gayatri Lodge, a hidden gem nestled in the heart of Kasauli.",
+                    title: "Strategic Logistics Partner: DRAY World's Tailored Solutions",
+                    description: "Partner with DRAY World for strategic logistics solutions. Embrace tailored services designed to meet your unique business requirements.",
                     descriptionContext: "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
                     imageSrc: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
                     imageAlt: 'Gayatri Lodge Kasauli',
                 },
                 {
                     id: "2",
-                    title: "Luxury Unveiled: Gayatri Lodge Hotel",
-                    description: "Experience Luxury Unveiled at Gayatri Lodge Hotel, where opulence meets elegance.",
+                    title: "Efficient Logistics: Streamlining Operations with DRAY World",
+                    description: "Explore the efficiency of logistics operations with DRAY World. Discover how we streamline processes and ensure seamless transportation.",
                     descriptionContext: "Experience unparalleled luxury at Gayatri Lodge Hotel, where opulence meets elegance. Indulge in lavish accommodations, impeccable services, and breathtaking views.",
                     imageSrc: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80",
                     imageAlt: 'Luxury Hotel',
                 },
                 {
                     id: "3",
-                    title: "Heartfelt Welcome: Gayatri Lodge Homestay",
-                    description: "Experience a Heartfelt Welcome at Gayatri Lodge Homestay, where personalized hospitality turns your stay into cherished memories.",
+                    title: "Optimizing Supply Chains: DRAY World's Logistics Excellence",
+                    description: "Experience logistics excellence with DRAY World. Learn how we optimize supply chains, delivering unparalleled efficiency and reliability.",
                     descriptionContext: "At Gayatri Lodge, we extend heartfelt welcomes and make you feel like family. Discover the warmth of personalized hospitality that turns your stay into cherished memories.",
                     imageSrc: "https://images.unsplash.com/photo-1606964212858-c215029db704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                     imageAlt: 'Homestay Welcome',
                 },
                 {
                     id: "4",
-                    title: "Embrace Warmth: Personalized Hospitality at Gayatri Lodge",
-                    description: "Embrace Warmth and Personalized Hospitality at Gayatri Lodge, where you're treated like family.",
+                    title: "Reliable Transportation Solutions: DRAY World's Commitment",
+                    description: "Experience reliable transportation solutions with DRAY World. Our commitment ensures your goods reach their destination safely and on time.",
                     descriptionContext: "At Gayatri Lodge, we extend heartfelt welcomes and make you feel like family. Discover the warmth of personalized hospitality that turns your stay into cherished memories.",
                     imageSrc: "https://images.unsplash.com/photo-1598193957011-39b9f2916992?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
                     imageAlt: 'Warm Hospitality',
@@ -352,6 +352,21 @@ export const drayWorldLogistic: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v2",
             style: "CLASSIC",
+            footer: {
+                logo: {
+                    "id": "kk",
+                    "imageSrc": "path/to/your/logo.png",
+                    "imageAlt": "Logo Alt Text"
+                },
+                socialLink: [
+                    {
+                        "id": "icon-id",
+                        "link": "https://www.facebook.com/",
+                        "iconClass": "<FaFacebook />"  // Replace with the actual React component for the Facebook icon
+                    },
+                ],
+                copyright: "© 2023 Dray World. All rights reserved."
+            },
         },
     },
 ];
@@ -369,7 +384,7 @@ export const drayWorldLogisticSeo: any = {
 export const drayWorldLogisticPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
-        isActive: true,
+        isActive: false,
         data: {
             "mobile": "5484881984",
             "text": ""
