@@ -744,6 +744,19 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
+            "logo": {
+                "id":"kk",
+                "imageSrc": "path/to/your/logo.png",
+                "imageAlt": "Logo Alt Text"
+            },
+            // "socialLink": [
+            //     {
+            //         "id":"icon-id",
+            //         "link": "https://www.facebook.com/",
+            //         "iconClass": "<FaFacebook />"  // Replace with the actual React component for the Facebook icon
+            //     },
+            // ],
+            // "copyright": "© 2023 Your Company. All rights reserved."
         },
     },
 ];
@@ -783,7 +796,7 @@ export const pahariyatriDynamicDetails: Section[] = [
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
-            
+
         },
     },
     {
