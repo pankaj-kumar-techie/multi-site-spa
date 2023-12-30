@@ -41,12 +41,10 @@ const TrekCalendar: React.FC = () => {
             calendar.push(
                 <div
                     key={i}
-                    className={`calendar-day ${currentDate.toDateString() === selectedDate.toDateString() ? "selected" : isTrekEvent ? "trek-event" : ""
-                        }`}
-                    onClick={() => setSelectedDate(currentDate)}
-                >
-                    <span className="day-number">{i}</span>
-                    {isTrekEvent && <p className="event-title">{filteredEvents.find((event) => event.date.toDateString() === currentDate.toDateString())?.title}</p>}
+                    className={`calendar-day ${isTrekEvent ? "trek-event" : ""}`}
+                    onClick={() => setSelectedDate(currentDate)}>
+
+                    <span className={`day-number ${isTrekEvent ? "bg-yellow-300" : ""}`}>{i}</span>
                 </div>
             );
         }
