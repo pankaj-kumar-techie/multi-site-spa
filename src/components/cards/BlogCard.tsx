@@ -14,9 +14,9 @@ export default function BlogCard(blog: Blog) {
         <img
           src={blog.imageSrc}
           alt={blog.imageAlt}
-          className="w-full h-[13rem] rounded-xl"
+          className="w-full h-[13rem] rounded-t-xl"
         />
-        <div className="pl-2 pr-2 pb-2">
+        <div className="pl-2 pr-2 pb-2 min-h-[140px]">
           <h3 className={`mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-custom-dark group-hover:text-${theme.colors.primary}`}>
             <a href={`blogs/` + blog.id}>
               <span className="absolute inset-0" />
@@ -24,7 +24,7 @@ export default function BlogCard(blog: Blog) {
             </a>
           </h3>
 
-          <p className="mt-2  pl-1 line-clamp-3 text-sm leading-6 text-custom-dark">
+          <p className="mt-2 font-medium  pl-1 line-clamp-3 text-sm leading-6 text-custom-dark">
             {blog.description}
           </p>
         </div>

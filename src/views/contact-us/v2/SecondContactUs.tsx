@@ -4,7 +4,7 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import ContactUs from "../ContactUs";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
-import Form from "../../../components/Form";
+import Form from "../../../components/common/dynamic-form/DynamicForm";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Import the hook
 
 export default function SecondContactUs(props: { data: any }) {
@@ -36,7 +36,7 @@ export default function SecondContactUs(props: { data: any }) {
 
             <div className="flex flex-wrap">
                 <div className="grow-0 shrink-0 basis-auto mb-12 lg:mb-0 w-full lg:w-5/12 px-3 lg:px-6">
-                    <Form fields={contactUsData.contactUs.formFields} theme={theme} onSubmit={handleFormSubmit}></Form>
+                    <Form fields={contactUsData.contactUs.formFields} onSubmit={handleFormSubmit}></Form>
                 </div>
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-7/12">
                     <div className="flex flex-wrap">

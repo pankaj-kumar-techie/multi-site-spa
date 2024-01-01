@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import PackageDetailCard from '../../components/cards/PackageCardDetail';
+import PackageDetailCard from '../package/components/PackageCardDetail';
 import BlogDetailCard from '../../components/cards/BlogCardDetail';
 import Loader from '../../components/common/loader/Loader';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import PageNotFound from '../page-not-found/PageNotFound';
-import Header from '../../components/layouts/header/Header';
+import { Blog, PackageDetail } from '../../modal/Section';
 import { useClientAppDataContext } from '../../ClientAppDataContext';
-import { Blog, Package } from '../../modal/Section';
+import { pahariyatri, pahariyatriDynamicDetails } from '../../@local-db/pahariyatri';
 
 const isValidSlug = (slug: string) => {
     const validSlugs = ['blogs', 'packages', 'products'];
@@ -19,7 +19,7 @@ const DetailsPage = () => {
     const dataContext = useClientAppDataContext();
     const { dispatch, getBlogById, getPackageById } = dataContext || {};
     const [blog, setBlog] = useState<Blog | undefined>(undefined);
-    const [packageDetail, setPackageDetail] = useState<Package | undefined>(undefined);
+    const [packageDetail, setPackageDetail] = useState<PackageDetail | undefined>(undefined);
 
 
     useEffect(() => {
@@ -103,6 +103,8 @@ const DetailsPage = () => {
                         price: "16000 INR Per Person",
                         duration: "7 Days/6 Nights",
                         destination: "Kullu, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "Winter (December to February)",
                         description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
                         imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
@@ -114,8 +116,10 @@ const DetailsPage = () => {
                         price: "19000 INR Per Person",
                         duration: "7 Days/6 Nights",
                         destination: "Kullu, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "Winter (December to February)",
                         description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-                        imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
+                        imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                     },
                     {
@@ -125,8 +129,10 @@ const DetailsPage = () => {
                         price: "16000 INR Per Person",
                         duration: "5 Days/4 Nights",
                         destination: "Kullu, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "Winter (December to February)",
                         description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-                        imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
+                        imageSrc: "https://images.unsplash.com/photo-1486163224786-2356ec4ab064?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                     },
                     {
@@ -135,9 +141,11 @@ const DetailsPage = () => {
                         href: '/packages/4',
                         price: "26000 INR Per Person",
                         duration: "10 Days/9 Nights",
-                        destination: "Kullu, Himachal Pradesh",
+                        destination: "Lahaul & Spiti , Himachal Pradesh",
+                        difficulty: "25",
+                        season: "Winter (December to February)",
                         description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-                        imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
+                        imageSrc: "https://plus.unsplash.com/premium_photo-1661963083312-8adde31d9900?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                     },
                     {
@@ -145,24 +153,60 @@ const DetailsPage = () => {
                         name: 'Kasauli and Chail Weekend Gateway',
                         href: '/packages/5',
                         price: "16000 INR Per Person",
-                        duration: "7 Days/6 Nights",
-                        destination: "Kullu, Himachal Pradesh",
+                        duration: "3 Days/2 Nights",
+                        destination: "Solan, Himachal Pradesh",
                         description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                        imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                        imageSrc: "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                         imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                     },
                     {
                         id: 6,
-                        name: 'Hampta Pass Trek',
+                        name: 'Narkanda Snowy Paradise',
                         href: '/packages/6',
                         price: "16000 INR Per Person",
                         duration: "7 Days/6 Nights",
-                        destination: "Kullu, Himachal Pradesh",
+                        destination: "Narkanda, Himachal Pradesh",
                         description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
                         imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                         imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                     },
-                    // Add more package data...
+                    {
+                        id: 101,
+                        name: 'Shrikhand Mahadev Kailash Yatra',
+                        href: '/packages/101',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Kullu, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "",
+                        description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                        imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
+                        imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                    },
+                    {
+                        id: 102,
+                        name: 'Manimahesh Kailash Yatra',
+                        href: '/packages/102',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Chamba, Himachal Pradesh",
+                        difficulty: "25",
+                        season: "",
+                        description: 'Experience the divine aura of Manimahesh Yatra as you trek through scenic landscapes to reach the sacred Manimahesh Lake. A pilgrimage filled with spiritual significance.',
+                        imageSrc: "https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg", // Update with the appropriate image URL
+                        imageAlt: 'Manimahesh Lake surrounded by snow-capped peaks.',
+                    },
+                    {
+                        id: 103,
+                        name: 'Kinnaur Kailash Yatra',
+                        href: '/packages/103',
+                        price: "XXXX INR Per Person", // Update with the appropriate price
+                        duration: "XX Days/XX Nights", // Update with the appropriate duration
+                        destination: "Kinnaur, Himachal Pradesh",
+                        description: 'Explore the enchanting Kinner Kailas region, known for its sacred sites and breathtaking landscapes. Join us on this spiritual journey to connect with the divine.',
+                        imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/621093acf041d8b3e6369db5b1fbccd0cfb049bf88628.jpg", // Update with the appropriate image URL
+                        imageAlt: 'View of Kinner Kailas peaks against a clear blue sky.',
+                    },
                 ],
             });
         } else {
@@ -237,22 +281,7 @@ const DetailsPage = () => {
 
     return (
         <>
-            <Header data={undefined} version={'v1'} />
-            <div className="container mx-auto px-4 py-8">
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <div className="px-6 py-4">
-                        <div className="flex items-center justify-between">
-                            <h1 className="text-3xl font-bold text-gray-800 mb-4">
-                                {"Title"}
-                            </h1>
-                            <Link to="/" className="text-gray-600 hover:underline">
-                                Back
-                            </Link>
-                        </div>
-                    </div>
-                    {getDetailCardComponent(slug)}
-                </div>
-            </div>
+            {getDetailCardComponent(slug)}
         </>
     );
 };

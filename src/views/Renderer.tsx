@@ -1,15 +1,17 @@
 import FloatingButton from "../components/common/button/FloatingButton";
 import LocationButton from "../components/common/button/LocationButton";
-import Footer from "../components/layouts/footer/Footer";
-import Header from "../components/layouts/header/Header";
 import { PluginConfig } from "../modal/PluginConfig";
 import { Theme } from "../modal/Theme";
 import AboutUs from "./about-us/AboutUs";
 import Blog from "./blog/Blog";
+import Calendar from "./calendar/Calendar";
 import ComingSoon from "./coming-soon/ComingSoon";
 import ContactUs from "./contact-us/ContactUs";
+import DetailsPage from "./details-page/DetailsPage";
 import FAQAccordion from "./faq/FAQAccordion";
+import Footer from "./footer/Footer";
 import Gallery from "./gallery/Gallery";
+import Header from "./header/Header";
 import HeroBanner from "./hero-banner/HeroBanner";
 import OurTeam from "./our-team/OurTeam";
 import Package from "./package/Package";
@@ -25,7 +27,7 @@ import Video from "./video/Video";
 export class Renderer {
 
     static componentRenderV1(theme: Theme, section: any): JSX.Element {
-        console.log("Section Data With Version ", theme, section.version)
+        console.log("Section Data With Version ", section['data'], section.version)
 
         const components: any = {
             Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
@@ -38,6 +40,7 @@ export class Renderer {
             Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
             Package: <Package key={section.id} data={section['data']} version={section['version']}></Package>,
             Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
+            DetailPage: <DetailsPage></DetailsPage>,
             Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
             Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
@@ -45,8 +48,8 @@ export class Renderer {
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
-
             ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
+            Calendar: <Calendar key={section.id} data={section['data']} version={section['version']}></Calendar>,
             PageNotFound: <PageNotFound></PageNotFound>,
         };
         const type: any = section.data.type;
