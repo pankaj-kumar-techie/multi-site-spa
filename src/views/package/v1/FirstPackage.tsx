@@ -43,6 +43,9 @@ export default function FirstPackage(props: { data: any }) {
                                         price={callout.price}
                                         duration={callout.duration}
                                         destination={callout.destination}
+                                        difficulty={callout.difficulty}
+                                        season={callout.season}
+                                        altitude={callout.altitude}
                                     />
                                 </React.Fragment>
                             ))
@@ -60,6 +63,9 @@ export default function FirstPackage(props: { data: any }) {
                                         price={callout.price}
                                         duration={callout.duration}
                                         destination={callout.destination}
+                                        difficulty={callout.difficulty}
+                                        season={callout.season}
+                                        altitude={callout.altitude}
                                     />
                                 </React.Fragment>
                             ))
