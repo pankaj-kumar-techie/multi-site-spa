@@ -15,7 +15,6 @@ export default function PackageCard(packageDetail: Package) {
     const calculatedPercentage = calculateDifficultyPercentage(packageDetail.difficulty);
     setPercentage(calculatedPercentage);
   }, [packageDetail.difficulty]);
-  console.log("Package Details : ", packageDetail)
 
   return (
     <div
