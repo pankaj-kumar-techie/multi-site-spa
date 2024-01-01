@@ -11,6 +11,7 @@
             'orange-500': 'text-white',
             'red-500': 'text-white',
             'slate-500': 'text-black',
+            // 'gray-100   ': 'text-black',
             // Add more mappings as needed
         };
 

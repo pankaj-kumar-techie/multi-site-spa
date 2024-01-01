@@ -8,7 +8,7 @@ export const pahariyatriTheme: any = {
 export const pahariyatriPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
-        isActive: true,
+        isActive: false,
         data: {
             "mobile": "9569576707",
             "text": "Hello Pahari Yatri! 🏔️ Interested in your travel package. Please share more details."
@@ -20,7 +20,7 @@ export const pahariyatri: Section[] = [
     {
         id: "889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v1",
+        version: "v2",
         style: "MODERN",
         path: "index",
         data: {
@@ -29,13 +29,32 @@ export const pahariyatri: Section[] = [
             title: "Pahari Yatri",
             subTitle: "Hero Banner Sub Title is here",
             description: "Hero Banner Paragraph is here",
-            version: "v1",
+            version: "v2",
             style: "MODERN",
-            contactUs: {
-                address: "Himachal Pradesh 173201",
-                email: "pahariyatri@gmail.com",
-                phone: "+91-9569576707",
+            logo: {
+                id: "001",
+                imageSrc: "https://i.pinimg.com/736x/63/27/9d/63279d93bdd63862256bb4c7e500e10b.jpg",
+                imageAlt: "PahariYatriLogo",
             },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-4",
+                    label: "Gallery",
+                    url: "/gallery",
+                }, {
+                    id: "menu-3",
+                    label: "Contact us",
+                    url: "/contact-us",
+                },
+            ],
         },
     },
     {
@@ -98,29 +117,6 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-    // {
-    //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-    //     name: "About-Us",
-    //     version: "v1",
-    //     style: "CLASSIC",
-    //     path: "index",
-    //     data: {
-    //         type: "AboutUs",
-    //         id: "003",
-    //         title: "About Pahari Yatri",
-    //         subTitle: "Hero Banner Sub Title is here",
-    //         description: "At Pahari Yatri, we are passionate about providing exhilarating trekking and mountaineering experiences that connect individuals with nature's breathtaking beauty. As a leading adventure travel company, we specialize in curating personalized adventures, ensuring the highest safety standards, and promoting sustainable tourism practices. Our team of experienced professionals is committed to creating unforgettable memories for every adventurer who embarks on a journey with us.",
-    //         version: "v1",
-    //         style: "CLASSIC",
-    //         images: [
-    //             {
-    //                 id: '1',
-    //                 imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-    //             },
-    //         ],
-    //     },
-    // },
     {
         id: "143d8df3-49c7-0c5ef7a46f6b",
         name: " ",
@@ -143,20 +139,21 @@ export const pahariyatri: Section[] = [
                     price: "16000 INR Per Person",
                     duration: "7 Days/6 Nights",
                     destination: "Kullu, Himachal Pradesh",
-                    difficulty: "25",
                     season: "Winter (December to February)",
                     description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
                     imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    difficulty: "Challenging",
+
                 },
                 {
                     id: 2,
-                    name: 'Manali Snow Adventure',
+                    name: 'Devidarh to Shikari Devi Expedition',
                     href: '/packages/2',
-                    price: "19000 INR Per Person",
-                    duration: "7 Days/6 Nights",
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "25",
+                    price: "7500 INR Per Person",
+                    duration: "3 Days/2 Nights",
+                    destination: "Mandi, Himachal Pradesh",
+                    difficulty: "Challenging",
                     season: "Winter (December to February)",
                     description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
                     imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -164,12 +161,12 @@ export const pahariyatri: Section[] = [
                 },
                 {
                     id: 3,
-                    name: 'Kasol and Tosh Winter Chill',
+                    name: 'Churdhar Sacred Ascent Trek',
                     href: '/packages/3',
-                    price: "16000 INR Per Person",
-                    duration: "5 Days/4 Nights",
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "25",
+                    price: "7600 INR Per Person",
+                    duration: "3 Days/2 Nights",
+                    destination: "Sirmaur, Himachal Pradesh",
+                    difficulty: "Difficult",
                     season: "Winter (December to February)",
                     description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
                     imageSrc: "https://images.unsplash.com/photo-1486163224786-2356ec4ab064?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -182,7 +179,7 @@ export const pahariyatri: Section[] = [
                     price: "26000 INR Per Person",
                     duration: "10 Days/9 Nights",
                     destination: "Lahaul & Spiti , Himachal Pradesh",
-                    difficulty: "25",
+                    difficulty: "Extreme",
                     season: "Winter (December to February)",
                     description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
                     imageSrc: "https://plus.unsplash.com/premium_photo-1661963083312-8adde31d9900?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -192,20 +189,22 @@ export const pahariyatri: Section[] = [
                     id: 5,
                     name: 'Kasauli and Chail Weekend Gateway',
                     href: '/packages/5',
-                    price: "16000 INR Per Person",
+                    price: "8500 INR Per Person",
                     duration: "3 Days/2 Nights",
                     destination: "Solan, Himachal Pradesh",
+                    difficulty: "Easy",
                     description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
                     imageSrc: "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
                     id: 6,
-                    name: 'Narkanda Snowy Paradise',
+                    name: 'Mural Danda Trek Expedition ',
                     href: '/packages/6',
-                    price: "16000 INR Per Person",
+                    price: "11400 INR Per Person",
                     duration: "7 Days/6 Nights",
-                    destination: "Narkanda, Himachal Pradesh",
+                    destination: "Rampur, Himachal Pradesh",
+                    difficulty: "Challenging",
                     description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
                     imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
@@ -231,15 +230,80 @@ export const pahariyatri: Section[] = [
             packages: [
                 {
                     id: 101,
-                    name: 'Shrikhand Mahadev Kailash Yatra',
+                    name: 'Pindari Glacier ',
                     href: '/packages/101',
                     price: "XXXX INR Per Person", // Update with the appropriate price
                     duration: "XX Days/XX Nights", // Update with the appropriate duration
                     destination: "Kullu, Himachal Pradesh",
-                    difficulty: "25",
+                    difficulty: "Challenging",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/236x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 102,
+                    name: 'Bushal Peak Trek Expedition ',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/f8/8a/4e/f88a4e62f7211d3f7c35af0308a556fa.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 103,
+                    name: 'Malana-Chanderkhani Pass Trek',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 104,
+                    name: 'Bushal Peak Trek Expedition ',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/00/5c/2c/005c2c487b299a12e196e23f5d8cd6a3.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 105,
+                    name: 'Shikhar Srikhandu Trek Expedition ',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
                     season: "",
                     description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
                     imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+                },
+                {
+                    id: 106,
+                    name: 'Kugti Pass Trek',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg", // Update with the appropriate image URL
                     imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
             ],
@@ -298,10 +362,10 @@ export const pahariyatri: Section[] = [
                     id: 101,
                     name: 'Shrikhand Mahadev Kailash Yatra',
                     href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    price: "12500 INR Per Person", // Update with the appropriate price
+                    duration: "6 Days/5 Nights", // Update with the appropriate duration
                     destination: "Kullu, Himachal Pradesh",
-                    difficulty: "25",
+                    difficulty: "Technical",
                     season: "",
                     description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
                     imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
@@ -311,10 +375,10 @@ export const pahariyatri: Section[] = [
                     id: 102,
                     name: 'Manimahesh Kailash Yatra',
                     href: '/packages/102',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    price: "10500 INR Per Person", // Update with the appropriate price
+                    duration: "4 Days/3 Nights", // Update with the appropriate duration
                     destination: "Chamba, Himachal Pradesh",
-                    difficulty: "25",
+                    difficulty: "Difficult",
                     season: "",
                     description: 'Experience the divine aura of Manimahesh Yatra as you trek through scenic landscapes to reach the sacred Manimahesh Lake. A pilgrimage filled with spiritual significance.',
                     imageSrc: "https://i.pinimg.com/564x/06/f4/a2/06f4a25cac140841cbf9279ae8621e8c.jpg", // Update with the appropriate image URL
@@ -324,9 +388,10 @@ export const pahariyatri: Section[] = [
                     id: 103,
                     name: 'Kinnaur Kailash Yatra',
                     href: '/packages/103',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    price: "11001 INR Per Person", // Update with the appropriate price
+                    duration: "5 Days/3 Nights", // Update with the appropriate duration
                     destination: "Kinnaur, Himachal Pradesh",
+                    difficulty: "Technical",
                     description: 'Explore the enchanting Kinner Kailas region, known for its sacred sites and breathtaking landscapes. Join us on this spiritual journey to connect with the divine.',
                     imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/621093acf041d8b3e6369db5b1fbccd0cfb049bf88628.jpg", // Update with the appropriate image URL
                     imageAlt: 'View of Kinner Kailas peaks against a clear blue sky.',
@@ -336,183 +401,87 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-0c5ef7a46f6b",
-        name: "Service",
+        id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
+        name: "About-Us",
         version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Service",
-            id: "k",
-            title: "Our Services",
-            subTitle: "",
-            description: "We are provided following services to our customers",
+            type: "AboutUs",
+            id: "003",
+            title: "About Pahari Yatri",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "At Pahari Yatri, we're passionate about crafting unforgettable trekking and mountaineering experiences that connect you with nature's beauty. As a leading adventure travel company, we prioritize safety, sustainability, and personalized adventures. Our experienced team is committed to creating lasting memories for every adventurer.Our vision is to explore and reveal the hidden treasures of the Himalayas. We go beyond the ordinary, offering transformative journeys that contribute to Himalayan conservation. Join us for unique adventures, dedicated to making your journey remarkable, sustainable, and filled with cherished moments",
             version: "v1",
             style: "CLASSIC",
-            services: [
+            images: [
                 {
-                    id: 1,
-                    title: 'Adventure Expeditions',
-                    body: 'Embark on thrilling adventure expeditions led by experienced guides. Explore remote and rugged landscapes, conquer peaks, and challenge your limits.',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
-                    imageAlt: 'parking icon',
-                },
-                {
-                    id: 2,
-                    title: 'Customized Travel Packages',
-                    body: 'Tailor-made travel packages designed to match your interests and preferences. Whether its a solo escape, a family adventure, or a group journey, we create the perfect itinerary just for you.',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
-                    imageAlt: 'parking icon',
-                },
-                {
-                    id: 3,
-                    title: 'Travel Resources',
-                    body: 'Access a wealth of travel resources, including packing guides, visa information, local insights, safety tips, and more. We equip you with everything you need to plan your journeys with confidence.',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png',
-                    imageAlt: 'parking icon',
-                },
-                {
-                    id: 4,
-                    title: 'Community & Events',
-                    body: 'Join a vibrant community of fellow travelers. Share your experiences, seek advice, and stay updated on exciting travel events and gatherings. Connect, share, and explore with like-minded adventurers',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png',
-                    imageAlt: 'parking icon',
-                },
-                {
-                    id: 5,
-                    title: 'Guided Tours and Excursions',
-                    body: 'Explore iconic landmarks and hidden gems with our guided tours and excursions. Immerse yourself in the culture and history of each destination.',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-                    imageAlt: 'parking icon',
-                },
-                {
-                    id: 6,
-                    title: '24/7 Customer Support',
-                    body: 'Our dedicated customer support team is available around the clock to assist you with any travel-related queries or emergencies. Your safety and satisfaction are our top priorities.',
-                    imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-                    imageAlt: 'parking icon',
+                    id: '1',
+                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
+                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                 },
             ],
         },
     },
-
     // {
-    //     id: "143d8df3-49c7-43709e0e-0c5ef7a46f6b",
-    //     name: " ",
+    //     id: "143d8df3-49c7-4370-0c5ef7a46f6b",
+    //     name: "Service",
     //     version: "v1",
     //     style: "CLASSIC",
     //     path: "index",
     //     data: {
-    //         type: "Portfolio",
+    //         type: "Service",
     //         id: "k",
-    //         title: "Explore Our Unexplored Treks!",
-    //         subTitle: "Join Us for a Trip to the Himalayas",
-    //         description: "Hero Banner Paragraph is here",
+    //         title: "Our Services",
+    //         subTitle: "",
+    //         description: "We are provided following services to our customers",
     //         version: "v1",
     //         style: "CLASSIC",
-    //         portfolios: [
+    //         services: [
     //             {
     //                 id: 1,
-    //                 name: 'Mural Danda',
-    //                 href: '#',
-    //                 description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
-    //                 imageSrc: "https://images.unsplash.com/photo-1432057322224-8916b9ed202a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 title: 'Adventure Expeditions',
+    //                 body: 'Embark on thrilling adventure expeditions led by experienced guides. Explore remote and rugged landscapes, conquer peaks, and challenge your limits.',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
+    //                 imageAlt: 'parking icon',
     //             },
     //             {
     //                 id: 2,
-    //                 name: 'Kasha Patt Village Tour and Trek',
-    //                 href: '/portfolios/2',
-    //                 description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-    //                 imageSrc: "https://images.unsplash.com/photo-1432057322224-8916b9ed202a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    //                 title: 'Customized Travel Packages',
+    //                 body: 'Tailor-made travel packages designed to match your interests and preferences. Whether its a solo escape, a family adventure, or a group journey, we create the perfect itinerary just for you.',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
+    //                 imageAlt: 'parking icon',
     //             },
     //             {
     //                 id: 3,
-    //                 name: 'Devidarh to Shikari Devi',
-    //                 href: '/portfolios/3',
-    //                 description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-    //                 imageSrc: "https://plus.unsplash.com/premium_photo-1674764074498-1876e78401c4?auto=format&fit=crop&q=80&w=1888&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 title: 'Travel Resources',
+    //                 body: 'Access a wealth of travel resources, including packing guides, visa information, local insights, safety tips, and more. We equip you with everything you need to plan your journeys with confidence.',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png',
+    //                 imageAlt: 'parking icon',
     //             },
     //             {
     //                 id: 4,
-    //                 name: 'Bijli Mahadev To Naggar Trek',
-    //                 href: '/portfolios/4',
-    //                 description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-    //                 imageSrc: "https://images.unsplash.com/photo-1432057322224-8916b9ed202a?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    //                 title: 'Community & Events',
+    //                 body: 'Join a vibrant community of fellow travelers. Share your experiences, seek advice, and stay updated on exciting travel events and gatherings. Connect, share, and explore with like-minded adventurers',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png',
+    //                 imageAlt: 'parking icon',
     //             },
     //             {
     //                 id: 5,
-    //                 name: 'Markha Valley Trek',
-    //                 href: '#',
-    //                 description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-    //                 imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 title: 'Guided Tours and Excursions',
+    //                 body: 'Explore iconic landmarks and hidden gems with our guided tours and excursions. Immerse yourself in the culture and history of each destination.',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
+    //                 imageAlt: 'parking icon',
     //             },
     //             {
     //                 id: 6,
-    //                 name: 'Mural Danda',
-    //                 href: '#',
-    //                 description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-    //                 imageSrc: "https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+    //                 title: '24/7 Customer Support',
+    //                 body: 'Our dedicated customer support team is available around the clock to assist you with any travel-related queries or emergencies. Your safety and satisfaction are our top priorities.',
+    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
+    //                 imageAlt: 'parking icon',
     //             },
-    //             // More products...
     //         ],
     //     },
-    // },
-
-    // {
-    //     "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-    //     "name": "Service",
-    //     "version": "v2",
-    //     "style": "MODERN",
-    //     "path": "index",
-    //     "data": {
-    //         "type": "Testimonial",
-    //         "id": "k",
-    //         "title": "Client Testimonials",
-    //         "subTitle": "Our Clients Speak",
-    //         "description": "See what our clients have to say about their experiences working with us.",
-    //         "version": "v2",
-    //         "style": "MODERN",
-    //         "testimonials": [
-    //             {
-    //                 "id": "1",
-    //                 "name": "Alexandra Rodriguez",
-    //                 "designation": "CEO, Tech Innovators",
-    //                 "imageSrc": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 "imageAlt": "Alexandra Rodriguez, CEO",
-    //                 "testimonial": "Working with this software development team was a game-changer for our business. Their innovative solutions and dedication to excellence truly exceeded our expectations. We look forward to future collaborations."
-    //             },
-    //             {
-    //                 "id": "2",
-    //                 "name": "Michael Chen",
-    //                 "designation": "CTO, Data Dynamics",
-    //                 "imageSrc": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 "imageAlt": "Michael Chen, CTO",
-    //                 "testimonial": "I've been consistently impressed with the professionalism and technical expertise of this team. They delivered a complex project ahead of schedule and ensured that every aspect met our high standards. Highly recommend their services."
-    //             },
-    //             {
-    //                 "id": "3",
-    //                 "name": "Emily Thompson",
-    //                 "designation": "COO, E-Commerce Solutions",
-    //                 "imageSrc": "https://images.unsplash.com/photo-1555168945-6c11dbe1bb67?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 "imageAlt": "Emily Thompson, COO",
-    //                 "testimonial": "The collaboration with this software company has been exceptional. Their communication, attention to detail, and ability to adapt to changing requirements make them stand out. A reliable partner for any software development needs."
-    //             },
-    //             {
-    //                 "id": "4",
-    //                 "name": "Christopher Davis",
-    //                 "designation": "Founder, StartTech Ventures",
-    //                 "imageSrc": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    //                 "imageAlt": "Christopher Davis, Founder",
-    //                 "testimonial": "Choosing this software development team was one of the best decisions for our startup. They brought our vision to life with a scalable and efficient solution. Their commitment to client success is evident in every interaction."
-    //             }
-    //         ]
-    //     }
     // },
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd15040rr1e2",
@@ -727,7 +696,7 @@ export const pahariyatriDynamicDetails: Section[] = [
     {
         id: "69e7ed7e-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v1", // Add version property
+        version: "v2", // Add version property
         style: "MODERN", // Add style property
         path: "index",
         data: {
@@ -738,11 +707,30 @@ export const pahariyatriDynamicDetails: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "MODERN",
-            contactUs: {
-                address: "Himachal Pradesh 173201",
-                email: "pahariyatri@gmail.com",
-                phone: "+91-9569576707",
+            logo: {
+                id: "001",
+                imageSrc: "https://i.pinimg.com/736x/63/27/9d/63279d93bdd63862256bb4c7e500e10b.jpg",
+                imageAlt: "PahariYatriLogo",
             },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-4",
+                    label: "Gallery",
+                    url: "/gallery",
+                }, {
+                    id: "menu-3",
+                    label: "Contact us",
+                    url: "/contact-us",
+                },
+            ],
         },
     },
     {

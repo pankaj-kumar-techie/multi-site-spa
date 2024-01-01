@@ -5,6 +5,7 @@
     import ItineraryCard from "./ItineraryCard";
     import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
     import TitleCover from "../../../components/common/title-cover/TitleCover";
+import calculateDifficultyPercentage from "../../../utils/difficultyCalculator";
 
     const PackageDetailCard = (packageDetailProps: PackageDetail) => {
         const { theme } = useContext(ThemeContext);
@@ -56,11 +57,13 @@
             window.open(whatsappUrl, '_blank');
         };
         const [offset, setOffset] = useState(0);
-        const percentage = 75;
+        const [percentage, setPercentage] = useState(0);
+
         useEffect(() => {
-            const progressOffset = 251.2 - (251.2 * percentage) / 100;
-            setOffset(progressOffset);
-        }, [percentage]);
+            const calculatedPercentage = calculateDifficultyPercentage(packageDetailProps.difficulty);
+            setPercentage(calculatedPercentage);
+
+        }, [packageDetailProps.difficulty]);
         return (
             <section className={`bg-${theme.colors.primary} mx-auto `}>
                 <div className="container mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -153,31 +156,31 @@
                                 {
                                     name: 'participants', label: 'Number of Participants', type: 'number', required: true,
                                 },
-                                {
-                                    name: 'additionalInclusions', label: 'Additional Inclusions', type: 'checkbox',
-                                    options: [
-                                        { label: 'Guided Tours or Excursions', value: 'guidedTours' },
-                                        { label: 'Equipment Rental', value: 'equipmentRental' },
-                                        { label: 'Photography Services', value: 'photographyServices' },
-                                        { label: 'Cultural Experiences', value: 'culturalExperiences' },
-                                    ],
-                                },
-                                {
-                                    name: 'level', label: 'Level of Trekking Experience', type: 'radio', required: true,
-                                    options: [
-                                        { label: 'Beginner', value: 'beginner' },
-                                        { label: 'Intermediate', value: 'intermediate' },
-                                        { label: 'Advanced', value: 'advanced' },
-                                    ],
-                                },
-                                {
-                                    name: 'accommodation', label: 'Accommodation Type', type: 'radio', required: true,
-                                    options: [
-                                        { label: 'Teahouse', value: 'teahouse' },
-                                        { label: 'Camping', value: 'camping' },
-                                        { label: 'Lodge', value: 'lodge' },
-                                    ],
-                                },
+                                // {
+                                //     name: 'additionalInclusions', label: 'Additional Inclusions', type: 'checkbox',
+                                //     options: [
+                                //         { label: 'Guided Tours or Excursions', value: 'guidedTours' },
+                                //         { label: 'Equipment Rental', value: 'equipmentRental' },
+                                //         { label: 'Photography Services', value: 'photographyServices' },
+                                //         { label: 'Cultural Experiences', value: 'culturalExperiences' },
+                                //     ],
+                                // },
+                                // {
+                                //     name: 'level', label: 'Level of Trekking Experience', type: 'radio', required: true,
+                                //     options: [
+                                //         { label: 'Beginner', value: 'beginner' },
+                                //         { label: 'Intermediate', value: 'intermediate' },
+                                //         { label: 'Advanced', value: 'advanced' },
+                                //     ],
+                                // },
+                                // {
+                                //     name: 'accommodation', label: 'Accommodation Type', type: 'radio', required: true,
+                                //     options: [
+                                //         { label: 'Teahouse', value: 'teahouse' },
+                                //         { label: 'Camping', value: 'camping' },
+                                //         { label: 'Lodge', value: 'lodge' },
+                                //     ],
+                                // },
                                 { name: 'comments', label: 'Additional Comments', type: 'textarea' },
                             ]}
                             level="Travel Quotation Request"
