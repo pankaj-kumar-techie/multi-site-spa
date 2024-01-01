@@ -221,64 +221,27 @@ export const pahariyatri: Section[] = [
         style: "CLASSIC",
         path: "index",
         data: {
-            type: "Product",
+            type: "Package",
             id: "k",
             title: "Explore Our Unexplored Treks!!",
             subTitle: "Join Us for a Trip to the Himalayas",
             description: "Hero Banner Paragraph is here",
-            version: "v1",
+            version: "v2",
             style: "CLASSIC",
-            products: [
+            packages: [
                 {
-                    id: 1,
-                    name: 'Roopkund Trek',
-                    href: '/products/1',
-                    price: '9000',
-                    description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
-                    imageSrc: "https://images.unsplash.com/photo-1545652985-5edd365b12eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    id: 101,
+                    name: 'Shrikhand Mahadev Kailash Yatra',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "25",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
-                {
-                    id: 2,
-                    name: 'Valley of Flowers Trek',
-                    href: '#',
-                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-                    imageSrc: "https://images.unsplash.com/photo-1564432177374-603c4ba4ee69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1109&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                {
-                    id: 3,
-                    name: 'Har Ki Dun Trek',
-                    href: '#',
-                    description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-                    imageSrc: "https://images.unsplash.com/photo-1617372155962-ba2abeaf2716?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: 4,
-                    name: 'Chadar Trek',
-                    href: '#',
-                    description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-                    imageSrc: "https://images.unsplash.com/photo-1542467986-13ac00f21339?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1133&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                {
-                    id: 5,
-                    name: 'Markha Valley Trek',
-                    href: '#',
-                    description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                    imageSrc: "https://images.unsplash.com/photo-1666545380082-34f26c888827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                },
-                {
-                    id: 6,
-                    name: 'Hampta Pass Trek',
-                    href: '#',
-                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-                    imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-                },
-                // More products...
             ],
         },
     },
@@ -328,7 +291,7 @@ export const pahariyatri: Section[] = [
             title: "Sacred Himalayan Pilgrimage: Kailash Yatra with Pahari Yatri",
             subTitle: "Embark on a Spiritual Journey to Shrikhand, Manimahesh, and Kinnaur Kailash",
             description: "Hero Banner Paragraph is here",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             packages: [
                 {
@@ -372,7 +335,7 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-        {
+    {
         id: "143d8df3-49c7-4370-0c5ef7a46f6b",
         name: "Service",
         version: "v1",
@@ -745,7 +708,7 @@ export const pahariyatri: Section[] = [
             version: "v1",
             style: "CLASSIC",
             "logo": {
-                "id":"kk",
+                "id": "kk",
                 "imageSrc": "path/to/your/logo.png",
                 "imageAlt": "Logo Alt Text"
             },
