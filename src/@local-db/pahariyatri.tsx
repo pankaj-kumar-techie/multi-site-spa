@@ -372,7 +372,7 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-    {
+        {
         id: "143d8df3-49c7-4370-0c5ef7a46f6b",
         name: "Service",
         version: "v1",

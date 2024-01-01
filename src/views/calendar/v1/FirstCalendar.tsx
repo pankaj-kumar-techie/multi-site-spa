@@ -1,23 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { CalendarEvent, Section } from "../../../modal/Section";
 
-interface TrekEvent {
-    date: Date;
-    title: string;
-    duration: string;
-    price: number;
-}
-
-const TrekCalendar: React.FC = () => {
+const FirstCalendar: React.FC<{ data: Section }> = (props) => {
     const [selectedDate, setSelectedDate] = useState(new Date());
-    const trekEvents: TrekEvent[] = [
-        { date: new Date(2023, 3, 15), title: "Mountain Trek", duration: "7 days", price: 500 },
-        { date: new Date(2023, 3, 22), title: "Forest Expedition", duration: "5 days", price: 400 },
-        // Add more trek events as needed
-    ];
+    const [calendarData, setCalendarData] = useState<Section>();
 
-    const filteredEvents = trekEvents.filter(
-        (event) => event.date.getMonth() === selectedDate.getMonth() && event.date.getFullYear() === selectedDate.getFullYear()
-    );
+    useEffect(() => {
+        setCalendarData(props.data);
+    }, [props.data]);
 
     const renderCalendar = () => {
         const daysInMonth = new Date(selectedDate.getFullYear(), selectedDate.getMonth() + 1, 0).getDate();
@@ -34,38 +24,86 @@ const TrekCalendar: React.FC = () => {
             );
         }
 
+        const filteredEvents = calendarData?.data?.calendar?.filter(
+            (event: CalendarEvent) => {
+                console.log('Event:', event);
+
+                if (event.date) {
+                    const eventDate = new Date(event.date);
+                    const isSameMonth = eventDate.getMonth() === selectedDate.getMonth();
+                    const isSameYear = eventDate.getFullYear() === selectedDate.getFullYear();
+
+                    console.log('isSameMonth:', isSameMonth);
+                    console.log('isSameYear:', isSameYear);
+
+                    return isSameMonth && isSameYear;
+                }
+
+                return false;
+            }
+        ) || [];
+
+        console.log('filteredEvents in renderCalendar:', filteredEvents);
+
         for (let i = 1; i <= daysInMonth; i++) {
             const currentDate = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), i);
-            const isTrekEvent = filteredEvents.some((event) => event.date.toDateString() === currentDate.toDateString());
+            const formattedCurrentDate = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1)
+                .toString()
+                .padStart(2, "0")}-${currentDate.getDate().toString().padStart(2, "0")}`;
+
+            const isTrekEvent = filteredEvents.some(
+                (event: CalendarEvent) => event.date === formattedCurrentDate
+            );
 
             calendar.push(
                 <div
                     key={i}
                     className={`calendar-day ${isTrekEvent ? "trek-event" : ""}`}
-                    onClick={() => setSelectedDate(currentDate)}>
-
+                    onClick={() => setSelectedDate(currentDate)}
+                >
                     <span className={`day-number ${isTrekEvent ? "bg-yellow-300" : ""}`}>{i}</span>
                 </div>
             );
         }
 
         return calendar;
-    };
+        };
+
+
+    const filteredEvents = calendarData?.data?.calendar?.filter(
+        (event: CalendarEvent) => {
+            if (event.date) {
+                const eventDate = new Date(event.date);
+                const isSameMonth = eventDate.getMonth() === selectedDate.getMonth();
+                const isSameYear = eventDate.getFullYear() === selectedDate.getFullYear();
+
+                console.log('isSameMonth in filteredEvents:', isSameMonth);
+                console.log('isSameYear in filteredEvents:', isSameYear);
+
+                return isSameMonth && isSameYear;
+            }
+
+            return false;
+        }
+    ) || [];
+
+    console.log('filteredEvents outside renderCalendar:', filteredEvents);
+
 
     return (
         <div className="max-w-screen-xl mx-auto mt-8 flex">
             <div className="w-2/3 p-4">
                 <h2 className="text-lg font-semibold mb-4">
-                    {filteredEvents.length > 0 ? `Trek Events in ${selectedDate.toLocaleString("en-us", { month: "long", year: "numeric" })}` : "No Trek Events in Selected Month"}
+                    {filteredEvents.length > 0
+                        ? `Trek Events in ${selectedDate.toLocaleString("en-us", { month: "long", year: "numeric" })}`
+                        : "No Trek Events in Selected Month"}
                 </h2>
                 {filteredEvents.length > 0 ? (
                     <ul>
-                        {filteredEvents.map((event, index) => (
+                        {filteredEvents.map((event: CalendarEvent, index: number) => (
                             <li key={index} className="mb-4">
-                                <h3 className="text-xl font-semibold">{event.title}</h3>
-                                <p className="text-gray-500 mb-2">{event.date.toDateString()}</p>
-                                <p className="text-gray-700">Duration: {event.duration}</p>
-                                <p className="text-green-600">Price: ${event.price}</p>
+                                <h3 className="text-xl font-semibold">{event.name}</h3>
+                                <p className="text-gray-500 mb-2">{event.date && new Date(event.date).toDateString()}</p>
                             </li>
                         ))}
                     </ul>
@@ -102,4 +140,4 @@ const TrekCalendar: React.FC = () => {
     );
 };
 
-export default TrekCalendar;
+export default FirstCalendar;
