@@ -19,6 +19,7 @@ export interface Section {
     services?: Service[];
     products?: Product[];
     packages?: Package[];
+    calendar?: CalendarEvent[];
     portfolios?: Portfolio[];
     images?: Image[];
     videos?: VideoModel[];
@@ -106,6 +107,17 @@ export type Package = {
   altitude?: string,
   difficulty?: string,
   season?: string
+}
+export type CalendarEvent = {
+  id: number,
+  name: string,
+  href: string,
+  duration?: string,
+  description: string,
+  imageSrc: string,
+  imageAlt: string,
+  date?: string,
+
 }
 
 export type Portfolio = {

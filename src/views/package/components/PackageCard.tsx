@@ -3,17 +3,18 @@ import { ThemeContext } from "../../../themes/ThemeProvider";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import { Package } from "../../../modal/Section";
 import { FaChevronCircleRight } from "react-icons/fa";
+import calculateDifficultyPercentage from "../../../utils/difficultyCalculator";
 
 export default function PackageCard(packageDetail: Package) {
   const { theme } = useContext(ThemeContext);
   const textColor = useDynamicTextColor(theme.colors.secondary || "");
   const [offset, setOffset] = useState(0);
-  const percentage = 75;
+  const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
-    const progressOffset = 251.2 - (251.2 * percentage) / 100;
-    setOffset(progressOffset);
-  }, [percentage]);
+    const calculatedPercentage = calculateDifficultyPercentage(packageDetail.difficulty);
+    setPercentage(calculatedPercentage);
+  }, [packageDetail.difficulty]);
 
   return (
     <div
