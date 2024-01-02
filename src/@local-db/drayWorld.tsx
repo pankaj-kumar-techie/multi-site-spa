@@ -24,7 +24,7 @@ export const drayWorldLogistic: Section[] = [
             logo:
             {
                 id: '1',
-                imageSrc: 'http://43.205.215.118/images/logo.jpg',
+                imageSrc: 'https://i.pinimg.com/736x/a1/bb/f2/a1bbf2a052d55ca33602e3056e3ffed4.jpg',
                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
             },
             menu: [
