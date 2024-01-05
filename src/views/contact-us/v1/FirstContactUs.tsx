@@ -37,6 +37,7 @@ function FirstContactUs(props: { data: any }) {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(formData),
+                mode: 'cors',
             });
 
             if (response.ok) {
