@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { archdy, archdyPlugin, archdySeo, archdyTheme } from './@local-db/archdy';
 import { blogTheme, blogpahariyatri, blogpahariyatriseo } from './@local-db/blog';
 import { drayWorldLogistic, drayWorldLogisticPlugin, drayWorldLogisticSeo, drayWorldLogisticTheme } from './@local-db/drayWorld';
-import { gayatrilodge, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
+import { gayatrilodge, gayatrilodgeGuestRegistration, gayatrilodgeSeo, gayatrilodgeTheme, gaytriLodgePlugin } from './@local-db/gayatrilodge';
 import { loonds, loondsSeo, loondsTheme } from './@local-db/loonds';
 import { northVibeDesign, northVibeDesignPlugin, northVibeDesignSeo, northVibeDesignTheme } from './@local-db/northVibeDesign';
 import { pahariyatri, pahariyatriDynamicDetails, pahariyatriPlugin, pahariyatriSeo, pahariyatriTheme } from './@local-db/pahariyatri';
@@ -97,7 +97,11 @@ export default function App() {
                     case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
                         setTheme(gayatrilodgeTheme);
-                        setSectionData(gayatrilodge);
+                        if(page === "guest"){
+                            setSectionData(gayatrilodgeGuestRegistration);
+                        }else{
+                            setSectionData(gayatrilodge);
+                        }
                         setPlugins(gaytriLodgePlugin)
                         break;
                     case "archdy.com":
