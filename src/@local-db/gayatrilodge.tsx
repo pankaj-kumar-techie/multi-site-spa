@@ -494,6 +494,87 @@ export const gayatrilodge: Section[] = [
     },
 ];
 
+export const gayatrilodgeGuestRegistration: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "Gayatri Lodge",
+            subTitle: "Hero Banner Sub Title is",
+            description: "Hero Banner Paragraph is here",
+            version: "v2",
+            style: "CLASSIC",
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-4",
+                    label: "Gallery",
+                    url: "/gallery",
+                }, {
+                    id: "menu-3",
+                    label: "Contact us",
+                    url: "/contact-us",
+                },
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "ContactUs",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "ContactUs",
+            id: "k",
+            title: "Get in Touch",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            contactUs: {
+                address: "Village Kimughat P.O. Garkhal, Tehsil, Kasauli, Himachal Pradesh 173201",
+                email: "gayatrilodgekasauli@gmail.com",
+                phone: "9857315551",
+                formFields: [
+                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    // { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                    // { name: 'email', label: 'Email', type: 'text', required: true },
+                    // { name: 'message', label: 'Masssege', type: 'text', required: false },
+                ]
+            },
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+        },
+    },
+];
+
 export const gayatrilodgeSeo: any = {
     title: "Gayatri Lodge Hotel - Your Tranquil Haven in Kasauli | Homestay",
     description: "Experience a tranquil and unforgettable stay at Gayatri Lodge, a charming homestay nestled in the heart of Kasauli. Enjoy luxurious rooms, stunning views, and personalized hospitality.",

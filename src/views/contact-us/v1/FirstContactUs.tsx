@@ -17,7 +17,7 @@ function FirstContactUs(props: { data: any }) {
         description: "",
         contactUs: ContactUs,
     });
-
+    
     useEffect(() => {
         setContactUsData(props.data);
     }, [props.data]);
@@ -26,11 +26,36 @@ function FirstContactUs(props: { data: any }) {
         return <SectionShimmer title={"Get In Touch"}></SectionShimmer>;
     }
 
-    const handleFormSubmit = (formData: Record<string, any>) => {
-        // Handle form submission logic here
-        // You can replace setStatus('success') with actual submission code
-        setStatus('success');
+    const handleSubmit = async (formData: Record<string, any>): Promise<void> => {
+        // Your Google Apps Script API endpoint
+        const apiEndpoint = 'https://script.google.com/macros/s/AKfycbxet4_DbNUoWfaiVO7LVk0Ru7f1EnavvFxgOFghxba_tpqHzepIhc9zZbD6he4YsClM/exec';
+
+        try {
+            const response = await fetch(apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                console.log('Data successfully sent to the API');
+                // Optionally, reset the form after successful submission
+                // setFormData({
+                //     name: '',
+                //     // email: '',
+                //     // checkInDate: '',
+                //     // checkOutDate: '',
+                // });
+            } else {
+                console.error('Failed to send data to the API');
+            }
+        } catch (error) {
+            console.error('Error sending data to the API:', error);
+        }
     };
+
 
     return (
         <section className={`bg-${theme.colors.primary} md:py-16 py-8`}>
@@ -59,7 +84,7 @@ function FirstContactUs(props: { data: any }) {
                             Thank you for contacting us!
                         </p>
                     ) : (
-                        <Form fields={contactUsData.contactUs.formFields} onSubmit={handleFormSubmit}></Form>
+                        <Form fields={contactUsData.contactUs.formFields} onSubmit={handleSubmit}></Form>
                     )}
                 </div>
             </div>

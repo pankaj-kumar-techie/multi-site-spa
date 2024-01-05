@@ -43,15 +43,15 @@ export const pahariyatri: Section[] = [
                     url: "/home",
                 }, {
                     id: "menu-2",
-                    label: "About Us",
+                    label: "Tours Package",
                     url: "/about-us",
                 }, {
                     id: "menu-4",
-                    label: "Gallery",
+                    label: "Blogs",
                     url: "/gallery",
                 }, {
                     id: "menu-3",
-                    label: "Contact us",
+                    label: "Contact",
                     url: "/contact-us",
                 },
             ],
