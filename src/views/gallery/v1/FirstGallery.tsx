@@ -4,8 +4,6 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { Image } from "../../../modal/Section";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
-import Lightbox from "react-image-lightbox";
-import "react-image-lightbox/style.css";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 
 function FirstGallery(props: { data: any }) {
@@ -60,7 +58,7 @@ function FirstGallery(props: { data: any }) {
                     </div>
                 </div>
             </div>
-            {lightboxOpen && (
+            {/* {lightboxOpen && (
                 <Lightbox
                     mainSrc={galleryData.images[currentImageIndex].imageSrc}
                     onCloseRequest={() => setLightboxOpen(false)}
@@ -84,7 +82,7 @@ function FirstGallery(props: { data: any }) {
                         )
                     }
                 />
-            )}
+            )} */}
         </section>
     );
 }
