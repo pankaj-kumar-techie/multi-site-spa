@@ -110,12 +110,12 @@ export default function App() {
                         setTheme(archdyTheme);
                         setSeo(archdySeo);
                         break;
-                    case "dray-world.com":
-                        setSectionData(drayWorldLogistic);
-                        setPlugins(drayWorldLogisticPlugin)
-                        setTheme(drayWorldLogisticTheme);
-                        setSeo(drayWorldLogisticSeo);
-                        break;
+                    // case "dray-world.com":
+                    //     setSectionData(drayWorldLogistic);
+                    //     setPlugins(drayWorldLogisticPlugin)
+                    //     setTheme(drayWorldLogisticTheme);
+                    //     setSeo(drayWorldLogisticSeo);
+                    //     break;
                     default:
                         setSeo(loondsSeo);
                         setTheme(pahariyatriTheme);
