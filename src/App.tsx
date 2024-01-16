@@ -117,16 +117,16 @@ export default function App() {
                     //     setSeo(drayWorldLogisticSeo);
                     //     break;
                     default:
-                        setSeo(loondsSeo);
-                        setTheme(pahariyatriTheme);
-                        if (page === 'packages') {
-                            setSectionData(pahariyatriDynamicDetails)
-                        } else if (page === 'blogs'){
-                            setSectionData(pahariyatriDynamicDetails);
-                        } else {
-                            setSectionData(pahariyatri);
-                        }
-                        setPlugins(pahariyatriPlugin);
+                        // setSeo(loondsSeo);
+                        // setTheme(pahariyatriTheme);
+                        // if (page === 'packages') {
+                        //     setSectionData(pahariyatriDynamicDetails)
+                        // } else if (page === 'blogs'){
+                        //     setSectionData(pahariyatriDynamicDetails);
+                        // } else {
+                        //     setSectionData(pahariyatri);
+                        // }
+                        // setPlugins(pahariyatriPlugin);
                         break;
                 }
                 // const res = await PageService.getPage(path);
