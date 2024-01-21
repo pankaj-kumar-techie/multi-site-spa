@@ -1,14 +1,15 @@
 import React from "react";
-import FirstHeroBanner from "./v1/FirstHeroBanner";
 import SecondHeroBanner from "./v2/SecondHeroBanner";
+import ThirdHeroBanner from "./v3/ThirdHeroBanner";
 interface HeroBannerProps {
     data: any;
-    version: "v1" ;
+    version: "v3" ;
 }
 
 const bannerComponents = {
-    v1: FirstHeroBanner,
-    v2: SecondHeroBanner
+    v1: ThirdHeroBanner,
+    v2: SecondHeroBanner,
+    v3: ThirdHeroBanner,
 };
 
 const HeroBanner: React.FC<HeroBannerProps> = ({data, version}) => {
