@@ -60,26 +60,26 @@ export const pahariyatri: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v1",
+        version: "v3",
         style: "CLASSIC",
         path: "index",
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "The World is Waiting For You",
+            title: " THE WORLD IS WAITING For You",
             subTitle: "Where will you go next?",
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
             bannerData: [
                 {
-                    title: "The World is Waiting For You",
+                    title: " THE WORLD IS WAITING For You",
                     subTitle: "Where will you go next?",
-                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+                    description: "Pahari Yatri: Your ticket to Himalayan adventures. We prioritize safety, sustainability, and personalized experiences. Join us to explore the hidden treasures of the Himalayas in a remarkable and sustainable way",
                     image:
                     {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: "https://i.pinimg.com/736x/63/27/9d/63279d93bdd63862256bb4c7e500e10b.jpg",
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
                     modalProps: {
@@ -401,6 +401,52 @@ export const pahariyatri: Section[] = [
         },
     },
     {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Service",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Service",
+            id: "k",
+            title: "Popular",
+            subTitle: "Explore & Adventure",
+            description: "Our activities like camping, trekking, skiing, and 4x4 expeditions.",
+            version: "v2",
+            style: "CLASSIC",
+            services: [
+                {
+                    id: 1,
+                    title: 'Camping',
+                    body: 'Modern Aluminum Composite Panel installations for interiors and exteriors. Combining style, durability, and weather resistance. High-Pressure Laminate installations, offering versatility and durability.',
+                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
+                    imageAlt: 'ACP & HPL icon',
+                },
+                {
+                    id: 2,
+                    title: 'Trekking',
+                    body: 'Add warmth and elegance with our premium wooden flooring options, tailored to your style and space.',
+                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
+                    imageAlt: 'Wooden icon',
+                },
+                {
+                    id: 3,
+                    title: '4*4 Expedition',
+                    body: 'Enhance natural light and aesthetics with professional glass installations for windows, doors, partitions, and facades.',
+                    imageSrc: 'https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Spiti-Valley-Snowfall-Tourist-Place-in-Himachal.jpg',
+                    imageAlt: 'Glass icon',
+                },
+                {
+                    id: 4,
+                    title: 'Skiing',
+                    body: 'Turn plain ceilings into captivating focal points with unique and visually striking designs.',
+                    imageSrc: 'https://discoverkullumanali.in/wp-content/uploads/2019/02/Manali-after-snowfall-on-Friday-discover-kullu-manali-1040x530.jpg',
+                    imageAlt: 'Roof icon',
+                },
+            ],
+        },
+    },
+    {
         id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
         name: "About-Us",
         version: "v1",
@@ -505,7 +551,7 @@ export const pahariyatri: Section[] = [
                     image:
                     {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
                     modalProps: {
@@ -587,6 +633,49 @@ export const pahariyatri: Section[] = [
                     descriptionContext: "Plan your adventure in Manali's snow-covered paradise with our blog.",
                     imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     imageAlt: 'Image Alt Text Here',
+                },
+            ],
+
+        },
+    },
+    {
+        id: "143d8dk49c7-4370-9e08",
+        name: "Plan",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Plan",
+            id: "k",
+            title: "YATRI YATRA CARD",
+            subTitle: "Stay Inspired and Informed",
+            description: "Embark on a journey of a lifetime with the exclusive Yatri Yatra Card, offered only by Pahari Yatri.",
+            version: "v1",
+            style: "CLASSIC",
+            plans: [
+                {
+                    id: "1",
+                    title: "Classic",
+                    description: 'Begin your journey with four easy-to-moderate treks tailored for beginners.',
+                    imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "₹ 21,000",
+                },
+                {
+                    id: "2",
+                    title: "Summit",
+                    description: 'Elevate your adventure with Six challenging treks designed for intermediate explorers.',
+                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "₹ 51,000",
+                },
+                {
+                    id: "3",
+                    title: "Extreme",
+                    description: 'Three Panch Kailash Yatra and pro-level treks, tailored for the skilled and daring.',
+                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "Not Availabe for Purchase",
                 },
             ],
 

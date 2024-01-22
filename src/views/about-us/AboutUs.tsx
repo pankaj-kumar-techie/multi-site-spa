@@ -5,12 +5,13 @@ import ThirdAboutUs from "./v3/ThirdAboutUs";
 
 interface AboutUsProps {
     data: any;
-    version: "v1" | "v2" ;
+    version: "v1" | "v2" | "v3" ;
 }
 
 const aboutComponents = {
-    v1: ThirdAboutUs,
-    v2: ThirdAboutUs,
+    v1: FirstAboutUs,
+    v2: SecondAboutUs,
+    v3: ThirdAboutUs,
 };
 
 const AboutUs: React.FC<AboutUsProps> = ({data, version}) => {
