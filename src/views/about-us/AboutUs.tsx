@@ -1,6 +1,7 @@
 import React from "react";
 import FirstAboutUs from "./v1/FirstAboutUs";
 import SecondAboutUs from "./v2/SecondAboutUs";
+import ThirdAboutUs from "./v3/ThirdAboutUs";
 
 interface AboutUsProps {
     data: any;
@@ -8,8 +9,8 @@ interface AboutUsProps {
 }
 
 const aboutComponents = {
-    v1: FirstAboutUs,
-    v2: SecondAboutUs,
+    v1: ThirdAboutUs,
+    v2: ThirdAboutUs,
 };
 
 const AboutUs: React.FC<AboutUsProps> = ({data, version}) => {
