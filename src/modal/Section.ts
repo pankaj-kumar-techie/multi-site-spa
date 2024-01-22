@@ -25,6 +25,7 @@ export interface Section {
     videos?: VideoModel[];
     testimonials?: Testimonial[];
     blogs?: Blog[];
+    plans?: Plan[];
     faqs?: FAQ[];
     ourTeam?: OurTeam[];
     termAndCondition?: TermAndCondition[];
@@ -143,6 +144,14 @@ export type Blog = {
   descriptionContext: string,
   imageSrc: string,
   imageAlt: string,
+}
+export type Plan = {
+  id: string,
+  title: string,
+  description: string,
+  imageSrc: string,
+  imageAlt: string,
+  price: string,
 }
 
 export type FAQ = {

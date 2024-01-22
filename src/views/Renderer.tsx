@@ -16,6 +16,7 @@ import HeroBanner from "./hero-banner/HeroBanner";
 import OurTeam from "./our-team/OurTeam";
 import Package from "./package/Package";
 import PageNotFound from "./page-not-found/PageNotFound";
+import Plan from "./plan/Plan";
 import Portfolio from "./portfolio/Portfolio";
 import Product from "./product/Product";
 import Services from "./services/Services";
@@ -46,6 +47,7 @@ export class Renderer {
             Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
             Videos: <Video key={section.id} data={section['data']} version={section['version']}></Video>,
             Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
+            Plan: <Plan key={section.id} data={section['data']} version={section['version']}></Plan>,
             FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
             TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
             ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,

@@ -566,7 +566,7 @@ export const pahariyatri: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e08",
         name: "Blog",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -633,6 +633,49 @@ export const pahariyatri: Section[] = [
                     descriptionContext: "Plan your adventure in Manali's snow-covered paradise with our blog.",
                     imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     imageAlt: 'Image Alt Text Here',
+                },
+            ],
+
+        },
+    },
+    {
+        id: "143d8dk49c7-4370-9e08",
+        name: "Plan",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Plan",
+            id: "k",
+            title: "YATRI YATRA CARD",
+            subTitle: "Stay Inspired and Informed",
+            description: "Embark on a journey of a lifetime with the exclusive Yatri Yatra Card, offered only by Pahari Yatri.",
+            version: "v1",
+            style: "CLASSIC",
+            plans: [
+                {
+                    id: "1",
+                    title: "Classic",
+                    description: 'Begin your journey with four easy-to-moderate treks tailored for beginners.',
+                    imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "₹ 21,000",
+                },
+                {
+                    id: "2",
+                    title: "Summit",
+                    description: 'Elevate your adventure with Six challenging treks designed for intermediate explorers.',
+                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "₹ 51,000",
+                },
+                {
+                    id: "3",
+                    title: "Extreme",
+                    description: 'Three Panch Kailash Yatra and pro-level treks, tailored for the skilled and daring.',
+                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    price: "Not Availabe for Purchase",
                 },
             ],
 
