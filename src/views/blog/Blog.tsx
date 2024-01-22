@@ -4,11 +4,12 @@ import SecondBlog from "./v2/SecondBlog";
 
 interface BlogUsProps {
     data: any;
-    version: "v1";
+    version: "v1" | "v2";
 }
 
 const blogComponents = {
-    v1: SecondBlog,
+    v1: FirstBlog,
+    v2: SecondBlog,
 };
 
 const Blog: React.FC<BlogUsProps> = ({data, version}) => {
