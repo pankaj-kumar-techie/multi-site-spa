@@ -20,7 +20,7 @@ export const pahariyatri: Section[] = [
     {
         id: "889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v3",
+        version: "v2",
         style: "MODERN",
         path: "index",
         data: {
