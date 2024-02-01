@@ -73,7 +73,7 @@ export const pahariyatri: Section[] = [
             style: "CLASSIC",
             bannerData: [
                 {
-                    title: " THE WORLD IS WAITING For You",
+                    title: " THE WORLD IS WAITING",
                     subTitle: "Where will you go next?",
                     description: "Pahari Yatri: Your ticket to Himalayan adventures. We prioritize safety, sustainability, and personalized experiences. Join us to explore the hidden treasures of the Himalayas in a remarkable and sustainable way",
                     image:
@@ -82,37 +82,6 @@ export const pahariyatri: Section[] = [
                         imageSrc: "https://i.pinimg.com/736x/63/27/9d/63279d93bdd63862256bb4c7e500e10b.jpg",
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
-                    modalProps: {
-                        isOpen: true,
-                        // onClose: () => void,
-                        title: 'Plan Your Dream Vacation Package',
-                        formFields: [
-                            { name: 'name', label: 'Full Name', type: 'text', required: true },
-                            { name: 'mobile', label: 'Phone Number', type: 'tel', required: true },
-                            {
-                                name: 'mobile', label: 'Preferred Destination', type: 'select', required: true,
-                                options: [
-                                    { label: 'The Parvati Valley Adventure', value: '3' },
-                                    { label: 'Manali Snow Adventure', value: '5' },
-                                    { label: 'Kasol and Tosh Winter Chill', value: '7' },
-                                    { label: 'Narkanda Snowy Paradise', value: '21' },
-                                ],
-                            },
-                            {
-                                name: 'mobile', label: 'Number of Travelers', type: 'number', required: true,
-                            },
-                            {
-                                name: 'mobile', label: 'I m Interested In', type: 'checkbox', required: true,
-                                options: [
-                                    { label: 'All-Inclusive Resorts', value: 'roof_solution' },
-                                    { label: 'Adventure Tours', value: 'adventure_tours' },
-                                    { label: 'Cruise Packages', value: 'adventure_package' },
-                                ],
-                            },
-                            { name: 'text', label: 'Special Requests ', type: 'textarea', required: false },
-
-                        ]
-                    }
                 },
             ],
         },
@@ -194,7 +163,7 @@ export const pahariyatri: Section[] = [
                     destination: "Solan, Himachal Pradesh",
                     difficulty: "Easy",
                     description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                    imageSrc: "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    imageSrc: "https://i.pinimg.com/736x/d5/57/ea/d557eaded0a7a135603f4977a24b966f.jpg",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
@@ -446,85 +415,25 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-    {
-        id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
-        name: "About-Us",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "AboutUs",
-            id: "003",
-            title: "About Pahari Yatri",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "At Pahari Yatri, we're passionate about crafting unforgettable trekking and mountaineering experiences that connect you with nature's beauty. As a leading adventure travel company, we prioritize safety, sustainability, and personalized adventures. Our experienced team is committed to creating lasting memories for every adventurer.Our vision is to explore and reveal the hidden treasures of the Himalayas. We go beyond the ordinary, offering transformative journeys that contribute to Himalayan conservation. Join us for unique adventures, dedicated to making your journey remarkable, sustainable, and filled with cherished moments",
-            version: "v1",
-            style: "CLASSIC",
-            images: [
-                {
-                    id: '1',
-                    imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
-                    imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                },
-            ],
-        },
-    },
     // {
-    //     id: "143d8df3-49c7-4370-0c5ef7a46f6b",
-    //     name: "Service",
+    //     id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
+    //     name: "About-Us",
     //     version: "v1",
     //     style: "CLASSIC",
     //     path: "index",
     //     data: {
-    //         type: "Service",
-    //         id: "k",
-    //         title: "Our Services",
-    //         subTitle: "",
-    //         description: "We are provided following services to our customers",
+    //         type: "AboutUs",
+    //         id: "003",
+    //         title: "About Pahari Yatri",
+    //         subTitle: "Hero Banner Sub Title is here",
+    //         description: "At Pahari Yatri, we're passionate about crafting unforgettable trekking and mountaineering experiences that connect you with nature's beauty. As a leading adventure travel company, we prioritize safety, sustainability, and personalized adventures. Our experienced team is committed to creating lasting memories for every adventurer.Our vision is to explore and reveal the hidden treasures of the Himalayas. We go beyond the ordinary, offering transformative journeys that contribute to Himalayan conservation. Join us for unique adventures, dedicated to making your journey remarkable, sustainable, and filled with cherished moments",
     //         version: "v1",
     //         style: "CLASSIC",
-    //         services: [
+    //         images: [
     //             {
-    //                 id: 1,
-    //                 title: 'Adventure Expeditions',
-    //                 body: 'Embark on thrilling adventure expeditions led by experienced guides. Explore remote and rugged landscapes, conquer peaks, and challenge your limits.',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
-    //                 imageAlt: 'parking icon',
-    //             },
-    //             {
-    //                 id: 2,
-    //                 title: 'Customized Travel Packages',
-    //                 body: 'Tailor-made travel packages designed to match your interests and preferences. Whether its a solo escape, a family adventure, or a group journey, we create the perfect itinerary just for you.',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon3.png',
-    //                 imageAlt: 'parking icon',
-    //             },
-    //             {
-    //                 id: 3,
-    //                 title: 'Travel Resources',
-    //                 body: 'Access a wealth of travel resources, including packing guides, visa information, local insights, safety tips, and more. We equip you with everything you need to plan your journeys with confidence.',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/sve-icon2.png',
-    //                 imageAlt: 'parking icon',
-    //             },
-    //             {
-    //                 id: 4,
-    //                 title: 'Community & Events',
-    //                 body: 'Join a vibrant community of fellow travelers. Share your experiences, seek advice, and stay updated on exciting travel events and gatherings. Connect, share, and explore with like-minded adventurers',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon08.png',
-    //                 imageAlt: 'parking icon',
-    //             },
-    //             {
-    //                 id: 5,
-    //                 title: 'Guided Tours and Excursions',
-    //                 body: 'Explore iconic landmarks and hidden gems with our guided tours and excursions. Immerse yourself in the culture and history of each destination.',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-    //                 imageAlt: 'parking icon',
-    //             },
-    //             {
-    //                 id: 6,
-    //                 title: '24/7 Customer Support',
-    //                 body: 'Our dedicated customer support team is available around the clock to assist you with any travel-related queries or emergencies. Your safety and satisfaction are our top priorities.',
-    //                 imageSrc: 'https://htmldemo.zcubethemes.com/riorelax/img/icon/fe-icon05.png',
-    //                 imageAlt: 'parking icon',
+    //                 id: '1',
+    //                 imageSrc: 'https://i.pinimg.com/564x/0a/53/75/0a53757b6915f97f12e67bcf804f7c74.jpg',
+    //                 imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
     //             },
     //         ],
     //     },
@@ -638,49 +547,49 @@ export const pahariyatri: Section[] = [
 
         },
     },
-    {
-        id: "143d8dk49c7-4370-9e08",
-        name: "Plan",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Plan",
-            id: "k",
-            title: "YATRI YATRA CARD",
-            subTitle: "Stay Inspired and Informed",
-            description: "Embark on a journey of a lifetime with the exclusive Yatri Yatra Card, offered only by Pahari Yatri.",
-            version: "v1",
-            style: "CLASSIC",
-            plans: [
-                {
-                    id: "1",
-                    title: "Classic",
-                    description: 'Begin your journey with four easy-to-moderate treks tailored for beginners.',
-                    imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                    price: "₹ 21,000",
-                },
-                {
-                    id: "2",
-                    title: "Summit",
-                    description: 'Elevate your adventure with Six challenging treks designed for intermediate explorers.',
-                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                    price: "₹ 51,000",
-                },
-                {
-                    id: "3",
-                    title: "Extreme",
-                    description: 'Three Panch Kailash Yatra and pro-level treks, tailored for the skilled and daring.',
-                    imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-                    price: "Not Availabe for Purchase",
-                },
-            ],
+    // {
+    //     id: "143d8dk49c7-4370-9e08",
+    //     name: "Plan",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "Plan",
+    //         id: "k",
+    //         title: "YATRI YATRA CARD",
+    //         subTitle: "Stay Inspired and Informed",
+    //         description: "Embark on a journey of a lifetime with the exclusive Yatri Yatra Card, offered only by Pahari Yatri.",
+    //         version: "v1",
+    //         style: "CLASSIC",
+    //         plans: [
+    //             {
+    //                 id: "1",
+    //                 title: "Classic",
+    //                 description: 'Begin your journey with four easy-to-moderate treks tailored for beginners.',
+    //                 imageSrc: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 price: "₹ 21,000",
+    //             },
+    //             {
+    //                 id: "2",
+    //                 title: "Summit",
+    //                 description: 'Elevate your adventure with Six challenging treks designed for intermediate explorers.',
+    //                 imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 price: "₹ 51,000",
+    //             },
+    //             {
+    //                 id: "3",
+    //                 title: "Extreme",
+    //                 description: 'Three Panch Kailash Yatra and pro-level treks, tailored for the skilled and daring.',
+    //                 imageSrc: "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+    //                 imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    //                 price: "Not Availabe for Purchase",
+    //             },
+    //         ],
 
-        },
-    },
+    //     },
+    // },
     {
         id: "437kk0-9e0e-0c5ef7a46f6b",
         name: "Faq",
@@ -754,7 +663,7 @@ export const pahariyatri: Section[] = [
     {
         id: "143d8d",
         name: "Footer",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -765,19 +674,37 @@ export const pahariyatri: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.pahariyatri",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/pahariyatri/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/pin_pahariyatri",
+                },],
+                copyright: "Pahari Yatri",
+            },
             "logo": {
                 "id": "kk",
                 "imageSrc": "path/to/your/logo.png",
                 "imageAlt": "Logo Alt Text"
             },
-            // "socialLink": [
-            //     {
-            //         "id":"icon-id",
-            //         "link": "https://www.facebook.com/",
-            //         "iconClass": "<FaFacebook />"  // Replace with the actual React component for the Facebook icon
-            //     },
-            // ],
-            // "copyright": "© 2023 Your Company. All rights reserved."
         },
     },
 ];

@@ -53,8 +53,12 @@ export type MenuItem = {
 
 export type SocialLink = {
   id: string;
-  iconClass: string;
-  link: string;
+  name: string;
+  className?: string;
+  size?: number;
+  color?: string;
+  link?: string;
+  onClick?: () => void;
 }
 
 
