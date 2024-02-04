@@ -2,7 +2,7 @@ import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
 export const pahariyatriTheme: any = {
-    name: "default"
+    name: "minimalist"
 }
 
 export const pahariyatriPlugin: PluginConfig[] = [
@@ -34,7 +34,7 @@ export const pahariyatri: Section[] = [
             logo: {
                 id: "001",
                 imageSrc: "https://i.pinimg.com/736x/63/27/9d/63279d93bdd63862256bb4c7e500e10b.jpg",
-                imageAlt: "PahariYatriLogo",
+                imageAlt: "Pahari Yatri Logo",
             },
             menu: [
                 {
@@ -66,14 +66,14 @@ export const pahariyatri: Section[] = [
         data: {
             type: "HeroBanner",
             id: "002",
-            title: " THE WORLD IS WAITING For You",
+            title: " THE WORLD IS WAITING FOR YOU",
             subTitle: "Where will you go next?",
             description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
             version: "v2",
             style: "CLASSIC",
             bannerData: [
                 {
-                    title: " THE WORLD IS WAITING",
+                    title: " THE WORLD IS WAITING FOR YOU",
                     subTitle: "Where will you go next?",
                     description: "Pahari Yatri: Your ticket to Himalayan adventures. We prioritize safety, sustainability, and personalized experiences. Join us to explore the hidden treasures of the Himalayas in a remarkable and sustainable way",
                     image:
@@ -105,8 +105,8 @@ export const pahariyatri: Section[] = [
                     id: 1,
                     name: 'The Parvati Valley Adventure',
                     href: '/packages/1',
-                    price: "16000 INR Per Person",
-                    duration: "7 Days/6 Nights",
+                    price: "7500 INR Per Person",
+                    duration: "3 Days/2 Nights",
                     destination: "Kullu, Himachal Pradesh",
                     season: "Winter (December to February)",
                     description: 'Trek to the mysterious Roopkund Lake located at an altitude of 5,029 meters (16,499 feet) in the Himalayas, known for its skeletal remains.',
@@ -116,29 +116,27 @@ export const pahariyatri: Section[] = [
 
                 },
                 {
-                    id: 2,
-                    name: 'Devidarh to Shikari Devi Expedition',
-                    href: '/packages/2',
+                    id: 6,
+                    name: 'Manali Weekend Trip',
+                    href: '/packages/6',
                     price: "7500 INR Per Person",
-                    duration: "3 Days/2 Nights",
-                    destination: "Mandi, Himachal Pradesh",
+                    duration: "7 Days/6 Nights",
+                    destination: "Manali, Himachal Pradesh",
                     difficulty: "Challenging",
-                    season: "Winter (December to February)",
-                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
-                    imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
+                    imageSrc: "https://discoverkullumanali.in/wp-content/uploads/2019/02/Manali-after-snowfall-on-Friday-discover-kullu-manali-1040x530.jpg",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
                 {
                     id: 3,
-                    name: 'Churdhar Sacred Ascent Trek',
-                    href: '/packages/3',
-                    price: "7600 INR Per Person",
+                    name: 'Kasauli Weekend Gateway',
+                    href: '/packages/5',
+                    price: "8500 INR Per Person",
                     duration: "3 Days/2 Nights",
-                    destination: "Sirmaur, Himachal Pradesh",
-                    difficulty: "Difficult",
-                    season: "Winter (December to February)",
-                    description: 'Trek through the beautiful Har Ki Dun Valley, surrounded by snow-capped peaks, lush meadows, and traditional mountain villages.',
-                    imageSrc: "https://images.unsplash.com/photo-1486163224786-2356ec4ab064?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    destination: "Solan, Himachal Pradesh",
+                    difficulty: "Easy",
+                    description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
+                    imageSrc: "https://i.pinimg.com/736x/d5/57/ea/d557eaded0a7a135603f4977a24b966f.jpg",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
@@ -151,34 +149,81 @@ export const pahariyatri: Section[] = [
                     difficulty: "Extreme",
                     season: "Winter (December to February)",
                     description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-                    imageSrc: "https://plus.unsplash.com/premium_photo-1661963083312-8adde31d9900?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    imageSrc: "https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Spiti-Valley-Snowfall-Tourist-Place-in-Himachal.jpg",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
                 {
                     id: 5,
-                    name: 'Kasauli and Chail Weekend Gateway',
+                    name: 'Saroa Devi Weekend Gateway',
                     href: '/packages/5',
-                    price: "8500 INR Per Person",
+                    price: "6500 INR Per Person",
                     duration: "3 Days/2 Nights",
-                    destination: "Solan, Himachal Pradesh",
+                    destination: "Mandi, Himachal Pradesh",
                     difficulty: "Easy",
                     description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                    imageSrc: "https://i.pinimg.com/736x/d5/57/ea/d557eaded0a7a135603f4977a24b966f.jpg",
+                    imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlp1-uQak3CiGky0bAzfDmjZ-Ox1Vv_Z6hw&usqp=CAU",
                     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
                 },
                 {
-                    id: 6,
-                    name: 'Mural Danda Trek Expedition ',
-                    href: '/packages/6',
-                    price: "11400 INR Per Person",
-                    duration: "7 Days/6 Nights",
-                    destination: "Rampur, Himachal Pradesh",
+                    id: 2,
+                    name: 'Devidarh Expedition',
+                    href: '/packages/2',
+                    price: "7500 INR Per Person",
+                    duration: "3 Days/2 Nights",
+                    destination: "Mandi, Himachal Pradesh",
                     difficulty: "Challenging",
-                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-                    imageSrc: "https://images.unsplash.com/photo-1520793785533-f4b11f9ae0f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    season: "Winter (December to February)",
+                    description: 'Explore the vibrant and picturesque Valley of Flowers, a UNESCO World Heritage Site, famous for its diverse alpine flora.',
+                    imageSrc: "https://images.unsplash.com/photo-1679407985739-b6df6dcf2e44?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
                     imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
                 },
                 // More products...
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Service",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Service",
+            id: "k",
+            title: "Popular",
+            subTitle: "Explore & Adventure",
+            description: "Our activities like camping, trekking, skiing, and 4x4 expeditions.",
+            version: "v2",
+            style: "CLASSIC",
+            services: [
+                {
+                    id: 1,
+                    title: 'Camping',
+                    body: 'Modern Aluminum Composite Panel installations for interiors and exteriors. Combining style, durability, and weather resistance. High-Pressure Laminate installations, offering versatility and durability.',
+                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
+                    imageAlt: 'ACP & HPL icon',
+                },
+                {
+                    id: 2,
+                    title: 'Trekking',
+                    body: 'Add warmth and elegance with our premium wooden flooring options, tailored to your style and space.',
+                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
+                    imageAlt: 'Wooden icon',
+                },
+                {
+                    id: 3,
+                    title: '4*4 Expedition',
+                    body: 'Enhance natural light and aesthetics with professional glass installations for windows, doors, partitions, and facades.',
+                    imageSrc: 'https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Spiti-Valley-Snowfall-Tourist-Place-in-Himachal.jpg',
+                    imageAlt: 'Glass icon',
+                },
+                {
+                    id: 4,
+                    title: 'Skiing',
+                    body: 'Turn plain ceilings into captivating focal points with unique and visually striking designs.',
+                    imageSrc: 'https://discoverkullumanali.in/wp-content/uploads/2019/02/Manali-after-snowfall-on-Friday-discover-kullu-manali-1040x530.jpg',
+                    imageAlt: 'Roof icon',
+                },
             ],
         },
     },
@@ -279,38 +324,46 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        id: "69e7ed7e-889d-41c0-a1150401e2",
-        name: "Hero banner",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "HeroBanner",
-            id: "002",
-            title: "The World is Waiting For You",
-            subTitle: "Where will you go next?",
-            description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
-            version: "v2",
-            style: "CLASSIC",
-            bannerData: [
+        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "name": "Portfolio",
+        "version": "v1",
+        "style": "MODERN",
+        "path": "index",
+        "data": {
+            "type": "Portfolio",
+            "id": "k",
+            "title": "Our Luxury Homestays ",
+            "subTitle": "Luxury Stay at Kasuli, Devidarh & Saro",
+            "description": "At our software development company, we specialize in creating cutting-edge solutions that empower businesses and enhance user experiences.",
+            "version": "v1",
+            "style": "MODERN",
+            "portfolios": [
                 {
-                    title: "The World is Waiting For You",
-                    subTitle: "Where will you go next?",
-                    description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
-                    image:
-                    {
-                        id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                        imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
-                    },
-                    modalProps: {
-                        isOpen: false,
-                        // onClose: () => void,
-                        title: 'string',
-                    }
+                    "id": 1,
+                    "name": "Tranquil Stays: Gayatri Lodge, Kasauli",
+                    "description": "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
+                    "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
+                    "imageAlt": "Java Spring Boot Microservices Architecture",
+                    "href": "https://gayatrilodge.com/",
                 },
-            ],
-        },
+                {
+                    "id": 2,
+                    "name": "Tranquil Stays: Cedar Valley, Saroa",
+                    "description": "Creating dynamic and responsive web applications with Angular",
+                    "imageSrc": "https://lh3.googleusercontent.com/p/AF1QipOugRhCFIA1xSv_Ayy4ThNDQPBCmtYk8B7b4Uae=s1360-w1360-h1020",
+                    "imageAlt": "Angular Web Application Development",
+                    "href": "#",
+                },
+                {
+                    "id": 3,
+                    "name": "Tranquil Stays: Alpine Cafe, Devidarh",
+                    "description": "Crafting interactive and modern user interfaces with React",
+                    "imageSrc": "https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80",
+                    "imageAlt": "React Frontend Development",
+                    "href": "#",
+                },
+            ]
+        }
     },
     {
         id: "49c7-43709e0e-0c5ef7a46f6b",
@@ -369,52 +422,6 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Service",
-        version: "v3",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Service",
-            id: "k",
-            title: "Popular",
-            subTitle: "Explore & Adventure",
-            description: "Our activities like camping, trekking, skiing, and 4x4 expeditions.",
-            version: "v2",
-            style: "CLASSIC",
-            services: [
-                {
-                    id: 1,
-                    title: 'Camping',
-                    body: 'Modern Aluminum Composite Panel installations for interiors and exteriors. Combining style, durability, and weather resistance. High-Pressure Laminate installations, offering versatility and durability.',
-                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
-                    imageAlt: 'ACP & HPL icon',
-                },
-                {
-                    id: 2,
-                    title: 'Trekking',
-                    body: 'Add warmth and elegance with our premium wooden flooring options, tailored to your style and space.',
-                    imageSrc: 'https://lockyourtrip.com/blogs/wp-content/uploads/2023/05/THE-MOST-BEAUTIFUL-SNOWFALL-PLACES-TO-VISIT-IN-HIMACHAL-PRADESH.webp',
-                    imageAlt: 'Wooden icon',
-                },
-                {
-                    id: 3,
-                    title: '4*4 Expedition',
-                    body: 'Enhance natural light and aesthetics with professional glass installations for windows, doors, partitions, and facades.',
-                    imageSrc: 'https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Spiti-Valley-Snowfall-Tourist-Place-in-Himachal.jpg',
-                    imageAlt: 'Glass icon',
-                },
-                {
-                    id: 4,
-                    title: 'Skiing',
-                    body: 'Turn plain ceilings into captivating focal points with unique and visually striking designs.',
-                    imageSrc: 'https://discoverkullumanali.in/wp-content/uploads/2019/02/Manali-after-snowfall-on-Friday-discover-kullu-manali-1040x530.jpg',
-                    imageAlt: 'Roof icon',
-                },
-            ],
-        },
-    },
     // {
     //     id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
     //     name: "About-Us",
@@ -438,8 +445,42 @@ export const pahariyatri: Section[] = [
     //         ],
     //     },
     // },
+    // {
+    //     id: "69e7ed7e-889d-41c0-a1d9-62bd15040rr1e2",
+    //     name: "Hero banner",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "HeroBanner",
+    //         id: "002",
+    //         title: "The World is Waiting For You",
+    //         subTitle: "Where will you go next?",
+    //         description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         bannerData: [
+    //             {
+    //                 title: "The World is Waiting For You",
+    //                 subTitle: "Where will you go next?",
+    //                 description: "From planning to packing, Pahari Yatri is your travel companion every step of the way. Start your adventure with us today!",
+    //                 image:
+    //                 {
+    //                     id: '1',
+    //                     imageSrc: 'https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg',
+    //                     imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
+    //                 },
+    //                 modalProps: {
+    //                     isOpen: false,
+    //                     // onClose: () => void,
+    //                     title: 'string',
+    //                 }
+    //             },
+    //         ],
+    //     },
+    // },
     {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd15040rr1e2",
+        id: "69e7ed7e-889d-41c0-a1150401e2",
         name: "Hero banner",
         version: "v1",
         style: "CLASSIC",
@@ -460,7 +501,7 @@ export const pahariyatri: Section[] = [
                     image:
                     {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1587547131116-a0655a526190?auto=format&fit=crop&q=80&w=1832&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://images.unsplash.com/photo-1520982184827-6950930eaf2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
                         imageAlt: 'Desk with leather desk pad, walnut desk organizer, wireless keyboard and mouse, and porcelain mug.',
                     },
                     modalProps: {
@@ -822,9 +863,9 @@ export const pahariyatriDynamicDetails: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-43787a46f6b",
+        id: "143d8d",
         name: "Footer",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -835,6 +876,37 @@ export const pahariyatriDynamicDetails: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.pahariyatri",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/pahariyatri/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/pin_pahariyatri",
+                },],
+                copyright: "Pahari Yatri",
+            },
+            "logo": {
+                "id": "kk",
+                "imageSrc": "path/to/your/logo.png",
+                "imageAlt": "Logo Alt Text"
+            },
         },
     },
 ];
@@ -843,7 +915,7 @@ export const pahariyatriSeo: any = {
     title: "Pahari Yatri - Adventure Trekking and Mountaineering Experiences",
     description: "Pahari Yatri offers exceptional trekking and mountaineering experiences, connecting adventure seekers with nature, culture, and their adventurous spirit.",
     keywords: "adventure travel, trekking experiences, mountaineering expeditions, camping, adventure tours, wildlife safaris, cultural immersion, sustainable travel",
-    tags: "adventure travel, trekking, mountaineering, camping, adventure tours, wildlife safaris, photography expeditions, cultural immersion, sustainable travel",
+    tags: "adventure travel, trekking, mountaineering, camping, adventure tours, photography expeditions, cultural immersion, sustainable travel",
     author: "Pankaj Kumar",
     imageUrl: "https://example.com/og-image.jpg",
     siteUrl: "https://www.pahariyatri.com",

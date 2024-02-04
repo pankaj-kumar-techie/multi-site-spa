@@ -23,25 +23,13 @@ export default function ThirdService(props: { data: any }) {
     }
     return (
         <>
-        {/* <section id="services" className={`bg-${theme.colors.primary}`}>
-            <div className="section relative pt-20 pb-8 md:pt-16 md:pb-0">
-                <TitleCover title={serviceData.title} titleColor={`${textColor}`}></TitleCover>
-                <div className="container xl:max-w-6xl mx-auto px-4">
-                    <div className="flex flex-wrap flex-row -mx-4 text-center">
-                        {serviceData.services.map((s: Service) => (
-                            <ServiceCard2 key={s.id} icon={s.imageSrc} iconAlt={s.imageAlt} title={s.title} body={s.body} />
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section> */}
             <section className="flex items-center py-20 bg-white lg:h-screen dark:bg-gray-800">
                 <div className="px-4 mx-auto max-w-7xl">
                     <div className="grid mx-5 grid-cols-1 gap-0 lg:gap-0 sm:gap-4 sm:grid-cols-2 lg:grid-cols-2 mb-10">
                         <div className="">
                             <h1 className="text-6xl font-bold">{serviceData.title}</h1>
                             <span className="text-6xl font-bold text-teal-500">
-                                Activities.
+                                Activities
                             </span>
                         </div>
                         <div className="">

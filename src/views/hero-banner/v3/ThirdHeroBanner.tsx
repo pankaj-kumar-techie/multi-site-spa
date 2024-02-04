@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 
-export default function ThirdHeroBanner (props: { data: any }) {
+export default function ThirdHeroBanner(props: { data: any }) {
   const { theme } = useContext(ThemeContext);
   const textColor = useDynamicTextColor(theme.colors.primary || "");
   const bannerData = props.data.bannerData?.[0];
@@ -11,15 +11,15 @@ export default function ThirdHeroBanner (props: { data: any }) {
   }, [props.data]);
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white dark:bg-gray-900 ">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:pb-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <span className="inline-flex text-lg items-center justify-center px-5 py-2 mb-2  font-medium text-center text-white rounded-lg bg-teal-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
               Adventure & Expedition
             </span>
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white">
-             {bannerData.title}
-              <span className="text-teal-500 text-6xl">FOR YOU.</span>
+              {bannerData.title}
+              {/* <span className="text-teal-500 text-6xl">FOR YOU.</span> */}
             </h1>
             <p className="max-w-2xl mb-6 font-normal text-black lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
               {bannerData.description}
