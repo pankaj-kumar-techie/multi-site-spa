@@ -124,7 +124,7 @@ export default function App() {
                         } else if (page === 'blogs'){
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(pahariyatri);
+                            setSectionData(drayWorldLogistic);
                         }
                         setPlugins(pahariyatriPlugin);
                         break;
