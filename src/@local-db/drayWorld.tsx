@@ -358,13 +358,29 @@ export const drayWorldLogistic: Section[] = [
                     "imageSrc": "path/to/your/logo.png",
                     "imageAlt": "Logo Alt Text"
                 },
-                socialLink: [
-                    {
-                        "id": "icon-id",
-                        "link": "https://www.facebook.com/",
-                        "iconClass": "<FaFacebook />"  // Replace with the actual React component for the Facebook icon
-                    },
-                ],
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.pahariyatri",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/pahariyatri/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/pin_pahariyatri",
+                },],
                 copyright: "© 2023 Dray World. All rights reserved."
             },
         },
