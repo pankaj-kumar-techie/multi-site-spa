@@ -338,53 +338,7 @@ export const drayWorldLogistic: Section[] = [
             },
         },
     },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Footer",
-        version: "v2",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Footer",
-            id: "k",
-            title: "Hero Banner!",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v2",
-            style: "CLASSIC",
-            footer: {
-                logo: {
-                    "id": "kk",
-                    "imageSrc": "path/to/your/logo.png",
-                    "imageAlt": "Logo Alt Text"
-                },
-                socialLink: [{
-                    id: "1",
-                    name: 'facebook',
-                    className: "",
-                    link: "https://www.facebook.com/fb.pahariyatri",
-                },
-                {
-                    id: "2",
-                    name: 'instagram',
-                    className: "",
-                    link: "https://www.instagram.com/pahariyatri/",
-                },
-                {
-                    id: "3",
-                    name: 'linkedin',
-                    className: "",
-                    link: "https://www.linkedin.com/company/pahari-yatri/",
-                }, {
-                    id: "4",
-                    name: 'pinterest',
-                    className: "",
-                    link: "https://in.pinterest.com/pin_pahariyatri",
-                },],
-                copyright: "© 2023 Dray World. All rights reserved."
-            },
-        },
-    },
+  
     // {
     //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
     //     name: "ContactUs",
