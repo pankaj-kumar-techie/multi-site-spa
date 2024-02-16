@@ -741,11 +741,6 @@ export const pahariyatri: Section[] = [
                 },],
                 copyright: "Pahari Yatri",
             },
-            "logo": {
-                "id": "kk",
-                "imageSrc": "path/to/your/logo.png",
-                "imageAlt": "Logo Alt Text"
-            },
         },
     },
 ];

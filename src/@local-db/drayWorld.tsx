@@ -338,7 +338,48 @@ export const drayWorldLogistic: Section[] = [
             },
         },
     },
-  
+    {
+        id: "143d8d",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.pahariyatri",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/pahariyatri/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/pin_pahariyatri",
+                },],
+                copyright: "Dray World Logistic",
+            },
+        },
+    },
     // {
     //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
     //     name: "ContactUs",
