@@ -299,6 +299,8 @@ export const drayWorldLogistic: Section[] = [
             ],
         },
     },
+
+
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Contact Us",
@@ -338,6 +340,59 @@ export const drayWorldLogistic: Section[] = [
             },
         },
     },
+    {
+        id: "143d8df3-c7-4370-9e0e-0c5ef7a46f6b",
+        name: "ContactUs",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "TermsAndConditions",
+            id: "k",
+            title: "Disclaimer",
+            subTitle: "Coming Soon",
+            description: "By providing my phone number to “Dray World Logistics”, I agree and acknowledge that “Dray World Logistics” may send text messages to my wireless phone number for any purpose. Message and data rates may apply. Message frequency will vary, and you will be able to Opt-out by replying “STOP”. For more information on how your data will be handled, please see our privacy policy below:",
+            version: "v2",
+            style: "CLASSIC",
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "ContactUs",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "TermsAndConditions",
+            id: "k",
+            title: "Privacy Policy",
+            subTitle: "Coming Soon",
+            description: "No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.",
+            version: "v2",
+            style: "CLASSIC",
+            // termAndCondition: [
+            //     {
+            //         id: "1",
+            //         title: 'Q.What are the check-in and check-out timings at Gayatri Lodge?',
+            //         description: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //         descriptionContext: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //     },
+            //     {
+            //         id: "2",
+            //         title: 'Q.What are the check-in and check-out timings at Gayatri Lodge?',
+            //         description: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //         descriptionContext: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //     },
+            //     {
+            //         id: "3",
+            //         title: 'Q.What are the check-in and check-out timings at Gayatri Lodge?',
+            //         description: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //         descriptionContext: 'Ans:The standard check-in time at Gayatri Lodge is 2:00 PM, and the check-out time is 12:00 PM (noon). However, early check-in or late check-out requests can be accommodated based on availability and may be subject to additional charges.',
+            //     },
+            // ],
+        },
+    },
+
     {
         id: "143d8d",
         name: "Footer",

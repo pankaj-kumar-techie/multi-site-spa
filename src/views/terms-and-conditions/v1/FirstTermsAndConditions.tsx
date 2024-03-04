@@ -18,19 +18,19 @@ const FirstTermsAndConditions = (props: { data: any }) => {
         setTacData(props.data);
     }, [props.data]);
 
-    if (!tacData.termAndCondition) {
-        return <SectionShimmer title={tacData.title}></SectionShimmer>;
-    }
+    // if (!tacData.termAndCondition) {
+    //     return <SectionShimmer title={tacData.title}></SectionShimmer>;
+    // }
     return (
         <section className={`bg-${theme.colors.primary} container mx-auto px-4`}>
-            <TitleCover title={tacData.title} titleColor={`${textColor}`} fontFamily="font-bold" />
+            <TitleCover title={tacData.title} titleColor={`${textColor}`} fontFamily="font-bold" paragraph={tacData.description}  />
             <div className="prose text-center">
-                {tacData.termAndCondition.map((tac: TermAndCondition) => (
+                {/* {tacData.termAndCondition.map((tac: TermAndCondition) => (
                     <div key={tac.id}>
                         <h3 className={textColor}>{tac.title}</h3>
                         <p className={textColor}>{tac.description}</p>
                     </div>
-                ))}
+                ))} */}
             </div>
         </section>
     );
