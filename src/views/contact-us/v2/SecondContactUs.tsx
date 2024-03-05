@@ -29,7 +29,7 @@ export default function SecondContactUs(props: { data: any }) {
     };
 
     return (
-        <section className={`bg-${theme.colors.primary} "mb-32 text-gray-800`}>
+        <section id="contact-us" className={`bg-${theme.colors.primary} "mb-32 text-gray-800`}>
             <div className="flex justify-center">
                 <TitleCover title={contactUsData?.title} titleColor={`${textColor}`}></TitleCover> {/* Use dynamic text color */}
             </div>

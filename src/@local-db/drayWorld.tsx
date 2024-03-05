@@ -31,22 +31,22 @@ export const drayWorldLogistic: Section[] = [
                 {
                     id: "string",
                     label: "Home",
-                    url: '/',
+                    url: 'hero',
                 },
                 {
                     id: "2",
                     label: "About Us",
-                    url: '/#about-us',
+                    url: 'about-us',
                 },
                 {
                     id: "3",
                     label: "Service",
-                    url: '/#service',
+                    url: 'service',
                 },
                 {
                     id: "4",
                     label: "Contact Us",
-                    url: '/#contact-us',
+                    url: 'contact-us',
                 }
             ],
 

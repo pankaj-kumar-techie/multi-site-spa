@@ -59,7 +59,7 @@ export default function FirstHeroBanner(props: { data: any }) {
   };
 
   return (
-    <section className={`bg-${theme.colors.primary} min-h-screen flex flex-col justify-center relative`}>
+    <section id="hero" className={`bg-${theme.colors.primary} min-h-screen flex flex-col justify-center relative`}>
       {renderBackgroundContent()}
       <div className="py-12 flex flex-col justify-center items-center text-center relative z-1">
         <TitleCover

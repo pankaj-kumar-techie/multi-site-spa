@@ -39,6 +39,13 @@ export default function FirstHeader(props: { data: any }) {
         }
     }, [props.data]);
 
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
             <div style={{ backgroundColor: `${color}` }} className='fixed left-0 top-0 w-full z-10 ease-in duration-300'>
@@ -59,8 +66,11 @@ export default function FirstHeader(props: { data: any }) {
                     {headerData.menu && (
                         <ul style={{ color: `${textColor}` }} className='hidden sm:flex'>
                             {headerData.menu.map((menuItem: MenuItem) => (
+                                // <li key={menuItem.id} className='p-4'>
+                                //     <Link to={menuItem.url}>{menuItem.label}</Link>
+                                // </li>
                                 <li key={menuItem.id} className='p-4'>
-                                    <Link to={menuItem.url}>{menuItem.label}</Link>
+                                    <button onClick={() => scrollToSection(menuItem.url)}>{menuItem.label}</button>
                                 </li>
                             ))}
                         </ul>

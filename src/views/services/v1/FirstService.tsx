@@ -25,7 +25,7 @@ export default function FirstService(props: { data: any }) {
     }
    
     return (
-        <section className={`bg-${theme.colors.primary} md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]`} >
+        <section id="service" className={`bg-${theme.colors.primary} md:pt-20 pt-10  p-10 pb-12 lg:pt-[120px] lg:pb-[90px]`} >
             <div className="container mx-auto">
                 <div className="flex flex-wrap">
                     <div className="w-full pb-10 px-4">
