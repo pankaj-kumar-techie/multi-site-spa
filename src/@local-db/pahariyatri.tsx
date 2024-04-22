@@ -10,7 +10,7 @@ export const pahariyatriPlugin: PluginConfig[] = [
         name: "FloatingButton",
         isActive: false,
         data: {
-            "mobile": "9569576707",
+            "mobile": "6280888188",
             "text": "Hello Pahari Yatri! 🏔️ Interested in your travel package. Please share more details."
         },
     }
@@ -95,7 +95,7 @@ export const pahariyatri: Section[] = [
         data: {
             type: "Package",
             id: "k",
-            title: "Winter is Coming!",
+            title: "Explore Our Unexplored Treks!",
             subTitle: "Join Us for a Trip to the Himalayas",
             description: "Hero Banner Paragraph is here",
             version: "v1",
@@ -116,45 +116,47 @@ export const pahariyatri: Section[] = [
 
                 },
                 {
-                    id: 6,
-                    name: 'Manali Weekend Trip',
-                    href: '/packages/6',
-                    price: "7500 INR Per Person",
-                    duration: "7 Days/6 Nights",
-                    destination: "Manali, Himachal Pradesh",
+                    id: 103,
+                    name: 'Malana-Devroopa Trek',
+                    href: '/packages/101',
+                    price: "9500 INR Per Person", // Update with the appropriate price
+                    duration: "4 Days/3 Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
                     difficulty: "Challenging",
-                    description: 'Opulent, indulgent, and exclusive retreat for discerning guests.',
-                    imageSrc: "https://discoverkullumanali.in/wp-content/uploads/2019/02/Manali-after-snowfall-on-Friday-discover-kullu-manali-1040x530.jpg",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
                 {
-                    id: 3,
-                    name: 'Kasauli Weekend Gateway',
-                    href: '/packages/5',
-                    price: "8500 INR Per Person",
-                    duration: "3 Days/2 Nights",
-                    destination: "Solan, Himachal Pradesh",
+                    id: 106,
+                    name: 'Shikari Devi Expedition',
+                    href: '/packages/101',
+                    price: "7500 INR Per Person", // Update with the appropriate price
+                    duration: "3 Days/2 Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
                     difficulty: "Easy",
-                    description: 'Trek through the remote Markha Valley, passing through traditional Ladakhi villages, monasteries, and stunning landscapes.',
-                    imageSrc: "https://i.pinimg.com/736x/d5/57/ea/d557eaded0a7a135603f4977a24b966f.jpg",
-                    imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
                 {
-                    id: 4,
-                    name: 'Spiti Valley Winter Expedition',
-                    href: '/packages/4',
-                    price: "26000 INR Per Person",
-                    duration: "10 Days/9 Nights",
-                    destination: "Lahaul & Spiti , Himachal Pradesh",
-                    difficulty: "Extreme",
-                    season: "Winter (December to February)",
-                    description: 'Embark on a unique winter trek on the frozen Zanskar River and witness the stunning frozen landscapes of the region.',
-                    imageSrc: "https://www.tourmyindia.com/blog//wp-content/uploads/2021/11/Spiti-Valley-Snowfall-Tourist-Place-in-Himachal.jpg",
-                    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+                    id: 104,
+                    name: 'Bushal Peak Trek Expedition ',
+                    href: '/packages/101',
+                    price: "XXXX INR Per Person", // Update with the appropriate price
+                    duration: "XX Days/XX Nights", // Update with the appropriate duration
+                    destination: "Kullu, Himachal Pradesh",
+                    difficulty: "Easy",
+                    season: "",
+                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+                    imageSrc: "https://i.pinimg.com/564x/00/5c/2c/005c2c487b299a12e196e23f5d8cd6a3.jpg", // Update with the appropriate image URL
+                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
                 },
                 {
                     id: 5,
-                    name: 'Saroa Devi Weekend Gateway',
+                    name: 'Kamrunag Lake Weekend Gateway',
                     href: '/packages/5',
                     price: "6500 INR Per Person",
                     duration: "3 Days/2 Nights",
@@ -227,144 +229,102 @@ export const pahariyatri: Section[] = [
             ],
         },
     },
-    {
-        id: "143d8df3-c7-43709e0e-0c5ef7a46f6b",
-        name: " ",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Package",
-            id: "k",
-            title: "Explore Our Unexplored Treks!!",
-            subTitle: "Join Us for a Trip to the Himalayas",
-            description: "Hero Banner Paragraph is here",
-            version: "v2",
-            style: "CLASSIC",
-            packages: [
-                {
-                    id: 101,
-                    name: 'Pindari Glacier ',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Challenging",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://i.pinimg.com/236x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-                {
-                    id: 102,
-                    name: 'Bushal Peak Trek Expedition ',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Easy",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://i.pinimg.com/564x/f8/8a/4e/f88a4e62f7211d3f7c35af0308a556fa.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-                {
-                    id: 103,
-                    name: 'Malana-Chanderkhani Pass Trek',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Easy",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-                {
-                    id: 104,
-                    name: 'Bushal Peak Trek Expedition ',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Easy",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://i.pinimg.com/564x/00/5c/2c/005c2c487b299a12e196e23f5d8cd6a3.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-                {
-                    id: 105,
-                    name: 'Shikhar Srikhandu Trek Expedition ',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Easy",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-                {
-                    id: 106,
-                    name: 'Kugti Pass Trek',
-                    href: '/packages/101',
-                    price: "XXXX INR Per Person", // Update with the appropriate price
-                    duration: "XX Days/XX Nights", // Update with the appropriate duration
-                    destination: "Kullu, Himachal Pradesh",
-                    difficulty: "Easy",
-                    season: "",
-                    description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
-                    imageSrc: "https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg", // Update with the appropriate image URL
-                    imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
-                },
-            ],
-        },
-    },
-    {
-        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        "name": "Portfolio",
-        "version": "v1",
-        "style": "MODERN",
-        "path": "index",
-        "data": {
-            "type": "Portfolio",
-            "id": "k",
-            "title": "Our Luxury Homestays ",
-            "subTitle": "Luxury Stay at Kasuli, Devidarh & Saro",
-            "description": "At our software development company, we specialize in creating cutting-edge solutions that empower businesses and enhance user experiences.",
-            "version": "v1",
-            "style": "MODERN",
-            "portfolios": [
-                {
-                    "id": 1,
-                    "name": "Tranquil Stays: Gayatri Lodge, Kasauli",
-                    "description": "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
-                    "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
-                    "imageAlt": "Java Spring Boot Microservices Architecture",
-                    "href": "https://gayatrilodge.com/",
-                },
-                {
-                    "id": 2,
-                    "name": "Tranquil Stays: Cedar Valley, Saroa",
-                    "description": "Creating dynamic and responsive web applications with Angular",
-                    "imageSrc": "https://lh3.googleusercontent.com/p/AF1QipOugRhCFIA1xSv_Ayy4ThNDQPBCmtYk8B7b4Uae=s1360-w1360-h1020",
-                    "imageAlt": "Angular Web Application Development",
-                    "href": "#",
-                },
-                {
-                    "id": 3,
-                    "name": "Tranquil Stays: Alpine Cafe, Devidarh",
-                    "description": "Crafting interactive and modern user interfaces with React",
-                    "imageSrc": "https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80",
-                    "imageAlt": "React Frontend Development",
-                    "href": "#",
-                },
-            ]
-        }
-    },
+    // {
+    //     id: "143d8df3-c7-43709e0e-0c5ef7a46f6b",
+    //     name: " ",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "Package",
+    //         id: "k",
+    //         title: "Explore Our Unexplored Treks!!",
+    //         subTitle: "Join Us for a Trip to the Himalayas",
+    //         description: "Hero Banner Paragraph is here",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         packages: [
+    //             {
+    //                 id: 101,
+    //                 name: 'Pindari Glacier ',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Challenging",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://i.pinimg.com/236x/5f/9b/a5/5f9ba5a859d81f8feb156bf230b8877f.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //             {
+    //                 id: 102,
+    //                 name: 'Bushal Peak Trek Expedition ',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Easy",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://i.pinimg.com/564x/f8/8a/4e/f88a4e62f7211d3f7c35af0308a556fa.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //             {
+    //                 id: 103,
+    //                 name: 'Malana-Chanderkhani Pass Trek',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Easy",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://i.pinimg.com/564x/6e/b6/86/6eb6867859adb6575c3703705809b933.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //             {
+    //                 id: 104,
+    //                 name: 'Bushal Peak Trek Expedition ',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Easy",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://i.pinimg.com/564x/00/5c/2c/005c2c487b299a12e196e23f5d8cd6a3.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //             {
+    //                 id: 105,
+    //                 name: 'Shikhar Srikhandu Trek Expedition ',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Easy",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://himshikhartrekking.com/admin/include/upload/packages/62108a3bb6c9aFB_IMG_1568179358261.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //             {
+    //                 id: 106,
+    //                 name: 'Kugti Pass Trek',
+    //                 href: '/packages/101',
+    //                 price: "XXXX INR Per Person", // Update with the appropriate price
+    //                 duration: "XX Days/XX Nights", // Update with the appropriate duration
+    //                 destination: "Kullu, Himachal Pradesh",
+    //                 difficulty: "Easy",
+    //                 season: "",
+    //                 description: 'Embark on a spiritual journey to Shrikand, a sacred mountain in the Himalayas. Immerse yourself in the divine atmosphere and breathtaking landscapes.',
+    //                 imageSrc: "https://i.pinimg.com/564x/1b/bf/db/1bbfdbd207edfe0fb208428d595291dd.jpg", // Update with the appropriate image URL
+    //                 imageAlt: 'Panoramic view of Shrikand peak surrounded by clouds.',
+    //             },
+    //         ],
+    //     },
+    // },
     {
         id: "49c7-43709e0e-0c5ef7a46f6b",
         name: " ",
@@ -421,6 +381,48 @@ export const pahariyatri: Section[] = [
                 // More packages...
             ],
         },
+    },
+    {
+        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "name": "Portfolio",
+        "version": "v1",
+        "style": "MODERN",
+        "path": "index",
+        "data": {
+            "type": "Portfolio",
+            "id": "k",
+            "title": "Our Luxury Homestays ",
+            "subTitle": "Luxury Stay at Kasuli, Devidarh & Saro",
+            "description": "At our software development company, we specialize in creating cutting-edge solutions that empower businesses and enhance user experiences.",
+            "version": "v1",
+            "style": "MODERN",
+            "portfolios": [
+                {
+                    "id": 1,
+                    "name": "Tranquil Stays: Gayatri Lodge, Kasauli",
+                    "description": "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
+                    "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
+                    "imageAlt": "Java Spring Boot Microservices Architecture",
+                    "href": "https://gayatrilodge.com/",
+                },
+                {
+                    "id": 2,
+                    "name": "Tranquil Stays: Cedar Valley, Saroa",
+                    "description": "Creating dynamic and responsive web applications with Angular",
+                    "imageSrc": "https://lh3.googleusercontent.com/p/AF1QipOugRhCFIA1xSv_Ayy4ThNDQPBCmtYk8B7b4Uae=s1360-w1360-h1020",
+                    "imageAlt": "Angular Web Application Development",
+                    "href": "#",
+                },
+                {
+                    "id": 3,
+                    "name": "Tranquil Stays: Alpine Cafe, Devidarh",
+                    "description": "Crafting interactive and modern user interfaces with React",
+                    "imageSrc": "https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80",
+                    "imageAlt": "React Frontend Development",
+                    "href": "#",
+                },
+            ]
+        }
     },
     // {
     //     id: "143d8df3-4k-9e0e-0c5ef7a46f6b",
