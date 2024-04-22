@@ -112,13 +112,13 @@ export default function PackageCard(packageDetail: Package) {
             <span className="mr-2">View Trek</span> <FaChevronCircleRight />
           </button> */}
         </div>
-        <div className="flex bg-gray-300 rounded-b-lg mt-4 justify-center p-2">
+        {/* <div className="flex bg-gray-300 rounded-b-lg mt-4 justify-center p-2">
           <div className="flex items-center">
             <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
               <span className="mr-2 w-[100%]">View Details</span> <FaChevronCircleRight />
             </button>
           </div>
-        </div>
+        </div> */}
       </a>
     </div>
   );
