@@ -8,7 +8,7 @@ export const pahariyatriTheme: any = {
 export const pahariyatriPlugin: PluginConfig[] = [
     {
         name: "FloatingButton",
-        isActive: false,
+        isActive: true,
         data: {
             "mobile": "6280888188",
             "text": "Hello Pahari Yatri! 🏔️ Interested in your travel package. Please share more details."
@@ -18,7 +18,7 @@ export const pahariyatriPlugin: PluginConfig[] = [
 
 export const pahariyatri: Section[] = [
     {
-        id: "889d-41c0-a1d9-62bd150401e2",
+        id: "889d-41c088iiy-62bd150401e2",
         name: "Header",
         version: "v3",
         style: "MODERN",
@@ -195,7 +195,7 @@ export const pahariyatri: Section[] = [
             title: "Popular",
             subTitle: "Explore & Adventure",
             description: "Our activities like camping, trekking, skiing, and 4x4 expeditions.",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             services: [
                 {
@@ -383,7 +383,7 @@ export const pahariyatri: Section[] = [
         },
     },
     {
-        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "id": "143d8df3-49iii-4370-9e0e",
         "name": "Portfolio",
         "version": "v1",
         "style": "MODERN",
@@ -398,7 +398,7 @@ export const pahariyatri: Section[] = [
             "style": "MODERN",
             "portfolios": [
                 {
-                    "id": 1,
+                    "id": 1001,
                     "name": "Tranquil Stays: Gayatri Lodge, Kasauli",
                     "description": "Discover serenity and unmatched comfort at Gayatri Lodge, nestled in the heart of Kasauli.",
                     "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg?k=0a09a8f39a458aa2160a678ffa42a0f9ac3f9936bd43496122b2a6bf3bd9ac58&o=&hp=1",
@@ -406,7 +406,7 @@ export const pahariyatri: Section[] = [
                     "href": "https://gayatrilodge.com/",
                 },
                 {
-                    "id": 2,
+                    "id": 987,
                     "name": "Tranquil Stays: Cedar Valley, Saroa",
                     "description": "Creating dynamic and responsive web applications with Angular",
                     "imageSrc": "https://lh3.googleusercontent.com/p/AF1QipOugRhCFIA1xSv_Ayy4ThNDQPBCmtYk8B7b4Uae=s1360-w1360-h1020",
@@ -414,7 +414,7 @@ export const pahariyatri: Section[] = [
                     "href": "#",
                 },
                 {
-                    "id": 3,
+                    "id": 30092,
                     "name": "Tranquil Stays: Alpine Cafe, Devidarh",
                     "description": "Crafting interactive and modern user interfaces with React",
                     "imageSrc": "https://images.unsplash.com/photo-1597256817041-0c75c0633658?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=849&q=80",
