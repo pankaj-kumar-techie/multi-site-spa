@@ -14,6 +14,8 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
+import { basic } from './@local-db/basic';
+import { gifthampers, gifthampersTheme } from './@local-db/giftHampers';
 // import { ClientService } from './service/ClientService';
 
 
@@ -118,13 +120,13 @@ export default function App() {
                         break;
                     default:
                         setSeo(loondsSeo);
-                        setTheme(pahariyatriTheme);
+                        setTheme(gifthampersTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
                         } else if (page === 'blogs'){
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(pahariyatri);
+                            setSectionData(loonds);
                         }
                         setPlugins(pahariyatriPlugin);
                         break;
