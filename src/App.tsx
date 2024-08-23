@@ -16,6 +16,7 @@ import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
 import { basic } from './@local-db/basic';
 import { gifthampers, gifthampersTheme } from './@local-db/giftHampers';
+import { foregrowsolutions, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';
 
 
@@ -119,10 +120,10 @@ export default function App() {
                         setSeo(drayWorldLogisticSeo);
                         break;
                     case "foregrowsolutions.com":
-                        setSectionData(loonds);
-                        setPlugins(drayWorldLogisticPlugin)
-                        setTheme(drayWorldLogisticTheme);
-                        setSeo(drayWorldLogisticSeo);
+                        setSectionData(foregrowsolutions);
+                        // setPlugins(drayWorldLogisticPlugin)
+                        setTheme(foregrowsolutionsTheme);
+                        setSeo(foregrowsolutionsSeo);
                         break;
                     default:
                         setSeo(loondsSeo);
