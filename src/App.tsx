@@ -126,7 +126,7 @@ export default function App() {
                         } else if (page === 'blogs'){
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(gifthampers);
+                            setSectionData(loonds);
                         }
                         setPlugins(pahariyatriPlugin);
                         break;
