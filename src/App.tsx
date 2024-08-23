@@ -118,6 +118,12 @@ export default function App() {
                         setTheme(drayWorldLogisticTheme);
                         setSeo(drayWorldLogisticSeo);
                         break;
+                    case "foregrowsolutions.com":
+                        setSectionData(loonds);
+                        setPlugins(drayWorldLogisticPlugin)
+                        setTheme(drayWorldLogisticTheme);
+                        setSeo(drayWorldLogisticSeo);
+                        break;
                     default:
                         setSeo(loondsSeo);
                         setTheme(gifthampersTheme);
