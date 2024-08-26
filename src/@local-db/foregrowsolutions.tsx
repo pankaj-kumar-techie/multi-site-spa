@@ -188,47 +188,54 @@ export const foregrowsolutions: Section[] = [
         "data": {
             "type": "Service",
             "id": "k",
-            "title": "Our Software Development Services",
-            "subTitle": "Innovative Solutions for Your Digital Success",
-            "description": "Empower your business with our comprehensive software development services. We specialize in creating cutting-edge solutions that cater to your unique needs, ensuring a seamless digital experience.",
+            "title": "Our Expert Software Development Services",
+            "subTitle": "Transforming Ideas into Innovative Solutions for Your Business",
+            "description": "At our software development company, we specialize in backend and frontend development, utilizing a wide range of technologies to deliver scalable, secure, and high-performance solutions. Our expertise spans across leading programming languages, frameworks, and cloud platforms, ensuring that we meet the unique needs of every client with precision and excellence.",
             "version": "v1",
             "style": "MODERN",
             "services": [
                 {
                     "id": 1,
                     "title": "Custom Software Development",
-                    "body": "Tailor-made software solutions crafted to meet the specific requirements of your business, ensuring optimal performance and efficiency.",
+                    "body": "Tailor-made software solutions crafted to meet your unique business needs, ensuring optimal performance and efficiency.",
                     "imageSrc": "https://example.com/custom-development-icon.jpg",
-                    "imageAlt": "Custom Software Development Icon",
-                },
-                {
-                    "id": 2,
-                    "title": "Web Application Development",
-                    "body": "Build robust and scalable web applications using the latest technologies, providing a seamless user experience across devices.",
-                    "imageSrc": "https://example.com/web-app-development-icon.jpg",
-                    "imageAlt": "Web Application Development Icon",
-                },
-                {
-                    "id": 3,
-                    "title": "Mobile App Development",
-                    "body": "Create engaging and user-friendly mobile applications for iOS and Android platforms, reaching your audience wherever they are.",
-                    "imageSrc": "https://example.com/mobile-app-development-icon.jpg",
-                    "imageAlt": "Mobile App Development Icon",
+                    "imageAlt": "Custom Software Development Icon"
                 },
                 {
                     "id": 4,
-                    "title": "Cloud Solutions with AWS",
-                    "body": "Harness the power of AWS cloud services for scalable, secure, and flexible cloud solutions, ensuring your business stays ahead in the digital era.",
-                    "imageSrc": "https://example.com/aws-cloud-solutions-icon.jpg",
-                    "imageAlt": "Cloud Solutions with AWS Icon",
+                    "title": "Microservices Architecture",
+                    "body": "Designing microservices architectures that enhance flexibility and scalability, allowing for independent deployment and improved system resilience.",
+                    "imageSrc": "https://example.com/microservices-icon.jpg",
+                    "imageAlt": "Microservices Architecture Icon"
                 },
                 {
                     "id": 5,
-                    "title": "UI/UX Design",
-                    "body": "Craft visually appealing and intuitive user interfaces, enhancing user satisfaction and creating a positive brand perception.",
-                    "imageSrc": "https://example.com/ui-ux-design-icon.jpg",
-                    "imageAlt": "UI/UX Design Icon",
-                }
+                    "title": "REST API Development",
+                    "body": "Creating robust and scalable REST APIs that facilitate seamless integration between your applications, adhering to best practices for security and performance.",
+                    "imageSrc": "https://example.com/rest-api-icon.jpg",
+                    "imageAlt": "REST API Development Icon"
+                },
+                {
+                    "id": 6,
+                    "title": "Database Solutions",
+                    "body": "Offering expertise in SQL and NoSQL databases, ensuring data integrity and optimized performance for your applications.",
+                    "imageSrc": "https://example.com/database-solutions-icon.jpg",
+                    "imageAlt": "Database Solutions Icon"
+                },
+                {
+                    "id": 7,
+                    "title": "Cloud Solutions",
+                    "body": "Harnessing the power of AWS, Google Cloud, and Azure for scalable, secure, and flexible cloud solutions, ensuring your business stays ahead in the digital era.",
+                    "imageSrc": "https://example.com/cloud-solutions-icon.jpg",
+                    "imageAlt": "Cloud Solutions Icon"
+                },
+                {
+                    "id": 9,
+                    "title": "Mobile App Development",
+                    "body": "Building responsive and user-friendly mobile applications for iOS and Android platforms that enhance user experiences and drive engagement.",
+                    "imageSrc": "https://example.com/mobile-app-development-icon.jpg",
+                    "imageAlt": "Mobile App Development Icon"
+                },
             ]
         }
     },
@@ -521,26 +528,26 @@ export const foregrowsolutions: Section[] = [
                     id: "1",
                     name: 'facebook',
                     className: "",
-                    link: "https://www.facebook.com/fb.pahariyatri",
+                    link: "https://www.facebook.com/fb.foregrow",
                 },
                 {
                     id: "2",
                     name: 'instagram',
                     className: "",
-                    link: "https://www.instagram.com/pahariyatri/",
+                    link: "https://www.instagram.com/foregrow/",
                 },
                 {
                     id: "3",
                     name: 'linkedin',
                     className: "",
-                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                    link: "https://www.linkedin.com/company/foregrow/",
                 }, {
                     id: "4",
                     name: 'pinterest',
                     className: "",
-                    link: "https://in.pinterest.com/pin_pahariyatri",
+                    link: "https://in.pinterest.com/foregrow",
                 },],
-                copyright: "foregrow Solutions",
+                copyright: "Foregrow Solutions",
             },
         },
     },
