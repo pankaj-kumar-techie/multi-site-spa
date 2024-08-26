@@ -127,13 +127,13 @@ export default function App() {
                         break;
                     default:
                         setSeo(loondsSeo);
-                        setTheme(gifthampersTheme);
+                        setTheme(foregrowsolutionsTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
                         } else if (page === 'blogs'){
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(loonds);
+                            setSectionData(foregrowsolutions);
                         }
                         setPlugins(pahariyatriPlugin);
                         break;

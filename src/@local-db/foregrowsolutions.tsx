@@ -14,40 +14,47 @@ export const foregrowsolutions: Section[] = [
         data: {
             type: "Header",
             id: "001",
-            title: "Archdy - Your Trusted Architecture Firm",
-            subTitle: "Designing Dreams into Reality",
-            description: "Archdy is your premier destination for innovative architecture, interior design, and landscape solutions. Explore our portfolio and contact us today for expert consultation.",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
             version: "v2",
             style: "MODERN",
-            logo:
-            {
+            logo: {
                 id: '1',
                 imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
-                imageAlt: 'Architectural design concepts.',
+                imageAlt: 'ForeGrow Solutions logo',
             },
             menu: [
                 {
                     id: "menu-1",
                     label: "Home",
                     url: "/home",
-                }, {
+                },
+                {
                     id: "menu-2",
                     label: "About Us",
                     url: "/about-us",
-                }, {
+                },
+                {
                     id: "menu-3",
+                    label: "Services",
+                    url: "/services",
+                },
+                {
+                    id: "menu-4",
                     label: "Our Portfolio",
                     url: "/portfolio",
-                }, {
-                    id: "menu-4",
-                    label: "Contact us",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
                     url: "/contact-us",
                 },
             ],
             contactUs: {
-                address: "",
-                email: "contact@archdy.com",
-                phone: "+91 1234567890",
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
             },
         },
     },
@@ -60,16 +67,16 @@ export const foregrowsolutions: Section[] = [
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "Empower Your Business with Innovative Software Solutions",
-            subTitle: "Driving Digital Transformation",
+            title: "Empower Your Business with ForeGrow Solutions",
+            subTitle: "Innovative Software, Reliable Results",
             description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
             version: "v2",
             style: "CLASSIC",
             bannerData: [
                 {
-                    title: "Your Trusted Technology Partner",
-                    subTitle: "Building Tomorrow's Solutions Today",
-                    description: "We are committed to delivering top-notch software solutions tailored to meet your unique business needs. Explore our capabilities and partner with us for success.",
+                    title: "Your Technology Partner for Success",
+                    subTitle: "Building the Future, One Solution at a Time",
+                    description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
                     image: {
                         id: '1',
                         imageSrc: 'https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -77,7 +84,6 @@ export const foregrowsolutions: Section[] = [
                     },
                     modalProps: {
                         isOpen: true,
-                        // onClose: () => void,
                         title: 'Unlocking Innovation in Every Line of Code',
                     }
                 },
@@ -85,24 +91,24 @@ export const foregrowsolutions: Section[] = [
         },
     },
     {
-        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        "name": "About-Us",
-        "version": "v1",
-        "style": "MODERN",
-        "path": "index",
-        "data": {
-            "type": "AboutUs",
-            "id": "003",
-            "title": "About [Your Company Name]",
-            "subTitle": "Innovating the Future of Technology",
-            "description": "At [Your Company Name], we are a dynamic and innovative software engineering group that specializes in developing cutting-edge technology solutions. With a commitment to excellence and a passion for innovation, we bring together a team of skilled professionals dedicated to delivering software solutions that empower businesses and drive digital transformation.",
-            "version": "v1",
-            "style": "MODERN",
-            "images": [
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About Us",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About ForeGrow Solutions",
+            subTitle: "Innovating the Future of Technology",
+            description: "At ForeGrow Solutions, we are a dynamic and forward-thinking technology group specializing in delivering innovative software solutions tailored to meet the unique needs of businesses across various industries. Our mission is to empower organizations through cutting-edge technology and unparalleled expertise, ensuring they stay ahead in a rapidly evolving digital landscape. From custom software development and web applications to mobile solutions and cloud integration, we offer a comprehensive suite of services designed to drive efficiency and growth. Our dedicated team of professionals is committed to providing exceptional support and strategic insights to help our clients achieve their goals. Choose ForeGrow Solutions for your technology needs, and let's shape the future together.",
+            version: "v1",
+            style: "MODERN",
+            images: [
                 {
-                    "id": "1",
-                    "imageSrc": "https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Team Collaboration",
+                    id: "1",
+                    imageSrc: "https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    imageAlt: "Team Collaboration",
                 }
             ]
         }
@@ -229,7 +235,7 @@ export const foregrowsolutions: Section[] = [
     {
         "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         "name": "Service",
-        "version": "v1",
+        "version": "v2",
         "style": "MODERN",
         "path": "index",
         "data": {
@@ -238,7 +244,7 @@ export const foregrowsolutions: Section[] = [
             "title": "Client Testimonials",
             "subTitle": "Our Clients Speak",
             "description": "See what our clients have to say about their experiences working with us.",
-            "version": "v1",
+            "version": "v2",
             "style": "MODERN",
             "testimonials": [
                 {
@@ -473,24 +479,25 @@ export const foregrowsolutions: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "ContactUs",
-        version: "v2",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
             type: "ContactUs",
             id: "k",
-            title: "Get In Touch",
-            subTitle: "Hero Banner Sub Title is here",
-            description: "Hero Banner Paragraph is here",
-            version: "v2",
+            title: "Get in Touch with Us",
+            subTitle: "We'd Love to Hear from You!",
+            description: "Reach out to us for any inquiries, feedback, or assistance. Our team is here to help you.",
+            version: "v1",
             style: "CLASSIC",
             contactUs: {
-                address: "Himachal Pradesh",
-                email: "pahariyatri@gmail.com",
-                phone: "+91 9569576707",
+                address: "H.no 221, Posh City, Sector 91, Landran, S.A.S.nagar Mohali, Punjab , India, 140307",
+                email: "info@foregrowsolutions.com",
+                phone: "+91 000000000",
                 formFields: [
                     { name: 'name', label: 'Name', type: 'text', required: true },
                     { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                    { name: 'mobile', label: 'Message', type: 'textarea', required: true },
                 ]
             },
         },
@@ -498,7 +505,7 @@ export const foregrowsolutions: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",
-        version: "v1",
+        version: "v2",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -509,16 +516,42 @@ export const foregrowsolutions: Section[] = [
             description: "Hero Banner Paragraph is here",
             version: "v1",
             style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.pahariyatri",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/pahariyatri/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/pahari-yatri/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/pin_pahariyatri",
+                },],
+                copyright: "foregrow Solutions",
+            },
         },
     },
 ];
 
 export const foregrowsolutionsSeo: any = {
-    title: "Foregrow Solutions - Innovative Software Solutions for Modern Businesses",
-    description: "Empower your business with Loonds' cutting-edge software development services. We specialize in delivering innovative solutions, from microservices and Spring Boot to Laravel, React, Angular, and Flutter.",
-    keywords: "software development, innovative solutions, microservices, Spring Boot, Laravel, React, Angular, Flutter, technology services, digital transformation",
-    tags: "software development, microservices, Spring Boot, Laravel, React, Angular, Flutter, technology solutions, digital innovation, modern business",
-    author: "Your Name",
-    imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.loonds.com",
+    title: "Foregrow Solutions - Innovative Software Development & Cloud Expertise",
+    description: "Foregrow Solutions empowers businesses with advanced software development services, specializing in frontend and backend technologies, cloud solutions (AWS, Azure, Google Cloud), and modern frameworks like .NET, Java, Node.js, React, Angular, and Next.js.",
+    keywords: "software development, cloud solutions, frontend, backend, AWS, Azure, Google Cloud, .NET, Java, Node.js, React, Angular, Next.js, SQL, NoSQL, innovative solutions, digital transformation",
+    tags: "software development, cloud computing, AWS, Azure, Google Cloud, frontend technologies, backend technologies, .NET, Java, Node.js, React, Angular, Next.js, SQL, NoSQL, modern business solutions",
+    author: "Foregrow Solutions Team",
+    imageUrl: "https://example.com/foregrow-og-image.jpg",
+    siteUrl: "https://www.foregrowsolutions.com",
 };
