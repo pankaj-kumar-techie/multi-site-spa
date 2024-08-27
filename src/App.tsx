@@ -126,7 +126,7 @@ export default function App() {
                         setSeo(foregrowsolutionsSeo);
                         break;
                     default:
-                        setSeo(loondsSeo);
+                        setSeo(foregrowsolutionsSeo);
                         setTheme(foregrowsolutionsTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
