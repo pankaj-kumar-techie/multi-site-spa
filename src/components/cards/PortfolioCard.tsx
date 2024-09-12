@@ -11,10 +11,10 @@ export default function PortfolioCard(portfolio: {
     imageAlt: any
 }){
     const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.primary || "");
+    const textColor = useDynamicTextColor(theme.colors.secondary || "");
     return(
         <div key={portfolio.id}
-             className={`group relative bg-${theme.colors.secondary} my-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500`}>
+             className={`group relative bg-${theme.colors.primary} my-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500`}>
             <div
                 className="relative w-full h-80  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                 <img

@@ -29,7 +29,7 @@ export default function TestimonialCard2(props: {
 
 
 
-            <p className={`text-4 text-right`}>{props.testimonial}</p>
+            <p className={`text-4 text-center`}>{props.testimonial}</p>
         </div>
     )
 }

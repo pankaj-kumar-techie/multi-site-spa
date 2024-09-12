@@ -11,7 +11,7 @@ export default function ThirdHeroBanner(props: { data: any }) {
   }, [props.data]);
   return (
     <>
-      <section className="bg-white dark:bg-gray-900 ">
+      <section className="bg-white ">
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:pb-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <span className="inline-flex text-lg items-center justify-center px-5 py-2 mb-2  font-medium text-center text-white rounded-lg bg-teal-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
