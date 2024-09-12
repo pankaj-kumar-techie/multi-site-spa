@@ -22,7 +22,7 @@ export const kalaByHimani: Section[] = [
             style: "MODERN",
             logo: {
                 id: '1',
-                imageSrc: 'https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg',
+                imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
                 imageAlt: 'Customized Gift Hampers Logo',
             },
             menu: [
@@ -433,6 +433,240 @@ export const kalaByHimani: Section[] = [
             },
         }
     }
+];
+
+export const kalaByHimaniContactUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "Customized Gift Hampers",
+            subTitle: "For Every Occasion",
+            description: "Explore our unique, handcrafted gift hampers tailored to enhance your special moments and celebrations. Perfect for birthdays, anniversaries, weddings, and more.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                imageAlt: 'Customized Gift Hampers Logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-3",
+                    label: "Our Hampers",
+                    url: "/hampers",
+                }, {
+                    id: "menu-4",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "",
+                email: "contact@kalaByHimani.com",
+                phone: "+91 1234567890",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "Customized Gift Hampers for Every Occasion",
+            subTitle: "Perfectly Crafted with Love",
+            description: "Discover the joy of giving with our personalized gift hampers, designed to make every occasion memorable. Celebrate with our unique selections!",
+            version: "v2",
+            style: "CLASSIC",
+            bannerData: [
+                {
+                    title: "Your Perfect Gift Awaits",
+                    subTitle: "Perfectly Crafted with Love",
+                    description: "We specialize in creating beautiful and unique gift hampers that cater to your specific needs. Explore our collection today!",
+                    image: {
+                        id: '1',
+                        // imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                        imageSrc: "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
+                        imageAlt: 'Beautiful Gift Hampers',
+                    },
+                    modalProps: {
+                        isOpen: true,
+                        title: 'Creating Joyful Moments',
+                    }
+                },
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About Us",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About Kala by Himani",
+            subTitle: "Crafting Personalized Gifts with Love",
+            description: "At Kala by Himani, we believe every gift tells a unique story. Our mission is to create high-quality, handcrafted gift hampers tailored to your individual tastes and special occasions. We celebrate life’s moments with personalized gifts that reflect love and thoughtfulness.\n\nOur skilled artisans collaborate with you to design hampers filled with delightful treats, custom cards, and meaningful keepsakes, ensuring each creation embodies your sentiments. Committed to sustainability, we source materials ethically and use eco-friendly packaging. Join us in crafting unforgettable experiences with our exquisite gift hampers.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: "1",
+                    imageSrc: "https://namhyafoods.com/cdn/shop/files/7_0fa411a7-6034-4184-8e60-cc0d8216ec85.jpg?v=1698733099&width=1445",
+                    imageAlt: "Handcrafted Gift Hampers",
+                }
+            ]
+        }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Contact Us",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Contact",
+            id: "k",
+            title: "Get in Touch",
+            subTitle: "We'd Love to Hear from You!",
+            description: "Have questions or need assistance? Reach out to us, and we will get back to you as soon as possible.",
+            version: "v1",
+            style: "MODERN",
+            contactUs: {
+                address: "Himachal Pradesh",
+                email: "pahariyatri@gmail.com",
+                phone: "+91 9569576707",
+                formFields: [
+                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                ]
+            },
+        }
+    }
+];
+
+export const kalaByHimaniAboutUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "Customized Gift Hampers",
+            subTitle: "For Every Occasion",
+            description: "Explore our unique, handcrafted gift hampers tailored to enhance your special moments and celebrations. Perfect for birthdays, anniversaries, weddings, and more.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                imageAlt: 'Customized Gift Hampers Logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-3",
+                    label: "Our Hampers",
+                    url: "/hampers",
+                }, {
+                    id: "menu-4",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "",
+                email: "contact@kalaByHimani.com",
+                phone: "+91 1234567890",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "Customized Gift Hampers for Every Occasion",
+            subTitle: "Perfectly Crafted with Love",
+            description: "Discover the joy of giving with our personalized gift hampers, designed to make every occasion memorable. Celebrate with our unique selections!",
+            version: "v2",
+            style: "CLASSIC",
+            bannerData: [
+                {
+                    title: "Your Perfect Gift Awaits",
+                    subTitle: "Perfectly Crafted with Love",
+                    description: "We specialize in creating beautiful and unique gift hampers that cater to your specific needs. Explore our collection today!",
+                    image: {
+                        id: '1',
+                        // imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                        imageSrc: "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
+                        imageAlt: 'Beautiful Gift Hampers',
+                    },
+                    modalProps: {
+                        isOpen: true,
+                        title: 'Creating Joyful Moments',
+                    }
+                },
+            ],
+        },
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About Us",
+        version: "v1",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About Kala by Himani",
+            subTitle: "Crafting Personalized Gifts with Love",
+            description: "At Kala by Himani, we believe every gift tells a unique story. Our mission is to create high-quality, handcrafted gift hampers tailored to your individual tastes and special occasions. We celebrate life’s moments with personalized gifts that reflect love and thoughtfulness.\n\nOur skilled artisans collaborate with you to design hampers filled with delightful treats, custom cards, and meaningful keepsakes, ensuring each creation embodies your sentiments. Committed to sustainability, we source materials ethically and use eco-friendly packaging. Join us in crafting unforgettable experiences with our exquisite gift hampers.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: "1",
+                    imageSrc: "https://namhyafoods.com/cdn/shop/files/7_0fa411a7-6034-4184-8e60-cc0d8216ec85.jpg?v=1698733099&width=1445",
+                    imageAlt: "Handcrafted Gift Hampers",
+                }
+            ]
+        }
+    },
+   
 ];
 
 export const kalaByHimaniSeo: any = {

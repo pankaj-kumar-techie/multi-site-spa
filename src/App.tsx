@@ -15,7 +15,7 @@ import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
 import { basic } from './@local-db/basic';
-import { kalaByHimani, kalaByHimaniPlugin, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
+import { kalaByHimani, kalaByHimaniAboutUs, kalaByHimaniContactUs, kalaByHimaniPlugin, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
 import { foregrowsolutions, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';
 
@@ -129,7 +129,13 @@ export default function App() {
                         setSeo(kalaByHimaniSeo);
                         setTheme(kalaByHimaniTheme);
                         setPlugins(kalaByHimaniPlugin);
-                        setSectionData(kalaByHimani);
+                        if (page === 'contact-us') {
+                            setSectionData(kalaByHimaniContactUs)
+                        } else if (page === 'about-us') {
+                            setSectionData(kalaByHimaniAboutUs)
+                        } else {
+                            setSectionData(kalaByHimani);
+                        }
                         break;
                     default:
                         setSeo(kalaByHimaniSeo);
