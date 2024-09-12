@@ -24,7 +24,7 @@ export default function SecondTestimonial(props: { data: any }) {
     const shouldRenderSingleTestimonial = window.innerWidth < 768;
     const testimonialsToShow = shouldRenderSingleTestimonial
         ? testimonialData.testimonials.slice(startIndex, startIndex + 1)
-        : testimonialData.testimonials.slice(startIndex, startIndex + 3);
+        : testimonialData.testimonials.slice(startIndex, startIndex + 4);
 
 
     return (
