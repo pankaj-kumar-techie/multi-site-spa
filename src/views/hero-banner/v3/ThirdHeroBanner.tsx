@@ -11,21 +11,21 @@ export default function ThirdHeroBanner(props: { data: any }) {
   }, [props.data]);
   return (
     <>
-      <section className="bg-white ">
+      <section className={`bg-${theme.colors.primary} font-bold`}>
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:pb-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <span className="inline-flex text-lg items-center justify-center px-5 py-2 mb-2  font-medium text-center text-white rounded-lg bg-teal-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-              Adventure & Expedition
+            {bannerData.title}
             </span>
-            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white">
-              {bannerData.title}
+            <h1 className={`max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:${textColor}`}>
+              {bannerData.subTitle}
               {/* <span className="text-teal-500 text-6xl">FOR YOU.</span> */}
             </h1>
-            <p className="max-w-2xl mb-6 font-normal text-black lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            <p className={`max-w-2xl mb-6 font-normal text-black lg:mb-8 md:text-lg lg:text-xl dark:${textColor}`}>
               {bannerData.description}
             </p>
             <a
-              href="#"
+              href="#portfolio"
               className="inline-flex items-center justify-center px-10 py-3  text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
               LET'S GET STARTED
