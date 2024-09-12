@@ -68,7 +68,7 @@ export const kalaByHimani: Section[] = [
             bannerData: [
                 {
                     title: "Your Perfect Gift Awaits",
-                    subTitle: "Tailored Just for You",
+                    subTitle: "Perfectly Crafted with Love",
                     description: "We specialize in creating beautiful and unique gift hampers that cater to your specific needs. Explore our collection today!",
                     image: {
                         id: '1',
@@ -152,7 +152,7 @@ export const kalaByHimani: Section[] = [
         },
     },
     {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        id: "143d8df34370-9e0e-0c5ef7a46f6b",
         name: "Hampers Portfolio",
         version: "v1",
         style: "MODERN",
@@ -161,7 +161,7 @@ export const kalaByHimani: Section[] = [
             type: "Portfolio",
             id: "k",
             title: "Our Customized Hampers",
-            subTitle: "Unique Selections for Every Occasion",
+            subTitle: "",
             description: "Explore our diverse range of handcrafted gift hampers, each designed to bring joy and create lasting memories. Perfect for every celebration, our hampers are crafted with love and thoughtfulness.",
             version: "v1",
             style: "MODERN",
@@ -227,7 +227,7 @@ export const kalaByHimani: Section[] = [
             type: "Service",
             id: "k",
             title: "Our Gifting Services",
-            subTitle: "Personalized Touch for Every Occasion",
+            subTitle: "",
             description: "Our services include custom hamper design, delivery, and corporate gifting solutions. We ensure a seamless experience from selection to delivery.",
             version: "v1",
             style: "MODERN",
@@ -266,7 +266,7 @@ export const kalaByHimani: Section[] = [
             type: "Testimonial",
             id: "k",
             title: "Client Testimonials",
-            subTitle: "What Our Customers Say",
+            subTitle: "",
             description: "Discover how our customized gift hampers have brought joy to our customers.",
             version: "v1",
             style: "MODERN",
