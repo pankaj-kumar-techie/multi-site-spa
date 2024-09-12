@@ -15,7 +15,7 @@ import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
 import { basic } from './@local-db/basic';
-import { gifthampers, gifthampersTheme } from './@local-db/giftHampers';
+import { kalaByHimani, kalaByHimaniPlugin, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
 import { foregrowsolutions, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';
 
@@ -69,7 +69,7 @@ export default function App() {
                         setTheme(pahariyatriTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
-                        } else if (page === 'blogs'){
+                        } else if (page === 'blogs') {
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
                             setSectionData(pahariyatri);
@@ -100,9 +100,9 @@ export default function App() {
                     case "gayatrilodge.com":
                         setSeo(gayatrilodgeSeo);
                         setTheme(gayatrilodgeTheme);
-                        if(page === "guest"){
+                        if (page === "guest") {
                             setSectionData(gayatrilodgeGuestRegistration);
-                        }else{
+                        } else {
                             setSectionData(gayatrilodge);
                         }
                         setPlugins(gaytriLodgePlugin)
@@ -125,17 +125,23 @@ export default function App() {
                         setTheme(foregrowsolutionsTheme);
                         setSeo(foregrowsolutionsSeo);
                         break;
+                    case "kalabyhimani.com":
+                        setSeo(kalaByHimaniSeo);
+                        setTheme(kalaByHimaniTheme);
+                        setPlugins(kalaByHimaniPlugin);
+                        setSectionData(kalaByHimani);
+                        break;
                     default:
-                        setSeo(foregrowsolutionsSeo);
-                        setTheme(foregrowsolutionsTheme);
+                        setSeo(kalaByHimaniSeo);
+                        setTheme(kalaByHimaniTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
-                        } else if (page === 'blogs'){
+                        } else if (page === 'blogs') {
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(foregrowsolutions);
+                            setSectionData(kalaByHimani);
                         }
-                        setPlugins(pahariyatriPlugin);
+                        setPlugins(kalaByHimaniPlugin);
                         break;
                 }
                 // const res = await PageService.getPage(path);

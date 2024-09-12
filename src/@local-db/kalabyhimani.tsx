@@ -1,14 +1,15 @@
+import { PluginConfig } from "../modal/PluginConfig";
 import { Section } from "../modal/Section";
 
-export const gifthampersTheme: any = {
-    name: "minimalist"
+export const kalaByHimaniTheme: any = {
+    name: "transparent"
 }
 
-export const gifthampers: Section[] = [
+export const kalaByHimani: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2",
+        version: "v3",
         style: "MODERN",
         path: "index",
         data: {
@@ -21,7 +22,7 @@ export const gifthampers: Section[] = [
             style: "MODERN",
             logo: {
                 id: '1',
-                imageSrc: 'https://example.com/logo.jpg',
+                imageSrc: 'https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg',
                 imageAlt: 'Customized Gift Hampers Logo',
             },
             menu: [
@@ -45,7 +46,7 @@ export const gifthampers: Section[] = [
             ],
             contactUs: {
                 address: "",
-                email: "contact@gifthampers.com",
+                email: "contact@kalaByHimani.com",
                 phone: "+91 1234567890",
             },
         },
@@ -53,7 +54,7 @@ export const gifthampers: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v1",
+        version: "v3",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -71,7 +72,8 @@ export const gifthampers: Section[] = [
                     description: "We specialize in creating beautiful and unique gift hampers that cater to your specific needs. Explore our collection today!",
                     image: {
                         id: '1',
-                        imageSrc: 'https://img.freepik.com/free-psd/black-friday-promotion-design-isolated_23-2150883222.jpg?t=st=1724185699~exp=1724189299~hmac=4b35386f354906c1664495467bf362a59121b9ce7fba63b5f0dc0a09cf589bf1&w=996',
+                        // imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                        imageSrc: "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
                         imageAlt: 'Beautiful Gift Hampers',
                     },
                     modalProps: {
@@ -91,9 +93,9 @@ export const gifthampers: Section[] = [
         data: {
             type: "AboutUs",
             id: "003",
-            title: "About Customized Gift Hampers",
-            subTitle: "Crafting Joy, One Hamper at a Time",
-            description: "At Customized Gift Hampers, we believe that every gift tells a story. Our mission is to provide high-quality, handcrafted hampers that cater to the unique preferences of our customers. Whether it's a birthday, wedding, or any special occasion, we are here to help you celebrate in style.\n\nWe take pride in curating each hamper with love and attention to detail, selecting the finest products that reflect your sentiments and the essence of the occasion. Our hampers are not just gifts; they are a collection of memories, thoughtfully designed to bring smiles to your loved ones.\n\nOur team of skilled artisans collaborates closely with you to understand your vision, ensuring that every hamper is a true representation of your thoughtfulness. From gourmet treats and luxurious spa items to personalized keepsakes, we offer a diverse range of options to create a one-of-a-kind gift.\n\nAt Customized Gift Hampers, we are committed to sustainability, sourcing our materials ethically and using eco-friendly packaging to minimize our environmental impact. Join us in celebrating life’s special moments with hampers that leave a lasting impression and create unforgettable experiences.",
+            title: "About Kala by Himani",
+            subTitle: "Crafting Personalized Gifts with Love",
+            description: "At Kala by Himani, we believe every gift tells a unique story. Our mission is to create high-quality, handcrafted gift hampers tailored to your individual tastes and special occasions. We celebrate life’s moments with personalized gifts that reflect love and thoughtfulness.\n\nOur skilled artisans collaborate with you to design hampers filled with delightful treats, custom cards, and meaningful keepsakes, ensuring each creation embodies your sentiments. Committed to sustainability, we source materials ethically and use eco-friendly packaging. Join us in crafting unforgettable experiences with our exquisite gift hampers.",
             version: "v1",
             style: "MODERN",
             images: [
@@ -104,6 +106,50 @@ export const gifthampers: Section[] = [
                 }
             ]
         }
+    },
+
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Diwali Gifts",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Product",
+            id: "k",
+            title: "Diwali Gifts!",
+            subTitle: "Personalized Gift Hampers for Diwali Celebrations",
+            description: "Celebrate the festival of lights with our exquisite range of handcrafted gift hampers. Each hamper is thoughtfully designed to bring joy and warmth to your loved ones, making your Diwali celebrations even more special.",
+            version: "v1",
+            style: "CLASSIC",
+            products: [
+                {
+                    id: 1,
+                    name: 'Diwali Delight Hamper',
+                    href: '#',
+                    description: 'A beautiful assortment of traditional sweets, decorative Diyas, and personalized notes, perfect for sharing love during Diwali.',
+                    imageSrc: "https://example.com/path/to/diwali-delight-hamper.jpg", // Update with the actual image URL
+                    imageAlt: 'Diwali Delight Hamper with sweets and Diyas.',
+                },
+                {
+                    id: 2,
+                    name: 'Festive Treats Hamper',
+                    href: '#',
+                    description: 'Indulge in a luxurious selection of gourmet treats, aromatic candles, and handcrafted cards to brighten up your festivities.',
+                    imageSrc: "https://example.com/path/to/festive-treats-hamper.jpg", // Update with the actual image URL
+                    imageAlt: 'Festive Treats Hamper with gourmet snacks and candles.',
+                },
+                {
+                    id: 3,
+                    name: 'Sweets & Lights Hamper',
+                    href: '#',
+                    description: 'This hamper combines the sweetness of traditional Indian sweets with the warmth of decorative lights, ideal for any Diwali gathering.',
+                    imageSrc: "https://example.com/path/to/sweets-lights-hamper.jpg", // Update with the actual image URL
+                    imageAlt: 'Sweets & Lights Hamper with sweets and decorative lights.',
+                },
+                // Add more Diwali-themed products as needed
+            ],
+        },
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
@@ -116,7 +162,7 @@ export const gifthampers: Section[] = [
             id: "k",
             title: "Our Customized Hampers",
             subTitle: "Unique Selections for Every Occasion",
-            description: "Explore our diverse range of handcrafted gift hampers, each designed to bring joy and create lasting memories.",
+            description: "Explore our diverse range of handcrafted gift hampers, each designed to bring joy and create lasting memories. Perfect for every celebration, our hampers are crafted with love and thoughtfulness.",
             version: "v1",
             style: "MODERN",
             portfolios: [
@@ -213,7 +259,7 @@ export const gifthampers: Section[] = [
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Testimonials",
-        version: "v1",
+        version: "v2",
         style: "MODERN",
         path: "index",
         data: {
@@ -298,6 +344,22 @@ export const gifthampers: Section[] = [
                     "descriptionContext": "Learn about sustainable practices and products that make gifting more responsible.",
                     "imageSrc": "https://thebamboobae.com/cdn/shop/products/39-2.jpg?v=1663762056&width=1445",
                     "imageAlt": "Eco-Friendly Gifts"
+                },
+                {
+                    "id": "5",
+                    "title": "Trendy Gift Hampers for 2024",
+                    "description": "Stay ahead of the curve with the latest trends in gift hampers for 2024.",
+                    "descriptionContext": "Discover the most sought-after themes and items to include in your hampers this year.",
+                    "imageSrc": "https://images.unsplash.com/photo-1580279691283-54b7bce1fba4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDd8fGdpZnR8ZW58MHx8fHwxNjA2OTI2NjA0&ixlib=rb-1.2.1&q=80&w=1080",
+                    "imageAlt": "Trendy Gift Hampers"
+                },
+                {
+                    "id": "6",
+                    "title": "Tips for Curating the Perfect Gift Hamper",
+                    "description": "Learn essential tips for selecting the best items to include in your customized gift hampers.",
+                    "descriptionContext": "From themes to personal touches, discover how to make your hampers stand out.",
+                    "imageSrc": "https://images.unsplash.com/photo-1579408527232-bb5020b659c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDl8fGdpZnR8ZW58MHx8fHwxNjA2OTI2NzE1&ixlib=rb-1.2.1&q=80&w=1080",
+                    "imageAlt": "Curating Gift Hampers"
                 }
             ]
         }
@@ -373,12 +435,24 @@ export const gifthampers: Section[] = [
     }
 ];
 
-export const loondsSeo: any = {
-    title: "Loonds - Innovative Software Solutions for Modern Businesses",
-    description: "Empower your business with Loonds' cutting-edge software development services. We specialize in delivering innovative solutions, from microservices and Spring Boot to Laravel, React, Angular, and Flutter.",
-    keywords: "software development, innovative solutions, microservices, Spring Boot, Laravel, React, Angular, Flutter, technology services, digital transformation",
-    tags: "software development, microservices, Spring Boot, Laravel, React, Angular, Flutter, technology solutions, digital innovation, modern business",
-    author: "Your Name",
+export const kalaByHimaniSeo: any = {
+    title: "KBH - Personalized Gift Hampers for Every Occasion",
+    description: "Explore our handcrafted gift hampers and custom cards at Kala by Himani. Perfect for birthdays, weddings, anniversaries, and festivals, each gift is tailored to create unforgettable memories for your loved ones.",
+    keywords: "personalized gift hampers, custom cards, handmade gifts, birthday gifts, wedding gifts, anniversary gifts, festival gifts, unique gifting solutions, eco-friendly gifts, quilling cards, scrapbooks, bespoke gifting",
+    tags: "personalized gifts, handmade hampers, unique gifts, special occasions, eco-friendly gifting, custom cards, memorable gifts, gifting solutions, Kala by Himani, quilling art",
+    author: "Himani",
     imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.loonds.com",
+    siteUrl: "https://www.kalabyhimani.com", // Ensure this matches your actual website URL
 };
+
+
+export const kalaByHimaniPlugin: PluginConfig[] = [
+    {
+        name: "FloatingButton",
+        isActive: true,
+        data: {
+            mobile: "8699094033",
+            text: "Hello Himani! 🎁 I’m interested in your gift hampers. Can you share more details? Thanks! 😊",
+        },
+    }
+];
