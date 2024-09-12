@@ -22,7 +22,7 @@ export const kalaByHimani: Section[] = [
             style: "MODERN",
             logo: {
                 id: '1',
-                imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                imageSrc: 'https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg',
                 imageAlt: 'Customized Gift Hampers Logo',
             },
             menu: [
