@@ -16,6 +16,7 @@ root.render(
         <BrowserRouter>
             <Routes>
                 <Route index element={<App />} />
+                <Route path=":slug" element={<App />} />
                 <Route path=":slug/:id" element={<App />} />
                 {/* <Route path="/:slug/:id" element={<DetailsPage />} /> */}
                 {/* <Route path="blogs/:id" element={<DetailsPage />} />

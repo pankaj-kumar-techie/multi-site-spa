@@ -27,6 +27,7 @@ export interface Section {
     blogs?: Blog[];
     plans?: Plan[];
     faqs?: FAQ[];
+    timelines?: Timeline[];
     ourTeam?: OurTeam[];
     termAndCondition?: TermAndCondition[];
     contactUs?: ContactUs;
@@ -77,6 +78,14 @@ export type Service = {
   body: string,
   imageSrc: string,
   imageAlt: string,
+}
+
+export type Timeline = {
+  id: number,
+  title: string,
+  description: string,
+  color: string,
+  icon: string,
 }
 
 export type OurTeam = {
@@ -243,7 +252,7 @@ export type ModalProps = {
 }
 
 export interface Header {
-  logo?:Image;
+  logo?: Image;
   menu?: MenuItem[];
 }
 

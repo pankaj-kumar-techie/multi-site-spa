@@ -14,9 +14,8 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
-import { basic } from './@local-db/basic';
 import { kalaByHimani, kalaByHimaniAboutUs, kalaByHimaniContactUs, kalaByHimaniPlugin, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
-import { foregrowsolutions, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
+import { foregrowsolutions, foregrowsolutionsAboutUs, foregrowsolutionsContactUs, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';
 
 
@@ -120,7 +119,13 @@ export default function App() {
                         setSeo(drayWorldLogisticSeo);
                         break;
                     case "www.foregrowsolutions.com":
-                        setSectionData(foregrowsolutions);
+                        if (page === 'contact-us') {
+                            setSectionData(foregrowsolutionsContactUs)
+                        } else if (page === 'about-us') {
+                            setSectionData(foregrowsolutionsAboutUs)
+                        } else {
+                            setSectionData(foregrowsolutions);
+                        }
                         // setPlugins(drayWorldLogisticPlugin)
                         setTheme(foregrowsolutionsTheme);
                         setSeo(foregrowsolutionsSeo);
@@ -133,6 +138,8 @@ export default function App() {
                             setSectionData(kalaByHimaniContactUs)
                         } else if (page === 'about-us') {
                             setSectionData(kalaByHimaniAboutUs)
+                        } else if (page === 'portfolio') {
+                            setSectionData(kalaByHimaniAboutUs)
                         } else {
                             setSectionData(kalaByHimani);
                         }
@@ -140,10 +147,10 @@ export default function App() {
                     default:
                         setSeo(foregrowsolutionsSeo);
                         setTheme(foregrowsolutionsTheme);
-                        if (page === 'packages') {
-                            setSectionData(pahariyatriDynamicDetails)
-                        } else if (page === 'blogs') {
-                            setSectionData(pahariyatriDynamicDetails);
+                        if (page === 'contact-us') {
+                            setSectionData(foregrowsolutionsContactUs)
+                        } else if (page === 'about-us') {
+                            setSectionData(foregrowsolutionsAboutUs)
                         } else {
                             setSectionData(foregrowsolutions);
                         }

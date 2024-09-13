@@ -1,14 +1,14 @@
 import { Section } from "../modal/Section";
 
 export const foregrowsolutionsTheme: any = {
-    name: "default"
+    name: "transparent"
 }
 
 export const foregrowsolutions: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2",
+        version: "v3",
         style: "MODERN",
         path: "index",
         data: {
@@ -21,7 +21,7 @@ export const foregrowsolutions: Section[] = [
             style: "MODERN",
             logo: {
                 id: '1',
-                imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
                 imageAlt: 'ForeGrow Solutions logo',
             },
             menu: [
@@ -34,11 +34,6 @@ export const foregrowsolutions: Section[] = [
                     id: "menu-2",
                     label: "About Us",
                     url: "/about-us",
-                },
-                {
-                    id: "menu-3",
-                    label: "Services",
-                    url: "/services",
                 },
                 {
                     id: "menu-4",
@@ -61,7 +56,7 @@ export const foregrowsolutions: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v1",
+        version: "v3",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -79,7 +74,7 @@ export const foregrowsolutions: Section[] = [
                     description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
                     image: {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
                         imageAlt: 'Innovative Software Development',
                     },
                     modalProps: {
@@ -148,7 +143,7 @@ export const foregrowsolutions: Section[] = [
                     "id": 3,
                     "name": "React Frontend Solutions",
                     "description": "Crafting interactive and modern user interfaces with React",
-                    "imageSrc": "https://images.unsplash.com/photo-1416339442236-8ceb164046f8?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5zQQfgYdauP902KBIcvqGVfUGvUT4gyCJw&s",
                     "imageAlt": "React Frontend Development",
                     "href": "#",
                 },
@@ -164,7 +159,7 @@ export const foregrowsolutions: Section[] = [
                     "id": 5,
                     "name": "Cloud Services with AWS",
                     "description": "Harnessing the power of AWS for scalable and secure cloud solutions",
-                    "imageSrc": "https://plus.unsplash.com/premium_photo-1670168995865-3a515cf74ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                    "imageSrc": "https://www.shutterstock.com/image-photo/california-usa-21-may-2023-600nw-2305947849.jpg",
                     "imageAlt": "AWS Cloud Services",
                     "href": "#",
                 },
@@ -182,7 +177,7 @@ export const foregrowsolutions: Section[] = [
     {
         "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         "name": "Services",
-        "version": "v1",
+        "version": "v2",
         "style": "MODERN",
         "path": "index",
         "data": {
@@ -241,6 +236,65 @@ export const foregrowsolutions: Section[] = [
     },
     {
         "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "name": "Timeline",
+        "version": "v1",
+        "style": "MODERN",
+        "path": "index",
+        "data": {
+            "type": "Timeline",
+            "id": "k",
+            "title": "Our Process: Delivering End-to-End IT Solutions",
+            "subTitle": "Follow our structured approach step-by-step",
+            "description": "See what our clients have to say about their experiences working with us.",
+            "version": "v2",
+            "style": "MODERN",
+            'timelines': [
+                {
+                    id: 1,
+                    title: "Consultation & Requirements Gathering",
+                    description:
+                        "We begin by understanding your business needs, goals, and requirements to tailor a custom solution.",
+                    color: "from-blue-400 to-blue-600",
+                    icon: "💼",
+                },
+                {
+                    id: 2,
+                    title: "System Design & Architecture",
+                    description:
+                        "We create a scalable and efficient system architecture using best practices in tech.",
+                    color: "from-green-400 to-green-600",
+                    icon: "🛠️",
+                },
+                {
+                    id: 3,
+                    title: "Development & Testing",
+                    description:
+                        "Our expert development team builds and rigorously tests the solution to ensure quality.",
+                    color: "from-yellow-400 to-yellow-600",
+                    icon: "⚙️",
+                },
+                {
+                    id: 4,
+                    title: "Deployment & Integration",
+                    description:
+                        "We deploy the system, ensuring smooth integration with your existing processes and platforms.",
+                    color: "from-red-400 to-red-600",
+                    icon: "🚀",
+                },
+                {
+                    id: 5,
+                    title: "Post-Launch Support & Maintenance",
+                    description:
+                        "We offer ongoing support and maintenance to keep the solution optimized and updated.",
+                    color: "from-purple-400 to-purple-600",
+                    icon: "🔧",
+                },
+            ]
+
+        }
+    },
+    {
+        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         "name": "Service",
         "version": "v2",
         "style": "MODERN",
@@ -288,40 +342,6 @@ export const foregrowsolutions: Section[] = [
                 }
             ]
         }
-    },
-    {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-        name: "Hero banner",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "HeroBanner",
-            id: "002",
-            title: "3D design",
-            subTitle: "",
-            description: "",
-            version: "v2",
-            style: "CLASSIC",
-            bannerData: [
-                {
-                    title: "Elevate Your Business with Intelligent Software Solutions",
-                    subTitle: "Leading the Digital Revolution",
-                    description: "Embark on a journey of transformation with our advanced software development services. From concept to execution, we create intelligent solutions that propel your business into the future.",
-                    image:
-                    {
-                        id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                        imageAlt: 'Architectural design concepts.',
-                    },
-                    modalProps: {
-                        isOpen: false,
-                        // onClose: () => void,
-                        title: 'Title is here ',
-                    }
-                },
-            ],
-        },
     },
     // {
     //     "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
@@ -401,7 +421,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Microservices Architecture: Revolutionizing Software Development",
                     "description": "Explore the benefits and challenges of adopting a microservices architecture for scalable and efficient software development.",
                     "descriptionContext": "Discover how microservices can revolutionize the way you build and deploy software solutions.",
-                    "imageSrc": "https://images.unsplash.com/photo-1626942589313-7b5c0fe3f5b4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://res.cloudinary.com/practicaldev/image/fetch/s--w9vDRqT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/PhCiUup.png",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -409,15 +429,15 @@ export const foregrowsolutions: Section[] = [
                     "title": "Mastering Spring Boot for Robust Java Applications",
                     "description": "Enhance your Java development skills by mastering the powerful and efficient Spring Boot framework.",
                     "descriptionContext": "Learn how to build robust and scalable Java applications with Spring Boot's innovative features.",
-                    "imageSrc": "https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    "imageSrc": "https://www.bacancytechnology.com/blog/wp-content/uploads/2023/02/Microservices-Architecture-using-Spring-Boot-and-Spring-Cloud.webp",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
                     "id": "4",
-                    "title": "Laravel: Crafting Elegant PHP Applications",
-                    "description": "Discover the elegance and simplicity of Laravel for PHP development. Build modern and feature-rich applications with ease.",
+                    "title": ".Net Core: Crafting Elegant C# Applications",
+                    "description": "Discover the elegance and simplicity of .Net for C# development. Build modern and feature-rich applications with ease.",
                     "descriptionContext": "Explore Laravel's features and best practices for creating elegant and maintainable PHP applications.",
-                    "imageSrc": "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "imageSrc": "https://www.tatvasoft.com/outsourcing/wp-content/uploads/2023/08/Features-of-.NET-Framework.jpg",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -425,7 +445,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Building Dynamic Web Apps with React and Angular",
                     "description": "Explore the world of React and Angular to build dynamic and interactive web applications that provide a seamless user experience.",
                     "descriptionContext": "Learn best practices for developing modern web applications with React and Angular frameworks.",
-                    "imageSrc": "https://images.unsplash.com/photo-1575370378730-4e9d0acd572a?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://miro.medium.com/v2/resize:fit:1200/1*S3fR5kjoxRH8nLWN_Mq17A.jpeg",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -433,7 +453,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Flutter: Cross-Platform App Development Simplified",
                     "description": "Delve into the world of Flutter for building beautiful and natively compiled applications for mobile, web, and desktop from a single codebase.",
                     "descriptionContext": "Discover the power of Flutter in simplifying cross-platform app development and creating stunning user interfaces.",
-                    "imageSrc": "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://cdn.prod.website-files.com/5f841209f4e71b2d70034471/60bb4a2e143f632da3e56aea_Flutter%20app%20development%20(2).png",
                     "imageAlt": "Image Alt Text Here"
                 }
             ]
@@ -482,6 +502,284 @@ export const foregrowsolutions: Section[] = [
                 // Add more FAQs as needed
             ]
         }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.foregrow",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/foregrow/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/foregrow/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/foregrow",
+                },],
+                copyright: "Foregrow Solutions",
+            },
+        },
+    },
+];
+
+export const foregrowsolutionsAboutUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    // {
+    //     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+    //     name: "Hero banner",
+    //     version: "v2",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "HeroBanner",
+    //         id: "002",
+    //         title: "Empower Your Business with ForeGrow Solutions",
+    //         subTitle: "Innovative Software, Reliable Results",
+    //         description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         bannerData: [
+    //             {
+    //                 title: "Your Technology Partner for Success",
+    //                 subTitle: "Building the Future, One Solution at a Time",
+    //                 description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
+    //                 image: {
+    //                     id: '1',
+    //                     imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
+    //                     imageAlt: 'Innovative Software Development',
+    //                 },
+    //                 modalProps: {
+    //                     isOpen: true,
+    //                     title: 'Unlocking Innovation in Every Line of Code',
+    //                 }
+    //             },
+    //         ],
+    //     },
+    // },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About Us",
+        version: "v2",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About ForeGrow Solutions",
+            subTitle: "Innovating the Future of Technology",
+            description: "At ForeGrow Solutions, we are a dynamic and forward-thinking technology group specializing in delivering innovative software solutions tailored to meet the unique needs of businesses across various industries. Our mission is to empower organizations through cutting-edge technology and unparalleled expertise, ensuring they stay ahead in a rapidly evolving digital landscape. From custom software development and web applications to mobile solutions and cloud integration, we offer a comprehensive suite of services designed to drive efficiency and growth. Our dedicated team of professionals is committed to providing exceptional support and strategic insights to help our clients achieve their goals. Choose ForeGrow Solutions for your technology needs, and let's shape the future together.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: "1",
+                    imageSrc: "https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    imageAlt: "Team Collaboration",
+                }
+            ]
+        }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.foregrow",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/foregrow/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/foregrow/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/foregrow",
+                },],
+                copyright: "Foregrow Solutions",
+            },
+        },
+    },
+];
+
+export const foregrowsolutionsContactUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                // {
+                //     id: "menu-3",
+                //     label: "Services",
+                //     url: "#services",
+                // },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "Empower Your Business with ForeGrow Solutions",
+            subTitle: "Innovative Software, Reliable Results",
+            description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
+            version: "v2",
+            style: "CLASSIC",
+            bannerData: [
+                {
+                    title: "Your Technology Partner for Success",
+                    subTitle: "Building the Future, One Solution at a Time",
+                    description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
+                    image: {
+                        id: '1',
+                        imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
+                        imageAlt: 'Innovative Software Development',
+                    },
+                    modalProps: {
+                        isOpen: true,
+                        title: 'Unlocking Innovation in Every Line of Code',
+                    }
+                },
+            ],
+        },
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
