@@ -119,13 +119,13 @@ export default function App() {
                         setTheme(drayWorldLogisticTheme);
                         setSeo(drayWorldLogisticSeo);
                         break;
-                    case "foregrowsolutions.com":
+                    case "www.foregrowsolutions.com":
                         setSectionData(foregrowsolutions);
                         // setPlugins(drayWorldLogisticPlugin)
                         setTheme(foregrowsolutionsTheme);
                         setSeo(foregrowsolutionsSeo);
                         break;
-                    case "kalabyhimani.com":
+                    case "www.kalabyhimani.com":
                         setSeo(kalaByHimaniSeo);
                         setTheme(kalaByHimaniTheme);
                         setPlugins(kalaByHimaniPlugin);
