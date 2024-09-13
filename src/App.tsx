@@ -181,13 +181,18 @@ export default function App() {
     }
     return (
         <>
-            <HelmetManager title={seo.title ?? "Loonds"} description={seo.description ?? ""} keywords={seo.keywords ?? ""} tags={seo.tags ?? ""} twitterCard={seo.twitterCard ?? "summary_large_image"}
+            <HelmetManager
+                title={seo.title ?? ""}
+                description={seo.description ?? ""}
+                keywords={seo.keywords ?? ""}
+                tags={seo.tags ?? ""}
+                twitterCard={seo.twitterCard ?? "summary_large_image"}
                 twitterTitle={seo.twitterTitle ?? seo.title}
                 twitterDescription={seo.twitterDescription ?? seo.description}
-                twitterImage={seo.twitterImage ?? ""}
+                twitterImage={seo.twitterImage ?? seo.imageUrl}
                 ogTitle={seo.ogTitle ?? seo.title}
                 ogDescription={seo.ogDescription ?? seo.description}
-                ogImage={seo.ogImage ?? ""}></HelmetManager >
+                ogImage={seo.ogImage ?? seo.imageUrl}></HelmetManager >
             {!loading && sectionData.length > 0 ? (
                 <>
                     <ThemeProvider theme={theme.name ?? "default"}>
