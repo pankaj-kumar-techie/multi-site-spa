@@ -1,14 +1,14 @@
 import { Section } from "../modal/Section";
 
 export const foregrowsolutionsTheme: any = {
-    name: "default"
+    name: "transparent"
 }
 
 export const foregrowsolutions: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Header",
-        version: "v2",
+        version: "v3",
         style: "MODERN",
         path: "index",
         data: {
@@ -21,7 +21,7 @@ export const foregrowsolutions: Section[] = [
             style: "MODERN",
             logo: {
                 id: '1',
-                imageSrc: 'https://i.pinimg.com/564x/42/1d/c1/421dc1bea91d21aaa0678bdeae4d3d05.jpg',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
                 imageAlt: 'ForeGrow Solutions logo',
             },
             menu: [
@@ -61,7 +61,7 @@ export const foregrowsolutions: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v1",
+        version: "v3",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -79,7 +79,7 @@ export const foregrowsolutions: Section[] = [
                     description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
                     image: {
                         id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+                        imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
                         imageAlt: 'Innovative Software Development',
                     },
                     modalProps: {
@@ -289,40 +289,6 @@ export const foregrowsolutions: Section[] = [
             ]
         }
     },
-    {
-        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-        name: "Hero banner",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "HeroBanner",
-            id: "002",
-            title: "3D design",
-            subTitle: "",
-            description: "",
-            version: "v2",
-            style: "CLASSIC",
-            bannerData: [
-                {
-                    title: "Elevate Your Business with Intelligent Software Solutions",
-                    subTitle: "Leading the Digital Revolution",
-                    description: "Embark on a journey of transformation with our advanced software development services. From concept to execution, we create intelligent solutions that propel your business into the future.",
-                    image:
-                    {
-                        id: '1',
-                        imageSrc: 'https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                        imageAlt: 'Architectural design concepts.',
-                    },
-                    modalProps: {
-                        isOpen: false,
-                        // onClose: () => void,
-                        title: 'Title is here ',
-                    }
-                },
-            ],
-        },
-    },
     // {
     //     "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
     //     "name": "Our-Team",
@@ -482,6 +448,289 @@ export const foregrowsolutions: Section[] = [
                 // Add more FAQs as needed
             ]
         }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.foregrow",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/foregrow/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/foregrow/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/foregrow",
+                },],
+                copyright: "Foregrow Solutions",
+            },
+        },
+    },
+];
+
+export const foregrowsolutionsAboutUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                {
+                    id: "menu-3",
+                    label: "Services",
+                    url: "/services",
+                },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    // {
+    //     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+    //     name: "Hero banner",
+    //     version: "v2",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "HeroBanner",
+    //         id: "002",
+    //         title: "Empower Your Business with ForeGrow Solutions",
+    //         subTitle: "Innovative Software, Reliable Results",
+    //         description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
+    //         version: "v2",
+    //         style: "CLASSIC",
+    //         bannerData: [
+    //             {
+    //                 title: "Your Technology Partner for Success",
+    //                 subTitle: "Building the Future, One Solution at a Time",
+    //                 description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
+    //                 image: {
+    //                     id: '1',
+    //                     imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
+    //                     imageAlt: 'Innovative Software Development',
+    //                 },
+    //                 modalProps: {
+    //                     isOpen: true,
+    //                     title: 'Unlocking Innovation in Every Line of Code',
+    //                 }
+    //             },
+    //         ],
+    //     },
+    // },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "About Us",
+        version: "v2",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "AboutUs",
+            id: "003",
+            title: "About ForeGrow Solutions",
+            subTitle: "Innovating the Future of Technology",
+            description: "At ForeGrow Solutions, we are a dynamic and forward-thinking technology group specializing in delivering innovative software solutions tailored to meet the unique needs of businesses across various industries. Our mission is to empower organizations through cutting-edge technology and unparalleled expertise, ensuring they stay ahead in a rapidly evolving digital landscape. From custom software development and web applications to mobile solutions and cloud integration, we offer a comprehensive suite of services designed to drive efficiency and growth. Our dedicated team of professionals is committed to providing exceptional support and strategic insights to help our clients achieve their goals. Choose ForeGrow Solutions for your technology needs, and let's shape the future together.",
+            version: "v1",
+            style: "MODERN",
+            images: [
+                {
+                    id: "1",
+                    imageSrc: "https://images.unsplash.com/photo-1523908511403-7fc7b25592f4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    imageAlt: "Team Collaboration",
+                }
+            ]
+        }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.foregrow",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/foregrow/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/foregrow/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/foregrow",
+                },],
+                copyright: "Foregrow Solutions",
+            },
+        },
+    },
+];
+
+export const foregrowsolutionsContactUs: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                {
+                    id: "menu-3",
+                    label: "Services",
+                    url: "/services",
+                },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v3",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "Empower Your Business with ForeGrow Solutions",
+            subTitle: "Innovative Software, Reliable Results",
+            description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
+            version: "v2",
+            style: "CLASSIC",
+            bannerData: [
+                {
+                    title: "Your Technology Partner for Success",
+                    subTitle: "Building the Future, One Solution at a Time",
+                    description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
+                    image: {
+                        id: '1',
+                        imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
+                        imageAlt: 'Innovative Software Development',
+                    },
+                    modalProps: {
+                        isOpen: true,
+                        title: 'Unlocking Innovation in Every Line of Code',
+                    }
+                },
+            ],
+        },
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
