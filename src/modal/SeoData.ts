@@ -6,4 +6,11 @@ export interface SeoData {
     author?: string;
     imageUrl?: string;
     siteUrl?: string;
+    twitterCard?: string;
+    twitterTitle?: string;
+    twitterDescription?: string;
+    twitterImage?: string;
+    ogTitle?: string;
+    ogDescription?: string;
+    ogImage?: string;
 }

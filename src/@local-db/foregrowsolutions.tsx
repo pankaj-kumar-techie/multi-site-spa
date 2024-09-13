@@ -857,6 +857,15 @@ export const foregrowsolutionsSeo: any = {
     keywords: "software development, cloud solutions, frontend, backend, AWS, Azure, Google Cloud, .NET, Java, Node.js, React, Angular, Next.js, SQL, NoSQL, innovative solutions, digital transformation",
     tags: "software development, cloud computing, AWS, Azure, Google Cloud, frontend technologies, backend technologies, .NET, Java, Node.js, React, Angular, Next.js, SQL, NoSQL, modern business solutions",
     author: "Foregrow Solutions Team",
-    imageUrl: "https://example.com/foregrow-og-image.jpg",
+    imageUrl: "https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg",
     siteUrl: "https://www.foregrowsolutions.com",
+
+    // New properties for Twitter and Open Graph
+    twitterCard: "summary_large_image",
+    twitterTitle: "Foregrow Solutions - Innovative Software Development & Cloud Expertise",
+    twitterDescription: "Empowering businesses with advanced software development services and cloud solutions.",
+    twitterImage: "https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg",
+    ogTitle: "Foregrow Solutions - Innovative Software Development & Cloud Expertise",
+    ogDescription: "Empowering businesses with advanced software development services and cloud solutions.",
+    ogImage: "https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg",
 };
