@@ -138,16 +138,16 @@ export default function App() {
                         }
                         break;
                     default:
-                        setSeo(kalaByHimaniSeo);
-                        setTheme(kalaByHimaniTheme);
+                        setSeo(foregrowsolutionsSeo);
+                        setTheme(foregrowsolutionsTheme);
                         if (page === 'packages') {
                             setSectionData(pahariyatriDynamicDetails)
                         } else if (page === 'blogs') {
                             setSectionData(pahariyatriDynamicDetails);
                         } else {
-                            setSectionData(kalaByHimani);
+                            setSectionData(foregrowsolutions);
                         }
-                        setPlugins(kalaByHimaniPlugin);
+                        // setPlugins(f);
                         break;
                 }
                 // const res = await PageService.getPage(path);
