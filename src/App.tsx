@@ -14,7 +14,6 @@ import { Section } from "./modal/Section";
 import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
-import { basic } from './@local-db/basic';
 import { kalaByHimani, kalaByHimaniAboutUs, kalaByHimaniContactUs, kalaByHimaniPlugin, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
 import { foregrowsolutions, foregrowsolutionsAboutUs, foregrowsolutionsContactUs, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';

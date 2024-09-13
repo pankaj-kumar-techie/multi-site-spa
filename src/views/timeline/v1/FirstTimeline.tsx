@@ -1,126 +1,76 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
+import { title } from "process";
+import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
+import { Timeline } from "../../../modal/Section";
 
-export default function FirstTimeline() {
+export default function FirstTimeline(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
     const textColor = useDynamicTextColor(theme.colors.primary || "");
+    const [timelineData, setTimelineData] = useState<any>([]);
+
+    useEffect(() => {
+        setTimelineData(props.data);
+    }, [props.data]);
+
+    if (!timelineData.timelines) {
+        return <SectionShimmer title={timelineData.title} />;
+    }
+
     return (
-        <section className={`bg-${theme.colors.primary} py-20`}>
-            <div className="container mx-auto">
-                <TitleCover title={"Process: Interior Design from Start to Finish"} titleColor={`${textColor}`} subtitle={""} paragraph={""}></TitleCover>
-                <div className="flex flex-wrap items-center justify-center gap-6">
-                    {/* Initial Consultation */}
-                    <div className="flex items-center">
-                        <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            1
-                        </div>
-                        <div className="ml-3">
-                            <h3 className="text-lg font-semibold mb-1">Initial Consultation</h3>
-                            <p className="text-gray-600">
-                                We begin with a detailed discussion to understand your vision, needs, and goals for the project.
-                            </p>
-                        </div>
-                    </div>
+        <section className={`py-20 bg-gradient-to-r from-${theme.colors.primary}-400 to-${theme.colors.primary}-600 relative`}>
+            <div className="container mx-auto px-6 relative z-10">
+                {/* Title Section */}
+                <TitleCover
+                    title={timelineData.title}
+                    subtitle="Follow our structured approach step-by-step"
+                    titleColor={textColor}
+                />
 
-                    {/* Design Concept Development */}
-                    <div className="flex items-center">
-                        <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            2
-                        </div>
-                        <div className="ml-3">
-                            <h3 className="text-lg font-semibold mb-1">Design Concept Development</h3>
-                            <p className="text-gray-600">
-                                Our experts create design concepts and mood boards that bring your ideas to life visually.
-                            </p>
-                        </div>
-                    </div>
+                {/* Timeline Section */}
+                <div className="container relative mt-16 xl:max-w-6xl mx-auto px-4">
+                    {/* Vertical Central Line */}
+                    <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-400 to-purple-600 z-0"></div>
 
-                    {/* Project Planning */}
-                    <div className="flex items-center">
-                        <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            3
-                        </div>
-                        <div className="ml-3">
-                            <h3 className="text-lg font-semibold mb-1">Project Planning</h3>
-                            <p className="text-gray-600">
-                                Detailed planning and budgeting are carried out, ensuring a smooth execution of the project.
-                            </p>
-                        </div>
-                    </div>
+                    {timelineData.timelines.map((item: Timeline) => (
+                        <div
+                            key={item.id}
+                            className={`timeline-step flex items-center justify-${item.id % 2 === 0 ? "start" : "end"} relative mb-16`}
+                        >
+                            {/* Connector Line */}
+                            <div className={`absolute top-1/2 transform -translate-y-1/2 w-10 h-1 bg-gray-300 ${item.id % 2 === 0 ? "right-1/2" : "left-1/2"} z-0`}></div>
 
-                    {/* Construction */}
-                    <div className="flex items-center">
-                        <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            4
-                        </div>
-                        <div className="ml-3">
-                            <h3 className="text-lg font-semibold mb-1">Construction</h3>
-                            <p className="text-gray-600">
-                                Skilled craftsmen and contractors bring the design to life, handling every aspect of construction.
-                            </p>
-                        </div>
-                    </div>
+                            {/* Timeline Card */}
+                            <div
+                                className={`bg-white/80 backdrop-blur-lg shadow-xl p-8 rounded-3xl relative z-10 w-96 transform transition-all duration-500 hover:scale-105 ${item.id % 2 === 0 ? "mr-12" : "ml-12"
+                                    }`}
+                            >
+                                {/* Step Icon */}
+                                <div
+                                    className={`bg-gradient-to-br ${item.color} w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl mb-4 shadow-lg`}
+                                >
+                                    {item.icon}
+                                </div>
 
-                    {/* Final Installation */}
-                    <div className="flex items-center">
-                        <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center text-white font-semibold">
-                            5
+                                {/* Step Title and Description */}
+                                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                                    {item.title}
+                                </h3>
+                                <p className="text-gray-600 leading-relaxed">
+                                    {item.description}
+                                </p>
+                            </div>
                         </div>
-                        <div className="ml-3">
-                            <h3 className="text-lg font-semibold mb-1">Final Installation</h3>
-                            <p className="text-gray-600">
-                                The last step involves carefully placing and arranging all elements to achieve the desired look and feel.
-                            </p>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
-                <div className="mt-12">
-                    <h2 className="text-3xl font-semibold text-center mb-4">
-                        Design Styles: From Modern to Traditional
-                    </h2>
-                    <p className="text-gray-600 text-center">
-                        Explore a variety of interior design styles that cater to different preferences and aesthetics.
-                    </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
-                    {/* Modern Design */}
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold mb-2">Modern Design</h3>
-                        <p className="text-gray-600">
-                            Clean lines, minimalism, and functionality define this design style, creating sleek and sophisticated interiors.
-                        </p>
-                    </div>
-
-                    {/* Traditional Design */}
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold mb-2">Traditional Design</h3>
-                        <p className="text-gray-600">
-                            Rich colors, ornate details, and classic furnishings characterize this timeless and elegant design approach.
-                        </p>
-                    </div>
-
-                    {/* Scandinavian Design */}
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold mb-2">Scandinavian Design</h3>
-                        <p className="text-gray-600">
-                            Embrace simplicity, functionality, and natural elements in this style that focuses on comfort and coziness.
-                        </p>
-                    </div>
-
-                    {/* Industrial Design */}
-                    <div className="bg-white p-6 rounded-lg shadow-md">
-                        <h3 className="text-lg font-semibold mb-2">Industrial Design</h3>
-                        <p className="text-gray-600">
-                            Exposed materials, raw textures, and utilitarian aesthetics create an urban and edgy design look.
-                        </p>
-                    </div>
-
-                    {/* More Design Styles */}
-                    {/* Add more design styles as needed */}
+                {/* Call to Action Button */}
+                <div className="mt-20 text-center">
+                    <button className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white font-semibold px-10 py-4 rounded-full shadow-lg transition transform hover:scale-110">
+                        Start Your Journey with Us!
+                    </button>
                 </div>
             </div>
         </section>

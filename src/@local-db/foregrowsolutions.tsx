@@ -36,11 +36,6 @@ export const foregrowsolutions: Section[] = [
                     url: "/about-us",
                 },
                 {
-                    id: "menu-3",
-                    label: "Services",
-                    url: "/services",
-                },
-                {
                     id: "menu-4",
                     label: "Our Portfolio",
                     url: "/portfolio",
@@ -148,7 +143,7 @@ export const foregrowsolutions: Section[] = [
                     "id": 3,
                     "name": "React Frontend Solutions",
                     "description": "Crafting interactive and modern user interfaces with React",
-                    "imageSrc": "https://images.unsplash.com/photo-1416339442236-8ceb164046f8?q=80&w=2003&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5zQQfgYdauP902KBIcvqGVfUGvUT4gyCJw&s",
                     "imageAlt": "React Frontend Development",
                     "href": "#",
                 },
@@ -164,7 +159,7 @@ export const foregrowsolutions: Section[] = [
                     "id": 5,
                     "name": "Cloud Services with AWS",
                     "description": "Harnessing the power of AWS for scalable and secure cloud solutions",
-                    "imageSrc": "https://plus.unsplash.com/premium_photo-1670168995865-3a515cf74ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                    "imageSrc": "https://www.shutterstock.com/image-photo/california-usa-21-may-2023-600nw-2305947849.jpg",
                     "imageAlt": "AWS Cloud Services",
                     "href": "#",
                 },
@@ -182,7 +177,7 @@ export const foregrowsolutions: Section[] = [
     {
         "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         "name": "Services",
-        "version": "v1",
+        "version": "v2",
         "style": "MODERN",
         "path": "index",
         "data": {
@@ -237,6 +232,65 @@ export const foregrowsolutions: Section[] = [
                     "imageAlt": "Mobile App Development Icon"
                 },
             ]
+        }
+    },
+    {
+        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "name": "Timeline",
+        "version": "v1",
+        "style": "MODERN",
+        "path": "index",
+        "data": {
+            "type": "Timeline",
+            "id": "k",
+            "title": "Our Process: Delivering End-to-End IT Solutions",
+            "subTitle": "Follow our structured approach step-by-step",
+            "description": "See what our clients have to say about their experiences working with us.",
+            "version": "v2",
+            "style": "MODERN",
+            'timelines': [
+                {
+                    id: 1,
+                    title: "Consultation & Requirements Gathering",
+                    description:
+                        "We begin by understanding your business needs, goals, and requirements to tailor a custom solution.",
+                    color: "from-blue-400 to-blue-600",
+                    icon: "💼",
+                },
+                {
+                    id: 2,
+                    title: "System Design & Architecture",
+                    description:
+                        "We create a scalable and efficient system architecture using best practices in tech.",
+                    color: "from-green-400 to-green-600",
+                    icon: "🛠️",
+                },
+                {
+                    id: 3,
+                    title: "Development & Testing",
+                    description:
+                        "Our expert development team builds and rigorously tests the solution to ensure quality.",
+                    color: "from-yellow-400 to-yellow-600",
+                    icon: "⚙️",
+                },
+                {
+                    id: 4,
+                    title: "Deployment & Integration",
+                    description:
+                        "We deploy the system, ensuring smooth integration with your existing processes and platforms.",
+                    color: "from-red-400 to-red-600",
+                    icon: "🚀",
+                },
+                {
+                    id: 5,
+                    title: "Post-Launch Support & Maintenance",
+                    description:
+                        "We offer ongoing support and maintenance to keep the solution optimized and updated.",
+                    color: "from-purple-400 to-purple-600",
+                    icon: "🔧",
+                },
+            ]
+
         }
     },
     {
@@ -367,7 +421,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Microservices Architecture: Revolutionizing Software Development",
                     "description": "Explore the benefits and challenges of adopting a microservices architecture for scalable and efficient software development.",
                     "descriptionContext": "Discover how microservices can revolutionize the way you build and deploy software solutions.",
-                    "imageSrc": "https://images.unsplash.com/photo-1626942589313-7b5c0fe3f5b4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://res.cloudinary.com/practicaldev/image/fetch/s--w9vDRqT9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.imgur.com/PhCiUup.png",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -375,15 +429,15 @@ export const foregrowsolutions: Section[] = [
                     "title": "Mastering Spring Boot for Robust Java Applications",
                     "description": "Enhance your Java development skills by mastering the powerful and efficient Spring Boot framework.",
                     "descriptionContext": "Learn how to build robust and scalable Java applications with Spring Boot's innovative features.",
-                    "imageSrc": "https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto.format&fit=crop&w=1170&q=80",
+                    "imageSrc": "https://www.bacancytechnology.com/blog/wp-content/uploads/2023/02/Microservices-Architecture-using-Spring-Boot-and-Spring-Cloud.webp",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
                     "id": "4",
-                    "title": "Laravel: Crafting Elegant PHP Applications",
-                    "description": "Discover the elegance and simplicity of Laravel for PHP development. Build modern and feature-rich applications with ease.",
+                    "title": ".Net Core: Crafting Elegant C# Applications",
+                    "description": "Discover the elegance and simplicity of .Net for C# development. Build modern and feature-rich applications with ease.",
                     "descriptionContext": "Explore Laravel's features and best practices for creating elegant and maintainable PHP applications.",
-                    "imageSrc": "https://images.unsplash.com/photo-1523341139367-9de570b874ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "imageSrc": "https://www.tatvasoft.com/outsourcing/wp-content/uploads/2023/08/Features-of-.NET-Framework.jpg",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -391,7 +445,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Building Dynamic Web Apps with React and Angular",
                     "description": "Explore the world of React and Angular to build dynamic and interactive web applications that provide a seamless user experience.",
                     "descriptionContext": "Learn best practices for developing modern web applications with React and Angular frameworks.",
-                    "imageSrc": "https://images.unsplash.com/photo-1575370378730-4e9d0acd572a?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://miro.medium.com/v2/resize:fit:1200/1*S3fR5kjoxRH8nLWN_Mq17A.jpeg",
                     "imageAlt": "Image Alt Text Here"
                 },
                 {
@@ -399,7 +453,7 @@ export const foregrowsolutions: Section[] = [
                     "title": "Flutter: Cross-Platform App Development Simplified",
                     "description": "Delve into the world of Flutter for building beautiful and natively compiled applications for mobile, web, and desktop from a single codebase.",
                     "descriptionContext": "Discover the power of Flutter in simplifying cross-platform app development and creating stunning user interfaces.",
-                    "imageSrc": "https://images.unsplash.com/photo-1551582045-6ec9c11d8697?auto=format&fit=crop&q=80&w=1965&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://cdn.prod.website-files.com/5f841209f4e71b2d70034471/60bb4a2e143f632da3e56aea_Flutter%20app%20development%20(2).png",
                     "imageAlt": "Image Alt Text Here"
                 }
             ]
@@ -523,11 +577,6 @@ export const foregrowsolutionsAboutUs: Section[] = [
                     id: "menu-2",
                     label: "About Us",
                     url: "/about-us",
-                },
-                {
-                    id: "menu-3",
-                    label: "Services",
-                    url: "/services",
                 },
                 {
                     id: "menu-4",
