@@ -677,11 +677,11 @@ export const foregrowsolutionsContactUs: Section[] = [
                     label: "About Us",
                     url: "/about-us",
                 },
-                {
-                    id: "menu-3",
-                    label: "Services",
-                    url: "/services",
-                },
+                // {
+                //     id: "menu-3",
+                //     label: "Services",
+                //     url: "#services",
+                // },
                 {
                     id: "menu-4",
                     label: "Our Portfolio",
