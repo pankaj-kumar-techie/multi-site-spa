@@ -18,6 +18,22 @@ export const HelmetManager: React.FC<SeoData> = ({
   ogDescription,
   ogImage,
 }) => {
+  console.log('SEO Data:', {
+    title,
+    description,
+    keywords,
+    tags,
+    author,
+    imageUrl,
+    siteUrl,
+    twitterCard,
+    twitterTitle,
+    twitterDescription,
+    twitterImage,
+    ogTitle,
+    ogDescription,
+    ogImage,
+  });
   return (
     <Helmet>
       <link rel="icon" href="/path-to-favicon.ico" />
@@ -42,33 +58,33 @@ export const HelmetManager: React.FC<SeoData> = ({
       {/* SEO Schema */}
       <script type="application/ld+json">
         {`
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "WebSite",
-                        "name": "${title}",
-                        "description": "${description}",
-                        "keywords": "${keywords}",
-                        "tags": "${tags}",
-                        "url": "${siteUrl || 'https://yourwebsite.com'}",
-                        ${author
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "${title}",
+            "description": "${description}",
+            "keywords": "${keywords}",
+            "tags": "${tags}",
+            "url": "${siteUrl || 'https://yourwebsite.com'}",
+            ${author
             ? `"author": {
-                            "@type": "Person",
-                            "name": "${author}"
-                          },`
+                  "@type": "Person",
+                  "name": "${author}"
+                },`
             : ''}
-                        ${imageUrl
+            ${imageUrl
             ? `"image": {
-                            "@type": "ImageObject",
-                            "url": "${imageUrl}"
-                          },`
+                  "@type": "ImageObject",
+                  "url": "${imageUrl}"
+                },`
             : ''}
-                        "potentialAction": {
-                            "@type": "SearchAction",
-                            "target": "${siteUrl || 'https://yourwebsite.com'}/search?q={search_term_string}",
-                            "query-input": "required name=search_term_string"
-                        }
-                    }
-                `}
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "${siteUrl || 'https://yourwebsite.com'}/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          }
+        `}
       </script>
     </Helmet>
   );
