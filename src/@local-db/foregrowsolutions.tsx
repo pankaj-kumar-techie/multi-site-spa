@@ -866,6 +866,218 @@ export const foregrowsolutionsContactUs: Section[] = [
     },
 ];
 
+export const foregrowsolutionsPortfolio: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                // {
+                //     id: "menu-3",
+                //     label: "Services",
+                //     url: "#services",
+                // },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Hero banner",
+        version: "v1",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "HeroBanner",
+            id: "002",
+            title: "Interested in Working Together",
+            subTitle: "Innovative Software, Reliable Results",
+            description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
+            version: "v1",
+            style: "CLASSIC",
+            bannerData: [
+                {
+                    title: "Your Technology Partner for Success",
+                    subTitle: "Building the Future, One Solution at a Time",
+                    description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
+                    image: {
+                        id: '1',
+                        imageSrc: '',
+                        imageAlt: 'Innovative Software Development',
+                    },
+                    modalProps: {
+                        isOpen: true,
+                        title: 'Unlocking Innovation in Every Line of Code',
+                    }
+                },
+            ],
+        },
+    },
+    {
+        "id": "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        "name": "Software Development Portfolio",
+        "version": "v1",
+        "style": "MODERN",
+        "path": "index",
+        "data": {
+            "type": "Portfolio",
+            "id": "k",
+            "title": "Our Software Development Portfolio",
+            "subTitle": "Innovative Solutions for Your Business",
+            "description": "At our software development company, we specialize in creating cutting-edge solutions that empower businesses and enhance user experiences.",
+            "version": "v1",
+            "style": "MODERN",
+            "portfolios": [
+                {
+                    "id": 1,
+                    "name": "Spring Boot Microservices",
+                    "description": "Building scalable and resilient microservices using Spring Boot",
+                    "imageSrc": "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageAlt": "Java Spring Boot Microservices Architecture",
+                    "href": "#",
+                },
+                {
+                    "id": 2,
+                    "name": "Angular Web Applications",
+                    "description": "Creating dynamic and responsive web applications with Angular",
+                    "imageSrc": "https://images.unsplash.com/photo-1426024120108-99cc76989c71?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageAlt": "Angular Web Application Development",
+                    "href": "#",
+                },
+                {
+                    "id": 3,
+                    "name": "React Frontend Solutions",
+                    "description": "Crafting interactive and modern user interfaces with React",
+                    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5zQQfgYdauP902KBIcvqGVfUGvUT4gyCJw&s",
+                    "imageAlt": "React Frontend Development",
+                    "href": "#",
+                },
+                {
+                    "id": 4,
+                    "name": ".NET Core Enterprise Applications",
+                    "description": "Developing high-performance enterprise applications using .NET Core",
+                    "imageSrc": "https://images.unsplash.com/photo-1559060018-1fbdb6361eb0?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageAlt": ".NET Core Enterprise Applications",
+                    "href": "#"
+                },
+                {
+                    "id": 5,
+                    "name": "Cloud Services with AWS",
+                    "description": "Harnessing the power of AWS for scalable and secure cloud solutions",
+                    "imageSrc": "https://www.shutterstock.com/image-photo/california-usa-21-may-2023-600nw-2305947849.jpg",
+                    "imageAlt": "AWS Cloud Services",
+                    "href": "#",
+                },
+                {
+                    "id": 6,
+                    "name": "UI/UX Design",
+                    "description": "Optimizing office spaces with technology-driven solutions",
+                    "imageSrc": "https://images.unsplash.com/photo-1634245482394-1bcf5ccffcc0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageAlt": "Smart Office Solutions",
+                    "href": "#",
+                },
+                {
+                    "id": 7,
+                    "name": "PWA (Progressive Web Apps)",
+                    "description": "Building reliable and fast Progressive Web Apps for better user experience",
+                    "imageSrc": "https://images.unsplash.com/photo-1603378895090-fdd6cd979911?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageAlt": "PWA Development",
+                    "href": "#"
+                },
+                {
+                    "id": 8,
+                    "name": "Cloud Solutions with Azure & AWS",
+                    "description": "Delivering cloud-native solutions with Azure and AWS for businesses of all sizes",
+                    "imageSrc": "https://www.shutterstock.com/image-photo/california-usa-21-may-2023-600nw-2305947849.jpg",
+                    "imageAlt": "Azure Cloud Services",
+                    "href": "#"
+                },
+            ]
+        }
+    },
+    {
+        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+        name: "Footer",
+        version: "v2",
+        style: "CLASSIC",
+        path: "index",
+        data: {
+            type: "Footer",
+            id: "k",
+            title: "Hero Banner!",
+            subTitle: "Hero Banner Sub Title is here",
+            description: "Hero Banner Paragraph is here",
+            version: "v1",
+            style: "CLASSIC",
+            footer: {
+                socialLink: [{
+                    id: "1",
+                    name: 'facebook',
+                    className: "",
+                    link: "https://www.facebook.com/fb.foregrow",
+                },
+                {
+                    id: "2",
+                    name: 'instagram',
+                    className: "",
+                    link: "https://www.instagram.com/foregrow/",
+                },
+                {
+                    id: "3",
+                    name: 'linkedin',
+                    className: "",
+                    link: "https://www.linkedin.com/company/foregrow/",
+                }, {
+                    id: "4",
+                    name: 'pinterest',
+                    className: "",
+                    link: "https://in.pinterest.com/foregrow",
+                },],
+                copyright: "Foregrow Solutions",
+            },
+        },
+    },
+];
+
 export const foregrowsolutionsSeo: any = {
     title: "Foregrow Solutions - Innovative Software Development & Cloud Expertise",
     description: "Foregrow Solutions empowers businesses with advanced software development services, specializing in frontend and backend technologies, cloud solutions (AWS, Azure, Google Cloud), and modern frameworks like .NET, Java, Node.js, React, Angular, and Next.js.",
