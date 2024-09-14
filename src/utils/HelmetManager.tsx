@@ -18,22 +18,6 @@ export const HelmetManager: React.FC<SeoData> = ({
   ogDescription,
   ogImage,
 }) => {
-  console.log('SEO Data:', {
-    title,
-    description,
-    keywords,
-    tags,
-    author,
-    imageUrl,
-    siteUrl,
-    twitterCard,
-    twitterTitle,
-    twitterDescription,
-    twitterImage,
-    ogTitle,
-    ogDescription,
-    ogImage,
-  });
   return (
     <Helmet>
       <link rel="icon" href="/path-to-favicon.ico" />
