@@ -752,16 +752,16 @@ export const foregrowsolutionsContactUs: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
         name: "Hero banner",
-        version: "v3",
+        version: "v1",
         style: "CLASSIC",
         path: "index",
         data: {
             type: "HeroBanner",
             id: "002",
-            title: "Empower Your Business with ForeGrow Solutions",
+            title: "Interested in Working Together",
             subTitle: "Innovative Software, Reliable Results",
             description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
-            version: "v2",
+            version: "v1",
             style: "CLASSIC",
             bannerData: [
                 {
@@ -770,7 +770,7 @@ export const foregrowsolutionsContactUs: Section[] = [
                     description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
                     image: {
                         id: '1',
-                        imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
+                        imageSrc: '',
                         imageAlt: 'Innovative Software Development',
                     },
                     modalProps: {
@@ -790,19 +790,34 @@ export const foregrowsolutionsContactUs: Section[] = [
         data: {
             type: "ContactUs",
             id: "k",
-            title: "Get in Touch with Us",
-            subTitle: "We'd Love to Hear from You!",
-            description: "Reach out to us for any inquiries, feedback, or assistance. Our team is here to help you.",
+            title: "Get in Touch with ForeGrow Solutions",
+            subTitle: "",
+            description: "For any inquiries, feedback, or support, feel free to reach out to us. Our team will respond promptly to help you with your needs.",
             version: "v1",
             style: "CLASSIC",
             contactUs: {
                 address: "H.no 221, Posh City, Sector 91, Landran, S.A.S.nagar Mohali, Punjab , India, 140307",
                 email: "info@foregrowsolutions.com",
-                phone: "+91 000000000",
+                phone: "+91 9876543210",
                 formFields: [
-                    { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'name', label: 'Full Name', type: 'text', required: true },
+                    // { name: 'email', label: 'Email', type: 'email', required: true },
                     { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
-                    { name: 'mobile', label: 'Message', type: 'textarea', required: true },
+                    { name: 'message', label: 'Message', type: 'textarea', required: true },
+                    {
+                        name: 'servicesInterested',
+                        label: 'Services Interested In',
+                        type: 'select',
+                        required: true,
+                        options: [
+                            { label: 'Custom Software Development', value: 'acp_installation' },
+                            { label: 'Microservices Architecture', value: 'wooden_flooring' },
+                            { label: 'REST API Development', value: 'glass_solutions' },
+                            { label: 'Database Solutions', value: 'ceiling_design' },
+                            { label: 'Cloud Solutions', value: 'roof_solution' },
+                            { label: 'Others', value: 'others' },
+                        ],
+                    },
                 ]
             },
         },

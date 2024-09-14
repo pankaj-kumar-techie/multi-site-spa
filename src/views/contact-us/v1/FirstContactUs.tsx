@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { FaMobile } from 'react-icons/fa';
+import { FaMobile, FaWhatsapp } from 'react-icons/fa';
 import { GrLocation, GrMail } from 'react-icons/gr';
 import Form from '../../../components/common/dynamic-form/DynamicForm';
 import SectionShimmer from '../../../components/common/shimmer/SectionShimmer';
@@ -17,7 +17,7 @@ function FirstContactUs(props: { data: any }) {
         description: "",
         contactUs: ContactUs,
     });
-    
+
     useEffect(() => {
         setContactUsData(props.data);
     }, [props.data]);
@@ -28,7 +28,7 @@ function FirstContactUs(props: { data: any }) {
 
     const handleSubmit = async (formData: Record<string, any>): Promise<void> => {
         // Your Google Apps Script API endpoint
-        const apiEndpoint = 'https://script.google.com/macros/s/AKfycbxet4_DbNUoWfaiVO7LVk0Ru7f1EnavvFxgOFghxba_tpqHzepIhc9zZbD6he4YsClM/exec';
+        const apiEndpoint = 'https://script.google.com/macros/s/AKfycbxR0G1rzR5Fj3hsTZVByHzHHai8pgPO6hbAtV3F488/exec';
 
         try {
             const response = await fetch(apiEndpoint, {
@@ -64,7 +64,7 @@ function FirstContactUs(props: { data: any }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
                         <TitleCover title={contactUsData.title} textAlign={"left"} titleColor={`${textColor}`} // Use dynamic text color
-                            subtitle={contactUsData.subTitle} subtitleColor={`${textColor}`} paragraphColor={`${textColor}`} fontFamily={theme.typography.fontFamily}></TitleCover>
+                            subtitle={contactUsData.subTitle} subtitleColor={`${textColor}`} paragraph={contactUsData.description} paragraphColor={`${textColor}`} fontFamily={theme.typography.fontFamily}></TitleCover>
                         <div className="flex items-center space-x-2">
                             <GrLocation></GrLocation>
                             <p className={`${textColor}`}>{contactUsData.contactUs.address}</p> {/* Use dynamic text color */}
@@ -77,12 +77,16 @@ function FirstContactUs(props: { data: any }) {
                             <FaMobile></FaMobile>
                             <p className={`${textColor}`}>{contactUsData.contactUs.phone}</p> {/* Use dynamic text color */}
                         </div>
+                        <div className="flex items-center space-x-2">
+                            <FaWhatsapp />
+                            <p className={`${textColor}`}>{contactUsData.contactUs.phone}</p>
+                        </div>
                         <div className="aspect-w-10  aspect-h-9">
                         </div>
                     </div>
                     {status === 'success' ? (
                         <p className={`text-green-500 font-bold text-center`}>
-                            Thank you for contacting us!
+                            Thank you for reaching out! We will get back to you within 24 hours.
                         </p>
                     ) : (
                         <Form fields={contactUsData.contactUs.formFields} onSubmit={handleSubmit}></Form>

@@ -49,10 +49,15 @@ const DynamicForm: React.FC<DynamicFormProps> = ({ fields, level, onSubmit }) =>
                     <label className={`block text-sm font-bold ${textColor}`}>
                         {field.label}
                     </label>
-                    {renderField(field)}
+                    <div className="relative">
+                        {renderField(field)}
+                    </div>
                 </div>
             ))}
-            <button className={`${theme.buttons.secondary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600`} type="submit">
+            <button
+                className={`${theme.buttons.primary} ${textColor} p-4 rounded-full shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300`}
+                type="submit"
+            >
                 {level || 'Submit'}
             </button>
         </form>

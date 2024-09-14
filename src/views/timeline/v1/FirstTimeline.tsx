@@ -2,7 +2,6 @@ import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
 import TitleCover from "../../../components/common/title-cover/TitleCover";
-import { title } from "process";
 import SectionShimmer from "../../../components/common/shimmer/SectionShimmer";
 import { Timeline } from "../../../modal/Section";
 
