@@ -524,29 +524,6 @@ export const kalaByHimaniContactUs: Section[] = [
     },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "About Us",
-        version: "v1",
-        style: "MODERN",
-        path: "index",
-        data: {
-            type: "AboutUs",
-            id: "003",
-            title: "About Kala by Himani",
-            subTitle: "Crafting Personalized Gifts with Love",
-            description: "At Kala by Himani, we believe every gift tells a unique story. Our mission is to create high-quality, handcrafted gift hampers tailored to your individual tastes and special occasions. We celebrate life’s moments with personalized gifts that reflect love and thoughtfulness.\n\nOur skilled artisans collaborate with you to design hampers filled with delightful treats, custom cards, and meaningful keepsakes, ensuring each creation embodies your sentiments. Committed to sustainability, we source materials ethically and use eco-friendly packaging. Join us in crafting unforgettable experiences with our exquisite gift hampers.",
-            version: "v1",
-            style: "MODERN",
-            images: [
-                {
-                    id: "1",
-                    imageSrc: "https://namhyafoods.com/cdn/shop/files/7_0fa411a7-6034-4184-8e60-cc0d8216ec85.jpg?v=1698733099&width=1445",
-                    imageAlt: "Handcrafted Gift Hampers",
-                }
-            ]
-        }
-    },
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Contact Us",
         version: "v1",
         style: "MODERN",
@@ -565,7 +542,23 @@ export const kalaByHimaniContactUs: Section[] = [
                 phone: "+91 9569576707",
                 formFields: [
                     { name: 'name', label: 'Name', type: 'text', required: true },
+                    { name: 'email', label: 'Email', type: 'email', required: true },
                     { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
+                    { name: 'message', label: 'Message', type: 'textarea', required: true },
+                    {
+                        name: 'servicesInterested',
+                        label: 'Services Interested In',
+                        type: 'select',
+                        required: true,
+                        options: [
+                            { label: 'Birthdays', value: 'acp_installation' },
+                            { label: 'Weddings', value: 'wooden_flooring' },
+                            { label: 'Anniversaries', value: 'glass_solutions' },
+                            { label: 'Corporate Events', value: 'ceiling_design' },
+                            { label: 'Holidays (Diwali, New Year)', value: 'roof_solution' },
+                            { label: 'Others', value: 'others' },
+                        ],
+                    },
                 ]
             },
         }
