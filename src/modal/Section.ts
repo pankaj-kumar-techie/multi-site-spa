@@ -41,6 +41,8 @@ export type HeroBannerProps = {
   title: string
   subTitle: string
   description: string,
+  buttonLevel?: string,
+  buttonLink?: string,
   image?: Image,
   videoSrc?: string,
   modalProps?: ModalProps

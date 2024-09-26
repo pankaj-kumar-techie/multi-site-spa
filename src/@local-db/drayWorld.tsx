@@ -102,7 +102,7 @@ export const drayWorldLogistic: Section[] = [
             id: "003",
             title: "About Dray World Logistics",
             subTitle: "Your Trusted Logistics Partner",
-            description: "At Dray World Logistics, we are dedicated to providing specialized logistics services that ensure the secure and efficient transportation of your cargo. With years of experience and a commitment to excellence, we are your reliable logistics partner.",
+            description: "At Dray World Logistics, we are dedicated to providing specialized logistics services that ensure the secure and efficient transportation of your cargo. With years of experience and a commitment to excellence, we are your reliable logistics partner. We believe in building long-lasting relationships with our clients, offering personalized services to ensure that each shipment is handled with care. Our team of dedicated professionals works tirelessly to provide the best logistics solutions, utilizing the latest technologies to track and manage your cargo with precision.",
             version: "v1",
             style: "CLASSIC",
             images: [
@@ -125,35 +125,56 @@ export const drayWorldLogistic: Section[] = [
             id: "k",
             title: "Our Logistics Services",
             subTitle: "Efficient Cargo Transportation",
-            description: "Explore our comprehensive logistics services that ensure the secure and timely transportation of your cargo. Your logistics needs, our expertise.",
+            description: "As part of our commitment to providing you with the best service, we’d like to share some updates and resources that can enhance your logistics operations.",
             version: "v2",
             style: "CLASSIC",
             services: [
                 {
                     id: 1,
-                    title: 'Freight Forwarding',
-                    body: 'Efficient cargo forwarding services tailored to your specific needs.',
+                    title: 'Real-Time Tracking',
+                    body: 'Our upgraded tracking system allows you to monitor shipments in real-time, ensuring you always know where your goods are.',
                     imageSrc: '',
                     imageAlt: 'Freight Forwarding Icon',
                 },
                 {
                     id: 2,
-                    title: 'Warehousing',
-                    body: 'Safe and secure warehousing solutions for your goods.',
+                    title: 'Dedicated Support Team',
+                    body: 'Our customer support team is available 24/7 to assist you with any questions or concerns you may have.',
                     imageSrc: '',
                     imageAlt: 'Warehousing Icon',
                 },
                 {
                     id: 3,
-                    title: 'Customs Clearance',
-                    body: 'Expert customs clearance services to streamline international shipments.',
+                    title: 'Cost Optimization Tips',
+                    body: 'We’ve compiled strategies that can help you reduce logistics costs without compromising on service quality.',
                     imageSrc: '',
                     imageAlt: 'Customs Clearance Icon',
                 },
                 {
                     id: 4,
-                    title: 'Last-Mile Delivery',
-                    body: 'Efficient last-mile delivery services for a seamless customer experience.',
+                    title: 'Inventory Management Solutions',
+                    body: 'Our advanced inventory management system allows you to track stock levels in real-time, helping you make informed decisions.',
+                    imageSrc: '',
+                    imageAlt: 'Last-Mile Delivery Icon',
+                },
+                {
+                    id: 5,
+                    title: 'Flexible Fulfillment Options',
+                    body: 'We offer customizable fulfillment services to meet your unique requirements, ensuring your customers receive their Containers on time.',
+                    imageSrc: '',
+                    imageAlt: 'Last-Mile Delivery Icon',
+                },
+                {
+                    id: 6,
+                    title: 'Data-Driven Insights',
+                    body: 'Our analytics tools provide valuable insights into your logistics performance, helping you optimize your supply chain and reduce costs',
+                    imageSrc: '',
+                    imageAlt: 'Last-Mile Delivery Icon',
+                },
+                {
+                    id: 7,
+                    title: 'Personalized Support',
+                    body: 'Our dedicated account managers are here to assist you with any inquiries or concerns you may have. Don’t hesitate to reach out!',
                     imageSrc: '',
                     imageAlt: 'Last-Mile Delivery Icon',
                 },
@@ -195,60 +216,60 @@ export const drayWorldLogistic: Section[] = [
         },
     },
 
-    {
-        id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
-        name: "Testimonials",
-        version: "v1",
-        style: "CLASSIC",
-        path: "index",
-        data: {
-            type: "Testimonial",
-            id: "k",
-            title: "Testimonials",
-            subTitle: "What Our Clients Say",
-            description: "Read what our satisfied clients have to say about our logistics services.",
-            version: "v1",
-            style: "CLASSIC",
-            testimonials: [
-                {
-                    id: "1",
-                    name: "John Doe",
-                    designation: "Client",
-                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
-                    imageAlt: "John Doe",
-                    testimonial:
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.",
-                },
-                {
-                    id: "2",
-                    name: "Jane Smith",
-                    designation: "Business Owner",
-                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
-                    imageAlt: "Jane Smith",
-                    testimonial:
-                        "Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla.",
-                },
-                {
-                    id: "3",
-                    name: "David Johnson",
-                    designation: "CEO",
-                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
-                    imageAlt: "David Johnson",
-                    testimonial:
-                        "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
-                },
-                {
-                    id: "4",
-                    name: "Sarah Wilson",
-                    designation: "Logistics Manager",
-                    imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
-                    imageAlt: "Sarah Wilson",
-                    testimonial:
-                        "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
-                },
-            ],
-        },
-    },
+    // {
+    //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+    //     name: "Testimonials",
+    //     version: "v1",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "Testimonial",
+    //         id: "k",
+    //         title: "Testimonials",
+    //         subTitle: "What Our Clients Say",
+    //         description: "Read what our satisfied clients have to say about our logistics services.",
+    //         version: "v1",
+    //         style: "CLASSIC",
+    //         testimonials: [
+    //             {
+    //                 id: "1",
+    //                 name: "John Doe",
+    //                 designation: "Client",
+    //                 imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
+    //                 imageAlt: "John Doe",
+    //                 testimonial:
+    //                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac magna sit amet risus tristique interdum, at vel velit in hac habitasse platea dictumst.",
+    //             },
+    //             {
+    //                 id: "2",
+    //                 name: "Jane Smith",
+    //                 designation: "Business Owner",
+    //                 imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
+    //                 imageAlt: "Jane Smith",
+    //                 testimonial:
+    //                     "Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla.",
+    //             },
+    //             {
+    //                 id: "3",
+    //                 name: "David Johnson",
+    //                 designation: "CEO",
+    //                 imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+    //                 imageAlt: "David Johnson",
+    //                 testimonial:
+    //                     "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
+    //             },
+    //             {
+    //                 id: "4",
+    //                 name: "Sarah Wilson",
+    //                 designation: "Logistics Manager",
+    //                 imageSrc: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+    //                 imageAlt: "Sarah Wilson",
+    //                 testimonial:
+    //                     "Ut posuere, ex a fringilla hendrerit, nulla metus gravida mi, in hendrerit quam odio sed est. Vestibulum nec finibus nisi. Aliquam et ipsum nulla.",
+    //             },
+    //         ],
+    //     },
+    // },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Blog",
@@ -396,7 +417,7 @@ export const drayWorldLogistic: Section[] = [
     {
         id: "143d8d",
         name: "Footer",
-        version: "v2",
+        version: "v3",
         style: "CLASSIC",
         path: "index",
         data: {
@@ -408,29 +429,6 @@ export const drayWorldLogistic: Section[] = [
             version: "v1",
             style: "CLASSIC",
             footer: {
-                socialLink: [{
-                    id: "1",
-                    name: 'facebook',
-                    className: "",
-                    link: "https://www.facebook.com/fb.pahariyatri",
-                },
-                {
-                    id: "2",
-                    name: 'instagram',
-                    className: "",
-                    link: "https://www.instagram.com/pahariyatri/",
-                },
-                {
-                    id: "3",
-                    name: 'linkedin',
-                    className: "",
-                    link: "https://www.linkedin.com/company/pahari-yatri/",
-                }, {
-                    id: "4",
-                    name: 'pinterest',
-                    className: "",
-                    link: "https://in.pinterest.com/pin_pahariyatri",
-                },],
                 copyright: "Dray World Logistic",
             },
         },

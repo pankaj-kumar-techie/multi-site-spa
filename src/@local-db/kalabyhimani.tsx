@@ -67,9 +67,11 @@ export const kalaByHimani: Section[] = [
             style: "CLASSIC",
             bannerData: [
                 {
-                    title: "Your Perfect Gift Awaits",
-                    subTitle: "Perfectly Crafted with Love",
-                    description: "We specialize in creating beautiful and unique gift hampers that cater to your specific needs. Explore our collection today!",
+                    title: "Customised Gift Hampers For You",
+                    subTitle: "Beautifully Curated Gift Hampers.",
+                    description: "Our gifting experience for customers is easy, enjoyable, and hassle-free because all gift items are curated and presented in aesthetic hampers that are ready for shipping.",
+                    buttonLevel: 'View Collection',
+                    buttonLink: "#portfolio",
                     image: {
                         id: '1',
                         // imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
@@ -162,7 +164,7 @@ export const kalaByHimani: Section[] = [
             id: "k",
             title: "Our Customized Hampers",
             subTitle: "",
-            description: "Explore our diverse range of handcrafted gift hampers, each designed to bring joy and create lasting memories. Perfect for every celebration, our hampers are crafted with love and thoughtfulness.",
+            description: "We source our gift items from top companies and premium brands to ensure high quality. Providing various products that encourage personal growth and mindfulness, we believe gifts should be meaningful and intentional.",
             version: "v1",
             style: "MODERN",
             portfolios: [

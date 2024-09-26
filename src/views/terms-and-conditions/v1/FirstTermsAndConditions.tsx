@@ -23,7 +23,16 @@ const FirstTermsAndConditions = (props: { data: any }) => {
     // }
     return (
         <section className={`bg-${theme.colors.primary} container mx-auto px-4`}>
-            <TitleCover title={tacData.title} titleColor={`${textColor}`} fontFamily="font-bold" paragraph={tacData.description}  />
+            <div className="prose lg:prose-xl max-w-[960px] mx-auto bg-white p-6 md:px-8 rounded-md">
+                <TitleCover
+                    title={tacData.title}
+                    titleColor={`${textColor}`}
+                    fontFamily="font-bold"
+                    paragraph={tacData.description}
+                />
+            </div>
+
+
             <div className="prose text-center">
                 {/* {tacData.termAndCondition.map((tac: TermAndCondition) => (
                     <div key={tac.id}>

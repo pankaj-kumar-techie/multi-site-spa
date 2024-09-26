@@ -127,7 +127,15 @@ export const foregrowsolutions: Section[] = [
                     "id": 1,
                     "name": "Spring Boot Microservices",
                     "description": "Building scalable and resilient microservices using Spring Boot",
-                    "imageSrc": "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvKrTuGmZAqF-aCIxf-3rmNyBDXNh0ApWnEQ&s",
+                    "imageAlt": "Java Spring Boot Microservices Architecture",
+                    "href": "#",
+                },
+                {
+                    "id": 10,
+                    "name": ".Net Core Service",
+                    "description": "Building scalable and resilient service using .Net Core",
+                    "imageSrc": "https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/dotnetCore.component.complex-narrative-xl.ts=1690481702068.png/content/adobe-cms/us/en/products/instana/supported-technologies/dotnet-core-monitoring/_jcr_content/root/table_of_contents/body/content_section_styled/content-section-body/complex_narrative/logoimage",
                     "imageAlt": "Java Spring Boot Microservices Architecture",
                     "href": "#",
                 },
@@ -135,7 +143,7 @@ export const foregrowsolutions: Section[] = [
                     "id": 2,
                     "name": "Angular Web Applications",
                     "description": "Creating dynamic and responsive web applications with Angular",
-                    "imageSrc": "https://images.unsplash.com/photo-1426024120108-99cc76989c71?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTeNhddUQInfcuwztyqws-yWCaGB-y1gzJmg&s",
                     "imageAlt": "Angular Web Application Development",
                     "href": "#",
                 },
@@ -145,14 +153,6 @@ export const foregrowsolutions: Section[] = [
                     "description": "Crafting interactive and modern user interfaces with React",
                     "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY5zQQfgYdauP902KBIcvqGVfUGvUT4gyCJw&s",
                     "imageAlt": "React Frontend Development",
-                    "href": "#",
-                },
-                {
-                    "id": 4,
-                    "name": "Laravel Backend Solutions",
-                    "description": "Building robust backend systems with Laravel framework",
-                    "imageSrc": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                    "imageAlt": "Laravel Backend Development",
                     "href": "#",
                 },
                 {
@@ -193,42 +193,42 @@ export const foregrowsolutions: Section[] = [
                     "id": 1,
                     "title": "Custom Software Development",
                     "body": "Tailor-made software solutions crafted to meet your unique business needs, ensuring optimal performance and efficiency.",
-                    "imageSrc": "https://example.com/custom-development-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/8350/8350445.png",
                     "imageAlt": "Custom Software Development Icon"
                 },
                 {
                     "id": 4,
                     "title": "Microservices Architecture",
                     "body": "Designing microservices architectures that enhance flexibility and scalability, allowing for independent deployment and improved system resilience.",
-                    "imageSrc": "https://example.com/microservices-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/12113/12113492.png",
                     "imageAlt": "Microservices Architecture Icon"
                 },
                 {
                     "id": 5,
                     "title": "REST API Development",
                     "body": "Creating robust and scalable REST APIs that facilitate seamless integration between your applications, adhering to best practices for security and performance.",
-                    "imageSrc": "https://example.com/rest-api-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/3045/3045960.png",
                     "imageAlt": "REST API Development Icon"
                 },
                 {
                     "id": 6,
                     "title": "Database Solutions",
                     "body": "Offering expertise in SQL and NoSQL databases, ensuring data integrity and optimized performance for your applications.",
-                    "imageSrc": "https://example.com/database-solutions-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/15118/15118957.png",
                     "imageAlt": "Database Solutions Icon"
                 },
                 {
                     "id": 7,
                     "title": "Cloud Solutions",
                     "body": "Harnessing the power of AWS, Google Cloud, and Azure for scalable, secure, and flexible cloud solutions, ensuring your business stays ahead in the digital era.",
-                    "imageSrc": "https://example.com/cloud-solutions-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/13296/13296567.png",
                     "imageAlt": "Cloud Solutions Icon"
                 },
                 {
                     "id": 9,
                     "title": "Mobile App Development",
                     "body": "Building responsive and user-friendly mobile applications for iOS and Android platforms that enhance user experiences and drive engagement.",
-                    "imageSrc": "https://example.com/mobile-app-development-icon.jpg",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/1085/1085828.png",
                     "imageAlt": "Mobile App Development Icon"
                 },
             ]
@@ -596,42 +596,10 @@ export const foregrowsolutionsAboutUs: Section[] = [
             },
         },
     },
-    // {
-    //     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
-    //     name: "Hero banner",
-    //     version: "v2",
-    //     style: "CLASSIC",
-    //     path: "index",
-    //     data: {
-    //         type: "HeroBanner",
-    //         id: "002",
-    //         title: "Empower Your Business with ForeGrow Solutions",
-    //         subTitle: "Innovative Software, Reliable Results",
-    //         description: "Unlock the full potential of your business with our cutting-edge software development services. From concept to deployment, we bring your ideas to life with expertise and innovation.",
-    //         version: "v2",
-    //         style: "CLASSIC",
-    //         bannerData: [
-    //             {
-    //                 title: "Your Technology Partner for Success",
-    //                 subTitle: "Building the Future, One Solution at a Time",
-    //                 description: "We are dedicated to delivering top-notch software solutions tailored to meet your unique business needs. Explore our services and partner with us for a brighter tomorrow.",
-    //                 image: {
-    //                     id: '1',
-    //                     imageSrc: 'https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg',
-    //                     imageAlt: 'Innovative Software Development',
-    //                 },
-    //                 modalProps: {
-    //                     isOpen: true,
-    //                     title: 'Unlocking Innovation in Every Line of Code',
-    //                 }
-    //             },
-    //         ],
-    //     },
-    // },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "About Us",
-        version: "v2",
+        version: "v1",
         style: "MODERN",
         path: "index",
         data: {
@@ -651,6 +619,33 @@ export const foregrowsolutionsAboutUs: Section[] = [
             ]
         }
     },
+    // {
+    //     id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+    //     name: "Header",
+    //     version: "v1",
+    //     style: "MODERN",
+    //     path: "index",
+    //     data: {
+    //         type: "OurTeam",
+    //         id: "001",
+    //         title: "ForeGrow Solutions - Your Trusted Technology Partner",
+    //         subTitle: "Driving Innovation, Delivering Excellence",
+    //         description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+    //         version: "v2",
+    //         style: "MODERN",
+    //         ourTeam: [
+    //             {
+    //                 id: 1,
+    //                 name: 'string',
+    //                 role: 'string',
+    //                 description: 'string',
+    //                 imageSrc: 'string',
+    //                 imageAlt: 'string',
+    //                 href: 'string',
+    //             }
+    //         ]
+    //     },
+    // },
     {
         id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
         name: "Footer",

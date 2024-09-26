@@ -15,7 +15,7 @@ export default function ThirdHeroBanner(props: { data: any }) {
         <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:pb-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">
             <span className="inline-flex text-lg items-center justify-center px-5 py-2 mb-2  font-medium text-center text-white rounded-lg bg-teal-500 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-            {bannerData.title}
+              {bannerData.title}
             </span>
             <h1 className={`max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:${textColor}`}>
               {bannerData.subTitle}
@@ -25,10 +25,10 @@ export default function ThirdHeroBanner(props: { data: any }) {
               {bannerData.description}
             </p>
             <a
-              href="#portfolio"
+              href={bannerData.buttonLink ?? "#portfolio"}
               className="inline-flex items-center justify-center px-10 py-3  text-base font-medium text-center text-white rounded-lg bg-orange-400 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
             >
-              LET'S GET STARTED
+              {bannerData.buttonLevel ?? "LET'S GET STARTED"}
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
