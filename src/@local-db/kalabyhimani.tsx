@@ -103,8 +103,8 @@ export const kalaByHimani: Section[] = [
             images: [
                 {
                     id: "1",
-                    imageSrc: "https://namhyafoods.com/cdn/shop/files/7_0fa411a7-6034-4184-8e60-cc0d8216ec85.jpg?v=1698733099&width=1445",
-                    imageAlt: "Handcrafted Gift Hampers",
+                    imageSrc: "https://i.pinimg.com/originals/88/17/ec/8817ec1d3067563082291428c2769212.jpg",
+                    imageAlt: "Himani Sharma",
                 }
             ]
         }
