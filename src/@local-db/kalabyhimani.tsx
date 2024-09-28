@@ -821,7 +821,7 @@ export const kalaByHimaniProductList: Section[] = [
                     price: '₹599',
                     oldPrice: '₹699',
                     discount: '10',
-                }
+                },
                 {
                     id: 8,
                     name: "Karvachauth Sargi Hamper",
