@@ -105,6 +105,8 @@ export type Product = {
   name: string,
   href: string,
   price?: string,
+  discount?: string,
+  oldPrice?: string,
   description: string,
   imageSrc: string,
   imageAlt: string,
