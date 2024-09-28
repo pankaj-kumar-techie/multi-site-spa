@@ -37,7 +37,7 @@ export const kalaByHimani: Section[] = [
                 }, {
                     id: "menu-3",
                     label: "Our Hampers",
-                    url: "/hampers",
+                    url: "/products",
                 }, {
                     id: "menu-4",
                     label: "Contact Us",
@@ -258,12 +258,12 @@ export const kalaByHimani: Section[] = [
                     id: 3,
                     name: "Bride's Wedding Night Gift Hamper",
                     description: "Celebrate the bride’s wedding night with this exquisite hamper. Featuring a customized silver pendant, fragrance candles, and luxurious chocolates, it’s perfect for marking the beginning of a new union.",
-                    imageSrc: "https://i.pinimg.com/originals/ed/ce/08/edce084287b33d5287aea6cc9db9f21d.jpg",
+                    imageSrc: "https://i.pinimg.com/originals/15/6e/60/156e601269fcb0e1a9aebd702b0b5f5f.jpg",
                     imageAlt: "Bride's Wedding Night Gift Hamper",
                     href: "https://forms.gle/6nc85WLhJhwZzges6",
-                    price: '₹5,000  ',
-                    oldPrice: '₹2,800',
-                    discount: '40',
+                    price: '₹5,999  ',
+                    oldPrice: '₹6,999',
+                    discount: '10',
                 },
                 {
                     id: 4,
@@ -581,7 +581,7 @@ export const kalaByHimaniContactUs: Section[] = [
                 }, {
                     id: "menu-3",
                     label: "Our Hampers",
-                    url: "/hampers",
+                    url: "/products",
                 }, {
                     id: "menu-4",
                     label: "Contact Us",
@@ -671,6 +671,208 @@ export const kalaByHimaniContactUs: Section[] = [
     }
 ];
 
+export const kalaByHimaniProductList: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "Customized Gift Hampers",
+            subTitle: "For Every Occasion",
+            description: "Explore our unique, handcrafted gift hampers tailored to enhance your special moments and celebrations. Perfect for birthdays, anniversaries, weddings, and more.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/736x/eb/ae/bd/ebaebdb67546e8f9bc2c1a6b34844c9a.jpg',
+                imageAlt: 'Customized Gift Hampers Logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                }, {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                }, {
+                    id: "menu-3",
+                    label: "Our Hampers",
+                    url: "/products",
+                }, {
+                    id: "menu-4",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "",
+                email: "contact@kalaByHimani.com",
+                phone: "+91 1234567890",
+            },
+        },
+    },
+
+    {
+        id: "143d8df34370-9e0e-0c5ef7a46f6b",
+        name: "Hampers Portfolio",
+        version: "v2",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Product",
+            id: "k",
+            title: "Our Customized Hampers",
+            subTitle: "",
+            description: "We source our gift items from top companies and premium brands to ensure high quality. Providing various products that encourage personal growth and mindfulness, we believe gifts should be meaningful and intentional.",
+            version: "v1",
+            style: "MODERN",
+            products: [
+                {
+                    id: 1,
+                    name: "Wedding Hamper for Couples",
+                    description: "A luxurious wedding hamper tailored for couples, featuring customizable options. Includes personalized cups, aroma candles, and a selection of premium chocolates. Perfect for celebrating love on their big day.",
+                    imageSrc: "https://corporates.giftsbyrashi.com/wp-content/uploads/2021/12/couple-gift-hamper-scaled-1-scaled.jpg",
+                    imageAlt: "Birthday Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹2,400',
+                    oldPrice: '₹2,800',
+                    discount: '40',
+
+                },
+                {
+                    id: 2,
+                    name: "Best Friend Wedding Hamper",
+                    description: "Surprise the bride-to-be with a beautifully curated wedding hamper. This elegant collection includes handmade jhumkas, perfume, and an evil eye wind chime, designed to wish her love and happiness.",
+                    imageAlt: "Wedding Gift Hamper",
+                    imageSrc: "https://i.pinimg.com/564x/3a/d9/c9/3ad9c938f08388f0a4028f3ed103538c.jpg",
+                    href: "https://i.pinimg.com/originals/34/eb/34/34eb348ad215167acd1a952e8e19e44c.jpg",
+                    price: '₹1,400',
+                    oldPrice: '₹2,800',
+                    discount: '40',
+                },
+                {
+                    id: 3,
+                    name: "Bride's Wedding Night Gift Hamper",
+                    description: "Celebrate the bride’s wedding night with this exquisite hamper. Featuring a customized silver pendant, fragrance candles, and luxurious chocolates, it’s perfect for marking the beginning of a new union.",
+                    imageSrc: "https://i.pinimg.com/originals/15/6e/60/156e601269fcb0e1a9aebd702b0b5f5f.jpg",
+                    imageAlt: "Bride's Wedding Night Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹5,999  ',
+                    oldPrice: '₹6,999',
+                    discount: '10',
+                },
+                {
+                    id: 4,
+                    name: "Customized Birthday Hamper",
+                    description: "A beautifully curated birthday hamper featuring chocolates, candles, and a personalized card. Ideal for a thoughtful and elegant gift to celebrate someone's special day. ",
+                    imageSrc: "https://i.pinimg.com/originals/6b/e9/79/6be979c7106f3f1c6a50fd2248673554.jpg",
+                    imageAlt: "Customized Birthday Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹599',
+                    oldPrice: '₹999',
+                    discount: '49',
+                },
+                {
+                    id: 5,
+                    name: "Anniversary Celebration Hamper",
+                    description: "Celebrate love with our customizable anniversary hampers. Each includes chocolates, cookies, and a personalized card to create memorable moments.  ",
+                    imageSrc: "https://i.pinimg.com/originals/52/f7/be/52f7becd6c1a29a5822619f6d3da8e9f.png",
+                    imageAlt: "Corporate Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹5,599',
+                    oldPrice: '₹7,800',
+                    discount: '48',
+                },
+                {
+                    id: 6,
+                    name: "Elegant Return Favor Hampers",
+                    description: "Elevate your gift-giving experience with our personalized return favor hampers. Featuring unique items like customized cups, chocolates, and lollipops for every occasion.",
+                    imageSrc: "https://i.pinimg.com/originals/72/cc/2c/72cc2c9645e890bee70f8ca8214f4513.png",
+                    imageAlt: "Thank You Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹399',
+                    oldPrice: '₹599',
+                    discount: '18',
+                },
+                {
+                    id: 7,
+                    name: "Trousseau Packing Services",
+                    description: "Experience customized trousseau packing tailored to your wedding preferences. Our services ensure a stunning presentation for all your bridal gifts. ",
+                    imageSrc: "https://i.pinimg.com/originals/01/b1/73/01b173704ab29c37db5bba27e56b16d4.jpg",
+                    imageAlt: "Thank You Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹3,999 ',
+                    oldPrice: '₹5,500',
+                    discount: '28',
+                },
+                {
+                    id: 8,
+                    name: "Customized Wedding In-Room Hampers",
+                    description: "Create a memorable first impression with our customized wedding in-room hampers, filled with chocolates, dry fruits, and a personalized card.",
+                    imageSrc: "https://i.pinimg.com/originals/6a/a9/49/6aa94932775cdbf298a1df23c388da40.jpg",
+                    imageAlt: "Thank You Gift Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹599',
+                    oldPrice: '₹699',
+                    discount: '10',
+                }
+                {
+                    id: 8,
+                    name: "Karvachauth Sargi Hamper",
+                    description: "Delight your Mother-in-law or Daughter-in-law with a beautifully curated Karvachauth hamper. This festive collection includes customized baskets, dry fruits, and decorative items to celebrate the occasion.",
+                    imageSrc: "https://i.pinimg.com/564x/9c/42/3e/9c423e1bd35ffac57010479a13c237a5.jpg",
+                    imageAlt: "Karvachauth Sargi Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹1,400',
+                },
+                {
+                    id: 10,
+                    name: "Diwali Delight Hamper",
+                    description: "Surprise the bride-to-be with a beautifully curated wedding hamper. This elegant collection includes handmade jhumkas, perfume, and an evil eye wind chime, designed to wish her love and happiness.",
+                    imageSrc: "https://corporates.giftsbyrashi.com/wp-content/uploads/2021/12/couple-gift-hamper-scaled-1-scaled.jpg",
+                    imageAlt: "Diwali Delight Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹999',
+                },
+                {
+                    id: 11,
+                    name: "Bhai Dooj Special Hamper",
+                    description: "Description: Strengthen the bond with your brother this Bhai Dooj with a personalized hamper filled with love and treats.",
+                    imageSrc: "https://i.pinimg.com/564x/2d/40/4c/2d404ca39850f798c7aedbfbaa546c0f.jpg",
+                    imageAlt: "Bhai Dooj Special Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹799',
+                },
+                {
+                    id: 13,
+                    name: "Christmas Cheer Hamper",
+                    description: "Share the joy of Christmas with our festive hamper, filled with delightful treats for family and friends. ",
+                    imageSrc: "https://i.pinimg.com/564x/6b/31/ef/6b31efc43b20c96c95465aa5ddb89d97.jpg",
+                    imageAlt: "Christmas Cheer Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹3,500',
+                },
+                {
+                    id: 13,
+                    name: "New Year Celebration Hamper",
+                    description: "Welcome the New Year with a bang! Our festive hamper is designed to kickstart your celebrations.",
+                    imageSrc: "https://i.pinimg.com/564x/34/5b/87/345b879451f2b11586e331d0716c0f27.jpg",
+                    imageAlt: "New Year Celebration Hamper",
+                    href: "https://forms.gle/6nc85WLhJhwZzges6",
+                    price: '₹2,200',
+                },
+            ]
+        }
+    },
+
+];
+
 export const kalaByHimaniAboutUs: Section[] = [
     {
         id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
@@ -703,7 +905,7 @@ export const kalaByHimaniAboutUs: Section[] = [
                 }, {
                     id: "menu-3",
                     label: "Our Hampers",
-                    url: "/hampers",
+                    url: "/products",
                 }, {
                     id: "menu-4",
                     label: "Contact Us",
