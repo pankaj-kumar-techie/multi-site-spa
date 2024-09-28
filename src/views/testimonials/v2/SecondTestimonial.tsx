@@ -21,12 +21,6 @@ export default function SecondTestimonial(props: { data: any }) {
         setTestimonialData(props.data);
     }, [props.data]);
 
-    const shouldRenderSingleTestimonial = window.innerWidth < 768;
-    const testimonialsToShow = shouldRenderSingleTestimonial
-        ? testimonialData.testimonials.slice(startIndex, startIndex + 1)
-        : testimonialData.testimonials.slice(startIndex, startIndex + 4);
-
-
     return (
         <section className={`bg-${theme.colors.primary} text-center`}>
             <div className="max-w-7xl mx-auto pb-12 md:pt-16 pt-5 px-4 sm:px-6 md:px-8">
@@ -39,7 +33,7 @@ export default function SecondTestimonial(props: { data: any }) {
 
                 <div className="grid grid-cols-1 gap-6 lg:gap-12">
                     <AliceCarousel
-                        items={testimonialsToShow.map((testimonial: Testimonial) => (
+                        items={testimonialData.testimonials.map((testimonial: Testimonial) => (
                             <TestimonialCard2
                                 key={testimonial.id}
                                 id={testimonial.id}
