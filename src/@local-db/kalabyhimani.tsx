@@ -978,14 +978,14 @@ export const kalaByHimaniAboutUs: Section[] = [
 
 ];
 
-export const kalaByHimaniSeo: any = {
-    title: "KBH - Personalized Gift Hampers for Every Occasion",
-    description: "Explore our handcrafted gift hampers and custom cards at Kala by Himani. Perfect for birthdays, weddings, anniversaries, and festivals, each gift is tailored to create unforgettable memories for your loved ones.",
-    keywords: "personalized gift hampers, custom cards, handmade gifts, birthday gifts, wedding gifts, anniversary gifts, festival gifts, unique gifting solutions, eco-friendly gifts, quilling cards, scrapbooks, bespoke gifting",
-    tags: "personalized gifts, handmade hampers, unique gifts, special occasions, eco-friendly gifting, custom cards, memorable gifts, gifting solutions, Kala by Himani, quilling art",
+const seoContent = {
+    title: "Kala By Himani - Premium Personalized Gift Hampers for Every Occasion",
+    description: "Discover exquisite handcrafted gift hampers at Kala by Himani. Ideal for birthdays, weddings, anniversaries, and festivals, each personalized gift creates unforgettable memories for your loved ones.",
+    keywords: "personalized gift hampers, premium handmade gifts, custom cards, birthday gift ideas, wedding hampers, anniversary gift baskets, unique festival gifts, eco-friendly gifting solutions, quilling cards, bespoke gift creations",
+    tags: "personalized gifts, handcrafted hampers, unique gift ideas, special occasions, eco-friendly gifts, custom greeting cards, memorable gifting solutions, Kala by Himani, quilling art",
     author: "Himani",
-    imageUrl: "https://example.com/og-image.jpg",
-    siteUrl: "https://www.kalabyhimani.com", // Ensure this matches your actual website URL
+    imageUrl: "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
+    siteUrl: "https://www.kalabyhimani.com/",
 };
 
 
