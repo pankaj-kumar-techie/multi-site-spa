@@ -978,7 +978,7 @@ export const kalaByHimaniAboutUs: Section[] = [
 
 ];
 
-const seoContent = {
+export const seoContent = {
     title: "Kala By Himani - Premium Personalized Gift Hampers for Every Occasion",
     description: "Discover exquisite handcrafted gift hampers at Kala by Himani. Ideal for birthdays, weddings, anniversaries, and festivals, each personalized gift creates unforgettable memories for your loved ones.",
     keywords: "personalized gift hampers, premium handmade gifts, custom cards, birthday gift ideas, wedding hampers, anniversary gift baskets, unique festival gifts, eco-friendly gifting solutions, quilling cards, bespoke gift creations",
