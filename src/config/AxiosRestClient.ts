@@ -1,64 +1,84 @@
-import {Config} from "./Config";
-import axios, {AxiosInstance, AxiosRequestConfig} from "axios";
+import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import { Config } from './Config';
 
+// Axios client for the main SPA service
 export const axiosClient: AxiosInstance = axios.create({
     baseURL: Config.SPA_SERVICE_BASE_URL,
     adapter: require('axios/lib/adapters/http')
 });
 
+// Axios client for the blog service
 export const blogServiceClient: AxiosInstance = axios.create({
     baseURL: Config.BLOG_SERVICE_BASE_URL,
     adapter: require('axios/lib/adapters/http')
 });
 
+// Axios client for the chatbot service
+export const chatbotServiceClient: AxiosInstance = axios.create({
+    baseURL: Config.CHATBOT_SERVICE_BASE_URL,
+    adapter: require('axios/lib/adapters/http')
+});
+
+// Interceptor for setting headers in SPA requests
 axiosClient.interceptors.request.use((config: AxiosRequestConfig) => {
     config.headers = config.headers || {};
-
-    // Set the "client-id" header with your desired value
     config.headers['client-id'] = `${localStorage.getItem('client-id')}`;
     return config;
 });
 
-// Add a response interceptor to axiosClient
+// Interceptor for setting headers in blog service requests
+blogServiceClient.interceptors.request.use(config => {
+    config.headers = config.headers || {};
+    config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+    return config;
+});
+
+// Interceptor for setting headers in chatbot service requests
+chatbotServiceClient.interceptors.request.use(config => {
+    config.headers = config.headers || {};
+    config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+    return config;
+});
+
+// Interceptors for handling responses for all clients
 axiosClient.interceptors.response.use(
     response => response,
     error => {
-        // Handle network errors
         if (!error.response) {
             throw new Error('Network error');
         }
-        // Handle unauthorized errors
         if (error.response.status === 401) {
             throw new Error('Unauthorized error');
         }
-        // Throw any other errors
         throw error;
     }
 );
 
-
-// Add a response interceptor to blogServiceClient
 blogServiceClient.interceptors.response.use(
     response => response,
     error => {
-        // Handle network errors
         if (!error.response) {
             throw new Error('Network error');
         }
-        // Handle unauthorized errors
         if (error.response.status === 401) {
             throw new Error('Unauthorized error');
         }
-        // Throw any other errors
         throw error;
     }
 );
 
-// Add a request interceptor to blogServiceClient
-// blogServiceClient.interceptors.request.use(config => {
-//     // Set headers, etc.
-//     config.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
-//     return config;
-// });
+chatbotServiceClient.interceptors.response.use(
+    response => response,
+    error => {
+        if (!error.response) {
+            throw new Error('Network error');
+        }
+        if (error.response.status === 401) {
+            throw new Error('Unauthorized error');
+        }
+        throw error;
+    }
+);
 
+// Default export for the main axios client
 export default axiosClient;

@@ -15,7 +15,7 @@ import ThemeProvider from './themes/ThemeProvider';
 import { HelmetManager } from "./utils/HelmetManager";
 import { Renderer } from "./views/Renderer";
 import { kalaByHimani, kalaByHimaniAboutUs, kalaByHimaniContactUs, kalaByHimaniPlugin, kalaByHimaniProductList, kalaByHimaniSeo, kalaByHimaniTheme } from './@local-db/kalabyhimani';
-import { foregrowsolutions, foregrowsolutionsAboutUs, foregrowsolutionsContactUs, foregrowsolutionsPortfolio, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
+import { foregrowsolutions, foregrowsolutionsAboutUs, foregrowsolutionsChatbot, foregrowsolutionsContactUs, foregrowsolutionsPortfolio, foregrowsolutionsSeo, foregrowsolutionsTheme } from './@local-db/foregrowsolutions';
 // import { ClientService } from './service/ClientService';
 
 
@@ -123,6 +123,8 @@ export default function App() {
                             setSectionData(foregrowsolutionsContactUs)
                         } else if (page === 'about-us') {
                             setSectionData(foregrowsolutionsAboutUs)
+                        }else if (page === 'chatbot') {
+                            setSectionData(foregrowsolutionsChatbot)
                         } else {
                             setSectionData(foregrowsolutions);
                         }
@@ -153,6 +155,8 @@ export default function App() {
                             setSectionData(foregrowsolutionsAboutUs)
                         } else if (page === 'portfolio') {
                             setSectionData(foregrowsolutionsPortfolio)
+                        }else if (page === 'chatbot') {
+                            setSectionData(foregrowsolutionsChatbot)
                         } else {
                             setSectionData(foregrowsolutions);
                         }

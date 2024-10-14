@@ -1073,6 +1073,125 @@ export const foregrowsolutionsPortfolio: Section[] = [
     },
 ];
 
+export const foregrowsolutionsChatbot: Section[] = [
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "Header",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+            menu: [
+                {
+                    id: "menu-1",
+                    label: "Home",
+                    url: "/home",
+                },
+                {
+                    id: "menu-2",
+                    label: "About Us",
+                    url: "/about-us",
+                },
+                // {
+                //     id: "menu-3",
+                //     label: "Services",
+                //     url: "#services",
+                // },
+                {
+                    id: "menu-4",
+                    label: "Our Portfolio",
+                    url: "/portfolio",
+                },
+                {
+                    id: "menu-5",
+                    label: "Contact Us",
+                    url: "/contact-us",
+                },
+            ],
+            contactUs: {
+                address: "123 Innovation Street, Tech City, 456789",
+                email: "contact@foregrowsolutions.com",
+                phone: "+91 9876543210",
+            },
+        },
+    },
+    {
+        id: "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+        name: "Header",
+        version: "v3",
+        style: "MODERN",
+        path: "index",
+        data: {
+            type: "ChatbotDemo",
+            id: "001",
+            title: "ForeGrow Solutions - Your Trusted Technology Partner",
+            subTitle: "Driving Innovation, Delivering Excellence",
+            description: "ForeGrow Solutions is your go-to partner for cutting-edge software development, cloud solutions, and digital transformation services. Discover our expertise and get in touch for a tailored consultation.",
+            version: "v2",
+            style: "MODERN",
+            logo: {
+                id: '1',
+                imageSrc: 'https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg',
+                imageAlt: 'ForeGrow Solutions logo',
+            },
+        },
+    },
+    // {
+    //     id: "143d8df3-49c7-4370-9e0e-0c5ef7a46f6b",
+    //     name: "Footer",
+    //     version: "v2",
+    //     style: "CLASSIC",
+    //     path: "index",
+    //     data: {
+    //         type: "Footer",
+    //         id: "k",
+    //         title: "Hero Banner!",
+    //         subTitle: "Hero Banner Sub Title is here",
+    //         description: "Hero Banner Paragraph is here",
+    //         version: "v1",
+    //         style: "CLASSIC",
+    //         footer: {
+    //             socialLink: [{
+    //                 id: "1",
+    //                 name: 'facebook',
+    //                 className: "",
+    //                 link: "https://www.facebook.com/fb.foregrow",
+    //             },
+    //             {
+    //                 id: "2",
+    //                 name: 'instagram',
+    //                 className: "",
+    //                 link: "https://www.instagram.com/foregrow/",
+    //             },
+    //             {
+    //                 id: "3",
+    //                 name: 'linkedin',
+    //                 className: "",
+    //                 link: "https://www.linkedin.com/company/foregrow/",
+    //             }, {
+    //                 id: "4",
+    //                 name: 'pinterest',
+    //                 className: "",
+    //                 link: "https://in.pinterest.com/foregrow",
+    //             },],
+    //             copyright: "Foregrow Solutions",
+    //         },
+    //     },
+    // },
+];
+
 export const foregrowsolutionsSeo: any = {
     title: "Foregrow Solutions - Innovative Software Development & Cloud Expertise",
     description: "Foregrow Solutions empowers businesses with advanced software development services, specializing in frontend and backend technologies, cloud solutions (AWS, Azure, Google Cloud), and modern frameworks like .NET, Java, Node.js, React, Angular, and Next.js.",

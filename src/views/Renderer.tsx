@@ -5,6 +5,7 @@ import { Theme } from "../modal/Theme";
 import AboutUs from "./about-us/AboutUs";
 import Blog from "./blog/Blog";
 import Calendar from "./calendar/Calendar";
+import ChatbotDemo from "./chatbot-demo/ChatbotDemo";
 import ComingSoon from "./coming-soon/ComingSoon";
 import ContactUs from "./contact-us/ContactUs";
 import DetailsPage from "./details-page/DetailsPage";
@@ -53,6 +54,7 @@ export class Renderer {
             ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
             Calendar: <Calendar key={section.id} data={section['data']} version={section['version']}></Calendar>,
             PageNotFound: <PageNotFound></PageNotFound>,
+            ChatbotDemo: <ChatbotDemo></ChatbotDemo>,
         };
         const type: any = section.data.type;
         return components[type];
