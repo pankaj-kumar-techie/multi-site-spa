@@ -8,6 +8,6 @@ export class ChatbotService {
     }
 
     static sendEmail(payload: any) {
-        return chatbotServiceClient.post('/email/send-management-email', payload);
+        return chatbotServiceClient.post('/email/send', payload);
     }
 }
