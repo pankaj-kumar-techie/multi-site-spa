@@ -30,6 +30,7 @@ function FirstContactUs(props: { data: any }) {
     const handleSubmit = async (formData: Record<string, any>): Promise<void> => {
         try {
             await ChatbotService.sendEmail(formData);
+            setStatus('success');
         } catch (error) {
             console.error("Error sending email:", error);
         }
