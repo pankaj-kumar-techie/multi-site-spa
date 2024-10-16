@@ -7,6 +7,7 @@ import TitleCover from "../../../components/common/title-cover/TitleCover";
 import { ThemeContext } from "../../../themes/ThemeProvider";
 import ContactUs from '../ContactUs';
 import { useDynamicTextColor } from "../../../themes/DynamicTextColor"; // Import the hook
+import { ChatbotService } from '../../../service/ChatbotService';
 
 function FirstContactUs(props: { data: any }) {
     const { theme } = useContext(ThemeContext);
@@ -27,33 +28,10 @@ function FirstContactUs(props: { data: any }) {
     }
 
     const handleSubmit = async (formData: Record<string, any>): Promise<void> => {
-        // Your Google Apps Script API endpoint
-        const apiEndpoint = 'https://script.google.com/macros/s/AKfycbxR0G1rzR5Fj3hsTZVByHzHHai8pgPO6hbAtV3F488/exec';
-
         try {
-            const response = await fetch(apiEndpoint, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-                mode: 'cors',
-            });
-
-            if (response.ok) {
-                console.log('Data successfully sent to the API');
-                // Optionally, reset the form after successful submission
-                // setFormData({
-                //     name: '',
-                //     // email: '',
-                //     // checkInDate: '',
-                //     // checkOutDate: '',
-                // });
-            } else {
-                console.error('Failed to send data to the API');
-            }
+            await ChatbotService.sendEmail(formData);
         } catch (error) {
-            console.error('Error sending data to the API:', error);
+            console.error("Error sending email:", error);
         }
     };
 

@@ -793,14 +793,14 @@ export const foregrowsolutionsContactUs: Section[] = [
             contactUs: {
                 address: "H.no 221, Posh City, Sector 91, Landran, S.A.S.nagar Mohali, Punjab , India, 140307",
                 email: "info@foregrowsolutions.com",
-                phone: "+91 9876543210",
+                phone: "+91 6230790010",
                 formFields: [
-                    { name: 'name', label: 'Full Name', type: 'text', required: true },
-                    // { name: 'email', label: 'Email', type: 'email', required: true },
+                    { name: 'clientName', label: 'Full Name', type: 'text', required: true },
+                    { name: 'clientEmail', label: 'Email', type: 'email', required: true },
                     { name: 'mobile', label: 'Mobile', type: 'tel', required: true },
-                    { name: 'message', label: 'Message', type: 'textarea', required: true },
+                    { name: 'chatbotDescription', label: 'Message', type: 'textarea', required: true },
                     {
-                        name: 'servicesInterested',
+                        name: 'service',
                         label: 'Services Interested In',
                         type: 'select',
                         required: true,
