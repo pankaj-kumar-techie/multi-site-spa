@@ -36,22 +36,22 @@
                     {
                         "id": "m1",
                         "label": "Home",
-                        "url": "/"
+                        "url": "/#gl-hero"
                     },
                     {
                         "id": "m2",
                         "label": "Our Rooms",
-                        "url": "/rooms"
+                        "url": "/#gl-rooms"
                     },
                     {
                         "id": "m3",
                         "label": "Gallery",
-                        "url": "/gallery"
+                        "url": "/#gl-gallery"
                     },
                     {
                         "id": "m4",
                         "label": "Contact",
-                        "url": "/contact"
+                        "url": "/#gl-contact"
                     }
                 ],
                 "ctaLabel": "Book Now"
@@ -175,7 +175,7 @@
         {
             "id": "gl-rooms",
             "name": "Our Rooms",
-            "path": "rooms",
+            "path": "index",
             "data": {
                 "type": "Product",
                 "id": "p1",
@@ -202,7 +202,7 @@
         {
             "id": "gl-gallery",
             "name": "Gallery",
-            "path": "gallery",
+            "path": "index",
             "data": {
                 "type": "Gallery",
                 "id": "g1",
@@ -224,7 +224,7 @@
         {
             "id": "gl-contact",
             "name": "Contact Us",
-            "path": "contact",
+            "path": "index",
             "data": {
                 "type": "ContactUs",
                 "id": "c1",

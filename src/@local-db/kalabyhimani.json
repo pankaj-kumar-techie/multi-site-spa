@@ -48,6 +48,11 @@
                         "url": "/products"
                     },
                     {
+                        "id": "m5",
+                        "label": "Journal",
+                        "url": "/blog"
+                    },
+                    {
                         "id": "m3",
                         "label": "About",
                         "url": "/about"
@@ -64,7 +69,7 @@
         {
             "id": "kala-hero",
             "name": "Hero",
-            "path": "index",
+            "path": "all",
             "data": {
                 "type": "HeroBanner",
                 "id": "hb1",
@@ -169,6 +174,61 @@
                         "imageAlt": "Wedding Hamper"
                     }
                 ]
+            }
+        },
+        {
+            "id": "kala-blog",
+            "name": "Our Journal",
+            "path": "blog",
+            "data": {
+                "type": "Blog",
+                "id": "blog1",
+                "title": "The Art of Gifting",
+                "subTitle": "Stories & Inspirations",
+                "blogs": [
+                    {
+                        "id": "post1",
+                        "title": "The Joy of Personalized Gifting",
+                        "description": "Why custom gifts matter more than ever.",
+                        "descriptionContext": "In a world of mass production, a personalized gift speaks volumes. It shows thought, care, and a deep connection...",
+                        "imageSrc": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=2070&auto=format&fit=crop",
+                        "imageAlt": "Gift Wrapping"
+                    },
+                    {
+                        "id": "post2",
+                        "title": "Sustainable Wedding Favors",
+                        "description": "Eco-friendly ideas for your big day.",
+                        "descriptionContext": "Sustainability is not just a trend; it's a responsibility. Discover how our eco-friendly hampers make your wedding...",
+                        "imageSrc": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop",
+                        "imageAlt": "Wedding Favors"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-blog-detail",
+            "name": "Blog Detail",
+            "path": "blog/post1",
+            "data": {
+                "type": "BlogDetail",
+                "id": "bd1",
+                "blogDetails": {
+                    "blogs": {
+                        "id": "post1",
+                        "title": "The Joy of Personalized Gifting",
+                        "description": "Why custom gifts matter more than ever.",
+                        "descriptionContext": "In a world of mass production, a personalized gift speaks volumes. It shows thought, care, and a deep connection. When you choose a handcrafted hamper, you're not just giving an item; you're giving a memory. Our process involves understanding the recipient's personality and curating items that resonate with them.",
+                        "imageSrc": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=2070&auto=format&fit=crop",
+                        "imageAlt": "Gift Wrapping"
+                    },
+                    "comments": [
+                        {
+                            "id": "c1",
+                            "author": "Priya",
+                            "text": "This is so true! Personalized gifts are the best."
+                        }
+                    ]
+                }
             }
         },
         {

@@ -13,7 +13,7 @@
         "name": "startup"
     },
     "plugins": [],
-    "sections": [
+    "sections_backup": [
         {
             "id": "fg-header",
             "name": "Header",
@@ -274,6 +274,32 @@
                 "footer": {
                     "copyright": "2024 ForeGrow Solutions. All rights reserved."
                 }
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "fg-payment-error",
+            "name": "Payment Error",
+            "path": "all",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb-error",
+                "bannerData": [
+                    {
+                        "title": "Account Suspended",
+                        "subTitle": "Payment Issue Detected",
+                        "description": "We are unable to process your subscription renewal. Please update your payment method to restore access to ForeGrow Solutions services.",
+                        "image": {
+                            "id": "img-err",
+                            "imageSrc": "https://cdn-icons-png.flaticon.com/512/3585/3585091.png",
+                            "imageAlt": "Payment Error"
+                        },
+                        "ctaLabel": "Contact Billing Support",
+                        "visualPosition": "centre",
+                        "visualType": "image"
+                    }
+                ]
             }
         }
     ]

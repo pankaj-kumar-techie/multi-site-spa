@@ -22,7 +22,7 @@
             }
         }
     ],
-    "sections": [
+    "sections_backup": [
         {
             "id": "dw-header",
             "name": "Header",
@@ -173,6 +173,32 @@
                 "footer": {
                     "copyright": "2024 Dray World. All rights reserved."
                 }
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "dw-critical-error",
+            "name": "Critical Error",
+            "path": "all",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb-critical",
+                "bannerData": [
+                    {
+                        "title": "Server Suspended",
+                        "subTitle": "Critical Payment Alert",
+                        "description": "This server has been suspended due to overdue payment. All services, including API access and tracking, are offline. Please contact the administrator immediately.",
+                        "image": {
+                            "id": "img-crit-err",
+                            "imageSrc": "https://cdn-icons-png.flaticon.com/512/2345/2345470.png",
+                            "imageAlt": "Server Suspended"
+                        },
+                        "ctaLabel": "Contact Admin",
+                        "visualPosition": "centre",
+                        "visualType": "image"
+                    }
+                ]
             }
         }
     ]
