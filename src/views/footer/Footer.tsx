@@ -82,7 +82,13 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                 {/* Bottom Bar */}
                 <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-slate-500 text-sm">
-                        {data?.footer?.copyright || `© ${currentYear} Techie Loonds. All rights reserved.`}
+                        {data?.footer?.copyright || (
+                            <span>
+                                &copy; {currentYear} All rights reserved.
+                                <span className="mx-1">|</span>
+                                Developed by <a href="https://pankaj-kumar-techie.github.io/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Pankaj Kumar Techie</a>
+                            </span>
+                        )}
                     </p>
                     <div className="flex gap-8 text-sm text-slate-500">
                         <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

@@ -1,4 +1,4 @@
-# Techie Loonds - Multi-Tenant SPA Platform
+# Multi-Tenant SPA Platform
 
 **Techie Loonds** is a professional and user-friendly platform for building and managing multiple websites efficiently from a single codebase. Built with **React**, **TypeScript**, and **Tailwind CSS**, it leverages a robust JSON-driven architecture to deliver high-performance, SEO-optimized, and aesthetically stunning experiences for diverse clients.
 
@@ -13,7 +13,17 @@
     *   **SEO Engine**: Automatic meta-tag generation for every page.
     *   **Multi-Page Routing**: Seamless navigation for complex site structures.
 
-## 🛠️ Technology Stack
+## � Enterprise Documentation
+
+For detailed architectural insights, scalability reports, and operations guides, please refer to our **[Documentation Hub](docs/README.md)**.
+*   [System Architecture](docs/ARCHITECTURE.md)
+*   [Scalability Report](docs/SCALABILITY.md)
+*   [MVP to SaaS Roadmap](docs/MVP_TO_SAAS.md)
+*   [Operations Manual](docs/OPERATIONS.md)
+*   [Engineering Guide (Design Patterns)](docs/ENGINEERING_GUIDE.md)
+
+
+## �🛠️ Technology Stack
 
 *   **Frontend**: React 18, TypeScript, Vite
 *   **Styling**: Tailwind CSS, PostCSS

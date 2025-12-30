@@ -5,7 +5,7 @@
         "description": "High-conversion landing page built with the SPA SaaS platform.",
         "keywords": "saas, landing page, responsive, modern ui",
         "tags": "web design, landing page, premium",
-        "author": "Techie Loonds",
+        "author": "Enterprise Platform",
         "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
         "siteUrl": "https://example.com",
         "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1971/1971630.png"
@@ -160,7 +160,7 @@
                             "link": "#"
                         }
                     ],
-                    "copyright": "© 2024 Techie Loonds. All Rights Reserved."
+                    "copyright": "© 2024 All Rights Reserved."
                 }
             }
         }

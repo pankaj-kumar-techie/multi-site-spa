@@ -169,8 +169,9 @@
                 "id": "f1",
                 "title": "Dray World",
                 "description": "Moving the world forward.",
+                "author": "Enterprise Platform",
                 "footer": {
-                    "copyright": "2024 Dray World. Powered by Techie Loonds."
+                    "copyright": "2024 Dray World. All rights reserved."
                 }
             }
         }
