@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PluginConfig } from '../modal/PluginConfig';
 import { Section } from "../modal/Section";
-import { techieLoondsSeo } from '../utils/techieLoondsDefaults';
+import { defaultSeo } from '../utils/defaultSeo';
 
 interface WebsiteData {
     seo: any;
@@ -64,7 +64,7 @@ export const useWebsiteData = () => {
 
             try {
                 const data = await loadWebsiteData(effectiveDomain);
-                setSeo({ ...techieLoondsSeo, ...data.seo });
+                setSeo({ ...defaultSeo, ...data.seo });
                 setTheme(data.theme);
                 setPlugins(data.plugins || []);
 

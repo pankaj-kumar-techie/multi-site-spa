@@ -1,4 +1,4 @@
-# Contributing to Techie Loonds SPA Architecture
+# Contributing to the SPA Platform
 
 First off, thanks for taking the time to contribute! 🎉
 

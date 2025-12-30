@@ -3,8 +3,9 @@
     "seo": {
         "title": "WebsiteBuilder - Enterprise-Grade SPAs in 30 Seconds",
         "description": "The ultimate SaaS platform for developers and agencies to provision high-performance, SEO-optimized React websites instantly via JSON configuration.",
-        "keywords": "saas website builder, react spa, automated web design, json to website, techie loonds",
-        "author": "Techie Loonds",
+        "keywords": "saas website builder, react spa, automated web design, json to website",
+        "author": "Enterprise Platform",
+        "copyright": "2024 WebsiteBuilder by Enterprise Platform. All rights reserved.",
         "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
         "siteUrl": "https://websitebuilder.com",
         "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1197/1197460.png"
@@ -258,7 +259,7 @@
                             "link": "#"
                         }
                     ],
-                    "copyright": "2024 WebsiteBuilder by Techie Loonds. All rights reserved."
+                    "copyright": "2024 WebsiteBuilder. All rights reserved."
                 }
             }
         }

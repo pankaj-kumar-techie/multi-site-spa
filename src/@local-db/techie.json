@@ -1,10 +1,10 @@
 {
     "domain": "techie.pahariyatri.com",
     "seo": {
-        "title": "Techie Loonds - Engineering Insights & Modern Web Tech",
+        "title": "Enterprise Engineering - Modern Web Tech",
         "description": "Deep dives into React, TypeScript, and the future of agentic coding.",
         "keywords": "react, typescript, tech blog, software engineering",
-        "author": "Techie Loonds",
+        "author": "Enterprise Platform",
         "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
         "siteUrl": "https://techie.pahariyatri.com",
         "faviconUrl": "https://cdn-icons-png.flaticon.com/128/711/711284.png"
@@ -66,10 +66,10 @@
             "data": {
                 "type": "Footer",
                 "id": "f1",
-                "title": "Techie Loonds",
+                "title": "Enterprise Engineering",
                 "description": "Building the future of software.",
                 "footer": {
-                    "copyright": "2024 Techie Loonds. All rights reserved."
+                    "copyright": "2024 Enterprise Engineering. All rights reserved."
                 }
             }
         }
