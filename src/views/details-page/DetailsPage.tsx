@@ -6,7 +6,6 @@ import { useParams } from 'react-router-dom';
 import PageNotFound from '../page-not-found/PageNotFound';
 import { Blog, PackageDetail } from '../../modal/Section';
 import { useClientAppDataContext } from '../../ClientAppDataContext';
-import { pahariyatri, pahariyatriDynamicDetails } from '../../@local-db/pahariyatri';
 
 const isValidSlug = (slug: string) => {
     const validSlugs = ['blogs', 'packages', 'products'];

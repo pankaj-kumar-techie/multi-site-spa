@@ -32,7 +32,7 @@ const Icon: React.FC<SocialLink> = ({ id, name, className, size, color, link }) 
             className={className}
             size={size}
             color={color}
-            onClick={() => link && window.open(link, '_blank')}
+            onClick={() => link ? window.open(link, '_blank') : undefined}
         />
     );
 };

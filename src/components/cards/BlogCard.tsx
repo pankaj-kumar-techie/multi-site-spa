@@ -1,34 +1,61 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Blog } from "../../modal/Section";
-import { ThemeContext } from "../../themes/ThemeProvider";
+import BaseCard from "../common/BaseCard";
 
-export default function BlogCard(blog: Blog) {
-  const { theme } = useContext(ThemeContext);
+const BlogCard: React.FC<Blog & {
+  variant?: 'glass' | 'elevated' | 'flat' | 'outline',
+  hoverEffect?: 'zoom' | 'lift' | 'glow' | 'none'
+}> = (blog) => {
+  const {
+    variant = 'elevated',
+    hoverEffect = 'zoom'
+  } = blog;
 
   return (
-    <article
-      key={blog.id}
-      className="flex max-w-xl  flex-col items-start justify-between"
+    <BaseCard
+      variant={variant}
+      hoverEffect={hoverEffect}
+      padding="none"
+      className="group flex flex-col h-full bg-white animate-fade-in-up"
     >
-      <div className="group bg-white rounded-xl  relative">
+      {/* Image Container */}
+      <div className="aspect-video relative overflow-hidden">
         <img
           src={blog.imageSrc}
           alt={blog.imageAlt}
-          className="w-full h-[13rem] rounded-t-xl"
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
-        <div className="pl-2 pr-2 pb-2 min-h-[140px]">
-          <h3 className={`mt-2 pl-1 mb-2 text-lg font-semibold leading-6 text-custom-dark group-hover:text-${theme.colors.primary}`}>
-            <a href={`blogs/` + blog.id}>
-              <span className="absolute inset-0" />
-              {blog.title}
-            </a>
-          </h3>
-
-          <p className="mt-2 font-medium  pl-1 line-clamp-3 text-sm leading-6 text-custom-dark">
-            {blog.description}
-          </p>
+        <div className="absolute top-4 left-4">
+          <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm text-[10px] font-black uppercase tracking-widest text-primary-600 shadow-sm">
+            Insights
+          </span>
         </div>
       </div>
-    </article>
+
+      {/* Content Area */}
+      <div className="p-8 flex flex-col flex-grow">
+        <div className="text-[10px] font-bold text-slate-400 uppercase tracking-[0.2em] mb-3">
+          May 15, 2024 • 5 min read
+        </div>
+        <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
+          <a href={`/blogs/${blog.id}`} className="hover:underline decoration-primary-600 underline-offset-4">
+            {blog.title}
+          </a>
+        </h3>
+        <p className="text-slate-500 text-sm leading-relaxed line-clamp-3 mb-6">
+          {blog.description}
+        </p>
+
+        <div className="mt-auto pt-6 border-t border-slate-50">
+          <button className="text-sm font-black text-slate-900 uppercase tracking-widest flex items-center gap-2 group/btn">
+            Read More
+            <span className="inline-block transition-transform group-hover/btn:translate-x-1">→</span>
+          </button>
+        </div>
+      </div>
+    </BaseCard>
   );
-}
+};
+
+export default BlogCard;
+

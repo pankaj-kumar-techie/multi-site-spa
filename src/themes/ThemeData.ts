@@ -106,34 +106,52 @@ export const themes: { [key: string]: Theme } = {
             secondary: 'bg-custom-orange text-gray-500 hover:text-black hover:bg-gray-100',
         },
     },
-    ocean: {
-        name: 'Ocean Theme',
+    hospitality: {
+        name: 'Hospitality Theme',
         colors: {
-            primary: 'blue-500',
-            secondary: 'teal-500',
+            primary: '#2D3436', // Dark Charcoal
+            secondary: '#F1F2F6', // Off White
+            accent: '#D4A373', // Earthy Gold
         },
         typography: {
-            fontFamily: 'font-arial',
+            fontFamily: 'font-serif',
             fontSize: 'text-base',
         },
         buttons: {
-            primary: 'bg-blue-600 text-white hover:bg-blue-700',
-            secondary: 'bg-teal-400 text-white hover:bg-teal-500',
+            primary: 'bg-[#D4A373] text-white hover:bg-[#A98467]',
+            secondary: 'bg-white text-[#2D3436] border border-[#2D3436]',
         },
     },
-    sunset: {
-        name: 'Sunset Theme',
+    artisan: {
+        name: 'Artisan Theme',
         colors: {
-            primary: 'orange-500',
-            secondary: 'red-500',
+            primary: '#6D214F', // Magenta Purple
+            secondary: '#F8EFBA', // Light Pastel Yellow
+            accent: '#BDC581', // Sage Green
         },
         typography: {
-            fontFamily: 'font-arial',
+            fontFamily: 'font-display',
             fontSize: 'text-base',
         },
         buttons: {
-            primary: 'bg-orange-600 text-white hover:bg-orange-700',
-            secondary: 'bg-red-400 text-white hover:bg-red-500',
+            primary: 'bg-[#6D214F] text-white hover:bg-[#833471]',
+            secondary: 'bg-white text-[#6D214F] border border-[#6D214F]',
+        },
+    },
+    startup: {
+        name: 'Startup Theme',
+        colors: {
+            primary: '#0984E3', // Bright Blue
+            secondary: '#FBFBFB', // Near White
+            accent: '#D63031', // Tech Red
+        },
+        typography: {
+            fontFamily: 'font-sans',
+            fontSize: 'text-base',
+        },
+        buttons: {
+            primary: 'bg-[#0984E3] text-white hover:bg-[#74B9FF]',
+            secondary: 'bg-transparent text-[#0984E3] border-2 border-[#0984E3]',
         },
     },
 };

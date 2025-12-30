@@ -1,30 +1,45 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../../themes/ThemeProvider";
-import { useDynamicTextColor } from "../../themes/DynamicTextColor";
+import React from "react";
 import { Product } from "../../modal/Section";
+import BaseCard from "../common/BaseCard";
 
-export default function ProductCard(product: Product) {
-    const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.primary || "");
+export default function ProductCard(props: Product & {
+    variant?: 'glass' | 'elevated' | 'flat' | 'outline',
+    hoverEffect?: 'zoom' | 'lift' | 'glow' | 'none'
+}) {
+    const {
+        variant = 'elevated',
+        hoverEffect = 'zoom'
+    } = props;
 
     return (
-        <>
-            <div className={`bg-${theme.colors.primary}`}>
-                <a key={product.id} href={product.href}
-                    className="group hover:shadow-2xl hover:scale-105 transition-all transform duration-500 shadow-xl rounded-xl">
-                    <div
-                        className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-t-lg rounded-b-none overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                        <img
-                            src={product.imageSrc}
-                            alt={product.imageAlt}
-                            className="w-full h-[18rem] rounded-t-lg rounded-b-none object-center object-cover group-hover:opacity-75"
-                        />
-                    </div>
-                    <h3 className={`mt-3 pr-2 text-[1.1rem] pl-3 text-left font-medium ${textColor}`}>{product.name}</h3>
-                    <p className={`mt-1 pb-3 pr-2 text-left pl-3 text-[1rem] font-medium text-gray-900 ${textColor}`}>{product.price}</p>
-                    <p className={`mt-1 pb-3 pr-2 text-left pl-3 text-[.9rem] font-normal text-gray-900 ${textColor}`}>{product.description}</p>
-                </a>
-            </div>
-        </>
-    )
+        <BaseCard
+            variant={variant}
+            hoverEffect={hoverEffect}
+            padding="none"
+            className="group flex flex-col h-full overflow-hidden"
+        >
+            <a href={props.href} className="flex flex-col h-full">
+                <div className="relative aspect-square overflow-hidden bg-slate-100">
+                    <img
+                        src={props.imageSrc}
+                        alt={props.imageAlt || props.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                    {props.price && (
+                        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full shadow-sm">
+                            <span className="text-primary-600 font-bold text-sm">{props.price}</span>
+                        </div>
+                    )}
+                </div>
+                <div className="p-5 flex flex-col flex-grow">
+                    <h3 className="text-lg font-bold text-slate-900 mb-2 truncate group-hover:text-primary-600 transition-colors">
+                        {props.name}
+                    </h3>
+                    <p className="text-slate-500 text-sm line-clamp-2 leading-relaxed">
+                        {props.description}
+                    </p>
+                </div>
+            </a>
+        </BaseCard>
+    );
 }

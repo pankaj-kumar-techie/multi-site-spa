@@ -1,26 +1,23 @@
-import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
+import axios, { AxiosInstance, InternalAxiosRequestConfig } from 'axios';
 import { Config } from './Config';
 
 // Axios client for the main SPA service
 export const axiosClient: AxiosInstance = axios.create({
-    baseURL: Config.SPA_SERVICE_BASE_URL,
-    adapter: require('axios/lib/adapters/http')
+    baseURL: Config.SPA_SERVICE_BASE_URL
 });
 
 // Axios client for the blog service
 export const blogServiceClient: AxiosInstance = axios.create({
-    baseURL: Config.BLOG_SERVICE_BASE_URL,
-    adapter: require('axios/lib/adapters/http')
+    baseURL: Config.BLOG_SERVICE_BASE_URL
 });
 
 // Axios client for the chatbot service
 export const chatbotServiceClient: AxiosInstance = axios.create({
-    baseURL: Config.CHATBOT_SERVICE_BASE_URL,
-    adapter: require('axios/lib/adapters/http')
+    baseURL: Config.CHATBOT_SERVICE_BASE_URL
 });
 
 // Interceptor for setting headers in SPA requests
-axiosClient.interceptors.request.use((config: AxiosRequestConfig) => {
+axiosClient.interceptors.request.use((config: InternalAxiosRequestConfig) => {
     config.headers = config.headers || {};
     config.headers['client-id'] = `${localStorage.getItem('client-id')}`;
     return config;

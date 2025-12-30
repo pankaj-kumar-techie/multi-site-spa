@@ -1,29 +1,26 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from '../../../themes/ThemeProvider';
-import { useDynamicTextColor } from '../../../themes/DynamicTextColor';
+import React from 'react';
 
 interface ButtonProps {
   label: string;
-  color?: string;
+  variant?: 'primary' | 'secondary' | 'outline';
   action?: () => void;
-  height?: string;
-  width?: string;
+  className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, color, action, height, width }) => {
-  const { theme } = useContext(ThemeContext);
-  const textColor = useDynamicTextColor(theme.colors.primary || "");
-
+const Button: React.FC<ButtonProps> = ({ label, variant = 'primary', action, className }) => {
+  const variants = {
+    primary: 'bg-primary-600 text-white hover:bg-primary-700 shadow-premium hover:shadow-hard',
+    secondary: 'bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 shadow-sm',
+    outline: 'bg-transparent text-primary-600 border-2 border-primary-600 hover:bg-primary-50'
+  };
 
   return (
-    <div className='flex justify-center items-center'>
     <button
-      className={`bg-${color || theme.buttons.secondary} hover:bg-${theme.buttons.primary} ${textColor} font-semibold py-${height || '3'} px-${width || '10'} rounded focus:outline-none transition-all duration-300 ease-in-out`}
+      className={`px-8 py-3 rounded-full font-bold transition-all duration-300 active:scale-95 focus:outline-none ${variants[variant]} ${className}`}
       onClick={action}
     >
       {label}
     </button>
-  </div>
   );
 };
 

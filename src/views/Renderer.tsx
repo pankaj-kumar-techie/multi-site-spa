@@ -1,64 +1,67 @@
+import { lazy, Suspense } from 'react';
 import FloatingButton from "../components/common/button/FloatingButton";
 import LocationButton from "../components/common/button/LocationButton";
 import { PluginConfig } from "../modal/PluginConfig";
 import { Theme } from "../modal/Theme";
-import AboutUs from "./about-us/AboutUs";
-import Blog from "./blog/Blog";
-import Calendar from "./calendar/Calendar";
-import ChatbotDemo from "./chatbot-demo/ChatbotDemo";
-import ComingSoon from "./coming-soon/ComingSoon";
-import ContactUs from "./contact-us/ContactUs";
-import DetailsPage from "./details-page/DetailsPage";
-import FAQAccordion from "./faq/FAQAccordion";
-import Footer from "./footer/Footer";
-import Gallery from "./gallery/Gallery";
-import Header from "./header/Header";
-import HeroBanner from "./hero-banner/HeroBanner";
-import OurTeam from "./our-team/OurTeam";
-import Package from "./package/Package";
-import PageNotFound from "./page-not-found/PageNotFound";
-import Plan from "./plan/Plan";
-import Portfolio from "./portfolio/Portfolio";
-import Product from "./product/Product";
-import Services from "./services/Services";
-import TermsAndConditions from "./terms-and-conditions/TermsAndConditions";
-import Testimonials from "./testimonials/Testimonials";
-import Timeline from "./timeline/Timeline";
-import Video from "./video/Video";
+
+const AboutUs = lazy(() => import('./about-us/AboutUs'));
+const Blog = lazy(() => import('./blog/Blog'));
+const Calendar = lazy(() => import('./calendar/Calendar'));
+const ChatbotDemo = lazy(() => import('./chatbot-demo/ChatbotDemo'));
+const ComingSoon = lazy(() => import('./coming-soon/ComingSoon'));
+const ContactUs = lazy(() => import('./contact-us/ContactUs'));
+const DetailsPage = lazy(() => import('./details-page/DetailsPage'));
+const FAQAccordion = lazy(() => import('./faq/FAQAccordion'));
+const Footer = lazy(() => import('./footer/Footer'));
+const Gallery = lazy(() => import('./gallery/Gallery'));
+const Header = lazy(() => import('./header/Header'));
+const HeroBanner = lazy(() => import('./hero-banner/HeroBanner'));
+const OurTeam = lazy(() => import('./our-team/OurTeam'));
+const Package = lazy(() => import('./package/Package'));
+const PageNotFound = lazy(() => import('./page-not-found/PageNotFound'));
+const Plan = lazy(() => import('./plan/Plan'));
+const Portfolio = lazy(() => import('./portfolio/Portfolio'));
+const Product = lazy(() => import('./product/Product'));
+const Services = lazy(() => import('./services/Services'));
+const TermsAndConditions = lazy(() => import('./terms-and-conditions/TermsAndConditions'));
+const Testimonials = lazy(() => import('./testimonials/Testimonials'));
+const Timeline = lazy(() => import('./timeline/Timeline'));
+const Video = lazy(() => import('./video/Video'));
 
 export class Renderer {
 
     static componentRenderV1(theme: Theme, section: any): JSX.Element {
-        console.log("Section Data With Version ", section['data'], section.version)
-
-        const components: any = {
-            Header: <Header key={section.id} data={section['data']} version={section['version']}></Header>,
-            Footer: <Footer key={section.id} data={section['data']} version={section['version']}></Footer>,
-            HeroBanner: <HeroBanner key={section.id} data={section['data']} version={section['version']}></HeroBanner>,
-            AboutUs: <AboutUs key={section.id} data={section['data']} version={section['version']}></AboutUs>,
-            ContactUs: <ContactUs key={section.id} data={section['data']} version={section['version']}></ContactUs>,
-            Portfolio: <Portfolio key={section.id} data={section['data']} version={section['version']}></Portfolio>,
-            OurTeam: <OurTeam key={section.id} data={section['data']} version={section['version']}></OurTeam>,
-            Product: <Product key={section.id} data={section['data']} version={section['version']}></Product>,
-            Package: <Package key={section.id} data={section['data']} version={section['version']}></Package>,
-            Timeline: <Timeline key={section.id} data={section['data']} version={section['version']}></Timeline>,
-            DetailPage: <DetailsPage></DetailsPage>,
-            Service: <Services key={section.id} data={section['data']} version={section['version']}></Services>,
-            Testimonial: <Testimonials key={section.id} data={section['data']} version={section['version']}></Testimonials>,
-            Gallery: <Gallery key={section.id} data={section['data']} version={section['version']}></Gallery>,
-            Videos: <Video key={section.id} data={section['data']} version={section['version']}></Video>,
-            Blog: <Blog key={section.id} data={section['data']} version={section['version']}></Blog>,
-            Plan: <Plan key={section.id} data={section['data']} version={section['version']}></Plan>,
-            FAQ: <FAQAccordion key={section.id} data={section['data']} version={section['version']}></FAQAccordion>,
-            TermsAndConditions: <TermsAndConditions key={section.id} data={section['data']} version={section['version']}></TermsAndConditions>,
-            ComingSoon: <ComingSoon key={section.id} data={section['data']} version={section['version']}></ComingSoon>,
-            Calendar: <Calendar key={section.id} data={section['data']} version={section['version']}></Calendar>,
-            PageNotFound: <PageNotFound></PageNotFound>,
-            ChatbotDemo: <ChatbotDemo></ChatbotDemo>,
+        const components: Record<string, (section: any) => JSX.Element> = {
+            Header: (section) => <Suspense fallback={null}><Header key={section.id} data={section.data} /></Suspense>,
+            Footer: (section) => <Suspense fallback={null}><Footer key={section.id} data={section.data} /></Suspense>,
+            HeroBanner: (section) => <Suspense fallback={null}><HeroBanner key={section.id} data={section.data} /></Suspense>,
+            AboutUs: (section) => <Suspense fallback={null}><AboutUs key={section.id} data={section.data} /></Suspense>,
+            ContactUs: (section) => <Suspense fallback={null}><ContactUs key={section.id} data={section.data} /></Suspense>,
+            Contact: (section) => <Suspense fallback={null}><ContactUs key={section.id} data={section.data} /></Suspense>,
+            Portfolio: (section) => <Suspense fallback={null}><Portfolio key={section.id} data={section.data} /></Suspense>,
+            OurTeam: (section) => <Suspense fallback={null}><OurTeam key={section.id} data={section.data} /></Suspense>,
+            Product: (section) => <Suspense fallback={null}><Product key={section.id} data={section.data} /></Suspense>,
+            Package: (section) => <Suspense fallback={null}><Package key={section.id} data={section.data} /></Suspense>,
+            Timeline: (section) => <Suspense fallback={null}><Timeline key={section.id} data={section.data} /></Suspense>,
+            DetailPage: () => <Suspense fallback={null}><DetailsPage /></Suspense>,
+            Service: (section) => <Suspense fallback={null}><Services key={section.id} data={section.data} /></Suspense>,
+            Testimonial: (section) => <Suspense fallback={null}><Testimonials key={section.id} data={section.data} /></Suspense>,
+            Gallery: (section) => <Suspense fallback={null}><Gallery key={section.id} data={section.data} /></Suspense>,
+            Videos: (section) => <Suspense fallback={null}><Video key={section.id} data={section.data} /></Suspense>,
+            Blog: (section) => <Suspense fallback={null}><Blog key={section.id} data={section.data} /></Suspense>,
+            Plan: (section) => <Suspense fallback={null}><Plan key={section.id} data={section.data} /></Suspense>,
+            FAQ: (section) => <Suspense fallback={null}><FAQAccordion key={section.id} data={section.data} /></Suspense>,
+            TermsAndConditions: (section) => <Suspense fallback={null}><TermsAndConditions key={section.id} data={section.data} /></Suspense>,
+            ComingSoon: (section) => <Suspense fallback={null}><ComingSoon key={section.id} data={section.data} /></Suspense>,
+            Calendar: (section) => <Suspense fallback={null}><Calendar key={section.id} data={section.data} /></Suspense>,
+            PageNotFound: () => <Suspense fallback={null}><PageNotFound /></Suspense>,
+            ChatbotDemo: () => <Suspense fallback={null}><ChatbotDemo /></Suspense>,
         };
-        const type: any = section.data.type;
-        return components[type];
+
+        const type = section.data.type;
+        return (components[type] || (() => <div>Component {type} not found</div>))(section);
     }
+
 
 
     static renderPlugin(theme: Theme, plugin: PluginConfig): JSX.Element | null {
@@ -66,9 +69,6 @@ export class Renderer {
             FloatingButton: <FloatingButton phoneNumber={plugin.data?.mobile} whatsappText={plugin.data?.text} />,
             LocationButton: <LocationButton locationName={plugin.location?.locationName} latitude={plugin.location?.latitude}
                 longitude={plugin.location?.longitude}></LocationButton>
-            // NavigationButtons: <NavigationButtons key={section.id} data={section['data']} version={section['version']} />,
-            // GoogleReviews: <GoogleReviews key={section.id} data={section['data']} version={section['version']} />,
-            // InstagramFeed: <InstagramFeed key={section.id} data={section['data']} version={section['version']} />,
         };
 
         const type: any = plugin.name;

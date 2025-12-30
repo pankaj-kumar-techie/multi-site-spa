@@ -1,0 +1,266 @@
+{
+    "domain": "websitebuilder.com",
+    "seo": {
+        "title": "WebsiteBuilder - Enterprise-Grade SPAs in 30 Seconds",
+        "description": "The ultimate SaaS platform for developers and agencies to provision high-performance, SEO-optimized React websites instantly via JSON configuration.",
+        "keywords": "saas website builder, react spa, automated web design, json to website, techie loonds",
+        "author": "Techie Loonds",
+        "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+        "siteUrl": "https://websitebuilder.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1197/1197460.png"
+    },
+    "theme": {
+        "name": "default"
+    },
+    "plugins": [],
+    "sections": [
+        {
+            "id": "wb-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "WebsiteBuilder",
+                "logo": {
+                    "id": "1",
+                    "imageSrc": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+                    "imageAlt": "WebsiteBuilder Logo"
+                },
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Features",
+                        "url": "/#features"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "Pricing",
+                        "url": "/pricing"
+                    },
+                    {
+                        "id": "m4",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Start Free Trial"
+            }
+        },
+        {
+            "id": "wb-hero",
+            "name": "Hero Banner",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Scale Your Agency with AI-Ready SPAs",
+                        "subTitle": "JSON-Driven • Professional • Instant",
+                        "description": "Stop building from scratch. Provision production-ready, high-performance SPAs for your clients in under 30 seconds. Managed entirely via JSON configurations.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Scalable Infrastructure"
+                        },
+                        "visualPosition": "right",
+                        "visualType": "image",
+                        "ctaLabel": "Launch My First Site",
+                        "ctaSecondaryLabel": "Watch Demo",
+                        "stats": [
+                            {
+                                "value": "< 30s",
+                                "label": "Deployment Time"
+                            },
+                            {
+                                "value": "100/100",
+                                "label": "Lighthouse Score"
+                            }
+                        ],
+                        "badge": "Top Rated SaaS Platform 2024"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wb-features",
+            "name": "Platform Features",
+            "path": "index",
+            "data": {
+                "type": "Service",
+                "id": "feat1",
+                "title": "Engineered for Excellence",
+                "subTitle": "Beyond Basic Templates",
+                "cardVariant": "elevated",
+                "cardHoverEffect": "lift",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "JSON Configuration Engine",
+                        "body": "No code required. Define your site structure, SEO, and plugins in a single JSON file. Perfect for multi-tenant SaaS models.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/3361/3361425.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Universal Theming",
+                        "body": "Switch between Hospitality, Adventure, Artisan, or Startup themes instantly by changing one field in your config.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/3281/3281289.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Edge-Ready SEO",
+                        "body": "Automatic schema injection, social graphs, and dynamic meta-data derived automatically from your JSON settings.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/4341/4341139.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wb-process",
+            "name": "How it works",
+            "path": "index",
+            "data": {
+                "type": "Timeline",
+                "id": "t1",
+                "title": "From Idea to Live in 4 Steps",
+                "timelines": [
+                    {
+                        "id": 1,
+                        "title": "Copy Base Config",
+                        "description": "Start with our validated `base.json` template.",
+                        "color": "from-blue-400 to-blue-600",
+                        "icon": "📄"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Customize Details",
+                        "description": "Add your domain, services, and branding assets.",
+                        "color": "from-purple-400 to-purple-600",
+                        "icon": "🎨"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Commit to LocalDB",
+                        "description": "Drop the file into the `@local-db` folder.",
+                        "color": "from-green-400 to-green-600",
+                        "icon": "💾"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Profit",
+                        "description": "Your site is live, SEO-optimized, and ready to scale.",
+                        "color": "from-orange-400 to-orange-600",
+                        "icon": "🚀"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wb-pricing-hero",
+            "name": "Pricing Page Hero",
+            "path": "pricing",
+            "data": {
+                "type": "HeroBanner",
+                "id": "ph1",
+                "bannerData": [
+                    {
+                        "title": "Simple, Scalable Pricing",
+                        "subTitle": "No Hidden Fees",
+                        "description": "Choose the plan that fits your agency's scale. Start building for free and upgrade as you grow.",
+                        "image": {
+                            "id": "img2",
+                            "imageSrc": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2072&auto=format&fit=crop",
+                            "imageAlt": "Growth"
+                        },
+                        "visualPosition": "left",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wb-plans",
+            "name": "Pricing Plans",
+            "path": "pricing",
+            "data": {
+                "type": "Plan",
+                "id": "pl1",
+                "title": "Membership Plans",
+                "subTitle": "Select Your Growth Tier",
+                "plans": [
+                    {
+                        "id": "1",
+                        "title": "Starter",
+                        "price": "Free",
+                        "description": "Perfect for testing the platform.",
+                        "features": [
+                            "1 Managed Domain",
+                            "5 Design Sections",
+                            "Community Support"
+                        ],
+                        "ctaLabel": "Get Started"
+                    },
+                    {
+                        "id": "2",
+                        "title": "Professional",
+                        "price": "$49/mo",
+                        "isFeatured": true,
+                        "description": "Optimized for growing agencies.",
+                        "features": [
+                            "10 Managed Domains",
+                            "Unlimited Sections",
+                            "Priority Support",
+                            "Custom Plugins"
+                        ],
+                        "ctaLabel": "Scale Now"
+                    },
+                    {
+                        "id": "3",
+                        "title": "Enterprise",
+                        "price": "Custom",
+                        "description": "For high-volume operations.",
+                        "features": [
+                            "Unlimited Domains",
+                            "White Label Engine",
+                            "Dedicated Infrastructure",
+                            "SLA Guarantee"
+                        ],
+                        "ctaLabel": "Contact Sales"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "wb-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "WebsiteBuilder",
+                "description": "Empowering agencies to build better, faster.",
+                "footer": {
+                    "socialLink": [
+                        {
+                            "id": "s1",
+                            "name": "twitter",
+                            "link": "#"
+                        },
+                        {
+                            "id": "s2",
+                            "name": "linkedin",
+                            "link": "#"
+                        }
+                    ],
+                    "copyright": "2024 WebsiteBuilder by Techie Loonds. All rights reserved."
+                }
+            }
+        }
+    ]
+}

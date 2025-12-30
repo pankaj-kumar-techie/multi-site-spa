@@ -1,125 +1,98 @@
-import React, { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../../themes/ThemeProvider";
-import { useDynamicTextColor } from "../../../themes/DynamicTextColor";
+import React, { useEffect, useState } from "react";
 import { Package } from "../../../modal/Section";
-import { FaChevronCircleRight } from "react-icons/fa";
 import calculateDifficultyPercentage from "../../../utils/difficultyCalculator";
+import BaseCard from "../../../components/common/BaseCard";
 
 export default function PackageCard(packageDetail: Package) {
-  const { theme } = useContext(ThemeContext);
-  const textColor = useDynamicTextColor(theme.colors.secondary || "");
   const [offset, setOffset] = useState(0);
   const [percentage, setPercentage] = useState(0);
 
   useEffect(() => {
     const calculatedPercentage = calculateDifficultyPercentage(packageDetail.difficulty);
     setPercentage(calculatedPercentage);
+    // Animation for the progress ring
+    const strokeDashoffset = 251.2 - (251.2 * calculatedPercentage) / 100;
+    setOffset(strokeDashoffset);
   }, [packageDetail.difficulty]);
 
   return (
-    <div
-      className={`bg-${theme.colors.primary} relative bg-stone-200 rounded-lg`}
+    <BaseCard
+      variant="elevated"
+      hoverEffect="zoom"
+      padding="none"
+      className="group h-full flex flex-col overflow-hidden"
     >
-      <a
-        key={packageDetail.id}
-        href={packageDetail.href}
-        className="group hover:shadow-2xl hover:scale-105 transition-all transform duration-500 shadow-xl rounded-xl"
-      >
-        <div className="w-full aspect-w-1 aspect-h-1 relative  rounded-t-lg rounded-b-none overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
+      <a href={packageDetail.href} className="flex flex-col h-full">
+        {/* Image Section */}
+        <div className="relative aspect-[4/3] overflow-hidden">
           <img
             src={packageDetail.imageSrc}
-            alt={packageDetail.imageAlt}
-            className="w-full h-[18rem] rounded-t-lg rounded-b-none object-center object-cover group-hover:opacity-75"
+            alt={packageDetail.imageAlt || packageDetail.name}
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
-          <p
-            className={` pr-2 bottom-0  text-white bg-yellow-600 rounded-tr-lg p-2 truncate absolute  text-left pl-3 text-[1rem] font-semibold  text-${textColor}`}
-          >
-            {packageDetail.destination}
-          </p>
+          <div className="absolute bottom-0 left-0 bg-primary-600 px-4 py-2 rounded-tr-xl">
+            <span className="text-white text-sm font-bold uppercase tracking-wider">
+              {packageDetail.destination}
+            </span>
+          </div>
         </div>
-        <div className="pl-3 pr-3">
-          <h3
-            className={`mt-3 text-[1.4rem] truncate leading-8 text-left font-bold text-${textColor}`}
-          >
+
+        {/* Content Section */}
+        <div className="p-6 flex flex-col flex-grow">
+          <h3 className="text-xl font-bold text-slate-900 mb-2 truncate group-hover:text-primary-600 transition-colors">
             {packageDetail.name}
           </h3>
-          <p
-            className={`mt-1 pb-1 text-left text-base font-normal line-clamp-2 text-slate-700`}
-          >
+          <p className="text-slate-600 text-sm line-clamp-2 mb-6">
             {packageDetail.description}
           </p>
-          <div className="flex flex-row items-center">
 
-            <div className=" mt-5 basis-2/4">
-              <div className="inline-grid">
-                <h6 className="text-gray-500 text-sm font-medium">Starting From:</h6>
-                <p className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs">
-                  {packageDetail.price}
-                </p>
-                <h6 className="text-left mt-4 text-gray-500 text-sm font-medium">Duration:</h6>
-                <p className="text-left text-sm font-semibold text-stone-700">
-                  {" "}
+          <div className="mt-auto flex items-end justify-between">
+            <div className="space-y-3">
+              <div>
+                <p className="text-xs text-slate-400 font-medium uppercase tracking-tighter mb-1">Starting From</p>
+                <p className="text-lg font-extrabold text-primary-600">{packageDetail.price}</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2 py-1 rounded-md">
                   {packageDetail.duration}
-                </p>
-                {/* <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                  Treking and walking
-                </button>
-                <button className="bg-amber-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                  Guided treks and walks
-                </button>
-                <button className="bg-lime-600 text-left rounded-md p-1 text-white font-medium mt-1 text-xs ">
-                  In comfort adventures
-                </button> */}
+                </span>
               </div>
             </div>
-            <div className="w-20 h-20 relative basis-2/4">
-              <p className="text-center  text-slate-600 text-sm font-medium mb-1">Difficulty :</p>
-              <svg className="w-full h-full" viewBox="0 0 100 100">
+
+            {/* Difficulty Indicator */}
+            <div className="relative w-16 h-16">
+              <svg className="w-full h-full -rotate-90" viewBox="0 0 100 100">
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="40"
                   fill="none"
-                  stroke="#d2d6dc"
-                  strokeWidth="10"
+                  stroke="#e2e8f0"
+                  strokeWidth="8"
                 />
                 <circle
                   cx="50"
                   cy="50"
-                  r="45"
+                  r="40"
                   fill="none"
-                  stroke="#6ee7b7"
-                  strokeWidth="10"
+                  stroke="currentColor"
+                  strokeWidth="8"
                   strokeDasharray="251.2"
                   strokeDashoffset={offset}
                   strokeLinecap="round"
-                  transform="rotate(-90 50 50)"
+                  className="text-primary-600 transition-all duration-1000 ease-out"
                 />
-                <text
-                  x="50%"
-                  y="50%"
-                  dominantBaseline="middle"
-                  textAnchor="middle"
-                  className="text-lg font-bold"
-                >
-                  {percentage}%
-                </text>
               </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-xs font-bold text-slate-700">{percentage}%</span>
+              </div>
+              <p className="absolute -top-1 left-1/2 -translate-x-1/2 whitespace-nowrap text-[8px] font-bold text-slate-400 uppercase tracking-widest">
+                Difficulty
+              </p>
             </div>
           </div>
-
-          {/* <button className="bg-lime-500 mb-5  flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
-            <span className="mr-2">View Trek</span> <FaChevronCircleRight />
-          </button> */}
         </div>
-        {/* <div className="flex bg-gray-300 rounded-b-lg mt-4 justify-center p-2">
-          <div className="flex items-center">
-            <button className="bg-lime-500 flex justify-center hover:opacity-80 items-center rounded-lg text-white font-normal text-lg px-4 py-2">
-              <span className="mr-2 w-[100%]">View Details</span> <FaChevronCircleRight />
-            </button>
-          </div>
-        </div> */}
       </a>
-    </div>
+    </BaseCard>
   );
 }

@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
-import { useDynamicTextColor } from "../../themes/DynamicTextColor";
-import { ThemeContext } from "../../themes/ThemeProvider";
+import React from "react";
+import BaseCard from "../common/BaseCard";
 
 export default function PortfolioCard(portfolio: {
     id: any,
@@ -8,31 +7,45 @@ export default function PortfolioCard(portfolio: {
     description: any,
     href: any,
     imageSrc: any,
-    imageAlt: any
-}){
-    const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.secondary || "");
-    return(
-        <div key={portfolio.id}
-             className={`group relative bg-${theme.colors.primary} my-6 rounded-xl shadow-xl hover:shadow-2xl hover:scale-105 transition-all transform duration-500`}>
-            <div
-                className="relative w-full h-80  rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+    imageAlt: any,
+    variant?: 'glass' | 'elevated' | 'flat' | 'outline',
+    hoverEffect?: 'zoom' | 'lift' | 'glow' | 'none'
+}) {
+    const {
+        variant = 'elevated',
+        hoverEffect = 'lift'
+    } = portfolio;
+
+    return (
+        <BaseCard
+            variant={variant}
+            hoverEffect={hoverEffect}
+            padding="none"
+            className="group flex flex-col h-full overflow-hidden"
+        >
+            <div className="relative aspect-[16/10] overflow-hidden">
                 <img
                     src={portfolio.imageSrc}
-                    alt={portfolio.imageAlt}
-                    className="w-full h-full object-center object-cover"
+                    alt={portfolio.imageAlt || portfolio.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
+                    <p className="text-white text-sm font-medium line-clamp-2">
+                        {portfolio.description}
+                    </p>
+                </div>
             </div>
-            <div className={'mt-4'}>
-
-                <h3 className="ml-2 mt-6 text-sm text-gray-500">
-                    <a href={portfolio.href}>
-                        <span className="absolute inset-0"/>
-                        {portfolio.name}
-                    </a>
+            <div className="p-5 flex items-center justify-between">
+                <h3 className="text-lg font-bold text-slate-900 group-hover:text-primary-600 transition-colors">
+                    {portfolio.name}
                 </h3>
-                <p className="ml-2 text-base pb-5 font-semibold text-gray-900">{portfolio.description}</p>
+                <a
+                    href={portfolio.href}
+                    className="text-xs font-bold text-primary-600 uppercase tracking-widest hover:underline"
+                >
+                    View Project
+                </a>
             </div>
-        </div>
-    )
+        </BaseCard>
+    );
 }

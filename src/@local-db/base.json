@@ -1,0 +1,169 @@
+{
+    "domain": "base-template.com",
+    "seo": {
+        "title": "Premium Spas - Modern Landing Page",
+        "description": "High-conversion landing page built with the SPA SaaS platform.",
+        "keywords": "saas, landing page, responsive, modern ui",
+        "tags": "web design, landing page, premium",
+        "author": "Techie Loonds",
+        "imageUrl": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+        "siteUrl": "https://example.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1971/1971630.png"
+    },
+    "theme": {
+        "name": "modern"
+    },
+    "plugins": [
+        {
+            "name": "FloatingButton",
+            "isActive": true,
+            "data": {
+                "mobile": "1234567890",
+                "text": "Hi! I'm interested in your services."
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "69e7ed7e-889d-41c0-a1d9-62bd150401e2",
+            "name": "Header",
+            "path": "index",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "BrandName",
+                "subTitle": "Tagline",
+                "description": "Brief brand description.",
+                "logo": {
+                    "id": "logo1",
+                    "imageSrc": "https://via.placeholder.com/150",
+                    "imageAlt": "Logo"
+                },
+                "menu": [
+                    {
+                        "id": "menu-1",
+                        "label": "Home",
+                        "url": "/home"
+                    },
+                    {
+                        "id": "menu-2",
+                        "label": "Services",
+                        "url": "/services"
+                    },
+                    {
+                        "id": "menu-3",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "contactUs": {
+                    "address": "123 Street, City",
+                    "email": "hello@example.com",
+                    "phone": "+1234567890"
+                }
+            }
+        },
+        {
+            "id": "hero-section-id",
+            "name": "Hero Banner",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "title": "Welcome to Premium Experience",
+                "subTitle": "Innovation • Quality • Trust",
+                "description": "We deliver world-class solutions for modern businesses.",
+                "bannerData": [
+                    {
+                        "title": "Design Your Future",
+                        "subTitle": "Simple • Fast • Reliable",
+                        "description": "Join thousands of satisfied users who have transformed their digital presence with us.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Hero Image"
+                        },
+                        "visualPosition": "right",
+                        "visualType": "image",
+                        "ctaLabel": "Start Now",
+                        "ctaSecondaryLabel": "Learn More",
+                        "stats": [
+                            {
+                                "value": "5M+",
+                                "label": "Active Users"
+                            },
+                            {
+                                "value": "99%",
+                                "label": "Satisfaction"
+                            }
+                        ],
+                        "badge": "Top Rated 2024"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "services-section-id",
+            "name": "Services",
+            "path": "index",
+            "data": {
+                "type": "Service",
+                "id": "s1",
+                "title": "What We Offer",
+                "subTitle": "Excellence in Everything",
+                "description": "Our core services are designed to help you grow.",
+                "cardVariant": "glass",
+                "cardHoverEffect": "lift",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "Strategy",
+                        "body": "Developing roadmaps for long-term success.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/512/1055/1055666.png",
+                        "imageAlt": "Strategy Icon"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Design",
+                        "body": "Creating beautiful and intuitive user experiences.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/512/2970/2970785.png",
+                        "imageAlt": "Design Icon"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Growth",
+                        "body": "Accelerating your reach and scale.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/512/2103/2103633.png",
+                        "imageAlt": "Growth Icon"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "footer-section-id",
+            "name": "Footer",
+            "path": "index",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "BrandName",
+                "footer": {
+                    "socialLink": [
+                        {
+                            "id": "s1",
+                            "name": "facebook",
+                            "link": "#"
+                        },
+                        {
+                            "id": "s2",
+                            "name": "instagram",
+                            "link": "#"
+                        }
+                    ],
+                    "copyright": "© 2024 Techie Loonds. All Rights Reserved."
+                }
+            }
+        }
+    ],
+    "dynamicDetails": []
+}

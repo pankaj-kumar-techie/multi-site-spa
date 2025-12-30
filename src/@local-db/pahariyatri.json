@@ -1,0 +1,140 @@
+{
+    "domain": "pahariyatri.com",
+    "seo": {
+        "title": "Pahari Yatri - Authentic Himalayan Trekking & Adventure Tours",
+        "description": "Experience the raw beauty of the Himalayas with expert guides. Curated trekking expeditions in North India.",
+        "keywords": "himalayan trekking, adventure tours, mountain expeditions, north india treks",
+        "author": "Techie Loonds",
+        "imageUrl": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop",
+        "siteUrl": "https://pahariyatri.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/2910/2910795.png"
+    },
+    "theme": {
+        "name": "adventure"
+    },
+    "plugins": [
+        {
+            "name": "FloatingButton",
+            "isActive": true,
+            "data": {
+                "mobile": "9569576707",
+                "text": "Jai Badri Vishal! 🙏 I'm planning a trek. Can you help me?"
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "py-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Pahari Yatri",
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Treks",
+                        "url": "/packages"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "About",
+                        "url": "/about"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "py-hero",
+            "name": "Hero Banner",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Conquer the Majestic Himalayas",
+                        "subTitle": "Authentic • Safe • Breath-taking",
+                        "description": "Embark on a journey into the soul of the mountains. From easy valley walks to challenging high-altitude passes.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Himalayan Peaks"
+                        },
+                        "visualPosition": "left",
+                        "visualType": "image",
+                        "ctaLabel": "View Expeditions",
+                        "stats": [
+                            {
+                                "value": "50+",
+                                "label": "Treks Completed"
+                            },
+                            {
+                                "value": "100%",
+                                "label": "Safety Record"
+                            }
+                        ],
+                        "badge": "Certified High-Altitude Guides"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "py-plans",
+            "name": "Treks Overview",
+            "path": "index",
+            "data": {
+                "type": "Plan",
+                "id": "plans1",
+                "title": "Adventure Plans",
+                "plans": [
+                    {
+                        "id": "1",
+                        "title": "Weekend Warrior",
+                        "price": "₹4,999",
+                        "duration": "2 Days",
+                        "features": [
+                            "Transport",
+                            "Local Guides",
+                            "Camping"
+                        ],
+                        "ctaLabel": "Book Now"
+                    },
+                    {
+                        "id": "2",
+                        "title": "Alpine Explorer",
+                        "price": "₹12,499",
+                        "duration": "5 Days",
+                        "isFeatured": true,
+                        "features": [
+                            "Full Meals",
+                            "Mule Support",
+                            "Medical Kit"
+                        ],
+                        "ctaLabel": "View Details"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "py-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Pahari Yatri",
+                "description": "Your mountain companion.",
+                "footer": {
+                    "copyright": "2024 Pahari Yatri. All rights reserved."
+                }
+            }
+        }
+    ]
+}

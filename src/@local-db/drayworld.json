@@ -1,0 +1,178 @@
+{
+    "domain": "dray-world.com",
+    "seo": {
+        "title": "Dray World | Global Logistics & Supply Chain Solutions",
+        "description": "Streamline your global trade with Dray World. We offer freight forwarding, warehousing, and customs brokerage services tailored for efficiency.",
+        "keywords": "freight forwarding, global logistics, supply chain management, customs brokerage, warehousing services",
+        "author": "Techie Loonds",
+        "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+        "siteUrl": "https://dray-world.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1511/1511116.png"
+    },
+    "theme": {
+        "name": "default"
+    },
+    "plugins": [
+        {
+            "name": "FloatingButton",
+            "isActive": true,
+            "data": {
+                "mobile": "1234567890",
+                "text": "Hello, I need a logistics quote."
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "dw-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Dray World",
+                "logo": {
+                    "id": "l1",
+                    "imageSrc": "https://i.pinimg.com/736x/2f/f4/ef/2ff4efe94f4689f517db0de91eb03d5a.jpg",
+                    "imageAlt": "Dray World Logo"
+                },
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Services",
+                        "url": "/services"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Track Shipment"
+            }
+        },
+        {
+            "id": "dw-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Connecting Your Business to the World",
+                        "subTitle": "Reliable • Fast • Global",
+                        "description": "End-to-end logistics solutions that ensure your cargo reaches its destination safely and on time.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Port Container"
+                        },
+                        "ctaLabel": "Request Quote",
+                        "visualPosition": "left",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dw-services",
+            "name": "Services",
+            "path": "services",
+            "data": {
+                "type": "Service",
+                "id": "s1",
+                "title": "Logistic Services",
+                "subTitle": "Comprehensive Supply Chain Management",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "Ocean Freight",
+                        "body": "FCL and LCL shipping options to major global ports.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2965/2965387.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Air Freight",
+                        "body": "Expedited air cargo for time-sensitive shipments.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/723/723955.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Warehousing",
+                        "body": "Secure storage and inventory management solutions.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2897/2897808.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "dw-contact",
+            "name": "Contact Us",
+            "path": "contact",
+            "data": {
+                "type": "ContactUs",
+                "id": "c1",
+                "title": "Get a Logistics Quote",
+                "subTitle": "Talk to an Expert",
+                "description": "Fill out the form below with your shipment details.",
+                "contactUs": {
+                    "address": "Portside Logistics Hub, Los Angeles, CA",
+                    "email": "logistics@dray-world.com",
+                    "phone": "+1 555 123 4567",
+                    "formFields": [
+                        {
+                            "name": "company",
+                            "label": "Company Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "email",
+                            "label": "Email",
+                            "type": "email",
+                            "required": true
+                        },
+                        {
+                            "name": "origin",
+                            "label": "Origin",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "destination",
+                            "label": "Destination",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "cargo",
+                            "label": "Cargo Details",
+                            "type": "textarea",
+                            "required": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "dw-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Dray World",
+                "description": "Moving the world forward.",
+                "footer": {
+                    "copyright": "2024 Dray World. Powered by Techie Loonds."
+                }
+            }
+        }
+    ]
+}

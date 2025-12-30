@@ -1,0 +1,77 @@
+{
+    "domain": "techie.pahariyatri.com",
+    "seo": {
+        "title": "Techie Loonds - Engineering Insights & Modern Web Tech",
+        "description": "Deep dives into React, TypeScript, and the future of agentic coding.",
+        "keywords": "react, typescript, tech blog, software engineering",
+        "author": "Techie Loonds",
+        "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+        "siteUrl": "https://techie.pahariyatri.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/711/711284.png"
+    },
+    "theme": {
+        "name": "dark"
+    },
+    "plugins": [],
+    "sections": [
+        {
+            "id": "tech-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Techie Loonds",
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Blog",
+                        "url": "/blogs"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "About",
+                        "url": "/about"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tech-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "The Future of Coding is Agentic",
+                        "subTitle": "Deep Dives • Code • Insights",
+                        "description": "Exploring the intersection of LLMs and Software Engineering. From automated refactoring to autonomous agents.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Tech Setup"
+                        },
+                        "visualPosition": "right",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "tech-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Techie Loonds",
+                "description": "Building the future of software.",
+                "footer": {
+                    "copyright": "2024 Techie Loonds. All rights reserved."
+                }
+            }
+        }
+    ]
+}

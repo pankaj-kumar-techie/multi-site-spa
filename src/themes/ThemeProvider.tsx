@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 import { themes } from "./ThemeData";
 import { Theme } from '../modal/Theme';
 
@@ -24,6 +24,21 @@ interface ThemeProviderProps {
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, children }) => {
   const [currentTheme, setCurrentTheme] = useState<Theme>(themes[theme]);
 
+  // Inject CSS Variables for global theme access
+  useEffect(() => {
+    const root = document.documentElement;
+    const { colors } = currentTheme;
+
+    // Helper to resolve Tailwind-like color names if necessary
+    // For now, we assume colors are valid CSS values or mapped in tailwind config
+    root.style.setProperty('--color-primary', colors.primary || 'black');
+    root.style.setProperty('--color-secondary', colors.secondary || 'white');
+    root.style.setProperty('--color-accent', colors.accent || colors.primary || 'black');
+
+    // Also inject specific RGB values if we need opacity support (e.g. glassmorphism)
+    // This is a more advanced pattern for flexibility
+  }, [currentTheme]);
+
   const handleThemeChange = (newTheme: Theme) => {
     setCurrentTheme(newTheme);
   };
@@ -33,12 +48,13 @@ const ThemeProvider: React.FC<ThemeProviderProps> = ({ theme, children }) => {
 
   return (
     <ThemeContext.Provider value={{ theme: currentTheme, setTheme: handleThemeChange, backgroundClasses, typographyClasses }}>
-      <div className={`${backgroundClasses} ${typographyClasses}`}>
+      <div className={`${typographyClasses} min-h-screen transition-colors duration-500`}>
         {children}
       </div>
     </ThemeContext.Provider>
   );
 };
+
 
 const getTypographyClasses = (theme: Theme) => {
   const { typography } = theme;

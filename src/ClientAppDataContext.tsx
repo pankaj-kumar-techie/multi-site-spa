@@ -11,7 +11,7 @@ interface ClientAppState {
 const initialClientAppState: ClientAppState = {
     blogs: [],
     portfolios: [],
-    packagesDetails:[],
+    packagesDetails: [],
     products: [],
 };
 
@@ -35,7 +35,7 @@ const clientAppReducer = (state: ClientAppState, action: ClientAppAction): Clien
         case 'SET_PORTFOLIOS':
             return { ...state, portfolios: action.payload };
         case 'SET_PACKAGES':
-            return{ ...state, packagesDetails: action.payload};
+            return { ...state, packagesDetails: action.payload };
         case 'SET_PRODUCTS':
             return { ...state, products: action.payload };
         default:
@@ -59,7 +59,7 @@ export const ClientAppProvider: React.FC<{ children: ReactNode }> = ({ children 
 export const useClientAppDataContext = () => {
     const context = useContext(ClientAppDataContext);
     if (!context) {
-        console.log('useClientAppDataContext must be used within a ClientAppProvider');
+        throw new Error('useClientAppDataContext must be used within a ClientAppProvider');
     }
     return context;
 };

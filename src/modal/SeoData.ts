@@ -5,6 +5,7 @@ export interface SeoData {
     tags: string;
     author?: string;
     imageUrl?: string;
+    faviconUrl?: string;
     siteUrl?: string;
     twitterCard?: string;
     twitterTitle?: string;

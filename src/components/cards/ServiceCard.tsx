@@ -1,21 +1,49 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../themes/ThemeProvider";
-import { useDynamicTextColor } from "../../themes/DynamicTextColor";
+import React from "react";
+import BaseCard from "../common/BaseCard";
 
-export default function ServiceCard(props: { icon: any, iconAlt: any, title: any, body: any }) {
-    const { theme } = useContext(ThemeContext);
-    const textColor = useDynamicTextColor(theme.colors.primary || "");
-    return (
-        <div className="w-full px-0 md:px-4 md:w-1/2 lg:w-1/3">
-            <div className={`mb-8 hover:text-${textColor}  rounded-[20px] ease-in-out duration-500 bg-white p-10 shadow-md hover:bg-${theme.colors.primary} hover:shadow-lg md:px-7 xl:px-10`}>
-                {props.icon && (
-                    <div className="bg-white p-2 mb-0 md:mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl">
-                        <img src={props.icon} alt={props.iconAlt} />
-                    </div>
-                )}
-                <h4 className="text-dark mb-3 text-xl font-semibold">{props.title}</h4>
-                <p className="text-body-color h-[100px] overflow-hidden">{props.body}</p>
-            </div>
-        </div>
-    )
+interface ServiceCardProps {
+    icon?: string;
+    iconAlt?: string;
+    title: string;
+    body: string;
+    className?: string;
+    variant?: 'glass' | 'elevated' | 'flat' | 'outline';
+    hoverEffect?: 'zoom' | 'lift' | 'glow' | 'none';
 }
+
+const ServiceCard: React.FC<ServiceCardProps> = ({
+    icon,
+    iconAlt,
+    title,
+    body,
+    className,
+    variant = 'elevated',
+    hoverEffect = 'lift'
+}) => {
+    return (
+        <BaseCard
+            variant={variant}
+            hoverEffect={hoverEffect}
+            className={`group h-full ${className}`}
+        >
+            {icon && (
+                <div className="w-16 h-16 rounded-2xl bg-primary-50 flex items-center justify-center mb-8 group-hover:bg-primary-600 group-hover:scale-110 transition-all duration-500">
+                    <img
+                        src={icon}
+                        alt={iconAlt || title}
+                        className="w-8 h-8 object-contain transition-all duration-500 group-hover:brightness-0 group-hover:invert"
+                    />
+                </div>
+            )}
+            <h4 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-primary-600 transition-colors duration-300">
+                {title}
+            </h4>
+            <p className="text-slate-600 leading-relaxed line-clamp-4 text-sm">
+                {body}
+            </p>
+        </BaseCard>
+    );
+};
+
+export default ServiceCard;
+

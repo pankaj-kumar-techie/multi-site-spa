@@ -1,0 +1,282 @@
+{
+    "domain": "gayatrilodge.com",
+    "seo": {
+        "title": "Gayatri Lodge | Serene Homestay in Kasauli",
+        "description": "Experience the ultimate tranquility at Gayatri Lodge. A luxury homestay with breathtaking views of the Himalayas in Kasauli.",
+        "keywords": "kasauli homestay, himachal pradesh hotel, luxury rooms kasauli, mountain view hotel, gayatri lodge",
+        "author": "Techie Loonds",
+        "imageUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg",
+        "siteUrl": "https://gayatrilodge.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/6232/6232468.png"
+    },
+    "theme": {
+        "name": "hospitality"
+    },
+    "plugins": [
+        {
+            "name": "LocationButton",
+            "isActive": true,
+            "location": {
+                "locationName": "Gayatri Lodge, Kasauli",
+                "latitude": 30.89901139661188,
+                "longitude": 76.97811964534783
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "gl-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Gayatri Lodge",
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Our Rooms",
+                        "url": "/rooms"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "Gallery",
+                        "url": "/gallery"
+                    },
+                    {
+                        "id": "m4",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Book Now"
+            }
+        },
+        {
+            "id": "gl-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Wake Up to the Himalayas",
+                        "subTitle": "Luxury • Serenity • Nature",
+                        "description": "Escape the chaos. Find your peace in our pine-surrounded sanctuary.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1597256817041-0c75c0633658?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Mountain View"
+                        },
+                        "ctaLabel": "Check Availability",
+                        "visualPosition": "right",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-amenities",
+            "name": "Amenities",
+            "path": "index",
+            "data": {
+                "type": "Service",
+                "id": "am1",
+                "title": "Premium Amenities",
+                "subTitle": "Comfort in Every Detail",
+                "cardVariant": "elevated",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "Himalayan Views",
+                        "body": "Private balconies with panoramic views of the Kasauli hills.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/3037/3037905.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Home Cooked Meals",
+                        "body": "Organic, locally sourced pahadi cuisine prepared with love.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/1046/1046774.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "High-Speed WiFi",
+                        "body": "Stay connected while you disconnect from the city chaos.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/93/93158.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-timeline",
+            "name": "Booking Process",
+            "path": "index",
+            "data": {
+                "type": "Timeline",
+                "id": "tl1",
+                "title": "Your Journey to Peace",
+                "subTitle": "Simple 3-Step Booking",
+                "timelines": [
+                    {
+                        "id": 1,
+                        "title": "Choose Your Room",
+                        "description": "Select from our Deluxe, Super Deluxe, or Family Suites.",
+                        "tag": "1"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Confirm Dates",
+                        "description": "Contact us via WhatsApp to check availability.",
+                        "tag": "2"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Arrive & Relax",
+                        "description": "We'll have welcome tea waiting for you.",
+                        "tag": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-testimonials",
+            "name": "Testimonials",
+            "path": "index",
+            "data": {
+                "type": "Testimonial",
+                "id": "tm1",
+                "title": "Guest Diaries",
+                "subTitle": "Memories Made Here",
+                "cardVariant": "elevated",
+                "testimonials": [
+                    {
+                        "id": 1,
+                        "name": "Rahul Sharma",
+                        "designation": "Delhi",
+                        "testimonial": "The best homestay experience I've ever had. The food was amazing and the owners are so warm!",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Rahul+Sharma&background=random"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Priya Singh",
+                        "designation": "Chandigarh",
+                        "testimonial": "Waking up to that view was magical. Highly recommended for a weekend getaway.",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Priya+Singh&background=random"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-rooms",
+            "name": "Our Rooms",
+            "path": "rooms",
+            "data": {
+                "type": "Product",
+                "id": "p1",
+                "title": "Stay in Comfort",
+                "subTitle": "Mountain View Rooms",
+                "products": [
+                    {
+                        "id": 1,
+                        "name": "Deluxe Valley View",
+                        "description": "Wake up to stunning sunrises. Private balcony included.",
+                        "imageSrc": "https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+                        "imageAlt": "Deluxe Room"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Family Suite",
+                        "description": "Spacious accommodation for the whole family.",
+                        "imageSrc": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+                        "imageAlt": "Family Suite"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-gallery",
+            "name": "Gallery",
+            "path": "gallery",
+            "data": {
+                "type": "Gallery",
+                "id": "g1",
+                "title": "Experience Gayatri Lodge",
+                "images": [
+                    {
+                        "id": "1",
+                        "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717943.jpg",
+                        "imageAlt": "Exterior"
+                    },
+                    {
+                        "id": "2",
+                        "imageSrc": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/462717126.jpg",
+                        "imageAlt": "Room View"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gl-contact",
+            "name": "Contact Us",
+            "path": "contact",
+            "data": {
+                "type": "ContactUs",
+                "id": "c1",
+                "title": "Plan Your Getaway",
+                "subTitle": "We're Waiting for You",
+                "description": "Need help with directions or booking? Call us anytime.",
+                "contactUs": {
+                    "address": "Garkhal - Madhiyana Road, Kasauli, Himachal Pradesh",
+                    "email": "reservations@gayatrilodge.com",
+                    "phone": "+91 98160 12345",
+                    "formFields": [
+                        {
+                            "name": "name",
+                            "label": "Guest Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "checkin",
+                            "label": "Check-in Date",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "guests",
+                            "label": "Number of Guests",
+                            "type": "number",
+                            "required": true
+                        },
+                        {
+                            "name": "message",
+                            "label": "Special Requests",
+                            "type": "textarea",
+                            "required": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "gl-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Gayatri Lodge",
+                "description": "Your home in the hills.",
+                "footer": {
+                    "copyright": "2024 Gayatri Lodge. Powered by Techie Loonds."
+                }
+            }
+        }
+    ]
+}

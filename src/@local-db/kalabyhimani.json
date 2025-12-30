@@ -1,0 +1,251 @@
+{
+    "domain": "www.kalabyhimani.com",
+    "seo": {
+        "title": "Kala By Himani | Premium Personalized Gift Hampers",
+        "description": "Exquisite handcrafted gift hampers for birthdays, weddings, and festivals. Personalized with love to create unforgettable memories.",
+        "keywords": "personalized gifts, handcrafted hampers, custom cards, birthday gifts, wedding hampers",
+        "author": "Techie Loonds",
+        "imageUrl": "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
+        "siteUrl": "https://www.kalabyhimani.com/",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/9483/9483017.png"
+    },
+    "theme": {
+        "name": "artisan"
+    },
+    "plugins": [
+        {
+            "name": "FloatingButton",
+            "isActive": true,
+            "data": {
+                "mobile": "8699094033",
+                "text": "Hello Himani! 🎁 I’m interested in your gift hampers. Can you share more details?"
+            }
+        }
+    ],
+    "sections": [
+        {
+            "id": "kala-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Kala By Himani",
+                "logo": {
+                    "id": "l1",
+                    "imageSrc": "https://i.pinimg.com/736x/e0/63/29/e063299149106740aee5b9f0c1791a8d.jpg",
+                    "imageAlt": "Logo"
+                },
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Our Hampers",
+                        "url": "/products"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "About",
+                        "url": "/about"
+                    },
+                    {
+                        "id": "m4",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Order Now"
+            }
+        },
+        {
+            "id": "kala-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Handcrafted Hampers for Your Special Moments",
+                        "subTitle": "Personalized • Artisan • Heartfelt",
+                        "description": "Celebrate life's milestones with gifts as unique as your loved ones. Each hamper is curated with precision and passion.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=2030&auto=format&fit=crop",
+                            "imageAlt": "Gift Hamper"
+                        },
+                        "ctaLabel": "Explore Collection",
+                        "visualPosition": "right",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-timeline",
+            "name": "How It Works",
+            "path": "index",
+            "data": {
+                "type": "Timeline",
+                "id": "tl1",
+                "title": "Crafting Your Perfect Gift",
+                "subTitle": "From Idea to Hamper",
+                "timelines": [
+                    {
+                        "id": 1,
+                        "title": "Share Your Vision",
+                        "description": "Tell us the occasion, recipient, and your budget.",
+                        "tag": "1"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Curating Magic",
+                        "description": "We handpick premium items and design custom cards.",
+                        "tag": "2"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Delivered with Love",
+                        "description": "Your bespoke hamper arrives, ready to create smiles.",
+                        "tag": "3"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-testimonials",
+            "name": "Testimonials",
+            "path": "index",
+            "data": {
+                "type": "Testimonial",
+                "id": "tm1",
+                "title": "Customer Stories",
+                "subTitle": "Spreading Joy",
+                "cardVariant": "elevated",
+                "testimonials": [
+                    {
+                        "id": 1,
+                        "name": "Aditi Rao",
+                        "designation": "Bangalore",
+                        "testimonial": "The Diwali hamper was a hit! Everyone loved the personalized touch.",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Aditi+Rao&background=random"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Karan Mehta",
+                        "designation": "Mumbai",
+                        "testimonial": "Himani's attention to detail is unmatched. The wedding favors were exquisite.",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Karan+Mehta&background=random"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-products",
+            "name": "Our Hampers",
+            "path": "products",
+            "data": {
+                "type": "Product",
+                "id": "p1",
+                "title": "Exquisite Collections",
+                "subTitle": "Curated for You",
+                "products": [
+                    {
+                        "id": 1,
+                        "name": "Festive Diwali Hamper",
+                        "description": "Premium dry fruits, handmade cookies, and artisanal chocolates.",
+                        "imageSrc": "https://i.pinimg.com/736x/56/fb/fa/56fbfaa7c218b6c1332d2d6080b322c2.jpg",
+                        "imageAlt": "Diwali Hamper"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Luxury Wedding Set",
+                        "description": "Personalized keepsakes, aromatic candles, and colorful diyas.",
+                        "imageSrc": "https://i.pinimg.com/564x/09/81/db/0981dbae56244769205c547559170364.jpg",
+                        "imageAlt": "Wedding Hamper"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-about",
+            "name": "About Us",
+            "path": "about",
+            "data": {
+                "type": "AboutUs",
+                "id": "a1",
+                "title": "The Art of Giving",
+                "subTitle": "Crafted with Love by Himani",
+                "description": "At Kala by Himani, we believe every gift tells a unique story. What started as a passion for quilling and handicrafts evolved into a premier gifting destination. Our mission is to create high-quality, handcrafted gift hampers tailored to your individual tastes.\n\nOur skilled artisans collaborate with you to design hampers filled with delightful treats and meaningful keepsakes, ensuring each creation embodies your sentiments.",
+                "images": [
+                    {
+                        "id": "img2",
+                        "imageSrc": "https://i.pinimg.com/originals/88/17/ec/8817ec1d3067563082291428c2769212.jpg",
+                        "imageAlt": "Himani at Work"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "kala-contact",
+            "name": "Contact Us",
+            "path": "contact",
+            "data": {
+                "type": "ContactUs",
+                "id": "c1",
+                "title": "Start Creating Your Hamper",
+                "subTitle": "Let's Collaborate",
+                "description": "Have a specific theme in mind? Or need suggestions for a perfect gift? Reach out to us and let's craft something beautiful together.",
+                "contactUs": {
+                    "address": "Artisan Studios, Himachal Pradesh, India",
+                    "email": "hello@kalabyhimani.com",
+                    "phone": "+91 8699094033",
+                    "formFields": [
+                        {
+                            "name": "name",
+                            "label": "Your Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "occasion",
+                            "label": "Occasion",
+                            "type": "text",
+                            "required": false
+                        },
+                        {
+                            "name": "mobile",
+                            "label": "WhatsApp Number",
+                            "type": "tel",
+                            "required": true
+                        },
+                        {
+                            "name": "message",
+                            "label": "Hamper Details",
+                            "type": "textarea",
+                            "required": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "kala-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Kala By Himani",
+                "description": "Crafting memories, one gift at a time.",
+                "footer": {
+                    "copyright": "2024 Kala By Himani. Powered by Techie Loonds."
+                }
+            }
+        }
+    ]
+}

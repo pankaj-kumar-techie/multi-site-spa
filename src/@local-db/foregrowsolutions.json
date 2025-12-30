@@ -1,0 +1,279 @@
+{
+    "domain": "foregrowsolutions.com",
+    "seo": {
+        "title": "ForeGrow Solutions | Enterprise Tech Partners",
+        "description": "Accelerate your digital transformation with ForeGrow. We build scalable software, cloud infrastructures, and AI solutions for global enterprises.",
+        "keywords": "software engineering, cloud consulting, digital transformation, ai development, enterprise tech",
+        "author": "Techie Loonds",
+        "imageUrl": "https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg",
+        "siteUrl": "https://foregrowsolutions.com",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/1042/1042782.png"
+    },
+    "theme": {
+        "name": "startup"
+    },
+    "plugins": [],
+    "sections": [
+        {
+            "id": "fg-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "ForeGrow Solutions",
+                "logo": {
+                    "id": "l1",
+                    "imageSrc": "https://i.pinimg.com/1200x/1d/64/6f/1d646f39073b5a3fbc17ba7a68182268.jpg",
+                    "imageAlt": "ForeGrow Logo"
+                },
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "Solutions",
+                        "url": "/services"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "About",
+                        "url": "/about"
+                    },
+                    {
+                        "id": "m4",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Start Project"
+            }
+        },
+        {
+            "id": "fg-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Engineering Future-Ready Enterprises",
+                        "subTitle": "Cloud • AI • Security",
+                        "description": "We architect robust digital ecosystems that drive growth and operational excellence.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://i.pinimg.com/1200x/fd/c5/95/fdc59561325fdf89d6b05632b84fd0cb.jpg",
+                            "imageAlt": "Tech Infrastructure"
+                        },
+                        "ctaLabel": "View Case Studies",
+                        "visualPosition": "left",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-timeline",
+            "name": "Our Process",
+            "path": "index",
+            "data": {
+                "type": "Timeline",
+                "id": "tl1",
+                "title": "Agile Development Lifecycle",
+                "subTitle": "From Concept to Cloud",
+                "timelines": [
+                    {
+                        "id": 1,
+                        "title": "Discovery",
+                        "description": "We analyze your business needs and architect a roadmap.",
+                        "tag": "PLAN"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Development",
+                        "description": "Iterative sprints with bi-weekly deliverables.",
+                        "tag": "BUILD"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Deployment",
+                        "description": "CI/CD pipelines ensure zero-downtime launches.",
+                        "tag": "SHIP"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-testimonials",
+            "name": "Testimonials",
+            "path": "index",
+            "data": {
+                "type": "Testimonial",
+                "id": "tm1",
+                "title": "Trusted by Innovators",
+                "subTitle": "Client Success",
+                "cardVariant": "flat",
+                "testimonials": [
+                    {
+                        "id": 1,
+                        "name": "Sarah Jenkins",
+                        "designation": "CTO, FinTech Corp",
+                        "testimonial": "ForeGrow transformed our legacy systems into a modern microservices architecture.",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Sarah+Jenkins&background=random"
+                    },
+                    {
+                        "id": 2,
+                        "name": "David Chen",
+                        "designation": "Founder, HealthAI",
+                        "testimonial": "Their AI expertise helped us launch our diagnostic tool 3 months ahead of schedule.",
+                        "imageSrc": "https://ui-avatars.com/api/?name=David+Chen&background=random"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-services",
+            "name": "Services",
+            "path": "services",
+            "data": {
+                "type": "Service",
+                "id": "s1",
+                "title": "Our Expertise",
+                "subTitle": "End-to-End Technology Services",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "Cloud Architecture",
+                        "body": "Scalable AWS and Azure infrastructures designed for high availability.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/13296/13296567.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Custom Development",
+                        "body": "Full-stack web and mobile applications built with modern frameworks.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/8350/8350445.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "AI Integration",
+                        "body": "Leverage machine learning to automate processes and gain insights.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2103/2103633.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-about",
+            "name": "About Us",
+            "path": "about",
+            "data": {
+                "type": "AboutUs",
+                "id": "a1",
+                "title": "Innovating Since 2015",
+                "subTitle": "About ForeGrow",
+                "description": "We are a team of passionate engineers, designers, and strategists dedicated to solving complex business problems through technology. Headquartered in Noida, we serve clients across the globe.",
+                "images": [
+                    {
+                        "id": "img2",
+                        "imageSrc": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop",
+                        "imageAlt": "Our Team"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-team",
+            "name": "Our Team",
+            "path": "about",
+            "data": {
+                "type": "OurTeam",
+                "id": "ot1",
+                "title": "Meet the Builders",
+                "subTitle": "Leadership",
+                "ourTeam": [
+                    {
+                        "name": "Vikram Singh",
+                        "role": "CEO & Founder",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Vikram+Singh&background=random"
+                    },
+                    {
+                        "name": "Anita Roy",
+                        "role": "Head of Engineering",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Anita+Roy&background=random"
+                    },
+                    {
+                        "name": "James Lee",
+                        "role": "Lead Architect",
+                        "imageSrc": "https://ui-avatars.com/api/?name=James+Lee&background=random"
+                    },
+                    {
+                        "name": "Meera Patel",
+                        "role": "Product Director",
+                        "imageSrc": "https://ui-avatars.com/api/?name=Meera+Patel&background=random"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "fg-contact",
+            "name": "Contact Us",
+            "path": "contact",
+            "data": {
+                "type": "ContactUs",
+                "id": "c1",
+                "title": "Partner With Us",
+                "subTitle": "Let's Build Something Great",
+                "description": "Ready to modernize your tech stack? Schedule a free consultation with our architects.",
+                "contactUs": {
+                    "address": "Tech Park, Sector 62, Noida, India",
+                    "email": "connect@foregrowsolutions.com",
+                    "phone": "+91 120 456 7890",
+                    "formFields": [
+                        {
+                            "name": "name",
+                            "label": "Full Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "company",
+                            "label": "Company Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "email",
+                            "label": "Work Email",
+                            "type": "email",
+                            "required": true
+                        },
+                        {
+                            "name": "requirements",
+                            "label": "Project Requirements",
+                            "type": "textarea",
+                            "required": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "fg-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "ForeGrow Solutions",
+                "description": "Innovating for a better tomorrow.",
+                "footer": {
+                    "copyright": "2024 ForeGrow Solutions. Powered by Techie Loonds."
+                }
+            }
+        }
+    ]
+}

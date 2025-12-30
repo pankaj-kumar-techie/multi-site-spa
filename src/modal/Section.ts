@@ -3,16 +3,16 @@ import { FieldConfig } from "./FieldConfig";
 export interface Section {
   id: string;
   name: string;
-  version: string;
-  style: string;
+  version?: string;
+  style?: string;
   data: {
     type: string;
     id: string;
     title: string;
-    subTitle: string;
-    description: string;
-    version: string;
-    style: string;
+    subTitle?: string;
+    description?: string;
+    version?: string;
+    style?: string;
     menu?: MenuItem[];
     logo?: Image;
     bannerData?: HeroBannerProps[];
@@ -32,9 +32,24 @@ export interface Section {
     termAndCondition?: TermAndCondition[];
     contactUs?: ContactUs;
     formFields?: FieldConfig[];
+    cardVariant?: 'glass' | 'elevated' | 'flat' | 'outline';
+    cardHoverEffect?: 'zoom' | 'lift' | 'glow' | 'none';
     footer?: Footer;
+    ctaLabel?: string;
+    highlights?: Highlight[];
   };
   path: string;
+}
+
+export type Stat = {
+  label: string;
+  value: string;
+}
+
+export type Highlight = {
+  label: string;
+  value: string;
+  className?: string;
 }
 
 export type HeroBannerProps = {
@@ -43,8 +58,15 @@ export type HeroBannerProps = {
   description: string,
   buttonLevel?: string,
   buttonLink?: string,
+  ctaLabel?: string,
+  ctaSecondaryLabel?: string,
+  ctaSecondaryLink?: string,
+  stats?: Stat[],
+  badge?: string,
   image?: Image,
   videoSrc?: string,
+  visualPosition?: 'left' | 'right',
+  visualType?: 'image' | 'video' | 'none',
   modalProps?: ModalProps
 }
 
@@ -86,6 +108,8 @@ export type Timeline = {
   id: number,
   title: string,
   description: string,
+  subTitle?: string,
+  tag?: string,
   color: string,
   icon: string,
 }
@@ -124,7 +148,8 @@ export type Package = {
   imageAlt: string,
   altitude?: string,
   difficulty?: string,
-  season?: string
+  season?: string,
+  tag?: string,
 }
 export type CalendarEvent = {
   id: number,
@@ -166,9 +191,14 @@ export type Plan = {
   id: string,
   title: string,
   description: string,
-  imageSrc: string,
-  imageAlt: string,
+  duration?: string,
+  imageSrc?: string,
+  imageAlt?: string,
   price: string,
+  features?: string[],
+  isFeatured?: boolean,
+  ctaLabel?: string,
+  ctaLink?: string,
 }
 
 export type FAQ = {
@@ -249,7 +279,7 @@ export type Itinerary = {
 
 export type ModalProps = {
   isOpen: boolean;
-  onClose?: () => void;
+  onClose: () => void;
   title: string;
   children?: React.ReactNode;
   formFields?: FieldConfig[];
