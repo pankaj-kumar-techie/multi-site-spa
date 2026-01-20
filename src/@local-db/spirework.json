@@ -1,0 +1,271 @@
+{
+    "domain": "spirework.in",
+    "seo": {
+        "title": "Spire Work Solutions | Trusted Manpower Supply",
+        "description": "Trusted manpower supply company providing workforce solutions for e-commerce, logistics, and quick commerce. Hiring for Blinkit, Zomato, Swiggy, and more.",
+        "keywords": "manpower supply, workforce solutions, delivery executives, logistics staffing, e-commerce hiring",
+        "author": "Spire Work Solutions",
+        "siteUrl": "https://spirework.in",
+        "faviconUrl": "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+    },
+    "theme": {
+        "name": "corporate"
+    },
+    "plugins": [],
+    "sections": [
+        {
+            "id": "sw-header",
+            "name": "Header",
+            "path": "all",
+            "data": {
+                "type": "Header",
+                "id": "h1",
+                "title": "Spire Work Solutions",
+                "logo": {
+                    "id": "l1",
+                    "imageSrc": "https://cdn-icons-png.flaticon.com/128/3135/3135715.png",
+                    "imageAlt": "Spire Work Solutions Logo"
+                },
+                "menu": [
+                    {
+                        "id": "m1",
+                        "label": "Home",
+                        "url": "/"
+                    },
+                    {
+                        "id": "m2",
+                        "label": "About Us",
+                        "url": "/about"
+                    },
+                    {
+                        "id": "m3",
+                        "label": "Services",
+                        "url": "/services"
+                    },
+                    {
+                        "id": "m4",
+                        "label": "Contact",
+                        "url": "/contact"
+                    }
+                ],
+                "ctaLabel": "Get Manpower"
+            }
+        },
+        {
+            "id": "sw-hero",
+            "name": "Hero",
+            "path": "index",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb1",
+                "bannerData": [
+                    {
+                        "title": "Workforce Solutions for the Future",
+                        "subTitle": "E-Commerce • Logistics • Quick Commerce",
+                        "description": "We provide trained delivery executives, riders, and last-mile workforce to leading platforms like Blinkit, Zomato, Swiggy, Zepto, and Flipkart.",
+                        "image": {
+                            "id": "img1",
+                            "imageSrc": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Logistics Workforce"
+                        },
+                        "ctaLabel": "Hire Now",
+                        "visualPosition": "right",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sw-clients",
+            "name": "Our Major Clients",
+            "path": "index",
+            "data": {
+                "type": "Testimonial",
+                "id": "tm1",
+                "title": "Trusted by Industry Leaders",
+                "subTitle": "Our Major Clients",
+                "cardVariant": "flat",
+                "testimonials": [
+                    {
+                        "id": 1,
+                        "name": "Blinkit",
+                        "designation": "Quick Commerce",
+                        "testimonial": "Quick commerce delivery manpower.",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Blinkit_logo.png"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Zomato",
+                        "designation": "Food Delivery",
+                        "testimonial": "Food delivery executive staffing.",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Swiggy",
+                        "designation": "Hyperlocal Delivery",
+                        "testimonial": "Hyperlocal delivery workforce.",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/Swiggy_logo.svg/1200px-Swiggy_logo.svg.png"
+                    },
+                    {
+                        "id": 4,
+                        "name": "Zepto",
+                        "designation": "Rapid Delivery",
+                        "testimonial": "Rapid delivery rider supply.",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Zepto_logo.svg/1200px-Zepto_logo.svg.png"
+                    },
+                    {
+                        "id": 5,
+                        "name": "Flipkart",
+                        "designation": "E-Commerce",
+                        "testimonial": "E-commerce and last-mile delivery manpower.",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Flipkart_logo.svg/1200px-Flipkart_logo.svg.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sw-about",
+            "name": "About Us",
+            "path": "about",
+            "data": {
+                "type": "AboutUs",
+                "id": "a1",
+                "title": "Who We Are",
+                "subTitle": "About Spire Work Solutions",
+                "description": "We are a trusted manpower supply company specializing in workforce solutions for the e-commerce, quick commerce, and logistics sectors. With a deep understanding of operational requirements, we manage end-to-end hiring, onboarding, and workforce support. Our commitment is to deliver high-quality manpower, ensure regulatory compliance, and build long-term partnerships, while creating consistent earning opportunities for our delivery partners.",
+                "images": [
+                    {
+                        "id": "img2",
+                        "imageSrc": "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop",
+                        "imageAlt": "Our Team"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sw-services",
+            "name": "Our Services",
+            "path": "services",
+            "data": {
+                "type": "Service",
+                "id": "s1",
+                "title": "Workforce Solutions",
+                "subTitle": "Our Services",
+                "services": [
+                    {
+                        "id": 1,
+                        "title": "Delivery & Collection Staff",
+                        "body": "Expert riders and delivery executives for last-mile logistics.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2830/2830312.png"
+                    },
+                    {
+                        "id": 2,
+                        "title": "Security Guards",
+                        "body": "Trained security personnel for residential and commercial properties.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2942/2942813.png"
+                    },
+                    {
+                        "id": 3,
+                        "title": "Sports & Recreation Staff",
+                        "body": "Staffing solutions for sports complexes and recreation centers.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2528/2528052.png"
+                    },
+                    {
+                        "id": 4,
+                        "title": "Nurses & Healthcare Assistants",
+                        "body": "Qualified candidates for hospitals and healthcare facilities.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/2966/2966327.png"
+                    },
+                    {
+                        "id": 5,
+                        "title": "Personal Assistants & Helpers",
+                        "body": "Reliable domestic and corporate support staff.",
+                        "imageSrc": "https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sw-mission",
+            "name": "Our Mission",
+            "path": "about",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb2",
+                "bannerData": [
+                    {
+                        "title": "Our Mission",
+                        "subTitle": "Empowering Growth",
+                        "description": "Our mission is to provide skilled, reliable manpower that enables businesses to grow while creating meaningful learning opportunities for professionals. We emphasize fast onboarding, quality service, and compliance.",
+                        "image": {
+                            "id": "img3",
+                            "imageSrc": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Mission"
+                        },
+                        "visualPosition": "left",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "sw-contact",
+            "name": "Contact Us",
+            "path": "contact",
+            "data": {
+                "type": "ContactUs",
+                "id": "c1",
+                "title": "Get in Touch",
+                "subTitle": "Partner With Us",
+                "description": "Looking for workforce solutions? Contact us today to discuss your requirements.",
+                "contactUs": {
+                    "address": "Spire Work Solutions HQ",
+                    "email": "contact@spirework.in",
+                    "phone": "+91 98765 43210",
+                    "formFields": [
+                        {
+                            "name": "name",
+                            "label": "Full Name",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "company",
+                            "label": "Company/Org",
+                            "type": "text",
+                            "required": true
+                        },
+                        {
+                            "name": "email",
+                            "label": "Email",
+                            "type": "email",
+                            "required": true
+                        },
+                        {
+                            "name": "requirements",
+                            "label": "Workforce Requirements",
+                            "type": "textarea",
+                            "required": true
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "id": "sw-footer",
+            "name": "Footer",
+            "path": "all",
+            "data": {
+                "type": "Footer",
+                "id": "f1",
+                "title": "Spire Work Solutions",
+                "description": "Your trusted partner for workforce solutions.",
+                "author": "ForeGrow Solutions",
+                "footer": {
+                    "copyright": "2026 Spire Work Solutions. All rights reserved."
+                }
+            }
+        }
+    ]
+}
