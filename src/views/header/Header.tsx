@@ -68,9 +68,11 @@ const Header: React.FC<HeaderProps> = ({ data, style = "MODERN" }) => {
                         </a>
                     ))}
                     {headerData.ctaLabel && (
-                        <button className="btn-premium py-2 px-6 text-sm">
-                            {headerData.ctaLabel}
-                        </button>
+                        <a href={headerData.ctaUrl || "/contact"}>
+                            <button className="btn-premium py-2 px-6 text-sm">
+                                {headerData.ctaLabel}
+                            </button>
+                        </a>
                     )}
                 </nav>
 

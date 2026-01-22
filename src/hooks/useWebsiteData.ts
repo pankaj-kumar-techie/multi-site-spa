@@ -56,7 +56,14 @@ export const useWebsiteData = () => {
 
             const clientDomainName = window.location.hostname;
             const urlParams = new URLSearchParams(window.location.search);
-            const previewSite = urlParams.get('preview');
+            let previewSite = urlParams.get('preview');
+            
+            if (previewSite) {
+                localStorage.setItem('preview_site', previewSite);
+            } else {
+                previewSite = localStorage.getItem('preview_site');
+            }
+            
             const effectiveDomain = previewSite || clientDomainName;
 
             const path = window.location.pathname.substring(1) || 'index';

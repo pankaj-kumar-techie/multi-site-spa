@@ -16,6 +16,7 @@ const Footer = lazy(() => import('./footer/Footer'));
 const Gallery = lazy(() => import('./gallery/Gallery'));
 const Header = lazy(() => import('./header/Header'));
 const HeroBanner = lazy(() => import('./hero-banner/HeroBanner'));
+const LogoMarquee = lazy(() => import('./gallery/LogoMarquee'));
 const OurTeam = lazy(() => import('./our-team/OurTeam'));
 const Package = lazy(() => import('./package/Package'));
 const PageNotFound = lazy(() => import('./page-not-found/PageNotFound'));
@@ -47,6 +48,7 @@ export class Renderer {
             Service: (section) => <Suspense fallback={null}><Services key={section.id} data={section.data} /></Suspense>,
             Testimonial: (section) => <Suspense fallback={null}><Testimonials key={section.id} data={section.data} /></Suspense>,
             Gallery: (section) => <Suspense fallback={null}><Gallery key={section.id} data={section.data} /></Suspense>,
+            LogoMarquee: (section) => <Suspense fallback={null}><LogoMarquee key={section.id} data={section.data} /></Suspense>,
             Videos: (section) => <Suspense fallback={null}><Video key={section.id} data={section.data} /></Suspense>,
             Blog: (section) => <Suspense fallback={null}><Blog key={section.id} data={section.data} /></Suspense>,
             Plan: (section) => <Suspense fallback={null}><Plan key={section.id} data={section.data} /></Suspense>,

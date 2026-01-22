@@ -59,12 +59,14 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ data }) => {
 
                     <div className={`flex flex-wrap gap-4 ${isCentered ? 'justify-center' : ''}`}>
                         {(banner.buttonLevel || banner.ctaLabel) && (
-                            <button className="btn-premium flex items-center gap-2">
-                                <span>{banner.ctaLabel || banner.buttonLevel}</span>
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                                </svg>
-                            </button>
+                            <a href={banner.ctaUrl || "/contact"}>
+                                <button className="btn-premium flex items-center gap-2">
+                                    <span>{banner.ctaLabel || banner.buttonLevel}</span>
+                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                    </svg>
+                                </button>
+                            </a>
                         )}
                         {banner.ctaSecondaryLabel && (
                             <button className="btn-premium-outline !text-white !border-white/20 hover:!bg-white/10">

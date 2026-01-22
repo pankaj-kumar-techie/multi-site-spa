@@ -13,7 +13,18 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
                     {/* Brand Section */}
                     <div className="lg:col-span-1">
-                        {data?.title && (
+                        {data?.logo ? (
+                            <div className="flex items-center gap-3 mb-6">
+                                <img
+                                    src={data.logo.imageSrc}
+                                    alt={data.logo.imageAlt}
+                                    className="w-12 h-12 object-contain rounded-xl transition-all duration-300 hover:scale-110"
+                                />
+                                <span className="text-2xl font-display font-bold tracking-tight">
+                                    {data.title}
+                                </span>
+                            </div>
+                        ) : data?.title && (
                             <div className="flex items-center gap-2 mb-6">
                                 <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center font-display font-black text-xl">
                                     {data.title[0]}
@@ -42,9 +53,14 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                     <div>
                         <h4 className="text-sm font-bold uppercase tracking-widest mb-6 text-primary-500">Company</h4>
                         <ul className="space-y-4">
-                            {['About Us', 'Our Team', 'Careers', 'Contact'].map((link) => (
-                                <li key={link}>
-                                    <a href="#" className="text-slate-400 hover:text-white transition-colors">{link}</a>
+                            {[
+                                { label: 'About Us', url: '/about' },
+                                { label: 'Our Team', url: '/about#team' },
+                                { label: 'Careers', url: '/contact' },
+                                { label: 'Contact', url: '/contact' }
+                            ].map((link) => (
+                                <li key={link.label}>
+                                    <a href={link.url} className="text-slate-400 hover:text-white transition-colors">{link.label}</a>
                                 </li>
                             ))}
                         </ul>
