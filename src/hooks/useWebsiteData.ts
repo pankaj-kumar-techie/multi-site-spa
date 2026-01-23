@@ -20,6 +20,7 @@ const domainMap: { [key: string]: string } = {
     "websitebuilder.com": "websitebuilder",
     "dray-world.com": "drayworld",
     "spirework.in": "spirework",
+    "www.spirework.in": "spirework",
     "localhost": "websitebuilder",
 };
 
