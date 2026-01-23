@@ -28,8 +28,8 @@ const Header: React.FC<HeaderProps> = ({ data, style = "MODERN" }) => {
     return (
         <header
             className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled
-                ? "py-3 glass shadow-premium"
-                : "py-6 bg-transparent"
+                ? "py-2 md:py-3 glass shadow-premium"
+                : "py-4 md:py-6 bg-transparent"
                 }`}
         >
             <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">

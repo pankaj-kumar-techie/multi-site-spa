@@ -23,7 +23,7 @@
                 "title": "Spire Work Solutions",
                 "logo": {
                     "id": "l1",
-                    "imageSrc": "file:///C:/Users/panka/.gemini/antigravity/brain/cb9b7f01-2208-4141-880f-b6a939bc8ce1/spirework_corporate_logo_v2_1768929795929.png",
+                    "imageSrc": "https://ui-avatars.com/api/?name=S&background=0284c7&color=fff&size=512&bold=true",
                     "imageAlt": "Spire Work Solutions Logo"
                 },
                 "menu": [
@@ -66,8 +66,8 @@
                         "description": "We specialize in providing trained delivery executives, riders, and last-mile workforce to platforms like Blinkit, Zomato, Swiggy, Zepto, and Flipkart.",
                         "image": {
                             "id": "img1",
-                            "imageSrc": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop",
-                            "imageAlt": "Logistics Workforce"
+                            "imageSrc": "https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Strategic Workforce Solutions"
                         },
                         "ctaLabel": "Get Manpower",
                         "visualPosition": "right",
@@ -126,7 +126,7 @@
         {
             "id": "sw-clients-marquee",
             "name": "Our Major Clients",
-            "path": "all",
+            "path": "index",
             "data": {
                 "type": "LogoMarquee",
                 "id": "lm1",
@@ -135,43 +135,38 @@
                 "images": [
                     {
                         "id": "c1",
-                        "imageSrc": "https://logo.clearbit.com/swiggy.com",
+                        "imageSrc": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTk4YjU3MjcwLTg4YmQtMTFmMC04NDliLWQxMWMzZjNiMjVlNy5qcGc=",
                         "imageAlt": "Swiggy"
                     },
                     {
                         "id": "c2",
-                        "imageSrc": "https://logo.clearbit.com/zomato.com",
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Zomato_Logo.svg",
                         "imageAlt": "Zomato"
                     },
                     {
                         "id": "c3",
-                        "imageSrc": "https://logo.clearbit.com/blinkit.com",
+                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4bW7LpZfsb8HDjcY04_3RNaLa3dNxGthhUw&s",
                         "imageAlt": "Blinkit"
                     },
                     {
                         "id": "c4",
-                        "imageSrc": "https://logo.clearbit.com/flipkart.com",
+                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZkSig50hxAkM3tUe32a06WYkNbRHHlv9xw&s",
                         "imageAlt": "Flipkart"
                     },
                     {
                         "id": "c5",
-                        "imageSrc": "https://logo.clearbit.com/zepto.com",
+                        "imageSrc": "https://i0.wp.com/bwretailworld.com/wp-content/uploads/2024/06/Heading-49.png?resize=1280%2C700&ssl=1",
                         "imageAlt": "Zepto"
                     },
                     {
                         "id": "c6",
-                        "imageSrc": "https://logo.clearbit.com/olacabs.com",
-                        "imageAlt": "OLA"
-                    },
-                    {
-                        "id": "c7",
-                        "imageSrc": "https://logo.clearbit.com/uber.com",
-                        "imageAlt": "Uber"
+                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7e9mJUbqQGxMcWb3Pdjuy1q3kOH1YUv-bFw&s",
+                        "imageAlt": "BigBasket"
                     },
                     {
                         "id": "c8",
-                        "imageSrc": "https://www.futureideazone.in/assets/img/clients/Vahan-logo.png",
-                        "imageAlt": "VAHAN"
+                        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+                        "imageAlt": "Amazon"
                     }
                 ]
             }
@@ -223,11 +218,12 @@
                 "bannerData": [
                     {
                         "title": "Reliable Manpower Experts",
-                        "subTitle": "Since 2020",
+                        "subTitle": "Precision in Workforce Management",
+                        "isCompact": true,
                         "description": "Specializing in workforce solutions for e-commerce, logistics, and healthcare sectors.",
                         "image": {
                             "id": "img-team-custom",
-                            "imageSrc": "file:///C:/Users/panka/.gemini/antigravity/brain/cb9b7f01-2208-4141-880f-b6a939bc8ce1/spirework_team_1768928978666.png",
+                            "imageSrc": "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2070&auto=format&fit=crop",
                             "imageAlt": "Spire Team"
                         },
                         "visualPosition": "right",
@@ -255,43 +251,7 @@
                 ]
             }
         },
-        {
-            "id": "sw-team",
-            "name": "Leadership Team",
-            "path": "about",
-            "data": {
-                "type": "OurTeam",
-                "id": "ot1",
-                "title": "Meet the Minds Behind Spire",
-                "subTitle": "Our Leadership",
-                "ourTeam": [
-                    {
-                        "id": 1,
-                        "name": "Amit Sharma",
-                        "role": "Chief Executive Officer",
-                        "description": "Strategic visionary with over 15 years in logistics management.",
-                        "imageSrc": "https://ui-avatars.com/api/?name=Amit+Sharma&background=0284c7&color=fff",
-                        "imageAlt": "Amit Sharma"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Priya Varma",
-                        "role": "Head of Operations",
-                        "description": "Expert in workforce onboarding and regulatory compliance.",
-                        "imageSrc": "https://ui-avatars.com/api/?name=Priya+Varma&background=0284c7&color=fff",
-                        "imageAlt": "Priya Varma"
-                    },
-                    {
-                        "id": 3,
-                        "name": "Rajesh Gupta",
-                        "role": "Operational Excellence",
-                        "description": "Ensures quality service and long-term client partnerships.",
-                        "imageSrc": "https://ui-avatars.com/api/?name=Rajesh+Gupta&background=0284c7&color=fff",
-                        "imageAlt": "Rajesh Gupta"
-                    }
-                ]
-            }
-        },
+
         {
             "id": "sw-service-hero",
             "name": "Service Hero",
@@ -302,11 +262,12 @@
                 "bannerData": [
                     {
                         "title": "Comprehensive Workforce Solutions",
-                        "subTitle": "What We Offer",
+                        "subTitle": "Our Expertise",
+                        "isCompact": true,
                         "description": "Scaling your business with skilled, reliable manpower across diverse sectors including logistics, healthcare, and security.",
                         "image": {
                             "id": "img-hub",
-                            "imageSrc": "file:///C:/Users/panka/.gemini/antigravity/brain/cb9b7f01-2208-4141-880f-b6a939bc8ce1/logistics_hub_service_1768929010866.png",
+                            "imageSrc": "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop",
                             "imageAlt": "Logistics Hub"
                         },
                         "visualPosition": "left",
@@ -382,6 +343,29 @@
             }
         },
         {
+            "id": "sw-contact-hero",
+            "name": "Contact Hero",
+            "path": "contact",
+            "data": {
+                "type": "HeroBanner",
+                "id": "hb-contact",
+                "bannerData": [
+                    {
+                        "title": "Get in Touch With Us",
+                        "subTitle": "Contact Support",
+                        "description": "Have questions about our workforce solutions or looking for a partnership? Our team is here to help you scale your business with the right manpower.",
+                        "image": {
+                            "id": "img-contact-hero",
+                            "imageSrc": "https://images.unsplash.com/photo-1534536281715-e28d76689b4d?q=80&w=2070&auto=format&fit=crop",
+                            "imageAlt": "Contact Us"
+                        },
+                        "visualPosition": "right",
+                        "visualType": "image"
+                    }
+                ]
+            }
+        },
+        {
             "id": "sw-contact-main",
             "name": "Contact Page Form",
             "path": "contact",
@@ -392,9 +376,9 @@
                 "subTitle": "Start Building Your Workforce",
                 "description": "Looking for workforce solutions or want to join as a partner? Contact us today.",
                 "contactUs": {
-                    "address": "Spire Work Solutions HQ, Enterprise Park, Phase 2, Noida, India",
-                    "email": "connect@spirework.in",
-                    "phone": "+91 98765 43210",
+                    "address": "Sector 67, Mohali, Punjab, India",
+                    "email": "info@spirework.in",
+                    "phone": "+91 7658873000",
                     "formFields": [
                         {
                             "name": "name",
@@ -467,25 +451,14 @@
                 "title": "Spire Work Solutions",
                 "logo": {
                     "id": "l-footer",
-                    "imageSrc": "file:///C:/Users/panka/.gemini/antigravity/brain/cb9b7f01-2208-4141-880f-b6a939bc8ce1/spirework_corporate_logo_v2_1768929795929.png",
+                    "imageSrc": "https://ui-avatars.com/api/?name=S&background=0284c7&color=fff&size=512&bold=true",
                     "imageAlt": "Spire Work Solutions Logo"
                 },
-                "description": "Empowering businesses and professionals since 2020.",
+                "description": "Precision Workforce Management Solutions.",
                 "author": "Techie Loonds",
                 "footer": {
                     "copyright": "2026 Spire Work Solutions. All rights reserved.",
-                    "socialLink": [
-                        {
-                            "id": "s1",
-                            "name": "linkedin",
-                            "line": "#"
-                        },
-                        {
-                            "id": "s2",
-                            "name": "twitter",
-                            "line": "#"
-                        }
-                    ]
+                    "socialLink": []
                 }
             }
         }

@@ -39,14 +39,18 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
                                 {data.description}
                             </p>
                         )}
-                        <div className="flex gap-4">
-                            {['Twitter', 'LinkedIn', 'Github', 'Discord'].map((social) => (
-                                <a key={social} href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-600 transition-colors">
-                                    <span className="sr-only">{social}</span>
-                                    <div className="w-5 h-5 bg-white/20 rounded-sm" />
-                                </a>
-                            ))}
-                        </div>
+                        {data?.footer?.socialLink && data.footer.socialLink.length > 0 && (
+                            <div className="flex gap-4">
+                                {data.footer.socialLink.map((social: any) => (
+                                    <a key={social.id} href={social.line || "#"} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-600 transition-colors">
+                                        <span className="sr-only">{social.name}</span>
+                                        <div className="w-5 h-5 bg-white/20 rounded-sm flex items-center justify-center text-[10px] font-bold">
+                                            {social.name[0].toUpperCase()}
+                                        </div>
+                                    </a>
+                                ))}
+                            </div>
+                        )}
                     </div>
 
                     {/* Links - Company */}

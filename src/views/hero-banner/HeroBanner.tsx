@@ -19,11 +19,13 @@ const HeroBanner: React.FC<HeroBannerProps> = ({ data }) => {
     const visualType = banner.visualType || (banner.image ? 'image' : banner.videoSrc ? 'video' : 'none');
     const visualPosition = banner.visualPosition || 'right';
     const isCentered = visualType === 'none';
+    const isCompact = banner.isCompact || false;
+    const heightClass = isCompact ? "py-24 md:py-32" : "min-h-screen flex items-center pt-24 md:pt-32";
 
     if (!banner.title && !banner.description) return null;
 
     return (
-        <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-slate-950">
+        <section className={`relative ${heightClass} overflow-hidden bg-slate-950`}>
             {/* Background elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary-600/10 blur-[120px] rounded-full animate-float" />
