@@ -133,11 +133,7 @@
                 "title": "OUR CLIENTS",
                 "subTitle": "Powering Industry Giants",
                 "images": [
-                    {
-                        "id": "c1",
-                        "imageSrc": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTk4YjU3MjcwLTg4YmQtMTFmMC04NDliLWQxMWMzZjNiMjVlNy5qcGc=",
-                        "imageAlt": "Swiggy"
-                    },
+                    
                     {
                         "id": "c2",
                         "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Zomato_Logo.svg",
@@ -149,9 +145,9 @@
                         "imageAlt": "Blinkit"
                     },
                     {
-                        "id": "c4",
-                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZkSig50hxAkM3tUe32a06WYkNbRHHlv9xw&s",
-                        "imageAlt": "Flipkart"
+                        "id": "c1",
+                        "imageSrc": "https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYTk4YjU3MjcwLTg4YmQtMTFmMC04NDliLWQxMWMzZjNiMjVlNy5qcGc=",
+                        "imageAlt": "Swiggy"
                     },
                     {
                         "id": "c5",
@@ -159,14 +155,9 @@
                         "imageAlt": "Zepto"
                     },
                     {
-                        "id": "c6",
-                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7e9mJUbqQGxMcWb3Pdjuy1q3kOH1YUv-bFw&s",
-                        "imageAlt": "BigBasket"
-                    },
-                    {
-                        "id": "c8",
-                        "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-                        "imageAlt": "Amazon"
+                        "id": "c4",
+                        "imageSrc": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEZkSig50hxAkM3tUe32a06WYkNbRHHlv9xw&s",
+                        "imageAlt": "Flipkart"
                     }
                 ]
             }
@@ -387,9 +378,9 @@
                             "required": true
                         },
                         {
-                            "name": "company",
-                            "label": "Organization / Individual",
-                            "type": "text",
+                            "name": "phone",
+                            "label": "Phone Number",
+                            "type": "tel",
                             "required": true
                         },
                         {
@@ -399,9 +390,9 @@
                             "required": true
                         },
                         {
-                            "name": "requirements",
-                            "label": "Detailed Requirements",
-                            "type": "textarea",
+                            "name": "city",
+                            "label": "City",
+                            "type": "text",
                             "required": true
                         }
                     ]
